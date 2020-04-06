@@ -1,0 +1,577 @@
+TIMETAG 2014/06/17 06:59:30 
+MK3DB_VERSION    1
+Dbedit: c1404, CONT14 DAY 04  | geo_export
+VLBI experiment C1404 ( CONT14 DAY 04 )
+Created by dbedit Ver. 2013.09.20  revision 6.22
+        run by Geodaesie Gruppe ( geodesy@geosrv.mpifr-bonn.mpg.de )
+            at GSF -- Geodetic VLBI at Bonn Correlator
+               on geosrv at 2014.06.17-08:59:30 local time
+Dbedit control file history entry: c1404, CONT14 DAY 04  | geo_export
+Directory /data/c1404/3174
+$1>
++HEADER
+CORREL   BONN
+DATABASE 14MAY09XA
+SESSNAME C1404
+OBSTIME  2014/05/09 2014/05/10
+UTSTART  0001
+DURATION 24
+DOY      129
+CORRTIME 2014/06/08 2014/06/11
+CORRPASS 1
+EXPORT   DONE
+
++SUMMARY
+ Qcode      % of Total   % of Correlated
+                scans          scans
+
+  5-9            92%            94%
+   0              3%             3%
+ 4-1,A-H,N        3%             3%
+ Removed          2%             -
+
+ +CORRELATOR_NOTES
+
+Please do not erase the CONT14 data from the modules until
+you get permission from the correlator.
+
+Re-submitted to eliminate station ONSALAAN, which should not be
+included in the database.
+
+ BADARY   (Bd/B): Missed scans from UT 129-1806 to UT 129-1943 to
+                  participate the session ruu893.
+
+                  No data from UT 129-0728 to UT 129-0745.
+
+ FORTLEZA (Ft/b): RFI in S-band channels SR4U and SR3U. Channel SR4U
+                  removed from fringe fitting.
+
+ HOBART12 (Hb/d): RFI (?) in S-band channels SR5U and SR6U, thus leading
+                  to several G-codes. Found correspondingly lower pcal
+                  amplitude and noisy pcal phase. Channels SR5U and SR6U
+                  have been removed from fringe fitting.
+
+                  No data from UT 129-0405 to UT 129-0444.
+
+ HOBART26 (Ho/H): RFI (?) in S-band channels SR1U and SR2U, thus
+                  leading to G-codes. Channels removed from fringe
+                  fitting.
+
+                  Applied manual pcal.
+
+                  No data from UT 129-0519 to UT 129-0533.
+
+ HART15M  (Ht/q): Clock jump at UT 129-1315.
+
+ KATH12M  (Ke/a): Clock jump at UT 129-0027.
+
+                  Series of non-detections from UT 129-0002 to
+                  UT 129-0041.
+
+ KOKEE    (Kk/K): Applied manual pcal.
+
+                  Missed scans from UT 129-1819 to UT 129-2001 due
+                  to INT3.
+
+                  Series of non-detections from UT 129-2214 to the end.
+
+ MATERA   (Ma/I): Broad band RFI in S-band. Removed channels SR6U
+                  and SR1U to avoid most of the G-codes.
+
+                  Series of non-detections from UT 129-0938 to
+                  UT 129-0958.
+
+                  No data from UT 129-1007 to UT 129-1027.
+
+ NYALES20 (Ny/N): Lost first two scans.
+
+                  No data from UT 129-1203 to UT 129-1215.
+
+                  No signal in X-band channel XR2U from UT 129-1550 to
+                  UT 129-1600. Station reported:"15:50 UT Error V2
+                  time-out, frequency doesn't check with requested.
+                  V2-reinserted at 16:00 UT."
+
+ ONSALA60 (On/X): RFI in S-band channel SR2U, thus leading to a few
+                  G-codes.
+
+ TSUKUB32 (Ts/T): RFI in S-band channel SR2U, thus leading to a
+                  few G-codes.
+
+                  Series of non-detections from UT 129-0104 to
+                  UT 129-0116.
+
+                  Station reported:
+                  "Following data were chipped due to a trouble of a
+                  recording system.
+                  2014/129 01:37:21-01:37:31 UT
+                  2014/129 03:18:34-03:19:28 UT
+                  2014/129 11:20:25-11:20:53 UT
+                  2014/129 17:26:51-17:27:26 UT
+                  2014/129 18:14:57-18:15:20 UT
+                  2014/129 20:13:37-20:14:28 UT
+                  2014/129 20:19:58-20:20:03 UT"
+
+ WESTFORD (Wf/E): No data from 129-1500 to UT 129-1506.
+
+ WARK12M  (Ww/u): Applied manual pcal.
+
+ WETTZELL (Wz/V): Missed scans from UT 129-1820 to UT 129-1934 due
+                  to INT3.
+
+ YARRA12M (Yg/i): Missed scans from UT 129-0326 to UT 129-0349 due to
+                  observation PC crash during system check.
+
+ YEBES40M (Ys/Y): No signal (bbc unlocked) in X-band channel XR6U
+                  up to UT 129-0900.
+                  No signal (bbc unlocked) in S-band channel SR1U
+                  from UT 129-0900 until the end.
+                  Channels removed from fringe fitting.
+
+                  No data from UT 129-0900 to UT 129-0930.
+
+ ZELENCHK (Zc/R): Broad band RFI in S-band, particularly strong in SR4U.
+                  Channel removed from fringe fitting to avoid most of
+                  the G-codes. Some (5-15%) G-codes remaining due to RFI
+                  in SR3U.
+
+                  Missed scans from UT 129-1826 to UT 129-1929, due to
+                  the programs ruu894zc.
+
++DROP_CHANNELS
+ Bd
+ Ft SR4U
+ Hb SR5U SR6U
+ Ho SR5U SR6U
+ Ht
+ Ke
+ Kk
+ Ma SR1U SR6U
+ Ny
+ On
+ Ts
+ Wf
+ Ww
+ Wz
+ Yg
+ Ys SR1U        XR6U
+ Zc SR4U
+
++MANUAL PCAL Kk Ww Ho
+
++CHANNELS
+ Channels: XR1U = band|polarization|channel#|sideband
+
+XR1U/L  BBC01 8212.99
+XR2U    BBC02 8252.99
+XR3U    BBC03 8352.99
+XR4U    BBC04 8512.99
+XR5U    BBC05 8732.99
+XR6U    BBC06 8852.99
+XR7U    BBC07 8912.99
+XR8U/L  BBC08 8932.99
+SR1U    BBC09 2225.99
+SR2U    BBC10 2245.99
+SR3U    BBC11 2265.99
+SR4U    BBC12 2295.99
+SR5U    BBC13 2345.99
+SR6U    BBC14 2365.99
+
++CLOCKS
+
+Clocks: Bonn
+
+ Station     fmout-gps      Used      rate     Comments
+              [usec]       [usec]   [sec/sec]
+
+   Bd        -3.76330     221.49770  -8.118817e-14
+   Ft         0.47230       0.51607   1.813438e-13
+   Ht         5.95070      16.45454   4.936835e-13 from UT 128-0700
+                           16.43359   4.056835e-13 from UT 129-1315
+   Hb        12.20880      22.82025   1.974916e-13
+   Ho        11.84890      12.11434   1.981361e-13
+   Ke         9.22890      19.37107  -6.463202e-11 from UT 129-0000
+                           19.17140  -2.361830e-13 from UT 129-0047
+   Kk        23.37540      19.40403  -1.426446e-13
+   Ma        -1.07950       7.49522   8.442811e-14
+   Ny        57.78620      65.61046   1.499234e-12
+   On        96.37270     106.28807   4.312515e-13
+   Ts         0.37330       9.73067  -1.245314e-14
+   Ww        -8.81840       1.29452  -5.488702e-13
+   Wf        28.62070      36.75830   1.379781e-12
+   Wz       -28.65640     -28.38258  -7.556886e-14
+   Yg        10.39900      20.54216   2.394781e-13
+   Ys         0.14270       8.00678   3.537548e-13
+   Zc        -4.78180     220.45602  -3.582981e-13
+
+Date:    2014/05/09
+
++QCODES
+
+Qcod   0 1 2 3  4  5   6   7    8     9 A B C D E F   G  H   N   -   Tot
+----------------------------------------------------------------------------
+BK:X  27 0 0 0  0  0   0   0    7   124 0 0 0 0 0 0   0  0   4   5   167
+BK:S  18 0 0 0  0  0   0   0    2   137 0 0 0 0 0 0   1  0   4   5   167
+BN:X   0 0 0 0  0  0   0   2    3   261 0 0 0 0 0 0   2  0   8  12   288
+BN:S   0 0 0 0  0  0   0   2   13   252 0 0 0 0 0 0   1  0   8  12   288
+BX:X   0 0 0 0  0  0   0   0    3   223 0 0 0 0 0 0   0  0   4  10   240
+BX:S   0 0 0 0  0  0   0   2    1   223 0 0 0 0 0 0   0  0   4  10   240
+BL:X   0 0 0 0  0  0   0   0    2   224 0 0 0 0 0 0   0  0   4  10   240
+BL:S   0 0 0 0  0  0   1   2   15   208 0 0 0 0 0 0   0  0   4  10   240
+BT:X   3 0 0 0  0  0   0   1    7   299 0 0 0 0 0 0   0  0   6  11   327
+BT:S   3 0 0 0  0  1   0   0   26   268 0 0 0 0 0 0  12  0   6  11   327
+BE:X  10 0 0 0  0  0   0   1    3   182 0 0 0 0 0 0   0  0   5   8   209
+BE:S   0 0 0 0  0  1   0   0    0   194 0 0 0 0 0 0   1  0   5   8   209
+BV:X   0 0 0 0  0  0   1   1   11   254 0 0 0 0 0 0   0  0   4  10   281
+BV:S   0 0 0 0  0  0   0   2    3   262 0 0 0 0 0 0   0  0   4  10   281
+BY:X   0 0 0 0  0  0   0   0    2   226 0 0 0 0 0 0   0  0   6   8   242
+BY:S   0 0 0 0  0  0   0   0   45   176 0 0 0 0 0 0   7  0   6   8   242
+Bd:X   1 0 0 0  0  0   0   0    2    37 0 0 0 0 0 0   0  0   3   5    48
+Bd:S   1 0 0 0  0  0   0   1    1    36 0 0 0 0 0 0   1  0   3   5    48
+BH:X   0 0 0 0  0  0   0   0    4    41 0 0 0 0 0 0   2  0   2   5    54
+BH:S   0 0 0 0  0  1   0   0    2    42 0 0 0 0 0 0   2  0   2   5    54
+Ba:X   1 0 0 0  0  0   0   1    4    66 0 0 0 0 0 0   1  0   3   6    82
+Ba:S   0 0 0 0  0  0   0   1    7    64 0 0 0 0 0 0   1  0   3   6    82
+Bu:X   0 0 0 0  0  0   0   0    1    25 0 0 0 0 0 0   0  0   1   3    30
+Bu:S   0 0 0 0  0  0   0   0    8    17 0 0 0 0 0 0   1  0   1   3    30
+Bi:X   0 0 0 0  0  0   0   0    2    56 0 0 0 0 0 0   0  0   3   6    67
+Bi:S   0 0 0 0  0  0   0   3    1    53 0 0 0 0 0 0   1  0   3   6    67
+BI:X  10 0 0 0  0  0   0   0    3   195 0 0 0 0 0 0   0  0   7  10   225
+BI:S  10 0 0 0  0  0   0  14   72   110 0 0 0 0 0 0   2  0   7  10   225
+BR:X   1 0 0 0  0  1   1   2    8   276 0 0 0 0 0 0   0  0   4   9   302
+BR:S   1 0 0 0  0  0   0   4   29   209 0 0 0 0 0 0  46  0   4   9   302
+Bb:X   4 0 0 0  0  0   0   0    7    50 0 0 0 0 0 0   0  0   1   2    64
+Bb:S   0 0 0 0  0  0   0   0    2    59 0 0 0 0 0 0   0  0   1   2    64
+Bq:X   4 0 0 0  0  0   0   2    6   109 0 0 0 0 0 0   0  0   1   5   127
+Bq:S   1 0 0 0  0  0   0   0    5   115 0 0 0 0 0 0   0  0   1   5   127
+KN:X  37 0 0 0  0  0   0   2   23   151 0 0 0 0 0 0   1  0   5  12   231
+KN:S  25 0 0 0  0  0   0   1    7   181 0 0 0 0 0 0   0  0   5  12   231
+KX:X  42 0 0 0  0  0   0   0    4   102 0 0 0 0 0 0   1  0   1  11   161
+KX:S  28 0 0 0  0  0   0   0    1   120 0 0 0 0 0 0   0  0   1  11   161
+KL:X  41 0 0 0  0  0   0   1    8    99 0 0 0 0 0 0   0  0   1  11   161
+KL:S  27 0 0 0  0  0   0   0   43    79 0 0 0 0 0 0   0  0   1  11   161
+KT:X  25 0 0 0  0  0   0   2   17   225 0 0 0 0 0 0   3  0   1  10   283
+KT:S  23 0 0 0  0  0   1   4   22   219 0 0 0 0 0 0   3  0   1  10   283
+KE:X  36 0 0 0  0  0   0   0    6   176 0 0 0 0 0 0   1  0   3   9   231
+KE:S  26 0 0 0  0  0   0   0    4   185 0 0 0 0 0 0   4  0   3   9   231
+KV:X  37 0 0 0  0  0   0   1   21    92 0 0 0 0 0 0   1  0   1  11   164
+KV:S  25 0 0 0  0  0   0   0    5   122 0 0 0 0 0 0   0  0   1  11   164
+KY:X  34 0 0 0  0  0   0   2   19    77 0 0 0 0 0 0   2  0   1   8   143
+KY:S  25 0 0 0  0  0   0   1    6   101 0 0 0 0 0 0   1  0   1   8   143
+Kd:X   6 0 0 0  0  0   0   0    3    96 0 0 0 0 0 0   1  0   3   4   113
+Kd:S   5 0 0 0  0  0   0   0    1   100 0 0 0 0 0 0   0  0   3   4   113
+KH:X   6 0 0 0  0  0   0   0   16    95 0 0 0 0 0 0   0  0   0   4   121
+KH:S   5 0 0 0  0  0   0   1    6   105 0 0 0 0 0 0   0  0   0   4   121
+Ka:X   7 0 0 0  0  0   0   0    9    87 0 0 0 0 0 0   1  0   1   4   109
+Ka:S   4 0 0 0  0  0   0   0   10    90 0 0 0 0 0 0   0  0   1   4   109
+Ku:X   2 0 0 0  0  0   0   0   68    69 0 0 0 0 0 0   1  0   0   1   141
+Ku:S   3 0 0 0  0  0   1  13   73    50 0 0 0 0 0 0   0  0   0   1   141
+Ki:X   6 0 0 0  0  0   0   0    2    47 0 0 0 0 0 0   4  0   0   6    65
+Ki:S   1 0 0 0  0  0   0   1   10    47 0 0 0 0 0 0   0  0   0   6    65
+KI:X  36 0 0 0  0  0   0   1    2    73 0 0 0 0 0 0   1  0   1  11   125
+KI:S  22 0 0 0  0  0   0   4   23    64 0 0 0 0 0 0   0  0   1  11   125
+KR:X  21 0 0 0  0  0   0   2    2    92 0 0 0 0 0 0   2  0   0   8   127
+KR:S  15 0 0 0  0  0   0   5   14    69 0 0 0 0 0 0  14  2   0   8   127
+Kb:X  17 0 0 0  0  0   0   1    3    41 0 0 0 0 0 0   1  0   0   3    66
+Kb:S  12 0 0 0  0  0   0   1    3    45 0 0 0 0 0 0   2  0   0   3    66
+Kq:X   0 0 0 0  0  0   0   0    0     0 0 0 0 0 0 0   0  0   0   0     0
+Kq:S   0 0 0 0  0  0   0   0    0     0 0 0 0 0 0 0   0  0   0   0     0
+NX:X   3 0 0 0  0  0   1   3    4   308 0 0 0 0 0 0   3  0   6   0   328
+NX:S   4 0 0 0  0  0   0   1    8   308 0 0 0 0 0 0   1  0   6   0   328
+NL:X   3 0 0 0  0  0   1   3    3   309 0 0 0 0 0 0   3  0   6   0   328
+NL:S   4 0 0 0  0  0   0   1   25   291 0 0 0 0 0 0   1  0   6   0   328
+NT:X   4 0 0 0  0  0   0   1    9   270 0 0 0 0 0 0   3  0   6   0   293
+NT:S   5 0 0 0  0  0   1   0   29   238 0 0 0 0 0 0  14  0   6   0   293
+NE:X   0 0 0 0  0  0   0   0   17   316 0 0 0 0 0 0   3  0  10   0   346
+NE:S   0 0 0 0  0  0   0   0    8   325 0 0 0 0 0 0   2  1  10   0   346
+NV:X   0 0 0 1  0  1   1   6   24   297 0 0 0 0 0 0   3  0   5  17   355
+NV:S   0 0 0 0  1  1   0   2   18   310 0 0 0 0 0 0   1  0   5  17   355
+NY:X   0 0 0 0  0  2   0   2    6   311 0 0 0 0 0 0   3  0   9   0   333
+NY:S   1 0 0 0  0  0   0   2   75   240 0 0 0 0 0 0   6  0   9   0   333
+Nd:X   2 0 0 0  0  0   0   0    1    14 0 0 0 0 0 0   0  0   0   0    17
+Nd:S   0 0 0 0  0  0   0   0    0    17 0 0 0 0 0 0   0  0   0   0    17
+NH:X   1 0 0 0  0  0   0   0    1    21 0 0 0 0 0 0   0  0   0   0    23
+NH:S   0 0 0 0  0  0   0   0    0    23 0 0 0 0 0 0   0  0   0   0    23
+Na:X   1 0 0 0  0  0   0   0    2    52 0 0 0 0 0 0   0  0   0   0    55
+Na:S   0 0 0 0  0  0   0   0    3    52 0 0 0 0 0 0   0  0   0   0    55
+Nu:X   1 0 0 0  0  0   0   0    5     5 0 0 0 0 0 0   0  0   1   0    12
+Nu:S   0 0 0 0  0  0   0   0    0    11 0 0 0 0 0 0   0  0   1   0    12
+Ni:X   1 0 0 0  0  0   0   0    1    34 0 0 0 0 0 0   0  0   0   0    36
+Ni:S   0 0 0 0  0  0   0   0    4    32 0 0 0 0 0 0   0  0   0   0    36
+NI:X   9 0 0 0  0  0   0   3   18   259 0 0 0 0 0 0   2  0   7   0   298
+NI:S   9 0 0 0  0  0   1  23   89   164 0 0 0 0 0 0   5  0   7   0   298
+NR:X   0 0 0 0  0  1   0   2    5   236 0 0 0 0 0 0   3  0   4  12   263
+NR:S   0 0 0 0  0  0   1   4   31   183 0 0 0 0 0 0  26  2   4  12   263
+Nb:X   1 0 0 0  0  1   0   2   20    92 0 0 0 0 0 0   2  0   1   0   119
+Nb:S   7 0 0 0  0  0   0   0    4   105 0 0 0 0 0 0   1  1   1   0   119
+Nq:X   5 0 0 0  0  0   0   0    7    91 0 0 0 0 0 0   4  0   1   0   108
+Nq:S   3 0 0 0  0  0   0   0    2   101 0 0 0 0 0 0   1  0   1   0   108
+XL:X   0 0 0 0  0  0   0   0    0   416 0 0 0 0 0 0   0  1   2   0   419
+XL:S   0 0 0 0  0  0   0   0    1   415 0 0 0 0 0 0   0  1   2   0   419
+XT:X  11 0 0 0  0  0   0   0    5   203 0 0 0 0 0 0   0  0   2   0   221
+XT:S   5 0 0 0  0  0   0   1   10   194 0 0 0 0 0 0   9  0   2   0   221
+XE:X   3 0 0 0  0  0   0   1    2   267 0 0 0 0 0 0   0  0   5   0   278
+XE:S   3 0 0 0  0  1   0   0    2   266 0 0 0 0 0 0   0  1   5   0   278
+XV:X   3 0 0 0  0  2   0   2   22   329 0 0 0 0 0 0   0  0   2  18   378
+XV:S   3 0 0 0  1  1   0   0    5   347 0 0 0 0 0 0   1  0   2  18   378
+XY:X   3 0 0 0  0  2   0   0    3   344 0 0 0 0 0 0   0  0   3   0   355
+XY:S   3 0 0 0  0  1   0   2   76   262 0 0 0 0 0 0   8  0   3   0   355
+Xd:X   1 0 0 0  0  0   0   0    1    12 0 0 0 0 0 0   0  0   1   0    15
+Xd:S   3 0 0 0  0  0   0   0    0    11 0 0 0 0 0 0   0  0   1   0    15
+XH:X   0 0 0 0  0  0   0   0    0    11 0 0 0 0 0 0   0  0   0   0    11
+XH:S   1 0 0 0  0  0   0   0    1     9 0 0 0 0 0 0   0  0   0   0    11
+Xa:X   1 0 0 0  0  0   0   0    1    48 0 0 0 0 0 0   0  0   0   0    50
+Xa:S   2 0 0 0  0  0   0   0    4    44 0 0 0 0 0 0   0  0   0   0    50
+Xu:X   0 0 0 0  0  0   0   0    0     0 0 0 0 0 0 0   0  0   0   0     0
+Xu:S   0 0 0 0  0  0   0   0    0     0 0 0 0 0 0 0   0  0   0   0     0
+Xi:X   1 0 0 0  0  0   0   0    1    42 0 0 0 0 0 0   0  0   0   0    44
+Xi:S   1 0 0 0  0  0   0   0    0    43 0 0 0 0 0 0   0  0   0   0    44
+XI:X   9 0 0 0  1  1   0   1   10   324 0 0 0 0 0 0   0  0   4   0   350
+XI:S  10 0 0 0  1  0   3  28   93   206 0 0 0 0 0 0   5  0   4   0   350
+XR:X   0 0 0 0  0  1   0   0    1   257 0 0 0 0 0 0   0  0   1  12   272
+XR:S   0 0 0 0  0  0   2   3   33   200 0 0 0 0 0 0  19  2   1  12   272
+Xb:X   3 0 0 0  0  0   0   2   11   119 0 0 0 0 0 0   0  0   0   0   135
+Xb:S   4 0 0 0  0  0   0   0    6   122 0 0 0 0 0 0   2  1   0   0   135
+Xq:X   8 0 0 0  0  0   0   1    3   132 0 0 0 0 0 0   0  0   1   0   145
+Xq:S   4 0 0 0  0  1   0   0    2   137 0 0 0 0 0 0   0  0   1   0   145
+LT:X  11 0 0 0  0  0   0   0    5   203 0 0 0 0 0 0   0  0   2   0   221
+LT:S   5 0 0 0  1  0   0   3   17   183 0 0 0 0 0 0  10  0   2   0   221
+LE:X   3 0 0 0  0  0   0   1    3   266 0 0 0 0 0 0   0  0   5   0   278
+LE:S   3 0 0 0  0  1   0   0   20   248 0 0 0 0 0 0   0  1   5   0   278
+LV:X   3 0 0 0  0  2   1   1   23   328 0 0 0 0 0 0   0  0   2  18   378
+LV:S   3 0 0 0  1  1   1   0   21   330 0 0 0 0 0 0   1  0   2  18   378
+LY:X   3 0 0 0  0  2   0   1    4   342 0 0 0 0 0 0   0  0   3   0   355
+LY:S   3 0 0 0  0  0   1   7   80   251 0 0 0 0 0 0  10  0   3   0   355
+Ld:X   0 0 0 0  0  0   0   0    1    13 0 0 0 0 0 0   0  0   1   0    15
+Ld:S   3 0 0 0  0  0   0   0    0    11 0 0 0 0 0 0   0  0   1   0    15
+LH:X   0 0 0 0  0  0   0   0    0    11 0 0 0 0 0 0   0  0   0   0    11
+LH:S   1 0 0 0  0  0   0   0    3     7 0 0 0 0 0 0   0  0   0   0    11
+La:X   1 0 0 0  0  0   0   0    1    48 0 0 0 0 0 0   0  0   0   0    50
+La:S   1 0 0 0  0  0   0   0    2    47 0 0 0 0 0 0   0  0   0   0    50
+Lu:X   0 0 0 0  0  0   0   0    0     0 0 0 0 0 0 0   0  0   0   0     0
+Lu:S   0 0 0 0  0  0   0   0    0     0 0 0 0 0 0 0   0  0   0   0     0
+Li:X   0 0 0 0  0  0   0   0    1    43 0 0 0 0 0 0   0  0   0   0    44
+Li:S   0 0 0 0  0  0   0   0    4    40 0 0 0 0 0 0   0  0   0   0    44
+LI:X   9 0 0 0  0  1   0   2    8   326 0 0 0 0 0 0   0  0   4   0   350
+LI:S  10 0 0 0  1  1   2  37  116   174 0 0 0 0 0 0   5  0   4   0   350
+LR:X   0 0 0 0  0  1   0   0    2   256 0 0 0 0 0 0   0  0   1  12   272
+LR:S   0 0 0 0  0  1   0   3   47   190 0 0 0 0 0 0  16  2   1  12   272
+Lb:X   3 0 0 0  0  0   0   3   14   114 0 0 0 0 0 0   1  0   0   0   135
+Lb:S   3 0 0 0  0  0   0   0   14   116 0 0 0 0 0 0   1  1   0   0   135
+Lq:X   7 0 0 0  0  0   0   0    3   134 0 0 0 0 0 0   0  0   1   0   145
+Lq:S   3 0 0 0  0  0   0   1   15   125 0 0 0 0 0 0   0  0   1   0   145
+TE:X  16 0 0 0  0  0   0   0    1   203 0 0 0 0 0 0   1  0   3   0   224
+TE:S   3 0 0 0  0  0   0   0   13   202 0 0 0 0 0 0   3  0   3   0   224
+TV:X   9 0 0 0  0  0   0   0    9   209 0 0 0 0 0 0   2  0   2  13   244
+TV:S   5 0 0 0  0  1   0   1   23   184 0 0 0 0 0 0  15  0   2  13   244
+TY:X   9 0 0 0  0  0   0   0    6   200 0 0 0 0 0 0   0  0   4   0   219
+TY:S   7 0 0 0  0  0   0   0   43   159 0 0 0 0 0 0   6  0   4   0   219
+Td:X   1 0 0 0  0  0   0   0    5   112 0 0 0 0 0 0   1  0   5   0   124
+Td:S   3 0 0 0  0  0   0   0   10   106 0 0 0 0 0 0   0  0   5   0   124
+TH:X   1 0 0 0  0  0   0   0    5   140 0 0 0 0 0 0   0  0   4   0   150
+TH:S   1 0 0 0  0  0   0   5   38   100 0 0 0 0 0 0   2  0   4   0   150
+Ta:X   2 0 0 0  0  0   0   2    6   158 0 0 0 0 0 0   2  0   3   0   173
+Ta:S   2 0 0 0  0  1   0   1   15   146 0 0 0 0 0 0   5  0   3   0   173
+Tu:X   3 0 0 0  0  0   0   2    4   104 0 0 0 0 0 0   0  0   0   0   113
+Tu:S   3 0 0 0  0  0   0   9   17    82 0 0 0 0 0 0   2  0   0   0   113
+Ti:X   1 0 0 0  0  0   0   1    5   125 0 0 0 0 0 0   0  0   1   2   135
+Ti:S   1 0 0 0  0  0   0   0   14   117 0 0 0 0 0 0   0  0   1   2   135
+TI:X  22 0 0 0  0  0   0   0    4   168 0 0 0 0 0 0   0  0   4   0   198
+TI:S  12 0 0 0  1  0   2  18   46   107 0 0 0 0 0 0   8  0   4   0   198
+TR:X   2 0 0 0  0  0   0   0    4   212 0 0 0 0 0 0   0  0   1   9   228
+TR:S   4 0 0 0  0  1   0   2   45   129 0 0 0 0 0 0  36  1   1   9   228
+Tb:X   6 0 0 0  0  0   1   0    3    35 0 0 0 0 0 0   0  0   0   0    45
+Tb:S   2 0 0 0  0  0   0   0    1    41 0 0 0 0 0 0   0  1   0   0    45
+Tq:X   2 0 0 0  0  0   0   0    4    85 0 0 0 0 0 0   0  0   1   0    92
+Tq:S   2 0 0 0  0  1   0   0    8    79 0 0 0 0 0 0   1  0   1   0    92
+EV:X   1 0 0 0  0  0   0   1   14   259 0 0 0 0 0 0   0  0   5  15   295
+EV:S   1 0 0 0  0  0   0   0    3   269 0 0 0 0 0 0   2  0   5  15   295
+EY:X   0 0 0 0  0  0   0   0    3   290 0 0 0 0 0 0   0  0   7   0   300
+EY:S   2 0 0 0  0  0   0   1   36   247 0 0 0 0 0 0   6  1   7   0   300
+Ed:X   1 0 0 0  0  0   0   0    0     7 0 0 0 0 0 0   0  0   0   0     8
+Ed:S   0 0 0 0  0  0   0   0    0     8 0 0 0 0 0 0   0  0   0   0     8
+EH:X   1 0 0 0  0  0   0   0    0     8 0 0 0 0 0 0   0  0   0   0     9
+EH:S   0 0 0 0  0  0   0   0    0     9 0 0 0 0 0 0   0  0   0   0     9
+Ea:X   1 0 0 0  0  0   0   1    1    16 0 0 0 0 0 0   0  0   0   0    19
+Ea:S   0 0 0 0  0  0   0   0    2    17 0 0 0 0 0 0   0  0   0   0    19
+Eu:X   1 0 0 0  0  0   0   1    5    14 0 0 0 0 0 0   1  0   0   0    22
+Eu:S   0 0 0 0  0  0   0   1    5    16 0 0 0 0 0 0   0  0   0   0    22
+Ei:X   1 0 0 0  0  0   0   0    0     1 0 0 0 0 0 0   0  0   0   0     2
+Ei:S   0 0 0 0  0  0   0   0    0     2 0 0 0 0 0 0   0  0   0   0     2
+EI:X  10 0 0 0  0  0   0   1    8   225 0 0 0 0 0 0   1  0   5   0   250
+EI:S   6 0 0 0  0  0   1  14   64   159 0 0 0 0 0 0   0  1   5   0   250
+ER:X   1 0 0 0  0  0   0   0    3   168 0 0 0 0 0 0   0  0   4   8   184
+ER:S   0 0 0 0  0  0   0   1   15   140 0 0 0 0 0 0  14  2   4   8   184
+Eb:X   1 0 0 0  0  0   0   5   27   154 0 0 0 0 0 0   0  0   1   0   188
+Eb:S   1 0 0 0  0  0   2   2   16   161 0 0 0 0 0 0   2  3   1   0   188
+Eq:X   8 0 0 0  0  0   0   0    0    81 0 0 0 0 0 0   0  0   2   0    91
+Eq:S   3 0 0 0  0  0   0   1    2    82 0 0 0 0 0 0   0  1   2   0    91
+VY:X   0 0 0 0  0  1   1   2   15   364 0 0 0 0 0 0   2  0   5  19   409
+VY:S   0 0 0 0  0  1   1   2   89   287 0 0 0 0 0 0   5  0   5  19   409
+Vd:X   1 0 0 0  0  0   0   0    2    14 0 0 0 0 0 0   0  0   1   2    20
+Vd:S   2 0 0 0  0  0   0   0    0    15 0 0 0 0 0 0   0  0   1   2    20
+VH:X   0 0 0 0  0  0   0   0    2    12 0 0 0 0 0 0   0  0   0   2    16
+VH:S   0 0 0 0  0  0   0   1    2    11 0 0 0 0 0 0   0  0   0   2    16
+Va:X   1 0 0 0  0  0   0   0    1    51 0 0 0 0 0 0   0  0   0   3    56
+Va:S   1 0 0 0  0  0   0   0    2    50 0 0 0 0 0 0   0  0   0   3    56
+Vu:X   0 0 0 0  0  0   0   0    0     0 0 0 0 0 0 0   0  0   0   0     0
+Vu:S   0 0 0 0  0  0   0   0    0     0 0 0 0 0 0 0   0  0   0   0     0
+Vi:X   0 0 0 0  0  0   0   0    2    41 0 0 0 0 0 0   1  0   0   3    47
+Vi:S   0 0 0 0  0  0   0   0    1    43 0 0 0 0 0 0   0  0   0   3    47
+VI:X  11 0 0 0  0  0   1   1   10   327 0 0 0 0 0 0   1  0   3  18   372
+VI:S  11 0 0 0  1  0   8  24  126   176 0 0 0 0 0 0   5  0   3  18   372
+VR:X   0 0 0 0  0  1   0   0   14   297 0 0 0 0 0 0   1  0   1  13   327
+VR:S   0 0 0 0  0  1   0   3   32   242 0 0 0 0 0 0  33  2   1  13   327
+Vb:X   0 0 0 0  0  0   0   1   17   120 0 0 0 0 0 0   3  0   0   8   149
+Vb:S   2 0 0 0  0  0   0   2    8   127 0 0 0 0 0 0   1  1   0   8   149
+Vq:X   3 0 0 0  0  0   0   4   10   145 0 0 0 0 0 0   0  0   1   8   171
+Vq:S   1 0 0 0  0  0   0   4    6   151 0 0 0 0 0 0   0  0   1   8   171
+Yd:X   0 0 0 0  0  0   0   0    0     4 0 0 0 0 0 0   0  0   1   0     5
+Yd:S   1 0 0 0  0  0   0   0    0     3 0 0 0 0 0 0   0  0   1   0     5
+YH:X   0 0 0 0  0  0   0   0    1     0 0 0 0 0 0 0   0  0   0   0     1
+YH:S   0 0 0 0  0  0   0   0    1     0 0 0 0 0 0 0   0  0   0   0     1
+Ya:X   1 0 0 0  0  0   0   2    2    28 0 0 0 0 0 0   0  0   0   0    33
+Ya:S   3 0 0 0  0  0   0   1    1    28 0 0 0 0 0 0   0  0   0   0    33
+Yu:X   0 0 0 0  0  0   0   0    0     0 0 0 0 0 0 0   0  0   0   0     0
+Yu:S   0 0 0 0  0  0   0   0    0     0 0 0 0 0 0 0   0  0   0   0     0
+Yi:X   4 0 0 0  0  0   0   0    0    24 0 0 0 0 0 0   0  0   0   0    28
+Yi:S   2 0 0 0  0  0   0   0    0    26 0 0 0 0 0 0   0  0   0   0    28
+YI:X   6 0 0 0  1  0   0   2   10   336 0 0 0 0 0 0   0  0   7   0   362
+YI:S   8 0 0 0  0  0   3  67  117   155 0 0 0 0 0 0   5  0   7   0   362
+YR:X   0 0 0 0  0  1   1   0    1   276 0 0 0 0 0 0   0  0   3  10   292
+YR:S   0 0 0 0  0  0   0   4   38   221 0 0 0 0 0 0  15  1   3  10   292
+Yb:X   2 0 0 0  0  1   0   2   28   131 0 0 0 0 0 0   3  0   2   0   169
+Yb:S   6 0 0 0  0  0   0   0    9   152 0 0 0 0 0 0   0  0   2   0   169
+Yq:X   3 0 0 0  0  0   0   3    3   158 0 0 0 0 0 0   0  0   1   0   168
+Yq:S   5 0 0 0  0  0   0   1   21   138 0 0 0 0 0 0   2  0   1   0   168
+dH:X   0 0 0 0  0  0   2   9    8   376 0 0 0 0 0 0   3  0  13   0   411
+dH:S   0 0 0 0  4 16  42  68   46   114 0 0 0 0 0 0 108  0  13   0   411
+da:X   7 0 0 0  0  0   0   1    1   278 0 0 0 0 0 0   0  0  10   0   297
+da:S   1 0 0 0  0  0   0   0    2   284 0 0 0 0 0 0   0  0  10   0   297
+du:X   0 0 0 0  0  0   0   2   18   269 0 0 0 0 0 0   0  0   6   0   295
+du:S   0 0 0 0  0  0   0   0   21   268 0 0 0 0 0 0   0  0   6   0   295
+di:X   0 0 0 0  0  0   0   1    2   254 0 0 0 0 0 0   0  0   9   2   268
+di:S   0 0 0 0  0  0   0   1    1   255 0 0 0 0 0 0   0  0   9   2   268
+dI:X   3 0 0 0  0  0   0   0    0    11 0 0 0 0 0 0   0  0   2   0    16
+dI:S   5 0 0 0  0  0   0   0    0     9 0 0 0 0 0 0   0  0   2   0    16
+dR:X   0 0 0 0  0  0   0   0    0    26 0 0 0 0 0 0   0  0   1   2    29
+dR:S   2 0 0 0  0  0   1   0    4    19 0 0 0 0 0 0   0  0   1   2    29
+db:X   0 0 0 0  0  0   0   0    1     2 0 0 0 0 0 0   0  0   0   0     3
+db:S   0 0 0 0  0  0   0   0    0     3 0 0 0 0 0 0   0  0   0   0     3
+dq:X   1 0 0 0  0  0   0   0    1    87 0 0 0 0 0 0   0  0   3   0    92
+dq:S   1 0 0 0  0  0   0   1    1    86 0 0 0 0 0 0   0  0   3   0    92
+Ha:X   7 0 0 0  0  0   0   0    1   274 0 0 0 0 0 0   0  0   9   0   291
+Ha:S   4 0 0 0  0  0   0   2    5   271 0 0 0 0 0 0   0  0   9   0   291
+Hu:X   4 0 0 0  0  0   0   1    4   274 0 0 0 0 0 0   0  0   4   0   287
+Hu:S   4 0 0 0  0  0   0   1   15   263 0 0 0 0 0 0   0  0   4   0   287
+Hi:X   5 0 0 0  0  0   0   0    1   257 0 0 0 0 0 0   0  0   5   2   270
+Hi:S   4 0 0 0  0  0   0   0   14   245 0 0 0 0 0 0   0  0   5   2   270
+HI:X   2 0 0 0  0  0   0   0    1     9 0 0 0 0 0 0   0  0   1   0    13
+HI:S   2 0 0 0  0  0   0   1    1     8 0 0 0 0 0 0   0  0   1   0    13
+HR:X   0 0 0 0  0  0   0   0    0    26 0 0 0 0 0 0   0  0   0   2    28
+HR:S   1 0 0 0  0  0   0   2    2    20 0 0 0 0 0 0   1  0   0   2    28
+Hb:X   0 0 0 0  0  0   0   0    0     4 0 0 0 0 0 0   0  0   0   0     4
+Hb:S   0 0 0 0  0  0   0   0    0     3 0 0 0 0 0 0   1  0   0   0     4
+Hq:X   3 0 0 0  0  0   0   0    2    79 0 0 0 0 0 0   0  0   3   0    87
+Hq:S   3 0 0 0  0  1   1   0    1    78 0 0 0 0 0 0   0  0   3   0    87
+au:X   6 0 0 0  0  0   0   1   17   177 0 0 0 0 0 0   0  0   2   0   203
+au:S   0 0 0 0  0  0   0  10   37   154 0 0 0 0 0 0   0  0   2   0   203
+ai:X   2 0 0 0  0  0   0   1    5   314 0 0 0 0 0 0   0  0   0   2   324
+ai:S   0 0 0 0  0  0   0   0    7   315 0 0 0 0 0 0   0  0   0   2   324
+aI:X   6 0 0 0  0  0   0   0    2    39 0 0 0 0 0 0   0  0   1   0    48
+aI:S   5 0 0 0  0  0   0   2    7    33 0 0 0 0 0 0   0  0   1   0    48
+aR:X   0 0 0 0  0  0   0   2    2    61 0 0 0 0 0 0   0  0   0   3    68
+aR:S   3 0 0 0  0  0   0   2   14    43 0 0 0 0 0 0   3  0   0   3    68
+ab:X   0 0 0 0  0  0   0   0    0     0 0 0 0 0 0 0   0  0   0   0     0
+ab:S   0 0 0 0  0  0   0   0    0     0 0 0 0 0 0 0   0  0   0   0     0
+aq:X   2 0 0 0  0  0   0   0    3    99 0 0 0 0 0 0   0  0   0   0   104
+aq:S   2 0 0 0  0  0   0   0   10    92 0 0 0 0 0 0   0  0   0   0   104
+ui:X   0 0 0 0  0  0   1   1    9   163 0 0 0 0 0 0   0  0   0   2   176
+ui:S   0 0 0 0  0  0   0   5   53   116 0 0 0 0 0 0   0  0   0   2   176
+uI:X   0 0 0 0  0  0   0   0    0     0 0 0 0 0 0 0   0  0   0   0     0
+uI:S   0 0 0 0  0  0   0   0    0     0 0 0 0 0 0 0   0  0   0   0     0
+uR:X   0 0 0 0  0  0   0   0    1     4 0 0 0 0 0 0   0  0   0   0     5
+uR:S   0 0 0 0  0  0   0   0    1     4 0 0 0 0 0 0   0  0   0   0     5
+ub:X   0 0 0 0  0  0   0   0    2     4 0 0 0 0 0 0   0  0   0   0     6
+ub:S   0 0 0 0  0  0   0   1    3     2 0 0 0 0 0 0   0  0   0   0     6
+uq:X   1 0 0 0  0  0   2   0    3    36 0 0 0 0 0 0   0  0   0   0    42
+uq:S   1 0 0 0  0  0   0   6   11    23 0 0 0 0 0 0   1  0   0   0    42
+iI:X   4 0 0 0  0  0   0   0    1    36 0 0 0 0 0 0   0  0   1   0    42
+iI:S   6 0 0 0  0  0   1   1    9    24 0 0 0 0 0 0   0  0   1   0    42
+iR:X   0 0 0 0  0  0   0   0    3    60 0 0 0 0 0 0   0  0   0   3    66
+iR:S   2 0 0 0  0  0   0   3    7    48 0 0 0 0 0 0   3  0   0   3    66
+ib:X   0 0 0 0  0  0   0   0    1     2 0 0 0 0 0 0   0  0   0   0     3
+ib:S   0 0 0 0  0  0   0   0    1     2 0 0 0 0 0 0   0  0   0   0     3
+iq:X   2 0 0 0  0  0   0   0    1   130 0 0 0 0 0 0   0  0   0   0   133
+iq:S   1 0 0 0  0  0   0   2   10   120 0 0 0 0 0 0   0  0   0   0   133
+IR:X  10 0 0 0  0  0   0   1    0   276 0 0 0 0 0 0   0  0   3  12   302
+IR:S  11 0 0 0  0  3  11  66   98    83 0 0 0 0 0 0  12  3   3  12   302
+Ib:X   5 0 0 0  0  1   0   0   31   107 0 0 0 0 0 0   1  0   0   0   145
+Ib:S  14 0 0 0  0  0   3  18   47    63 0 0 0 0 0 0   0  0   0   0   145
+Iq:X  12 0 0 1  0  0   0   0    5   136 0 0 0 0 0 0   0  0   2   0   156
+Iq:S  10 0 0 0  1  0   2   9   44    86 0 0 0 0 0 0   2  0   2   0   156
+Rb:X   0 0 0 0  0  0   0   1    7    90 0 0 0 0 0 0   0  0   0   2   100
+Rb:S   0 0 0 0  0  0   0   0   13    72 0 0 0 0 0 0  13  0   0   2   100
+Rq:X   1 0 0 0  0  0   0   0    6   137 0 0 0 0 0 0   0  0   1   3   148
+Rq:S   1 0 0 0  0  1   1   4   12   121 0 0 0 0 0 0   4  0   1   3   148
+bq:X   9 0 0 0  0  0   0   0    4   153 0 0 0 0 0 0   2  0   0   0   168
+bq:S   6 0 0 0  0  0   0   2   25   129 0 0 0 0 0 0   6  0   0   0   168
+----------------------------------------------------------------------------
+Tot 1328 0 0 2 15 62 109 663 3623 39148 0 0 0 0 0 0 647 33 666 990 47286
+
+ Legend:
+$1<
+Sorted by time and subsorted by baseline.   -geodesy-
+All  baselines used.
+All  sources used.
+Output time window:  earliest latest
+TIMETAG 2014/06/18 15:38:00 
+MK3DB_VERSION    2
+CALC11.01 Ver. 2014.05.16  Wed Jun 18 11:37:59 2014    bootes
+Calc 11 at GSFC  -DG-
+TIMETAG 2014/06/18 15:40:16 
+MK3DB_VERSION    3
+Dbcal: CONT1404  -DG-
+ DBCAL: Version 2013.10.18        JUN 18,2014 15:40:16
+TIMETAG 2014/06/19 02:50:55 
+MK3DB_VERSION    4
+CONT1404: GSFC Analysis  -DG-
+G-Gxs solution, 60/60 clocks/atms, mostly 2/40
+constraints, 24-hr gradients. Solve fit of 32.7
+psec.
+The following flyby options were used in the solution:
+Station flyby file:  glo.sit
+Source flyby file :  glo.src
+Nutation series flyby file :  NONE
+Nutation offset flyby file :  NONE
+Earth rotation flyby file  :  NONE
+Tectonic plate motion file :  glo.vel
+Group delay ambiguities and editing updated.
+Troposphere and cable cal status for standard solution stored.
+Observation dependent contribution status stored.
+Reweighting updated for:
+BA-FO BA-HA BA-HO BA-HO BA-KA BA-KO BA-MA BA-NY BA-ON BA-TS
+BA-WA BA-WE BA-WE BA-YA BA-YE BA-ZE FO-HA FO-HO FO-HO FO-KA
+FO-KO FO-MA FO-NY FO-ON FO-TS FO-WA FO-WE FO-WE FO-YA FO-YE
+FO-ZE HO-HA HO-HA HA-KA HA-KO HA-MA HA-NY HA-ON HA-TS HA-WA
+HA-WE HA-WE HA-YA HA-YE HA-ZE HO-HO HO-KA HO-KO HO-MA HO-NY
+HO-ON HO-TS HO-WA HO-WE HO-WE HO-YA HO-YE HO-ZE HO-KA HO-KO
+HO-MA HO-NY HO-ON HO-TS HO-WA HO-WE HO-WE HO-YA HO-YE HO-ZE
+KA-KO KA-MA KA-NY KA-ON KA-TS KA-WA KA-WE KA-WE KA-YA KA-YE
+KA-ZE KO-MA KO-NY KO-ON KO-TS KO-WA KO-WE KO-WE KO-YA KO-YE
+KO-ZE MA-NY MA-ON MA-TS MA-WA MA-WE MA-WE MA-YA MA-YE MA-ZE
+NY-ON NY-TS NY-WA NY-WE NY-WE NY-YA NY-YE NY-ZE ON-TS ON-WA
+ON-WE ON-WE ON-YA ON-YE ON-ZE TS-WA TS-WE TS-WE TS-YA TS-YE
+TS-ZE WE-WA WA-WE WA-YA WA-YE WA-ZE WE-WE WE-YA WE-YE WE-ZE
+WE-YA WE-YE WE-ZE YA-YE YA-ZE YE-ZE
+Baseline-dependent clock used. List of names stored.
+Solution data configuration: G-Gxs combination
+Clock and atmosphere constraint information saved.
+Batchmode clock parameterization saved.
+Batchmode atmosphere parameterization saved.
+Ionosphere calibrated with IONO IONO  Ve
+Group Ion cal for $14MAY09XA V. 3 based on $14MAY09SA V. 3.
+Barometer calibration and barometer height offset not available.
+Eccentricity data store in data base header.
+Elevation cutoff data stored in database.
+

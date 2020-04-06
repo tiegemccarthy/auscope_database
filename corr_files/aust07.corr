@@ -1,0 +1,194 @@
+TIMETAG 2013/02/26 17:39:50 
+MK3DB_VERSION    1
+Dbedit: aust07, NEOSA  | geo_export
+VLBI experiment AUST07 ( NEOSA )
+Created by dbedit Ver. 2010.06.18  revision 6.20
+        run by vlbi ( vlbi@joplin.usno.navy.mil )
+            at USN -- USNO Earth Orientation department
+               on joplin.usno.navy.mil at 2013.02.26-12:39:50 local time
+Dbedit control file history entry: aust07, NEOSA  | geo_export
+Directory /data/export/data/AUST07/7899
+$1>
++HEADER
+CORREL   WACO
+DATABASE 12DEC19XA
+SESSNAME AUST07
+EXPNO    7899
+OBSTIME  2012/12/19 2012/12/20
+UTSTART  0100
+DURATION 24
+DOY      354/355
+CORRTIME 2013/02/25 2013/02/26
+CORRPASS 1
+EXPORT   Done
+
++SUMMARY
+
+Qcode   % of Total   % of Correlated
+          scans          scans
+
+ 5-9       70%           86%
+  0         8%           10%
+ B-H        3%            3%
+Removed    19%
+
+Qcodes 7-9 Correlated 86%
+Qcode N Not Correlated  0%
+
++CORRELATOR_NOTES
+
+Lost Yg baselines in scans 354-2237 to 354-2351 due to transfer error that was
+not noticed until after data had been released.
+
++STATION_NOTES
+
+HOBART12 (Hb/H):  Station reported several periods of (at times long)
+                  wind-stow, leading to missed scans.
+
+KATH12M  (Ke/K):  Ok.
+
+YARRA12M (Yg/Y):  Low fringe amplitudes in channels XR5U, XR6U, XR7U, and
+                  XR8U/L leading to 'G' codes.
+
+                  Channels XR5U, XR6U, XR7U, and XR8U/L removed from fringe
+                  fitting.
+
++DROP_CHANNELS
+Yg XR5U XR6U XR7U XR8U/L
+
++MANUAL PCAL
+
++CHANNELS
+XR1U = band|polarization|channel#|sideband
+
+ XR1U/L  BBC01  8212.99
+ XR2U    BBC02  8252.99
+ XR3U    BBC03  8352.99
+ XR4U    BBC04  8512.99
+ XR5U    BBC05  8732.99
+ XR6U    BBC06  8852.99
+ XR7U    BBC07  8912.99
+ XR8U/L  BBC08  8932.99
+ SR1U    BBC09  2225.99
+ SR2U    BBC10  2245.99
+ SR3U    BBC11  2265.99
+ SR4U    BBC12  2295.99
+ SR5U    BBC13  2345.99
+ SR6U    BBC14  2365.99
+
++CLOCKS
+Clocks: WACO
+
+Date: 2012/12/19
+
++QCODES
+
+Qcodes   0  1  2  3  4  5  6  7   8   9  A  B  C  D  E  F  G  H  N   -  Tot
+---------------------------------------------------------------------------
+  HK:X  37  0  0  0  0  0  7 20  84  49  0  0  0  0  1  0 38  1  0  62  299
+  HK:S  37  0  0  0  0  0  0  2  31 164  0  0  0  0  0  0  3  0  0  62  299
+  HY:X  30  0  0  0  0  0  1  5  17 148  0  0  0  0  2  0  0  0  0  82  285
+  HY:S  35  0  0  0  1  0  1 10  67  87  0  0  0  0  1  0  1  0  0  82  285
+  KY:X   1  0  0  0  0  0  0  6  14 248  0  0  0  0  0  0  0  0  0  26  295
+  KY:S   2  0  0  0  0  0  2 17 116 130  0  1  0  0  0  0  1  0  0  26  295
+---------------------------------------------------------------------------
+Totals 142  0  0  0  1  0 11 60 329 826  0  1  0  0  4  0 43  1  0 340 1758
+
+Legend:
+QC = 0   Fringes not detected.
+   = 1-9 Fringes detected, no error condition. Higher #, better quality.
+   = B   Interpolation error in fourfit.
+   = D   No data in one or more frequency channels.
+   = E   Maximum fringe amplitude at edge of SBD, MBD, or rate window.
+   = F   "Fork" problem in processing.
+   = G   Fringe amp in a channel is <.5 times mean amp (only if SNR>20).
+   = H   Low Phase-cal amplitude in one or more channels.
+   = N   No valid correlator data.
+ Tot     Total number of scans in schedule.
+ Minus   Scans in original schedule file for which correlation was not
+         attempted, usually because of known station problems.
+
++SNR_RATIOS
+
+ MEAN RATIOS = Observed SNR / Predicted SNR  for exp no. 7899
+
+ ...by baseline, over all sources:
+
+ bl     X     n       S     n
+
+ HK    1.10  199     1.08  198
+ HY    1.71  168     1.20  165
+ KY    1.52  267     1.30  266
+
++FOURFIT_CONTROL_FILE
+
+*
+* 4fit control file for AUST07
+*
+  max_parity 0.01
+  sb_win -0.25 0.25 mb_win -1.0 1.0 dr_win -1.5e-5 1.5e-5
+  start -3 stop -1
+*
+  if f_group X
+    ref_freq 8212.99
+    pc_freqs ghijklmn  5010  5010  5010  5010  5010  5010  5010  5010
+**
+  if f_group S
+    dr_win -3.0e-5 3.0e-5
+    ref_freq 2245.99
+    pc_freqs abcdef  3010  3010  3010  3010  3010  3010
+*
+*
+  if station H or station K or station Y
+  lsb_offset -120.
+
+  if station Y and f_group X
+    freqs g h i j
+*
+*
+* Daniel
+*
++END
+$1<
+Sorted by time and subsorted by baseline.   -vlbi-
+All  baselines used.
+All  sources used.
+Output time window:  earliest latest
+TIMETAG 2013/02/26 19:09:15 
+MK3DB_VERSION    2
+CALC10.02 Ver. 2010.03.08  Tue Feb 26 14:09:13 2013    bootes
+Calc 10.00 with External Inputs  -DG-
+TIMETAG 2013/02/26 19:10:15 
+MK3DB_VERSION    3
+Dbcal: AUST07  -DG-
+ DBCAL: Version 2012.08.10        FEB 26,2013 19:10:15
+TIMETAG 2013/02/26 20:04:10 
+MK3DB_VERSION    4
+AUST07: GSFC Analysis  -DG-
+Hobart12 missed ~7 hrs between 03:57 and 11:01 due
+to a wind stow. Around 70 minutes of data lost at
+Yarragadee due to an E-transfer error. G-Gxs, 60/60
+clocks/atms, 5/40 constraints, 24-hr gradients.
+Solve fit of 69.2 psec.
+The following flyby options were used in the solution:
+Station flyby file:  gsf2012a.s
+Source flyby file :  gsf2012a.s
+Nutation offset flyby file :  NONE
+Earth rotation flyby file  :  NONE
+Tectonic plate motion file :  gsf2012a.v
+Group delay ambiguities and editing updated.
+Troposphere and cable cal status for standard solution stored.
+Observation dependent contribution status stored.
+Reweighting updated for:
+HO-KA HO-YA KA-YA
+Baseline-dependent clock used. List of names stored.
+Solution data configuration: G-Gxs combination
+Clock and atmosphere constraint information saved.
+Batchmode clock parameterization saved.
+Batchmode atmosphere parameterization saved.
+Ionosphere calibrated with IONO IONO  Ve
+Group Ion cal for $12DEC19XA V. 3 based on $12DEC19SA V. 3.
+Barometer calibration and barometer height offset not available.
+Eccentricity data store in data base header.
+Elevation cutoff data stored in database.
+

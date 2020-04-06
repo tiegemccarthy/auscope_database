@@ -1,0 +1,209 @@
+
+TIMETAG 2019/07/04 00:16:24 UTC
+MK3DB_VERSION 0
++HEADER
+CORREL   UTAS
+DATABASE 18SEP24XA
+SESSNAME AUM010
+OBSTIME  2018/09/23 2018/09/24
+UTSTART  1630
+DURATION 24
+DOY      267
+CORRTIME 2019/07/02 2019/07/03
+CORRPASS 1
+EXPORT   DONE
+
++SUMMARY
+  Qcode      % of Total   % of Correlated
+                scans          scans
+
+  5-9            86%            86%
+   0             8%            8%
+ 4-1,A-H,N       4%            4%
+ Removed         0%
+
++CORRELATOR NOTES
+
+The AUM experiments are testing the compatibility of the newly installed
+wideband receiver on the Hobart12 with the legacy VGOS mode. The Hb data
+consists of three datastreams, recorded in dual linear polarisations.
+These have been labelled as RCP (H-pol) and LCP (V-pol) for compatibility
+with FITS where initial analysis was performed..
+Data were correlated using DiFX 2.5.2. Unfortunately, the version of
+difx2mark4 included in this release does not support the inclusion of
+phase cal information from additional data streams. As such, no useful
+phasecal information is present for the Hb station although it was
+recorded and extracted.
+Hb data were recorded using 32-MHz wide channels though the DBBC3
+(X-band) and DBBC2 (S-band, using v105E firmware). Zoom bands were used
+to cross-correlate the data. For this reason, no LSB channels were
+recorded for Hb.
+
+A non-standard S-band frequency configuration was used in this experimet,
+with 6 contiguous chamnnels between 2.2 and 2.296 GHz. This range covers
+all of the RFI-free S-band spectrum for the Hobart site. As such,
+ambuigity spacing is 62.5 ns, rather than the typical 100 ns.
+
+There is a large single-band delay difference between the X- and S-band
+data, due to these frequencies being sent over coaxial rather than fibre,
+and then recorded in a difference formatter. The difference appears to be
+consistent and stable over the experiment.
+Polarisation combination was accomplished through solving for single
+band delays and phases separately and then fringe fitting the Hb baselines
+with the "-PRR+RL" options in fourfit.
+    
+    
++STATION NOTES
+
+ YARRA12M (Yg/e): Manual phase cal. Ok. 
+
+ KATH12M  (Ke/i): Manual phase cal. Ok.
+
+ HOBART12 (Hb/L): Experiment started late, no data before 2302.
+
++DROP_CHANNELS
+
+ Hb XR1L XR8L
+
++MANUAL PCAL Yg Ke Hb
+
++CHANNELS
+  Channels: X1RU = band|polarization|BBC#|sideband
+
+XR1U/L  BBC01 8212.99
+XR2U    BBC02 8252.99
+XR3U    BBC03 8352.99
+XR4U    BBC04 8512.99
+XR5U    BBC05 8732.99
+XR6U    BBC06 8852.99
+XR7U    BBC07 8912.99
+XR8U/L  BBC08 8932.99
+SR1U    BBC09 2200.99
+SR2U    BBC10 2216.99
+SR3U    BBC11 2232.99
+SR4U    BBC12 2248.99
+SR5U    BBC13 2264.99
+SR6U    BBC14 2280.99
+
++CLOCKS
+
+ Clocks: UTAS
+
+  Station    fmout-gps     Used        rate          Comments
+             [usec]        [usec]      [sec/sec]
+   Yg        2.584         2.584       9.43e-14
+   Ke        10.82         10.82       -1.156e-12
+   Hb        1.549         1.549       -4.918e-13
+   Date:     2018/09/23     16:30:00
+
++QCODES
+
+Qcod  0 1 2 3 4 5  6   7   8    9 A B C D E F G H   N -  Tot 
+----------------------------------------------------------------
+Li:X  7 0 0 0 2 3 10  79 176  135 0 0 0 0 0 0 0 0  23 0  435 
+Li:S101 0 0 0 0 0  1   0   4  306 0 0 0 0 0 0 0 0  23 0  435 
+Le:X  3 0 0 0 0 0  6  86 170  148 0 0 0 0 0 0 0 0  22 0  435 
+Le:S102 0 0 0 0 0  0   1  12  298 0 0 0 0 0 0 0 0  22 0  435 
+ie:X  1 0 0 0 0 5  3  26  88  293 0 0 0 0 0 0 0 0  19 0  435 
+ie:S  1 0 0 0 0 0  0   1  25  389 0 0 0 0 0 0 0 0  19 0  435 
+----------------------------------------------------------------
+Tot 215 0 0 0 2 8 20 193 475 1569 0 0 0 0 0 0 0 0 128 0 2610 
+ Legend:
+ QC = 0   Fringes not detected.
+    = 1-9 Fringes detected, no error condition. Higher #, better quality.
+    = B   Interpolation error in fourfit.
+    = D   No data in one or more frequency channels.
+    = E   Maximum fringe amplitude at edge of SBD, MBD, or rate window.
+    = F   Fork problem in processing.
+    = G   Fringe amp in a channel is <.5 times mean amp (only if SNR>20).
+    = H   Low Phase-cal amplitude in one or more channels.
+    = N   No valid correlator data.
+  Tot     Total number of scans in schedule.
+  Minus   Scans in original schedule file for which correlation was not
+          attempted, usually because of known station problems.
+
++SNR _RATIOS
+
+MEAN RATIOS = Observed SNR / Predicted SNR  for exp no. 8810
+
+ ...by baseline, over all sources:
+
+ bl     X     n       S     n
+
+ Li    0.53  405     0.61  311
+ Le    0.56  410     0.61  311
+ ie    1.07  415     0.81  415
+
++FOURFIT_CONTROL FILE
+* control file for exp. AUST
+
+*    max_parity  0.01
+    pc_mode multitone
+    pc_period 5 
+*
+* stop -30
+
+   sb_win -256.0 256.0 mb_win -2.0 2.0 dr_win -300.e-4 300.e-4
+*      sb_win -2.0 2.0 mb_win -2.0 2.0 dr_win -30.0e-5 30.0e-5
+*
+*    ...offset between VLBA-VLBA and MK4-VLBA ...
+
+weak_channel 0.3 
+
+if f_group X
+  ref_freq 8212.99
+  freqs g h i j k l m n
+
+if f_group S
+  ref_freq 2225.99
+  freqs a b c d e f 
+
+if station i
+   lsb_offset -30.0
+   
+
+if station L and f_group S
+  pc_mode manual
+  freqs a b c d e f 
+delay_offs_r abcdef 694.5 694.5 694.5 694.5 694.5 694.5
+delay_offs_l abcdef 695.8 695.8 695.8 695.8 695.8 695.8
+ pc_phases_r abcdef -18.7   57.9  164.8  267.6  129.0   29.5
+ pc_phases_l abcdef 147.2 -165.4  125.3 -180.2   99.8   55.4
+    
+if station L and f_group X
+  pc_mode manual
+  freqs g+ h i j k l m n+
+delay_offs_r ghijklmn 201.8 201.8 201.8 201.8 201.8 201.8 201.8 201.8
+delay_offs_l ghijklmn 202.7 202.7 202.7 202.7 202.7 202.7 202.7 202.7
+ pc_phases_r ghijklmn 38.5  239.6  353.8   28.7  161.8  309.5   17.5  268.7
+ pc_phases_l ghijklmn -63.7 -213.6  -67.5   -2.2 -280.0 -130.8  -37.2 -137.2
+
+  
+
+if station e and f_group S
+  pc_mode manual
+  pc_phases abcdef 0 0 0 0 0 0
+
+if station e and f_group X
+  pc_mode manual
+  pc_phases ghijklmn 0 0 0 0 0 0 0 0 
+
+if station i and f_group S and scan < 268-111730
+  pc_mode manual
+pc_phases abcdef  -287.4 -169.7  -40.7   77.8  342.4   83.8 
+
+if station i and f_group X and scan < 268-111730
+  pc_mode manual
+pc_phases ghijklmn  -86.5  185.6   68.7  329.3  252.9  340.1    3.3  111.6 
+
+if station i and f_group S and scan > 268-111730
+  pc_mode manual
+  pc_phases abcdef -305.1 -181.9  -44.4   73.3  325.1   60.1
+
+if station i and f_group X and scan > 268-111730
+  pc_mode manual
+  pc_phases ghijklmn -53.5  210.2   75.9  308.6  156.6  179.8  170.3  280.9
+  Regards,
+ Jamie
+
++END

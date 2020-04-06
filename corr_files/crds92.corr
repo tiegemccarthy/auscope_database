@@ -1,0 +1,226 @@
+TIMETAG 2018/07/01 09:57:04 
+MK3DB_VERSION    1
+Dbedit: CRDS92  -SH-
+VLBI experiment CRDS92 ( tbd )
+Created by dbedit Ver. 2018.03.07  revision 6.24
+        run by oper ( oper@nas8 )
+            at SHA -- SHANGHAI VLBI CORRELATOR
+               on nas8 at 2018.07.01-17:57:04 local time
+Dbedit control file history entry: CRDS92  -SH-
+Directory /Center/geo/crds92/7792
+$1>
++HEADER
+CORREL   SHAO
+DATABASE 17NOV23XN
+SESSNAME CRDS92
+OBSTIME  2017/11/23 2017/11/24
+UTSTART  12:00
+DURATION 24
+DOY      327-328
+CORRTIME 2018/06/31 2018/07/01
+CORRPASS 1
+EXPORT   DONE
+
++SUMMARY
+ Qcode      % of Total   % of Correlated
+                scans          scans
+
+  5-9            77%             -
+   0             22%             -
+ 4-1,A-H,N        1%             -
+ Removed          -              -
+
++CORRELATOR_NOTES
+
++STATION_NOTES
+
+ HARTRAO  (Hh/H): Fine.
+
+ HOBART26 (Ho/B): RFI at SR5U and SR6U caused G codes, removed
+                  from fringe fitting.
+                  Manual PCAL applied.
+
+ KATH12M  (Ke/e): Ok.
+
+ WARK12M  (Ww/W): Noisy PCAL signal, manual PCAL applied.
+
+ YARRA12M (Yg/i): Ok.
+
++DROP_CHANNELS
+ Ho/B SR5U, SR6U
+
++MANUAL PCAL
+ Ho, Ww
+
++CHANNELS
+ Channels: XR1U = band|polarization|channel#|sideband
+
+XR1U/L  BBC01 8212.99
+XR2U    BBC02 8252.99
+XR3U    BBC03 8352.99
+XR4U    BBC04 8512.99
+XR5U    BBC05 8732.99
+XR6U    BBC06 8852.99
+XR7U    BBC07 8912.99
+XR8U/L  BBC08 8932.99
+SR1U    BBC09 2225.99
+SR2U    BBC10 2245.99
+SR3U    BBC11 2265.99
+SR4U    BBC12 2295.99
+SR5U    BBC13 2345.99
+SR6U    BBC14 2365.99
+
++CLOCKS
+
+Clocks: SHAO
+
+ Station     fmout-gps      Used      rate     Comments
+              [usec]       [usec]   [sec/sec]
+  Hh            2.70         2.70    0.168E-12
+  Ho           19.67        17.39    0.764E-12
+  Ke           21.48        20.82    0.896E-12
+  Ww            0.00        -3.92    0.367E-12
+  Yg           27.09        26.71    1.110E-12
+
+Date:    2017/11/23 12:00:00
+
++QCODES
+
+Qcod  0 1 2 3 4 5  6   7   8    9 A B C D E F G H  N -  Tot
+---------------------------------------------------------------
+HB:X 18 0 0 0 0 2 12  24  40   65 0 0 0 0 0 0 0 0  1 0  162
+HB:S 25 0 0 0 0 0  1   3  18  114 0 0 0 0 0 0 0 0  1 0  162
+He:X 27 0 0 0 0 0  1   5  10   93 0 0 0 0 0 0 0 0  0 0  136
+He:S 57 0 0 0 0 0  0   0   1   78 0 0 0 0 0 0 0 0  0 0  136
+HW:X 42 0 0 0 0 0  0   6  20   57 0 0 0 0 0 0 0 0  3 0  128
+HW:S 49 0 0 0 0 0  0   0   1   74 0 0 0 0 0 0 1 0  3 0  128
+Hi:X 22 0 0 0 0 1  2  12  21   99 0 0 0 0 0 0 0 0  1 0  158
+Hi:S 35 0 0 0 0 0  0   0   1  121 0 0 0 0 0 0 0 0  1 0  158
+Be:X 15 0 0 0 1 1  3  16  38   62 0 0 0 0 0 0 0 0  0 0  136
+Be:S 15 0 0 0 0 0  0   2  20   99 0 0 0 0 0 0 0 0  0 0  136
+BW:X 23 0 0 0 2 2 19  25  19   35 0 0 0 0 0 0 0 0  3 0  128
+BW:S 15 0 0 0 0 0  0   0  10  100 0 0 0 0 0 0 0 0  3 0  128
+Bi:X 12 0 0 0 0 2  2  16  44   81 0 0 0 0 0 0 0 0  1 0  158
+Bi:S 11 0 0 0 0 0  0   2  19  125 0 0 0 0 0 0 0 0  1 0  158
+eW:X 45 0 0 0 0 0  1   7  11   52 0 0 0 0 0 0 0 0  2 0  118
+eW:S 54 0 0 0 0 0  0   0   1   61 0 0 0 0 0 0 0 0  2 0  118
+ei:X 11 0 0 0 0 0  1   2  18  103 0 0 0 0 0 0 0 0  0 0  135
+ei:S 37 0 0 0 0 0  0   0   1   97 0 0 0 0 0 0 0 0  0 0  135
+Wi:X 43 0 0 0 0 0  0   4  14   61 0 0 0 0 0 0 0 0  3 0  125
+Wi:S 44 0 0 0 0 0  0   0   2   76 0 0 0 0 0 0 0 0  3 0  125
+---------------------------------------------------------------
+Tot 600 0 0 0 3 8 42 124 309 1653 0 0 0 0 0 0 1 0 28 0 2768
+
+ Legend:
+ QC = 0   Fringes not detected.
+    = 1-9 Fringes detected, no error condition. Higher #, better quality.
+    = B   Interpolation error in fourfit.
+    = D   No data in one or more frequency channels.
+    = E   Maximum fringe amplitude at edge of SBD, MBD, or rate window.
+    = F   Fork problem in processing.
+    = G   Fringe amp in a channel is <.5 times mean amp (only if SNR>20).
+    = H   Low Phase-cal amplitude in one or more channels.
+    = N   No valid correlator data.
+  Tot     Total number of scans in schedule.
+  Minus   Scans in original schedule file for which correlation was not
+          attempted, usually because of known station problems.
+
++SNR_RATIOS
+
+MEAN RATIOS = Observed SNR / Predicted SNR  for exp no. 7792
+
+ ...by baseline, over all sources:
+
+ bl     X     n       S     n
+
+ HB    0.70  143     0.53  136
+ He    0.94  109     0.85   79
+ HW    0.83   83     0.79   76
+ Hi    1.26  135     0.92  122
+ Be    1.22  121     0.78  121
+ BW    1.17  102     1.01  110
+ Bi    1.47  145     0.90  146
+ eW    1.39   71     1.24   62
+ ei    2.20  124     1.46   98
+ Wi    1.52   79     1.25   78
+
++FOURFIT_CONTROL_FILE
+
+* +FOURFIT_CONTROL_FILE
+
+    max_parity  0.01
+    pc_mode normal
+    pc_period 999
+*
+start -2
+* stop -30
+
+   sb_win -2.0 2.0 mb_win -2.0 2.0 dr_win -30.0e-5 30.0e-5
+
+*    ...offset between VLBA-VLBA and MK4-VLBA ...
+*Ho/B
+    if station B
+      lsb_offset  100.
+*      lsb_offset  120.
+
+  if f_group X
+    ref_freq 8212.99
+    pc_freqs ghijklmn 4010 4010 4010 4010 4010 4010 4010 4010
+*    pc_freqs ghijklmn 3010 3010 3010 3010 3010 3010 3010 3010
+  if f_group S
+    ref_freq 2225.99
+    pc_freqs abcdef 4010 4010 4010 4010 4010 4010
+*    pc_freqs abcdef 3010 3010 3010 3010 3010 3010
+
+  if station B and f_group S
+     weak_channel 0.3
+  if station B and f_group X
+     weak_channel 0.3
+  if station B and f_group S
+     freqs a b c d
+  if station W and f_group X
+     weak_channel 0.3
+*  if station L and f_group X
+*     freqs g h i j l m n
+
+*ref Hh/H
+  if station W and f_group S
+     pc_mode manual
+     pc_phases abcdef 172.5  94.3  28.3 111.0 264.5 311.9
+
+  if station W and f_group X
+     pc_mode manual
+     pc_phases ghijklmn -64.3  58.5 243.2 146.7 170.9 126.8 142.4 158.7
+*     pc_phases ghijklmn 0 0 0 0 0 0 0 0
+
+  if station B and f_group S
+     pc_mode manual
+     pc_phases abcd 39.6 199.0  16.9 339.5
+*     pc_phases abcdf 42.0 201.5  19.3 341.9 334.9
+*     pc_phases abcd  0 0 0 0
+*     pc_phases abcdef 43.3 202.8  20.7 343.3 148.9 336.2
+
+  if station B and f_group X
+     pc_mode manual
+     pc_phases ghijklmn 130.7 205.8 210.8 335.0 311.8 347.8  61.8 218.3
+*     pc_phases ghijklmn 0 0 0 0 0 0 0 0
+
+  if station e and f_group S
+     pc_phases abcdef 0.4   -3.0   -3.4    7.8   -8.0    3.2
+  if station e and f_group X
+     pc_phases ghijklmn 4.6    1.8   -6.1   -5.5   -8.0    3.6    0.5    2.4
+  if station i and f_group S
+     pc_phases abcdef 0.8  -8.7   -7.9   29.0  -14.9   2.5
+  if station i and f_group X
+     pc_phases ghijklmn 3.1 10.4  -9.1  -7.3  -10.5 3.8 4.4 5.5
+
+Regards,
+ Yidan Huang
+
++END
+$1<
+Sorted by time and subsorted by baseline.   -SH-
+All  baselines used.
+All  sources used.
+Output time window:  earliest latest
+

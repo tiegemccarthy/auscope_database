@@ -1,0 +1,249 @@
+TIMETAG 2011/05/07 18:50:19 
+MK3DB_VERSION    1
+Dbedit: r4480, IVSR4  | geo_export
+VLBI experiment R4480 ( IVSR4 )
+Created by dbedit Ver. 2007.10.27  revision 6.17
+        run by vlbi ( vlbi@joplin.usno.navy.mil )
+            at USN -- USNO Earth Orientation department
+               on joplin.usno.navy.mil at 2011.05.07-14:50:19 local time
+Dbedit control file history entry: r4480, IVSR4  | geo_export
+Directory /data/export/data/r4480/4480
+$1>
++HEADER
+CORREL   WACO
+DATABASE 11APR28XE
+SESSNAME R4480
+EXPNO    4480
+OBSTIME  2011/04/28 2011/04/29
+UTSTART  1830
+DURATION 24
+DOY      118/119
+CORRTIME 2011/05/05 2011/05/07
+CORRPASS 1
+EXPORT   Done
+
++SUMMARY
+
+Qcode   % of Total   % of Correlated
+          scans          scans
+
+ 5-9       98%           98%
+  0         1%            1%
+ B-H        1%            1%
+Removed     0%
+
++CORRELATOR_NOTES
+                   Baseline KV scan 119-1549, the fringe rate passed through 0
+
++STATION_NOTES
+
+HOBART12 (Hb/H):   Manual phasecal applied at HOBART12.  A few scans had
+                   low fringe amplitude in channels SR5U and SR6U leading
+                   to a few G-codes.
+
+                   Manual phasecal applied at HOBART12.
+
+KOKEE    (Kk/K):   Manual phasecal applied at KOKEE
+
+MATERA   (Ma/I):   Low fringe and pcal amplitude in channels SR1U and SR6U
+                   leading to G-codes.  Channel SR6U removed from fringe
+                   fitting. Some additional low pcal/fringe amplitude in
+                   channels SR2U, SR3U and SR4U leading to a few G-codes
+                   and H-codes.
+
+NYALES20 (Ny/N):   -
+
+WETTZELL (Wz/V):   -
+
++DROP_CHANNELS
+  Hb
+  Kk
+  Ma SR1U        SR6U
+  Ny
+  Tc
+  Wz
+
++MANUAL PCAL Hb Kk
+
++CHANNELS
+XR1U = band|polarization|channel#|sideband
+
+ XR1U/L  BBC01  8212.99
+ XR2U    BBC02  8252.99
+ XR3U    BBC03  8352.99
+ XR4U    BBC04  8512.99
+ XR5U    BBC05  8732.99
+ XR6U    BBC06  8852.99
+ XR7U    BBC07  8912.99
+ XR8U/L  BBC08  8932.99
+ SR1U    BBC09  2225.99
+ SR2U    BBC10  2245.99
+ SR3U    BBC11  2265.99
+ SR4U    BBC12  2295.99
+ SR5U    BBC13  2345.99
+ SR6U    BBC14  2365.99
+
++CLOCKS
+Clocks: WACO
+
+Station          fmout-gps      Used      rate
+                  [usec]       [usec]   [sec/sec]
+  Hb              18.18        20.80       0.5e-12
+  Kk               4.98         5.97       0.0
+  Ma              -1.63        -1.07       0.0
+  Ny             -15.47       -15.41       0.2e-12
+  Wz             -22.25       -22.00       0.0
+
+Date: 2011/04/28
+
++QCODES
+
+Qcodes  0  1  2  3  4  5  6  7   8    9  A  B  C  D  E  F  G  H  N  -  Tot
+--------------------------------------------------------------------------
+  IN:X  1  0  0  0  0  2  4  6  26  129  0  0  0  0  0  0  0  0  0  0  168
+  IN:S  1  0  0  0  0  0  1  2  41  122  0  0  0  0  0  0  0  1  0  0  168
+  IH:X  1  0  0  0  0  1  0  2   1    2  0  0  0  0  0  0  0  0  0  0    7
+  IH:S  1  0  0  0  0  0  0  0   2    4  0  0  0  0  0  0  0  0  0  0    7
+  IK:X  1  0  0  0  0  2  1  7  19   62  0  0  0  0  0  0  0  0  0  0   92
+  IK:S  6  0  0  0  0  0  0  3  22   60  0  0  0  0  0  0  1  0  0  0   92
+  IV:X  2  0  0  0  0  1  4  3  26  144  0  0  0  0  0  0  0  0  0  0  180
+  IV:S  3  0  0  0  0  0  1 10  68   95  0  0  0  0  0  0  3  0  0  0  180
+  NH:X  1  0  0  0  0  0  2  2   5   17  0  0  0  0  0  0  0  0  0  0   27
+  NH:S  0  0  0  0  0  0  0  0   2   23  0  0  0  0  0  0  2  0  0  0   27
+  NK:X  2  0  0  0  0  0  2  6  21  119  0  0  0  0  0  0  0  0  0  0  150
+  NK:S  1  0  0  0  0  1  0  2  15  131  0  0  0  0  0  0  0  0  0  0  150
+  NV:X  0  0  0  0  0  1  7 12  23  179  0  0  0  0  0  0  0  0  0  0  222
+  NV:S  0  0  0  0  0  0  0  2  10  209  0  0  0  0  1  0  0  0  0  0  222
+  HK:X  0  0  0  0  0  0  3 10  16   57  0  0  0  0  0  0  0  0  0  0   86
+  HK:S  0  0  0  0  0  0  0 14  40   24  0  0  0  0  0  0  8  0  0  0   86
+  HV:X  0  0  0  0  0  0  0  2   3   10  0  0  0  0  0  0  0  0  0  0   15
+  HV:S  0  0  0  0  0  0  0  0   7    8  0  0  0  0  0  0  0  0  0  0   15
+  KV:X  2  0  0  0  0  1  4 10  25   91  0  0  0  0  0  0  0  0  0  0  133
+  KV:S  3  0  0  0  0  0  0  0   6  123  0  1  0  0  0  0  0  0  0  0  133
+--------------------------------------------------------------------------
+Totals 25  0  0  0  0  9 29 93 378 1609  0  1  0  0  1  0 14  1  0  0 2160
+
+Legend:
+QC = 0   Fringes not detected.
+   = 1-9 Fringes detected, no error condition. Higher #, better quality.
+   = B   Interpolation error in fourfit.
+   = D   No data in one or more frequency channels.
+   = E   Maximum fringe amplitude at edge of SBD, MBD, or rate window.
+   = F   "Fork" problem in processing.
+   = G   Fringe amp in a channel is <.5 times mean amp (only if SNR>20).
+   = H   Low Phase-cal amplitude in one or more channels.
+   = N   No valid correlator data.
+ Tot     Total number of scans in schedule.
+ Minus   Scans in original schedule file for which correlation was not
+         attempted, usually because of known station problems.
+
++SNR_RATIOS
+
+MEAN RATIOS = Observed SNR / Predicted SNR  for exp no. 4480
+
+ ...by baseline, over all sources:
+
+ bl     X     n       S     n
+
+ HK    1.77   86     1.01   86
+ HI    1.75    6     1.26    5
+ HN    1.61   26     0.84   27
+ HV    1.03   15     1.05   15
+ KI    1.71   91     1.35   86
+ KN    1.11  148     0.89  148
+ KV    1.41  131     1.09  128
+ IN    1.54  167     1.29  165
+ IV    2.16  178     1.82  177
+ NV    1.26  222     1.12  221
+
++FOURFIT_CONTROL_FILE
+
+***
+*
+* 4fit control file for R4480
+*
+  max_parity 0.01
+  sb_win -0.5 0.5 mb_win -1.0 1.0 dr_win -1.5e-5 1.5e-5
+  start -3 stop -1
+*
+  if f_group X
+    ref_freq 8212.99
+    pc_freqs ghijklmn  5010  5010  5010  5010  5010  5010  5010  5010
+*
+  if f_group S
+    dr_win -3.0e-5 3.0e-5
+    ref_freq 2225.99
+    pc_freqs abcdef  3010  3010  3010  3010  3010  3010
+*
+*
+  if station H
+      lsb_offset -120.0
+*
+  if station K
+  lsb_offset 260.0
+*
+*
+  if station K and f_group X
+    pc_phases ghijklmn   152  61  48  38  100  108  81  111
+    pc_mode manual
+*
+  if station K and f_group S
+    pc_phases abcdef   -82  -91  -84  -24  -117  -70
+    pc_mode manual
+*
+  if station H and f_group X
+    pc_phases ghijklmn   59  85  92  70  98  -156  75  38
+    pc_mode manual
+*
+  if station H and f_group S
+    pc_phases abcdef    -44  -57  -28  12  -126  -32
+    pc_mode manual
+*
+*
+  if station I and f_group S
+    freqs   b c d e
+***
+
+Dave
+
++END
+$1<
+Sorted by time and subsorted by baseline.   -vlbi-
+All  baselines used.
+All  sources used.
+Output time window:  earliest latest
+TIMETAG 2011/05/09 15:19:10 
+MK3DB_VERSION    2
+CALC10.02 Ver. 2010.03.08  Mon May  9 11:19:09 2011nuit.usno.
+Calc 10.00 with External Inputs  -NG-
+TIMETAG 2011/05/09 15:19:32 
+MK3DB_VERSION    3
+Dbcal: r4480 WXCB added by dbcal - NG -
+ DBCAL: Version 2007.12.06        MAY 09,2011 15:19:32
+TIMETAG 2011/05/09 18:43:25 
+MK3DB_VERSION    4
+r4480 USNO SOLVE solution -NG-
+Delay and Rates 60/60 clocks/atm
+fit 36 ps
+The following flyby options were used in the solution:
+Station flyby file:  glo.sit
+Source flyby file :  glo.src
+Nutation series flyby file :  NONE
+Nutation offset flyby file :  NONE
+Earth rotation flyby file  :  last_usno_
+Tectonic plate motion file :  glo.vel
+Group delay ambiguities and editing updated.
+Troposphere and cable cal status for standard solution stored.
+Observation dependent contribution status stored.
+Reweighting updated for:
+HO-KO HO-MA HO-NY HO-WE KO-MA KO-NY KO-WE MA-NY MA-WE NY-WE
+Solution data configuration: GROUP DELAY & RATE
+Clock and atmosphere constraint information saved.
+Batchmode clock parameterization saved.
+Batchmode atmosphere parameterization saved.
+Ionosphere calibrated with IONO IONO  Ve
+Group Ion cal for $11APR28XE V. 3 based on $11APR28SE V. 3.
+Barometer calibration and barometer height offset not available.
+Eccentricity data store in data base header.
+Elevation cutoff data stored in database.
+

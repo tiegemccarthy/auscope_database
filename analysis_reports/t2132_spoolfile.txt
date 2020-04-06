@@ -1,0 +1,943 @@
+1Run 20029-1425
+ Analysis center: GSFC -- NASA Goddard Space Flight Center
+ Analyst:         David Gordon ( David.Gordon-1@nasa.gov )
+ Machine:         gs690-gs61a-gsvgsfc-ivscc-server1.gsfc.nasa.gov  x86_64  Linux 3.10.0-957.12.2.el7.x86_64
+ Executables:     /space/nusolve/bin
+ Solve initials:  DG
+ Spool format:    SgLib-0.6.4 (Tir-na Nog'th)
+ Local time:      2020.01.29-15:07:53
+ Correlator type: MK4     
+ Mark-3 db_name:
+
+ Data base $19MAY21XH Ver  3
+
+ Matrix Condition Number =   7.727739491022809E+10
+
+ Listing_Options:  CRES_EMULATION NO  BASELINES NO  MINIMUM NO
+ Listing_Options:  MAPPED_EOP_OUTPUT NO  SEG_OUTPUT NO  APRIORI_ZENDEL NO
+ Listing_Options:  NRD_TABLE YES  CHI_TABLE NO  SRC_STAT PRE2004  SEG_STYLE PRE2005
+ SgLib release  :  2019 Dec 13
+
+  Flyby Station Cals:    DB Station Cals:              | DB Non-station Cals: | Atmosphere Partial:
+ --------------------------------------------------------------------------------------------------
+    AGGO    :NMFDRFLY    cable    GION                 | Pol Tide             | NMFWTFLY              
+    BADARY  :NMFDRFLY             GION                 | WobXCont             |                       
+    EFLSBERG:NMFDRFLY             GION                 | WobYCont             |                       
+    FORTLEZA:NMFDRFLY    cable    GION                 | EarthTid             |                       
+    HART15M :NMFDRFLY             GION                 | Ocean                |                       
+    HOBART26:NMFDRFLY             GION                 | UT1Ortho             |                       
+    ISHIOKA :NMFDRFLY             GION                 | XpYpOrth             |                       
+    KASHIM11:NMFDRFLY             GION                 | XpYpLib              |                       
+    KATH12M :NMFDRFLY             GION                 | UT1Libra             |                       
+    NYALES20:NMFDRFLY    cable    GION                 | OPTLCont             |                       
+    OHIGGINS:NMFDRFLY    cable    GION                 |                      |                       
+    ONSALA60:NMFDRFLY    cable    GION                 |                      |                       
+    SEJONG  :NMFDRFLY             GION                 |                      |                       
+    SVETLOE :NMFDRFLY             GION                 |                      |                       
+    VERAMZSW:NMFDRFLY             GION                 |                      |                       
+    WETTZELL:NMFDRFLY    cable    GION                 |                      |                       
+ --------------------------------------------------------------------------------------------------
+ CALC Version:  11.02  SgLib-0.6.4 (Tir-na Nog'th)
+
+           19MAY21SH  3  NOT IN SOLUTION
+
+  Met Statistics:
+                    Temperature      Pressure        Humidity
+   Station         average   rms   average   rms   average   rms
+   AGGO      MET     11.8     3.1  1020.5     0.9    76.8     7.4
+   BADARY    MET     18.0     4.4   904.6     1.1    36.4     8.5
+   EFLSBERG  MET     10.0     2.6   980.9     1.5    89.7    15.5
+   FORTLEZA  MET     26.0     2.5  1008.5     1.3    92.1    10.5
+   HART15M   MET     13.3     5.0   868.7     0.8    64.2    14.0
+   HOBART26  MET     13.6     2.0  1014.3     1.2    59.9     4.3
+   ISHIOKA   MET     16.5     3.0   993.8     1.6    75.2    15.1
+   KASHIM11  MET     16.9     1.6  1005.7     1.2    81.2    10.1
+   KATH12M   MET     27.4     4.8   998.6     1.4    46.3    15.4
+   NYALES20  MET     -0.2     1.1  1024.6     0.6    63.3     6.4
+   OHIGGINS  MET    -12.0     0.6   998.2     0.8    84.3     1.5
+   ONSALA60  MET     14.1     1.5  1008.1     1.8    97.4     3.9
+   SEJONG    MET     20.1     4.7   990.8     0.5    48.7    27.6
+   SVETLOE   MET     16.4     3.7  1003.7     1.7    64.4    12.8
+   VERAMZSW  MET     19.1     4.6   999.7     1.6    56.6    24.3
+   WETTZELL  MET     11.6     0.7   942.6     2.5    98.3     3.5
+
+ Run 20029-1425         8444 Observation Pairs Available 
+ Session started on:    2458625.229502   2019.05.21 17:30:29.000  UTC
+ Actual duration:       86269.000  sec           00 23:57:49.000  sec
+ Solution type: Group delay X/S combination    
+
+ Data Type     Number of   Weighted RMS    Normalized RMS   Chi Square
+             Observations    Residual         Residual      (precis)
+                 Used
+ 
+   Delay     6902             38.274 ps              0.99       0.9987
+   Rate         0                  0 fs/s            0.00       0.0000
+Combined        0                                    0.00       0.0000
+----------------------------------------------------------------------- 
+ Used quality_code_limit:                                  5            
+ Number of potentially recoverable observations:        7500            
+ Number of potentially good observations with QC 5-9:   7500           
+ Number of used observations:                           6902  ( 92.03%) 
+ Number of suppressed observations:                      598  (  7.97%) 
+----------------------------------------------------------------------- 
+
+
+
+ Baseline Statistics
+      Baseline        # W.Obs   W.RMS Del   N.R.D.   N.R.D. W.RMS Rate   N.R.R.  D.RW   R.RW 
+                    used/recov     ps     standard ( 15ps+i)  fs/s                ps    fs/s  
+
+ AGGO    -EFLSBERG   46/   46    33.2       0.84      1.09   295.2        0.00   28.7    0.0
+ AGGO    -FORTLEZA   70/   71    65.4       0.92      1.08   753.5        0.00   37.7    0.0
+ AGGO    -HART15M    67/   68    79.7       0.93      1.34   637.6        0.00   62.6    0.0
+ AGGO    -HOBART26   22/   22   181.6       0.97      2.54   101.8        0.00  173.5    0.0
+ AGGO    -KATH12M     6/    6    75.5       0.87      0.86   774.3        0.00    0.0    0.0
+ AGGO    -NYALES20   28/   29    71.8       0.94      1.19   323.9        0.00   58.7    0.0
+ AGGO    -OHIGGINS   55/   60    61.5       0.90      1.01   197.0        0.00   35.4    0.0
+ AGGO    -ONSALA60   39/   39    56.6       0.94      1.03   319.4        0.00   30.6    0.0
+ AGGO    -SVETLOE    23/   25    63.2       0.93      1.13   590.8        0.00   45.5    0.0
+ AGGO    -WETTZELL   31/   33    25.9       0.81      0.74   256.4        0.00    0.0    0.0
+ BADARY  -EFLSBERG   69/   73    26.2       0.92      1.61   186.9        0.00   27.7    0.0
+ BADARY  -FORTLEZA   19/   19    91.2       0.96      1.51   922.1        0.00   72.8    0.0
+ BADARY  -HART15M    57/   59    51.1       0.94      2.09   323.8        0.00   49.5    0.0
+ BADARY  -HOBART26   76/   76    53.6       0.92      1.96   234.4        0.00   51.0    0.0
+ BADARY  -ISHIOKA   161/  167    23.3       0.92      1.30   186.7        0.00   23.3    0.0
+ BADARY  -KASHIM11   96/  100    34.0       0.95      1.48   248.2        0.00   31.4    0.0
+ BADARY  -KATH12M    91/   93    33.9       0.94      1.30   216.4        0.00   29.1    0.0
+ BADARY  -NYALES20  109/  109    37.7       0.94      2.14   237.8        0.00   38.7    0.0
+ BADARY  -ONSALA60   69/   72    26.8       0.91      1.42   671.2        0.00   26.9    0.0
+ BADARY  -SEJONG    131/  137    24.7       0.92      1.30   311.5        0.00   24.0    0.0
+ BADARY  -SVETLOE    91/   96    27.9       0.93      1.68   261.3        0.00   29.3    0.0
+ BADARY  -VERAMZSW   75/  121   102.1       0.96      4.30   712.6        0.00  102.7    0.0
+ BADARY  -WETTZELL   81/   83    34.3       0.94      1.89   670.8        0.00   34.7    0.0
+ EFLSBERG-FORTLEZA   71/   71    81.2       0.95      2.97   578.4        0.00   81.3    0.0
+ EFLSBERG-HART15M    79/   94    48.7       0.93      2.33   395.3        0.00   49.1    0.0
+ EFLSBERG-ISHIOKA    64/   67    29.3       0.93      1.42   386.5        0.00   28.0    0.0
+ EFLSBERG-KASHIM11   36/   36    44.1       0.97      1.65   254.2        0.00   40.1    0.0
+ EFLSBERG-KATH12M    22/   22    24.7       0.88      1.08   452.5        0.00   22.1    0.0
+ EFLSBERG-NYALES20  115/  115    52.5       0.96      2.99   162.7        0.00   53.4    0.0
+ EFLSBERG-OHIGGINS   28/   33    42.2       0.86      1.56   479.5        0.00   39.7    0.0
+ EFLSBERG-ONSALA60  126/  127    25.5       0.92      1.42   216.8        0.00   26.0    0.0
+ EFLSBERG-SEJONG     52/   53    41.4       0.96      1.73  1142.1        0.00   36.9    0.0
+ EFLSBERG-SVETLOE   128/  129    25.7       0.91      1.49   209.0        0.00   26.7    0.0
+ EFLSBERG-VERAMZSW   20/   41    71.3       0.92      2.93  1451.7        0.00   72.7    0.0
+ EFLSBERG-WETTZELL  118/  120    34.7       0.95      2.03   135.7        0.00   35.8    0.0
+ FORTLEZA-HART15M    67/   69    81.2       0.92      1.84  1089.8        0.00   75.3    0.0
+ FORTLEZA-HOBART26   14/   14   135.4       0.86      1.86  2829.1        0.00  141.5    0.0
+ FORTLEZA-ISHIOKA     9/    9   146.9       0.98      1.50  1107.9        0.00  114.9    0.0
+ FORTLEZA-KASHIM11    4/    4    43.4       0.51      0.50  1137.9        0.00    0.0    0.0
+ FORTLEZA-NYALES20   53/   53    49.0       0.91      1.50   304.6        0.00   41.0    0.0
+ FORTLEZA-OHIGGINS   44/   46    67.4       0.90      1.41   838.6        0.00   56.8    0.0
+ FORTLEZA-ONSALA60   62/   62    60.3       0.94      1.61   369.2        0.00   52.6    0.0
+ FORTLEZA-SEJONG     13/   13    95.7       0.96      1.09  1398.9        0.00   48.2    0.0
+ FORTLEZA-SVETLOE    52/   52    82.7       0.96      2.21   556.0        0.00   78.2    0.0
+ FORTLEZA-WETTZELL   60/   60    56.6       0.93      1.69   299.9        0.00   50.4    0.0
+ HART15M -ISHIOKA    47/   48    52.2       0.94      1.68   596.6        0.00   46.9    0.0
+ HART15M -KASHIM11   30/   30    37.4       0.91      0.95   718.2        0.00   20.7    0.0
+ HART15M -KATH12M    57/   58    55.7       0.90      1.47   784.9        0.00   49.9    0.0
+ HART15M -NYALES20   87/   88    77.6       0.96      2.24   443.9        0.00   72.3    0.0
+ HART15M -OHIGGINS   57/   59    61.1       0.88      1.75   752.8        0.00   59.9    0.0
+ HART15M -ONSALA60   81/   89    46.4       0.94      1.63   226.8        0.00   41.5    0.0
+ HART15M -SEJONG     42/   43    51.4       0.95      1.34   698.0        0.00   41.9    0.0
+ HART15M -SVETLOE    89/   93    71.5       0.96      2.37   424.4        0.00   69.2    0.0
+ HART15M -VERAMZSW   18/   32    49.4       0.84      1.08  1498.4        0.00   38.5    0.0
+ HART15M -WETTZELL   96/   97    49.2       0.94      2.06   521.3        0.00   47.9    0.0
+ HOBART26-HART15M    53/   53    53.2       0.86      1.73   379.5        0.00   53.8    0.0
+ HOBART26-ISHIOKA    87/   88    55.8       0.93      1.44   388.6        0.00   49.2    0.0
+ HOBART26-KASHIM11   57/   59    90.5       0.96      1.49   466.1        0.00   76.4    0.0
+ HOBART26-KATH12M    93/   94    62.6       0.92      1.73   500.2        0.00   59.6    0.0
+ HOBART26-NYALES20   27/   27    78.7       0.93      1.85   895.3        0.00   73.1    0.0
+ HOBART26-ONSALA60   12/   12    57.4       0.92      1.08  2012.1        0.00   43.1    0.0
+ HOBART26-SEJONG     60/   61    71.2       0.95      1.61   536.9        0.00   62.6    0.0
+ HOBART26-SVETLOE    23/   23    91.1       0.96      2.09  1036.8        0.00   81.0    0.0
+ HOBART26-VERAMZSW   32/   49   129.5       0.96      2.73  2367.0        0.00  120.5    0.0
+ HOBART26-WETTZELL   12/   12   150.4       0.98      2.15  2155.6        0.00  139.1    0.0
+ ISHIOKA -KASHIM11  161/  166    25.0       0.93      1.16   215.8        0.00   21.6    0.0
+ ISHIOKA -KATH12M   107/  108    27.4       0.91      0.96   257.9        0.00   17.8    0.0
+ ISHIOKA -NYALES20  104/  107    51.9       0.97      2.18   232.4        0.00   49.5    0.0
+ ISHIOKA -ONSALA60   73/   74    39.9       0.96      1.33   517.2        0.00   34.0    0.0
+ ISHIOKA -SEJONG    180/  184    21.5       0.92      1.03   204.8        0.00   18.3    0.0
+ ISHIOKA -SVETLOE    90/   93    32.4       0.94      1.50   375.4        0.00   30.7    0.0
+ ISHIOKA -VERAMZSW  111/  168    92.7       0.95      3.69   851.4        0.00   93.3    0.0
+ ISHIOKA -WETTZELL   86/   89    36.7       0.94      1.55   609.5        0.00   33.1    0.0
+ KASHIM11-KATH12M    66/   67    33.0       0.92      0.86   436.3        0.00    0.0    0.0
+ KASHIM11-NYALES20   57/   58    64.8       0.98      1.88   306.4        0.00   58.1    0.0
+ KASHIM11-ONSALA60   50/   51    56.9       0.98      1.44   521.4        0.00   46.1    0.0
+ KASHIM11-SEJONG    112/  118    31.6       0.95      1.22   309.5        0.00   26.1    0.0
+ KASHIM11-SVETLOE    52/   53    36.7       0.95      1.30   369.4        0.00   30.4    0.0
+ KASHIM11-VERAMZSW   61/  106    96.1       0.96      3.26   962.6        0.00   93.9    0.0
+ KASHIM11-WETTZELL   50/   51    55.4       0.97      1.67   522.7        0.00   45.3    0.0
+ KATH12M -NYALES20   45/   45    34.2       0.92      1.03   545.1        0.00   22.9    0.0
+ KATH12M -OHIGGINS   13/   14    91.8       0.89      2.14   689.9        0.00   83.3    0.0
+ KATH12M -ONSALA60   32/   33    32.6       0.91      0.92   838.3        0.00   16.1    0.0
+ KATH12M -SEJONG     83/   85    37.9       0.95      1.08   465.2        0.00   24.0    0.0
+ KATH12M -SVETLOE    36/   38    57.6       0.97      1.65   554.4        0.00   50.2    0.0
+ KATH12M -VERAMZSW   52/   74   103.2       0.95      2.16  1342.1        0.00   95.1    0.0
+ KATH12M -WETTZELL   35/   35    55.4       0.96      1.39   974.9        0.00   44.8    0.0
+ NYALES20-OHIGGINS   23/   26    21.6       0.77      0.72   385.9        0.00    0.0    0.0
+ NYALES20-ONSALA60  132/  132    50.7       0.96      2.60   236.8        0.00   50.9    0.0
+ NYALES20-SVETLOE   148/  148    51.5       0.96      2.72   248.1        0.00   52.2    0.0
+ NYALES20-VERAMZSW   52/   76   117.6       0.97      2.79   686.4        0.00  112.5    0.0
+ NYALES20-WETTZELL  132/  133    47.7       0.96      2.58   249.9        0.00   48.2    0.0
+ OHIGGINS-ONSALA60   26/   29    43.9       0.91      1.02   588.1        0.00   27.4    0.0
+ OHIGGINS-SVETLOE    17/   19    44.0       0.91      0.98   655.0        0.00   23.9    0.0
+ OHIGGINS-WETTZELL   28/   29    45.1       0.90      1.20   375.7        0.00   36.1    0.0
+ ONSALA60-SVETLOE   135/  137    31.5       0.94      1.74   248.7        0.00   31.6    0.0
+ ONSALA60-VERAMZSW   33/   57    91.1       0.96      2.02   890.7        0.00   81.8    0.0
+ ONSALA60-WETTZELL  129/  134    30.8       0.94      1.76   228.7        0.00   31.1    0.0
+ SEJONG  -NYALES20   77/   80    48.4       0.96      1.85   447.8        0.00   44.7    0.0
+ SEJONG  -ONSALA60   60/   66    27.1       0.92      0.94   564.1        0.00   16.3    0.0
+ SEJONG  -SVETLOE    75/   78    37.3       0.94      1.62   504.4        0.00   34.6    0.0
+ SEJONG  -VERAMZSW   76/  139   106.3       0.96      3.35   567.2        0.00  105.7    0.0
+ SEJONG  -WETTZELL   64/   68    41.0       0.95      1.45   609.8        0.00   35.9    0.0
+ SVETLOE -VERAMZSW   46/   68   108.3       0.96      3.50  1106.8        0.00  106.8    0.0
+ SVETLOE -WETTZELL  148/  152    37.4       0.95      2.19   262.0        0.00   38.2    0.0
+ VERAMZSW-WETTZELL   36/   60   109.8       0.96      2.65  1126.0        0.00  104.3    0.0
+
+
+ Not included:                                                                          
+
+ AGGO    -BADARY      0/    1    deselected
+ AGGO    -ISHIOKA     0/    0    deselected
+ AGGO    -KASHIM11    0/    0    deselected
+ AGGO    -VERAMZSW    0/    0    deselected
+ EFLSBERG-HOBART26    0/    6    deselected
+ FORTLEZA-KATH12M     0/    3    deselected
+ FORTLEZA-VERAMZSW    0/    5    deselected
+ HOBART26-OHIGGINS    0/   21    deselected
+ ISHIOKA -OHIGGINS    0/    3    deselected
+ KASHIM11-OHIGGINS    0/    1    deselected
+ OHIGGINS-VERAMZSW    0/    2    deselected
+ SEJONG  -OHIGGINS    0/    1    deselected
+
+
+ Source Statistics 
+     Source           # W.Obs   W.RMS Del   N.R.D.   N.R.D. W.RMS Rate   N.R.R. 
+                                   ps     standard  ( 15ps)   fs/s  
+ 
+     1803+784 A     228/  257    34.7        0.90     1.70    62.8        0.00
+     1928+738 B     151/  174    43.3        1.19     2.36   370.6        0.00
+     VR422201 C      28/   28    34.4        0.85     1.63   131.4        0.00
+     2029+121 D     102/  107    48.0        1.02     1.49   422.7        0.00
+     2134+00  E     171/  193    44.9        1.06     2.01   393.9        0.00
+     2136+141 F     136/  138    45.1        1.04     2.17   265.7        0.00
+     2131-021 G      14/   15    34.6        0.79     1.41   175.4        0.00
+     1749+096 H     161/  170    30.7        0.83     1.98   377.4        0.00
+     1546+027 I       9/    9    51.1        0.99     1.84    96.5        0.00
+     1548+056 J      71/   77    40.2        0.85     1.64   157.4        0.00
+     1743+173 K      47/   47    47.3        0.86     1.23   441.9        0.00
+     1600+43A L       0/    1     0.0        0.00     0.00     0.0        0.00
+     1657-261 M       2/    2    64.3        0.42     0.97  2459.8        0.00
+     1741-038 N      44/   45    41.9        1.05     2.92    80.9        0.00
+     1611+343 O     154/  172    34.7        0.98     2.30   134.0        0.00
+     2145+067 P      91/   96    43.8        0.99     1.98   269.7        0.00
+     4C39.25  Q     158/  160    38.0        1.06     2.73   285.4        0.00
+     CTA102   R     325/  340    39.0        0.90     1.67   403.4        0.00
+     2227-088 S      53/   58    53.2        1.00     1.80  1303.4        0.00
+     CTA26    T       9/    9    40.2        0.84     1.69    96.1        0.00
+     NRAO530  U      64/   70    41.1        1.02     1.66   650.4        0.00
+     OJ287    V     203/  205    34.3        0.89     2.39   306.1        0.00
+     NRAO150  W      62/   67    35.3        1.10     2.44    97.1        0.00
+     3C84     X      35/   45    46.0        1.26     3.93   246.4        0.00
+     2234+282 Y     127/  139    29.4        0.73     1.47   343.1        0.00
+     3C120    Z      65/   67    41.5        0.90     1.68   624.4        0.00
+     3C454.3  A      88/   98    28.8        0.91     2.80   162.1        0.00
+     3C273B   B      40/   43    43.7        1.32     3.30   156.6        0.00
+     3C279    C     218/  236    32.3        0.82     1.79   310.5        0.00
+     3C418    D     186/  200    41.1        0.98     1.92   217.0        0.00
+     3C345    E      62/   75    51.1        1.21     2.23   921.1        0.00
+     3C395    F      67/   70    42.5        0.89     1.66   209.1        0.00
+     1510-089 G     121/  141    42.2        1.01     1.68   134.1        0.00
+     0319+121 H     166/  177    48.7        1.01     1.49   367.3        0.00
+     0454-234 I      50/   60    47.5        1.01     1.74   765.2        0.00
+     1502+106 J     272/  290    28.3        0.69     1.65   432.6        0.00
+     0454-463 K      14/   15   101.3        1.02     1.60  1084.6        0.00
+     0458-020 L     170/  172    37.6        0.87     1.80   328.6        0.00
+     0552+398 M     120/  123    34.0        0.86     2.02    96.5        0.00
+     0454-810 N      25/   28    50.1        0.71     1.29   230.9        0.00
+     0308-611 O      26/   30    68.3        0.86     1.56   924.5        0.00
+     0059+581 P     218/  233    34.8        0.88     1.98   152.2        0.00
+     0106+013 Q      83/   91    31.2        0.75     1.27   567.3        0.00
+     0300+470 R     213/  224    27.8        0.73     1.58   258.2        0.00
+     0119+115 S      53/   65    43.9        1.07     1.71   574.4        0.00
+     0202+149 T     100/  108    61.6        1.17     1.94   892.5        0.00
+     0235+164 U      76/   78    65.6        1.11     1.51   339.3        0.00
+     0212+735 V     322/  365    38.0        1.02     2.14    83.4        0.00
+     0234+285 W     239/  262    31.3        0.83     1.77   270.2        0.00
+     0605-085 X      53/   59    39.4        1.01     1.79   511.4        0.00
+     1057-797 Y      92/  101    56.9        0.78     1.70   217.6        0.00
+     1156+295 Z     107/  126    41.5        0.96     1.70   148.4        0.00
+     0637-752 A      28/   31    76.1        0.89     1.32   610.4        0.00
+     1252+119 B      56/   61    50.8        1.00     1.52   341.0        0.00
+     1354+195 C      42/   44    48.9        1.08     1.85   155.9        0.00
+     1424-418 D      58/   70    42.9        0.90     1.96  1614.0        0.00
+     1334-127 E      43/   51    42.7        1.06     1.71   931.0        0.00
+     1055+018 F     270/  279    24.7        0.66     1.44   615.3        0.00
+     0642+449 G      47/   47    19.9        0.52     0.85   586.1        0.00
+     0723-008 H     159/  206    58.2        1.28     2.25   235.1        0.00
+     0917+624 I     181/  193    36.7        0.92     1.57    82.9        0.00
+     0727-115 J     134/  148    37.3        0.99     2.81   202.9        0.00
+     0743-006 K      15/   20    30.1        0.78     1.32   139.9        0.00
+     0906+015 L      56/   57    39.0        0.75     1.16   108.6        0.00
+     0748+126 M     121/  131    39.1        0.88     1.57   191.3        0.00
+     0834-201 N       1/    1   113.6        1.56     2.58   379.6        0.00
+
+
+ Station Statistics 
+     Station          # W.Obs   W.RMS Del   N.R.D.   N.R.D. W.RMS Rate   N.R.R. 
+                                   ps     standard  ( 15ps)   fs/s   
+ 
+     AGGO           387/  400    52.3        0.91     1.23   417.0        0.00
+     BADARY        1125/ 1206    30.9        0.93     1.93   341.0        0.00
+     EFLSBERG       974/ 1033    33.3        0.93     2.02   249.0        0.00
+     FORTLEZA       538/  551    67.6        0.93     1.86   640.3        0.00
+     HART15M        927/  980    55.8        0.93     1.89   472.8        0.00
+     HOBART26       568/  617    66.7        0.93     1.82   647.4        0.00
+     ISHIOKA       1280/ 1371    29.9        0.93     1.72   334.2        0.00
+     KASHIM11       832/  900    36.0        0.95     1.58   344.9        0.00
+     KATH12M        738/  775    38.0        0.93     1.36   517.8        0.00
+     NYALES20      1189/ 1226    49.3        0.95     2.34   242.5        0.00
+     OHIGGINS       291/  343    46.9        0.88     1.36   588.1        0.00
+     ONSALA60      1059/ 1114    35.1        0.94     1.68   304.5        0.00
+     SEJONG        1025/ 1126    31.6        0.94     1.59   467.5        0.00
+     SVETLOE       1153/ 1204    37.3        0.95     2.04   271.1        0.00
+     VERAMZSW       612/  998    97.2        0.95     3.24   923.2        0.00
+     WETTZELL      1106/ 1156    39.5        0.94     1.96   275.2        0.00
+
+
+                       *** Flyby Status ***
+
+                    directory: /500/oper/solve_save_files
+
+Station   Source    Nutation  Nutation  Earth     Earth     Station   Pressure  EOP Intp. EOP Intp. High Freq Axis      
+Positions Positions Model     Time      Rotation  Rotation  Velocity  Loading   Smoothing Smoothing EOP       Offset    
+                              Series    Series    Interpol. Model               CALC      Mod File  Model     Mod File  
+--------- --------- --------- --------- --------- --------- --------- --------- --------- --------- --------- ---------
+glo.sit   glo.src   NONE      NONE      NONE      NONE      glo.vel   NONE      NO_ZONAL  N/A       NONE      glo.axis  
+
+Site Plate Map: /500/oper/solve_save_files/sitpl.dat           
+
+ Parameter adjustments for run 20029-1425 User=DG
+ Reference epoch for polynomial models: 19/05/22 00:00
+                                        Parameter               Adjustment              a-sigma              m-sigma
+      WETTZELL CLCK 19/05/21 17:31 Reference
+Station positions are for epoch: 2019.05.22-03:19:54
+    1. AGGO     7641 SOAM  X Comp       2765116623.80 mm        -70.293 mm             22.323 mm             22.308 mm
+    2. AGGO     7641 SOAM  Y Comp      -4449233713.41 mm         78.155 mm             25.261 mm             25.244 mm
+    3. AGGO     7641 SOAM  Z Comp      -3626420509.05 mm         50.330 mm             23.340 mm             23.325 mm
+       AGGO     7641       U Comp             -113.68 mm       -113.677 mm             39.346 mm             39.319 mm
+       AGGO     7641       E Comp              -18.45 mm        -18.448 mm              8.624 mm              8.619 mm
+       AGGO     7641       N Comp              -17.88 mm        -17.878 mm              7.664 mm              7.659 mm
+    4. AGGO     CL 0 19/05/21 17:30                            2468.870 ns              0.172 ns              0.172 ns        
+    5. AGGO     CL 1 19/05/21 17:30                               1.564 D-14            0.149 D-14            0.149 D-14      
+   31. AGGO     AT 0 19/05/21 17:30                             881.951 ps             50.046 ps             50.012 ps
+       AGGO     Atm  2019.05.22-05:42:32.053  Avg:   504.727 ps   Rms:      18.204 ps   Tot_Rms:      18.191 ps
+   57. AGGO     NG 19/05/21 17:30                                 1.364 mm              2.059 mm              2.057 mm        
+   58. AGGO     EG 19/05/21 17:30                                -2.121 mm              1.775 mm              1.773 mm        
+   59. AGGO     NG 19/05/22 17:28                                -2.531 mm              1.315 mm              1.314 mm        
+   60. AGGO     EG 19/05/22 17:28                                -7.513 mm              2.442 mm              2.440 mm        
+
+Station positions are for epoch: 2019.05.22-05:24:47
+   61. BADARY   7382 EURA  X Comp       -838201244.57 mm          8.549 mm              3.829 mm              3.826 mm
+   62. BADARY   7382 EURA  Y Comp       3865751554.74 mm         -4.877 mm              4.576 mm              4.573 mm
+   63. BADARY   7382 EURA  Z Comp       4987670863.49 mm         -8.966 mm              7.016 mm              7.011 mm
+       BADARY   7382       U Comp              -11.11 mm        -11.113 mm              7.856 mm              7.851 mm
+       BADARY   7382       E Comp               -7.32 mm         -7.321 mm              3.852 mm              3.849 mm
+       BADARY   7382       N Comp               -0.38 mm         -0.381 mm              2.877 mm              2.875 mm
+   64. BADARY   CL 0 19/05/21 17:31                          220191.789 ns              0.057 ns              0.056 ns        
+   65. BADARY   CL 1 19/05/21 17:31                              -0.872 D-14            0.084 D-14            0.083 D-14      
+   91. BADARY   AT 0 19/05/21 17:30                             789.726 ps             10.488 ps             10.481 ps
+       BADARY   Atm  2019.05.22-05:33:07.119  Avg:   371.386 ps   Rms:      51.493 ps   Tot_Rms:      51.459 ps
+  117. BADARY   NG 19/05/21 17:30                                 0.576 mm              0.475 mm              0.475 mm        
+  118. BADARY   EG 19/05/21 17:30                                 0.397 mm              0.510 mm              0.510 mm        
+  119. BADARY   NG 19/05/22 17:28                                 0.297 mm              0.430 mm              0.430 mm        
+  120. BADARY   EG 19/05/22 17:28                                -0.009 mm              0.315 mm              0.315 mm        
+
+Station positions are for epoch: 2019.05.22-04:53:57
+  121. EFLSBERG 7203 EURA  X Comp       4033947151.30 mm         -2.062 mm              6.136 mm              6.131 mm
+  122. EFLSBERG 7203 EURA  Y Comp        486990895.32 mm          7.831 mm              2.371 mm              2.369 mm
+  123. EFLSBERG 7203 EURA  Z Comp       4900431065.00 mm          9.365 mm              6.775 mm              6.770 mm
+       EFLSBERG 7203       U Comp                6.52 mm          6.524 mm              8.954 mm              8.948 mm
+       EFLSBERG 7203       E Comp                8.02 mm          8.022 mm              2.130 mm              2.129 mm
+       EFLSBERG 7203       N Comp                6.81 mm          6.810 mm              2.109 mm              2.107 mm
+  124. EFLSBERG CL 0 19/05/21 17:31                          -15658.970 ns              0.056 ns              0.056 ns        
+  125. EFLSBERG CL 1 19/05/21 17:31                              22.831 D-14            0.083 D-14            0.083 D-14      
+  151. EFLSBERG AT 0 19/05/21 17:30                             516.905 ps             12.050 ps             12.042 ps
+       EFLSBERG Atm  2019.05.22-04:13:45.267  Avg:   275.808 ps   Rms:      84.175 ps   Tot_Rms:      84.118 ps
+  177. EFLSBERG NG 19/05/21 17:30                                 0.835 mm              0.440 mm              0.440 mm        
+  178. EFLSBERG EG 19/05/21 17:30                                 1.153 mm              0.460 mm              0.459 mm        
+  179. EFLSBERG NG 19/05/22 17:28                                 4.400 mm              0.819 mm              0.818 mm        
+  180. EFLSBERG EG 19/05/22 17:28                                 0.706 mm              0.653 mm              0.652 mm        
+
+Station positions are for epoch: 2019.05.22-05:15:54
+  181. FORTLEZA 7297 SOAM  X Comp       4985369991.45 mm          0.297 mm             12.026 mm             12.017 mm
+  182. FORTLEZA 7297 SOAM  Y Comp      -3955020429.72 mm        -12.715 mm              7.190 mm              7.185 mm
+  183. FORTLEZA 7297 SOAM  Z Comp       -428472031.13 mm        -31.077 mm              7.185 mm              7.180 mm
+       FORTLEZA 7297       U Comp               10.22 mm         10.218 mm             12.563 mm             12.555 mm
+       FORTLEZA 7297       E Comp               -9.78 mm         -9.777 mm              5.807 mm              5.803 mm
+       FORTLEZA 7297       N Comp              -30.46 mm        -30.455 mm              7.508 mm              7.503 mm
+  184. FORTLEZA CL 0 19/05/21 17:30                            2761.088 ns              0.071 ns              0.071 ns        
+  185. FORTLEZA CL 1 19/05/21 17:30                              22.455 D-14            0.144 D-14            0.144 D-14      
+  211. FORTLEZA AT 0 19/05/21 17:30                            2385.824 ps             13.217 ps             13.208 ps
+       FORTLEZA Atm  2019.05.22-05:58:51.740  Avg:  1166.158 ps   Rms:      79.495 ps   Tot_Rms:      79.442 ps
+  237. FORTLEZA NG 19/05/21 17:30                                 2.665 mm              0.622 mm              0.622 mm        
+  238. FORTLEZA EG 19/05/21 17:30                                -1.552 mm              0.799 mm              0.799 mm        
+  239. FORTLEZA NG 19/05/22 17:28                                -3.231 mm              0.628 mm              0.628 mm        
+  240. FORTLEZA EG 19/05/22 17:28                                -2.832 mm              1.444 mm              1.443 mm        
+
+Station positions are for epoch: 2019.05.22-05:36:25
+  241. HART15M  7378 AFRC  X Comp       5085490798.94 mm          2.169 mm              7.918 mm              7.913 mm
+  242. HART15M  7378 AFRC  Y Comp       2668161621.91 mm         12.424 mm              4.345 mm              4.342 mm
+  243. HART15M  7378 AFRC  Z Comp      -2768692508.46 mm          3.672 mm              6.432 mm              6.428 mm
+       HART15M  7378       U Comp                5.32 mm          5.318 mm              8.453 mm              8.448 mm
+       HART15M  7378       E Comp                9.99 mm          9.994 mm              2.337 mm              2.335 mm
+       HART15M  7378       N Comp                6.66 mm          6.663 mm              6.785 mm              6.780 mm
+  244. HART15M  CL 0 19/05/21 17:31                            5745.893 ns              0.058 ns              0.057 ns        
+  245. HART15M  CL 1 19/05/21 17:31                               6.655 D-14            0.143 D-14            0.143 D-14      
+  271. HART15M  AT 0 19/05/21 17:30                             612.011 ps              9.949 ps              9.942 ps
+       HART15M  Atm  2019.05.22-05:31:38.012  Avg:   309.211 ps   Rms:      22.217 ps   Tot_Rms:      22.202 ps
+  297. HART15M  NG 19/05/21 17:30                                -0.145 mm              0.587 mm              0.586 mm        
+  298. HART15M  EG 19/05/21 17:30                                -1.388 mm              0.294 mm              0.294 mm        
+  299. HART15M  NG 19/05/22 17:28                                -0.397 mm              0.560 mm              0.559 mm        
+  300. HART15M  EG 19/05/22 17:28                                 1.214 mm              0.334 mm              0.334 mm        
+
+Station positions are for epoch: 2019.05.22-06:51:30
+  301. HOBART26 7242 AUST  X Comp      -3950237595.03 mm         11.878 mm             12.719 mm             12.710 mm
+  302. HOBART26 7242 AUST  Y Comp       2522347744.30 mm         23.821 mm              9.572 mm              9.565 mm
+  303. HOBART26 7242 AUST  Z Comp      -4311561623.64 mm         -3.480 mm             12.971 mm             12.962 mm
+       HOBART26 7242       U Comp                4.43 mm          4.426 mm             19.193 mm             19.181 mm
+       HOBART26 7242       E Comp              -26.47 mm        -26.470 mm              4.780 mm              4.776 mm
+       HOBART26 7242       N Comp               -0.64 mm         -0.645 mm              5.513 mm              5.509 mm
+  304. HOBART26 CL 0 19/05/21 17:31                           10687.631 ns              0.082 ns              0.082 ns        
+  305. HOBART26 CL 1 19/05/21 17:31                              15.870 D-14            0.148 D-14            0.148 D-14      
+  331. HOBART26 AT 0 19/05/21 17:30                             551.356 ps             17.826 ps             17.814 ps
+       HOBART26 Atm  2019.05.22-06:09:58.398  Avg:   261.856 ps   Rms:      19.453 ps   Tot_Rms:      19.440 ps
+  357. HOBART26 NG 19/05/21 17:30                                -1.023 mm              0.983 mm              0.982 mm        
+  358. HOBART26 EG 19/05/21 17:30                                 1.286 mm              0.604 mm              0.604 mm        
+  359. HOBART26 NG 19/05/22 17:28                                -0.425 mm              0.959 mm              0.958 mm        
+  360. HOBART26 EG 19/05/22 17:28                                -1.709 mm              0.638 mm              0.637 mm        
+
+Station positions are for epoch: 2019.05.22-06:01:26
+  361. ISHIOKA  7369 NOAM  X Comp      -3959636181.02 mm          1.169 mm              4.140 mm              4.137 mm
+  362. ISHIOKA  7369 NOAM  Y Comp       3296825476.80 mm         15.956 mm              3.357 mm              3.355 mm
+  363. ISHIOKA  7369 NOAM  Z Comp       3747042593.26 mm          1.577 mm              5.606 mm              5.603 mm
+       ISHIOKA  7369       U Comp                8.44 mm          8.445 mm              4.839 mm              4.835 mm
+       ISHIOKA  7369       E Comp              -13.01 mm        -13.010 mm              3.580 mm              3.577 mm
+       ISHIOKA  7369       N Comp               -4.23 mm         -4.228 mm              4.860 mm              4.857 mm
+  364. ISHIOKA  CL 0 19/05/21 17:31                            2678.637 ns              0.053 ns              0.052 ns        
+  365. ISHIOKA  CL 1 19/05/21 17:31                               3.369 D-14            0.085 D-14            0.085 D-14      
+  391. ISHIOKA  AT 0 19/05/21 17:30                             694.783 ps              8.762 ps              8.756 ps
+       ISHIOKA  Atm  2019.05.22-05:23:33.136  Avg:   345.373 ps   Rms:      23.322 ps   Tot_Rms:      23.306 ps
+  417. ISHIOKA  NG 19/05/21 17:30                                -0.270 mm              0.216 mm              0.216 mm        
+  418. ISHIOKA  EG 19/05/21 17:30                                -0.630 mm              0.237 mm              0.237 mm        
+  419. ISHIOKA  NG 19/05/22 17:28                                -0.678 mm              0.212 mm              0.212 mm        
+  420. ISHIOKA  EG 19/05/22 17:28                                 1.162 mm              0.184 mm              0.184 mm        
+
+Station positions are for epoch: 2019.05.22-08:44:14
+  421. KASHIM11 7334 NOAM  X Comp      -3997506637.95 mm       -560.258 mm              4.843 mm              4.840 mm
+  422. KASHIM11 7334 NOAM  Y Comp       3276877679.69 mm       -225.780 mm              4.154 mm              4.151 mm
+  423. KASHIM11 7334 NOAM  Z Comp       3724240321.89 mm       -123.788 mm              6.239 mm              6.235 mm
+       KASHIM11 7334       U Comp              162.19 mm        162.187 mm              6.373 mm              6.369 mm
+       KASHIM11 7334       E Comp              529.79 mm        529.789 mm              3.731 mm              3.728 mm
+       KASHIM11 7334       N Comp             -270.57 mm       -270.568 mm              5.009 mm              5.006 mm
+  424. KASHIM11 CL 0 19/05/22 00:25                           -1978.774 ns              0.092 ns              0.092 ns        
+  425. KASHIM11 CL 1 19/05/22 00:25                             -13.125 D-14            0.231 D-14            0.231 D-14      
+  451. KASHIM11 AT 0 19/05/21 17:30                             571.853 ps             11.089 ps             11.081 ps
+       KASHIM11 Atm  2019.05.22-02:18:00.945  Avg:   287.994 ps   Rms:      35.308 ps   Tot_Rms:      35.284 ps
+  477. KASHIM11 NG 19/05/21 17:30                                 2.468 mm              0.837 mm              0.837 mm        
+  478. KASHIM11 EG 19/05/21 17:30                                -1.389 mm              0.495 mm              0.495 mm        
+  479. KASHIM11 NG 19/05/22 17:28                                -1.038 mm              0.374 mm              0.373 mm        
+  480. KASHIM11 EG 19/05/22 17:28                                 0.138 mm              0.283 mm              0.282 mm        
+
+Station positions are for epoch: 2019.05.22-06:05:54
+  481. KATH12M  7375 AUST  X Comp      -4147354867.62 mm         12.893 mm              5.933 mm              5.929 mm
+  482. KATH12M  7375 AUST  Y Comp       4581542311.29 mm         14.386 mm              5.937 mm              5.933 mm
+  483. KATH12M  7375 AUST  Z Comp      -1573302864.29 mm         -0.920 mm              5.849 mm              5.845 mm
+       KATH12M  7375       U Comp                2.18 mm          2.178 mm              7.757 mm              7.751 mm
+       KATH12M  7375       E Comp              -19.21 mm        -19.213 mm              3.904 mm              3.901 mm
+       KATH12M  7375       N Comp               -0.39 mm         -0.391 mm              5.408 mm              5.404 mm
+  484. KATH12M  CL 0 19/05/21 17:31                            6996.308 ns              0.056 ns              0.056 ns        
+  485. KATH12M  CL 1 19/05/21 17:31                             -50.601 D-14            0.143 D-14            0.143 D-14      
+  511. KATH12M  AT 0 19/05/21 17:30                            1089.135 ps             10.175 ps             10.168 ps
+       KATH12M  Atm  2019.05.22-05:11:06.158  Avg:   533.016 ps   Rms:      38.355 ps   Tot_Rms:      38.329 ps
+  537. KATH12M  NG 19/05/21 17:30                                -0.064 mm              0.246 mm              0.246 mm        
+  538. KATH12M  EG 19/05/21 17:30                                -0.761 mm              0.370 mm              0.370 mm        
+  539. KATH12M  NG 19/05/22 17:28                                -1.547 mm              0.489 mm              0.489 mm        
+  540. KATH12M  EG 19/05/22 17:28                                -0.236 mm              0.340 mm              0.340 mm        
+
+Station positions are for epoch: 2019.05.22-04:50:07
+  541. NYALES20 7331 EURA  X Comp       1202462427.36 mm          4.607 mm              3.880 mm              3.877 mm
+  542. NYALES20 7331 EURA  Y Comp        252734568.53 mm          7.138 mm              2.118 mm              2.117 mm
+  543. NYALES20 7331 EURA  Z Comp       6237766281.42 mm          2.247 mm              6.059 mm              6.055 mm
+       NYALES20 7331       U Comp                3.35 mm          3.353 mm              6.537 mm              6.532 mm
+       NYALES20 7331       E Comp                6.04 mm          6.038 mm              1.857 mm              1.855 mm
+       NYALES20 7331       N Comp               -5.43 mm         -5.434 mm              3.175 mm              3.173 mm
+  544. NYALES20 CL 0 19/05/21 17:31                         -175403.608 ns              0.051 ns              0.051 ns        
+  545. NYALES20 CL 1 19/05/21 17:31                              85.814 D-14            0.085 D-14            0.085 D-14      
+  571. NYALES20 AT 0 19/05/21 17:30                             271.671 ps              8.512 ps              8.506 ps
+       NYALES20 Atm  2019.05.22-05:09:38.270  Avg:   131.797 ps   Rms:      14.927 ps   Tot_Rms:      14.917 ps
+  597. NYALES20 NG 19/05/21 17:30                                 0.004 mm              0.111 mm              0.111 mm        
+  598. NYALES20 EG 19/05/21 17:30                                -0.543 mm              0.118 mm              0.118 mm        
+  599. NYALES20 NG 19/05/22 17:28                                -0.613 mm              0.173 mm              0.173 mm        
+  600. NYALES20 EG 19/05/22 17:28                                 0.380 mm              0.107 mm              0.107 mm        
+
+Station positions are for epoch: 2019.05.22-02:54:19
+  601. OHIGGINS 7245 ANTA  X Comp       1525833427.95 mm         -3.307 mm             17.653 mm             17.641 mm
+  602. OHIGGINS 7245 ANTA  Y Comp      -2432463655.27 mm         49.039 mm             18.356 mm             18.344 mm
+  603. OHIGGINS 7245 ANTA  Z Comp      -5676174428.24 mm         61.762 mm             30.342 mm             30.321 mm
+       OHIGGINS 7245       U Comp              -74.63 mm        -74.628 mm             37.324 mm             37.299 mm
+       OHIGGINS 7245       E Comp               23.26 mm         23.257 mm              8.871 mm              8.865 mm
+       OHIGGINS 7245       N Comp              -10.96 mm        -10.959 mm              9.869 mm              9.862 mm
+  604. OHIGGINS CL 0 19/05/21 17:30                            1746.658 ns              0.131 ns              0.131 ns        
+  605. OHIGGINS CL 1 19/05/21 17:30                            -208.957 D-14            0.153 D-14            0.152 D-14      
+  631. OHIGGINS AT 0 19/05/21 17:30                             113.659 ps             23.621 ps             23.605 ps
+       OHIGGINS Atm  2019.05.22-05:25:07.908  Avg:    52.509 ps   Rms:      17.533 ps   Tot_Rms:      17.521 ps
+  657. OHIGGINS NG 19/05/21 17:30                                 1.253 mm              0.660 mm              0.660 mm        
+  658. OHIGGINS EG 19/05/21 17:30                                 1.259 mm              0.657 mm              0.657 mm        
+  659. OHIGGINS NG 19/05/22 17:28                                 0.235 mm              0.841 mm              0.841 mm        
+  660. OHIGGINS EG 19/05/22 17:28                                -0.676 mm              0.609 mm              0.608 mm        
+
+Station positions are for epoch: 2019.05.22-05:04:37
+  661. ONSALA60 7213 EURA  X Comp       3370605707.73 mm          3.828 mm              4.712 mm              4.709 mm
+  662. ONSALA60 7213 EURA  Y Comp        711917814.49 mm          5.853 mm              2.048 mm              2.046 mm
+  663. ONSALA60 7213 EURA  Z Comp       5349830985.64 mm          5.472 mm              5.787 mm              5.783 mm
+       ONSALA60 7213       U Comp                7.28 mm          7.279 mm              7.350 mm              7.345 mm
+       ONSALA60 7213       E Comp                4.94 mm          4.936 mm              1.580 mm              1.579 mm
+       ONSALA60 7213       N Comp               -1.23 mm         -1.226 mm              1.837 mm              1.836 mm
+  664. ONSALA60 CL 0 19/05/21 17:31                          -23821.418 ns              0.052 ns              0.052 ns        
+  665. ONSALA60 CL 1 19/05/21 17:31                             -41.591 D-14            0.141 D-14            0.141 D-14      
+  691. ONSALA60 AT 0 19/05/21 17:30                            1093.331 ps              9.750 ps              9.743 ps
+       ONSALA60 Atm  2019.05.22-05:06:39.367  Avg:   564.650 ps   Rms:      38.344 ps   Tot_Rms:      38.318 ps
+  717. ONSALA60 NG 19/05/21 17:30                                -0.413 mm              0.368 mm              0.368 mm        
+  718. ONSALA60 EG 19/05/21 17:30                                -0.268 mm              0.219 mm              0.219 mm        
+  719. ONSALA60 NG 19/05/22 17:28                                 0.293 mm              0.276 mm              0.276 mm        
+  720. ONSALA60 EG 19/05/22 17:28                                -0.762 mm              0.290 mm              0.289 mm        
+
+Station positions are for epoch: 2019.05.22-06:10:58
+  721. SEJONG   7368 EURA  X Comp      -3110080196.98 mm          4.300 mm              4.254 mm              4.251 mm
+  722. SEJONG   7368 EURA  Y Comp       4082066599.40 mm         -0.589 mm              3.859 mm              3.856 mm
+  723. SEJONG   7368 EURA  Z Comp       3775076750.05 mm         -8.940 mm              5.769 mm              5.765 mm
+       SEJONG   7368       U Comp               -7.79 mm         -7.791 mm              5.594 mm              5.591 mm
+       SEJONG   7368       E Comp               -3.06 mm         -3.063 mm              3.837 mm              3.834 mm
+       SEJONG   7368       N Comp               -5.36 mm         -5.355 mm              4.499 mm              4.496 mm
+  724. SEJONG   CL 0 19/05/21 17:31                          -29319.015 ns              0.053 ns              0.053 ns        
+  725. SEJONG   CL 1 19/05/21 17:31                              -9.961 D-14            0.086 D-14            0.086 D-14      
+  751. SEJONG   AT 0 19/05/21 17:30                             445.992 ps              9.110 ps              9.104 ps
+       SEJONG   Atm  2019.05.22-07:03:33.115  Avg:   203.590 ps   Rms:      44.587 ps   Tot_Rms:      44.557 ps
+  777. SEJONG   NG 19/05/21 17:30                                -0.981 mm              0.484 mm              0.483 mm        
+  778. SEJONG   EG 19/05/21 17:30                                 1.293 mm              0.328 mm              0.327 mm        
+  779. SEJONG   NG 19/05/22 17:28                                 0.357 mm              0.267 mm              0.267 mm        
+  780. SEJONG   EG 19/05/22 17:28                                 0.163 mm              0.130 mm              0.130 mm        
+
+Station positions are for epoch: 2019.05.22-04:55:44
+  781. SVETLOE  7380 EURA  X Comp       2730173533.00 mm         -8.668 mm              4.158 mm              4.155 mm
+  782. SVETLOE  7380 EURA  Y Comp       1562442879.84 mm          6.205 mm              2.397 mm              2.395 mm
+  783. SVETLOE  7380 EURA  Z Comp       5529969180.68 mm        -15.409 mm              6.178 mm              6.174 mm
+       SVETLOE  7380       U Comp              -15.60 mm        -15.600 mm              7.355 mm              7.350 mm
+       SVETLOE  7380       E Comp                9.69 mm          9.691 mm              1.862 mm              1.861 mm
+       SVETLOE  7380       N Comp               -3.71 mm         -3.714 mm              1.904 mm              1.903 mm
+  784. SVETLOE  CL 0 19/05/21 17:31                          218769.303 ns              0.053 ns              0.053 ns        
+  785. SVETLOE  CL 1 19/05/21 17:31                              -1.709 D-14            0.083 D-14            0.083 D-14      
+  811. SVETLOE  AT 0 19/05/21 17:30                             952.662 ps              9.410 ps              9.404 ps
+       SVETLOE  Atm  2019.05.22-05:01:43.123  Avg:   489.276 ps   Rms:      29.344 ps   Tot_Rms:      29.324 ps
+  837. SVETLOE  NG 19/05/21 17:30                                -0.204 mm              0.321 mm              0.321 mm        
+  838. SVETLOE  EG 19/05/21 17:30                                 0.483 mm              0.256 mm              0.255 mm        
+  839. SVETLOE  NG 19/05/22 17:28                                -0.956 mm              0.369 mm              0.369 mm        
+  840. SVETLOE  EG 19/05/22 17:28                                -0.148 mm              0.250 mm              0.250 mm        
+
+Station positions are for epoch: 2019.05.22-04:50:18
+  841. VERAMZSW 7362 NOAM  X Comp      -3857245090.79 mm       -964.733 mm              9.876 mm              9.870 mm
+  842. VERAMZSW 7362 NOAM  Y Comp       3108782853.95 mm       -925.172 mm             10.163 mm             10.156 mm
+  843. VERAMZSW 7362 NOAM  Z Comp       4003899088.39 mm       -461.012 mm             12.115 mm             12.107 mm
+       VERAMZSW 7362       U Comp             -158.65 mm       -158.646 mm             16.303 mm             16.292 mm
+       VERAMZSW 7362       E Comp             1325.73 mm       1325.728 mm              5.546 mm              5.543 mm
+       VERAMZSW 7362       N Comp             -465.25 mm       -465.253 mm              7.146 mm              7.142 mm
+  844. VERAMZSW CL 0 19/05/21 17:31                            5203.683 ns              0.080 ns              0.080 ns        
+  845. VERAMZSW CL 1 19/05/21 17:31                              13.159 D-14            0.152 D-14            0.152 D-14      
+  871. VERAMZSW AT 0 19/05/21 17:30                            -241.865 ps             15.741 ps             15.730 ps
+       VERAMZSW Atm  2019.05.22-05:52:06.726  Avg:   213.569 ps   Rms:      29.831 ps   Tot_Rms:      29.811 ps
+  897. VERAMZSW NG 19/05/21 17:30                                -0.189 mm              1.148 mm              1.147 mm        
+  898. VERAMZSW EG 19/05/21 17:30                                -1.154 mm              0.767 mm              0.766 mm        
+  899. VERAMZSW NG 19/05/22 17:28                                -0.267 mm              0.497 mm              0.497 mm        
+  900. VERAMZSW EG 19/05/22 17:28                                 0.197 mm              0.357 mm              0.357 mm        
+
+  901. WETTZELL AT 0 19/05/21 17:30                             848.907 ps              9.143 ps              9.137 ps
+       WETTZELL Atm  2019.05.22-05:40:06.505  Avg:   429.592 ps   Rms:      25.067 ps   Tot_Rms:      25.050 ps
+  927. WETTZELL NG 19/05/21 17:30                                -0.471 mm              0.283 mm              0.283 mm        
+  928. WETTZELL EG 19/05/21 17:30                                -0.943 mm              0.208 mm              0.208 mm        
+  929. WETTZELL NG 19/05/22 17:28                                 1.047 mm              0.375 mm              0.375 mm        
+  930. WETTZELL EG 19/05/22 17:28                                 0.059 mm              0.254 mm              0.254 mm        
+
+  931.D 0202+149 RT. ASC.          02 04 50.41389297     -0.0095      m-asec     0.1126      m-asec     0.1126      m-asec
+                  CORRECTION            -0.0000006
+                SCALED SIGMA             0.0000075
+
+  932.D 0202+149 DEC.              15 14 11.04331789          -0.2821 m-asec          0.1290 m-asec          0.1289 m-asec
+                  CORRECTION            -0.0002821
+                SCALED SIGMA             0.0001289
+
+        0202+149 CORRELATION     0.0017  Reference date: 2000.01.01-12:00:00
+  933.G 0235+164 RT. ASC.          02 38 38.93011038      0.0882      m-asec     0.1509      m-asec     0.1508      m-asec
+                  CORRECTION             0.0000059
+                SCALED SIGMA             0.0000101
+
+  934.G 0235+164 DEC.              16 36 59.27472473           0.1719 m-asec          0.1859 m-asec          0.1858 m-asec
+                  CORRECTION             0.0001719
+                SCALED SIGMA             0.0001858
+
+        0235+164 CORRELATION     0.3513  Reference date: 2000.01.01-12:00:00
+  935.I 0308-611 RT. ASC.          03 09 56.09912968     -0.2261      m-asec     0.4630      m-asec     0.4627      m-asec
+                  CORRECTION            -0.0000151
+                SCALED SIGMA             0.0000308
+
+  936.I 0308-611 DEC.             -60 58 39.05705222          -0.6427 m-asec          0.2781 m-asec          0.2779 m-asec
+                  CORRECTION            -0.0006427
+                SCALED SIGMA             0.0002779
+
+        0308-611 CORRELATION    -0.0409  Reference date: 2000.01.01-12:00:00
+  937.N 3C120    RT. ASC.          04 33 11.09557524      0.6620      m-asec     0.1373      m-asec     0.1372      m-asec
+                  CORRECTION             0.0000441
+                SCALED SIGMA             0.0000091
+
+  938.N 3C120    DEC.              05 21 15.61953087           0.2609 m-asec          0.1071 m-asec          0.1070 m-asec
+                  CORRECTION             0.0002609
+                SCALED SIGMA             0.0001070
+
+        3C120    CORRELATION    -0.0021  Reference date: 2000.01.01-12:00:00
+  939.P 0454-463 RT. ASC.          04 55 50.77266762      2.5833      m-asec     0.4894      m-asec     0.4890      m-asec
+                  CORRECTION             0.0001722
+                SCALED SIGMA             0.0000326
+
+  940.P 0454-463 DEC.             -46 15 58.68139348          -1.6035 m-asec          0.5421 m-asec          0.5417 m-asec
+                  CORRECTION            -0.0016035
+                SCALED SIGMA             0.0005417
+
+        0454-463 CORRELATION     0.0929  Reference date: 2000.01.01-12:00:00
+  941.U 0637-752 RT. ASC.          06 35 46.50817550      4.0199      m-asec     0.9878      m-asec     0.9872      m-asec
+                  CORRECTION             0.0002680
+                SCALED SIGMA             0.0000658
+
+  942.U 0637-752 DEC.             -75 16 16.81559278          -0.0628 m-asec          0.2633 m-asec          0.2631 m-asec
+                  CORRECTION            -0.0000628
+                SCALED SIGMA             0.0002631
+
+        0637-752 CORRELATION     0.1234  Reference date: 2000.01.01-12:00:00
+  943.W 0723-008 RT. ASC.          07 25 50.63990381     -0.1438      m-asec     0.1190      m-asec     0.1189      m-asec
+                  CORRECTION            -0.0000096
+                SCALED SIGMA             0.0000079
+
+  944.W 0723-008 DEC.             -00 54 56.54388909          -0.7191 m-asec          0.0907 m-asec          0.0906 m-asec
+                  CORRECTION            -0.0007191
+                SCALED SIGMA             0.0000906
+
+        0723-008 CORRELATION    -0.5093  Reference date: 2000.01.01-12:00:00
+  945.G 1057-797 RT. ASC.          10 58 43.30985156      0.7899      m-asec     0.7066      m-asec     0.7061      m-asec
+                  CORRECTION             0.0000527
+                SCALED SIGMA             0.0000471
+
+  946.G 1057-797 DEC.             -80 03 54.15962948           0.1705 m-asec          0.1321 m-asec          0.1320 m-asec
+                  CORRECTION             0.0001705
+                SCALED SIGMA             0.0001320
+
+        1057-797 CORRELATION     0.0234  Reference date: 2000.01.01-12:00:00
+  947.H 1156+295 RT. ASC.          11 59 31.83389570     -0.2865      m-asec     0.1287      m-asec     0.1287      m-asec
+                  CORRECTION            -0.0000191
+                SCALED SIGMA             0.0000086
+
+  948.H 1156+295 DEC.              29 14 43.82648743          -0.3426 m-asec          0.1284 m-asec          0.1283 m-asec
+                  CORRECTION            -0.0003426
+                SCALED SIGMA             0.0001283
+
+        1156+295 CORRELATION     0.1822  Reference date: 2000.01.01-12:00:00
+  949.I 3C273B   RT. ASC.          12 29 06.69994078      3.0537      m-asec     0.2402      m-asec     0.2400      m-asec
+                  CORRECTION             0.0002036
+                SCALED SIGMA             0.0000160
+
+  950.I 3C273B   DEC.              02 03 08.60008311           2.0031 m-asec          0.6139 m-asec          0.6135 m-asec
+                  CORRECTION             0.0020031
+                SCALED SIGMA             0.0006135
+
+        3C273B   CORRELATION     0.4468  Reference date: 2000.01.01-12:00:00
+  951.J 1252+119 RT. ASC.          12 54 38.25560449     -0.1667      m-asec     0.2304      m-asec     0.2302      m-asec
+                  CORRECTION            -0.0000111
+                SCALED SIGMA             0.0000153
+
+  952.J 1252+119 DEC.              11 41 05.89515401           0.1140 m-asec          0.1301 m-asec          0.1300 m-asec
+                  CORRECTION             0.0001140
+                SCALED SIGMA             0.0001300
+
+        1252+119 CORRELATION     0.1492  Reference date: 2000.01.01-12:00:00
+  953.L 1334-127 RT. ASC.          13 37 39.78278080     -0.0078      m-asec     0.1683      m-asec     0.1682      m-asec
+                  CORRECTION            -0.0000005
+                SCALED SIGMA             0.0000112
+
+  954.L 1334-127 DEC.             -12 57 24.69293620           0.4563 m-asec          0.1315 m-asec          0.1314 m-asec
+                  CORRECTION             0.0004563
+                SCALED SIGMA             0.0001314
+
+        1334-127 CORRELATION    -0.1539  Reference date: 2000.01.01-12:00:00
+  955.N 1424-418 RT. ASC.          14 27 56.29753890     -0.4091      m-asec     0.3568      m-asec     0.3566      m-asec
+                  CORRECTION            -0.0000273
+                SCALED SIGMA             0.0000238
+
+  956.N 1424-418 DEC.             -42 06 19.43787792          -0.2541 m-asec          0.2598 m-asec          0.2596 m-asec
+                  CORRECTION            -0.0002541
+                SCALED SIGMA             0.0002596
+
+        1424-418 CORRELATION     0.0215  Reference date: 2000.01.01-12:00:00
+  957.Y 1743+173 RT. ASC.          17 45 35.20815362     -0.3973      m-asec     0.4775      m-asec     0.4772      m-asec
+                  CORRECTION            -0.0000265
+                SCALED SIGMA             0.0000318
+
+  958.Y 1743+173 DEC.              17 20 01.42301414          -0.3159 m-asec          0.2187 m-asec          0.2186 m-asec
+                  CORRECTION            -0.0003159
+                SCALED SIGMA             0.0002186
+
+        1743+173 CORRELATION     0.3052  Reference date: 2000.01.01-12:00:00
+  959.D 2029+121 RT. ASC.          20 31 54.99425009     -0.2315      m-asec     0.1105      m-asec     0.1104      m-asec
+                  CORRECTION            -0.0000154
+                SCALED SIGMA             0.0000074
+
+  960.D 2029+121 DEC.              12 19 41.33999251          -0.1335 m-asec          0.1205 m-asec          0.1204 m-asec
+                  CORRECTION            -0.0001335
+                SCALED SIGMA             0.0001204
+
+        2029+121 CORRELATION     0.3526  Reference date: 2000.01.01-12:00:00
+  961.K 2227-088 RT. ASC.          22 29 40.08431722     -0.2386      m-asec     0.2247      m-asec     0.2245      m-asec
+                  CORRECTION            -0.0000159
+                SCALED SIGMA             0.0000150
+
+  962.K 2227-088 DEC.             -08 32 54.43536836           0.1610 m-asec          0.1425 m-asec          0.1424 m-asec
+                  CORRECTION             0.0001610
+                SCALED SIGMA             0.0001424
+
+        2227-088 CORRELATION     0.0887  Reference date: 2000.01.01-12:00:00
+ Atmosphere Constraint Statistics
+  1. AGGO     Input  40.00 ps/h RMS  26.57 ps/h NRMS  0.66 share 0.66 count  25
+  2. BADARY   Input  40.00 ps/h RMS  40.98 ps/h NRMS  1.02 share 0.16 count  25
+  3. EFLSBERG Input  40.00 ps/h RMS  61.46 ps/h NRMS  1.54 share 0.24 count  25
+  4. FORTLEZA Input  40.00 ps/h RMS  82.94 ps/h NRMS  2.07 share 0.38 count  25
+  5. HART15M  Input  40.00 ps/h RMS  34.14 ps/h NRMS  0.85 share 0.20 count  25
+  6. HOBART26 Input  40.00 ps/h RMS  38.07 ps/h NRMS  0.95 share 0.34 count  25
+  7. ISHIOKA  Input  40.00 ps/h RMS  25.89 ps/h NRMS  0.65 share 0.12 count  25
+  8. KASHIM11 Input  40.00 ps/h RMS  35.21 ps/h NRMS  0.88 share 0.40 count  25
+  9. KATH12M  Input  40.00 ps/h RMS  33.66 ps/h NRMS  0.84 share 0.22 count  25
+ 10. NYALES20 Input  40.00 ps/h RMS  23.11 ps/h NRMS  0.58 share 0.08 count  25
+ 11. OHIGGINS Input  40.00 ps/h RMS  26.88 ps/h NRMS  0.67 share 0.42 count  25
+ 12. ONSALA60 Input  40.00 ps/h RMS  46.17 ps/h NRMS  1.15 share 0.12 count  25
+ 13. SEJONG   Input  40.00 ps/h RMS  55.97 ps/h NRMS  1.40 share 0.18 count  25
+ 14. SVETLOE  Input  40.00 ps/h RMS  42.93 ps/h NRMS  1.07 share 0.14 count  25
+ 15. VERAMZSW Input  40.00 ps/h RMS  59.00 ps/h NRMS  1.47 share 0.46 count  25
+ 16. WETTZELL Input  40.00 ps/h RMS  34.98 ps/h NRMS  0.87 share 0.17 count  25
+     Overall                    RMS  44.56 ps/h NRMS  1.11 share 0.27 count 400
+
+ Clock Constraint Statistics
+  1. AGGO     Input   5.00 D-14 RMS   2.67 D-14 NRMS  0.53 share 0.21 count  25
+  2. BADARY   Input   5.00 D-14 RMS   2.28 D-14 NRMS  0.46 share 0.08 count  25
+  3. EFLSBERG Input   5.00 D-14 RMS   2.63 D-14 NRMS  0.53 share 0.09 count  25
+  4. FORTLEZA Input   5.00 D-14 RMS   4.05 D-14 NRMS  0.81 share 0.16 count  25
+  5. HART15M  Input   5.00 D-14 RMS   3.48 D-14 NRMS  0.70 share 0.14 count  25
+  6. HOBART26 Input   5.00 D-14 RMS   1.85 D-14 NRMS  0.37 share 0.19 count  25
+  7. ISHIOKA  Input   5.00 D-14 RMS   1.97 D-14 NRMS  0.39 share 0.08 count  25
+  8. KASHIM11 Input   5.00 D-14 RMS   2.11 D-14 NRMS  0.42 share 0.38 count  25
+  9. KATH12M  Input   5.00 D-14 RMS   2.44 D-14 NRMS  0.49 share 0.13 count  25
+ 10. NYALES20 Input   5.00 D-14 RMS   2.43 D-14 NRMS  0.49 share 0.08 count  25
+ 11. OHIGGINS Input   5.00 D-14 RMS   4.29 D-14 NRMS  0.86 share 0.27 count  25
+ 12. ONSALA60 Input   5.00 D-14 RMS   2.11 D-14 NRMS  0.42 share 0.11 count  25
+ 13. SEJONG   Input   5.00 D-14 RMS   2.75 D-14 NRMS  0.55 share 0.08 count  25
+ 14. SVETLOE  Input   5.00 D-14 RMS   3.24 D-14 NRMS  0.65 share 0.08 count  25
+ 15. VERAMZSW Input   5.00 D-14 RMS   9.24 D-14 NRMS  1.85 share 0.21 count  25
+     Overall                    RMS   3.63 D-14 NRMS  0.73 share 0.15 count 375
+
+  963. UT1-TAI   1,  19/05/22 05:39       -0.2768  ms/d     -55.99 micros/d        7.46 micros/d        7.46 micros/d
+ EOP without included hi-freq variations  (a-sigmas)  
+                      XWOB          YWOB          UT1-TAI          XSIG         YSIG         USIG
+                       mas           mas            ms           microasec    microasec    microsec
+19/05/22 05:39        0.0000         0.0000         0.0000          0.00         0.00         0.00
+
+ EOP epoch (TT)   MJD: 58625.236708        NUT epoch (TT)   MJD: 58625.236708
+  964. Nutation offset in longitude (Psi)                0.245 mas       73.3 microasec       73.2 microasec       
+       Nutation offset around X-axis       (dX)          0.098 mas       29.1 microasec       29.1 microasec       
+       Nutation offset wrt IAU 1980 model (Psi)       -105.115 mas       73.3 microasec       73.2 microasec       
+  965. Nutation offset in obliquity (Eps)               -0.148 mas       27.0 microasec       27.0 microasec       
+       Nutation offset around Y-axis       (dY)         -0.148 mas       27.0 microasec       27.0 microasec       
+       Nutation offset wrt IAU 1980 model (Eps)        -11.199 mas       27.0 microasec       27.0 microasec       
+
+  966. AGGO    -EFLSBERG Clock offset                           -10.799 ps              8.853 ps              8.847 ps
+  967. AGGO    -FORTLEZA Clock offset                           -18.251 ps             11.276 ps             11.269 ps
+  968. AGGO    -HART15M  Clock offset                           -31.320 ps             13.229 ps             13.220 ps
+  969. AGGO    -NYALES20 Clock offset                           -22.902 ps             15.901 ps             15.891 ps
+  970. AGGO    -SVETLOE  Clock offset                           -33.188 ps             15.805 ps             15.794 ps
+  971. BADARY  -HOBART26 Clock offset                           -31.004 ps              8.497 ps              8.491 ps
+  972. BADARY  -ONSALA60 Clock offset                             7.422 ps              4.289 ps              4.286 ps
+  973. EFLSBERG-FORTLEZA Clock offset                            16.565 ps             11.409 ps             11.401 ps
+  974. EFLSBERG-HART15M  Clock offset                            -8.746 ps              7.038 ps              7.033 ps
+  975. EFLSBERG-KATH12M  Clock offset                           -11.309 ps              7.349 ps              7.344 ps
+  976. EFLSBERG-OHIGGINS Clock offset                            29.844 ps             11.241 ps             11.234 ps
+  977. EFLSBERG-VERAMZSW Clock offset                           -21.344 ps             19.176 ps             19.163 ps
+  978. FORTLEZA-HOBART26 Clock offset                           -94.067 ps             51.060 ps             51.025 ps
+  979. FORTLEZA-ONSALA60 Clock offset                            14.116 ps              9.577 ps              9.570 ps
+  980. HART15M -KASHIM11 Clock offset                           -15.091 ps              9.032 ps              9.025 ps
+  981. HART15M -NYALES20 Clock offset                           -12.073 ps              9.632 ps              9.626 ps
+  982. HART15M -OHIGGINS Clock offset                            23.078 ps             12.098 ps             12.089 ps
+  983. HART15M -SVETLOE  Clock offset                             9.988 ps              8.726 ps              8.720 ps
+  984. HART15M -VERAMZSW Clock offset                           -28.414 ps             17.704 ps             17.692 ps
+  985. HOBART26-HART15M  Clock offset                            15.661 ps             13.100 ps             13.091 ps
+  986. HOBART26-KASHIM11 Clock offset                            20.114 ps             13.689 ps             13.680 ps
+  987. HOBART26-NYALES20 Clock offset                            20.568 ps             17.775 ps             17.763 ps
+  988. HOBART26-SEJONG   Clock offset                            46.191 ps             11.031 ps             11.023 ps
+  989. ISHIOKA -SEJONG   Clock offset                           -13.428 ps              2.637 ps              2.635 ps
+  990. KATH12M -ONSALA60 Clock offset                             9.565 ps              7.475 ps              7.470 ps
+  991. KATH12M -VERAMZSW Clock offset                           -16.192 ps             16.398 ps             16.387 ps
+  992. NYALES20-ONSALA60 Clock offset                             6.245 ps              5.259 ps              5.255 ps
+  993. SEJONG  -ONSALA60 Clock offset                             4.604 ps              4.753 ps              4.749 ps
+  994. SEJONG  -SVETLOE  Clock offset                             7.775 ps              5.179 ps              5.176 ps
+  995. SEJONG  -VERAMZSW Clock offset                           -63.508 ps             14.092 ps             14.083 ps
+  996. SVETLOE -VERAMZSW Clock offset                            27.112 ps             17.954 ps             17.942 ps
+ 
+ General constraints usage information:                                                                                 
+ 
+ 1) CLO_RATE "Clock rate between segments     " sigma  5.000E+00 10^-14 sec/sec
+ 2) ATM_RATE "Atmosphere rate between segments" sigma  4.000E+01 psec/hr
+ 
+ Corrected Reduced Chi-Square   0.9987
+
+1     Baseline information for run 20029-1425
+      Monument to monument values at epoch 2019May22
+      Baseline vector components: Length, Vertical and Transverse components
+                                                Vector mag c-sigma        Length c-sigma Horizontal c-sigma Vertical c-sigma
+                                                      (mm)   (mm)           (mm)   (mm)      (mm)   (mm)       (mm)   (mm)
+ AGGO     7641       to BADARY   7382       12503017629.53  28.58 12503017629.53  38.49     10.81   7.01     -48.96  12.53  2019/05/22 05:29:23
+ AGGO     7641       to EFLSBERG 7203        9933953999.33  31.01  9933953999.33  29.99      4.44   7.13     -86.55  27.99  2019/05/22 05:29:23
+ AGGO     7641       to FORTLEZA 7297        3924365713.55  28.15  3924365713.55  12.90     10.84   7.28    -135.34  39.01  2019/05/22 05:29:23
+ AGGO     7641       to HART15M  7378        7535061379.62  28.20  7535061379.62  20.74    -23.31   6.57     -95.77  35.15  2019/05/22 05:29:23
+ AGGO     7641       to HOBART26 7242        9704037749.93  31.54  9704037749.93  34.82    -36.76   8.22     -52.59  27.00  2019/05/22 05:29:23
+ AGGO     7641       to ISHIOKA  7369       12632960515.45  27.59 12632960515.45  39.76     16.29   6.72      11.78   5.85  2019/05/22 05:29:23
+ AGGO     7641       to KASHIM11 7334       12627671412.04  27.76 12627671412.04  39.99   -236.06   6.79    -553.55   5.96  2019/05/22 05:29:23
+ AGGO     7641       to KATH12M  7375       11556490375.14  27.59 11556490375.14  37.01    -32.94   7.72     -26.71  16.77  2019/05/22 05:29:23
+ AGGO     7641       to NYALES20 7331       11038685379.11  28.28 11038685379.11  33.83     21.91   7.77     -73.89  21.62  2019/05/22 05:29:23
+ AGGO     7641       to OHIGGINS 7245        3131241836.10  39.77  3131241836.10  12.27    -41.70  10.23     -30.73  53.28  2019/05/22 05:29:23
+ AGGO     7641       to ONSALA60 7213       10371942586.63  29.80 10371942586.63  31.20      9.93   7.10     -87.57  25.96  2019/05/22 05:29:23
+ AGGO     7641       to SEJONG   7368       12731189433.29  27.71 12731189433.29  39.67     19.04   7.13      10.82   6.50  2019/05/22 05:29:23
+ AGGO     7641       to SVETLOE  7380       10953581543.56  29.17 10953581543.56  32.85     12.29   7.02     -64.72  23.60  2019/05/22 05:29:23
+ AGGO     7641       to VERAMZSW 7362       12617490490.17  30.53 12617490490.17  42.69   -654.16   8.83   -1202.48   6.89  2019/05/22 05:29:23
+ AGGO     7641       to WETTZELL 7224       10084843477.06  29.24 10084843477.06  29.84      2.90   6.80     -89.47  27.29  2019/05/22 05:29:23
+ BADARY   7382       to EFLSBERG 7203        5929710310.59  15.59  5929710310.59   5.34      4.81   2.21     -17.99   9.76  2019/05/22 05:29:23
+ BADARY   7382       to FORTLEZA 7297       11154060257.54  14.40 11154060257.54  11.61     -0.34   4.14      21.82  10.61  2019/05/22 05:29:23
+ BADARY   7382       to HART15M  7378        9832879630.67  12.48  9832879630.67   8.60     -6.91   3.36     -14.09   7.44  2019/05/22 05:29:23
+ BADARY   7382       to HOBART26 7242        9897738574.79  17.61  9897738574.79  14.60     17.51   3.91     -21.36  14.29  2019/05/22 05:29:23
+ BADARY   7382       to ISHIOKA  7369        3406786088.03   8.40  3406786088.03   2.17      9.53   1.37     -22.55   6.98  2019/05/22 05:29:23
+ BADARY   7382       to KASHIM11 7334        3453149250.02   8.90  3453149250.02   2.52   -158.89   1.74     -13.15   8.10  2019/05/22 05:29:23
+ BADARY   7382       to KATH12M  7375        7383036662.87   9.07  7383036662.87   6.02     11.78   1.94     -16.24   8.33  2019/05/22 05:29:23
+ BADARY   7382       to NYALES20 7331        4333698018.83  10.82  4333698018.83   3.26      0.37   2.03     -14.52   7.92  2019/05/22 05:29:23
+ BADARY   7382       to OHIGGINS 7245       12608480129.28  32.83 12608480129.28  37.51      0.26  10.43     -11.55   8.23  2019/05/22 05:29:23
+ BADARY   7382       to ONSALA60 7213        5271800752.77  13.47  5271800752.77   4.17      1.61   1.83     -16.08   8.69  2019/05/22 05:29:23
+ BADARY   7382       to SEJONG   7368        2584300806.19   8.76  2584300806.19   2.06      1.75   1.49      -4.09   7.52  2019/05/22 05:29:23
+ BADARY   7382       to SVETLOE  7380        4281660527.16  12.91  4281660527.16   3.45     -1.75   1.77       3.37   8.73  2019/05/22 05:29:23
+ BADARY   7382       to VERAMZSW 7362        3264266267.46  15.64  3264266267.46   5.52   -451.97   4.86     481.93  17.11  2019/05/22 05:29:23
+ BADARY   7382       to WETTZELL 7224        5726072740.34  12.41  5726072740.34   4.12      4.56   1.79      -7.34   8.04  2019/05/22 05:29:23
+ EFLSBERG 7203       to FORTLEZA 7297        7002419456.19  17.96  7002419456.19   8.17     -6.74   4.33       8.39  14.58  2019/05/22 05:29:23
+ EFLSBERG 7203       to HART15M  7378        8042307266.35  16.10  8042307266.35   7.80     -1.45   2.76      -4.13  10.00  2019/05/22 05:29:23
+ EFLSBERG 7203       to HOBART26 7242       12359235124.47  20.45 12359235124.47  19.51     20.49   5.00     -13.60   7.78  2019/05/22 05:29:23
+ EFLSBERG 7203       to ISHIOKA  7369        8551189965.89  13.86  8551189965.89   6.26     11.03   2.19       3.85   7.76  2019/05/22 05:29:23
+ EFLSBERG 7203       to KASHIM11 7334        8583189553.01  14.19  8583189553.01   6.83   -347.10   2.44     218.00   8.44  2019/05/22 05:29:23
+ EFLSBERG 7203       to KATH12M  7375       11207510205.68  13.93 11207510205.68   9.72     19.12   3.03       0.44   6.69  2019/05/22 05:29:23
+ EFLSBERG 7203       to NYALES20 7331        3140166755.07  14.09  3140166755.07   3.38     -1.15   2.24       3.66   9.11  2019/05/22 05:29:23
+ EFLSBERG 7203       to OHIGGINS 7245       11255151401.99  34.77 11255151401.99  30.07    -20.55   7.32      21.55  25.72  2019/05/22 05:29:23
+ EFLSBERG 7203       to ONSALA60 7213         832210477.23  13.54   832210477.23   2.22     -0.00   1.96      -0.08   8.80  2019/05/22 05:29:23
+ EFLSBERG 7203       to SEJONG   7368        8076392660.41  14.09  8076392660.41   6.20      4.73   2.26      19.43   8.18  2019/05/22 05:29:23
+ EFLSBERG 7203       to SVETLOE  7380        1803535654.73  14.80  1803535654.73   2.53      6.68   2.12      24.33   9.52  2019/05/22 05:29:23
+ EFLSBERG 7203       to VERAMZSW 7362        8363520649.87  19.07  8363520649.87  11.94   -963.83   4.80     803.51  15.05  2019/05/22 05:29:23
+ EFLSBERG 7203       to WETTZELL 7224         457481741.66  13.84   457481741.66   2.08      8.91   2.10       6.69   8.97  2019/05/22 05:29:23
+ FORTLEZA 7297       to HART15M  7378        7025183025.91  13.63  7025183025.91   8.45    -39.48   6.89      11.70  12.91  2019/05/22 05:29:23
+ FORTLEZA 7297       to HOBART26 7242       11699562649.28  19.42 11699562649.28  21.55    -32.88   5.80      33.83   9.49  2019/05/22 05:29:23
+ FORTLEZA 7297       to ISHIOKA  7369       12248972481.63  12.34 12248972481.63  12.12     21.86   4.95     -25.63   8.15  2019/05/22 05:29:23
+ FORTLEZA 7297       to KASHIM11 7334       12257138438.11  12.72 12257138438.11  12.75   -512.37   5.10     203.30   8.30  2019/05/22 05:29:23
+ FORTLEZA 7297       to KATH12M  7375       12553493713.66  12.25 12553493713.66  14.48    -39.36   6.45      14.53   5.60  2019/05/22 05:29:23
+ FORTLEZA 7297       to NYALES20 7331        8743816386.65  13.73  8743816386.65   8.63     13.17   4.75     -15.96  12.17  2019/05/22 05:29:23
+ FORTLEZA 7297       to OHIGGINS 7245        6467221413.73  31.05  6467221413.73  14.10    -29.99   7.70      89.89  38.23  2019/05/22 05:29:23
+ FORTLEZA 7297       to ONSALA60 7213        7601089528.54  15.92  7601089528.54   7.89     -0.55   4.17     -14.68  13.54  2019/05/22 05:29:23
+ FORTLEZA 7297       to SEJONG   7368       12157339512.51  12.64 12157339512.51  12.11      3.71   4.28     -21.68   8.91  2019/05/22 05:29:23
+ FORTLEZA 7297       to SVETLOE  7380        8428008905.61  15.23  8428008905.61   8.50      1.55   4.14       3.55  12.90  2019/05/22 05:29:23
+ FORTLEZA 7297       to VERAMZSW 7362       12154631712.38  17.98 12154631712.38  19.10  -1309.92   6.58     482.27  10.83  2019/05/22 05:29:23
+ FORTLEZA 7297       to WETTZELL 7224        7215409858.73  14.70  7215409858.73   7.41     -8.55   4.03      -9.08  13.30  2019/05/22 05:29:23
+ HART15M  7378       to HOBART26 7242        9167665700.85  18.17  9167665700.85  15.71     -4.03   4.60     -13.64  14.63  2019/05/22 05:29:23
+ HART15M  7378       to ISHIOKA  7369       11165318815.05   9.96 11165318815.05   8.27      3.06   3.97      -2.91   5.46  2019/05/22 05:29:23
+ HART15M  7378       to KASHIM11 7334       11181661523.10  10.42 11181661523.10   9.02    359.55   4.15     351.03   5.94  2019/05/22 05:29:23
+ HART15M  7378       to KATH12M  7375        9504494787.52   9.68  9504494787.52   8.74      0.71   4.46      -5.20   7.70  2019/05/22 05:29:23
+ HART15M  7378       to NYALES20 7331       10100915657.42  11.82 10100915657.42   7.72     -5.88   2.47       0.65   7.33  2019/05/22 05:29:23
+ HART15M  7378       to OHIGGINS 7245        6865929647.97  32.08  6865929647.97  18.21     -1.82   9.94      48.42  33.96  2019/05/22 05:29:23
+ HART15M  7378       to ONSALA60 7213        8525147766.13  14.07  8525147766.13   7.18     -6.38   2.31       0.37   8.88  2019/05/22 05:29:23
+ HART15M  7378       to SEJONG   7368       10582411225.38  10.32 10582411225.38   8.21      4.87   3.96      13.57   6.09  2019/05/22 05:29:23
+ HART15M  7378       to SVETLOE  7380        8697006334.98  13.53  8697006334.98   7.44     -0.06   2.41      17.62   8.38  2019/05/22 05:29:23
+ HART15M  7378       to VERAMZSW 7362       11226516343.05  16.47 11226516343.05  15.39    640.77   6.56    1189.14  11.05  2019/05/22 05:29:23
+ HART15M  7378       to WETTZELL 7224        7832301932.50  12.99  7832301932.50   6.65    -10.99   2.29       7.17   8.57  2019/05/22 05:29:23
+ HOBART26 7242       to ISHIOKA  7369        8095739991.92  15.81  8095739991.92  11.63     13.05   3.64      -3.67  15.97  2019/05/22 05:29:23
+ HOBART26 7242       to KASHIM11 7334        8071286309.77  16.14  8071286309.77  11.99    530.17   3.79    -321.72  16.31  2019/05/22 05:29:23
+ HOBART26 7242       to KATH12M  7375        3431792318.46  15.64  3431792318.46   6.11      5.39   3.97       7.35  19.42  2019/05/22 05:29:23
+ HOBART26 7242       to NYALES20 7331       11957833446.62  17.15 11957833446.62  17.67     18.05   3.90       3.50   9.31  2019/05/22 05:29:23
+ HOBART26 7242       to OHIGGINS 7245        7509971901.40  35.58  7509971901.40  31.07     -0.55   8.05      59.64  29.44  2019/05/22 05:29:23
+ HOBART26 7242       to ONSALA60 7213       12256219251.68  18.83 12256219251.68  18.56     16.73   4.47      12.81   8.23  2019/05/22 05:29:23
+ HOBART26 7242       to SEJONG   7368        8278424218.90  16.07  8278424218.90  11.88     21.25   3.68      10.82  15.96  2019/05/22 05:29:23
+ HOBART26 7242       to SVETLOE  7380       11933358234.84  18.52 11933358234.84  17.93     16.88   4.32      13.88   9.44  2019/05/22 05:29:23
+ HOBART26 7242       to VERAMZSW 7362        8336632449.46  20.57  8336632449.46  16.36   1309.67   5.60    -251.56  19.82  2019/05/22 05:29:23
+ HOBART26 7242       to WETTZELL 7224       12247179241.90  18.13 12247179241.90  18.33     12.79   4.80      23.51   7.92  2019/05/22 05:29:23
+ ISHIOKA  7369       to KASHIM11 7334          48497728.80   3.84    48497728.80   1.36    -99.74   1.38    -152.53   5.31  2019/05/22 05:29:23
+ ISHIOKA  7369       to KATH12M  7375        5476478014.04   4.65  5476478014.04   4.41      6.88   1.63       9.80   7.32  2019/05/22 05:29:23
+ ISHIOKA  7369       to NYALES20 7331        6489796298.12   8.01  6489796298.12   3.35      5.44   1.92       3.10   6.09  2019/05/22 05:29:23
+ ISHIOKA  7369       to OHIGGINS 7245       12317148607.69  31.95 12317148607.69  38.47     11.81   7.01      23.96   5.52  2019/05/22 05:29:23
+ ISHIOKA  7369       to ONSALA60 7213        7936190799.18  11.33  7936190799.18   4.75      9.01   1.77       0.66   6.73  2019/05/22 05:29:23
+ ISHIOKA  7369       to SEJONG   7368        1157209965.65   4.13  1157209965.65   1.23      0.17   1.28      17.60   4.88  2019/05/22 05:29:23
+ ISHIOKA  7369       to SVETLOE  7380        7137258872.88  10.69  7137258872.88   4.00      4.70   1.67      18.31   6.89  2019/05/22 05:29:23
+ ISHIOKA  7369       to VERAMZSW 7362         334393813.43  13.60   334393813.43   5.19   1411.18   4.61     162.43  16.25  2019/05/22 05:29:23
+ ISHIOKA  7369       to WETTZELL 7224        8442147369.83  10.08  8442147369.83   4.29     13.27   1.74       8.50   6.20  2019/05/22 05:29:23
+ KASHIM11 7334       to KATH12M  7375        5457890444.38   5.52  5457890444.38   4.87    589.56   1.92     218.35   8.25  2019/05/22 05:29:23
+ KASHIM11 7334       to NYALES20 7331        6519427320.41   8.58  6519427320.41   3.98   -483.83   2.19     -46.56   7.16  2019/05/22 05:29:23
+ KASHIM11 7334       to OHIGGINS 7245       12307382395.83  32.11 12307382395.83  38.70    454.09   7.09     462.14   5.70  2019/05/22 05:29:23
+ KASHIM11 7334       to ONSALA60 7213        7969356539.57  11.73  7969356539.57   5.39   -365.36   2.07    -176.11   7.57  2019/05/22 05:29:23
+ KASHIM11 7334       to SEJONG   7368        1199349501.62   5.11  1199349501.62   1.57    198.84   1.70     117.76   6.49  2019/05/22 05:29:23
+ KASHIM11 7334       to SVETLOE  7380        7173675757.73  11.12  7173675757.73   4.60   -334.62   1.98    -136.34   7.81  2019/05/22 05:29:23
+ KASHIM11 7334       to VERAMZSW 7362         355159397.64  13.90   355159397.64   5.41    814.78   4.60     306.14  16.75  2019/05/22 05:29:23
+ KASHIM11 7334       to WETTZELL 7224        8475525534.62  10.53  8475525534.62   5.06   -310.66   2.05    -215.86   7.06  2019/05/22 05:29:23
+ KATH12M  7375       to NYALES20 7331       10410183608.51   8.26 10410183608.51   7.30     11.39   2.21      -0.57   6.21  2019/05/22 05:29:23
+ KATH12M  7375       to OHIGGINS 7245        9910343092.22  31.81  9910343092.22  34.63      5.59   7.76      42.32  18.31  2019/05/22 05:29:23
+ KATH12M  7375       to ONSALA60 7213       10928106298.13  11.46 10928106298.13   8.32     13.81   2.54       2.13   6.33  2019/05/22 05:29:23
+ KATH12M  7375       to SEJONG   7368        5470884684.28   5.59  5470884684.28   4.69     15.56   1.62       7.39   7.69  2019/05/22 05:29:23
+ KATH12M  7375       to SVETLOE  7380       10337883343.49  10.83 10337883343.49   7.79     12.39   2.40      10.40   6.67  2019/05/22 05:29:23
+ KATH12M  7375       to VERAMZSW 7362        5775670153.60  14.03  5775670153.60   9.45   1408.43   4.75      45.97  15.93  2019/05/22 05:29:23
+ KATH12M  7375       to WETTZELL 7224       11026189038.79  10.25 11026189038.79   7.86     14.69   2.73      11.81   5.96  2019/05/22 05:29:23
+ NYALES20 7331       to OHIGGINS 7245       12217071725.18  32.75 12217071725.18  33.81    -17.54   7.32      22.41  19.29  2019/05/22 05:29:23
+ NYALES20 7331       to ONSALA60 7213        2387493167.97  11.69  2387493167.97   2.71      1.09   1.79      -2.61   7.53  2019/05/22 05:29:23
+ NYALES20 7331       to SEJONG   7368        6271096189.43   8.41  6271096189.43   3.54     -3.71   1.98      13.08   6.46  2019/05/22 05:29:23
+ NYALES20 7331       to SVETLOE  7380        2133123020.08  11.16  2133123020.08   2.22     -5.99   1.94      20.86   7.36  2019/05/22 05:29:23
+ NYALES20 7331       to VERAMZSW 7362        6224774262.07  15.31  6224774262.07   9.16  -1231.60   4.61     479.06  15.31  2019/05/22 05:29:23
+ NYALES20 7331       to WETTZELL 7224        3283002133.30  10.49  3283002133.30   2.43      5.91   1.85       4.67   6.85  2019/05/22 05:29:23
+ OHIGGINS 7245       to ONSALA60 7213       11613057951.22  33.63 11613057951.22  31.07    -19.61   7.17     -24.57  23.77  2019/05/22 05:29:23
+ OHIGGINS 7245       to SEJONG   7368       12379699043.67  32.11 12379699043.67  38.39     21.15   7.70     -13.89   5.92  2019/05/22 05:29:23
+ OHIGGINS 7245       to SVETLOE  7380       11957732556.66  33.27 11957732556.66  32.62    -13.60   7.41      -5.94  21.35  2019/05/22 05:29:23
+ OHIGGINS 7245       to VERAMZSW 7362       12384941279.69  34.54 12384941279.69  41.43   1126.03   8.16    -834.74   7.97  2019/05/22 05:29:23
+ OHIGGINS 7245       to WETTZELL 7224       11296159314.51  33.28 11296159314.51  29.74    -23.32   7.34     -24.99  25.11  2019/05/22 05:29:23
+ ONSALA60 7213       to SEJONG   7368        7472418854.05  11.63  7472418854.05   4.77      1.30   1.85      15.74   7.15  2019/05/22 05:29:23
+ ONSALA60 7213       to SVETLOE  7380        1079812959.05  12.48  1079812959.05   1.84      2.27   1.77      23.86   7.91  2019/05/22 05:29:23
+ ONSALA60 7213       to VERAMZSW 7362        7732937466.12  17.31  7732937466.12  10.70   -996.01   4.60     737.17  14.95  2019/05/22 05:29:23
+ ONSALA60 7213       to WETTZELL 7224         919660979.63  11.71   919660979.63   1.65      4.83   1.57       7.37   7.40  2019/05/22 05:29:23
+ SEJONG   7368       to SVETLOE  7380        6598235730.98  11.01  6598235730.98   4.08     -2.06   1.77       1.58   7.26  2019/05/22 05:29:23
+ SEJONG   7368       to VERAMZSW 7362        1248157157.68  13.92  1248157157.68   4.01    665.11   5.47     268.23  16.60  2019/05/22 05:29:23
+ SEJONG   7368       to WETTZELL 7224        7912744568.16  10.43  7912744568.16   4.43      5.72   1.82      -7.56   6.58  2019/05/22 05:29:23
+ SVETLOE  7380       to VERAMZSW 7362        6936435782.66  16.88  6936435782.66   9.56   -919.18   4.62     705.56  15.53  2019/05/22 05:29:23
+ SVETLOE  7380       to WETTZELL 7224        1654774850.64  11.69  1654774850.64   1.93      9.30   1.70     -16.05   7.39  2019/05/22 05:29:23
+ VERAMZSW 7362       to WETTZELL 7224        8264682704.16  16.50  8264682704.16  10.89   -887.39   4.65    -826.74  14.40  2019/05/22 05:29:23
+--
+Note: a posteriori baseline vectors are expressed in a baseline-centric reference frames. The first basis vector of the
+frame, l, is in direction of a priori baseline, (r_2 - r_1). Direction of the second vector, h, is defined by a cross
+product of a priori baseline vector and a priori geocentric vector of the 2nd station. The last basis vector, v, is
+perpendicular to the vectors l and h and is radially inward at the center of the baseline. For the short baselines, the
+vectors l and h are close to the horizontal plane and v is almost vertical (with opposite sign). In the table above the
+columns are:
+ * Vector mag:  length of the a posteriori baseline;
+ * Length:      l-component of the baseline;
+ * Horizontal:  h-component of the baseline;
+ * Vertical:    v-component of the baseline;
+ * c-sigma:     calculated (using standard deviations of adjusted station coordinates of baselines) standard deviations
+                of the corresponding values.
+

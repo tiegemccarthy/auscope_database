@@ -1,0 +1,191 @@
+
+TIMETAG 2018/09/20 04:51:35 UTC
+MK3DB_VERSION 0
++HEADER
+CORREL   SHAO
+DATABASE 18FEB21XA
+SESSNAME AUA037
+OBSTIME  2018/02/21 2018/02/22
+UTSTART  1800
+DURATION 24
+DOY       52
+CORRTIME 2018/09/18 2018/09/19
+CORRPASS 1
+EXPORT   DONE
+
++SUMMARY
+  Qcode      % of Total   % of Correlated
+                scans          scans
+
+  5-9            66%            66%
+   0             30%            30%
+ 4-1,A-H,N       2%            2%
+ Removed         0%
+
++CORRELATOR NOTES
+
++STATION NOTES
+
+ HART15M  (Ht/g): 
+
+ KATH12M  (Ke/i): 
+
+ WARK12M  (Ww/W): 
+
+ YARRA12M (Yg/e): 
+
++DROP_CHANNELS
+
+
++MANUAL PCAL Ht Ke Ww Yg
+
++CHANNELS
+  Channels: X1RU = band|polarization|BBC#|sideband
+
+XR1U/L  BBC01 
+XR2U    BBC02 
+XR3U    BBC03 
+XR4U    BBC04 
+XR5U    BBC05 
+XR6U    BBC06 
+XR7U    BBC07 
+XR8U/L  BBC08 
+SR1U    BBC09 
+SR2U    BBC10 
+SR3U    BBC11 
+SR4U    BBC12 
+SR5U    BBC13 
+SR6U    BBC14 
+
++CLOCKS
+
+ Clocks: SHAO
+
+  Station    fmout-gps     Used        rate          Comments
+             [usec]        [usec]      [sec/sec]
+   Ht      14.8461     14.8461      1.690E-12
+   Ke      16.7633     16.7633      -0.757E-12
+   Ww      -7.69     -7.69      -5.924e-13
+   Yg      4.9542     4.9542      -0.448E-12
+   Date:     2018/02/21       18:00:00
+
++QCODES
+
+Qcod  0 1 2 3 4 5  6  7   8    9 A B C D E F G H  N -  Tot 
+--------------------------------------------------------------
+gi:X 71 0 0 0 0 0  1  1  14  139 0 0 0 0 0 0 0 0  1 0  227 
+gi:S 71 0 0 0 0 0  0  2   5  148 0 0 0 0 0 0 0 0  1 0  227 
+gW:X 82 0 0 0 0 0  2  5  21  119 0 0 0 0 0 0 0 0  7 0  236 
+gW:S 89 0 0 0 0 0  0  6  29  105 0 0 0 0 0 0 0 0  7 0  236 
+ge:X 59 0 0 0 0 1  0  3  16  160 0 0 0 0 0 0 0 0  4 0  243 
+ge:S 67 0 0 0 0 1  0  0   5  166 0 0 0 0 0 0 0 0  4 0  243 
+iW:X 80 0 0 0 0 2  3  5  27  140 0 0 0 0 0 0 1 0  9 0  267 
+iW:S108 0 0 0 0 0  1  8  26  112 0 0 0 0 0 0 3 0  9 0  267 
+ie:X 38 0 0 0 1 2  0  2  23  204 0 0 0 0 0 0 0 0  8 0  278 
+ie:S 67 0 0 0 1 0  0  0   4  196 0 0 0 0 0 0 2 0  8 0  278 
+We:X 73 0 0 0 0 1  3  5  29  126 0 0 0 0 0 0 0 0 10 0  247 
+We:S110 0 0 0 0 0  0  2  17  108 0 0 0 0 0 0 0 0 10 0  247 
+--------------------------------------------------------------
+Tot 915 0 0 0 2 7 10 39 216 1723 0 0 0 0 0 0 6 0 78 0 2996 
+ Legend:
+ QC = 0   Fringes not detected.
+    = 1-9 Fringes detected, no error condition. Higher #, better quality.
+    = B   Interpolation error in fourfit.
+    = D   No data in one or more frequency channels.
+    = E   Maximum fringe amplitude at edge of SBD, MBD, or rate window.
+    = F   Fork problem in processing.
+    = G   Fringe amp in a channel is <.5 times mean amp (only if SNR>20).
+    = H   Low Phase-cal amplitude in one or more channels.
+    = N   No valid correlator data.
+  Tot     Total number of scans in schedule.
+  Minus   Scans in original schedule file for which correlation was not
+          attempted, usually because of known station problems.
+
++SNR _RATIOS
+
+MEAN RATIOS = Observed SNR / Predicted SNR  for exp no. 1837
+
+ ...by baseline, over all sources:
+
+ bl     X     n       S     n
+
+ gi    0.43  155     0.50  155
+ gW    0.39  147     0.43  140
+ ge    0.58  180     0.50  172
+ iW    0.60  178     0.53  150
+ ie    0.97  232     0.67  199
+ We    0.71  164     0.48  126
+
++FOURFIT_CONTROL FILE
+* control file for exp. AUST
+
+    max_parity  0.01
+    pc_mode multitone
+    pc_period 5 
+*
+start -2
+* stop -30
+
+   sb_win -256.0 256.0 mb_win -2.0 2.0 dr_win -300.e-4 300.e-4
+*      sb_win -2.0 2.0 mb_win -2.0 2.0 dr_win -30.0e-5 30.0e-5
+*
+*    ...offset between VLBA-VLBA and MK4-VLBA ...
+
+weak_channel 0.3 
+
+  if f_group X
+    ref_freq 8212.99
+    freqs g h i j k l m n
+    pc_tonemask ghijklmn 57351 57351 57351 57351 57351 57351 57351 57351
+    * Excludes three highest and lowest tones
+*    pc_freqs ghijklmn 9010 9010 9010 9010 9010 9010 9010 9010
+
+  if f_group S
+    ref_freq 2225.99
+    freqs a b c d e f 
+    pc_tonemask abcdef 57351 57351 57351 57351 57351 57351
+    * Excludes three highest and lowest	 tones
+*    pc_freqs abcdef 3010 3010 3010 3010 3010 3010
+
+*Ke/i
+if station i and f_group S
+    pc_mode manual
+    pc_phases abcdef  -18.3   58.3  126.3  222.4  166.5  218.9
+
+  if station i and f_group X
+    pc_mode manual
+ pc_phases ghijklmn  0.6   43.6   73.5  137.1    2.2  246.0  347.1    2.6 
+
+* Ht/g
+if station g and f_group S
+    pc_mode manual
+    pc_phases abcdef 4.9   72.6  128.6  218.7  213.3  231.8 
+
+  if station g and f_group X
+    pc_mode manual
+ pc_phases ghijklmn  123.5  -37.7   81.9  129.2   23.7  264.3   15.3   52.3
+
+*Yg/e
+  if station e and f_group S
+    pc_mode manual
+    pc_phases abcdef 0 0 0 0 0 0
+
+  if station e and f_group X
+    pc_mode manual
+ pc_phases ghijklmn 0 0 0 0 0 0 0 0
+
+
+*Ww/W
+  if station W and f_group S
+    pc_mode manual
+    pc_phases abcdef  -142.6 -207.3 -280.1  -46.0 -292.5 -310.6
+
+ if station W and f_group X
+   pc_mode manual
+ pc_phases ghijklmn  56.7 -309.4 -307.4 -233.4 -189.2 -342.0 -171.4 -335.4 
+
+* Yg/g selected as reference station
+Regards,
+ Jamie
+
++END

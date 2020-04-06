@@ -1,0 +1,262 @@
+       IVS Analysis Report for V1708 ($17DEC05XA) 
+       This report is the official IVS analysis report that corresponds to 
+       the database maintained by the IVS Data Centers for this session.  
+   (Analyzed by David Gordon, Goddard Space Flight Center.
+    Spoolfile source: interactive solve/nuSolve analysis.) 
+
+Problems: SESHAN25 did not submit a log file, so no met data is applied there.
+          YARRA12M has clock breaks at ~01:25 and ~11:59. The first break 
+          causes Solve to abort so it is not used and ~50 observations before
+          01:25 are deselected.  
+
+Parameterization comments: None. 
+
+Other comments: SC-VLBA did not observe due to hurricane damage.
+
+-----------------------------------------
+
+Session Statistics 
+
+  Observations:     18827 scheduled 
+                    16290 correlated (in database)
+                    15914 recoverable (usable)
+                    15733 used
+  Session fit:        19.925 ps
+
+-----------------------------------------
+
+Station Performance 
+
+                           Number of Observations
+
+                    Scheduled   Recoverable*        Used   % of scheduled
+                                                              obs used
+
+  BR-VLBA                3222          2965         2945        91.4%
+  FD-VLBA                3731          3413         3390        90.9%
+  HN-VLBA                3188          2801         2786        87.4%
+  KP-VLBA                3519          3243         3206        91.1%
+  LA-VLBA                3753          3408         3382        90.1%
+  MEDICINA               1572          1401         1384        88.0%
+  MK-VLBA                2216          1887         1871        84.4%
+  NL-VLBA                3482          3133         3106        89.2%
+  OV-VLBA                3311          3039         3013        91.0%
+  PIETOWN                3735          3214         3180        85.1%
+  SC-VLBA                2024        MISSED       MISSED         0.0%
+  SESHAN25               1187          1133         1117        94.1%
+  WETTZ13N               1524          1140         1098        72.0%
+  YARRA12M               1190          1051          988        83.0%
+  ---------------   ---------   -----------    ---------       ------
+  Station Total**       18827         15914        15733        83.6%
+
+  * Recoverable: can be included in the solution. 
+  ** Total includes distinct observations only.
+
+  MISSED:    Station was scheduled, but it did not observe.
+  NOT CORR:  Station was scheduled but not correlated.
+  NOT USED:  Usable data was generated for this station,
+             but the analyst rejected it all.
+
+-----------------------------------------
+
+Source Performance 
+
+                    Number of Observations
+
+                Scheduled  Correlated*    Used      % of scheduled
+                                                       obs used
+
+  1849+670            487         415      394           80.9%
+  1741-038            374         318      301           80.5%
+  0059+581            506         405      387           76.5%
+  1546+027            362         318      314           86.7%
+  0048-097            235         199      198           84.3%
+  0119+041            128         117      117           91.4%
+  0454-234            225         199      194           86.2%
+  0458-020            290         259      250           86.2%
+  0537-441             44          40       38           86.4%
+  0602+673            322         270      270           83.9%
+  0727-115            282         225      223           79.1%
+  OJ287               291         251      248           85.2%
+  0955+476            362         278      256           70.7%
+  1034-293            164         143      142           86.6%
+  1104-445             20          20       16           80.0%
+  3C274               331         304      281           84.9%
+  1255-316            125         104      100           80.0%
+  1417+385            286         273      255           89.2%
+  1519-273            136         127      122           89.7%
+  1726+455            424         373      354           83.5%
+  1954-388             72          67       67           93.1%
+  1958-179            239         215      206           86.2%
+  2113+293            253         226      226           89.3%
+  2149+056            170         150      150           88.2%
+  2255-282            116         102       97           83.6%
+  2318+049            286         253      252           88.1%
+  0237-027            205         169      169           82.4%
+  0332+078            129          98       98           76.0%
+  0613+570            361         303      288           79.8%
+  0648-165            237         195      195           82.3%
+  0920+390            219         184      184           84.0%
+  0951+268            121         112      105           86.8%
+  1145+268            172         155      154           89.5%
+  1324+224            305         256      234           76.7%
+  1456+044             36          27       27           75.0%
+  1846+322            375         313      310           82.7%
+  2215+150            344         289      284           82.6%
+  2355-106            288         255      250           86.8%
+  0019+058            136         115      115           84.6%
+  0054+161             72          53       53           73.6%
+  0420+022            291         247      247           84.9%
+  0442+389             72          64       63           87.5%
+  0529+483            536         464      454           84.7%
+  0536+145            153         126      126           82.4%
+  0738+491            399         337      334           83.7%
+  0748+126            353         309      308           87.3%
+  1040+244            299         245      227           75.9%
+  1053+704            414         355      347           83.8%
+  1306+360            255         224      222           87.1%
+  1441+252            261         247      236           90.4%
+  1520+319            364         342      333           91.5%
+  1617+229            224         200      198           88.4%
+  1725+123            327         280      265           81.0%
+  2059+034            304         275      271           89.1%
+  2214+350            306         287      280           91.5%
+  2309+454            393         305      269           68.4%
+  0322+222            351         301      300           85.5%
+  0606-223            249         224      222           89.2%
+  0920-397             81          81       61           75.3%
+  1656-075            199         185      181           91.0%
+  1759-396             78          78       77           98.7%
+  0206+136             98          80       79           80.6%
+  0227-369             30          25       22           73.3%
+  0332-403             82          60       55           67.1%
+  0743+277            253         231      225           88.9%
+  0925-203            121         101       92           76.0%
+  1657-261            295         258      229           77.6%
+  0008-264            170         164      158           92.9%
+  0202+319            351         295      292           83.2%
+  0403-132            176         147      139           79.0%
+  0437-454             46          33       30           65.2%
+  0736+017            240         200      199           82.9%
+  1213-172            302         273      270           89.4%
+  1243-072            262         241      221           84.4%
+  1538+149            329         283      267           81.2%
+  1751+288            373         324      308           82.6%
+  2126-158            260         224      202           77.7%
+  ------------  ---------  ----------   ------          ------
+  Source Total      18827       16290    15733           83.6%
+
+ * Correlated: included in database 
+
+-----------------------------------------
+
+Baseline Performance 
+
+                                 Number of Observations
+
+                         Scheduled   Recoverable*         Used   % of scheduled
+                                                                    obs used
+
+  BR-VLBA-FD-VLBA              355           355           354        99.7%
+  BR-VLBA-HN-VLBA              290           287           286        98.6%
+  BR-VLBA-KP-VLBA              356           356           354        99.4%
+  BR-VLBA-LA-VLBA              364           364           363        99.7%
+  BR-VLBA-MEDICINA              93            93            93       100.0%
+  BR-VLBA-MK-VLBA              228           203           200        87.7%
+  BR-VLBA-NL-VLBA              335           334           333        99.4%
+  BR-VLBA-OV-VLBA              373           370           369        98.9%
+  BR-VLBA-PIETOWN              362           334           334        92.3%
+  BR-VLBA-SC-VLBA              172        MISSED        MISSED         0.0%
+  BR-VLBA-SESHAN25             106           106           106       100.0%
+  BR-VLBA-WETTZ13N              92            77            74        80.4%
+  BR-VLBA-YARRA12M              96            86            79        82.3%
+  FD-VLBA-HN-VLBA              351           351           351       100.0%
+  FD-VLBA-KP-VLBA              441           441           436        98.9%
+  FD-VLBA-LA-VLBA              497           494           492        99.0%
+  FD-VLBA-MEDICINA             103           103           103       100.0%
+  FD-VLBA-MK-VLBA              230           204           204        88.7%
+  FD-VLBA-NL-VLBA              412           410           407        98.8%
+  FD-VLBA-OV-VLBA              393           391           389        99.0%
+  FD-VLBA-PIETOWN              493           458           454        92.1%
+  FD-VLBA-SC-VLBA              220        MISSED        MISSED         0.0%
+  FD-VLBA-SESHAN25              63            63            63       100.0%
+  FD-VLBA-WETTZ13N             100            77            75        75.0%
+  FD-VLBA-YARRA12M              73            66            62        84.9%
+  HN-VLBA-KP-VLBA              312           312           308        98.7%
+  HN-VLBA-LA-VLBA              349           348           348        99.7%
+  HN-VLBA-MEDICINA             222           222           222       100.0%
+  HN-VLBA-MK-VLBA              124           102           102        82.3%
+  HN-VLBA-NL-VLBA              407           404           404        99.3%
+  HN-VLBA-OV-VLBA              269           267           267        99.3%
+  HN-VLBA-PIETOWN              339           313           313        92.3%
+  HN-VLBA-SC-VLBA              274        MISSED        MISSED         0.0%
+  HN-VLBA-SESHAN25              32            32            32       100.0%
+  HN-VLBA-WETTZ13N             215           161           153        71.2%
+  HN-VLBA-YARRA12M               4             2    DESELECTED         0.0%
+  KP-VLBA-LA-VLBA              439           439           435        99.1%
+  KP-VLBA-MEDICINA              79            79            79       100.0%
+  KP-VLBA-MK-VLBA              232           207           206        88.8%
+  KP-VLBA-NL-VLBA              377           375           372        98.7%
+  KP-VLBA-OV-VLBA              405           404           401        99.0%
+  KP-VLBA-PIETOWN              446           411           403        90.4%
+  KP-VLBA-SC-VLBA              191        MISSED        MISSED         0.0%
+  KP-VLBA-SESHAN25              76            75            75        98.7%
+  KP-VLBA-WETTZ13N              77            67            65        84.4%
+  KP-VLBA-YARRA12M              88            77            72        81.8%
+  LA-VLBA-MEDICINA             105           105           105       100.0%
+  LA-VLBA-MK-VLBA              233           182           182        78.1%
+  LA-VLBA-NL-VLBA              410           409           405        98.8%
+  LA-VLBA-OV-VLBA              400           398           395        98.8%
+  LA-VLBA-PIETOWN              495           453           447        90.3%
+  LA-VLBA-SC-VLBA              218        MISSED        MISSED         0.0%
+  LA-VLBA-SESHAN25              70            70            70       100.0%
+  LA-VLBA-WETTZ13N              98            78            76        77.6%
+  LA-VLBA-YARRA12M              75            68            64        85.3%
+  MEDICINA-MK-VLBA              21            18            18        85.7%
+  MEDICINA-NL-VLBA             160           158           158        98.8%
+  MEDICINA-OV-VLBA              64            64            64       100.0%
+  MEDICINA-PIETOWN              95            92            92        96.8%
+  MEDICINA-SC-VLBA             134        MISSED        MISSED         0.0%
+  MEDICINA-SESHAN25             95            94            94        98.9%
+  MEDICINA-WETTZ13N            301           282           270        89.7%
+  MEDICINA-YARRA12M            100            91            86        86.0%
+  MK-VLBA-NL-VLBA              169           148           146        86.4%
+  MK-VLBA-OV-VLBA              258           229           229        88.8%
+  MK-VLBA-PIETOWN              244           214           213        87.3%
+  MK-VLBA-SC-VLBA               59        MISSED        MISSED         0.0%
+  MK-VLBA-SESHAN25             192           176           175        91.1%
+  MK-VLBA-WETTZ13N              24            20            20        83.3%
+  MK-VLBA-YARRA12M             202           184           176        87.1%
+  NL-VLBA-OV-VLBA              327           324           321        98.2%
+  NL-VLBA-PIETOWN              401           373           369        92.0%
+  NL-VLBA-SC-VLBA              247        MISSED        MISSED         0.0%
+  NL-VLBA-SESHAN25              52            50            50        96.2%
+  NL-VLBA-WETTZ13N             151           117           112        74.2%
+  NL-VLBA-YARRA12M              34            31            29        85.3%
+  OV-VLBA-PIETOWN              402           365           361        89.8%
+  OV-VLBA-SC-VLBA              162        MISSED        MISSED         0.0%
+  OV-VLBA-SESHAN25              96            95            94        97.9%
+  OV-VLBA-WETTZ13N              59            47            45        76.3%
+  OV-VLBA-YARRA12M             103            85            78        75.7%
+  PIETOWN-SC-VLBA              213        MISSED        MISSED         0.0%
+  PIETOWN-SESHAN25              73            65            65        89.0%
+  PIETOWN-WETTZ13N              91            71            69        75.8%
+  PIETOWN-YARRA12M              81            65            60        74.1%
+  SC-VLBA-SESHAN25               8        MISSED        MISSED         0.0%
+  SC-VLBA-WETTZ13N             126        MISSED        MISSED         0.0%
+  SC-VLBA-YARRA12M               0        MISSED        MISSED         0.0%
+  SESHAN25-WETTZ13N             90            77            75        83.3%
+  SESHAN25-YARRA12M            234           230           218        93.2%
+  WETTZ13N-YARRA12M            100            66            64        64.0%
+  -----------------      ---------   -----------    ----------       ------
+  Baseline Total             18827         15914         15733        83.6%
+
+  * Recoverable: can be included in the solution. 
+
+  MISSED:     Baseline was scheduled, but at least one of the sites
+              did not observe.
+  NOT CORR:   Baseline was scheduled but not correlated.
+  NO DATA:    The baseline's stations were both correlated,
+              but they did not observe together.
+  DESELECTED: Usable data was generated for the baseline,
+              but the analyst rejected it.

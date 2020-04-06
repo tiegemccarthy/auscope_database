@@ -1,0 +1,321 @@
+TIMETAG 2016/09/22 12:04:39 
+MK3DB_VERSION    1
+Dbedit: AUA012 -AU-
+VLBI experiment AUA012 ( AUA012/2016 )
+Created by dbedit Ver. 2013.10.18  revision 6.22
+        run by Observer ( observer@ops7 )
+            at HOB -- University of Tasmania
+               on ops7 at 2016.09.22-22:04:39 local time
+Dbedit control file history entry: AUA012 -AU-
+Directory /mnt/magilla/AUSTRAL/aua012/1612/
+$1>
++HEADER
+CORREL   SHAO
+DATABASE 16AUG09XA
+SESSNAME AUA012
+UTSTART  1730
+DURATION 24
+DOY      222-223
+CORRTIME 2016/09/20
+CORRPASS 1
+EXPORT   DONE
+
++SUMMARY
+ Qcode      % of Total   % of Correlated
+                scans          scans
+
+  5-9            49%             -
+   0             28%             -
+ 4-1,A-H,N       23%             -
+ Removed          -              -
+
++CORRELATOR_NOTES
+
++STATION_NOTES
+
+ HOBART26 (Ho/H): Manual phasecal applied. Channels SR5U and SR6U removed
+  due to strong RFI. X-band LSB channels removed due to low SNR.
+
+ KATH12M  (Ke/i): No data 2300-2355 due to power outage. Likely clock
+  break during this time.
+
+ KUNMING  (Km/K): Manual phasecal. Large residual delay rate of ~5ns/hour,
+  leading to wraps around the ambiguity windows. Problems with the mark5
+diskpack meant that only part of the data in each scan could be recovered.
+  No data between 0600 and 1445.
+
+ PARKES   (Pa/P): Manual phase-cal applied. ~90ns delay offset between
+  upper and lower X-band channels.
+
+ SESHAN25 (Sh/C): Ok.
+
+ URUMQI   (Ur/U): Manual phasecal.
+
+ WARK12M  (Ww/W): No observations made - Az drive fault.
+
+ YARRA12M (Yg/e): Ok.
+
++DROP_CHANNELS
+ Ho SR5U SR6U        XR1L XR8L
+ Ke
+ Km
+ Pa
+ Sh
+ Ur
+ Ww
+ Yg
+
++MANUAL PCAL Ho Km Pa Ur
+
++CHANNELS
+ Channels: XR1U = band|polarization|channel#|sideband
+
+XR1U/L  BBC01 8213.99
+XR2U    BBC02 8253.99
+XR3U    BBC03 8353.99
+XR4U    BBC04 8513.99
+XR5U    BBC05 8733.99
+XR6U    BBC06 8853.99
+XR7U    BBC07 8913.99
+XR8U/L  BBC08 8933.99
+SR1U    BBC09 2223.99
+SR2U    BBC10 2243.99
+SR3U    BBC11 2263.99
+SR4U    BBC12 2293.99
+SR5U    BBC13 2343.99
+SR6U    BBC14 2363.99
+
++CLOCKS
+
+Clocks: SHAO
+
+ Station      Offset     rate        Epoch
+              [usec]     [sec/sec]   [UT]
+ Ho           -0.4153    0.153E-12   2016y222d17h30m0s
+ Ke           1.6049     -0.052E-12  2016y222d17h30m0s
+ Km           40.9936    -0.538E-12  2016y222d17h30m0s
+ Pa           -1.40      0           2016y222d17h30m0s
+ Sh           67.9378    0.727E-12   2016y222d17h30m0s
+ Ur           9.0116     -1.015E-12  2016y222d17h30m0s
+ Yg           9.1605     -0.314E-12  2016y222d17h30m0s
+
++QCODES
+
+Qcod   0 1 2 3  4  5  6   7   8    9 A B C D E F G H    N -  Tot
+--------------------------------------------------------------------
+Hi:X  20 0 0 0  0  0  0   2  17   17 0 0 0 0 0 0 0 0    6 0   62
+Hi:S  19 0 0 0  0  0  0   0   1   36 0 0 0 0 0 0 0 0    6 0   62
+HK:X  92 0 0 0  0  0  0   7   3   10 0 0 0 0 0 0 0 0    4 0  116
+HK:S  95 0 0 0  0  0  0   0   1   16 0 0 0 0 0 0 0 0    4 0  116
+HP:X  10 0 0 0  5  4  7  21  48   50 0 0 0 0 0 0 0 0    7 0  152
+HP:S   5 0 0 0  0  1  5   4  18  112 0 0 0 0 0 0 0 0    7 0  152
+HC:X  24 0 0 0  0  0  0   3  29   66 0 0 0 0 0 0 1 0    4 0  127
+HC:S  52 0 0 0  0  0  0   0   2   69 0 0 0 0 0 0 0 0    4 0  127
+HU:X  29 0 0 0  0  0  5   5   7   52 0 0 0 0 0 0 0 0    2 0  100
+HU:S  67 0 0 0  0  0  0   0   2   29 0 0 0 0 0 0 0 0    2 0  100
+HW:X   0 0 0 0  0  0  0   0   0    0 0 0 0 0 0 0 0 0   72 0   72
+HW:S   0 0 0 0  0  0  0   0   0    0 0 0 0 0 0 0 0 0   72 0   72
+He:X  11 0 0 0  0  0  0   1  17    8 0 0 0 0 0 0 0 0    5 0   42
+He:S  12 0 0 0  0  0  0   0   0   25 0 0 0 0 0 0 0 0    5 0   42
+iK:X  27 0 0 0  0  2  0   2   0   19 0 0 0 0 0 0 0 0    3 0   53
+iK:S  40 0 0 0  0  0  0   1   0    9 0 0 0 0 0 0 0 0    3 0   53
+iP:X  14 0 0 0  0  4  8   2   7   38 0 0 0 0 0 0 0 0    4 0   77
+iP:S  14 0 0 0  1  3  2   3  21   29 0 0 0 0 0 0 0 0    4 0   77
+iC:X  21 0 0 0  0  0  0   1   2   39 0 0 0 0 0 0 0 0    3 0   66
+iC:S  19 0 0 0  0  0  0   1   1   42 0 0 0 0 0 0 0 0    3 0   66
+iU:X  15 0 0 0  0  2  2   8   6   28 0 0 0 0 0 0 0 0    4 0   65
+iU:S  31 0 0 0  0  0  0   0   2   28 0 0 0 0 0 0 0 0    4 0   65
+iW:X   0 0 0 0  0  0  0   0   0    0 0 0 0 0 0 0 0 0  130 0  130
+iW:S   0 0 0 0  0  0  0   0   0    0 0 0 0 0 0 0 0 0  130 0  130
+ie:X  18 0 0 0  0  0  0   0   8  112 0 0 0 0 0 0 0 0   26 0  164
+ie:S  21 0 0 0  0  0  0   1   0  116 0 0 0 0 0 0 0 0   26 0  164
+KP:X  64 0 0 0  0  1  0   1   1   53 0 0 0 0 0 0 0 0    0 0  120
+KP:S  98 0 0 0  1  0  0   2   5   12 0 0 0 0 0 0 2 0    0 0  120
+KC:X  77 0 0 0  1  5  1   1   5  101 0 0 0 0 0 0 0 0    1 0  192
+KC:S 111 0 0 0  1  0  0   1  23   54 0 0 0 0 0 0 1 0    1 0  192
+KU:X  72 0 0 0  0  2  3   6  19   81 0 0 0 0 0 0 0 0    5 0  188
+KU:S 128 0 0 0  0  0  0   1  10   41 0 0 0 0 0 0 3 0    5 0  188
+KW:X   0 0 0 0  0  0  0   0   0    0 0 0 0 0 0 0 0 0   33 0   33
+KW:S   0 0 0 0  0  0  0   0   0    0 0 0 0 0 0 0 0 0   33 0   33
+Ke:X  26 0 0 0  0  0  1   0   1   38 0 0 0 0 0 0 0 0    1 0   67
+Ke:S  43 0 0 0  0  0  0   0   6   17 0 0 0 0 0 0 0 0    1 0   67
+PC:X  15 0 0 0  0  5  5   4  11   75 0 0 0 0 0 0 0 0    1 0  116
+PC:S  28 0 0 0  0  1  1   4  11   70 0 0 0 0 0 0 0 0    1 0  116
+PU:X  10 0 0 0  0  5  4   8  18   46 0 0 0 0 0 0 0 0    1 0   92
+PU:S  43 0 0 0  1  0  0   1   9   37 0 0 0 0 0 0 0 0    1 0   92
+PW:X   0 0 0 0  0  0  0   0   0    0 0 0 0 0 0 0 0 0   85 0   85
+PW:S   0 0 0 0  0  0  0   0   0    0 0 0 0 0 0 0 0 0   85 0   85
+Pe:X   9 0 0 0  0  4  2   5   6   34 0 0 0 0 0 0 0 0    5 0   65
+Pe:S  10 0 0 0  0  1  3   0   4   42 0 0 0 0 0 0 0 0    5 0   65
+CU:X  17 0 0 0  0 12  9  40  41   54 0 0 0 0 0 0 0 0    3 0  176
+CU:S  53 0 0 0  0  0  0   5  26   89 0 0 0 0 0 0 0 0    3 0  176
+CW:X   0 0 0 0  0  0  0   0   0    0 0 0 0 0 0 0 0 0   36 0   36
+CW:S   0 0 0 0  0  0  0   0   0    0 0 0 0 0 0 0 0 0   36 0   36
+Ce:X  11 0 0 0  0  0  0   1   3   50 0 0 0 0 0 0 0 0    1 0   66
+Ce:S  15 0 0 0  0  0  0   0   0   50 0 0 0 0 0 0 0 0    1 0   66
+UW:X   0 0 0 0  0  0  0   0   0    0 0 0 0 0 0 0 0 0   31 0   31
+UW:S   0 0 0 0  0  0  0   0   0    0 0 0 0 0 0 0 0 0   31 0   31
+Ue:X  13 0 0 0  0  2  3  10  14   28 0 0 0 0 0 0 0 0    2 0   72
+Ue:S  35 0 0 0  0  0  0   0   1   34 0 0 0 0 0 0 0 0    2 0   72
+We:X   0 0 0 0  0  0  0   0   0    0 0 0 0 0 0 0 0 0  129 0  129
+We:S   0 0 0 0  0  0  0   0   0    0 0 0 0 0 0 0 0 0  129 0  129
+--------------------------------------------------------------------
+Tot 1534 0 0 0 10 54 61 152 406 1956 0 0 0 0 0 0 7 0 1208 0 5388
+
+ Legend:
+ QC = 0   Fringes not detected.
+    = 1-9 Fringes detected, no error condition. Higher #, better quality.
+    = B   Interpolation error in fourfit.
+    = D   No data in one or more frequency channels.
+    = E   Maximum fringe amplitude at edge of SBD, MBD, or rate window.
+    = F   Fork problem in processing.
+    = G   Fringe amp in a channel is <.5 times mean amp (only if SNR>20).
+    = H   Low Phase-cal amplitude in one or more channels.
+    = N   No valid correlator data.
+  Tot     Total number of scans in schedule.
+  Minus   Scans in original schedule file for which correlation was not
+          attempted, usually because of known station problems.
+
++SNR_RATIOS
+
+MEAN RATIOS = Observed SNR / Predicted SNR  for exp no. 1612
+
+ ...by baseline, over all sources:
+
+ bl     X     n       S     n
+
+ Hi    0.79   36     0.78   37
+ HK    0.30   20     0.29   16
+ HP    1.03  135     1.18  140
+ HC    0.67   99     0.79   71
+ HU    0.66   69     0.58   31
+ HW    0.00    0     0.00    0
+ He    0.99   26     0.77   25
+ iK    0.45   23     0.20   10
+ iP    1.13   59     1.16   59
+ iC    0.93   42     0.82   44
+ iU    0.84   46     0.48   30
+ iW    0.00    0     0.00    0
+ ie    1.54  120     0.89  117
+ KP    0.36   56     0.31   22
+ KC    0.42  114     0.28   79
+ KU    0.45  111     0.16   53
+ KW    0.00    0     0.00    0
+ Ke    0.50   40     0.21   23
+ PC    0.89  100     0.97   87
+ PU    0.82   81     0.70   48
+ PW    0.00    0     0.00    0
+ Pe    1.41   51     1.02   50
+ CU    0.95  156     0.65  120
+ CW    0.00    0     0.00    0
+ Ce    1.09   54     0.82   50
+ UW    0.00    0     0.00    0
+ Ue    0.99   57     0.52   35
+ We    0.00    0     0.00    0
+
++FOURFIT_CONTROL_FILE
+
+* control file for exp. AUST
+
+    max_parity  0.01
+    pc_mode multitone
+    pc_period 2
+*
+start -2
+* stop -30
+
+   sb_win -256.0 256.0 mb_win -2.0 2.0 dr_win -300.e-4 300.e-4
+*      sb_win -2.0 2.0 mb_win -2.0 2.0 dr_win -30.0e-5 30.0e-5
+*
+*    ...offset between VLBA-VLBA and MK4-VLBA ...
+
+weak_channel 0.3
+
+if station H and f_group S
+    freqs a b c d
+
+if station H and f_group X
+   freqs g+ h i j k l m n+
+
+if station P and f_group X
+   delay_offs ghijklmn 76.5  76.5 76.5 76.5 -16.0 -16.0 -16.0 -16.0
+   lsb_offset -155.0
+
+if station K
+   lsb_offset -50.0
+
+if station U
+   lsb_offset -10.0
+
+if station e
+   lsb_offset -5.0
+
+if station i
+   lsb_offset 20.0
+
+  if f_group X
+    ref_freq 8212.99
+    freqs g h i j k l m n
+    pc_tonemask ghijklmn 223 223 223 223 223 223 223 223
+*    pc_freqs ghijklmn 9010 9010 9010 9010 9010 9010 9010 9010
+
+  if f_group S
+    ref_freq 2225.99
+    freqs a b c d e f
+    pc_tonemask abcdef 127 127 127 127 127 127
+*    pc_freqs abcdef 3010 3010 3010 3010 3010 3010
+
+  if station U and f_group S
+    pc_mode manual
+    pc_phases abcdef -120.7 -181.2 -107.8 -303.0 -51.1 -305.8
+
+  if station U and f_group X
+    pc_mode manual
+ pc_phases ghijklmn -138.1 159.5 248.9 27.5 284.4 252.5 34.5 110.2
+
+  if station K and f_group S
+    pc_mode manual
+    pc_phases abcdef 89.4  136.3   64.6   15.8 -148.1  -86.5
+
+  if station K and f_group X
+   pc_mode manual
+ pc_phases ghijklmn 135.0 -324.2 -134.3  -30.3 -246.3  -46.5 -193.9 -325.6
+
+  if station P and f_group S
+    pc_mode manual
+    pc_phases abcdef 74.5    3.6  296.7   15.4  192.5  245.9
+
+  if station P and f_group X
+    pc_mode manual
+ pc_phases ghijklmn -97.4 -209.2 -301.8 -292.9 -176.5 -338.1 -158.8 -266.0
+
+if station H and f_group S
+    pc_mode manual
+    pc_phases abcd 132.5   12.0   46.0   74.4
+
+  if station H and f_group X
+    pc_mode manual
+ pc_phases ghijklmn 175.4  247.8  328.0  260.0  306.5  116.1   18.8  156.5
+
+* ref Sh/C --> just for book keeping
+
+   if station i and f_group S
+   pc_phases abcdef 3.0 -1.3 -5.4 4.0  0.2 -0.7
+   if station i and f_group X
+   pc_phases ghijklmn 4.0 -8.1 -6.0 9.5 6.9 -12.9 -15.5 10.0
+
+   if station e and f_group S
+   pc_phases abcdef 1.0  -10.5   -4.0   23.9   -4.9   -4.0
+   if station e and f_group X
+   pc_phases ghijklmn -0.6    2.8   -5.4   11.2   -5.4  -15.3  -15.6 14.2
+
+Regards,
+ Jamie
+
++END
+$1<
+Sorted by time and subsorted by baseline.   -AU-
+All  baselines used.
+All  sources used.
+Output time window:  earliest latest
+

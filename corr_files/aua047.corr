@@ -1,0 +1,157 @@
+
+TIMETAG 2019/01/22 10:55:05 UTC
+MK3DB_VERSION 0
++HEADER
+CORREL   VIEN
+DATABASE 18DEC04XA
+SESSNAME AUA047
+OBSTIME  2018/12/04 2018/12/05
+UTSTART  17:30
+DURATION 24
+DOY      338-339
+CORRTIME 2019/01/10
+CORRPASS 1
+EXPORT   DONE
+
++SUMMARY
+ Qcode      % of Total   % of Correlated
+                scans          scans
+
+  5-9            91%             -
+   0              3%             -
+ 4-1,A-H,N        6%             -
+ Removed           -              -
+
++CORRELATOR_NOTES
+
+This session was scheduled by students with VieSched++ within the scope of the 
+lecture "Geodetic Space Techniques" at TU Wien. Aims comprise improved station 
+coordinates. 
+
+The vgosDb can be found at: 
+
+	http://ggosatm.hg.tuwien.ac.at/correlation/vgosDB/18DEC04XA.tar.gz
+
++STATION_NOTES
+
+  KATH12M (Ke/a): Ok.
+
+  YARRA12M (Yg/i): Ok.
+
+  HOBART26 (Ho/H): Manual phase-cal applied. Low power in first and last channel
+
++DROP_CHANNELS
+  Ke 
+  Yg 
+  Ho XR1U/L,XR8U/L
+
++MANUAL PCAL  Ho
+
++CHANNELS
+ Channels: XR1U = band|polarization|channel#|sideband
+
+XR1U/L  BBC01 8212 
+XR2U    BBC02 8252 
+XR3U    BBC03 8352 
+XR4U    BBC04 8512 
+XR5U    BBC05 8732 
+XR6U    BBC06 8852 
+XR7U    BBC07 8912 
+XR8U/L  BBC08 8932 
+SR1U    BBC09 2200 
+SR2U    BBC10 2216 
+SR3U    BBC11 2232 
+SR4U    BBC12 2248 
+SR5U    BBC13 2264 
+SR6U    BBC14 2280 
+
++CLOCKS
+
+Clocks: VIEN
+
+ Station     fmout-gps      Used      rate     Comments
+              [usec]       [usec]   [sec/sec]
+  Ke            4.663       6.672  -9.101e-13   
+  Yg            3.915       6.191   3.329e-13   Ref
+  Ho            7.776       9.909  -2.513e-13   
+
+Date:  Date: 2018-12-04 17:30:00
+
++QCODES
+
+Qcodes  0 1 2 3 4  5  6  7   8    9 A B C D E F G H   N -  Tot
+--------------------------------------------------------------
+Ha:X   25 0 0 0 0  0  1  0  19  427 0 0 0 0 0 0 0 0  38 0  510
+Ha:S   24 0 0 0 0  0  2  7 179  259 0 0 0 0 0 0 1 0  38 0  510
+Hi:X    6 0 0 0 0  3  2  4  18  449 0 0 0 0 0 0 0 2  27 0  511
+Hi:S    6 0 0 0 0  1  0  3  60  413 0 0 0 0 0 0 1 0  27 0  511
+ai:X   17 0 0 0 1  6  7 10  61  387 0 0 0 0 0 0 0 3  20 0  512
+ai:S   18 0 0 0 1  0  0  1   5  467 0 0 0 0 0 0 0 0  20 0  512
+--------------------------------------------------------------
+Totals 96 0 0 0 2 10 12 25 342 2402 0 0 0 0 0 0 2 5 170 0 3066
+
+ Legend:
+ QC = 0   Fringes not detected.
+    = 1-9 Fringes detected, no error condition. Higher #, better quality.
+    = B   Interpolation error in fourfit.
+    = D   No data in one or more frequency channels.
+    = E   Maximum fringe amplitude at edge of SBD, MBD, or rate window.
+    = F   Fork problem in processing.
+    = G   Fringe amp in a channel is <.5 times mean amp (only if SNR>20).
+    = H   Low Phase-cal amplitude in one or more channels.
+    = N   No valid correlator data.
+  Tot     Total number of scans in schedule.
+  Minus   Scans in original schedule file for which correlation was not
+          attempted, usually because of known station problems.
+
++SNR_RATIOS
+
+MEAN RATIOS = Observed SNR / Predicted SNR 
+
+ ...by baseline, over all sources:
+
+ bl     X     n       S     n
+
+ Ha    0.63  239     0.72  241
+ Hi    0.79  229     0.74  246
+ ai    1.25  255     0.71  238
+
+
++FOURFIT_CONTROL_FILE
+
+*** control file for aua047
+
+max_parity  0.01
+pc_mode multitone
+pc_period 5
+sb_win -256.0 256.0
+mb_win -256.0 256.0
+dr_win -30.0e-4 30.0e-4
+
+weak_channel 0.3
+
+*** Ho(H)
+if station H and f_group X
+  pc_mode manual
+  freqs h i j k l m
+  pc_phases hijklm  -11.6 -289.8 -217.7 -115.7  -98.9 -124.4
+if station H and f_group S
+  pc_mode manual
+  pc_phases abcdef   84.1   96.7  165.2  217.0   67.0  227.2
+
+*** Ke(a)
+if station a and f_group X
+  pc_phases ghijklmn -142.0 -265.7 -190.4 -293.5 -212.3 -210.1  -33.4  -87.2
+if station a and f_group S
+  pc_phases abcdef -178.8  206.4 -106.4  -66.8  -48.0  331.2
+
+*** Yg(i)
+if station i and f_group X
+
+if station i and f_group S
+
+
+Best Regards,
+Jakob Gruber
+
++END

@@ -1,0 +1,317 @@
+TIMETAG 2016/04/25 23:37:46 
+MK3DB_VERSION    1
+Dbedit: AOV004  -SH-
+VLBI experiment AOV004 ( AOV004/2015 )
+Created by dbedit Ver. 2013.10.18  revision 6.22
+        run by oper ( oper@nas8 )
+            at SHA -- SHANGHAI VLBI CORRELATOR
+               on nas8 at 2016.04.26-07:37:46 local time
+Dbedit control file history entry: AOV004  -SH-
+Directory /Center/geo/aov004/1504/
+$1>
++HEADER
+CORREL   SHAO
+DATABASE 15AUG26XA
+SESSNAME AOV004
+OBSTIME  2015/08/26 2015/08/27
+UTSTART  1800
+DURATION 24
+DOY      238-239
+CORRTIME 2016/04/23 2016/04/24
+CORRPASS 1
+EXPORT   DONE
+
++SUMMARY
+ Qcode      % of Total   % of Correlated
+                scans          scans
+
+  5-9            36%            86%
+   0              4%            10%
+ 4-1,A-H,N        2%             4%
+ Removed         59%             -
+
++CORRELATOR_NOTES
+  Overlapping IFs at XR7U and XR8L, removed XR8L when fringe fitting.
+
++STATION_NOTES
+
+ HOBART12 (Hb/H): Did not observe.
+
+ ISHIOKA  (Is/j): Lost data after 239-1636.
+                  Manual PCAL applied.
+
+ KASHIM34 (Kb/O): Data was not transfered due to a recoder malfunction.
+
+ KATH12M  (Ke/g): Manual PCAL applied.
+
+ SEJONG   (Kv/e): RFI at SR4U, SR5U and SR6U, SR5U and SR6U removed from
+                  fitting. SR4U also caused G codes, use weak_channel=0.3
+                  to avoid.
+
+ SESHAN25 (Sh/C): RFI at SR6U,removed from fitting.
+
+ TSUKUB32 (Ts/T): Low amplitude at SR1U-SR4U after 239-1503 caused G codes.
+
+ WARK12M  (Ww/u): Data was lost at NGII due to storage system problem and
+                  was not recoverable.
+
+ YARRA12M (Yg/i): Fine.
+
++DROP_CHANNELS
+ Hb
+ Is
+ Kb
+ Ke
+ Kv SR5U SR6U
+ Sh SR6U
+ Ts
+ Ww
+ Yg
+
++MANUAL PCAL Ke Is
+
++CHANNELS
+ Channels: XR1U = band|polarization|channel#|sideband
+
+XR1U/L  BBC01 8213.99
+XR2U    BBC02 8253.99
+XR3U    BBC03 8353.99
+XR4U    BBC04 8513.99
+XR5U    BBC05 8733.99
+XR6U    BBC06 8853.99
+XR7U    BBC07 8913.99
+XR8U/L  BBC08 8933.99
+SR1U    BBC09 2223.99
+SR2U    BBC10 2243.99
+SR3U    BBC11 2263.99
+SR4U    BBC12 2293.99
+SR5U    BBC13 2343.99
+SR6U    BBC14 2363.99
+
++CLOCKS
+
+Clocks: SHAO
+
+ Station     fmout-gps      Used      rate     Comments
+              [usec]       [usec]   [sec/sec]
+  Hb            0.00         0.00            :
+  Ke           10.02        10.49            :
+  Kv            0.00        -6.82
+  Kb            0.00         0.00
+  Is            0.00        -1.67
+  Sh           46.09        49.58            :
+  Ts            0.15         0.15            :
+  Ww          -32.47       -32.47            :
+  Yg           10.68        11.34            :
+
+Date:    2015/08/26
+
++QCODES
+
+Qcod  0 1 2 3 4 5   6   7   8    9 A B C D E F  G H   N    -   Tot
+----------------------------------------------------------------------
+Hj:X  0 0 0 0 0 0   0   0   0    0 0 0 0 0 0 0  0 0   0  175   175
+Hj:S  0 0 0 0 0 0   0   0   0    0 0 0 0 0 0 0  0 0   0  175   175
+HO:X  0 0 0 0 0 0   0   0   0    0 0 0 0 0 0 0  0 0   0  174   174
+HO:S  0 0 0 0 0 0   0   0   0    0 0 0 0 0 0 0  0 0   0  174   174
+Hg:X  0 0 0 0 0 0   0   0   0    0 0 0 0 0 0 0  0 0   0  207   207
+Hg:S  0 0 0 0 0 0   0   0   0    0 0 0 0 0 0 0  0 0   0  207   207
+He:X  0 0 0 0 0 0   0   0   0    0 0 0 0 0 0 0  0 0   0  156   156
+He:S  0 0 0 0 0 0   0   0   0    0 0 0 0 0 0 0  0 0   0  156   156
+HC:X  0 0 0 0 0 0   0   0   0    0 0 0 0 0 0 0  0 0   0  165   165
+HC:S  0 0 0 0 0 0   0   0   0    0 0 0 0 0 0 0  0 0   0  165   165
+HT:X  0 0 0 0 0 0   0   0   0    0 0 0 0 0 0 0  0 0   0  180   180
+HT:S  0 0 0 0 0 0   0   0   0    0 0 0 0 0 0 0  0 0   0  180   180
+HW:X  0 0 0 0 0 0   0   0   0    0 0 0 0 0 0 0  0 0   0  209   209
+HW:S  0 0 0 0 0 0   0   0   0    0 0 0 0 0 0 0  0 0   0  209   209
+Hi:X  0 0 0 0 0 0   0   0   0    0 0 0 0 0 0 0  0 0   0  177   177
+Hi:S  0 0 0 0 0 0   0   0   0    0 0 0 0 0 0 0  0 0   0  177   177
+jO:X  0 0 0 0 0 0   0   0   0    0 0 0 0 0 0 0  0 0   0  245   245
+jO:S  0 0 0 0 0 0   0   0   0    0 0 0 0 0 0 0  0 0   0  245   245
+jg:X 27 0 0 0 0 2  10   3  29   85 0 0 0 0 0 0  0 0  16    0   172
+jg:S 33 0 0 0 0 0   3   3  26   91 0 0 0 0 0 0  0 0  16    0   172
+je:X  5 0 0 0 0 0   1   3  26  140 0 0 0 0 0 0  1 0  10    0   186
+je:S 13 0 0 0 0 2  14  43  71   24 0 0 0 0 0 0  9 0  10    0   186
+jC:X  2 0 0 0 0 0   0   0   6  186 0 0 0 0 0 0  2 0  13    0   209
+jC:S  7 0 0 0 0 0   0   0  24  165 0 0 0 0 0 0  0 0  13    0   209
+jT:X  4 0 0 0 0 0   0   0   1  237 0 0 0 0 0 0  1 0  16    0   259
+jT:S  1 0 0 0 0 2   0   0  16  208 0 0 0 0 0 0 16 0  16    0   259
+jW:X  0 0 0 0 0 0   0   0   0    0 0 0 0 0 0 0  0 0   0  170   170
+jW:S  0 0 0 0 0 0   0   0   0    0 0 0 0 0 0 0  0 0   0  170   170
+ji:X 21 0 0 0 0 0   0   2   2  108 0 0 0 0 0 0  0 0  12    0   145
+ji:S 27 0 0 0 0 0   0   0  19   87 0 0 0 0 0 0  0 0  12    0   145
+Og:X  0 0 0 0 0 0   0   0   0    0 0 0 0 0 0 0  0 0   0  173   173
+Og:S  0 0 0 0 0 0   0   0   0    0 0 0 0 0 0 0  0 0   0  173   173
+Oe:X  0 0 0 0 0 0   0   0   0    0 0 0 0 0 0 0  0 0   0  218   218
+Oe:S  0 0 0 0 0 0   0   0   0    0 0 0 0 0 0 0  0 0   0  218   218
+OC:X  0 0 0 0 0 0   0   0   0    0 0 0 0 0 0 0  0 0   0  400   400
+OC:S  0 0 0 0 0 0   0   0   0    0 0 0 0 0 0 0  0 0   0  400   400
+OT:X  0 0 0 0 0 0   0   0   0    0 0 0 0 0 0 0  0 0   0  445   445
+OT:S  0 0 0 0 0 0   0   0   0    0 0 0 0 0 0 0  0 0   0  445   445
+OW:X  0 0 0 0 0 0   0   0   0    0 0 0 0 0 0 0  0 0   0  171   171
+OW:S  0 0 0 0 0 0   0   0   0    0 0 0 0 0 0 0  0 0   0  171   171
+Oi:X  0 0 0 0 0 0   0   0   0    0 0 0 0 0 0 0  0 0   0  189   189
+Oi:S  0 0 0 0 0 0   0   0   0    0 0 0 0 0 0 0  0 0   0  189   189
+ge:X 22 0 0 0 0 0   9   2  17  114 0 0 0 0 0 0  0 0   4    0   168
+ge:S 46 0 0 0 0 0   1   9  24   84 0 0 0 0 0 0  0 0   4    0   168
+gC:X 22 0 0 0 0 0  17   1  23  111 0 0 0 0 0 0  0 0   2    0   176
+gC:S 32 0 0 0 0 0   1   5  20  116 0 0 0 0 0 0  0 0   2    0   176
+gT:X 25 0 0 0 0 0  13   3  20  111 0 0 0 0 0 0  0 0   4    0   176
+gT:S 34 0 0 0 0 0   2  14  31   85 0 0 0 0 0 0  6 0   4    0   176
+gW:X  0 0 0 0 0 0   0   0   0    0 0 0 0 0 0 0  0 0   0  217   217
+gW:S  0 0 0 0 0 0   0   0   0    0 0 0 0 0 0 0  0 0   0  217   217
+gi:X 16 0 0 0 0 2  25   0  20  129 0 0 0 0 0 0  0 0   3    0   195
+gi:S 25 0 0 0 0 0   1   5  29  128 0 0 0 0 0 0  4 0   3    0   195
+eC:X  7 0 0 0 0 0   1   0  12  183 0 0 0 0 0 0  0 0   1    0   204
+eC:S 20 0 0 0 0 0   3  36  91   53 0 0 0 0 0 0  0 0   1    0   204
+eT:X  6 0 0 0 0 0   0   0   6  204 0 0 0 0 0 0  0 0   2    0   218
+eT:S 22 0 0 0 0 0   1  32 113   48 0 0 0 0 0 0  0 0   2    0   218
+eW:X  0 0 0 0 0 0   0   0   0    0 0 0 0 0 0 0  0 0   0  152   152
+eW:S  0 0 0 0 0 0   0   0   0    0 0 0 0 0 0 0  0 0   0  152   152
+ei:X 14 0 0 0 0 0   0   0   4  128 0 0 0 0 0 0  0 0   0    0   146
+ei:S 37 0 0 0 0 0   0   9  28   72 0 0 0 0 0 0  0 0   0    0   146
+CT:X  3 0 0 0 0 0   0   2  17  376 0 0 0 0 0 0  0 0   1    0   399
+CT:S 18 0 0 0 0 0   0  11  45  310 0 0 0 0 0 0 14 0   1    0   399
+CW:X  0 0 0 0 0 0   0   0   0    0 0 0 0 0 0 0  0 0   0  167   167
+CW:S  0 0 0 0 0 0   0   0   0    0 0 0 0 0 0 0  0 0   0  167   167
+Ci:X 19 0 0 0 0 0   0   0   3  175 0 0 0 0 0 0  0 0   0    0   197
+Ci:S 35 0 0 0 0 0   0   0   4  157 0 0 0 0 0 0  1 0   0    0   197
+TW:X  0 0 0 0 0 0   0   0   0    0 0 0 0 0 0 0  0 0   0  179   179
+TW:S  0 0 0 0 0 0   0   0   0    0 0 0 0 0 0 0  0 0   0  179   179
+Ti:X 23 0 0 0 0 0   0   0   1  168 0 0 0 0 0 0  0 0   1    0   193
+Ti:S 36 0 0 0 0 0   0   4  22  124 0 0 0 0 0 0  6 0   1    0   193
+Wi:X  0 0 0 0 0 0   0   0   0    0 0 0 0 0 0 0  0 0   0  182   182
+Wi:S  0 0 0 0 0 0   0   0   0    0 0 0 0 0 0 0  0 0   0  182   182
+----------------------------------------------------------------------
+Tot 602 0 0 0 0 8 102 187 750 4207 0 0 0 0 0 0 60 0 170 8702 14788
+
+ Legend:
+ QC = 0   Fringes not detected.
+    = 1-9 Fringes detected, no error condition. Higher #, better quality.
+    = B   Interpolation error in fourfit.
+    = D   No data in one or more frequency channels.
+    = E   Maximum fringe amplitude at edge of SBD, MBD, or rate window.
+    = F   Fork problem in processing.
+    = G   Fringe amp in a channel is <.5 times mean amp (only if SNR>20).
+    = H   Low Phase-cal amplitude in one or more channels.
+    = N   No valid correlator data.
+  Tot     Total number of scans in schedule.
+  Minus   Scans in original schedule file for which correlation was not
+          attempted, usually because of known station problems.
+
++SNR_RATIOS
+
+MEAN RATIOS = Observed SNR / Predicted SNR  for exp no. 1504
+
+ ...by baseline, over all sources:
+
+ bl     X     n       S     n
+
+ jg    0.97  129     1.37  123
+ je    1.03  171     1.20  163
+ jC    1.06  194     1.27  189
+ jT    0.90  239     1.43  242
+ ji    1.13  112     1.25  106
+ ge    1.05  142     0.84  118
+ gC    0.95  152     0.82  142
+ gT    0.80  147     0.83  138
+ gi    1.21  176     0.79  167
+ eC    1.09  196     0.75  183
+ eT    0.98  210     0.77  194
+ ei    1.16  132     0.76  107
+ CT    0.75  395     0.68  380
+ Ci    1.11  178     0.82  162
+ Ti    0.91  169     0.73  155
+
++FOURFIT_CONTROL_FILE
+
+* control file for exp. aov004
+    max_parity  0.01
+    pc_mode multitone
+    pc_period 5
+*
+start -2
+      sb_win -2.0 2.0 mb_win -2.0 2.0 dr_win -30.0e-5 30.0e-5
+*
+*    ...offset between VLBA-VLBA and MK4-VLBA ...
+*Ke/g
+    if station g
+      lsb_offset  -80.
+*Is/j
+    if station j
+      lsb_offset   -80.
+*Kv/e
+    if station e
+      lsb_offset -200.
+*Sh/C
+    if station C
+      lsb_offset -120.0
+*Ts/T
+    if station T
+      lsb_offset -0.
+*Yg/i
+    if station i
+      lsb_offset -120.
+
+  if f_group X
+    ref_freq 8213.99
+    pc_tonemask ghijklmn 2115 2115 2115 2115 2115 2115 2115 2115
+
+  if f_group S
+    ref_freq 2223.99
+    pc_tonemask abcdef 2115 2115 2115 2115 2115 2115
+
+  if station e and f_group S
+    freqs a b c d
+    weak_channel 0.2
+
+  if station C and f_group S
+    freqs a b c d e
+
+  if station i and f_group X
+    delay_offs  ghijklmn 0 0 0 0 32 32 32 32
+
+  if f_group X
+    freqs g h i j k l m n+
+
+*Ref Yg/i
+
+  if station g and f_group S
+    pc_mode manual
+    pc_phases abcdef 146  35 -103 -288 -168 -211
+  if station g and f_group X
+    pc_mode manual
+    pc_phases ghijklmn -180  334  51  22 314  44  337 60
+
+  if station j and f_group S
+    pc_mode manual
+    pc_phases abcdef 167  -4 -192  -66  -49 -185
+  if station j and f_group X
+    pc_mode manual
+    pc_phases ghijklmn 3  352  114  298  183  195  292  187
+
+  if station e and f_group S
+    pc_phases abcd 17.1   -37.6  25.1  -3.4
+  if station e and f_group X
+    pc_phases ghijklmn -2.8 12.0 14.8 -36.7 34.9 -116.5  -11.0  44.4
+
+  if station C and f_group S
+    pc_phases abcde -3.7  7.7  9.2 -18.8  9.2
+  if station C and f_group X
+    pc_phases ghijklmn -11.3  -9.0 21.4 49.2 -53.2 -21.7 57.4 -14.3
+
+  if station T and f_group S
+    pc_phases abcdef 1.6 11.8  -2.4  -19.4  2.1  9.2
+  if station T and f_group X
+    pc_phases ghijklmn -22.4 25.4 39.9  -25.4 18.2 -117.2 11.9  22.1
+
+Regards,
+ Jiang
+
++END
+$1<
+Sorted by time and subsorted by baseline.   -SH-
+All  baselines used.
+All  sources used.
+Output time window:  earliest latest
+

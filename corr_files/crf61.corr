@@ -1,0 +1,248 @@
+TIMETAG 2011/01/20 15:16:23 
+MK3DB_VERSION    1
+Dbedit: crf61, CRF  | geo_export
+VLBI experiment CRF61 ( CRF )
+Created by dbedit Ver. 2007.10.27  revision 6.17
+        run by vlbi ( vlbi@joplin.usno.navy.mil )
+            at USN -- USNO Earth Orientation department
+               on joplin.usno.navy.mil at 2011.01.20-10:16:23 local time
+Dbedit control file history entry: crf61, CRF  | geo_export
+Directory /data/export/data/crf61/7829
+$1>
++HEADER
+CORREL   WACO
+DATABASE 10DEC14XN
+SESSNAME CRF61
+EXPNO    7829
+OBSTIME  2010/12/14 2010/12/15
+UTSTART  1730
+DURATION 24
+DOY      348/349
+CORRTIME 2011/01/13 2011/01/20
+CORRPASS 1
+EXPORT   Done
+
++SUMMARY
+
+Qcode   % of Total   % of Correlated
+          scans          scans
+
+ 5-9       72%           74%
+  0        25%           25%
+ B-H        0%            0%
+Removed     3%
+
++CORRELATOR_NOTES
+
++STATION_NOTES
+
+HOBART12 (Hb/H):   Station reports DBBC and Mark5B
+                   resync'ed at 348-22:58.  Phase
+                   cal turned on at 348-22:58
+                   Low phase cal amplitudes, manual
+                   pcal.
+
+                   After 348-1734, clock offset increased
+                   linearly from 0.00 to 0.84us while
+                   fringe rates were variable.  Problem
+                   ended with resync of DBBC at 348-2258.
+                   Scans from 348-1730 to 348-2258 should be
+                   inspected carefully before use in
+                   analysis.  Clock jump of approximately
+                   0.05us at 349-0139.
+
+                   Manual phase cal used at HOBART12
+
+KASHIM34 (Kb/O):   Spurious signals at KASHIMA34
+                   XR1U (8211.00) = -12 dBc
+                   XR2U (8221.00) = -14 dBc
+                   XR6U (8501.00) = -10 dBc
+
+KOKEE    (Kk/K):   Manual phase cal used at KOKEE
+
+PARKES64 (Pa/P):   Station reports "rogue reconfiguration of
+                   backend" at 349-0401, reset at 349-1012.
+                   No S-Band fringes between 349-0401 and 349-1012
+                   Phase cal offsets applied at PARKES.
+
++DROP_CHANNELS
+
++MANUAL PCAL  Hb Kk
+
++CHANNELS
+XR1U = band|polarization|channel#|sideband
+
+ XR1U/L  BBC01  8210.99
+ XR2U    BBC02  8220.99
+ XR3U    BBC03  8250.99
+ XR4U    BBC04  8310.99
+ XR5U    BBC05  8420.99
+ XR6U    BBC06  8500.99
+ XR7U    BBC07  8550.99
+ XR8U/L  BBC08  8570.99
+ SR1U    BBC09  2217.99
+ SR2U    BBC10  2222.99
+ SR3U    BBC11  2237.99
+ SR4U    BBC12  2267.99
+ SR5U    BBC13  2292.99
+ SR6U    BBC14  2302.99
+
++CLOCKS
+Clocks: WACO
+
+Station          fmout-gps      Used      rate
+                  [usec]       [usec]   [sec/sec]
+  Hb              12.85         16.12      0.0      *before 348-2300
+  Hb              13.98         16.44      0.0      *after  348-2300
+  Kb             -14.18        -14.45     -2.0e-12
+  Kk               6.51          6.51      0.0
+  Pa              -----          1.11      0.0
+
+Date: 2010/12/14
+
+Qcodes   0  1  2  3  4  5  6  7   8    9  A  B  C  D  E  F  G  H  N  -  Tot
+---------------------------------------------------------------------------
+  HO:X  68  0  0  0  0  1  2  2   7   57  0  0  0  0  0  0  1  0  0  0  138
+  HO:S  39  0  0  0  0  0  2  3   2   90  0  1  0  0  0  0  1  0  0  0  138
+  HK:X  94  0  0  0  0  0  0  0   0   22  0  0  0  0  0  0  0  0  0  6  122
+  HK:S  47  0  0  0  0  0  0  1   1   67  0  0  0  0  0  0  0  0  0  6  122
+  HP:X  30  0  0  0  0  1  0  4  12   77  0  0  0  0  0  0  0  0  0  0  124
+  HP:S  34  0  0  0  0  2  2  4   4   78  0  0  0  0  0  0  0  0  0  0  124
+  OK:X  14  0  0  0  0  0  3  6  47   99  0  0  0  0  0  0  0  0  0  8  177
+  OK:S   0  0  0  0  0  1  0  2  16  150  0  0  0  0  0  0  0  0  0  8  177
+  OP:X   4  0  0  0  0  1  7 16  50  100  0  0  0  0  0  0  0  0  0  0  178
+  OP:S  51  0  0  0  0  0  0  3  16  108  0  0  0  0  0  0  0  0  0  0  178
+  KP:X  20  0  0  0  0  0  2  4  24  132  0  0  0  0  0  0  0  0  0 12  194
+  KP:S  60  0  0  0  0  0  0  2   6  114  0  0  0  0  0  0  0  0  0 12  194
+---------------------------------------------------------------------------
+Totals 461  0  0  0  0  6 18 47 185 1094  0  1  0  0  0  0  2  0  0 52 1866
+
+Legend:
+QC = 0   Fringes not detected.
+   = 1-9 Fringes detected, no error condition. Higher #, better quality.
+   = B   Interpolation error in fourfit.
+   = D   No data in one or more frequency channels.
+   = E   Maximum fringe amplitude at edge of SBD, MBD, or rate window.
+   = F   "Fork" problem in processing.
+   = G   Fringe amp in a channel is <.5 times mean amp (only if SNR>20).
+   = H   Low Phase-cal amplitude in one or more channels.
+   = N   No valid correlator data.
+ Tot     Total number of scans in schedule.
+ Minus   Scans in original schedule file for which correlation was not
+         attempted, usually because of known station problems.
+
++SNR_RATIOS
+
+ MEAN RATIOS = Observed SNR / Predicted SNR  for exp no. 7829
+
+ ...by baseline, over all sources:
+
+ bl     X     n       S     n
+
+ HO    1.87   70     2.16   98
+ HK    2.61   22     2.46   69
+ HP    2.31   94     3.93   77
+ OK    2.51  143     2.56  169
+ OP    2.54  167     2.32  121
+ KP    2.07  162     2.38  121
+
++FOURFIT_CONTROL_FILE
+*
+* 4fit control file for CRF61
+*
+  max_parity 0.02
+  sb_win -1.0 1.0 mb_win -1.0 1.0 dr_win -3.0e-5 3.0e-5
+  start -5   stop -1
+*
+  if f_group X
+    pc_freqs ghijklmn  0010  0010  0010  0010  0010  0010  0010  0010
+*
+  if f_group S
+    dr_win -3.0e-5 3.0e-5
+    pc_freqs abcdef  0010  0010  0010  0010  0010  0010
+*
+    if station K
+      lsb_offset 280.
+*
+*
+**
+  if station H and f_group X
+    pc_phases ghijklmn  -64   21    3  -54 -96 -107  5   -24
+*   pc_phases ghijklmn 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+    pc_mode manual
+*
+  if station H and f_group S
+    pc_phases abcdef   75   52   10  -40   56   75
+*   pc_phases abcdef 0.0 0.0 0.0 0.0 0.0 0.0
+    pc_mode manual
+*
+***
+  if station K and f_group X
+    pc_phases ghijklmn  -149  -142  -97  -83  -116  -113  158  -113
+*   pc_phases ghijklmn 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+    pc_mode manual
+*
+  if station K and f_group S
+    pc_phases abcdef   82  55  101  47  131  47
+*   pc_phases abcdef 0.0 0.0 0.0 0.0 0.0 0.0
+    pc_mode manual
+*
+***
+  if station P and f_group X
+    pc_phases ghijklmn    3   -13   -27   21   20   -5   -17   -2
+*   pc_phases ghijklmn 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+*   pc_mode manual
+*
+  if station P and f_group S
+    pc_phases abcdef   16   15   8   31   11   11
+*   pc_phases abcdef 0.0 0.0 0.0 0.0 0.0 0.0
+*   pc_mode manual
+
+*
+
+Kerry and Dave
+
++END
+$1<
+Sorted by time and subsorted by baseline.   -vlbi-
+All  baselines used.
+All  sources used.
+Output time window:  earliest latest
+TIMETAG 2011/01/20 18:41:42 
+MK3DB_VERSION    2
+CALC10.01 Ver. 2008.11.13  Thu Jan 20 13:41:41 2011nuit.usno.
+Calc 10.00 with External Inputs  -AF-
+TIMETAG 2011/01/20 19:34:35 
+MK3DB_VERSION    3
+Dbcal: crf61 -AF-
+ DBCAL: Version 2007.12.06        JAN 20,2011 19:34:35
+TIMETAG 2011/01/20 20:10:20 
+MK3DB_VERSION    4
+IVS-CRF61 USNO SOLVE solution -AF-
+60/60 clocks/atm - NRMS OK.
+75/5 constraints.
+Reweighted using delays, adjusting stations.
+Overall fit:
+  62 ps
+ 125 fs/s
+The following flyby options were used in the solution:
+Station flyby file:  glo.sit
+Source flyby file :  glo.src
+Nutation offset flyby file :  NONE
+Earth rotation flyby file  :  last_usno_
+Tectonic plate motion file :  glo.vel
+Group delay ambiguities and editing updated.
+Troposphere and cable cal status for standard solution stored.
+Observation dependent contribution status stored.
+Reweighting updated for:
+HO-KA HO-KO HO-PA KA-KO KA-PA KO-PA
+Solution data configuration: GROUP DELAY & RATE
+Clock and atmosphere constraint information saved.
+Batchmode clock parameterization saved.
+Batchmode atmosphere parameterization saved.
+Ionosphere calibrated with IONO IONO  Ve
+Group Ion cal for $10DEC14XN V. 3 based on $10DEC14SN V. 3.
+Barometer calibration and barometer height offset not available.
+Eccentricity data store in data base header.
+Elevation cutoff data stored in database.
+

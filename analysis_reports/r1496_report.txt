@@ -1,0 +1,170 @@
+       Analysis Report for R1496 ($11AUG16XA) 
+   (Analyzed by David Gordon, GSFC Analysis Center.
+    Spoolfile source: interactive solve analysis.) 
+
+Problems: Two clock breaks. Tigo has a large break (~93 microseconds);
+          reason unknown. Hobart12 has a small break in the S-band
+          (~.65 nsec) which puts a small break (~50 psec) in the X/S
+          solution. It was probably due to a brief maser switch. 
+
+Parameterization comments: None. 
+
+Other comments: None. 
+
+-----------------------------------------
+
+Session Statistics 
+
+  Observations:     2179 scheduled 
+                    2179 correlated (in database)
+                    2086 recoverable (usable)
+                    2032 used
+  Session fit:        22.205 ps
+
+-----------------------------------------
+
+Station Performance 
+
+                           Number of Observations
+
+                    Scheduled   Recoverable*        Used   % of scheduled
+                                                              obs used
+
+  HARTRAO                 452           442          439        97.1%
+  HOBART12                408           387          375        91.9%
+  HOBART26                457           438          419        91.7%
+  KATH12M                 112           107          104        92.9%
+  ONSALA60                793           758          743        93.7%
+  TIGOCONC                368           338          331        89.9%
+  TSUKUB32                941           895          866        92.0%
+  WETTZELL                827           807          787        95.2%
+  ---------------   ---------   -----------    ---------       ------
+  Station Total**        2179          2086         2032        93.3%
+
+  * Recoverable: can be included in the solution. 
+  ** Total includes distinct observations only.
+
+  MISSED:    Station was scheduled, but it did not observe.
+  NOT CORR:  Station was scheduled but not correlated.
+  NOT USED:  Usable data was generated for this station,
+             but the analyst rejected it all.
+
+-----------------------------------------
+
+Source Performance 
+
+                    Number of Observations
+
+                Scheduled  Correlated*    Used      % of scheduled
+                                                       obs used
+
+  2142-758              3           3        3          100.0%
+  0347-211             16          16       15           93.8%
+  0239+175              2           2        2          100.0%
+  2232-488              4           4        2           50.0%
+  1954+513             32          32       28           87.5%
+  1342+663             31          31       23           74.2%
+  1406-076             26          26       24           92.3%
+  0003-066             19          19       18           94.7%
+  0059+581            116         116      111           95.7%
+  0537-441            136         136      131           96.3%
+  0718+793            133         133      131           98.5%
+  0808+019             40          40       38           95.0%
+  0955+476             85          85       83           97.6%
+  1034-293             11          11        8           72.7%
+  1057-797            186         186      177           95.2%
+  1144-379             35          35       33           94.3%
+  3C274                40          40       29           72.5%
+  1424-418             31          31       31          100.0%
+  1622-253             38          38       35           92.1%
+  1741-038            128         128      125           97.7%
+  3C371                95          95       94           98.9%
+  1954-388             30          30       29           96.7%
+  2255-282             14          14       12           85.7%
+  2356+385             24          24       22           91.7%
+  0237-027             18          18       15           83.3%
+  0648-165             99          99       94           94.9%
+  1145+268              9           9        8           88.9%
+  1324+224            111         111       97           87.4%
+  1639+230             19          19       18           94.7%
+  1846+322              8           8        6           75.0%
+  2229+695             77          77       77          100.0%
+  0054+161              4           4        4          100.0%
+  0134+311              7           7        5           71.4%
+  0307+380             27          27       24           88.9%
+  0446+112             47          47       44           93.6%
+  0529+483             79          79       79          100.0%
+  0738+491              4           4        4          100.0%
+  1133-032              1           1        1          100.0%
+  1520+319             11          11       11          100.0%
+  1546+027             59          59       49           83.1%
+  1732+389             59          59       57           96.6%
+  1754+155              6           6        5           83.3%
+  2214+350             36          36       35           97.2%
+  2307+106              6           6        6          100.0%
+  0035-252             13          13       12           92.3%
+  0747+185              4           4        4          100.0%
+  0920-397              3           3        0            0.0%
+  1759-396              6           6        2           33.3%
+  2008-159             28          28       25           89.3%
+  2208-137              3           3        3          100.0%
+  0048-427              7           7        6           85.7%
+  0308-611             86          86       76           88.4%
+  0332-403             42          42       38           90.5%
+  0847-120             18          18       18          100.0%
+  2013+163              3           3        3          100.0%
+  2142+110              4           4        2           50.0%
+  ------------  ---------  ----------   ------          ------
+  Source Total       2179        2179     2032           93.3%
+
+ * Correlated: included in database 
+
+-----------------------------------------
+
+Baseline Performance 
+
+                                 Number of Observations
+
+                         Scheduled   Recoverable*         Used   % of scheduled
+                                                                    obs used
+
+  HARTRAO-HOBART12              67            66            66        98.5%
+  HARTRAO-HOBART26              83            79            78        94.0%
+  HARTRAO-KATH12M               15            15            15       100.0%
+  HARTRAO-ONSALA60              57            56            56        98.2%
+  HARTRAO-TIGOCONC              99            96            95        96.0%
+  HARTRAO-TSUKUB32              52            51            50        96.2%
+  HARTRAO-WETTZELL              79            79            79       100.0%
+  HOBART12-HOBART26             79            78            72        91.1%
+  HOBART12-KATH12M              35            35            34        97.1%
+  HOBART12-ONSALA60              4             0    DESELECTED         0.0%
+  HOBART12-TIGOCONC             61            59            59        96.7%
+  HOBART12-TSUKUB32            157           149           144        91.7%
+  HOBART12-WETTZELL              5             0    DESELECTED         0.0%
+  HOBART26-KATH12M              34            34            34       100.0%
+  HOBART26-ONSALA60              4             0    DESELECTED         0.0%
+  HOBART26-TIGOCONC            159           155           149        93.7%
+  HOBART26-TSUKUB32             83            79            75        90.4%
+  HOBART26-WETTZELL             15            13            11        73.3%
+  KATH12M-ONSALA60               0       NO DATA       NO DATA         0.0%
+  KATH12M-TIGOCONC               5             0    DESELECTED         0.0%
+  KATH12M-TSUKUB32              23            23            21        91.3%
+  KATH12M-WETTZELL               0       NO DATA       NO DATA         0.0%
+  ONSALA60-TIGOCONC             18            13            13        72.2%
+  ONSALA60-TSUKUB32            306           291           284        92.8%
+  ONSALA60-WETTZELL            404           398           390        96.5%
+  TIGOCONC-TSUKUB32             11             0    DESELECTED         0.0%
+  TIGOCONC-WETTZELL             15            15            15       100.0%
+  TSUKUB32-WETTZELL            309           302           292        94.5%
+  -----------------      ---------   -----------    ----------       ------
+  Baseline Total              2179          2086          2032        93.3%
+
+  * Recoverable: can be included in the solution. 
+
+  MISSED:     Baseline was scheduled, but at least one of the sites
+              did not observe.
+  NOT CORR:   Baseline was scheduled but not correlated.
+  NO DATA:    The baseline's stations were both correlated,
+              but they did not observe together.
+  DESELECTED: Usable data was generated for the baseline,
+              but the analyst rejected it.

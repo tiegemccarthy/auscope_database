@@ -1,0 +1,227 @@
+TIMETAG 2014/01/08 14:12:13 
+MK3DB_VERSION    1
+Dbedit: AUST10  -DG-
+VLBI experiment AUST10 ( AUST10/2013 )
+Created by dbedit Ver. 2013.10.18  revision 6.22
+        run by David Gordon ( dgg@bootes.gsfc.nasa.gov )
+            at GSF -- NASA Goddard Space Flight Center
+               on bootes at 2014.01.08-09:12:13 local time
+Dbedit control file history entry: AUST10  -DG-
+Directory /500/RD_fringe_files/aust10/1234
+$1>
+
+AUST10/13JUL10XA
+Correlated at Curtin University.
+Fourfit fringed at University of Tasmania.
+Databases made at GSFC.
+***************************************************************
+
+AUST10 Correlator Report:
+
++HEADER
+CORREL   CRTN
+DATABASE
+SESSNAME AUST10
+UTSTART  0700
+DURATION 24
+DOY      185-186
+CORRTIME 2013/10/23 2013/10/24
+CORRPASS 1
+EXPORT   DONE
+
++SUMMARY
+ Qcode      % of Total   % of Correlated
+                scans          scans
+
+  5-9            85%             -
+   0              5%             -
+ 4-1,A-H,N       10%             -
+ Removed          -              -
+
++CORRELATOR_NOTES
+
++STATION_NOTES
+
+ HOBART12 (Hb/L): Brief power outage at 1240 UT. Maser room temperature
+                  control ceased overnight and temp dropped to 13C.
+                  Heating restored at 0100 UT. Some scans missed due to
+                  wind stows
+
+ HART12M  (Ht/g): OK
+
+ KATH12M  (Ke/i): OK
+
+ YARRA12M (Yg/x): Several small clock jumps
+
++DROP_CHANNELS
+ Hb none
+ Ht none
+ Ke none
+ Yg none
+
++MANUAL PCAL
+ none
+
++CHANNELS
+ Channels: XR1U = band|polarization|channel#|sideband
+
+XR1U/L  BBC01 8212.99
+XR2U    BBC02 8252.99
+XR3U    BBC03 8352.99
+XR4U    BBC04 8512.99
+XR5U    BBC05 8732.99
+XR6U    BBC06 8852.99
+XR7U    BBC07 8912.99
+XR8U/L  BBC08 8932.99
+SR1U    BBC09 2225.99
+SR2U    BBC10 2245.99
+SR3U    BBC11 2265.99
+SR4U    BBC12 2295.99
+SR5U    BBC13 2345.99
+SR6U    BBC14 2365.99
+
++CLOCKS
+
+Clocks: Curtin
+
+ Station      Offset     rate      Epoch
+              [usec]     [sec/sec] [MJD]
+  HB          -10.19         0.00   56477.2916667
+  HT           -8.53         0.00   56477.2916667
+  KE           -9.27         0.00   56477.2916667
+  YG           -7.53         0.00   56477.2916667
+
++QCODES
+
+Qcod  0 1 2 3 4 5 6  7   8    9 A B C D E F G  H   N -  Tot
+---------------------------------------------------------------
+gL:X 14 0 0 0 0 0 0  0   7   84 0 0 0 0 0 0 0  1  21 0  127
+gL:S 10 0 0 0 0 0 0  0   4   92 0 0 0 0 0 0 0  0  21 0  127
+gi:X  9 0 0 0 0 0 0  1   4  119 0 0 0 0 0 0 0  3   2 0  138
+gi:S  8 0 0 0 0 0 0  1   4  123 0 0 0 0 0 0 0  0   2 0  138
+gx:X 16 0 0 0 0 1 2  9  31  180 0 0 0 0 0 0 0  2   2 0  243
+gx:S 11 0 0 0 0 0 1  0   3  226 0 0 0 0 0 0 0  0   2 0  243
+Li:X 16 0 0 0 0 0 0  1  23  172 0 0 0 0 0 0 0  5  41 0  258
+Li:S 16 0 0 0 0 0 0  1  34  166 0 0 0 0 0 0 0  0  41 0  258
+Lx:X  8 0 0 0 0 0 3 15  36  107 0 0 0 0 0 0 0  1  32 0  202
+Lx:S  8 0 0 0 0 0 0  1  43  118 0 0 0 0 0 0 0  0  32 0  202
+ix:X  4 0 0 0 0 0 3 15  45  127 0 0 0 0 0 0 0  5   5 0  204
+ix:S  5 0 0 0 0 0 0  0   4  189 0 0 0 0 0 0 1  0   5 0  204
+---------------------------------------------------------------
+Tot 125 0 0 0 0 1 9 44 238 1703 0 0 0 0 0 0 1 17 206 0 2344
+
+ Legend:
+ QC = 0   Fringes not detected.
+    = 1-9 Fringes detected, no error condition. Higher #, better quality.
+    = B   Interpolation error in fourfit.
+    = D   No data in one or more frequency channels.
+    = E   Maximum fringe amplitude at edge of SBD, MBD, or rate window.
+    = F   Fork problem in processing.
+    = G   Fringe amp in a channel is <.5 times mean amp (only if SNR>20).
+    = H   Low Phase-cal amplitude in one or more channels.
+    = N   No valid correlator data.
+  Tot     Total number of scans in schedule.
+  Minus   Scans in original schedule file for which correlation was not
+          attempted, usually because of known station problems.
+
++SNR_RATIOS
+
+MEAN RATIOS = Observed SNR / Predicted SNR  for exp no. 1234
+
+ ...by baseline, over all sources:
+
+ bl     X     n       S     n
+
+ Lg    1.17   91     1.04   96
+ gi    1.23  127     1.27  128
+ gx    1.66  225     1.41  230
+ Li    1.31  201     1.11  201
+ Lx    1.87  162     1.31  162
+ ix    2.11  195     1.67  194
+
++FOURFIT_CONTROL_FILE
+
+* control file for exp. R1
+
+*    max_parity  0.01
+*    pc_mode normal
+*
+start -2
+* stop -30
+
+   sb_win -256.0 256.0 mb_win -2.0 2.0 dr_win -300.e-4 300.e-4
+*      sb_win -2.0 2.0 mb_win -2.0 2.0 dr_win -30.0e-5 30.0e-5
+*
+*    ...offset between VLBA-VLBA and MK4-VLBA ...
+
+  if f_group X
+    ref_freq 8212.99
+    pc_freqs ghijklmn 9010 9010 9010 9010 9010 9010 9010 9010
+
+  if f_group S
+    ref_freq 2225.99
+    pc_freqs abcdef 3010 3010 3010 3010 3010 3010
+
+*Ref antenna Hb/L
+  if station g and f_group S
+  pc_phases abcdef -8.3    0.2    6.3   10.5   -5.2   -4.7
+  if station i and f_group S
+  pc_phases abcdef  0.8   -0.2   -1.6    1.6   -3.0    0.8
+  if station x and f_group S
+  pc_phases abcdef -1.1  -12.9    7.7   17.6  -14.8    0.1
+  if station g and f_group X
+  pc_phases ghijklmn    -7.0    0.2    0.7   24.8    0.5    0.8  -15.4    0.6
+  if station i and f_group X
+  pc_phases ghijklmn 1.1   -5.4    0.1    7.2   -4.3    2.3   -0.6   -0.8
+  if station x and f_group X
+  pc_phases ghijklmn 0.7   -0.9   -4.7    8.1   -9.2    5.7    3.7   -2.8
+
+Regards,
+ Jim
+
++END
+
+$1<
+Sorted by time and subsorted by baseline.   -DG-
+All  baselines used.
+All  sources used.
+Output time window:  earliest latest
+TIMETAG 2014/01/08 14:15:02 
+MK3DB_VERSION    2
+CALC10.03 Ver. 2013.11.22  Wed Jan  8 09:15:01 2014    bootes
+Calc 10 at GSFC  -DG-
+TIMETAG 2014/01/08 14:17:34 
+MK3DB_VERSION    3
+Dbcal: AUST10  -DG-
+ DBCAL: Version 2013.10.18        JAN 08,2014 14:17:34
+TIMETAG 2014/01/08 14:22:38 
+MK3DB_VERSION    4
+AUST10: GSFC Analysis  -DG-
+First Australian geodetic session difx correlated
+(Curtin University) and fourfit fringed (University
+of Tasmania) in Australia. Results are good. G-Gxs
+solution, 60/60 clocks/atms, 2/40 (6/40 @ KE)
+constraints, 24-hr gradients. Solve fit of 35.4 psec.
+The following flyby options were used in the solution:
+Station flyby file:  gsf2012a.s
+Source flyby file :  gsf2012a.s
+Nutation series flyby file :  NONE
+Nutation offset flyby file :  NONE
+Earth rotation flyby file  :  NONE
+Tectonic plate motion file :  gsf2012a.v
+Group delay ambiguities and editing updated.
+Troposphere and cable cal status for standard solution stored.
+Observation dependent contribution status stored.
+Reweighting updated for:
+HO-HA HA-KA HA-YA HO-KA HO-YA KA-YA
+Baseline-dependent clock used. List of names stored.
+Solution data configuration: G-Gxs combination
+Clock and atmosphere constraint information saved.
+Batchmode clock parameterization saved.
+Batchmode atmosphere parameterization saved.
+Ionosphere calibrated with IONO IONO  Ve
+Group Ion cal for $13JUL04XA V. 3 based on $13JUL04SA V. 3.
+Barometer calibration and barometer height offset not available.
+Eccentricity data store in data base header.
+Elevation cutoff data stored in database.
+

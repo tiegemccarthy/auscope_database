@@ -1,0 +1,156 @@
+TIMETAG 2018/01/10 23:05:17 
+MK3DB_VERSION    1
+Dbedit: V1712  -DG-
+VLBI experiment V1712 ( CONTV17 Day 12 )
+Created by dbedit Ver. 2015.06.23  revision 6.23
+        run by David Gordon ( dgg@bootes.gsfc.nasa.gov )
+            at GSF -- NASA Goddard Space Flight Center
+               on bootes at 2018.01.10-18:05:17 local time
+Dbedit control file history entry: V1712  -DG-
+Directory /500/RDV_files/V1712/1234
+$1>
+
+V1712/$17DEC09XA
+00:00 UTC, DOY 343
+
+Correlated at the VLBA. Fourfit fringed at GSFC using multitone Pcals.
+SC-VLBA did not participate due to hurricanes Irma and Maria.
+Channel S3 deleted at BR, KP, NL, and OV due to RFI.
+Manual phase cals used at Medicina.
+Refringed ~800 S-band observations with narrow MBD windows, mostly for
+   sub-ambiguities at BR, KP, NL, and OV.
+Refringed 3 X-band observations with narrow MBD windows.
+
+***************************************************************************
+
+VERY LONG BASELINE ARRAY OBSERVING LOG
+--------------------------------------
+Project:        V1712
+Observer:       Gordon, D.
+Project type:   GEO
+Obs filename:   v1712crd.*
+Date/Day:       2017DEC09/343
+Ants Scheduled: SC HN NL FD LA PT KP OV BR MK
+
+=UT-Time===Comment============================================MF#==%AD=AMD=
+           Operator is Betty Ragan.
+           Vclock, gps delta, UT1-UTC all check OK.
+     0000  Begin.
+0000-2354 *SC is out due to hurricane damage.
+0000-0005 *OV not recording on first scan, due to having      REC   100   5
+           just stopped DRS to check a disk pack.
+0033-0035 *FD had Dot_OS_Diff error on DBE 2.                 TIME  100   2
+           Value was off by one.  May have something to do
+           with the timing having to be reset earlier?
+           Resynced the DBE.
+0035-0105 *FD had Dot_OS_Diff alert on DBE 2, as well as a    TIME  100  30
+           TimestampDifference alert, even though timing looks
+           OK on the device browser on both DBEs. Stopping the
+           observation, resyncing both DBEs, and restarting.
+     0050  FD alerts have not gone away. Rebooting both DBEs.
+     0106  FD timing looks OK now.  I will note that it is
+           getting the "problem setting formatter" errors
+           again, as well, which should not affect data, but
+           we are not seeing any other MCB problems recurring.
+           Hopefully all is well with it now.
+0205-0206 *KP antenna oscillaing.  Put it in standby for      ACU   100   1
+           a minute.
+     0346 %FD raining.
+     0430 %KP windy.
+0617-0620 *NL autostowed. Power glitch.                       COM   100   3
+0624-0804 *PT, MK removed for daily USNO observation.         SCH   200 200
+     0645  New operator is Alan Kerr
+0822-0826 *NL autostow. power glitch. repointed.              COM   100   4
+     1445  New Operator: Karlee Radford
+     1540  New operator is Jim Ogle.
+     1908  New Operator: Karlee Radford
+     2354  End.
+
+Downtime Summary:
+	Total downtime : 245 min
+	Percentage downtime of observing: 1.7%
+	Average downtime per hour : 1.0 min
+
+    Total scheduled observing time (# Antennas): 14340 min (10)
+
+Notes:
+    * = Entries where data was affected.
+    % = Entries where data may have been affected.
+    & = Entries where the site tech was called out.
+  WEA = Weather entries.
+  MF# = Maintenance form or major downtime category associated with a
+        problem.
+  %AD = The percentage of an antenna affected by a problem.
+  AMD = Total antenna-minutes downtime for a problem.
+ Tsys = System Temperature (TP/SP x Tcal/2)
+  ACU = Antenna Control Unit
+  FRM = Focus/Rotation Mount
+  RFI = Radio Frequency Interference
+  VME = Site control computer
+   CB = Circuit Breaker
+ vclock = Program that compares site clock time to a standard.
+
+$1<
+Sorted by time and subsorted by baseline.   -DG-
+All  baselines used.
+All  sources used.
+Output time window:  earliest latest
+TIMETAG 2018/01/11 15:04:14 
+MK3DB_VERSION    2
+CALC11.02 Ver. 2016.12.29  Thu Jan 11 10:04:13 2018    bootes
+Calc 11 at GSFC  -DG-
+TIMETAG 2018/01/11 15:50:40 
+MK3DB_VERSION    3
+Dbcal: V1712  -DG-
+ DBCAL: Version 2017-MAR-15       JAN 11,2018 15:50:40
+TIMETAG 2018/01/16 21:50:40 
+MK3DB_VERSION    4
+SgLib-0.5.2 (Patawomeck): data have been read from Mk3 database
+TIMETAG 2018/01/16 22:38:19 
+MK3DB_VERSION    4
+Analyzed by David Gordon (hereafter DG) at Goddard Space Flight Center. Contact info: <David.Gordon-1@nasa.gov>
+DG> V1712: GSFC Analysis  -DG-
+DG> MK-VLBA: no good data last 7 hours.
+DG> Small clock break at YARRA12M.
+DG> No cable cal at FD-VLBA.
+DG> YARRA12M is noisier than usual.
+DG> NuSolve fit of 14.1 psec.
+CONTV1712: GSFC analysis (DG)
+G-Gxs solution,   60/  60 clocks/atms,    2/  40 constraints, 23.9-hr gradients.
+Solve fit is 14.13 psec.
+Detected 1 clock break
+A clock break marker has been set for YARRA12M at 09 Dec, 2017; 06:30:00.0000
+TIMETAG 2018/01/16 22:38:20 
+MK3DB_VERSION    4
+The following flyby options were used in the solution:
+Station positions flyby file: glo.sit
+Station velocities flyby file: glo.vel
+Source flyby file: 17Sep14.src
+Station axis offset flyby file: glo.axis
+EOP high frequency variations flyby file: NONE
+Station mean gradients flyby file: NONE
+Nutation series flyby file :  NONE
+Nutation offset flyby file :  NONE
+Earth rotation flyby file  :  NONE
+Tectonic plate motion file :  NONE
+Group delay ambiguities were resolved (well, at least, tried to resolve)
+Group delay outliers were processed and editing info has been updated.
+Troposphere and cable cal status for standard solution have been stored.
+Observation dependent contribution status has been stored.
+Reweighting updated for:
+BR-FD BR-HN BR-KP BR-LA BR-ME BR-MK BR-NL BR-OV BR-PI BR-WE
+BR-YA FD-HN FD-KP FD-LA FD-ME FD-MK FD-NL FD-OV FD-PI FD-WE
+FD-YA HN-KP HN-LA HN-ME HN-MK HN-NL HN-OV HN-PI HN-WE KP-LA
+KP-ME KP-MK KP-NL KP-OV KP-PI KP-WE KP-YA LA-ME LA-MK LA-NL
+LA-OV LA-PI LA-WE LA-YA ME-MK ME-NL ME-OV ME-PI ME-WE ME-YA
+MK-NL MK-OV MK-PI MK-WE MK-YA NL-OV NL-PI NL-WE NL-YA OV-PI
+OV-WE OV-YA PI-WE PI-YA WE-YA
+Solution data configuration: group delays with ionosphere corrections
+Clock and atmosphere constraint information saved.
+Batchmode clock parameterization saved.
+Batchmode atmosphere parameterization saved.
+Ionosphere corrections were evaluated for group delays.
+Barometer calibration and barometer height offset not available.
+Elevation cutoff data stored in database.
+Eccentricity data store in data base header.
+

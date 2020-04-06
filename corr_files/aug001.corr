@@ -1,0 +1,246 @@
+TIMETAG 2015/03/24 05:36:23 
+MK3DB_VERSION    1
+Dbedit: AUG001 -AU-
+VLBI experiment AUG001 ( AUG001/2014 )
+Created by dbedit Ver. 2013.10.18  revision 6.22
+        run by Observer ( observer@ops7 )
+            at HOB -- University of Tasmania
+               on ops7 at 2015.03.24-16:36:23 local time
+Dbedit control file history entry: AUG001 -AU-
+Directory /mnt/magilla/AUSTRAL/aug001/1315/
+$1>
++HEADER
+CORREL   CRTN
+DATABASE 15JAN09XA
+SESSNAME AUG001
+UTSTART  1900
+DURATION 24
+DOY      009-010
+CORRTIME 2015/03/22 2015/03/23
+CORRPASS 1
+EXPORT   DONE
+
++SUMMARY
+ Qcode      % of Total   % of Correlated
+                scans          scans
+
+  5-9            87%             -
+   0             10%             -
+ 4-1,A-H,N        3%             -
+ Removed          -              -
+
++CORRELATOR_NOTES
+
++STATION_NOTES
+
+ HART15M  (Ht/g): Manual pcal.
+
+ HOBART12 (Hb/L): Manual pcal. No data collected during intervals
+  0842-0856, 1033-1100, 1208-1229 due to other observing commitments.
+
+ KATH12M  (Ke/i): Manual pcal. Small clock break noted at 0404.
+
+ YARRA12M (Yg/e): Manual pcal. Large clock break at 0326. Residual delays
+  seem to show a sub-ns periodic variation on a timescale of ~1 hour.
+
++DROP_CHANNELS
+ Ht
+ Hb
+ Ke
+ Yg
+
++MANUAL PCAL Ht Yg Yg Ke Hb
+
++CHANNELS
+ Channels: XR1U = band|polarization|channel#|sideband
+
+XR1U/L  BBC01 8212.99
+XR2U    BBC02 8252.99
+XR3U    BBC03 8352.99
+XR4U    BBC04 8512.99
+XR5U    BBC05 8732.99
+XR6U    BBC06 8852.99
+XR7U    BBC07 8912.99
+XR8U/L  BBC08 8932.99
+SR1U    BBC09 2225.99
+SR2U    BBC10 2245.99
+SR3U    BBC11 2265.99
+SR4U    BBC12 2295.99
+SR5U    BBC13 2345.99
+SR6U    BBC14 2365.99
+
++CLOCKS
+
+Clocks: Curtin
+
+ Station      Offset     rate      Epoch
+              [usec]     [sec/sec] [MJD]
+  HB          -12.69         0.00   56990.0000000
+  HT           -2.59         0.00   57031.7916667
+  KE           -9.96        -0.00   57039.0000000
+  YG          -11.58         0.00   57031.7916667
+
++QCODES
+
+Qcod  0 1 2 3 4  5  6  7   8    9 A B C D E F  G H  N -  Tot
+----------------------------------------------------------------
+gL:X  0 0 0 0 0  0  0  2   0  108 0 0 0 0 0 0  0 0  3 0  113
+gL:S 10 0 0 0 0  0  0  7  33   59 0 0 0 0 0 0  1 0  3 0  113
+gi:X  0 0 0 0 0  0  0  3   4  101 0 0 0 0 0 0  0 0  0 0  108
+gi:S 13 0 0 0 0  1  0  0   3   91 0 0 0 0 0 0  0 0  0 0  108
+ge:X  1 0 0 0 0  0  0 11   9  169 0 0 0 0 0 0  0 0  0 0  190
+ge:S 29 0 0 0 0  1  0  1  17  142 0 0 0 0 0 0  0 0  0 0  190
+Li:X  1 0 0 0 0  0  0 15  23  481 0 0 0 0 0 0  1 0 22 0  543
+Li:S128 0 0 0 0  4  6  7  45  328 0 0 0 0 0 0  3 0 22 0  543
+Le:X  4 0 0 0 0  0  0 13  24  452 0 0 0 0 0 0  1 0 22 0  516
+Le:S104 0 0 0 5  3  3  9  92  274 0 0 0 0 0 0  4 0 22 0  516
+ie:X  1 0 0 0 0  0  0  9  26  483 0 0 0 0 0 0  0 0  0 0  519
+ie:S107 0 0 1 0  2  4  7  29  369 0 0 0 0 0 0  0 0  0 0  519
+----------------------------------------------------------------
+Tot 398 0 0 1 5 11 13 84 305 3057 0 0 0 0 0 0 10 0 94 0 3978
+
+ Legend:
+ QC = 0   Fringes not detected.
+    = 1-9 Fringes detected, no error condition. Higher #, better quality.
+    = B   Interpolation error in fourfit.
+    = D   No data in one or more frequency channels.
+    = E   Maximum fringe amplitude at edge of SBD, MBD, or rate window.
+    = F   Fork problem in processing.
+    = G   Fringe amp in a channel is <.5 times mean amp (only if SNR>20).
+    = H   Low Phase-cal amplitude in one or more channels.
+    = N   No valid correlator data.
+  Tot     Total number of scans in schedule.
+  Minus   Scans in original schedule file for which correlation was not
+          attempted, usually because of known station problems.
+
++SNR_RATIOS
+
++FOURFIT_CONTROL_FILE
+
+* control file for exp. AUST
+
+*    max_parity  0.01
+*    pc_mode normal
+*
+start -2
+* stop -30
+
+   sb_win -256.0 256.0 mb_win -2.0 2.0 dr_win -300.e-4 300.e-4
+*      sb_win -2.0 2.0 mb_win -2.0 2.0 dr_win -30.0e-5 30.0e-5
+*
+*    ...offset between VLBA-VLBA and MK4-VLBA ...
+
+weak_channel 0.3
+
+  if f_group X
+    ref_freq 8212.99
+    freqs g h i j k l m n
+    pc_freqs ghijklmn 9010 9010 9010 9010 9010 9010 9010 9010
+
+  if f_group S
+    ref_freq 2225.99
+    freqs a b c d e f
+    pc_freqs abcdef 3010 3010 3010 3010 3010 3010
+
+  if station g and f_group S
+    pc_mode manual
+    pc_phases abcdef 140.2 290.1 72.6 295.1 257.4 26.2
+
+  if station g and f_group X
+    pc_mode manual
+ pc_phases ghijklmn 161.2 2.9 179.0 341.7 217.8 185.1 174.9 263.5
+
+  if station e and f_group S and scan < 010-032800
+    pc_mode manual
+    pc_phases abcdef 22.1 -0.9 -18.7 -41.0 -242.0 -269.6
+
+  if station e and f_group X and scan < 010-032800
+    pc_mode manual
+ pc_phases ghijklmn -52.4 -17.4 122.0 1.8 88.5 140.2 28.4 88.1
+
+  if station e and f_group S and scan > 010-032800
+    pc_mode manual
+    pc_phases abcdef -28.1 -90.8 -141.8 -211.0 -128.3 -198.7
+
+  if station e and f_group X and scan > 010-032800
+    pc_mode manual
+ pc_phases ghijklmn -159.3 193.5 196.4 232.9 68.4 3.6 195.9 225.7
+
+  if station i and f_group S
+    pc_mode manual
+    pc_phases abcdef -3.4 46.8 93.4 165.6 260.4 309.7
+
+  if station i and f_group X
+    pc_mode manual
+ pc_phases ghijklmn -88.2 72.6 82.6 321.3 257.3 131.1 60.7 129.5
+
+  if station L and f_group S
+    pc_mode manual
+    pc_phases abcdef 0 0 0 0 0 0
+
+  if station L and f_group X
+    pc_mode manual
+ pc_phases ghijklmn 0 0 0 0 0 0 0 0
+
+* ref Hb/L --> just for book keeping
+
+Regards,
+ Jamie
+
++END
+$1<
+Sorted by time and subsorted by baseline.   -AU-
+All  baselines used.
+All  sources used.
+Output time window:  earliest latest
+TIMETAG 2015/03/24 13:13:03 
+MK3DB_VERSION    2
+CALC11.01 Ver. 2014.05.16  Tue Mar 24 09:13:03 2015    bootes
+Calc 11 at GSFC  -DG-
+TIMETAG 2015/03/24 13:24:06 
+MK3DB_VERSION    3
+Dbcal: AUG001  -DG-
+ DBCAL: Version 2013.10.18        MAR 24,2015 13:24:06
+TIMETAG 2015/03/24 14:37:03 
+MK3DB_VERSION    4
+SgLib-0.2.3 (Aion): data have been read from Mk3 database
+TIMETAG 2015/03/24 15:05:17 
+MK3DB_VERSION    4
+Analyzed by David Gordon (hereafter DG) at Goddard Space Flight Center. Contact info: <David.Gordon-1@nasa.gov>
+DG> AUG001: GSFC Analysis  -DG-
+DG> Yarragadee break at 03:27:48 (-3.4 nsec).
+DG> HB-YG and KE-YG show some cycling (sinusoidal pattern) with a
+DG> period of ~1-1.5 hrs and an amplitude of ~300 psec.
+DG> Not obvious on the HT-YG baseline though.
+DG> NuSolve fit of 63.6 psec.
+AUS-GEO001: GSFC analysis (DG)
+G-Gxs solution,   60/  60 clocks/atms,    2/  40 constraints, 24.0333-hr gradients.
+Solve fit is 63.58 psec.
+Detected 1 clock break
+A clock break marker has been set for YARRA12M at 10 Jan, 2015; 03:30:00.0000
+The following flyby options were used in the solution:
+Station positions flyby file: glo.sit
+Station velocities flyby file: glo.vel
+Source flyby file: glo.src
+Station axis offset flyby file: glo.axis
+EOP high frequency variations flyby file: NONE
+Station mean gradients flyby file: NONE
+Nutation series flyby file :  NONE
+Nutation offset flyby file :  NONE
+Earth rotation flyby file  :  NONE
+Tectonic plate motion file :  NONE
+Group delay ambiguities were resolved (well, at least, tried to resolve)
+Group delay outliers were processed and editing info has been updated.
+Troposphere and cable cal status for standard solution have been stored.
+Observation dependent contribution status has been stored.
+Reweighting updated for:
+HA-KA HA-YA HO-HA HO-KA HO-YA KA-YA
+Solution data configuration: group delays with ionosphere corrections
+Clock and atmosphere constraint information saved.
+Batchmode clock parameterization saved.
+Batchmode atmosphere parameterization saved.
+Ionosphere corrections were evaluated for group delays.
+Barometer calibration and barometer height offset not available.
+Elevation cutoff data stored in database.
+Eccentricity data store in data base header.
+

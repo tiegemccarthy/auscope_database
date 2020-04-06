@@ -1,0 +1,202 @@
+       IVS Analysis Report for RD1504 ($15JUN24XB) 
+       This report is the official IVS analysis report that corresponds to 
+       the database maintained by the IVS Data Centers for this session.  
+   (Analyzed by David Gordon, Goddard Space Flight Center.
+    Spoolfile source: interactive solve/nuSolve analysis.) 
+
+This release does not include Medicina.  Medicina has not yet been
+correlated due to anomalous results from trial correlations that may be
+caused by errors in how the VDIF data are being read.
+
+
+Problems: HARTRAO:  Missed ~3 hrs due to poor time synchronization of Mark5B.
+          HOBART26: Mised ~4-5 hrs for 4 windstows.
+          NYALES20: Unstable receiver LO phases in many scans caused by 5 MHz
+                    antenna cable problem over a narrow range of elevations.
+                    Rapid fringe phase variations were corrected second by
+                    second by fringing with multitone phase cal mode using
+                    only one tone per channel.
+          TIANMA65: SR3U and SR6U deleted, MA-T6 has 20 nsec S-band ambiguities.
+                    No S-band fringes or phase cal after scan 176-0829.
+                    X-band system temperatures started rising at ~176-0720,
+                    reaching ~4x their earlier levels by 176-1200, after
+                    which they were stable.  Fringe and phase cal amplitudes
+                    decreased accordingly by ~50%.
+          MEDICINA: Not yet correlated. Recorded on Mark 5C in VDIF format.
+
+Parameterization comments: None. 
+
+Other comments: None. 
+
+-----------------------------------------
+
+Session Statistics 
+
+  Observations:     1974 scheduled 
+                    1225 correlated (in database)
+                     881 recoverable (usable)
+                     852 used
+  Session fit:        22.829 ps
+
+-----------------------------------------
+
+Station Performance 
+
+                           Number of Observations
+
+                    Scheduled   Recoverable*        Used   % of scheduled
+                                                              obs used
+
+  HARTRAO                 394           186          180        45.7%
+  HOBART26                305           133          120        39.3%
+  KOKEE                   329           181          177        53.8%
+  MATERA                  605           350          337        55.7%
+  MEDICINA                664      NOT CORR     NOT CORR         0.0%
+  NYALES20                543           345          338        62.2%
+  TIANMA65                480           197          192        40.0%
+  WETTZELL                628           370          360        57.3%
+  ---------------   ---------   -----------    ---------       ------
+  Station Total**        1974           881          852        43.2%
+
+  * Recoverable: can be included in the solution. 
+  ** Total includes distinct observations only.
+
+  MISSED:    Station was scheduled, but it did not observe.
+  NOT CORR:  Station was scheduled but not correlated.
+  NOT USED:  Usable data was generated for this station,
+             but the analyst rejected it all.
+
+-----------------------------------------
+
+Source Performance 
+
+                    Number of Observations
+
+                Scheduled  Correlated*    Used      % of scheduled
+                                                       obs used
+
+  0137+012             11           8        7           63.6%
+  0211+171             13           6        4           30.8%
+  0241+622             57          30        0            0.0%
+  0312+100              9           7        6           66.7%
+  0316-444              7           6        2           28.6%
+  0325+395             25          21       20           80.0%
+  0410+110             75          47       22           29.3%
+  0454-463              8           5        3           37.5%
+  0812+020             74          47       33           44.6%
+  0823-223             66          41        4            6.1%
+  0912+297             15          13        8           53.3%
+  1046-409              6           5        1           16.7%
+  1104+728             51          37       27           52.9%
+  1143-332             16          16        9           56.2%
+  1251-197             15          15        8           53.3%
+  1333-152             12          12        6           50.0%
+  1333-337             16          14        2           12.5%
+  1908+484             23          16        4           17.4%
+  2135-184             14          14        0            0.0%
+  2145+082             24          16        7           29.2%
+  2239+096            109          70       65           59.6%
+  2314-409             20          16        7           35.0%
+  2329-415              7           7        3           42.9%
+  2353+816             96          54       53           55.2%
+  1348+308             83          58       42           50.6%
+  1022+194             95          63       42           44.2%
+  1125+366             15          15        4           26.7%
+  1215+303             63          44       30           47.6%
+  1736+324             55          33       21           38.2%
+  2254+024             24          18       11           45.8%
+  0454+844             63          33       31           49.2%
+  2353-686              6           5        5           83.3%
+  0522-611              4           3        2           50.0%
+  0059+581             60          30       30           50.0%
+  0104-408              3           1        1           33.3%
+  0119+115             18           8        6           33.3%
+  CTA26                43          24       23           53.5%
+  OJ287                54          31       23           42.6%
+  1034-293              1           1        0            0.0%
+  1057-797              1           1        1          100.0%
+  3C274                41          25       21           51.2%
+  1451-375              1           0        0            0.0%
+  1741-038             17           7        7           41.2%
+  1954-388              5           4        3           60.0%
+  2255-282             10           5        5           50.0%
+  1244-255              3           3        3          100.0%
+  2000+472             19          11        8           42.1%
+  2215+150             40          21       20           50.0%
+  1327+504              3           3        0            0.0%
+  1520+319             15           9        9           60.0%
+  1546+027              2           2        1           50.0%
+  1623+578              4           2        1           25.0%
+  1929+226             38          19       15           39.5%
+  2059+034             17           8        7           41.2%
+  2319+317             34          19       17           50.0%
+  0322+222             16           8        8           50.0%
+  0400-319              7           4        3           42.9%
+  0646-306              7           4        4           57.1%
+  2008-159             13           9        6           46.2%
+  0308-611              1           0        0            0.0%
+  1657-261             11           5        3           27.3%
+  2335-027             25          12       11           44.0%
+  NRAO150              17           5        5           29.4%
+  0642+449             74          41       40           54.1%
+  0736+017             51          27       21           41.2%
+  0834-201              3           2        1           33.3%
+  1030+415             81          47       33           40.7%
+  1039+811             34          16       16           47.1%
+  1406-076              2           2        1           50.0%
+  1751+288             24          13        9           37.5%
+  1758-651              2           1        1           50.0%
+  ------------  ---------  ----------   ------          ------
+  Source Total       1974        1225      852           43.2%
+
+ * Correlated: included in database 
+
+-----------------------------------------
+
+Baseline Performance 
+
+                                 Number of Observations
+
+                         Scheduled   Recoverable*         Used   % of scheduled
+                                                                    obs used
+
+  HARTRAO-HOBART26              51            29            29        56.9%
+  HARTRAO-KOKEE                  0      NOT CORR      NOT CORR         0.0%
+  HARTRAO-MATERA                94            61            59        62.8%
+  HARTRAO-MEDICINA              84      NOT CORR      NOT CORR         0.0%
+  HARTRAO-NYALES20              43            27            26        60.5%
+  HARTRAO-TIANMA65              53            24            23        43.4%
+  HARTRAO-WETTZELL              69            45            43        62.3%
+  HOBART26-KOKEE                88            48            45        51.1%
+  HOBART26-MATERA               13             4    DESELECTED         0.0%
+  HOBART26-MEDICINA              9      NOT CORR      NOT CORR         0.0%
+  HOBART26-NYALES20             27            15            15        55.6%
+  HOBART26-TIANMA65            107            34            31        29.0%
+  HOBART26-WETTZELL             10             3    DESELECTED         0.0%
+  KOKEE-MATERA                  16            12            12        75.0%
+  KOKEE-MEDICINA                24      NOT CORR      NOT CORR         0.0%
+  KOKEE-NYALES20                66            50            50        75.8%
+  KOKEE-TIANMA65               100            43            42        42.0%
+  KOKEE-WETTZELL                35            28            28        80.0%
+  MATERA-MEDICINA              179      NOT CORR      NOT CORR         0.0%
+  MATERA-NYALES20               93            92            88        94.6%
+  MATERA-TIANMA65               56            31            31        55.4%
+  MATERA-WETTZELL              154           150           147        95.5%
+  MEDICINA-NYALES20            122      NOT CORR      NOT CORR         0.0%
+  MEDICINA-TIANMA65             55      NOT CORR      NOT CORR         0.0%
+  MEDICINA-WETTZELL            191      NOT CORR      NOT CORR         0.0%
+  NYALES20-TIANMA65             66            41            41        62.1%
+  NYALES20-WETTZELL            126           120           118        93.7%
+  TIANMA65-WETTZELL             43            24            24        55.8%
+  -----------------      ---------   -----------    ----------       ------
+  Baseline Total              1974           881           852        43.2%
+
+  * Recoverable: can be included in the solution. 
+
+  MISSED:     Baseline was scheduled, but at least one of the sites
+              did not observe.
+  NOT CORR:   Baseline was scheduled but not correlated.
+  NO DATA:    The baseline's stations were both correlated,
+              but they did not observe together.
+  DESELECTED: Usable data was generated for the baseline,
+              but the analyst rejected it.

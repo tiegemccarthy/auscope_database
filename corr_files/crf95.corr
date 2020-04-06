@@ -1,0 +1,256 @@
+TIMETAG 2016/09/19 07:53:06 
+MK3DB_VERSION    1
+Dbedit: CRF95  -SH-
+VLBI experiment CRF95 ( tbd )
+Created by dbedit Ver. 2013.10.18  revision 6.22
+        run by oper ( oper@nas8 )
+            at SHA -- SHANGHAI VLBI CORRELATOR
+               on nas8 at 2016.09.19-15:53:06 local time
+Dbedit control file history entry: CRF95  -SH-
+Directory /Center/geo/crf95/1695/
+$1>
++HEADER
+CORREL   SHAO
+DATABASE 16JUN29XN
+SESSNAME CRF95
+OBSTIME  2016/06/29 2016/06/30
+UTSTART  18:00
+DURATION 24
+DOY      181/182
+CORRTIME 2016/09/17 2016/09/18
+CORRPASS 1
+EXPORT   DONE
+
++SUMMARY
+ Qcode      % of Total   % of Correlated
+                scans          scans
+
+  5-9            72%             -
+   0              9%             -
+ 4-1,A-H,N       19%             -
+ Removed          -              -
+
++CORRELATOR_NOTES
+
++STATION_NOTES
+ HOBART26 (Ho/H): Lost data from 181-18:00 to 181-2020 caused
+                  by the drives not switching on reported by
+                  station.
+                  Low amplitude at SR5U, XR4U,XR5U,XR6U,XR7U,
+                  XR8U/L caused G codes, removed from fitting.
+                  Applied manual PCAL.
+
+ KASHIM34 (Kb/O): OK.
+
+ KATH12M  (Ke/e): Fine.
+
+ KASHIM11 (K1/g): Lost data from 182-0614 to the end of session
+                  due to recorder trouble reported by station.
+                  Applied manual PCAL.
+
+ KOKEE    (Kk/K): Applied manual PCAL.
+
+ YARRA12M (Yg/i): Fine.
+
++DROP_CHANNELS
+ Ho SR5U, XR5U-XR8U/L
+
++MANUAL PCAL K1,Kk,Ho
+
++CHANNELS
+ Channels: XR1U = band|polarization|channel#|sideband
+
+XR1U/L  BBC01 8210.99
+XR2U    BBC02 8220.99
+XR3U    BBC03 8250.99
+XR4U    BBC04 8310.99
+XR5U    BBC05 8420.99
+XR6U    BBC06 8500.99
+XR7U    BBC07 8550.99
+XR8U/L  BBC08 8570.99
+SR1U    BBC09 2217.99
+SR2U    BBC10 2222.99
+SR3U    BBC11 2237.99
+SR4U    BBC12 2267.99
+SR5U    BBC13 2292.99
+SR6U    BBC14 2302.99
+
++CLOCKS
+
+Clocks: Bonn
+
+ Station     fmout-gps      Used      rate     Comments
+              [usec]       [usec]   [sec/sec]
+  Ho            9.00         7.27    0.089E-12
+  K1            0.00        -5.62            0
+  Ke            0.56         0.29   -0.319E-12
+  Kk            8.41         7.18   -0.282E-12
+  Yg           10.23        10.23   -0.279E-12
+
+Date:    2016/06/29
+
++QCODES
+
+Qcod  0 1 2 3 4  5  6   7   8    9 A B C D E F  G H   N -  Tot
+------------------------------------------------------------------
+Hg:X 40 0 0 0 0  0  0   0   6   26 0 0 0 0 0 0  0 0  84 0  156
+Hg:S 18 0 0 0 0  0  0   1   4   49 0 0 0 0 0 0  0 0  84 0  156
+HO:X 16 0 0 0 0  1  4  18  35   82 0 0 0 0 0 0  0 0   0 0  156
+HO:S 16 0 0 0 0  0  0   3  22  112 0 0 0 0 0 0  3 0   0 0  156
+He:X 24 0 0 0 0  0  1   2  12  140 0 0 0 0 0 0  0 0   0 0  179
+He:S 18 0 0 0 0  0  0   0   3  157 0 0 0 0 0 0  1 0   0 0  179
+HK:X 29 0 0 0 0  2  4  12  83   42 0 0 0 0 0 0  0 0   0 0  172
+HK:S 15 0 0 0 0  0  0   2  22  131 0 0 0 0 0 0  2 0   0 0  172
+Hi:X 16 0 0 0 0  0  0   2  14  122 0 0 0 0 0 0  0 0   0 0  154
+Hi:S 20 0 0 0 0  0  0   0   2  131 0 0 0 0 0 0  1 0   0 0  154
+gO:X  0 0 0 0 0  0  0   5  15   26 0 0 0 0 0 0 34 0  84 0  164
+gO:S  0 0 1 4 2  3  1   4  26   23 0 0 0 0 0 0 16 0  84 0  164
+ge:X 21 0 0 0 0  0  0   0   7   41 0 0 0 0 0 0  0 0  84 0  153
+ge:S 15 0 0 0 0  0  0   0   0   54 0 0 0 0 0 0  0 0  84 0  153
+gK:X 12 0 0 0 0  0  1  11   9   40 0 0 0 0 0 0  0 0  84 0  157
+gK:S  0 0 0 0 0  0  0   4  16   53 0 0 0 0 0 0  0 0  84 0  157
+gi:X 24 0 0 0 0  0  0   2   3   32 0 0 0 0 0 0  0 0  69 0  130
+gi:S 13 0 0 0 0  0  0   0   1   47 0 0 0 0 0 0  0 0  69 0  130
+Oe:X  0 0 0 1 0  2  6  21  41   82 0 0 0 0 0 0  0 0   0 0  153
+Oe:S  0 0 0 0 0  0  0   0  14  136 0 0 0 0 0 0  3 0   0 0  153
+OK:X  2 0 0 1 5  9 25  44  39   32 0 0 0 0 0 0  0 0   0 0  157
+OK:S  0 0 0 0 0  0  1   4  31  120 0 0 0 0 0 0  1 0   0 0  157
+Oi:X  0 0 0 0 1  2  5  18  27   77 0 0 0 0 0 0  0 0   0 0  130
+Oi:S  1 0 0 0 0  0  0   0   9  118 0 0 0 0 0 0  2 0   0 0  130
+eK:X 30 0 0 0 0  0  2  12  18  106 0 0 0 0 0 0  0 0   0 0  168
+eK:S  6 0 0 0 0  0  0   0   6  156 0 0 0 0 0 0  0 0   0 0  168
+ei:X  6 0 0 0 0  0  0   1  19  130 0 0 0 0 0 0  0 0   0 0  156
+ei:S 33 0 0 0 0  0  0   0   5  117 0 0 0 0 0 0  1 0   0 0  156
+Ki:X 30 0 0 0 0  0  1   6  23   83 0 0 0 0 0 0  0 0   0 0  143
+Ki:S  7 0 0 0 0  0  0   0   1  135 0 0 0 0 0 0  0 0   0 0  143
+------------------------------------------------------------------
+Tot 412 0 1 6 8 19 51 172 513 2600 0 0 0 0 0 0 64 0 810 0 4656
+
+ Legend:
+ QC = 0   Fringes not detected.
+    = 1-9 Fringes detected, no error condition. Higher #, better quality.
+    = B   Interpolation error in fourfit.
+    = D   No data in one or more frequency channels.
+    = E   Maximum fringe amplitude at edge of SBD, MBD, or rate window.
+    = F   Fork problem in processing.
+    = G   Fringe amp in a channel is <.5 times mean amp (only if SNR>20).
+    = H   Low Phase-cal amplitude in one or more channels.
+    = N   No valid correlator data.
+  Tot     Total number of scans in schedule.
+  Minus   Scans in original schedule file for which correlation was not
+          attempted, usually because of known station problems.
+
++SNR_RATIOS
+
+MEAN RATIOS = Observed SNR / Predicted SNR  for exp no. 1695
+
+ ...by baseline, over all sources:
+
+ bl     X     n       S     n
+
+ HO    1.11  140     0.97  140
+ Hg    1.67   32     0.99   54
+ He    1.43  155     1.11  161
+ HK    0.95  143     1.04  157
+ Hi    1.81  138     1.12  134
+ gO    3.88   80     5.51    2
+ Oe    1.80  153     1.29  153
+ OK    1.48  155     1.57  157
+ Oi    2.03  130     1.07  129
+ ge    2.16   48     1.18   54
+ gK    1.86   61     1.48   73
+ gi    2.75   37     1.01   48
+ eK    1.37  138     1.09  162
+ ei    2.72  150     1.42  123
+ Ki    1.62  113     0.92  136
+
++FOURFIT_CONTROL_FILE
+
+    max_parity  0.01
+    pc_mode multitone
+    pc_period 5
+*
+start -2
+* stop -30
+
+      sb_win -2.0 2.0 mb_win -2.0 2.0 dr_win -30.0e-5 30.0e-5
+*
+*    ...offset between VLBA-VLBA and MK4-VLBA ...
+*Kb/O
+    if station O
+      lsb_offset   -100.
+*Ke/e
+    if station e
+      lsb_offset  -120.
+*Ho/H
+    if station H
+      lsb_offset  -80.
+*Kk/K
+    if station K
+      lsb_offset  180.
+*K1/g
+    if station g
+      lsb_offset  -160.
+
+*Yg/i
+    if station i
+      lsb_offset -120.
+
+  if f_group X
+    ref_freq 8210.99
+*    pc_freqs ghijklmn 3010 3010 3010 3010 3010 3010 3010 3010
+     pc_tonemask ghijklmn 1 1 1 1 1 1 1 1
+
+  if f_group S
+    ref_freq 2217.99
+*    pc_freqs abcdef 3010 3010 3010 3010 3010 3010
+     pc_tonemask abcdef 7 7 7 7 7 7
+
+  if station H and f_group X
+    freqs g h i j
+
+  if station H and f_group S
+    freqs a b c d f
+
+*ref Yg
+ if station g and f_group S
+  pc_mode manual
+  pc_phases abcdef -12.4 -124.0 -297.7 -244.6 -133.5  -30.8
+ if station g and f_group X
+  pc_mode manual
+  pc_phases ghijklmn 40.8  113.0  176.5  214.6  335.9  319.5  358.0  237.7
+
+ if station K and f_group S
+  pc_mode manual
+  pc_phases abcdef 158.4  100.1  124.8   18.6 -327.5  -58.6
+ if station K and f_group X
+  pc_mode manual
+  pc_phases ghijklmn -130.4 -206.8 -311.0 -225.7  -52.2 -238.1 -347.0 -296.4
+
+ if station H and f_group S
+  pc_mode manual
+  pc_phases abcdf -62.0 -219.0   -0.0  -36.1 -121.4
+ if station H and f_group X
+  pc_mode manual
+  pc_phases ghij 74.3  196.1  186.5  315.9
+
+ if station O and f_group S
+  pc_phases abcdef -5.0   -0.8   5.3   6.7   -6.5   1.5
+ if station O and f_group X
+  pc_phases ghijklmn 4.7  26.2   2.7  -41.4  -13.5  -18.2  9.6  15.2
+
+ if station e and f_group S
+  pc_phases abcdef -2.0   -1.5   -0.3   8.8   -3.1  -2.3
+ if station e and f_group X
+  pc_phases ghijklmn 5.3   0.9  -12.8   -2.6   1.4   5.3   6.6  -4.2
+
+Regards,
+ Jiang
+
++END
+$1<
+Sorted by time and subsorted by baseline.   -SH-
+All  baselines used.
+All  sources used.
+Output time window:  earliest latest
+

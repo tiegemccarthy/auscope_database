@@ -1,0 +1,274 @@
+TIMETAG 2017/02/13 21:06:30 
+MK3DB_VERSION    1
+Dbedit: r4770, NEOSA  | geo_export
+VLBI experiment R4770 ( NEOSA )
+Created by dbedit Ver. 2013.10.18  revision 6.22
+        run by user vlbi ( vlbi@fringe1 )
+            at USN -- USNO Earth Orientation department
+               on fringe1 at 2017.02.13-21:06:30 local time
+Dbedit control file history entry: r4770, NEOSA  | geo_export
+Directory /data/export/data/R4/4770
+$1>
++HEADER
+CORRE    WACO
+DATABASE 16DEC14XE
+SESSNAME R4770
+OBSTIME  2016/12/14 2016/12/15
+UTSTART  1830
+DURATION 24
+DOY      349/350
+CORRTIME 2016/01/09 2017/02/10
+CORRPASS 1
+EXPORT   Done.
+
++SUMMARY
+Qcode   % of Total   % of Correlated
+          scans          scans
+
+ 5-9       93%           94%
+  0         4%            4%
+ B-H        1%            1%
+Removed     0%
+
+Qcodes 7-9 Correlated 93%
+Qcode N Not Correlated  1%
+
++CORRELATOR_NOTES
+
+Final release with Hb data.
+
++STATION_NOTES
+
+HOBART12 (Hb/H): Ok.
+
+HART15M  (Ht/J): Ok.
+
+KATH12M  (Ke/A): Ok.
+
+KOKEE    (Kk/K): Did not participate.
+
+MATERA   (Ma/I): Low fringe amplitudes in channels SR1U, SR6U leading to
+                 'G' codes; channels SR1U, SR6U removed from fringe
+                 fitting.
+
+                 Low pcal amplitudes leading to 'H' codes; manual pcal
+                 applied.
+
+NYALES20 (Ny/N): Ok.
+
+WARK12M  (Ww/W): Did not participate.
+
+WETTZELL (Wz/V): Ok.
+
+YARRA12M (Yg/Y): Ok.
+
+ZELENCHK (Zc/Z): Low fringe amplitudes in channels SR2U, SR3U, SR4U leading
+                 to 'G' codes; channels SR2U, SR3U, SR4U removed from
+                 fringe fitting.
+
+                 Low pcal amplitudes leading to 'H' codes; manual pcal
+                 applied.
+
++DROP_CHANNELS
+
+Ma SR1U                SR6U
+Zc      SR2U SR3U SR4U
+
++MANUAL_PCAL Ma Zc
+
++CHANNELS
+XR1U = band|polarization|channel#|sideband
+
+ XR1U/L  BBC01  8212.99
+ XR2U    BBC02  8252.99
+ XR3U    BBC03  8352.99
+ XR4U    BBC04  8512.99
+ XR5U    BBC05  8732.99
+ XR6U    BBC06  8852.99
+ XR7U    BBC07  8912.99
+ XR8U/L  BBC08  8932.99
+ SR1U    BBC09  2225.99
+ SR2U    BBC10  2245.99
+ SR3U    BBC11  2265.99
+ SR4U    BBC12  2295.99
+ SR5U    BBC13  2345.99
+ SR6U    BBC14  2365.99
+
++CLOCKS
+
+Clocks: WACO
+
+Station  fmout-gps    Used      rate
+          [usec]     [usec]   [sec/sec]
+ Hb         7.62     10.291   4.094e-13
+ Ht         7.91     10.806   1.596e-13
+ Ke         6.53      8.447   1.122e-12
+ Ma        -8.76     -8.158   1.921e-13
+ Ny       130.40    130.531   3.025e-12
+ Wz       -36.84    -36.590   0.000e+00
+ Yg        10.47     12.668   7.988e-13
+ Zc        -2.61    214.385   1.357e-13
+
+Date: 2016/12/14
+
++QCODES
+
+Qcodes   0 1 2 3 4  5  6  7   8    9 A B C D E F  G  H  N  -  Tot
+-----------------------------------------------------------------
+  JH:X  13 0 0 0 0  0  0  3  11   61 0 0 0 0 0 0  0  2  1  0   91
+  JH:S   5 0 0 0 0  0  0  0  28   48 0 0 0 0 0 0  9  0  1  0   91
+  JA:X   8 0 0 0 0  0  0  0   4   56 0 0 0 0 0 0  0  0  0  0   68
+  JA:S   3 0 0 0 0  0  0  0   1   64 0 0 0 0 0 0  0  0  0  0   68
+  JI:X  23 0 0 0 0  0  2 13  33  132 0 0 0 0 0 0  0  0  0  0  203
+  JI:S  30 0 0 0 0  0  0  0  26  142 0 0 0 0 0 0  5  0  0  0  203
+  JN:X   4 0 0 0 0  0  0  1  10  111 0 0 0 0 0 0  0  0  0  0  126
+  JN:S   5 0 0 0 0  0  0  0   1  119 0 0 0 0 1 0  0  0  0  0  126
+  JY:X   1 0 0 0 0  0  0  0  15   89 0 0 0 0 0 0  0  0  0  0  105
+  JY:S   5 0 0 0 0  0  0  0   5   95 0 0 0 0 0 0  0  0  0  0  105
+  JZ:X  11 0 0 0 0  0  0  1   5  156 0 0 0 0 0 0  0  0  0  5  178
+  JZ:S  14 0 0 0 0  0  0  0   3  156 0 0 0 0 0 0  0  0  0  5  178
+  JV:X   1 0 0 0 0  0  1  1  10  169 0 0 0 0 0 0  0  0  0  0  182
+  JV:S  16 0 0 0 0  0  1  0   2  163 0 0 0 0 0 0  0  0  0  0  182
+  HA:X   1 0 0 0 0  2  2  7  18  225 0 0 0 0 0 0  0  9  8  0  272
+  HA:S   2 0 0 0 0  0  0  0  56  187 0 0 0 0 0 0 15  4  8  0  272
+  HI:X   4 0 0 0 0  1  1  0   2    9 0 0 0 0 0 0  0  1  1  0   19
+  HI:S   4 0 0 0 0  0  0  0   1   13 0 0 0 0 0 0  0  0  1  0   19
+  HN:X   0 0 0 0 0  1  0  1   1   17 0 0 0 0 0 0  0  3  2  0   25
+  HN:S   3 0 0 0 0  0  0  0   2   17 0 0 0 0 0 0  1  0  2  0   25
+  HY:X   0 0 0 0 0  1  2  8  14  223 0 0 0 0 0 0  0  7  8  0  263
+  HY:S   0 0 0 0 0  0  0  7  61  153 0 0 0 0 0 0 31  3  8  0  263
+  HZ:X   0 0 0 0 0  0  0  1   1   22 0 0 0 0 0 0  0  1  2  0   27
+  HZ:S   5 0 0 0 0  0  0  0   4   16 0 0 0 0 0 0  0  0  2  0   27
+  HV:X   0 0 0 0 0  0  0  1   0   10 0 0 0 0 0 0  0  1  1  0   13
+  HV:S   4 0 0 0 0  0  0  0   2    6 0 0 0 0 0 0  0  0  1  0   13
+  AI:X   7 0 0 0 0  0  0  2   3   25 0 0 0 0 0 0  0  0  0  0   37
+  AI:S   6 0 0 0 0  0  0  1   2   28 0 0 0 0 0 0  0  0  0  0   37
+  AN:X   0 0 0 0 0  0  0  0   6   52 0 0 0 0 0 0  0  0  0  0   58
+  AN:S   4 0 0 0 0  0  0  0   2   52 0 0 0 0 0 0  0  0  0  0   58
+  AY:X   2 0 0 0 0  0  1  2  17  267 0 0 0 0 0 0  0  0  0  0  289
+  AY:S   0 0 0 0 0  0  0  0  31  257 0 0 0 0 0 0  0  1  0  0  289
+  AZ:X   0 0 0 0 0  0  0  0   0   47 0 0 0 0 0 0  0  0  0  0   47
+  AZ:S   6 0 0 0 0  0  0  0   0   41 0 0 0 0 0 0  0  0  0  0   47
+  AV:X   0 0 0 0 0  0  0  0   1   34 0 0 0 0 0 0  0  0  0  0   35
+  AV:S   4 0 0 0 0  0  0  0   0   31 0 0 0 0 0 0  0  0  0  0   35
+  IN:X  11 0 0 0 0  1  2  7  65  163 0 0 0 0 0 0  0  2  0  0  251
+  IN:S  13 0 0 0 0  0  0  0  30  208 0 0 0 0 0 0  0  0  0  0  251
+  IY:X   2 0 0 0 0  0  0  1   6   38 0 0 0 0 0 0  0  0  0  0   47
+  IY:S   5 0 0 0 0  0  0  2   7   32 0 0 0 0 0 0  1  0  0  0   47
+  IZ:X  14 0 0 0 0  1  1 13  74  162 0 0 0 0 0 0  1  0  0  5  271
+  IZ:S  21 0 0 0 0  0  0  0   0  245 0 0 0 0 0 0  0  0  0  5  271
+  IV:X  15 0 0 0 1  1  1 16 120  177 0 0 0 0 0 0  1  0  0  0  332
+  IV:S  17 0 0 0 0  0  2  5  37  265 0 0 0 0 0 0  6  0  0  0  332
+  NY:X   1 0 0 0 0  0  0  0   1   46 0 0 0 0 0 0  0  1  0  0   49
+  NY:S   3 0 0 0 0  0  0  0   4   42 0 0 0 0 0 0  0  0  0  0   49
+  NZ:X   3 0 0 0 0  2  1  0  11  233 0 0 0 0 0 0  0  1  0  3  254
+  NZ:S  10 0 0 0 0  0  0  1  16  224 0 0 0 0 0 0  0  0  0  3  254
+  NV:X   0 0 0 0 0  2  3  0  13  263 0 0 0 0 0 0  1  1  0  0  283
+  NV:S   0 0 0 0 0  0  0  1  10  271 0 0 0 0 0 0  1  0  0  0  283
+  YZ:X   0 0 0 0 0  0  0  0   2   60 0 0 0 0 0 0  0  0  0  1   63
+  YZ:S   6 0 0 0 0  0  0  0   1   55 0 0 0 0 0 0  0  0  0  1   63
+  YV:X   0 0 0 0 0  0  0  0   1   39 0 0 0 0 0 0  0  0  0  0   40
+  YV:S   4 0 0 0 0  0  0  0   0   36 0 0 0 0 0 0  0  0  0  0   40
+  ZV:X   3 0 0 0 0  1  0  0   3  260 0 0 0 0 0 0  0  0  0  4  271
+  ZV:S   4 0 0 0 0  0  0  2  12  249 0 0 0 0 0 0  0  0  0  4  271
+-----------------------------------------------------------------
+Totals 323 0 0 0 1 13 20 97 791 6361 0 0 0 0 1 0 72 37 46 36 7798
+
+QC = 0   Fringes not detected.
+   = 1-9 Fringes detected, no error condition. Higher #, better quality.
+   = B   Interpolation error in fourfit.
+   = D   No data in one or more frequency channels.
+   = E   Maximum fringe amplitude at edge of SBD, MBD, or rate window.
+   = F   "Fork" problem in processing.
+   = G   Fringe amp in a channel is <.5 times mean amp (only if SNR>20).
+   = H   Low Phase-cal amplitude in one or more channels.
+   = N   No valid correlator data.
+ Tot     Total number of scans in schedule.
+ Minus   Scans in original schedule file for which correlation was not
+         attempted, usually because of known station problems.
+
++SNR_RATIOS
+
+ MEAN RATIOS = Observed SNR / Predicted SNR  for exp no. 4770
+
+ ...by baseline, over all sources:
+
+ bl     X     n       S     n
+
+ HJ    0.09   77     0.12   85
+ HA    0.12  263     0.10  262
+ HI    0.06   14     0.09   14
+ HN    0.10   23     0.10   19
+ HV    0.08   12     0.10    8
+ HY    0.14  255     0.11  255
+ HZ    0.07   25     0.06   20
+ JA    0.13   60     0.12   65
+ JI    0.06  180     0.12  171
+ JN    0.09  122     0.11  119
+ JV    0.11  181     0.13  166
+ JY    0.11  104     0.12  100
+ JZ    0.07  162     0.09  158
+ AI    0.07   30     0.09   31
+ AN    0.09   58     0.09   54
+ AV    0.10   35     0.09   31
+ AY    0.15  287     0.10  289
+ AZ    0.08   47     0.07   39
+ IN    0.08  240     0.13  236
+ IV    0.11  317     0.15  314
+ IY    0.08   45     0.10   42
+ IZ    0.07  252     0.07  240
+ NV    0.15  283     0.13  283
+ NY    0.13   48     0.10   45
+ NZ    0.09  248     0.08  241
+ VY    0.12   40     0.10   36
+ VZ    0.13  264     0.10  262
+ YZ    0.09   62     0.07   56
+
++FOURFIT_CONTROL_FILE
+
+sb_win -128.0 128.0
+mb_win -128.0 128.0
+dr_win -300.e-4 300.e-4
+
+if f_group X
+ref_freq 8212.99
+pc_mode normal
+pc_freqs ghijklmn 5010 5010 5010 5010 5010 5010 5010 5010
+
+if f_group S
+dr_win -3.0e-5 3.0e-5
+ref_freq 2245.99
+pc_mode normal
+pc_freqs abcdef 3010 3010 3010 3010 3010 3010
+
+if station H lsb_offset -100.0
+if station J lsb_offset  -90.0
+if station A lsb_offset -110.0
+if station N lsb_offset    0.0
+if station V lsb_offset    0.0
+if station Y lsb_offset -100.0
+
+if station I and f_group S freqs   b c d e
+if station Z and f_group S freqs a       e f
+
+if station I and f_group S pc_mode manual
+pc_phases abcdef -94.0 -67.2 -49.6 -10.0 -83.8 -114.1
+if station I and f_group X pc_mode manual
+pc_phases ghijklmn -152.9 -100.4 -73.9 -94.4 -159.9 -124.6 -68.2 -140.9
+
+if station Z and f_group S pc_mode manual
+pc_phases aef 19.7 31.4 13.5
+if station Z and f_group X pc_mode manual
+pc_phases ghijklmn 133.9 143.8 97.8 74.6 -175.8 -173.1 99.4 107.7
+
+if baseline IY and f_group S mb_win -0.010 0.060
+
+* Phillip
+
++END
+$1<
+Sorted by time and subsorted by baseline.   -vlbi-
+All  baselines used.
+All  sources used.
+Output time window:  earliest latest
+

@@ -1,0 +1,289 @@
+TIMETAG 2010/12/06 20:13:08 
+MK3DB_VERSION    1
+Dbedit: r4458, IVSR4  | geo_export
+VLBI experiment R4458 ( IVSR4 )
+Created by dbedit Ver. 2007.10.27  revision 6.17
+        run by vlbi ( vlbi@joplin.usno.navy.mil )
+            at USN -- USNO Earth Orientation department
+               on joplin.usno.navy.mil at 2010.12.06-15:13:08 local time
+Dbedit control file history entry: r4458, IVSR4  | geo_export
+Directory /data/export/data/r4458/4458
+$1>
++HEADER
+CORREL   WACO
+DATABASE 10NOV23XE
+SESSNAME R4458
+EXPNO    4458
+OBSTIME  2010/11/23 2010/11/24
+UTSTART  1830
+DURATION 24
+DOY      327/328
+CORRTIME 2010/12/02 2010/12/03
+CORRPASS 1
+EXPORT   Done
+
++SUMMARY
+
+Qcode   % of Total   % of Correlated
+          scans          scans
+
+ 5-9       89%           95%
+  0         2%            3%
+ B-H        3%            3%
+Removed     6%
+
++CORRELATOR_NOTES
+
++STATION_NOTES
+
+KOKEE    (Kk/K):   Manual phasecal applied at KOKEE
+
+MATERA   (Ma/I):   Low fringe and pcal amplitude in channels SR1U and SR6U
+                   leading to G-codes.  Channels SR1U and SR6U removed from
+                   fringe fitting. At the start of the session low pcal and
+                   fringe amplitude in channel XR4U leading to all G-codes.
+                   Channel XR4U removed from fringe fitting. From 328-0912
+                   to 328-1133 low pcal/fringe amplitude in channel SR4U
+                   leading to G and H-codes.  Channel SR4U was not removed
+                   from fringe fitting.  Some additional low pcal/fringe
+                   amplitude in channels SR2U, SR3U and SR5U leading to a
+                   few G-codes.
+
+NYALES20 (Ny/N):   There appear to be some spurious signals in both S and
+                   X-Band but other than the one below we were unable to
+                   characterize them. Spurious signals at NYALES20:
+                   XR3U (8358.00) -19dBc
+
+SVETLOE  (Sv/S):   Station reports scans 328-1614 to 328-1637 failed due to
+                   antenna problems.
+
+TIGOCONC (Tc/O):   -
+
+ZELENCHK (Zc/Z):   Station reports scans from 328-1029 to 328-1303 missed
+                   due to storm  Low fringe and pcal amplitude in channels
+                   SR6U XR1U/L, XR5U and  XR7U leading to G-codes.  Channels
+                   SR6U, XR5U and XR7U removed from fringe fitting.
+                   Spurious signals at ZELENCHK
+                   XR2U (8258.00) -26dBc
+                   XR3U (8358.00) -14dBc
+                   XR4U (8518.00) -11dBc
+                   XR6U (8858.00) -30dBc
+                   XR8U (8938.00) -21dBc
+                   SR4U (2296.00) -12dBc
+
++DROP_CHANNELS
+  Kk
+  Ma SR1U  SR6U  XR4U
+  Ny
+  Sv
+  Tc
+  Zc       SR6U        XR5U  XR7U
+
++MANUAL PCAL Bd Hb Ho Kk
+
++CHANNELS
+XR1U = band|polarization|channel#|sideband
+
+ XR1U/L  BBC01  8212.99
+ XR2U    BBC02  8252.99
+ XR3U    BBC03  8352.99
+ XR4U    BBC04  8512.99
+ XR5U    BBC05  8732.99
+ XR6U    BBC06  8852.99
+ XR7U    BBC07  8912.99
+ XR8U/L  BBC08  8932.99
+ SR1U    BBC09  2225.99
+ SR2U    BBC10  2245.99
+ SR3U    BBC11  2265.99
+ SR4U    BBC12  2295.99
+ SR5U    BBC13  2345.99
+ SR6U    BBC14  2365.99
+
++CLOCKS
+Clocks: WACO
+
+Station          fmout-gps      Used      rate
+                  [usec]       [usec]   [sec/sec]
+  Kk               5.75         6.58       0.0
+  Ma              -9.77        -9.16      -1.5e-12
+  Ny             -15.23       -15.17       0.0
+  Sv              -1.57        -0.66      -0.7e-12
+  Tc               0.83         0.92       0.0
+  Zc              -1.70        -0.45       1.3e-12
+
+Date: 2010/11/23
+
++QCODES
+
+ Qcodes  0  1  2  3  4  5  6   7    8    9  A  B  C  D  E  F  G  H  N   -  Tot
+-----------------------------------------------------------------------------
+  IS:X  8  0  0  0  0  0  0   0   31  195  0  0  0  0  0  0  0  0  0   4  238
+  IS:S  8  0  0  0  0  0  0  25  143   33  0  0  0  0  0  0 21  4  0   4  238
+  IO:X  2  0  0  0  0  0  0   0    0   13  0  0  0  0  0  0  0  0  0   0   15
+  IO:S  1  0  0  0  0  0  0   0    2   12  0  0  0  0  0  0  0  0  0   0   15
+  IZ:X  8  0  0  0  0  0  0  20  104   65  0  0  0  0  0  0  1  0  0  24  222
+  IZ:S  9  0  0  0  0  0  0  13   94   68  0  0  0  0  0  0 13  1  0  24  222
+  IN:X  7  0  0  0  0  0  0   1    7  189  0  0  0  0  0  0  0  0  0   0  204
+  IN:S  6  0  0  0  0  0  3  28   72   71  0  0  0  0  0  0  4 20  0   0  204
+  IK:X 18  0  0  0  0  0  0   1    8   70  0  0  0  0  0  0  2  0  0   1  100
+  IK:S  5  0  0  0  0  0  0   1   34   49  0  0  0  0  0  0  5  5  0   1  100
+  SO:X  0  0  0  0  0  0  0   0    2   16  0  0  0  0  0  0  0  0  0   1   19
+  SO:S  0  0  0  0  0  0  0   0    0   18  0  0  0  0  0  0  0  0  0   1   19
+  SZ:X  0  0  0  0  0  0  1  93  135   85  0  0  0  0  0  0  9  0  0  45  368
+  SZ:S  0  0  0  0  0  0  0   2  177  143  0  0  0  0  0  0  1  0  0  45  368
+  SN:X  1  0  0  0  0  0  0   2   26  199  0  0  0  0  0  0  0  0  0   3  231
+  SN:S  0  0  0  0  0  4  3   6   51  164  0  0  0  0  0  0  0  0  0   3  231
+  SK:X  1  0  0  0  0  0  1  14   50   59  0  0  0  0  0  0  6  0  0   4  135
+  SK:S  0  0  0  0  0  0  0   0   27  104  0  0  0  0  0  0  0  0  0   4  135
+  OZ:X  0  0  0  0  0  0  0   1    3    6  0  0  0  0  0  0  0  0  0   1   11
+  OZ:S  0  0  0  0  0  0  0   0    1    9  0  0  0  0  0  0  0  0  0   1   11
+  ON:X  2  0  0  0  0  0  0   0    0   10  0  0  0  0  0  0  0  0  0   0   12
+  ON:S  1  0  0  0  0  0  0   0    0   11  0  0  0  0  0  0  0  0  0   0   12
+  OK:X  1  0  0  0  0  0  0   0    4   14  0  0  0  0  0  0  0  0  0   0   19
+  OK:S  0  0  0  0  0  0  0   0    0   19  0  0  0  0  0  0  0  0  0   0   19
+  ZN:X  2  0  0  0  0  0  0  58   51   79  0  0  0  0  0  0  0  0  0  24  214
+  ZN:S  0  0  0  0  0  0  4  17   85   84  0  0  0  0  0  0  0  0  0  24  214
+  ZK:X  8  0  0  0  1  0  2  33    4   44  0  0  0  0  0  0 13  0  0  15  120
+  ZK:S  0  0  0  0  0  0  0   0    2  103  0  0  0  0  0  0  0  0  0  15  120
+  NK:X  8  0  0  0  0  0  0   0    1   95  0  0  0  0  0  0  1  0  0   1  106
+  NK:S  3  0  0  0  0  0  2   7   28   64  0  0  0  0  1  0  0  0  0   1  106
+-----------------------------------------------------------------------------
+Totals 99  0  0  0  1  4 16 322 1142 2091  0  0  0  0  1  0 76 30  0 246 4028
+
+Legend:
+QC = 0   Fringes not detected.
+   = 1-9 Fringes detected, no error condition. Higher #, better quality.
+   = B   Interpolation error in fourfit.
+   = D   No data in one or more frequency channels.
+   = E   Maximum fringe amplitude at edge of SBD, MBD, or rate window.
+   = F   "Fork" problem in processing.
+   = G   Fringe amp in a channel is <.5 times mean amp (only if SNR>20).
+   = H   Low Phase-cal amplitude in one or more channels.
+   = N   No valid correlator data.
+ Tot     Total number of scans in schedule.
+ Minus   Scans in original schedule file for which correlation was not
+         attempted, usually because of known station problems.
+
++SNR_RATIOS
+
+MEAN RATIOS = Observed SNR / Predicted SNR  for exp no. 4458
+
+ ...by baseline, over all sources:
+
+ bl     X     n       S     n
+
+ KI    0.80   81     1.30   94
+ KN    0.60   97     0.93  101
+ KS    0.94  128     1.57  131
+ KO    0.87   18     0.91   19
+ KZ    0.74   97     1.31  105
+ IN    0.71  197     0.88  194
+ IS    1.04  226     1.39  226
+ IO    1.06   13     0.93   14
+ IZ    0.85  190     1.25  189
+ NS    0.77  227     1.26  228
+ NO    1.14   10     0.73   11
+ NZ    0.61  188     0.96  190
+ SO    1.05   17     1.08   18
+ SZ    0.93  323     1.47  323
+ OZ    1.00   10     1.01   10
+
++FOURFIT_CONTROL_FILE
+
+***
+*
+* 4fit control file for R4458
+*
+  max_parity 0.01
+  sb_win -0.5 0.5 mb_win -1.0 1.0 dr_win -1.5e-5 1.5e-5
+  start -3 stop -1
+*
+  if f_group X
+    ref_freq 8212.99
+    pc_freqs ghijklmn  5010  5010  5010  5010  5010  5010  5010  5010
+*
+  if f_group S
+    dr_win -3.0e-5 3.0e-5
+    ref_freq 2225.99
+    pc_freqs abcdef  3010  3010  3010  3010  3010  3010
+*
+*
+  if station O or station Z or station K
+  lsb_offset 280.
+*
+*
+  if station K and f_group X
+    pc_phases ghijklmn    121  13  5  12  57  86  37  65
+    pc_mode manual
+*
+  if station K and f_group S
+    pc_phases abcdef   -44  -58  -51  10  -88  -28
+    pc_mode manual
+*
+*
+  if f_group S and baseline IN
+   mb_win   0.02000  0.04000
+**
+  if f_group S and baseline IS
+   mb_win  -0.02500 -0.01000
+**
+  if f_group S and baseline KI
+   mb_win  0.02000  0.06000
+*
+  if station I and f_group S
+    freqs    b c d e
+***
+  if station Z and f_group S
+    freqs a b c d e
+*
+  if station Z and f_group X
+    freqs g h i j   l   n
+*
+  if station I and f_group X
+    freqs  g h i   k l m n
+***
+
+Dave
+
++END
+$1<
+Sorted by time and subsorted by baseline.   -vlbi-
+All  baselines used.
+All  sources used.
+Output time window:  earliest latest
+TIMETAG 2010/12/06 21:00:57 
+MK3DB_VERSION    2
+CALC10.01 Ver. 2008.11.13  Mon Dec  6 16:00:57 2010nuit.usno.
+Calc 10.00 with External Inputs  -NG-
+TIMETAG 2010/12/06 21:05:26 
+MK3DB_VERSION    3
+Dbcal: r4458 WXCB added by dbcal - NG -
+ DBCAL: Version 2007.12.06        DEC 06,2010 21:05:26
+TIMETAG 2010/12/06 22:00:14 
+MK3DB_VERSION    4
+r4458 USNO SOLVE solution -NG-
+Delay and Rates 60/60 clocks/atm
+fit 29 ps
+The following flyby options were used in the solution:
+Station flyby file:  glo.sit
+Source flyby file :  glo.src
+Nutation series flyby file :  NONE
+Nutation offset flyby file :  NONE
+Earth rotation flyby file  :  last_usno_
+Tectonic plate motion file :  glo.vel
+Group delay ambiguities and editing updated.
+Troposphere and cable cal status for standard solution stored.
+Observation dependent contribution status stored.
+Reweighting updated for:
+KO-MA KO-NY KO-SV KO-TI KO-ZE MA-NY MA-SV MA-TI MA-ZE NY-SV
+NY-TI NY-ZE SV-TI SV-ZE TI-ZE
+Solution data configuration: GROUP DELAY & RATE
+Clock and atmosphere constraint information saved.
+Batchmode clock parameterization saved.
+Batchmode atmosphere parameterization saved.
+Ionosphere calibrated with IONO IONO  Ve
+Group Ion cal for $10NOV23XE V. 3 based on $10NOV23SE V. 3.
+Barometer calibration and barometer height offset not available.
+Eccentricity data store in data base header.
+Elevation cutoff data stored in database.
+

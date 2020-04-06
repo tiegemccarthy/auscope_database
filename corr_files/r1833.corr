@@ -1,0 +1,321 @@
+TIMETAG 2018/03/26 18:44:09 
+MK3DB_VERSION    1
+Dbedit: r1833, IVS-R1  | geo_export
+VLBI experiment R1833 ( IVS-R1 )
+Created by dbedit Ver. 2015.06.23  revision 6.23
+        run by Matt Hardin (VLBI) ( mrh@fringe1 )
+            at USN -- United States Naval Observatory
+               on fringe1 at 2018.03.26-14:44:09 local time
+Dbedit control file history entry: r1833, IVS-R1  | geo_export
+Directory /data/export/data/1833
+$1>
++HEADER
+CORREL   WACO
+DATABASE 18MAR12XA
+SESSNAME R1833
+OBSTIME  2018/03/12 2018/03/13
+UTSTART  1700
+DURATION 24
+DOY      071-072
+CORRTIME 2018/03/22 2018/03/23
+CORRPASS 1
+EXPORT   Done.
+
++SUMMARY
+Qcode   % of Total   % of Correlated
+          scans          scans
+
+ 5-9       70%           97%
+  0         2%            3%
+1-4,A-H,N   1%            1%
+Removed    27%
+
+Qcodes  7-9 Correlated 96%
+Qcode N Not Correlated  0%
+
++CORRELATOR_NOTES
+
++STATION_NOTES
+FORTLEZA    (Ft/F): Observed with warm receiver.
+                    Low fringe amplitudes in channel(s) SR4U;
+                    channel(s) SR4U removed from fringe fitting.
+
+HART15M     (Ht/J): Ok.
+
+KATH12M     (Ke/A): Station reports unreliable wx values (no change
+                    over course of the experiment).
+
+SEJONG      (Kv/e): No fmout-gps values in log.
+                    Low fringe amplitudes in channel(s) SR4U SR5U SR6U
+                    XR1L; channel(s) SR4U SR5U SR6U XR1L removed from
+                    fringe fitting.
+                    Low phase cal amplitude. Applied manual phase cal.
+
+NYALES20    (Ny/N): Did not participate due to power failure and maser
+                    problems.
+
+WETTZ13N    (Wn/v): Ok.
+
+WARK12M     (Ww/W): No log file.
+                    Low phase cal amplitude. Applied manual phase cal.
+
+YARRA12M    (Yg/Y): Ok.
+
++DROP_CHANNELS
+Ft SR4U
+Kv SR4U SR5U SR6U XR1L
+
++MANUAL_PCAL Kv Ww
+
++CHANNELS
+ Channels: XR1U = band|polarization|BBC#|sideband
+
+XR1U/L      BBC01  8212.99
+XR2U        BBC02  8252.99
+XR3U        BBC03  8352.99
+XR4U        BBC04  8512.99
+XR5U        BBC05  8732.99
+XR6U        BBC06  8852.99
+XR7U        BBC07  8912.99
+XR8U/L      BBC08  8932.99
+SR1U        BBC09  2225.99
+SR2U        BBC10  2245.99
+SR3U        BBC11  2265.99
+SR4U        BBC12  2295.99
+SR5U        BBC13  2345.99
+SR6U        BBC14  2365.99
+
++CLOCKS
+
+Clocks: WACO
+
+Station          fmout-gps      Used      rate       Comments
+                  [usec]       [usec]   [sec/sec]
+Ft                 0.35         0.560   6.823e-14
+Ht                17.68        20.525   1.579e-12
+Ke                16.36        18.375  -9.287e-13
+Kv                  -         -24.117  -3.061e-13
+Ny                  -            -       -
+Wn                -1.38         0.944  -1.097e-13    Reference
+Ww                  -          -5.573  -6.866e-13
+Yg                 4.80         7.070  -5.385e-13
+Date: 2018/03/12 17:00:00
+
++QCODES
+Qcod  0 1 2 3 4 5  6  7   8    9 A B C D E F G  H N    -  Tot
+-------------------------------------------------------------
+FJ:X  1 0 0 0 0 0  0  3  13  167 0 0 0 0 0 0 0  4 0    0  188
+FJ:S  9 0 0 0 0 0  0  0  12  166 0 0 0 0 0 0 1  0 0    0  188
+FN:X  0 0 0 0 0 0  0  0   0    0 0 0 0 0 0 0 0  0 0  101  101
+FN:S  0 0 0 0 0 0  0  0   0    0 0 0 0 0 0 0 0  0 0  101  101
+Fv:X  2 0 0 0 0 0  0  7  34  144 0 0 0 0 0 0 1  4 0    0  192
+Fv:S  0 0 0 0 0 0  0  0   8  183 0 0 0 0 0 0 1  0 0    0  192
+JA:X  1 0 0 0 0 0  1  2   4   20 0 0 0 0 0 0 0  3 0    0   31
+JA:S  2 0 0 0 0 0  0  0   1   26 0 0 0 0 0 0 0  2 0    0   31
+Je:X  3 0 0 0 0 0  0  0   9   21 0 0 0 0 0 0 0  3 0    0   36
+Je:S  7 0 0 0 0 0  0  0   0   29 0 0 0 0 0 0 0  0 0    0   36
+JN:X  0 0 0 0 0 0  0  0   0    0 0 0 0 0 0 0 0  0 0   68   68
+JN:S  0 0 0 0 0 0  0  0   0    0 0 0 0 0 0 0 0  0 0   68   68
+Jv:X  3 0 0 0 0 1  2  4  22  112 0 0 0 0 0 0 0  2 0    0  146
+Jv:S  5 0 0 0 0 0  2  5  17  116 0 0 0 0 0 0 1  0 0    0  146
+JW:X  2 0 0 0 0 0  0  0   2   23 0 0 0 0 0 0 0  1 0    0   28
+JW:S  3 0 0 0 0 0  0  1   3   21 0 0 0 0 0 0 0  0 0    0   28
+JY:X  0 0 0 0 0 0  0  0   2   40 0 0 0 0 0 0 0  3 0    0   45
+JY:S  6 0 0 0 0 0  0  0  12   27 0 0 0 0 0 0 0  0 0    0   45
+Ae:X  0 0 0 0 0 1  4 13  37   72 0 0 0 0 0 0 0  0 0    0  127
+Ae:S  0 0 0 0 0 0  0  0   2  125 0 0 0 0 0 0 0  0 0    0  127
+AN:X  0 0 0 0 0 0  0  0   0    0 0 0 0 0 0 0 0  0 0   37   37
+AN:S  0 0 0 0 0 0  0  0   0    0 0 0 0 0 0 0 0  0 0   37   37
+Av:X  0 0 0 0 0 0  0  3   1   18 0 0 0 0 0 0 0  0 0    0   22
+Av:S  2 0 0 0 0 0  0  0   0   20 0 0 0 0 0 0 0  0 0    0   22
+AW:X  1 0 0 0 0 1  6 14  52  131 0 0 0 0 0 0 0  0 0    0  205
+AW:S 10 0 0 0 0 0  0  2  26  166 0 0 0 0 0 0 1  0 0    0  205
+AY:X  0 0 0 0 0 0  0  6  44  239 0 0 0 0 0 0 1  0 1    0  291
+AY:S  0 0 0 0 0 0  0  3  26  261 0 0 0 0 0 0 0  0 1    0  291
+eN:X  0 0 0 0 0 0  0  0   0    0 0 0 0 0 0 0 0  0 0  171  171
+eN:S  0 0 0 0 0 0  0  0   0    0 0 0 0 0 0 0 0  0 0  171  171
+ev:X  0 0 0 0 0 0  1  1   8   62 0 0 0 0 0 0 0  0 0    0   72
+ev:S  4 0 0 0 0 0  0  0   3   65 0 0 0 0 0 0 0  0 0    0   72
+eW:X  0 0 0 0 0 3  4  6  25   24 0 0 0 0 0 0 0  0 0    0   62
+eW:S 15 0 0 0 0 0  0  0   0   47 0 0 0 0 0 0 0  0 0    0   62
+eY:X  0 0 0 0 0 0  2  5  34   58 0 0 0 0 0 0 0  0 0    0   99
+eY:S  2 0 0 0 0 0  0  0   2   95 0 0 0 0 0 0 0  0 0    0   99
+Nv:X  0 0 0 0 0 0  0  0   0    0 0 0 0 0 0 0 0  0 0  230  230
+Nv:S  0 0 0 0 0 0  0  0   0    0 0 0 0 0 0 0 0  0 0  230  230
+NW:X  0 0 0 0 0 0  0  0   0    0 0 0 0 0 0 0 0  0 0   14   14
+NW:S  0 0 0 0 0 0  0  0   0    0 0 0 0 0 0 0 0  0 0   14   14
+NY:X  0 0 0 0 0 0  0  0   0    0 0 0 0 0 0 0 0  0 0   28   28
+NY:S  0 0 0 0 0 0  0  0   0    0 0 0 0 0 0 0 0  0 0   28   28
+vW:X  0 0 0 0 0 0  0  0   1    1 0 0 0 0 0 0 0  0 0    0    2
+vW:S  0 0 0 0 0 0  0  0   0    2 0 0 0 0 0 0 0  0 0    0    2
+vY:X  0 0 0 0 0 0  0  1   1   20 0 0 0 0 0 0 0  0 0    0   22
+vY:S  7 0 0 0 0 0  0  0   0   15 0 0 0 0 0 0 0  0 0    0   22
+WY:X  0 0 0 0 0 2  3  9  50  118 0 0 0 0 0 0 0  0 0    0  182
+WY:S  3 0 0 0 0 0  0  8  54  114 0 0 0 0 0 0 3  0 0    0  182
+-------------------------------------------------------------
+Tot  88 0 0 0 0 8 25 93 505 2748 0 0 0 0 0 0 9 22 2 1298 4798
+QC = 0   Fringes not detected.
+   = 1-9 Fringes detected, no error condition. Higher #, better quality.
+   = B   Interpolation error in fourfit.
+   = D   No data in one or more frequency channels.
+   = E   Maximum fringe amplitude at edge of SBD, MBD, or rate window.
+   = F   "Fork" problem in processing.
+   = G   Fringe amp in a channel is <.5 times mean amp (only if SNR>20).
+   = H   Low Phase-cal amplitude in one or more channels.
+   = N   No valid correlator data.
+ Tot     Total number of scans in schedule.
+ Minus   Scans in original schedule file for which correlation was not
+         attempted, usually because of known station problems.
+
++SNRATIO
+MEAN RATIOS = Observed SNR / Predicted SNR  for exp no. 1833
+
+ ...by baseline, over all sources:
+
+ bl     X     n       S     n
+
+ FJ    0.83  187     1.25  178
+ FA    0.00    0     0.00    0
+ FN    0.00    0     0.00    0
+ Fe    0.00    0     0.00    0
+ FW    0.00    0     0.00    0
+ Fv    1.44  190     1.17  192
+ FY    0.00    0     0.00    0
+ JA    0.97   30     1.02   29
+ JN    0.00    0     0.00    0
+ Je    1.56   33     0.62   29
+ JW    0.75   25     0.66   25
+ Jv    1.14  143     0.80  141
+ JY    0.97   45     1.05   39
+ AN    0.00    0     0.00    0
+ Ae    1.71  127     0.65  126
+ AW    1.04  204     0.67  195
+ Av    1.08   22     0.80   20
+ AY    1.23  290     0.89  290
+ Ne    0.00    0     0.00    0
+ NW    0.00    0     0.00    0
+ Nv    0.00    0     0.00    0
+ NY    0.00    0     0.00    0
+ eW    2.45   62     0.64   47
+ ev    1.88   72     0.57   68
+ eY    2.81   99     0.78   97
+ Wv    1.85    2     0.81    2
+ WY    1.20  182     0.74  179
+ vY    1.36   22     0.88   15
+
++FOURFIT_CONTROL_FILE
+
+* Fourfit control file for r1833
+* HOPS Version 3.17
+*
+max_parity 0.01
+sb_win -256.0 256.0 mb_win -256.0 256.0 dr_win -300.e-4 300.e-4
+pc_mode multitone
+pc_period 5
+
+if f_group X
+  ref_freq 8220.99
+
+if f_group S
+  ref_freq 2222.99
+
+* Ft / F
+if station F
+lsb_offset  120.0
+* Ht / J
+if station J
+lsb_offset    0.0
+* Ke / A
+if station A
+lsb_offset  -20.0
+* Ny / N
+if station N
+lsb_offset   40.0
+* Kv / e
+if station e
+lsb_offset    0.0
+* Ww / W
+if station W
+lsb_offset  -40.0
+* Wn / v
+if station v
+lsb_offset  -40.0
+* Yg / Y
+if station Y
+lsb_offset  -20.0
+
+if station e and f_group X freqs g+ h i j k l m n
+
+if station F and f_group S freqs a b c   e f
+if station e and f_group S freqs a b c
+
+if station e and f_group S
+pc_phases abc -159.6 -83.7 -163.2
+pc_mode manual
+
+if station e and f_group X
+pc_phases ghijklmn 177.4 -158.9 -173.0 -141.6 -115.2 -158.0 -159.4 175.7
+pc_mode manual
+
+if station W and f_group S
+pc_phases abcdef -114.5 -109.9 -116.6 -92.9 114.8 -103.0
+pc_mode manual
+
+if station W and f_group X
+pc_phases ghijklmn -5.3 37.4 36.6 -65.3 -51.3 83.2 18.4 -3.9
+pc_mode manual
+
+* Matt
+
++END
+$1<
+Sorted by time and subsorted by baseline.   -mrh-
+All  baselines used.
+All  sources used.
+Output time window:  earliest latest
+TIMETAG 2018/03/26 21:22:17 
+MK3DB_VERSION    2
+CALC11.02 Ver. 2016.12.29  Mon Mar 26 17:22:15 2018    bootes
+Calc 11 at GSFC  -DG-
+TIMETAG 2018/03/26 21:34:44 
+MK3DB_VERSION    3
+Dbcal: R1833 -DG-
+ DBCAL: Version 2017-MAR-15       MAR 26,2018 21:34:44
+TIMETAG 2018/03/26 21:49:24 
+MK3DB_VERSION    4
+SgLib-0.5.2 (Patawomeck): data have been read from Mk3 database
+TIMETAG 2018/03/26 22:04:33 
+MK3DB_VERSION    4
+Analyzed by David Gordon (hereafter DG) at Goddard Space Flight Center. Contact info: <David.Gordon-1@nasa.gov>
+DG> R1833: GSFC Analysis  -DG-
+DG> NuSolve fit of 38.5 psec.
+IVS-R1833: GSFC analysis (DG)
+G-Gxs solution,   60/  60 clocks/atms,    2/  40 constraints, 23.95-hr gradients.
+Solve fit is 38.46 psec.
+The following flyby options were used in the solution:
+Station positions flyby file: glo.sit
+Station velocities flyby file: glo.vel
+Source flyby file: 17Dec05.src
+Station axis offset flyby file: glo.axis
+EOP high frequency variations flyby file: NONE
+Station mean gradients flyby file: NONE
+Nutation series flyby file :  NONE
+Nutation offset flyby file :  NONE
+Earth rotation flyby file  :  NONE
+Tectonic plate motion file :  NONE
+Group delay ambiguities were resolved (well, at least, tried to resolve)
+Group delay outliers were processed and editing info has been updated.
+Troposphere and cable cal status for standard solution have been stored.
+Observation dependent contribution status has been stored.
+Reweighting updated for:
+FO-HA FO-WE HA-KA HA-SE HA-WA HA-WE HA-YA KA-SE KA-WA KA-WE
+KA-YA SE-WA SE-WE SE-YA WA-YA WE-YA
+Solution data configuration: group delays with ionosphere corrections
+Clock and atmosphere constraint information saved.
+Batchmode clock parameterization saved.
+Batchmode atmosphere parameterization saved.
+Ionosphere corrections were evaluated for group delays.
+Barometer calibration and barometer height offset not available.
+Elevation cutoff data stored in database.
+Eccentricity data store in data base header.
+

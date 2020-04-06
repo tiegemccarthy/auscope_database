@@ -1,0 +1,267 @@
+TIMETAG 2010/12/23 16:15:09 
+MK3DB_VERSION    1
+Dbedit: r4460, IVSR4  | geo_export
+VLBI experiment R4460 ( IVSR4 )
+Created by dbedit Ver. 2007.10.27  revision 6.17
+        run by vlbi ( vlbi@joplin.usno.navy.mil )
+            at USN -- USNO Earth Orientation department
+               on joplin.usno.navy.mil at 2010.12.23-11:15:09 local time
+Dbedit control file history entry: r4460, IVSR4  | geo_export
+Directory /data/export/data/r4460/4460
+$1>
++HEADER
+CORREL   WACO
+DATABASE 10DEC09XE
+SESSNAME R4460
+EXPNO    4460
+OBSTIME  2010/12/09 2010/12/10
+UTSTART  1830
+DURATION 24
+DOY      343/344
+CORRTIME 2010/12/21 2010/12/22
+CORRPASS 1
+EXPORT   Done
+
++SUMMARY
+
+Qcode   % of Total   % of Correlated
+          scans          scans
+
+ 5-9       57%           57%
+  0        38%           39%
+ B-H        3%            3%
+Removed     1%
+
++CORRELATOR_NOTES
+
+Baseline  Hobart12 -- Hobart26  (Hb-Ho) removed from export
+
++STATION_NOTES
+
+BADARY   (Bd/B):   Low pcal amplitudes in X-band leading to G and H-codes.
+                   Station reports scan 344-1128 missed due to antenna problems.
+                   There appear to be some spurious signals in both S and
+                   X-Band but we were unable to characterize them.
+                   Low phasecal amplitude, manual phasecal used with two segment
+                   and phasecal break at 344-1248
+
+                   Manual phasecal applied at BADARY
+
+HOBART12 (Hb/H):   Low SNR and many 0-codes in X-band.  Station reports
+                   antenna stows due to high winds at 343-2148 to 343-2206,
+                   344-0448 to 344-0604, 344-0709-344-1245 and 344-1416 to 344-1
+                   Some good detections in last two periods, antenna may not hav
+                   been stowed at all reported times.
+                   No phasecal amplitude.  Station reports DBBC reset at 343-223
+                   requiring manual phasecal in two segments divided at 343-2239
+
+                   Manual phasecal applied at HOBART12
+
+HOBART26 (Ho/A):   Station reports  several antenna stows for long periods.  Mos
+                   non-detections probably due to antenna stows.
+                   Variable phasecal amplitude in some time segments.
+
+                   Manual phasecal applied at HOBART26
+
+KOKEE    (Kk/K):   Manual phasecal applied at KOKEE
+
+MEDICINA (Mc/C):   Station reports antenna servo failure in last hour.  Very few
+                   detections during session, more in S-band than in X-band, so
+                   servo problem may have been problem from beginning of session
+                   Spurious signals in pcal at MEDICINA:
+                   XR5U (8738.00) = -18dBc
+
+SVETLOE  (SV/S):   Station reports scans 344-0235 to 344-0242 missed due to
+                   antenna problems.
+                   Spurious signals in pcal at SVETLOE:
+                   SR4U (2299.00) = -12dBc
+                   SR5U (2349.00) = -13dBc
+
+TIGOCONC (Tc/O):   -
+
+WETTZELL (Wz/V):   -
+
++DROP_CHANNELS
+  Bd
+  Hb
+  Ho
+  Kk
+  Mc
+  Tc
+  Wz
+
++MANUAL PCAL Bd Hb Kk
+
++CHANNELS
+XR1U = band|polarization|channel#|sideband
+
+ XR1U/L  BBC01  8212.99
+ XR2U    BBC02  8252.99
+ XR3U    BBC03  8352.99
+ XR4U    BBC04  8512.99
+ XR5U    BBC05  8732.99
+ XR6U    BBC06  8852.99
+ XR7U    BBC07  8912.99
+ XR8U/L  BBC08  8932.99
+ SR1U    BBC09  2225.99
+ SR2U    BBC10  2245.99
+ SR3U    BBC11  2265.99
+ SR4U    BBC12  2295.99
+ SR5U    BBC13  2345.99
+ SR6U    BBC14  2365.99
+
++CLOCKS
+Clocks: WACO
+
+Station          fmout-gps      Used      rate
+                  [usec]       [usec]   [sec/sec]
+  Bd              -1.22        -0.50       0.25e-12
+  Hb              14.20        16.54       0.0
+  Ho              13.48        13.76       0.0
+  Kk               5.70         6.53       0.0
+  Mc             -61.22       -61.18       0.9e-12
+  Sv              -1.84        -0.91      -1.0e-12
+  Tc               0.94         1.04       0.4e-12
+  Wz             -21.17       -21.07       0.0
+
+Date: 2010/12/09
+
++QCODES
+
+Qcodes    0  1  2  3  4  5  6  7   8    9  A  B  C  D  E  F  G  H   N  -  Tot
+-----------------------------------------------------------------------------
+  BH:X   25  0  0  0  0  0  0  1   7   28  0  0  0  0  0  0  0  0   0  1   62
+  BH:S   15  0  0  0  0  0  0  1   0   45  0  0  0  0  0  0  0  0   0  1   62
+  BA:X   23  0  0  0  0  4  2  2   6   22  0  1  0  0  0  0  0  0   0  1   61
+  BA:S   23  0  0  0  0  1  2  2   4   28  0  0  0  0  0  0  0  0   0  1   61
+  BC:X  189  0  0  0  0  0  0  0   0    2  0  0  0  0  0  0  0  0   5  6  202
+  BC:S  172  0  0  0  0  0  0  0   0   19  0  0  0  0  0  0  0  0   5  6  202
+  BO:X    0  0  0  0  0  0  0  0   0    0  0  0  0  0  0  0  0  0   0  0    0
+  BO:S    0  0  0  0  0  0  0  0   0    0  0  0  0  0  0  0  0  0   0  0    0
+  BK:X    7  0  0  0  0  0  1 10  43  103  0  0  0  0  0  0  2  0   0  0  166
+  BK:S    1  0  0  0  0  0  0  0   4  159  0  0  0  0  0  0  2  0   0  0  166
+  BS:X    1  0  0  0  0  0  0  1  25  209  0  0  0  0  0  0  8  1   0  3  248
+  BS:S    0  0  0  0  0  0  0  0   2  242  0  0  0  0  0  0  0  1   0  3  248
+  BV:X    3  0  0  0  0  0  0  0   6  193  0  0  0  0  0  0  1  0   0  0  203
+  BV:S    2  0  0  0  0  0  0  0   1  200  0  0  0  0  0  0  0  0   0  0  203
+  HC:X   12  0  0  0  0  0  0  0   0    0  0  0  0  0  0  0  0  0   0  0   12
+  HC:S   12  0  0  0  0  0  0  0   0    0  0  0  0  0  0  0  0  0   0  0   12
+  HO:X   31  0  0  0  0  0  0  1   0    7  0  0  0  0  0  0  0  0   0  0   39
+  HO:S   18  0  0  0  0  0  0  0   0   21  0  0  0  0  0  0  0  0   0  0   39
+  HK:X   58  0  0  0  0  0  0  1   2   26  0  0  0  0  0  0  0  0   0  0   87
+  HK:S   30  0  0  0  0  0  0  0   4   53  0  0  0  0  0  0  0  0   0  0   87
+  HS:X   15  0  0  0  0  0  0  0   3    4  0  0  0  0  0  0  0  0   0  0   22
+  HS:S    5  0  0  0  0  0  0  0   0   17  0  0  0  0  0  0  0  0   0  0   22
+  HV:X   11  0  0  0  0  0  0  0   0    2  0  0  0  0  0  0  0  0   0  0   13
+  HV:S    4  0  0  0  0  0  0  0   0    9  0  0  0  0  0  0  0  0   0  0   13
+  AC:X    9  0  0  0  0  0  0  0   0    0  0  0  0  0  0  0  0  0   0  0    9
+  AC:S    9  0  0  0  0  0  0  0   0    0  0  0  0  0  0  0  0  0   0  0    9
+  AO:X   20  0  0  0  0  0  0  1   4    8  0  0  0  0  0  0  0  0   1  0   34
+  AO:S   20  0  0  0  0  0  0  0   0   13  0  0  0  0  0  0  0  0   1  0   34
+  AK:X   38  0  0  0  0  2  2  3  13   17  0  0  0  0  0  0  0  0   0  0   75
+  AK:S   36  0  0  0  0  0  1  4  11   23  0  0  0  0  0  0  0  0   0  0   75
+  AS:X    6  0  0  0  0  0  0  2   8    4  0  0  0  0  0  0  0  0   0  0   20
+  AS:S    6  0  0  0  0  0  0  0   0   14  0  0  0  0  0  0  0  0   0  0   20
+  AV:X    3  0  0  0  0  0  0  0   3    4  0  0  0  0  0  0  0  0   0  0   10
+  AV:S    3  0  0  0  0  0  0  0   1    6  0  0  0  0  0  0  0  0   0  0   10
+  CO:X   18  0  0  0  0  0  0  0   0    0  0  0  0  0  0  0  0  0   0  1   19
+  CO:S   17  0  0  0  0  0  0  0   0    1  0  0  0  0  0  0  0  0   0  1   19
+  CK:X  163  0  0  0  0  0  0  0   0    1  0  0  0  0  0  0  0  0   1  6  171
+  CK:S  161  0  0  0  0  0  0  0   0    3  0  0  0  0  0  0  0  0   1  6  171
+  CS:X  232  0  0  0  0  0  0  1   1    7  0  0  0  0  0  0  0  0   4 13  258
+  CS:S  175  0  0  0  0  0  0  0   1   62  0  0  0  0  0  0  1  2   4 13  258
+  CV:X  252  0  0  0  0  0  0  0   0   22  0  0  0  0  2  0  3  0   5 11  295
+  CV:S  232  0  0  0  0  0  0  0   1   43  0  0  0  0  0  0  1  2   5 11  295
+  OK:X   13  0  0  0  0  1  0  0   5   23  0  0  0  0  0  0  0  0   0  0   42
+  OK:S    3  0  0  0  0  0  0  0   0   39  0  0  0  0  0  0  0  0   0  0   42
+  OS:X    0  0  0  0  0  0  0  0   3   14  0  0  0  0  0  0  0  0   0  0   17
+  OS:S    1  0  0  0  0  0  0  0   1   15  0  0  0  0  0  0  0  0   0  0   17
+  OV:X    0  0  0  0  0  0  0  0   2   17  0  0  0  0  0  0  0  0   0  0   19
+  OV:S    1  0  0  0  0  0  0  0   0   18  0  0  0  0  0  0  0  0   0  0   19
+  KS:X   13  0  0  0  0  1  0 15  28   92  0  0  0  0  0  0 30  1   0  1  181
+  KS:S    1  0  0  0  0  0  0  1  13  164  0  0  0  0  0  0  0  1   0  1  181
+  KV:X    6  0  0  0  0  0  5 14  41  100  0  0  0  0  0  0  7  0   0  0  173
+  KV:S    3  0  0  0  0  0  0  1   5  164  0  0  0  0  0  0  0  0   0  0  173
+  SV:X    2  0  0  0  0  0  0  3  66  179  0  0  0  0  0  0 19  0   0  2  271
+  SV:S    2  0  0  0  0  0  0  0   5  262  0  0  0  0  0  0  0  0   0  2  271
+-----------------------------------------------------------------------------
+Totals 2102  0  0  0  0  9 13 64 319 2704  0  1  0  0  2  0 74  8  32 90 5418
+
+Legend:
+QC = 0   Fringes not detected.
+   = 1-9 Fringes detected, no error condition. Higher #, better quality.
+   = B   Interpolation error in fourfit.
+   = D   No data in one or more frequency channels.
+   = E   Maximum fringe amplitude at edge of SBD, MBD, or rate window.
+   = F   "Fork" problem in processing.
+   = G   Fringe amp in a channel is <.5 times mean amp (only if SNR>20).
+   = H   Low Phase-cal amplitude in one or more channels.
+   = N   No valid correlator data.
+ Tot     Total number of scans in schedule.
+ Minus   Scans in original schedule file for which correlation was not
+         attempted, usually because of known station problems.
+
++SNR_RATIOS
+
+ MEAN RATIOS = Observed SNR / Predicted SNR  for exp no. 4460
+
+ ...by baseline, over all sources:
+
+ bl     X     n       S     n
+
+ BH    0.42   36     1.63   46
+ BA    1.26   36     2.38   37
+ BK    0.68  159     1.30  165
+ BC    0.05    2     0.14   16
+ BS    0.76  244     1.78  245
+ BO    0.00    0     0.00    0
+ BV    1.21  200     1.59  201
+ HK    0.55   29     1.15   57
+ HC    0.00    0     0.00    0
+ HS    0.28    7     1.23   17
+ HO    0.53    8     0.93   21
+ HV    0.37    2     1.00    9
+ AK    1.09   37     1.55   39
+ AC    0.00    0     0.00    0
+ AS    0.92   14     2.39   14
+ AO    1.30   13     1.66   13
+ AV    0.92    7     1.82    7
+ KC    0.42    1     0.16    2
+ KS    0.62  165     1.14  179
+ KO    0.95   29     0.94   39
+ KV    0.89  164     1.04  170
+ CS    0.04    9     0.16   53
+ CO    0.00    0     0.00    0
+ CV    0.31   23     0.20   36
+ SO    1.19   17     1.17   16
+ SV    1.17  267     1.69  267
+ OV    1.12   18     1.08   18
+
++FOURFIT_CONTROL_FILE
+
+*
+* 4fit control file for R4460
+*
+  max_parity 0.01
+  sb_win -0.5 0.5 mb_win -1.0 1.0 dr_win -1.5e-5 1.5e-5
+  start -3 stop -1
+*
+  if f_group X
+    ref_freq 8212.99
+    pc_freqs ghijklmn  5010  5010  5010  5010  5010  5010  5010  5010
+*
+  if f_group S
+    dr_win -3.0e-5 3.0e-5
+    ref_freq 2225.99
+    pc_freqs abcdef  3010  3010  3010  3010  3010  3010
+*
+*
+  if station O or station Z or station K
+  lsb_offset 280.
+*
+$1<
+Sorted by time and subsorted by baseline.   -vlbi-
+All  baselines used.
+All  sources used.
+Output time window:  earliest latest
+

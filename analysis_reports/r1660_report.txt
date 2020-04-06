@@ -1,0 +1,179 @@
+       Analysis Report for R1660 ($14NOV03XA) 
+   (Analyzed by David Gordon, NASA Goddard Space Flight Center.
+    Spoolfile source: interactive solve/nuSolve analysis.) 
+
+Problems: KOKEE has a -1 second clock offset; apriori clock term set.
+          NYALES20's cable cal is unstable and was not applied; it
+           has 3 jumps between 2 different values. 
+          HOBART12 has a small clock break at ~06:27 (-.67 nsec).
+          YARRA12M has 3 small clock breaks, at ~17:11, ~23:30, and
+           ~00:17. Only the 00:17 break (+.73 nsec) is set and the
+           others require deselecting a few dozen observations.
+          KATH12M died after the first 12 hrs, reason unknown.
+          HART15M has a noisy clock.
+
+Parameterization comments: 
+
+Other comments: None. 
+
+-----------------------------------------
+
+Session Statistics 
+
+  Observations:     4418 scheduled 
+                    3766 correlated (in database)
+                    3537 recoverable (usable)
+                    3341 used
+  Session fit:        40.096 ps
+
+-----------------------------------------
+
+Station Performance 
+
+                           Number of Observations
+
+                    Scheduled   Recoverable*        Used   % of scheduled
+                                                              obs used
+
+  HART15M                 884           738          713        80.7%
+  HOBART12                936           731          703        75.1%
+  KATH12M                1108           581          552        49.8%
+  KOKEE                  1037           865          812        78.3%
+  NYALES20               1186          1050          974        82.1%
+  TSUKUB32               1473          1246         1194        81.1%
+  WETTZELL               1134          1001          938        82.7%
+  YARRA12M               1078           862          796        73.8%
+  ---------------   ---------   -----------    ---------       ------
+  Station Total**        4418          3537         3341        75.6%
+
+  * Recoverable: can be included in the solution. 
+  ** Total includes distinct observations only.
+
+  MISSED:    Station was scheduled, but it did not observe.
+  NOT CORR:  Station was scheduled but not correlated.
+  NOT USED:  Usable data was generated for this station,
+             but the analyst rejected it all.
+
+-----------------------------------------
+
+Source Performance 
+
+                    Number of Observations
+
+                Scheduled  Correlated*    Used      % of scheduled
+                                                       obs used
+
+  1221+809             58          58       52           89.7%
+  1823+568             65          55       54           83.1%
+  1101-536              7           7        0            0.0%
+  0534-611              1           1        1          100.0%
+  0110+495             22          21       17           77.3%
+  1657-562              7           7        7          100.0%
+  2245-328             15          15       14           93.3%
+  OK290                30          30       27           90.0%
+  1502+106             46          46       37           80.4%
+  0138-097              5           5        5          100.0%
+  0201+113              5           3        3           60.0%
+  CTA26               118          85       81           68.6%
+  0537-441            160         114      105           65.6%
+  0602+673             52          51       47           90.4%
+  0727-115            215         172      152           70.7%
+  0955+476             79          79       72           91.1%
+  1034-293              3           3        3          100.0%
+  3C274                61          60       51           83.6%
+  1255-316             28          27       24           85.7%
+  1300+580             26          26       24           92.3%
+  1334-127            196         186      177           90.3%
+  1424-418            201         176      142           70.6%
+  1519-273            198         168      153           77.3%
+  1749+096            283         226      220           77.7%
+  3C418               267         203      185           69.3%
+  2052-474             55          24       23           41.8%
+  2356+385             10          10        9           90.0%
+  0524+034             15          14       12           80.0%
+  0912+029              8           8        5           62.5%
+  1149-084              7           7        7          100.0%
+  1846+322             99          86       73           73.7%
+  2127-096              2           2        2          100.0%
+  2215+150             62          55       51           82.3%
+  2229+695            197         190      180           91.4%
+  0025+197              2           2        2          100.0%
+  0415+398             23          22       21           91.3%
+  0748+126            239         214      206           86.2%
+  1520+437             15          15       13           86.7%
+  1617+229             27          25       21           77.8%
+  2214+350             47          36       34           72.3%
+  0322+222             78          72       72           92.3%
+  0632-235              5           4        4           80.0%
+  0920-397              4           4        0            0.0%
+  1659+399              8           8        4           50.0%
+  1920-211             99          76       49           49.5%
+  0332-403            177         123      119           67.2%
+  0347-211              4           4        4          100.0%
+  0544+273             18          17       12           66.7%
+  1308+328            146         136      119           81.5%
+  1555+001              1           1        1          100.0%
+  2013+163              3           3        3          100.0%
+  2335-027             10          10       10          100.0%
+  0008-264              5           5        5          100.0%
+  0131-522              5           5        3           60.0%
+  0202+319            296         232      219           74.0%
+  0642+449            287         243      220           76.7%
+  0821+394             36          33       29           80.6%
+  0834-201            165         146       47           28.5%
+  1123+264            111         107      106           95.5%
+  1706-174              4           3        3           75.0%
+  ------------  ---------  ----------   ------          ------
+  Source Total       4418        3766     3341           75.6%
+
+ * Correlated: included in database 
+
+-----------------------------------------
+
+Baseline Performance 
+
+                                 Number of Observations
+
+                         Scheduled   Recoverable*         Used   % of scheduled
+                                                                    obs used
+
+  HART15M-HOBART12              99            79            76        76.8%
+  HART15M-KATH12M               82            44            44        53.7%
+  HART15M-KOKEE                  0       NO DATA       NO DATA         0.0%
+  HART15M-NYALES20             191           156           147        77.0%
+  HART15M-TSUKUB32             120           108           107        89.2%
+  HART15M-WETTZELL             268           240           231        86.2%
+  HART15M-YARRA12M             124           111           108        87.1%
+  HOBART12-KATH12M             250           141           140        56.0%
+  HOBART12-KOKEE               140           108           104        74.3%
+  HOBART12-NYALES20             15            15            15       100.0%
+  HOBART12-TSUKUB32            156           130           128        82.1%
+  HOBART12-WETTZELL             13            11            11        84.6%
+  HOBART12-YARRA12M            263           247           229        87.1%
+  KATH12M-KOKEE                136            63            60        44.1%
+  KATH12M-NYALES20              60            24            23        38.3%
+  KATH12M-TSUKUB32             228           120           115        50.4%
+  KATH12M-WETTZELL              53            18            18        34.0%
+  KATH12M-YARRA12M             299           171           152        50.8%
+  KOKEE-NYALES20               207           195           180        87.0%
+  KOKEE-TSUKUB32               305           276           263        86.2%
+  KOKEE-WETTZELL               145           139           127        87.6%
+  KOKEE-YARRA12M               104            84            78        75.0%
+  NYALES20-TSUKUB32            269           259           245        91.1%
+  NYALES20-WETTZELL            396           358           325        82.1%
+  NYALES20-YARRA12M             48            43            39        81.2%
+  TSUKUB32-WETTZELL            207           191           186        89.9%
+  TSUKUB32-YARRA12M            188           162           150        79.8%
+  WETTZELL-YARRA12M             52            44            40        76.9%
+  -----------------      ---------   -----------    ----------       ------
+  Baseline Total              4418          3537          3341        75.6%
+
+  * Recoverable: can be included in the solution. 
+
+  MISSED:     Baseline was scheduled, but at least one of the sites
+              did not observe.
+  NOT CORR:   Baseline was scheduled but not correlated.
+  NO DATA:    The baseline's stations were both correlated,
+              but they did not observe together.
+  DESELECTED: Usable data was generated for the baseline,
+              but the analyst rejected it.

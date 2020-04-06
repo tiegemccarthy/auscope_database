@@ -1,0 +1,290 @@
+TIMETAG 2011/09/15 15:03:52 
+MK3DB_VERSION    1
+Dbedit: crds53, CRDS  | geo_export
+VLBI experiment CRDS53 ( CRDS )
+Created by dbedit Ver. 2010.06.18  revision 6.20
+        run by vlbi ( vlbi@joplin.usno.navy.mil )
+            at USN -- USNO Earth Orientation department
+               on joplin.usno.navy.mil at 2011.09.15-11:03:52 local time
+Dbedit control file history entry: crds53, CRDS  | geo_export
+Directory /data/export/data/crds53/7861
+$1>
++HEADER
+CORREL   WACO
+DATABASE 11AUG10XN
+SESSNAME CRDS53
+OBSTIME  2011/08/10 2011/08/11
+UTSTART  1800
+DURATION 24
+DOY      222/223
+CORRTIME 2011/08/26 2011/08/30
+CORRPASS 1
+EXPORT   Done
+
++SUMMARY
+
+Qcode   % of Total   % of Correlated
+          scans          scans
+
+ 5-9       68%           76%
+  0        19%           21%
+ B-H        2%            2%
+Removed    11% (Yg)
+
++CORRELATOR_NOTES
+
+Fringe rate passed through 0 rate for baseline Ke-Pa
+for scans 222-2059 and  223-1435
+
+Low cross-correlation amplitude in channel SR6U at
+both KATH12M and PARKES during second half of session
+led to many "G" quality codes on KP baseline.
+
++STATION_NOTES
+
+HARTRAO  (Hh/J):   -
+
+HOBART12 (Hb/H):   Manual phase cal used at HOBART12
+
+KATH12M  (Ke/A):   Cross-correlation amplitude slightly low
+                   in channel SR6U. Some low phase cal amplitudes
+                   during some periods of the session
+
+                   Manual phase cal used at KATH12M
+
+PARKES64 (Pa/P):   Channels XR5U and XR6U had low cross-correlation
+                   amplitude during second half of session.
+                   Unstable phase cal at PARKES.  Evidence of
+                   spurious signals in all X-band channels but
+                   unable to characterize.
+
+                   Manual phase cal used at PARKES64
+
+YARRA12M (Yg-Y):   Upper 4 X-band channels low at YARRA12M.
+                   Channels XR5U, XR6U, XR7U and XR8U dropped.
+                   YARRA12M missed scans:
+                   222-1822 to 222-1917
+                   222-1945 to 222-1954
+                   222-2314 to 222-2322
+                   223-0428 to 223-0436
+                   223-1127 to 223-1246
+                   223-1321 to 223-1356
+                   223-1506 to 223-1601
+                   223-1708 to 223-1756  *stowed
+
+                   Some periods of low phase cal amplitudes.
+
+                   Manual phase cal used at YARRA12M
+
++DROP_CHANNELS
+  Hh
+  Hb
+  Ke
+  Pa
+  Yg  XR5U XR6U XR7U XR8U
+
++MANUAL PCAL Hb Ke Pa Yg
+
++CHANNELS
+XR1U = band|polarization|channel#|sideband
+
+ XR1U/L  BBC01  8210.99
+ XR2U    BBC02  8220.99
+ XR3U    BBC03  8250.99
+ XR4U    BBC04  8310.99
+ XR5U    BBC05  8420.99
+ XR6U    BBC06  8500.99
+ XR7U    BBC07  8550.99
+ XR8U/L  BBC08  8570.99
+ SR1U    BBC09  2217.99
+ SR2U    BBC10  2222.99
+ SR3U    BBC11  2237.99
+ SR4U    BBC12  2267.99
+ SR5U    BBC13  2292.99
+ SR6U    BBC14  2302.99
+
++CLOCKS
+Clocks: WACO
+
+Station          fmout-gps      Used      rate
+                  [usec]       [usec]   [sec/sec]
+  Hh               7.99         8.46       0.0
+  Hb              21.15        23.52       0.0
+  Ke               9.02        10.74       0.0
+  Pa              ------        0.64       0.0
+  Yg              10.70        12.36       0.0
+
+Date: 2011/06/16
+
++QCODES
+
+Qcodes   0  1  2  3  4  5  6  7   8   9  A  B  C  D  E  F  G  H  N   -  Tot
+---------------------------------------------------------------------------
+  JH:X  15  0  0  0  0  0  0  0   0  50  0  0  0  0  0  0  0  0  0   0   65
+  JH:S  26  0  0  0  0  0  0  0   2  37  0  0  0  0  0  0  0  0  0   0   65
+  JK:X  19  0  0  0  0  0  1  0   3  33  0  0  0  0  0  0  0  0  1   0   57
+  JK:S  23  0  0  0  0  0  0  0   1  32  0  0  0  0  0  0  0  0  1   0   57
+  JP:X   4  0  0  0  0  0  1  1  10  19  0  0  0  0  0  0  0  0  0   0   35
+  JP:S   3  0  0  0  0  0  0  0  10  21  0  0  0  0  0  0  1  0  0   0   35
+  JY:X  15  0  0  0  0  0  0  0   1  36  0  0  0  0  0  0  0  0  0  13   65
+  JY:S  10  0  0  0  0  0  0  0   0  42  0  0  0  0  0  0  0  0  0  13   65
+  HK:X  32  0  0  0  0  0  0  0   7  71  0  0  0  0  0  0  0  0  1   0  111
+  HK:S  29  0  0  0  0  0  0  1   7  73  0  0  0  0  0  0  0  0  1   0  111
+  HP:X   2  0  0  0  0  0  1  7  19  54  0  0  0  0  0  0  0  0  0   0   83
+  HP:S   2  0  0  0  0  0  1  0  38  41  0  0  0  0  0  0  1  0  0   0   83
+  HY:X  31  0  0  0  0  0  0  1   0  58  0  0  0  0  0  0  0  0  0  29  119
+  HY:S  20  0  0  0  0  0  0  0   8  62  0  0  0  0  0  0  0  0  0  29  119
+  KP:X   4  0  0  0  0  0  3  7  17  51  0  0  0  0  1  0  0  0  0   0   83
+  KP:S   5  0  0  0  0  0  0  6  24  18  0  0  0  0  0  0 30  0  0   0   83
+  KY:X  32  0  0  0  0  0  0  0   1  50  0  0  0  0  0  0  0  0  0  28  111
+  KY:S  22  0  0  0  0  0  0  0   0  61  0  0  0  0  0  0  0  0  0  28  111
+  PY:X   8  0  0  0  0  0  0  1   6  47  0  0  0  0  0  0  0  0  0  21   83
+  PY:S   5  0  0  0  0  0  0  2  27  27  0  0  0  0  0  0  1  0  0  21   83
+---------------------------------------------------------------------------
+Totals 307  0  0  0  0  0  7 26 181 883  0  0  0  0  1  0 33  0  4 182 1624
+
+Legend:
+QC = 0   Fringes not detected.
+   = 1-9 Fringes detected, no error condition. Higher #, better quality.
+   = B   Interpolation error in fourfit.
+   = D   No data in one or more frequency channels.
+   = E   Maximum fringe amplitude at edge of SBD, MBD, or rate window.
+   = F   "Fork" problem in processing.
+   = G   Fringe amp in a channel is <.5 times mean amp (only if SNR>20).
+   = H   Low Phase-cal amplitude in one or more channels.
+   = N   No valid correlator data.
+ Tot     Total number of scans in schedule.
+ Minus   Scans in original schedule file for which correlation was not
+         attempted, usually because of known station problems.
+
++SNR_RATIOS
+
+ MEAN RATIOS = Observed SNR / Predicted SNR  for exp no. 7861
+
+ ...by baseline, over all sources:
+
+ bl     X     n       S     n
+
+ JH    1.56   50     1.00   39
+ JK    0.85   37     0.85   32
+ JP    0.97   31     1.14   32
+ JY    1.11   37     0.95   40
+ HK    1.92   78     1.66   76
+ HP    2.49   81     3.03   81
+ HY    2.80   59     1.76   68
+ KP    1.15   78     2.30   78
+ KY    1.76   51     1.81   60
+ PY    1.37   54     2.50   57
+
++FOURFIT_CONTROL_FILE
+
+*
+* 4fit control file for CRDS53
+*
+  max_parity 0.02
+  sb_win -1.0 1.0 mb_win -1.0 1.0 dr_win -3.0e-5 3.0e-5
+  start -5   stop -1
+*
+  if f_group X
+    pc_freqs ghijklmn  0010  0010  0010  0010  0010  0010  0010  0010
+*
+  if f_group S
+    dr_win -3.0e-5 3.0e-5
+    pc_freqs abcdef  0010  0010  0010  0010  0010  0010
+*
+    if station K or station H or station Y
+      lsb_offset -100.0
+*
+*
+  if  station Y and f_group X
+    freqs g h i j
+*
+**
+  if station H and f_group X
+    pc_phases ghijklmn -118  -136  -130  -122  -150  -64    156  -112
+*   pc_phases ghijklmn 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+    pc_mode manual
+*
+  if station H and f_group S
+    pc_phases abcdef    -139 -151  -165   146  -173   -117
+*   pc_phases abcdef 0.0 0.0 0.0 0.0 0.0 0.0
+    pc_mode manual
+*
+***
+  if station K and f_group X
+    pc_phases ghijklmn  85   -10   168   126   117   107   87   89
+*   pc_phases ghijklmn 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+    pc_mode manual
+*
+  if station K and f_group S
+    pc_phases abcdef   12   32   32   63   -37   42
+*   pc_phases abcdef 0.0 0.0 0.0 0.0 0.0 0.0
+    pc_mode manual
+*
+***
+  if station P and f_group X
+    pc_phases ghijklmn   138  144   -126   169  -178  147  -137  137
+*   pc_phases ghijklmn 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+    pc_mode manual
+*
+  if station P and f_group S
+    pc_phases abcdef   -78  -69   -129  -97  -108  -44
+*   pc_phases abcdef 0.0 0.0 0.0 0.0 0.0 0.0
+    pc_mode manual
+
+*
+***
+  if station Y and f_group X
+    pc_phases ghij       84   70   71   82
+*   pc_phases ghijklmn 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+    pc_mode manual
+*
+  if station Y and f_group S
+    pc_phases abcdef   90   109   46   1   80   101
+*   pc_phases abcdef 0.0 0.0 0.0 0.0 0.0 0.0
+    pc_mode manual
+***
+
+Kerry
+
++END
+$1<
+Sorted by time and subsorted by baseline.   -vlbi-
+All  baselines used.
+All  sources used.
+Output time window:  earliest latest
+TIMETAG 2011/09/15 16:13:20 
+MK3DB_VERSION    2
+CALC10.02 Ver. 2010.03.08  Thu Sep 15 12:13:20 2011nuit.usno.
+Calc 10.00 with External Inputs  -AF-
+TIMETAG 2011/09/23 16:43:48 
+MK3DB_VERSION    3
+Dbcal: crds53 -AF-
+ DBCAL: Version 2007.12.06        SEP 23,2011 16:43:48
+TIMETAG 2011/09/23 17:13:42 
+MK3DB_VERSION    4
+crds53 USNO SOLVE solution -AF-
+Delay and Rates 60/60 clocks/atm NRMS OK.
+Real clock break detected at PARKES
+The following flyby options were used in the solution:
+Station flyby file:  glo.sit
+Source flyby file :  glo.src
+Nutation offset flyby file :  NONE
+Earth rotation flyby file  :  last_usno_
+Tectonic plate motion file :  glo.vel
+Group delay ambiguities and editing updated.
+Troposphere and cable cal status for standard solution stored.
+Observation dependent contribution status stored.
+Reweighting updated for:
+HA-HO HA-KA HA-PA HA-YA HO-KA HO-PA HO-YA KA-PA KA-YA PA-YA
+Baseline-dependent clock used. List of names stored.
+Solution data configuration: GROUP DELAY & RATE
+Clock and atmosphere constraint information saved.
+Batchmode clock parameterization saved.
+Batchmode atmosphere parameterization saved.
+Ionosphere calibrated with IONO IONO  Ve
+Group Ion cal for $11AUG10XN V. 3 based on $11AUG10SN V. 3.
+Barometer calibration and barometer height offset not available.
+Eccentricity data store in data base header.
+Elevation cutoff data stored in database.
+

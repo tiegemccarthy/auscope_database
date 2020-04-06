@@ -1,0 +1,117 @@
+TIMETAG 2012/01/12 15:31:56 
+MK3DB_VERSION    1
+Dbedit: crf63, CRF  | geo_export
+VLBI experiment CRF63 ( CRF )
+Created by dbedit Ver. 2010.06.18  revision 6.20
+        run by vlbi ( vlbi@joplin.usno.navy.mil )
+            at USN -- USNO Earth Orientation department
+               on joplin.usno.navy.mil at 2012.01.12-10:31:56 local time
+Dbedit control file history entry: crf63, CRF  | geo_export
+Directory /data/export/data/crf63/7858
+$1>
++HEADER
+CORREL   WACO
+DATABASE 11JUN15XN
+SESSNAME CRF63
+EXPNO    7858
+OBSTIME  2011/06/15 2011/06/16
+UTSTART  1800
+DURATION 24
+DOY      166/167
+CORRTIME 2011/12/29 2011/12/30
+CORRPASS 1
+EXPORT   Done
+
++SUMMARY
+
+Qcode   % of Total   % of Correlated
+          scans          scans
+
+ 5-9       23%           74%
+  0         8%           26%
+ B-H        0%            0%
+Removed    68% (13)
+
++CORRELATOR_NOTES
+
++STATION_NOTES
+
+DSS13    (13/D):   Media lost in transit
+
+HOBART12 (Hb/H):   Manual phasecal applied at HOBART12
+
+KOKEE    (Kk/K):   Kokee out for intensive 166-1824 to 166-1932
+                   Manual phasecal applied at KOKEE
+
++DROP_CHANNELS
+
++MANUAL PCAL Hb Kk
+
++CHANNELS
+XR1U = band|polarization|channel#|sideband
+
+ XR1U/L  BBC01  8210.99
+ XR2U    BBC02  8220.99
+ XR3U    BBC03  8250.99
+ XR4U    BBC04  8310.99
+ XR5U    BBC05  8420.99
+ XR6U    BBC06  8500.99
+ XR7U    BBC07  8550.99
+ XR8U/L  BBC08  8570.99
+ SR1U    BBC09  2217.99
+ SR2U    BBC10  2222.99
+ SR3U    BBC11  2237.99
+ SR4U    BBC12  2267.99
+ SR5U    BBC13  2292.99
+ SR6U    BBC14  2302.99
+
++CLOCKS
+Clocks: WACO
+
+Station          fmout-gps      Used      rate
+                  [usec]       [usec]   [sec/sec]
+  13                -            -          -
+  Hb              20.12        22.58       0.4e-12
+  Kk               4.73         5.72       0.0
+
+Date: 2011/06/15
+
++QCODES
+
+Qcodes  0  1  2  3  4  5  6  7  8   9  A  B  C  D  E  F  G  H  N   - Tot
+------------------------------------------------------------------------
+  DH:X  0  0  0  0  0  0  0  0  0   0  0  0  0  0  0  0  0  0  0 129 129
+  DH:S  0  0  0  0  0  0  0  0  0   0  0  0  0  0  0  0  0  0  0 129 129
+  DK:X  0  0  0  0  0  0  0  0  0   0  0  0  0  0  0  0  0  0  0 129 129
+  DK:S  0  0  0  0  0  0  0  0  0   0  0  0  0  0  0  0  0  0  0 129 129
+  HK:X 36  0  0  0  0  0  1  4 10  71  0  0  0  0  0  0  0  0  0   7 129
+  HK:S 27  0  0  0  0  1  1  0  5  88  0  0  0  0  0  0  0  0  0   7 129
+------------------------------------------------------------------------
+Totals 63  0  0  0  0  1  2  4 15 159  0  0  0  0  0  0  0  0  0 530 774
+
+Legend:
+QC = 0   Fringes not detected.
+   = 1-9 Fringes detected, no error condition. Higher #, better quality.
+   = B   Interpolation error in fourfit.
+   = D   No data in one or more frequency channels.
+   = E   Maximum fringe amplitude at edge of SBD, MBD, or rate window.
+   = F   "Fork" problem in processing.
+   = G   Fringe amp in a channel is <.5 times mean amp (only if SNR>20).
+   = H   Low Phase-cal amplitude in one or more channels.
+   = N   No valid correlator data.
+ Tot     Total number of scans in schedule.
+ Minus   Scans in original schedule file for which correlation was not
+         attempted, usually because of known station problems.
+
++SNR_RATIOS
+
+ MEAN RATIOS = Observed SNR / Predicted SNR  for exp no. 7858
+
+ ...by baseline, over all sources:
+
+ bl     X     n       S     n
+
+ DH    0.00    0     0.00    0
+ DK    0.00    0     0.00    0
+ HK    3.71   77     2.43   94
+

@@ -1,0 +1,217 @@
+TIMETAG 2018/08/28 20:30:53 
+MK3DB_VERSION    1
+Dbedit: crds96, Southern hemisphere astrometry programme  | geo_export
+VLBI experiment crds96 ( Southern hemisphere astrometry programme )
+Created by dbedit Ver. 2018.03.07  revision 6.24
+        run by VLBI Analysis ( vlbi@fringe1 )
+            at USN -- United States Naval Observatory
+               on fringe1 at 2018.08.28-16:30:53 local time
+Dbedit control file history entry: crds96, Southern hemisphere astrometry progra
+Directory /data/export/data/8578
+$1>
++HEADER
+CORREL   WACO
+DATABASE 18JUN20XN
+SESSNAME CRDS96
+OBSTIME  2018/06/20 2018/06/21
+UTSTART  1800
+DURATION 24
+DOY      171-172
+CORRTIME 2018/08/23 2018/08/27
+CORRPASS 1
+EXPORT   Done.
+
++SUMMARY
+Qcode   % of Total   % of Correlated
+          scans          scans
+
+ 5-9       70%           70%
+  0        25%           25%
+ B-H        0%            0%
+Removed     0%
+
+Qcodes 7-9 Correlated 70%
+Qcode N Not Correlated  4%
+
++CORRELATOR_NOTES
+
++STATION_NOTES
+HARTRAO  (Hh/j): Ok.
+
+HOBART26 (Ho/h): Low fringe amplitude in channels XR8L; channels XR8L
+                 removed from fringe fitting.
+                 Low phase cal amplitude. Applied manual phase cal.
+
+KATH12M  (Ke/A): Clock break at 171-23:43:04. Applied offset and rate
+                 correction at correlation.
+                 Station experienced "continuous cal not enabled" errors
+                 from 171-23:21 until 172-13:29. Scans No0386 and 0394
+                 were missed while attempting to fix error.
+
+WARK12M  (Ww/W): No data for scans No0335 to 0358 (~2.5 hours). Log file
+                 starts at 171-20:20:52 with scan No0359.
+                 Low fringe amplitude in channels XR5U XR6U XR7U XR8U/L
+                 SR5U SR6U; removed channels XR5U XR6U XR7U XR8U/L SR5U
+                 SR6U from fringe fitting.
+                 Low phase cal amplitude. Applied manual phase cal.
+
+YARRA12M (Yg/Y): Ok.
+
++DROP_CHANNELS
+Ho XR8L
+Ww XR5U XR6U XR7U XR8U XR8L SR5U SR6U
+
++MANUAL_PCAL Ho Ww
+
++CHANNELS
+XR1U = band|polarization|channel#|sideband
+
+ XR1U/L  BBC01 8214.00
+ XR2U    BBC02 8230.00
+ XR3U    BBC03 8470.00
+ XR4U    BBC04 8486.00
+ XR5U    BBC05 8774.00
+ XR6U    BBC06 8838.00
+ XR7U    BBC07 8902.00
+ XR8U/L  BBC08 8934.00
+ SR1U    BBC09 2200.00
+ SR2U    BBC10 2216.00
+ SR3U    BBC11 2232.00
+ SR4U    BBC12 2256.00
+ SR5U    BBC13 2272.00
+ SR6U    BBC14 2288.00
+
++CLOCKS
+
+Clocks: WACO
+
+Station          fmout-gps      Used      rate      Comments
+                  [usec]       [usec]   [sec/sec]
+Hh                5.759        8.453    1.819e-13   Reference
+Ho                6.871        9.002   -5.835e-13
+Ke               10.381       12.398   -1.267e-12
+Ke                 -          12.376   -1.314e-12   Break at 171-234304
+Ww              -13.178      -11.208   -7.854e-13
+Yg                2.398        4.680   -8.906e-14
+Date: 2018/06/20 18:00:00
+
++QCODES
+
+Qcodes   0 1 2 3 4 5 6  7   8    9 A B C D E F  G H   N -  Tot
+--------------------------------------------------------------
+  hA:X  30 0 0 0 0 0 2 13  50  107 0 0 0 0 0 0  3 0   2 0  207
+  hA:S  38 0 0 0 0 0 1  0  34  131 0 0 0 0 0 0  1 0   2 0  207
+  hY:X  26 0 0 0 0 0 1  5  48  151 0 0 0 0 0 0  1 0   0 0  232
+  hY:S  35 0 0 0 0 0 0  6  51  140 0 0 0 0 0 0  0 0   0 0  232
+  hW:X  20 0 0 0 0 0 0  0  22  155 0 0 0 0 0 0  0 0  20 0  217
+  hW:S  24 0 0 0 0 0 0  0   2  171 0 0 0 0 0 0  0 0  20 0  217
+  hj:X  20 0 0 0 0 0 1 11  30   67 0 0 0 0 0 0  2 0   0 0  131
+  hj:S  27 0 0 0 0 0 0  0  14   87 0 0 0 0 0 0  3 0   0 0  131
+  AY:X  28 0 0 0 0 0 0  1   7  168 0 0 0 0 0 0  1 0   2 0  207
+  AY:S  74 0 0 0 1 1 0 22  10   97 0 0 0 0 0 0  0 0   2 0  207
+  AW:X  54 0 0 0 0 0 0  0   2  115 0 0 0 0 0 0  0 0  21 0  192
+  AW:S 103 0 0 0 0 0 0  1   0   67 0 0 0 0 0 0  0 0  21 0  192
+  Aj:X  24 0 0 0 0 0 0  0   2   80 0 0 0 0 0 0  0 0   0 0  106
+  Aj:S  36 0 0 0 0 0 0  0   0   70 0 0 0 0 0 0  0 0   0 0  106
+  YW:X  55 0 0 0 0 0 0  0  11  131 0 0 0 0 0 0  0 0  20 0  217
+  YW:S 136 0 0 0 0 0 0  0   0   61 0 0 0 0 0 0  0 0  20 0  217
+  Yj:X  23 0 0 0 0 0 0  2   6   97 0 0 0 0 0 0  2 1   0 0  131
+  Yj:S  50 0 0 0 0 0 0  8  15   58 0 0 0 0 0 0  0 0   0 0  131
+  Wj:X  27 0 0 0 0 0 0  0   1   78 0 0 0 0 0 0  0 0  10 0  116
+  Wj:S  57 0 0 0 0 0 0  0   0   49 0 0 0 0 0 0  0 0  10 0  116
+--------------------------------------------------------------
+Totals 887 0 0 0 1 1 5 69 305 2080 0 0 0 0 0 0 13 1 150 0 3512
+
+QC = 0   Fringes not detected.
+   = 1-9 Fringes detected, no error condition. Higher #, better quality.
+   = B   Interpolation error in fourfit.
+   = D   No data in one or more frequency channels.
+   = E   Maximum fringe amplitude at edge of SBD, MBD, or rate window.
+   = F   "Fork" problem in processing.
+   = G   Fringe amp in a channel is <.5 times mean amp (only if SNR>20).
+   = H   Low Phase-cal amplitude in one or more channels.
+   = N   No valid correlator data.
+ Tot     Total number of scans in schedule.
+ Minus   Scans in original schedule file for which correlation was not
+         attempted, usually because of known station problems.
+
++SNR_RATIOS
+MEAN RATIOS = Observed SNR / Predicted SNR  for exp no. 8578
+
+ ...by baseline, over all sources:
+
+ bl     X     n       S     n
+
+ jh    0.80  111     0.92  104
+ jA    1.02   82     0.94   68
+ jW    0.62   79     0.69   49
+ jY    1.18  108     0.79   80
+ hA    1.01  175     1.13  167
+ hW    0.97  177     1.04  173
+ hY    1.27  206     1.05  197
+ AW    0.90  117     0.80   68
+ AY    2.06  177     1.21  131
+ WY    0.99  142     0.67   61
+
++FOURFIT_CONTROL_FILE
+
+* Fourfit control file for crds96
+* HOPS Version 3.17
+*
+max_parity 0.01
+sb_win -256.0 256.0 mb_win -256.0 256.0 dr_win -300.e-4 300.e-4
+pc_mode multitone
+pc_period 5
+
+if f_group X
+  ref_freq 8220.99
+
+if f_group S
+  ref_freq 2222.99
+
+* Ho / h
+if station h
+lsb_offset    0.0
+* Hh / j
+if station j
+lsb_offset    0.0
+* Ke / A
+if station A
+lsb_offset  -20.0
+* Yg / Y
+if station Y
+lsb_offset  -20.0
+* Ww / W
+if station W
+lsb_offset    0.0
+
+if station h and f_group X freqs g h i j k l m n+
+if station W and f_group X freqs g h i j
+
+if station W and f_group S freqs a b c d
+
+if station h and f_group S
+pc_phases abcdef -135.2 -155.5 -138.9 -122.7 179.9 -133.9
+pc_mode manual
+
+if station h and f_group X
+pc_phases ghijklmn 91.7 96.4 111.1 113.8 110.6 79.5 1.9 150.9
+pc_mode manual
+
+if station W and f_group S
+pc_phases abcd -66.7 -73.8 -61.9 -70.6
+pc_mode manual
+
+if station W and f_group X
+pc_phases ghij -68.6 -77.6 -75.3 -67.9
+pc_mode manual
+
+* Matt
+
++END
+$1<
+Sorted by time and subsorted by baseline.   -vlbi-
+All  baselines used.
+All  sources used.
+Output time window:  earliest latest
+

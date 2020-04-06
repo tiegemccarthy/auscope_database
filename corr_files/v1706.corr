@@ -1,0 +1,178 @@
+TIMETAG 2018/01/09 20:11:02 
+MK3DB_VERSION    1
+Dbedit: V1706  -DG-
+VLBI experiment V1706 ( CONTV17 Day 6 )
+Created by dbedit Ver. 2015.06.23  revision 6.23
+        run by David Gordon ( dgg@bootes.gsfc.nasa.gov )
+            at GSF -- NASA Goddard Space Flight Center
+               on bootes at 2018.01.09-15:11:02 local time
+Dbedit control file history entry: V1706  -DG-
+Directory /500/RDV_files/V1706/1234
+$1>
+
+V1706/$17DEC03XA
+00:00 UTC, DOY 337
+
+Correlated at the VLBA. Fourfit fringed at GSFC using multitone Pcals.
+SC-VLBA did not participate due to hurricanes Irma and Maria.
+Channel S3 deleted at BR, KP, NL, and OV due to RFI.
+Manual phase cals used at Medicina.
+Refringed ~630 S-band observations with narrow MBD windows, mostly for
+   sub-ambiguities at BR, KP, NL, and OV.
+Refringed 37 X-band observations with narrow MBD windows.
+
+***************************************************************************
+
+VERY LONG BASELINE ARRAY OBSERVING LOG
+--------------------------------------
+Project:        V1706
+Observer:       Gordon, David
+Project type:   GEO
+Obs filename:   v1706crd.*
+Date/Day:       2017DEC03/337
+Ants Scheduled: SC HN NL FD LA PT KP OV BR MK
+
+=UT-Time===Comment===============================================MF#===%AD==AMD=
+           Operator is Paul Padilla
+           UT1-UTC: 0.25, VClock:-0.041, GPS delta: -9.8
+          %BR has precipitation
+     0000  Begin
+0000-2355 *SC still out from hurricane damage.                   WEA    100 1435
+0000-0005 *NL script did not auto-start.                         OTHER  100    5
+0155-0158 *KP autostowed, power glitch                           COM    100    3
+     0244  New Operator: Karlee Radford
+0455-0634 *PT,MK out for daily usno run.                         SCH    200  198
+     1450  New Operator: Paul Padilla
+1831-2016 *FD AZ #1 and EL#1 armature/electronics CB faults      ACU    100  105
+           The AZ#1 fault did not clear while in Standby.
+     1900 &FD Site Tech contacted regarding ACU C140836
+1924-1926 *OV autostowed in wind gust                            WEA    100    2
+1941-1944 *OV autostowed in wind gust                            WEA    100    3
+     2355  End.
+
+Downtime Summary:
+	Total downtime : 1751 min
+	Percentage downtime of observing: 12.2%
+	Average downtime per hour : 7.3 min
+
+    Total scheduled observing time (# Antennas): 14350 min (10)
+
+Notes:
+    * = Entries where data was affected.
+    % = Entries where data may have been affected.
+    & = Entries where the site tech was called out.
+  WEA = Weather entries.
+  MF# = Maintenance form or major downtime category associated with a problem.
+  %AD = The percentage of an antenna affected by a problem.
+  AMD = Total antenna-minutes downtime for a problem.
+ Tsys = System Temperature (TP/SP x Tcal/2)
+  ACU = Antenna Control Unit
+  FRM = Focus/Rotation Mount
+  RFI = Radio Frequency Interference
+  VME = Site control computer
+   CB = Circuit Breaker
+ vclock = Program that compares site clock time to a standard.
+
+$1<
+Sorted by time and subsorted by baseline.   -DG-
+All  baselines used.
+All  sources used.
+Output time window:  earliest latest
+TIMETAG 2018/01/10 20:10:54 
+MK3DB_VERSION    2
+CALC11.02 Ver. 2016.12.29  Wed Jan 10 15:10:53 2018    bootes
+Calc 11 at GSFC  -DG-
+TIMETAG 2018/01/10 20:24:53 
+MK3DB_VERSION    3
+Dbcal: V1706  -DG-
+ DBCAL: Version 2017-MAR-15       JAN 10,2018 20:24:53
+TIMETAG 2018/01/12 14:07:51 
+MK3DB_VERSION    4
+SgLib-0.5.2 (Patawomeck): data have been read from Mk3 database
+TIMETAG 2018/01/12 15:24:57 
+MK3DB_VERSION    4
+Analyzed by David Gordon (hereafter DG) at Goddard Space Flight Center. Contact info: <David.Gordon-1@nasa.gov>
+CONTV1706: GSFC analysis (DG)
+G-Gxs solution,   60/  60 clocks/atms,    2/  40 constraints, 23.9-hr gradients.
+Solve fit is 21.00 psec.
+Detected 1 clock break
+A clock break marker has been set for YARRA12M at 03 Dec, 2017; 06:53:00.0000
+The following flyby options were used in the solution:
+Station positions flyby file: glo.sit
+Station velocities flyby file: glo.vel
+Source flyby file: 17Sep14.src
+Station axis offset flyby file: glo.axis
+EOP high frequency variations flyby file: NONE
+Station mean gradients flyby file: NONE
+Nutation series flyby file :  NONE
+Nutation offset flyby file :  NONE
+Earth rotation flyby file  :  NONE
+Tectonic plate motion file :  NONE
+Group delay ambiguities were resolved (well, at least, tried to resolve)
+Group delay outliers were processed and editing info has been updated.
+Troposphere and cable cal status for standard solution have been stored.
+Observation dependent contribution status has been stored.
+Reweighting updated for:
+BR-FD BR-HN BR-KP BR-LA BR-ME BR-MK BR-NL BR-OV BR-PI BR-SE
+BR-WE BR-YA FD-HN FD-KP FD-LA FD-ME FD-MK FD-NL FD-OV FD-PI
+FD-SE FD-WE FD-YA HN-KP HN-LA HN-ME HN-MK HN-NL HN-OV HN-PI
+HN-SE HN-WE KP-LA KP-ME KP-MK KP-NL KP-OV KP-PI KP-SE KP-WE
+KP-YA LA-ME LA-MK LA-NL LA-OV LA-PI LA-SE LA-WE LA-YA ME-MK
+ME-NL ME-OV ME-PI ME-SE ME-WE ME-YA MK-NL MK-OV MK-PI MK-SE
+MK-WE MK-YA NL-OV NL-PI NL-SE NL-WE NL-YA OV-PI OV-SE OV-WE
+OV-YA PI-SE PI-WE PI-YA SE-WE SE-YA WE-YA
+Solution data configuration: group delays with ionosphere corrections
+Clock and atmosphere constraint information saved.
+Batchmode clock parameterization saved.
+Batchmode atmosphere parameterization saved.
+Ionosphere corrections were evaluated for group delays.
+Barometer calibration and barometer height offset not available.
+Elevation cutoff data stored in database.
+Eccentricity data store in data base header.
+TIMETAG 2018/01/12 14:07:51 
+MK3DB_VERSION    4
+SgLib-0.5.2 (Patawomeck): data have been read from Mk3 database
+TIMETAG 2018/01/12 15:27:46 
+MK3DB_VERSION    4
+Analyzed by David Gordon (hereafter DG) at Goddard Space Flight Center. Contact info: <David.Gordon-1@nasa.gov>
+DG> V1706:  GSFC Analysis  -DG-
+DG> Small clock break at YARRA12M.
+DG> NuSolve fit of 21.0 psec.
+CONTV1706: GSFC analysis (DG)
+G-Gxs solution,   60/  60 clocks/atms,    2/  40 constraints, 23.9-hr gradients.
+Solve fit is 21.00 psec.
+Detected 1 clock break
+A clock break marker has been set for YARRA12M at 03 Dec, 2017; 06:53:00.0000
+The following flyby options were used in the solution:
+Station positions flyby file: glo.sit
+Station velocities flyby file: glo.vel
+Source flyby file: 17Sep14.src
+Station axis offset flyby file: glo.axis
+EOP high frequency variations flyby file: NONE
+Station mean gradients flyby file: NONE
+Nutation series flyby file :  NONE
+Nutation offset flyby file :  NONE
+Earth rotation flyby file  :  NONE
+Tectonic plate motion file :  NONE
+Group delay ambiguities were resolved (well, at least, tried to resolve)
+Group delay outliers were processed and editing info has been updated.
+Troposphere and cable cal status for standard solution have been stored.
+Observation dependent contribution status has been stored.
+Reweighting updated for:
+BR-FD BR-HN BR-KP BR-LA BR-ME BR-MK BR-NL BR-OV BR-PI BR-SE
+BR-WE BR-YA FD-HN FD-KP FD-LA FD-ME FD-MK FD-NL FD-OV FD-PI
+FD-SE FD-WE FD-YA HN-KP HN-LA HN-ME HN-MK HN-NL HN-OV HN-PI
+HN-SE HN-WE KP-LA KP-ME KP-MK KP-NL KP-OV KP-PI KP-SE KP-WE
+KP-YA LA-ME LA-MK LA-NL LA-OV LA-PI LA-SE LA-WE LA-YA ME-MK
+ME-NL ME-OV ME-PI ME-SE ME-WE ME-YA MK-NL MK-OV MK-PI MK-SE
+MK-WE MK-YA NL-OV NL-PI NL-SE NL-WE NL-YA OV-PI OV-SE OV-WE
+OV-YA PI-SE PI-WE PI-YA SE-WE SE-YA WE-YA
+Solution data configuration: group delays with ionosphere corrections
+Clock and atmosphere constraint information saved.
+Batchmode clock parameterization saved.
+Batchmode atmosphere parameterization saved.
+Ionosphere corrections were evaluated for group delays.
+Barometer calibration and barometer height offset not available.
+Elevation cutoff data stored in database.
+Eccentricity data store in data base header.
+

@@ -1,0 +1,193 @@
+       IVS Analysis Report for AOV020 ($18FEB27XA) 
+       This report is the official IVS analysis report that corresponds to 
+       the database maintained by the IVS Data Centers for this session.  
+   (Analyzed by David Gordon, Goddard Space Flight Center.
+    Spoolfile source: interactive solve/nuSolve analysis.) 
+
+Problems: X-band record #942 (KE-YG 02/28/17:22:25 1424-418) has the
+          wrong ambiguity spacing, 33.3 nsec instead of 100.0. It has
+          8 channels though, like the rest of the X-band and Solve 
+          seems to work okay on it.
+          KATH12M and YARRA12M are very noisy.
+          KOGANEI has data only for the first ~11 hours; schedule was stopped
+          due to some misunderstanding.
+          WARK12M has data only for the last ~5 hours; some problem with
+          staff scheduling.
+          HOBART26 had no usable data because the receiver was inside the 
+          focus cabin rather than over the focal point.
+          The solution gives large atmosphere adjustments, up to ~2 nsec
+          at KATH12M. Gradients were not applied.
+
+Parameterization comments: None. 
+
+Other comments: Preliminary release. The SYOWA data will not be available
+                until after April 2019. 
+
+-----------------------------------------
+
+Session Statistics 
+
+  Observations:     2534 scheduled 
+                     952 correlated (in database)
+                     758 recoverable (usable)
+                     714 used
+  Session fit:        79.729 ps
+
+-----------------------------------------
+
+Station Performance 
+
+                           Number of Observations
+
+                    Scheduled   Recoverable*        Used   % of scheduled
+                                                              obs used
+
+  HOBART26                766      NOT CORR     NOT CORR         0.0%
+  ISHIOKA                 811           418          406        50.1%
+  KASHIM11                570           315          295        51.8%
+  KATH12M                 708           310          291        41.1%
+  KOGANEI                 640           112           97        15.2%
+  SYOWA                   305      NOT CORR     NOT CORR         0.0%
+  WARK12M                 617            87           82        13.3%
+  YARRA12M                651           274          257        39.5%
+  ---------------   ---------   -----------    ---------       ------
+  Station Total**        2534           758          714        28.2%
+
+  * Recoverable: can be included in the solution. 
+  ** Total includes distinct observations only.
+
+  MISSED:    Station was scheduled, but it did not observe.
+  NOT CORR:  Station was scheduled but not correlated.
+  NOT USED:  Usable data was generated for this station,
+             but the analyst rejected it all.
+
+-----------------------------------------
+
+Source Performance 
+
+                    Number of Observations
+
+                Scheduled  Correlated*    Used      % of scheduled
+                                                       obs used
+
+  0059+581             39          24       13           33.3%
+  0106+013             30           7        3           10.0%
+  0113-118             15           7        5           33.3%
+  0131-522             24           0        0            0.0%
+  0202-172              6           1        1           16.7%
+  0202+319             57          17       14           24.6%
+  0212+735             33          25       24           72.7%
+  0229+131              9           2        2           22.2%
+  0300+470             36          22       19           52.8%
+  0332-403              3           1        1           33.3%
+  CTA26                63          20       16           25.4%
+  0454-810            213          28       27           12.7%
+  0454-463             56          13       13           23.2%
+  0458-020             77          20       19           24.7%
+  0511-220              6           0        0            0.0%
+  0528+134              6           0        0            0.0%
+  0552+398             50          32       29           58.0%
+  0605-085             36          13       12           33.3%
+  0648-165              3           1        1           33.3%
+  0716+714             18          16        8           44.4%
+  0723-008             21          10       10           47.6%
+  0738+313             21          11       11           52.4%
+  0748+126             55          23       23           41.8%
+  0826-373              9           3        1           11.1%
+  OJ287                77          37       32           41.6%
+  0906+015             15           9        9           60.0%
+  0925-203              9           1        1           11.1%
+  1030+415             21          10        9           42.9%
+  1034-293             44          13       10           22.7%
+  1038+064              6           2        1           16.7%
+  1044+719             36          26       12           33.3%
+  1057-797             45           7        7           15.6%
+  1104-445             24           7        7           29.2%
+  1124-186             55          26       19           34.5%
+  1144+402             36          27       22           61.1%
+  3C274                12           8        6           50.0%
+  3C279               104          35       33           31.7%
+  1255-316             33          20       12           36.4%
+  1354+195              6           4        2           33.3%
+  1424-418            184          41       33           17.9%
+  1435+638             27          15       10           37.0%
+  1502+106            100          42       37           37.0%
+  1510-089             64          25       21           32.8%
+  1519-273             19           8        3           15.8%
+  1600+43B             71          52        0            0.0%
+  1637+574             24          18       12           50.0%
+  1657-261             12           3        2           16.7%
+  1705+018              9           2        2           22.2%
+  NRAO530              97          32       24           24.7%
+  1803+784             21          11       11           52.4%
+  1921-293             72          25       20           27.8%
+  1923+210              6           2        2           33.3%
+  2005+403             28          18        5           17.9%
+  2008-159             19           6        3           15.8%
+  2021+614             30          16       15           50.0%
+  2029+121              9           3        2           22.2%
+  2052-474             47           7        6           12.8%
+  2128-123             24          12       10           41.7%
+  2136+141             21          11        6           28.6%
+  2149-306             31           7        6           19.4%
+  VR422201              9           5        3           33.3%
+  3C446                30           7        5           16.7%
+  CTA102               33          15        9           27.3%
+  2234+282             34          14       12           35.3%
+  2255-282             64          17       12           18.8%
+  2318+049             12           2        2           16.7%
+  2355-106             28           8        7           25.0%
+  ------------  ---------  ----------   ------          ------
+  Source Total       2534         952      714           28.2%
+
+ * Correlated: included in database 
+
+-----------------------------------------
+
+Baseline Performance 
+
+                                 Number of Observations
+
+                         Scheduled   Recoverable*         Used   % of scheduled
+                                                                    obs used
+
+  HOBART26-ISHIOKA             117      NOT CORR      NOT CORR         0.0%
+  HOBART26-KASHIM11             48      NOT CORR      NOT CORR         0.0%
+  HOBART26-KATH12M             162      NOT CORR      NOT CORR         0.0%
+  HOBART26-KOGANEI              48      NOT CORR      NOT CORR         0.0%
+  HOBART26-SYOWA                81      NOT CORR      NOT CORR         0.0%
+  HOBART26-WARK12M             155      NOT CORR      NOT CORR         0.0%
+  HOBART26-YARRA12M            155      NOT CORR      NOT CORR         0.0%
+  ISHIOKA-KASHIM11             217           201           196        90.3%
+  ISHIOKA-KATH12M               96            85            84        87.5%
+  ISHIOKA-KOGANEI              232            58            54        23.3%
+  ISHIOKA-SYOWA                 20      NOT CORR      NOT CORR         0.0%
+  ISHIOKA-WARK12M               62            13            11        17.7%
+  ISHIOKA-YARRA12M              67            61            61        91.0%
+  KASHIM11-KATH12M              39            33            30        76.9%
+  KASHIM11-KOGANEI             202            48            43        21.3%
+  KASHIM11-SYOWA                 7      NOT CORR      NOT CORR         0.0%
+  KASHIM11-WARK12M              30             8             7        23.3%
+  KASHIM11-YARRA12M             27            25            19        70.4%
+  KATH12M-KOGANEI               57             4    DESELECTED         0.0%
+  KATH12M-SYOWA                 55      NOT CORR      NOT CORR         0.0%
+  KATH12M-WARK12M              137            34            32        23.4%
+  KATH12M-YARRA12M             162           154           145        89.5%
+  KOGANEI-SYOWA                  8      NOT CORR      NOT CORR         0.0%
+  KOGANEI-WARK12M               46      NOT CORR      NOT CORR         0.0%
+  KOGANEI-YARRA12M              47             2    DESELECTED         0.0%
+  SYOWA-WARK12M                 64      NOT CORR      NOT CORR         0.0%
+  SYOWA-YARRA12M                70      NOT CORR      NOT CORR         0.0%
+  WARK12M-YARRA12M             123            32            32        26.0%
+  -----------------      ---------   -----------    ----------       ------
+  Baseline Total              2534           758           714        28.2%
+
+  * Recoverable: can be included in the solution. 
+
+  MISSED:     Baseline was scheduled, but at least one of the sites
+              did not observe.
+  NOT CORR:   Baseline was scheduled but not correlated.
+  NO DATA:    The baseline's stations were both correlated,
+              but they did not observe together.
+  DESELECTED: Usable data was generated for the baseline,
+              but the analyst rejected it.

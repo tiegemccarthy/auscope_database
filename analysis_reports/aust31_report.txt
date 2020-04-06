@@ -1,0 +1,172 @@
+       Analysis Report for AUST31 ($14JUL12XA) 
+   (Analyzed by David Gordon, GSFC Analysis Center.
+    Spoolfile source: interactive solve/nuSolve analysis.) 
+
+Problems: Katherine started with a -1 second offset and then has a
+          +1 second clock jump late in the session. We set an apriori
+          clock offset and a break at 22:10 UTC.
+          Yarragadee clock is unstable between two different levels;
+          it increases rapidly ~02:05-02:15, then decreases rapidly 
+          ~15:44-16:07. Clock breaks are set at 02:06 (+.64 nsec) and
+          16:06 (-.69 nsec). 
+
+Parameterization comments: None. 
+
+Other comments: Analysis was delayed because the original databases
+          had 3C274 named incorrectly. 
+
+-----------------------------------------
+
+Session Statistics 
+
+  Observations:     4434 scheduled 
+                    4227 correlated (in database)
+                    4038 recoverable (usable)
+                    3930 used
+  Session fit:        43.062 ps
+
+-----------------------------------------
+
+Station Performance 
+
+                           Number of Observations
+
+                    Scheduled   Recoverable*        Used   % of scheduled
+                                                              obs used
+
+  HART15M                1687          1469         1443        85.5%
+  HOBART12               2127          1982         1929        90.7%
+  KATH12M                2115          1992         1939        91.7%
+  WARK12M                 770           724          713        92.6%
+  YARRA12M               2169          1909         1836        84.6%
+  ---------------   ---------   -----------    ---------       ------
+  Station Total**        4434          4038         3930        88.6%
+
+  * Recoverable: can be included in the solution. 
+  ** Total includes distinct observations only.
+
+  MISSED:    Station was scheduled, but it did not observe.
+  NOT CORR:  Station was scheduled but not correlated.
+  NOT USED:  Usable data was generated for this station,
+             but the analyst rejected it all.
+
+-----------------------------------------
+
+Source Performance 
+
+                    Number of Observations
+
+                Scheduled  Correlated*    Used      % of scheduled
+                                                       obs used
+
+  0332-403             84          81       78           92.9%
+  0637-752            120         105       93           77.5%
+  0119+115             34          28       23           67.6%
+  2232-488            144         128      121           84.0%
+  2355-106             53          38       38           71.7%
+  0202-172             47          41       40           85.1%
+  2355-534            131         109      108           82.4%
+  0727-115             83          81       79           95.2%
+  0552+398              8           8        8          100.0%
+  OJ287                17          17       17          100.0%
+  3C454.3              55          52       50           90.9%
+  0400+258             12          10        8           66.7%
+  0834-201             87          87       55           63.2%
+  0308-611            107          92       88           82.2%
+  0516-621            162         158      155           95.7%
+  2326-477             60          48       46           76.7%
+  0220-349             61          52       43           70.5%
+  0426-380            120         120      117           97.5%
+  0454-463             91          91       89           97.8%
+  2142-758            239         231      225           94.1%
+  0202+319             18          14       14           77.8%
+  2255-282             24          24       22           91.7%
+  CTA26                13          13        9           69.2%
+  0319+121             21          21       20           95.2%
+  0738+313             15          15       14           93.3%
+  1038+064             10          10       10          100.0%
+  1124-186             23          23       23          100.0%
+  0537-441            113         113      112           99.1%
+  0454-234             93          93       92           98.9%
+  0420-014             62          59       54           87.1%
+  1144-379             86          86       85           98.8%
+  0521-365             78          78       78          100.0%
+  NRAO190              37          37       27           73.0%
+  0106+013             29          21       20           69.0%
+  0748+126             31          31       30           96.8%
+  4C39.25              20          20       19           95.0%
+  0607-157             57          55       52           91.2%
+  1610-771             18          18       17           94.4%
+  3C274                14          14       13           92.9%
+  0648-165             57          57       52           91.2%
+  0454-810            248         248      217           87.5%
+  1424-418            142         142      139           97.9%
+  1334-127             92          92       89           96.7%
+  0826-373             76          74       74           97.4%
+  0723-008             42          40       31           73.8%
+  0657+172             19          19       18           94.7%
+  1128+385             17          17       17          100.0%
+  1510-089             70          70       67           95.7%
+  0754+100             21          21       20           95.2%
+  1308+326             16          16       15           93.8%
+  1548+056             41          41       38           92.7%
+  1657-261            103         103       72           69.9%
+  1519-273             43          43       40           93.0%
+  1749+096             58          58       56           96.6%
+  1611+343             23          23       21           91.3%
+  NRAO530              70          70       67           95.7%
+  1741-038             67          67       63           94.0%
+  1908-201             13          13       13          100.0%
+  1921-293             72          72       68           94.4%
+  1633+38              20          20       17           85.0%
+  1954-388             72          68       65           90.3%
+  1958-179             60          59       59           98.3%
+  2052-474             21          21       20           95.2%
+  1751+288             17          17       15           88.2%
+  2149-306             61          49       47           77.0%
+  2131-021             54          50       40           74.1%
+  2145+067             26          26       23           88.5%
+  1622-297             91          91       81           89.0%
+  3C446                47          40       36           76.6%
+  2136+141             34          33       26           76.5%
+  2201+315             20          20       18           90.0%
+  CTA102               61          57       57           93.4%
+  1057-797              5           5        3           60.0%
+  2227-088             42          33       33           78.6%
+  2216-038             36          30       21           58.3%
+  ------------  ---------  ----------   ------          ------
+  Source Total       4434        4227     3930           88.6%
+
+ * Correlated: included in database 
+
+-----------------------------------------
+
+Baseline Performance 
+
+                                 Number of Observations
+
+                         Scheduled   Recoverable*         Used   % of scheduled
+                                                                    obs used
+
+  HART15M-HOBART12             501           451           444        88.6%
+  HART15M-KATH12M              484           441           434        89.7%
+  HART15M-WARK12M              153           127           127        83.0%
+  HART15M-YARRA12M             549           450           438        79.8%
+  HOBART12-KATH12M             713           701           684        95.9%
+  HOBART12-WARK12M             207           203           200        96.6%
+  HOBART12-YARRA12M            706           627           601        85.1%
+  KATH12M-WARK12M              207           206           205        99.0%
+  KATH12M-YARRA12M             711           644           616        86.6%
+  WARK12M-YARRA12M             203           188           181        89.2%
+  -----------------      ---------   -----------    ----------       ------
+  Baseline Total              4434          4038          3930        88.6%
+
+  * Recoverable: can be included in the solution. 
+
+  MISSED:     Baseline was scheduled, but at least one of the sites
+              did not observe.
+  NOT CORR:   Baseline was scheduled but not correlated.
+  NO DATA:    The baseline's stations were both correlated,
+              but they did not observe together.
+  DESELECTED: Usable data was generated for the baseline,
+              but the analyst rejected it.

@@ -1,0 +1,142 @@
+       IVS Analysis Report for AUA004 ($15MAY09XA) 
+       This report is the official IVS analysis report that corresponds to 
+       the database maintained by the IVS Data Centers for this session.  
+   (Analyzed by David Gordon, Goddard Space Flight Center.
+    Spoolfile source: interactive solve/nuSolve analysis.) 
+
+Problems: Katherine breaks at ~00:49:23 (+3.3 ns), ~04:56:58 (-26.8 ns),
+          and ~08:29:30 (-.9 ns). 
+          Very little DSS45 and Tidbin64 data due to limited antenna
+          availability; get only first 4 X- and S-band channels.
+
+Parameterization comments: Need to solve for RA/Dec of several sources,
+          particularly 0700-465, 1312-533, 1740-517, and 1830-589. 
+
+Other comments: None. 
+
+-----------------------------------------
+
+Session Statistics 
+
+  Observations:     1267 scheduled 
+                    1240 correlated (in database)
+                    1019 recoverable (usable)
+                     957 used
+  Session fit:        26.336 ps
+
+-----------------------------------------
+
+Station Performance 
+
+                           Number of Observations
+
+                    Scheduled   Recoverable*        Used   % of scheduled
+                                                              obs used
+
+  DSS45                    34            24           18        52.9%
+  HART15M                 385           277          265        68.8%
+  HOBART12                515           402          381        74.0%
+  KATH12M                 441           361          323        73.2%
+  PARKES                  465           412          392        84.3%
+  TIDBIN64                 67            39           36        53.7%
+  YARRA12M                627           523          499        79.6%
+  ---------------   ---------   -----------    ---------       ------
+  Station Total**        1267          1019          957        75.5%
+
+  * Recoverable: can be included in the solution. 
+  ** Total includes distinct observations only.
+
+  MISSED:    Station was scheduled, but it did not observe.
+  NOT CORR:  Station was scheduled but not correlated.
+  NOT USED:  Usable data was generated for this station,
+             but the analyst rejected it all.
+
+-----------------------------------------
+
+Source Performance 
+
+                    Number of Observations
+
+                Scheduled  Correlated*    Used      % of scheduled
+                                                       obs used
+
+  0007-048             60          54       45           75.0%
+  0142-278             55          54       45           81.8%
+  1622-253             68          68       65           95.6%
+  1922-224              6           6        6          100.0%
+  0454-463            107         105       88           82.2%
+  2314-409             16          16       16          100.0%
+  0056-572             15          15       13           86.7%
+  1312-533             41          41       28           68.3%
+  0539-543             89          89       80           89.9%
+  1204-613             41          41        7           17.1%
+  0302-623             29          29       24           82.8%
+  1740-517             55          53       10           18.2%
+  2152-699              5           5        4           80.0%
+  0758-737             11          11       10           90.9%
+  1936-155             26          24       21           80.8%
+  0700-465             29          26        3           10.3%
+  2126-158             33          33       32           97.0%
+  2326-477             43          37       35           81.4%
+  0212-620             38          38       36           94.7%
+  2300-683             34          34       32           94.1%
+  2204-540             43          43       41           95.3%
+  1830-589             63          63       14           22.2%
+  0823-223             50          50       26           52.0%
+  0826-373             27          27       25           92.6%
+  0809-493              7           7        3           42.9%
+  0235-618             12          12        9           75.0%
+  1420-679             51          48       44           86.3%
+  1045-188             49          49       47           95.9%
+  1213-172             50          49       44           88.0%
+  1143-332             10          10        6           60.0%
+  1333-337             10          10        8           80.0%
+  1319-093             43          42       42           97.7%
+  1510-089             51          51       48           94.1%
+  ------------  ---------  ----------   ------          ------
+  Source Total       1267        1240      957           75.5%
+
+ * Correlated: included in database 
+
+-----------------------------------------
+
+Baseline Performance 
+
+                                 Number of Observations
+
+                         Scheduled   Recoverable*         Used   % of scheduled
+                                                                    obs used
+
+  DSS45-HART15M                  6             4    DESELECTED         0.0%
+  DSS45-HOBART12                 6             4             4        66.7%
+  DSS45-KATH12M                  4             2    DESELECTED         0.0%
+  DSS45-PARKES                   8             7             7        87.5%
+  DSS45-TIDBIN64                 0      NOT CORR      NOT CORR         0.0%
+  DSS45-YARRA12M                10             7             7        70.0%
+  HART15M-HOBART12             124            82            80        64.5%
+  HART15M-KATH12M               69            46            41        59.4%
+  HART15M-PARKES                51            41            41        80.4%
+  HART15M-TIDBIN64               8             4             4        50.0%
+  HART15M-YARRA12M             127           100            99        78.0%
+  HOBART12-KATH12M             132           105            94        71.2%
+  HOBART12-PARKES               95            88            85        89.5%
+  HOBART12-TIDBIN64             15             9             9        60.0%
+  HOBART12-YARRA12M            143           114           109        76.2%
+  KATH12M-PARKES                98            89            81        82.7%
+  KATH12M-TIDBIN64               6             3    DESELECTED         0.0%
+  KATH12M-YARRA12M             132           116           107        81.1%
+  PARKES-TIDBIN64               18            12            12        66.7%
+  PARKES-YARRA12M              195           175           166        85.1%
+  TIDBIN64-YARRA12M             20            11            11        55.0%
+  -----------------      ---------   -----------    ----------       ------
+  Baseline Total              1267          1019           957        75.5%
+
+  * Recoverable: can be included in the solution. 
+
+  MISSED:     Baseline was scheduled, but at least one of the sites
+              did not observe.
+  NOT CORR:   Baseline was scheduled but not correlated.
+  NO DATA:    The baseline's stations were both correlated,
+              but they did not observe together.
+  DESELECTED: Usable data was generated for the baseline,
+              but the analyst rejected it.

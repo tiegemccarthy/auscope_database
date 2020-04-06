@@ -1,0 +1,368 @@
+TIMETAG 2015/09/08 19:12:29 
+MK3DB_VERSION    1
+Dbedit: RD1410  -DG-
+VLBI experiment RD1410 ( R&D-09/2014 )
+Created by dbedit Ver. 2015.06.23  revision 6.23
+        run by David Gordon ( dgg@bootes.gsfc.nasa.gov )
+            at GSF -- NASA Goddard Space Flight Center
+               on bootes at 2015.09.08-15:12:29 local time
+Dbedit control file history entry: RD1410  -DG-
+Directory /500/RD_fringe_files/rd1410/3473
+$1>
+
++HEADER
+CORREL   HAYS
+DATABASE 14OCT28XA
+SESSNAME RD1410
+EXPNO    3473
+OBSTIME  2014/10/28 2014/10/29
+UTSTART  1730
+DURATION 24
+DOY      301-302
+CORRTIME 2014/11/12 2014/11/18
+CORRPASS 1
+EXPORT   DONE
+
++SUMMARY
+ Qcode    % of Total   % of Correlated
+             scans          scans
+
+ 5-9        50 %            77 %
+  0         12 %            18 %
+ 4-1,A-H,N   4 %             5 %
+ Removed    34 %
+
++CORRELATOR_NOTES
+
+  Short baseline HARTRAO-HART15M was fringed with narrow delay and
+  rate windows, to reduce effects of zero-fringe-rate phase cal
+  cross-correlation.  Attempt was only partially successful, with
+  phase cal contamination still present in many scans and a poor
+  fourfit quality code distribution, especially at S-band.
+
++STATION_NOTES
+
+FORTLEZA (Ft/F): Weak fringes and phase cal in SR4U --
+                   channel deleted in fringing.
+                 RFI in SR3U caused 20 G codes and one H code.
+                 Weak fringes in XR2U caused 12 G codes.
+                 Spurious phase cal signals:
+                   XR1U   (8218.00)  -14 dBc
+                 Mark 5A recording transferred via e-VLBI.
+
+HARTRAO (Hh/J):  Transferred via e-VLBI.
+
+HART15M (Ht/h):  Weak or unstable phase cal in all channels during two
+                   scans caused 6 H codes.  Phase cal was unstable in a
+                   few other scans as well.
+                 Transferred via e-VLBI.
+
+HOBART26 (Ho/H): Fringed with manual phases due to absence of phase cal.
+                 Weak fringes in SR6U -- channel deleted in fringing.
+                 RFI in SR5U caused 21 G codes.
+                 Fringes in XR5U-XR8U were ~40% weaker than in XR1U-XR4U.
+                 Weak fringes in XR7U caused 3 G codes.
+                 Mark 5A recording transferred via e-VLBI.
+
+KOKEE (Kk/K):    Fringed with manual phases.
+
+MATERA (Ma/I):   Did not observe due to azimuth encoder failure.
+
+NYALES20 (Ny/N): Fringed with manual phases due to unreliable phase cal.
+                   Phase cal was highly unstable or even absent during
+                   many scans due to problem with antenna cable carrying
+                   5 MHz to phase calibrator.
+                 Transferred via e-VLBI.
+
+WETTZELL (Wz/V): Weak fringes in XR7U caused 2 G codes.
+                 Spurious phase cal signals:
+                   SR1U   (2229.00)  -21 dBc
+                 Mark 5A recording transferred via e-VLBI.
+
+Except as noted for individual stations, all stations recorded on Mark 5B.
+
++DROP_CHANNELS
+   Ft SR4U
+   Hh
+   Ht
+   Ho      SR6U
+   Kk
+   Ma
+   Ny
+   Wz
+
++MANUAL PCAL Ho Kk Ny
+
++CHANNELS
+ Channels: XR1U = band|polarization|channel#|sideband
+
+ XR1U/L  BBC01  8212.99
+ XR2U    BBC02  8252.99
+ XR3U    BBC03  8352.99
+ XR4U    BBC04  8512.99
+ XR5U    BBC05  8732.99
+ XR6U    BBC06  8852.99
+ XR7U    BBC07  8912.99
+ XR8U/L  BBC08  8932.99
+ SR1U    BBC09  2225.99
+ SR2U    BBC10  2245.99
+ SR3U    BBC11  2265.99
+ SR4U    BBC12  2295.99
+ SR5U    BBC13  2345.99
+ SR6U    BBC14  2365.99
+
++CLOCKS
+
+Clocks: Haystack
+Station          fmout-gps      Used        rate       Comments
+                   [usec]      [usec]    [sec/sec]
+
+    Ft               .69       -7.262     0.180e-12 -8 usec fm offset
+    Hh              2.11        4.437     0.260e-12
+    Ht              1.82        4.426     0.040e-12
+    Ho               --         5.007    -0.120e-12 -8 usec fm offset
+    Kk              9.10        9.508    -0.200e-12
+    Ny             82.72       82.926     1.810e-12
+    Wz            -29.72      -37.470    -0.060e-12 -8 usec fm offset
+Date: 2014/10/28
+
++QCODES
+
+Qcodes   0 1 2  3  4  5  6  7   8    9 A B C D E F  G H N    -  Tot
+-------------------------------------------------------------------
+Fh:X     3 0 0  0  0  0  0  1  12   80 0 0 0 0 0 0  5 2 0    0  103
+Fh:S    14 0 0  0  0  0  0  1  14   65 0 0 0 0 0 0  8 1 0    0  103
+FI:X     0 0 0  0  0  0  0  0   0    0 0 0 0 0 0 0  0 0 0   86   86
+FI:S     0 0 0  0  0  0  0  0   0    0 0 0 0 0 0 0  0 0 0   86   86
+FN:X     7 0 0  0  0  1  0  2   8   25 0 0 0 0 0 0  2 0 0    0   45
+FN:S    11 0 0  0  0  0  0  0   2   32 0 0 0 0 0 0  0 0 0    0   45
+FV:X     8 0 0  0  0  0  0  6  16   44 0 0 0 0 0 0  7 0 0    0   81
+FV:S    15 0 0  0  0  0  0  0  12   48 0 0 0 0 0 0  6 0 0    0   81
+FH:X     4 0 0  0  0  0  1  2   5   19 0 0 0 0 0 0  0 0 0    0   31
+FH:S     8 0 0  0  0  0  0  0   5   16 0 0 0 0 0 0  1 1 0    0   31
+FK:X     7 0 0  0  0  0  1  0   2    9 0 0 0 0 0 0  0 0 0    0   19
+FK:S     9 0 0  0  0  0  0  0   1    8 0 0 0 0 0 0  1 0 0    0   19
+FJ:X     2 0 0  0  0  0  0  7   9   37 0 0 0 0 0 0  1 0 0    0   56
+FJ:S    14 0 0  0  0  0  0  2   2   34 0 0 0 0 0 0  4 0 0    0   56
+hI:X     0 0 0  0  0  0  0  0   0    0 0 0 0 0 0 0  0 0 0  115  115
+hI:S     0 0 0  0  0  0  0  0   0    0 0 0 0 0 0 0  0 0 0  115  115
+hN:X     7 0 0  0  0  0  0  0   4   44 0 0 0 0 0 0  0 0 0    0   55
+hN:S    11 0 0  0  0  0  0  1   0   43 0 0 0 0 0 0  0 0 0    0   55
+hV:X    10 0 0  0  0  0  0  1   2   98 0 0 0 0 0 0  0 0 0    0  111
+hV:S    24 0 0  0  0  0  2  2   8   75 0 0 0 0 0 0  0 0 0    0  111
+hH:X    20 0 0  0  1  0  0  3  12   48 0 0 0 0 0 0  0 1 0    0   85
+hH:S    24 0 0  0  0  0  0  0  22   30 0 0 0 0 0 0  9 0 0    0   85
+hK:X     0 0 0  0  0  0  0  0   0    0 0 0 0 0 0 0  0 0 0    0    0
+hK:S     0 0 0  0  0  0  0  0   0    0 0 0 0 0 0 0  0 0 0    0    0
+hJ:X     2 0 1  3  6  6  4 18   6   40 0 0 0 0 0 0  7 1 0    0   94
+hJ:S     0 6 6  8  8 20  6 17   1    1 0 0 0 0 0 0 20 1 0    0   94
+IN:X     0 0 0  0  0  0  0  0   0    0 0 0 0 0 0 0  0 0 0  130  130
+IN:S     0 0 0  0  0  0  0  0   0    0 0 0 0 0 0 0  0 0 0  130  130
+IV:X     0 0 0  0  0  0  0  0   0    0 0 0 0 0 0 0  0 0 0  184  184
+IV:S     0 0 0  0  0  0  0  0   0    0 0 0 0 0 0 0  0 0 0  184  184
+IH:X     0 0 0  0  0  0  0  0   0    0 0 0 0 0 0 0  0 0 0   28   28
+IH:S     0 0 0  0  0  0  0  0   0    0 0 0 0 0 0 0  0 0 0   28   28
+IK:X     0 0 0  0  0  0  0  0   0    0 0 0 0 0 0 0  0 0 0   38   38
+IK:S     0 0 0  0  0  0  0  0   0    0 0 0 0 0 0 0  0 0 0   38   38
+IJ:X     0 0 0  0  0  0  0  0   0    0 0 0 0 0 0 0  0 0 0   69   69
+IJ:S     0 0 0  0  0  0  0  0   0    0 0 0 0 0 0 0  0 0 0   69   69
+NV:X     0 0 0  0  0  1  1  3  23  111 0 0 0 0 0 0  1 0 0    0  140
+NV:S    29 0 0  0  0  0  0  0   5  106 0 0 0 0 0 0  0 0 0    0  140
+NH:X    13 0 0  0  0  0  0  1   3   18 0 0 0 0 0 0  0 0 0    0   35
+NH:S    23 0 0  0  0  0  0  0   1   11 0 0 0 0 0 0  0 0 0    0   35
+NK:X    16 0 0  0  1  3  1  3  13   67 0 0 0 0 0 0  0 0 0    0  104
+NK:S    24 0 0  0  1  0  0  3   5   71 0 0 0 0 0 0  0 0 0    0  104
+NJ:X     4 0 0  0  0  0  0  0  10   20 0 0 0 0 0 0  0 0 0    0   34
+NJ:S     6 0 0  0  0  0  0  1   0   27 0 0 0 0 0 0  0 0 0    0   34
+VH:X    11 0 0  0  0  0  0  0   3    6 0 0 0 0 0 0  0 0 0    0   20
+VH:S    10 0 0  0  0  0  0  0   0   10 0 0 0 0 0 0  0 0 0    0   20
+VK:X    19 0 0  0  0  0  0  0   2   43 0 0 0 0 0 0  0 0 0    0   64
+VK:S    17 0 0  0  0  0  0  0   1   45 0 0 0 0 0 0  1 0 0    0   64
+VJ:X     4 0 0  0  0  0  1  0   7   44 0 0 0 0 0 0  0 0 0    0   56
+VJ:S    14 0 0  0  0  0  0  2   0   40 0 0 0 0 0 0  0 0 0    0   56
+HK:X    20 0 0  0  0  0  0  3   8   65 0 0 0 0 0 0  3 0 0    0   99
+HK:S    26 0 0  0  0  0  0  4  21   39 0 0 0 0 0 0  9 0 0    0   99
+HJ:X     7 0 0  0  0  0  0  0   6   15 0 0 0 0 0 0  1 0 0    0   29
+HJ:S     8 0 0  0  0  0  0  1   0   18 0 0 0 0 0 0  2 0 0    0   29
+KJ:X     0 0 0  0  0  0  0  0   0    0 0 0 0 0 0 0  0 0 0    0    0
+KJ:S     0 0 0  0  0  0  0  0   0    0 0 0 0 0 0 0  0 0 0    0    0
+-------------------------------------------------------------------
+Totals 451 6 7 11 17 31 17 84 251 1552 0 0 0 0 0 0 88 7 0 1300 3822
+
+Legend:
+ QC = 0    Fringes not detected.
+    = 1-9  Fringes detected, no error condition. Higher number = better
+           quality.
+    = B    Interpolation error in fourfit.
+    = D    No data in one or more frequency channels.
+    = E    Maximum fringe amplitude at edge of SBD, MBD, or rate window.
+    = F    "Fork" problem in processing.
+    = G    Fringe amp in a channel is <.5 times mean amp (only if SNR>20).
+    = H    Low phase-cal amplitude in one or more channels.
+    = N    No valid correlator data.
+ Tot       Total number of scans in schedule.
+ Minus     Scans in original schedule file for which correlation was not
+           attempted, usually because of known station problems.
+
++SNR_RATIOS
+
+MEAN RATIOS = Observed SNR / Predicted SNR  for exp no. 3473
+
+ ...by baseline, over all sources:
+
+ bl     X     n       S     n
+
+ Fh    0.81   99     1.00   89
+ FH    0.96   27     0.95   22
+ FK    0.93   12     1.15   10
+ FN    1.07   38     0.94   34
+ FV    1.18   73     1.01   66
+ FJ    1.10   54     1.03   42
+ hH    0.60   65     0.85   61
+ hK    0.00    0     0.00    0
+ hN    0.76   48     0.71   44
+ hV    0.84  101     0.91   87
+ hJ    1.77   92     2.49   87
+ HK    0.83   79     0.88   73
+ HN    0.61   22     0.60   12
+ HV    0.50    9     0.60   10
+ HJ    0.78   22     0.92   21
+ KN    0.92   88     0.96   80
+ KV    0.82   45     0.94   47
+ KJ    0.00    0     0.00    0
+ NV    1.18  140     0.99  111
+ NJ    1.14   30     0.71   28
+ VJ    1.12   52     0.88   42
+
++FOURFIT_CONTROL_FILE
+
+* Fourfit control file for R&D1410  <301-302>
+*
+max_parity 0.01
+dr_win -50.e-5 50.e-5  mb_win -1. 1.  sb_win -1.0 1.0
+pc_mode normal
+pc_period 9999
+use_samples true
+start -3
+*
+if station K
+  lsb_offset 280.
+*
+if station h or station J
+  lsb_offset 260.
+*
+if station F and f_group S
+  pc_freqs abcdef  3010 3010 3010 3010 3010 3010
+if station F and f_group X
+  pc_freqs ghijklmn 5010 5010 5010 5010 5010 5010 5010 5010
+*
+if station J and f_group S
+  pc_freqs abcdef  3010 3010 3010 3010 3010 3010
+if station J and f_group X
+  pc_freqs ghijklmn 5010 5010 5010 5010 5010 5010 5010 5010
+*
+if station h and f_group S
+  pc_freqs abcdef  3010 3010 3010 3010 3010 3010
+if station h and f_group X
+  pc_freqs ghijklmn 5010 5010 5010 5010 5010 5010 5010 5010
+*
+if station H and f_group S
+  pc_freqs abcdef  3010 3010 3010 3010 3010 3010
+if station H and f_group X
+  pc_freqs ghijklmn 5010 5010 5010 5010 5010 5010 5010 5010
+*
+if station K and f_group S
+  pc_freqs abcdef  3010 3010 3010 3010 3010 3010
+if station K and f_group X
+  pc_freqs ghijklmn 5010 5010 5010 5010 5010 5010 5010 5010
+*
+if station N and f_group S
+  pc_freqs abcdef  3010 3010 3010 3010 3010 3010
+if station N and f_group X
+  pc_freqs ghijklmn 5010 5010 5010 5010 5010 5010 5010 5010
+*
+if station V and f_group S
+  pc_freqs abcdef  3010 3010 3010 3010 3010 3010
+if station V and f_group X
+  pc_freqs ghijklmn 5010 5010 5010 5010 5010 5010 5010 5010
+*
+* Delete Fortaleza channel S4 due to low phase cal and fringe amplitudes
+if station F and f_group S
+  freqs a b c e f
+*
+* Delete Hobart26 channel S6 due to low fringe amplitudes
+if station H and f_group S
+  freqs a b c d e
+*
+* Set proper X band reference freq., just in case
+if f_group X
+  ref_freq 8212.99
+*
+* Set proper S band reference freq., just in case
+if f_group S
+  ref_freq 2225.99
+*
+* Manual Phases for Kokee
+*
+if station K and f_group X
+   pc_mode manual
+   pc_phases ghijklmn -118.0 -151.7 -102.0 -131.2 -10.4 -125.7 -156.1 -114.1
+if station K and f_group S
+  pc_mode manual
+  pc_phases abcdef 99.5 61.4 73.8 142.3 46.6 100.2
+*
+* Manual Phases for Hobart26 (no pcal)
+*
+if station H and f_group X
+   pc_mode manual
+   pc_phases ghijklmn -33.1 -3.1 -11.3 -55.0  9.1 -34.7 35.9 -28.3
+if station H and f_group S
+  pc_mode manual
+  pc_phases abcdef -11.6 -46.2 -26.0 -32.2 66.6 -126.9
+*
+* Manual phases for Ny Alesund (unstable pcal)
+*
+if station N and f_group X
+  pc_mode manual
+  pc_phases ghijklmn -33.0 -30.2 107.0 62.3 -143.0 15.0 68.7 161.3
+if station N and f_group S
+  pc_mode manual
+  pc_phases abcdef -10.5 109.1 -85.4 -79.1 -68.5 -141.4
+*
+* Additive phases with Wettzell as reference
+*
+if station F and f_group X
+  pc_phases ghijklmn 7.6  -6.6  -8.0  -4.5   2.8  10.1  10.3  -7.5
+if station F and f_group S
+  pc_phases abcef 4.6  -0.6  -4.5  1.3   2.4
+*
+if station J and f_group X
+  pc_phases ghijklmn 1.4  -8.1  -1.3   2.9   9.3   7.2   8.2 -12.8
+if station J and f_group S
+  pc_phases abcdef 6.6  -3.7  -3.8  -4.9   4.8  -0.3
+*
+if station h and f_group X
+  pc_phases ghijklmn 1.8  -8.4  -8.3  15.2   9.8  14.5   3.8 -16.4
+if station h and f_group S
+  pc_phases abcdef -3.4  -1.7  -1.5   2.9   1.6  -2.3
+*
+* Narrow windows on intra-HartRAO baseline
+*
+if baseline Jh
+  sb_win  -.05 .05
+  dr_win  -2.e-6 2.e-6
+if baseline Jh and f_group S
+  mb_win  .035 -.045
+if baseline Jh and f_group X
+  mb_win -.025 -.010
+*
+*
+Mike/Brian
++END
+
+$1<
+Sorted by time and subsorted by baseline.   -DG-
+All  baselines used.
+All  sources used.
+Output time window:  earliest latest
+

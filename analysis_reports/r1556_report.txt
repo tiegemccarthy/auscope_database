@@ -1,0 +1,160 @@
+       Analysis Report for R1556 ($12OCT22XA) 
+   (Analyzed by David Gordon, GSFC Analysis Center.
+    Spoolfile source: interactive solve analysis.) 
+
+Problems: Channels S1 and S6 were dropped at Matera and it shows
+          some S-band subambiguities; ~75 points affected. 
+
+Parameterization comments: None. 
+
+Other comments: Using the reprocessed databases. An earlier version
+          was made using the old version of difx2mark4 and was much
+          noisier. 
+
+-----------------------------------------
+
+Session Statistics 
+
+  Observations:     2484 scheduled 
+                    2347 correlated (in database)
+                    2213 recoverable (usable)
+                    2085 used
+  Session fit:        32.611 ps
+
+-----------------------------------------
+
+Station Performance 
+
+                           Number of Observations
+
+                    Scheduled   Recoverable*        Used   % of scheduled
+                                                              obs used
+
+  HOBART12                526           419          400        76.0%
+  MATERA                  923           850          763        82.7%
+  TIGOCONC                318           262          256        80.5%
+  TSUKUB32               1012           923          867        85.7%
+  WESTFORD                774           719          686        88.6%
+  WETTZELL                953           917          879        92.2%
+  YARRA12M                462           336          319        69.0%
+  ---------------   ---------   -----------    ---------       ------
+  Station Total**        2484          2213         2085        83.9%
+
+  * Recoverable: can be included in the solution. 
+  ** Total includes distinct observations only.
+
+  MISSED:    Station was scheduled, but it did not observe.
+  NOT CORR:  Station was scheduled but not correlated.
+  NOT USED:  Usable data was generated for this station,
+             but the analyst rejected it all.
+
+-----------------------------------------
+
+Source Performance 
+
+                    Number of Observations
+
+                Scheduled  Correlated*    Used      % of scheduled
+                                                       obs used
+
+  1123+264             32          31       29           90.6%
+  0516-621              9           5        5           55.6%
+  0119+115             36          31       31           86.1%
+  0133+476            123         123      114           92.7%
+  CTA26                94          84       80           85.1%
+  0537-441             46          36       33           71.7%
+  0727-115            105          98       84           80.0%
+  OJ287                95          87       82           86.3%
+  1034-293             35          26       14           40.0%
+  1053+815             38          38       37           97.4%
+  1057-797             76          59       58           76.3%
+  3C274                12          11        6           50.0%
+  1255-316              9           9        6           66.7%
+  1300+580            213         213      192           90.1%
+  1424-418             39          36       32           82.1%
+  1622-253             74          69       54           73.0%
+  3C371               210         210      201           95.7%
+  1921-293             21          20       18           85.7%
+  2052-474             35          22       18           51.4%
+  2255-282             15          11       10           66.7%
+  2318+049             14          13       12           85.7%
+  2356+385             17          17       17          100.0%
+  0657+172            108         106      101           93.5%
+  0800+618            176         176      153           86.9%
+  0912+029              3           3        3          100.0%
+  0920+390              1           1        1          100.0%
+  1149-084             19          18       13           68.4%
+  1639-062            117         108       85           72.6%
+  1846+322             37          37       35           94.6%
+  2000+472             84          84       66           78.6%
+  2355-106              1           1        0            0.0%
+  0134+311              3           3        3          100.0%
+  0215+015            112         105       91           81.2%
+  0446+112             59          56       51           86.4%
+  0641+392             25          25       22           88.0%
+  1306+360              1           1        0            0.0%
+  1520+437              6           6        5           83.3%
+  1617+229             12          12        7           58.3%
+  1732+389             41          40       37           90.2%
+  1754+155              1           1        1          100.0%
+  2144+092             31          29       28           90.3%
+  2214+350             43          42       35           81.4%
+  0115-214              1           1        1          100.0%
+  0322+222             42          41       39           92.9%
+  0400-319              2           2        2          100.0%
+  0920-397              1           1        0            0.0%
+  1759-396             12          10       10           83.3%
+  2008-159             32          30       23           71.9%
+  0016+731            122         116      106           86.9%
+  0544+273              4           4        3           75.0%
+  0627-199             22          22       18           81.8%
+  0925-203             10           9        5           50.0%
+  1502+036              7           7        7          100.0%
+  2013+163              1           1        1          100.0%
+  ------------  ---------  ----------   ------          ------
+  Source Total       2484        2347     2085           83.9%
+
+ * Correlated: included in database 
+
+-----------------------------------------
+
+Baseline Performance 
+
+                                 Number of Observations
+
+                         Scheduled   Recoverable*         Used   % of scheduled
+                                                                    obs used
+
+  HOBART12-MATERA               18            13             9        50.0%
+  HOBART12-TIGOCONC             69            62            60        87.0%
+  HOBART12-TSUKUB32            150           139           131        87.3%
+  HOBART12-WESTFORD             12             9             9        75.0%
+  HOBART12-WETTZELL             14            11            11        78.6%
+  HOBART12-YARRA12M            263           185           180        68.4%
+  MATERA-TIGOCONC               31            21            19        61.3%
+  MATERA-TSUKUB32              250           239           213        85.2%
+  MATERA-WESTFORD              223           210           185        83.0%
+  MATERA-WETTZELL              378           353           325        86.0%
+  MATERA-YARRA12M               23            14            12        52.2%
+  TIGOCONC-TSUKUB32             26            12            12        46.2%
+  TIGOCONC-WESTFORD            132           113           112        84.8%
+  TIGOCONC-WETTZELL             35            34            33        94.3%
+  TIGOCONC-YARRA12M             25            20            20        80.0%
+  TSUKUB32-WESTFORD            178           160           155        87.1%
+  TSUKUB32-WETTZELL            277           274           267        96.4%
+  TSUKUB32-YARRA12M            131            99            89        67.9%
+  WESTFORD-WETTZELL            229           227           225        98.3%
+  WESTFORD-YARRA12M              0       NO DATA       NO DATA         0.0%
+  WETTZELL-YARRA12M             20            18            18        90.0%
+  -----------------      ---------   -----------    ----------       ------
+  Baseline Total              2484          2213          2085        83.9%
+
+  * Recoverable: can be included in the solution. 
+
+  MISSED:     Baseline was scheduled, but at least one of the sites
+              did not observe.
+  NOT CORR:   Baseline was scheduled but not correlated.
+  NO DATA:    The baseline's stations were both correlated,
+              but they did not observe together.
+  DESELECTED: Usable data was generated for the baseline,
+              but the analyst rejected it.

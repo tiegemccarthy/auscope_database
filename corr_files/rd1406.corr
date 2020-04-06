@@ -1,0 +1,356 @@
+TIMETAG 2015/08/31 14:03:26 
+MK3DB_VERSION    1
+Dbedit: RD1406  -DG-
+VLBI experiment RD1406 ( R&D-08/2014 )
+Created by dbedit Ver. 2015.06.23  revision 6.23
+        run by David Gordon ( dgg@bootes.gsfc.nasa.gov )
+            at GSF -- NASA Goddard Space Flight Center
+               on bootes at 2015.08.31-10:03:26 local time
+Dbedit control file history entry: RD1406  -DG-
+Directory /500/RD_fringe_files/rd1406/3465
+$1>
+
++HEADER
+CORREL   HAYS
+DATABASE 14AUG26XA
+SESSNAME RD1406
+EXPNO    3465
+OBSTIME  2014/08/26 2014/08/27
+UTSTART  1730
+DURATION 24
+DOY      238-239
+CORRTIME 2014/09/18 2014/09/20
+CORRPASS 1
+EXPORT   DONE
+
++SUMMARY
+ Qcode    % of Total   % of Correlated
+             scans          scans
+
+ 5-9        52 %            70 %
+  0         22 %            30 %
+ 4-1,A-H,N   0 %             0 %
+ Removed    26 %
+
++CORRELATOR_NOTES
+
++STATION_NOTES
+
+FORTLEZA (Ft/F): Missed 8 scans during power failure from 239-0850 to -0948.
+                   Clock jump of 0.4 microsec coincided with power failure.
+                 Weak fringes and phase cal in SR4U --
+                   channel deleted in fringing.
+                 RFI in SR3U caused 4 G codes and 1 H code.
+                 Mark 5A recording transferred via e-VLBI.
+
+HARTRAO (Hh/J):  Transferred via e-VLBI.
+
+HOBART26 (Ho/H): Fringed with manual phases due to absence of phase cal.
+                 RFI in SR6U caused 2 G codes.
+                 Mark 5A recording transferred via e-VLBI.
+
+KOKEE (Kk/K):    Did not observe.
+
+NYALES20 (Ny/N): Transferred via e-VLBI.
+
+WESTFORD (Wf/E): S-band phase cal amplitudes were low by ~30% from roughly
+                   238-2330 to 239-1300, and S-band phase cal delay was
+                   offset by ~100 ps during this time.
+
+WETTZELL (Wz/V): Spurious phase cal signals:
+                   SR1U   (2229.00)  -19 dBc
+                 Mark 5A recording transferred via e-VLBI.
+
+Except as noted for individual stations, all stations recorded on Mark 5B.
+
++DROP_CHANNELS
+   Ft SR4U
+   Hh
+   Ho
+   Kk
+   Ny
+   Wf
+   Wz
+
++MANUAL PCAL Ho
+
++CHANNELS
+ Channels: XR1U = band|polarization|channel#|sideband
+
+ XR1U/L  BBC01  8212.99
+ XR2U    BBC02  8252.99
+ XR3U    BBC03  8352.99
+ XR4U    BBC04  8512.99
+ XR5U    BBC05  8732.99
+ XR6U    BBC06  8852.99
+ XR7U    BBC07  8912.99
+ XR8U/L  BBC08  8932.99
+ SR1U    BBC09  2225.99
+ SR2U    BBC10  2245.99
+ SR3U    BBC11  2265.99
+ SR4U    BBC12  2295.99
+ SR5U    BBC13  2345.99
+ SR6U    BBC14  2365.99
+
++CLOCKS
+
+Clocks: Haystack
+Station          fmout-gps      Used        rate       Comments
+                   [usec]      [usec]    [sec/sec]
+
+    Ft               .15       -7.782     0.090e-12    before 239-0900
+                                                    -8 usec fm offset
+    Ft               .55       -7.354     0.090e-12    after 239-0900
+                                                    -8 usec fm offset
+    Hh              1.13        3.452     0.200e-12
+    Ho             13.08        5.371     0.170e-12 -8 usec fm offset
+    Ny             73.25       73.453     1.720e-12
+    Wf             47.59       48.123     2.690e-12
+    Wz            -29.31      -37.060    -0.080e-12 -8 usec fm offset
+Date: 2014/08/26
+
++QCODES
+
+Qcodes   0 1 2 3 4 5 6  7   8    9 A B C D E F G H N   -  Tot
+-------------------------------------------------------------
+FJ:X     9 0 0 0 0 0 0  2   7   71 0 0 0 0 0 0 0 0 0   6   95
+FJ:S    31 0 0 0 0 0 0  0   6   48 0 0 0 0 0 0 4 0 0   6   95
+FN:X    10 0 0 0 0 0 1  1   5   45 0 0 0 0 0 0 0 0 0   4   66
+FN:S    38 0 0 0 0 0 0  0   1   23 0 0 0 0 0 0 0 0 0   4   66
+FE:X    14 0 0 0 0 0 0  1  13   62 0 0 0 0 0 0 0 0 0   4   94
+FE:S    42 0 0 0 0 0 0  0   2   46 0 0 0 0 0 0 0 0 0   4   94
+FV:X    10 0 0 0 0 0 1  3  15   62 0 0 0 0 0 0 0 0 0   7   98
+FV:S    26 0 0 0 0 0 0  1   3   61 0 0 0 0 0 0 0 0 0   7   98
+FH:X     9 0 0 0 0 0 0  0   1   11 0 0 0 0 0 0 0 0 0   1   22
+FH:S    10 0 0 0 0 0 0  0   2    7 0 0 0 0 0 0 1 1 0   1   22
+FK:X     0 0 0 0 0 0 0  0   0    0 0 0 0 0 0 0 0 0 0  25   25
+FK:S     0 0 0 0 0 0 0  0   0    0 0 0 0 0 0 0 0 0 0  25   25
+JN:X    15 0 0 0 0 0 0  6   9   43 0 0 0 0 0 0 0 0 0   0   73
+JN:S    41 0 0 0 0 0 1  0   0   30 0 0 0 0 0 0 1 0 0   0   73
+JE:X     8 0 0 0 0 0 0  3   5   27 0 0 0 0 0 0 0 0 0   0   43
+JE:S    24 0 0 0 0 0 0  0   0   19 0 0 0 0 0 0 0 0 0   0   43
+JV:X     6 0 0 0 0 0 1  4  17   85 0 0 0 0 0 0 0 0 0   0  113
+JV:S    41 0 0 0 0 0 0  0   0   72 0 0 0 0 0 0 0 0 0   0  113
+JH:X    29 0 0 0 0 0 0  0   0   33 0 0 0 0 0 0 0 0 0   0   62
+JH:S    29 0 0 0 0 0 0  0   8   24 0 0 0 0 0 0 1 0 0   0   62
+JK:X     0 0 0 0 0 0 0  0   0    0 0 0 0 0 0 0 0 0 0   0    0
+JK:S     0 0 0 0 0 0 0  0   0    0 0 0 0 0 0 0 0 0 0   0    0
+NE:X    17 0 0 0 0 0 0  2  20  100 0 0 0 0 0 0 0 0 0   0  139
+NE:S    52 0 0 0 0 0 0  1   0   86 0 0 0 0 0 0 0 0 0   0  139
+NV:X     4 0 0 0 0 0 1  4  19  119 0 0 0 0 0 0 0 0 0   0  147
+NV:S    46 0 0 0 0 0 0  0   3   98 0 0 0 0 0 0 0 0 0   0  147
+NH:X    11 0 0 0 0 0 0  0   0   21 0 0 0 0 0 0 0 0 0   0   32
+NH:S    27 0 0 0 0 0 0  0   0    5 0 0 0 0 0 0 0 0 0   0   32
+NK:X     0 0 0 0 0 0 0  0   0    0 0 0 0 0 0 0 0 0 0 104  104
+NK:S     0 0 0 0 0 0 0  0   0    0 0 0 0 0 0 0 0 0 0 104  104
+EV:X    13 0 0 0 0 0 1  5   8   79 0 0 0 0 0 0 0 0 0   0  106
+EV:S    35 0 0 0 0 0 0  1   0   70 0 0 0 0 0 0 0 0 0   0  106
+EH:X    14 0 0 0 0 0 0  0   0    4 0 0 0 0 0 0 0 0 0   0   18
+EH:S    12 0 0 0 0 0 0  0   0    6 0 0 0 0 0 0 0 0 0   0   18
+EK:X     0 0 0 0 0 0 0  0   0    0 0 0 0 0 0 0 0 0 0 105  105
+EK:S     0 0 0 0 0 0 0  0   0    0 0 0 0 0 0 0 0 0 0 105  105
+VH:X    17 0 0 0 0 0 0  0   0   12 0 0 0 0 0 0 0 0 0   0   29
+VH:S    21 0 0 0 0 0 0  0   0    8 0 0 0 0 0 0 0 0 0   0   29
+VK:X     0 0 0 0 0 0 0  0   0    0 0 0 0 0 0 0 0 0 0  51   51
+VK:S     0 0 0 0 0 0 0  0   0    0 0 0 0 0 0 0 0 0 0  51   51
+HK:X     0 0 0 0 0 0 0  0   0    0 0 0 0 0 0 0 0 0 0  90   90
+HK:S     0 0 0 0 0 0 0  0   0    0 0 0 0 0 0 0 0 0 0  90   90
+-------------------------------------------------------------
+Totals 661 0 0 0 0 0 6 34 144 1377 0 0 0 0 0 0 7 1 0 794 3024
+
+Legend:
+ QC = 0    Fringes not detected.
+    = 1-9  Fringes detected, no error condition. Higher number = better
+           quality.
+    = B    Interpolation error in fourfit.
+    = D    No data in one or more frequency channels.
+    = E    Maximum fringe amplitude at edge of SBD, MBD, or rate window.
+    = F    "Fork" problem in processing.
+    = G    Fringe amp in a channel is <.5 times mean amp (only if SNR>20).
+    = H    Low phase-cal amplitude in one or more channels.
+    = N    No valid correlator data.
+ Tot       Total number of scans in schedule.
+ Minus     Scans in original schedule file for which correlation was not
+           attempted, usually because of known station problems.
+
++SNR_RATIOS
+
+MEAN RATIOS = Observed SNR / Predicted SNR  for exp no. 3465
+
+ ...by baseline, over all sources:
+
+ bl     X     n       S     n
+
+ FJ    0.97   80     0.82   57
+ FH    0.57   12     0.58   11
+ FN    0.70   52     0.71   24
+ FE    0.90   76     0.80   48
+ FV    0.85   81     0.88   65
+ JH    0.46   33     0.55   33
+ JN    0.66   58     0.52   31
+ JE    0.63   35     0.54   19
+ JV    0.74  107     0.64   71
+ HN    0.37   21     0.40    5
+ HE    0.39    4     0.49    6
+ HV    0.42   12     0.52    8
+ KE    0.00    0     0.00    0
+ NE    0.70  122     0.56   85
+ NV    0.81  143     0.67  101
+ EV    0.62   93     0.68   71
+
++FOURFIT_CONTROL_FILE
+
+* Fourfit control file for R&D1406  <238-239>
+*
+max_parity 0.01
+dr_win -50.e-5 50.e-5  mb_win -1. 1.  sb_win -1.0 1.0
+pc_mode normal
+pc_period 9999
+use_samples true
+start -3
+*
+if station K
+  lsb_offset 280.
+*
+if station J
+  lsb_offset 260.
+*
+if station F and f_group S
+  pc_freqs abcdef  3010 3010 3010 3010 3010 3010
+if station F and f_group X
+  pc_freqs ghijklmn 5010 5010 5010 5010 5010 5010 5010 5010
+*
+if station J and f_group S
+  pc_freqs abcdef  3010 3010 3010 3010 3010 3010
+if station J and f_group X
+  pc_freqs ghijklmn 5010 5010 5010 5010 5010 5010 5010 5010
+*
+if station H and f_group S
+  pc_freqs abcdef  3010 3010 3010 3010 3010 3010
+if station H and f_group X
+  pc_freqs ghijklmn 5010 5010 5010 5010 5010 5010 5010 5010
+*
+if station N and f_group S
+  pc_freqs abcdef  3010 3010 3010 3010 3010 3010
+if station N and f_group X
+  pc_freqs ghijklmn 5010 5010 5010 5010 5010 5010 5010 5010
+*
+if station E and f_group S
+  pc_freqs abcdef  3010 3010 3010 3010 3010 3010
+if station E and f_group X
+  pc_freqs ghijklmn 5010 5010 5010 5010 5010 5010 5010 5010
+*
+if station V and f_group S
+  pc_freqs abcdef  3010 3010 3010 3010 3010 3010
+if station V and f_group X
+  pc_freqs ghijklmn 5010 5010 5010 5010 5010 5010 5010 5010
+*
+* Delete Fortaleza channel S4 due to low phase cal and fringe amplitudes
+if station F and f_group S
+  freqs a b c e f
+*
+* Set proper X band reference freq., just in case
+if f_group X
+  ref_freq 8212.99
+*
+* Set proper S band reference freq., just in case
+if f_group S
+  ref_freq 2225.99
+*
+* Manual Phases for Hobart
+*
+if station H and f_group X
+   pc_mode manual
+   pc_phases ghijklmn 130.7 -157.2 -136.6 -175.4 -93.7 166.9 123.5 -191.7
+if station H and f_group S
+  pc_mode manual
+  pc_phases abcdef 51.1 -10.0 46.2 20.1 83.3 1.5
+*
+* Additive phases with Wettzell as reference
+*
+if station F and f_group X
+  pc_phases ghijklmn 2.5  -4.1  -3.2  -3.5   5.3  10.8   8.5  -9.3
+if station F and f_group S
+  pc_phases abcef -1.7  -5.6  -2.9  -2.0  -6.2
+*
+if station J and f_group X
+  pc_phases ghijklmn -0.6  -7.4  -0.1   6.6  12.9   8.1   6.6 -14.8
+if station J and f_group S
+  pc_phases abcdef 4.2  -2.1  0.2   1.9   3.0  -0.3
+*
+if station N and f_group X
+  pc_phases ghijklmn -3.5   1.3   2.0  -0.1   4.4   5.0  -1.6  -4.0
+if station N and f_group S
+  pc_phases abcdef -7.7  -1.8   8.6  10.2  -7.5  -1.2
+*
+if station E and f_group X
+  pc_phases ghijklmn 0.3   0.6  -3.7  -0.1   4.4   0.7   1.9  -2.4
+if station E and f_group S
+  pc_phases abcdef 2.8  -4.3  -2.9   3.8   2.3  -3.2
+*
+* MBD windows
+*
+if baseline JV and f_group X
+  mb_win -.01  .02
+if baseline JV and f_group S
+  mb_win -.04  .01
+if baseline NE and f_group S
+  mb_win  .00  .05
+*
+*
+Mike/Brian
++END
+
+$1<
+Sorted by time and subsorted by baseline.   -DG-
+All  baselines used.
+All  sources used.
+Output time window:  earliest latest
+TIMETAG 2015/08/31 14:49:55 
+MK3DB_VERSION    2
+CALC11.01 Ver. 2014.05.16  Mon Aug 31 10:49:54 2015    bootes
+Calc 11 at GSFC  -DG-
+TIMETAG 2015/08/31 14:51:42 
+MK3DB_VERSION    3
+Dbcal: RD1406  -DG-
+ DBCAL: Version 2013.10.18        AUG 31,2015 14:51:42
+TIMETAG 2015/08/31 15:33:11 
+MK3DB_VERSION    4
+SgLib-0.2.6 (Cmok): data have been read from Mk3 database
+TIMETAG 2015/08/31 16:28:44 
+MK3DB_VERSION    4
+Analyzed by David Gordon (hereafter DG) at Goddard Space Flight Center. Contact info: <David.Gordon-1@nasa.gov>
+DG> RD1406: GSFC Analysis  -DG-
+DG> Not much Hobart12 data, some is very noisy.
+DG> Many zero quality codes.
+DG> NuSolve fit of 32.5 psec.
+IVS-R&D-6: GSFC analysis (DG)
+G-Gxs solution,   60/  60 clocks/atms,    8/  40 constraints, 23.9667-hr gradients.
+Solve fit is 32.46 psec.
+The following flyby options were used in the solution:
+Station positions flyby file: glo.sit
+Station velocities flyby file: glo.vel
+Source flyby file: glo.src
+Station axis offset flyby file: glo.axis
+EOP high frequency variations flyby file: NONE
+Station mean gradients flyby file: NONE
+Nutation series flyby file :  NONE
+Nutation offset flyby file :  NONE
+Earth rotation flyby file  :  NONE
+Tectonic plate motion file :  NONE
+Group delay ambiguities were resolved (well, at least, tried to resolve)
+Group delay outliers were processed and editing info has been updated.
+Troposphere and cable cal status for standard solution have been stored.
+Observation dependent contribution status has been stored.
+Reweighting updated for:
+FO-HA FO-HO FO-NY FO-WE FO-WE HA-HO HA-NY HA-WE HA-WE HO-NY
+HO-WE NY-WE NY-WE WE-WE
+Solution data configuration: group delays with ionosphere corrections
+Clock and atmosphere constraint information saved.
+Batchmode clock parameterization saved.
+Batchmode atmosphere parameterization saved.
+Ionosphere corrections were evaluated for group delays.
+Barometer calibration and barometer height offset not available.
+Elevation cutoff data stored in database.
+Eccentricity data store in data base header.
+

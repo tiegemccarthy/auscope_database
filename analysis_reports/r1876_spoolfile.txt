@@ -1,0 +1,600 @@
+1Run 19024-2053
+ Analysis center: GSFC -- Goddard Space Flight Center
+ Analyst:         David Gordon ( David.Gordon-1@nasa.gov )
+ Machine:         bootes  i686  Linux 2.6.27.56-0.1-pae
+ Executables:     /shared/gemini/500/slb/SgLib/bin
+ Solve initials:  DG
+ Spool format:    SgLib-0.6.3 (Rebma)
+ Local time:      2019.01.24-15:53:16
+ Correlator type: MK4     
+ Mark-3 db_name:
+
+ Data base $19JAN07XA Ver  3
+
+ Matrix Condition Number =   1.780435972493095E+10
+
+ Listing_Options:  CRES_EMULATION NO  BASELINES NO  MINIMUM NO
+ Listing_Options:  MAPPED_EOP_OUTPUT NO  SEG_OUTPUT NO  APRIORI_ZENDEL NO
+ Listing_Options:  NRD_TABLE YES  CHI_TABLE NO  SRC_STAT PRE2004  SEG_STYLE PRE2005
+ SgLib release  :  2018 Sep 26
+
+  Flyby Station Cals:    DB Station Cals:              | DB Non-station Cals: | Atmosphere Partial:
+ --------------------------------------------------------------------------------------------------
+    HART15M :NMFDRFLY             GION                 | Pol Tide             | NMFWTFLY              
+    KATH12M :NMFDRFLY             GION                 | WobXCont             |                       
+    KOKEE   :NMFDRFLY    cable    GION                 | WobYCont             |                       
+    MATERA  :NMFDRFLY    cable    GION                 | EarthTid             |                       
+    SEJONG  :NMFDRFLY             GION                 | Ocean                |                       
+    WETTZ13N:NMFDRFLY             GION                 | UT1Ortho             |                       
+    YARRA12M:NMFDRFLY             GION                 | XpYpOrth             |                       
+                                                       | XpYpLib              |                       
+                                                       | UT1Libra             |                       
+                                                       | OPTLCont             |                       
+ --------------------------------------------------------------------------------------------------
+ CALC Version:  11.02  SgLib-0.6.3 (Rebma)
+
+           19JAN07SA  3  NOT IN SOLUTION
+
+  Met Statistics:
+                    Temperature      Pressure        Humidity
+   Station         average   rms   average   rms   average   rms
+   HART15M   MET     20.3     4.1   859.6     1.4    77.3    12.6
+   KATH12M   MET     31.2     3.6   991.1     1.4    65.5    15.5
+   KOKEE     MET     14.9     1.7   890.8     0.7    85.8     7.7
+   MATERA    MET      1.4     3.0   963.9     2.8    77.0     9.8
+   SEJONG    MET     -1.9     2.5  1001.8     0.9    53.1    19.1
+   WETTZ13N  MET      0.4     0.6   944.0     6.1    99.7     0.0
+   YARRA12M  MET     25.4     6.3   981.6     0.8    50.0     0.0
+
+ Run 19024-2053         4063 Observation Pairs Available 
+ Session started on:    2458491.208831   2019.01.07 17:00:43.000  UTC
+ Actual duration:       86289.000  sec           00 23:58:09.000  sec
+ Solution type: Group delay X/S combination    
+
+ Data Type     Number of   Weighted RMS    Normalized RMS   Chi Square
+             Observations    Residual         Residual      (precis)
+                 Used
+ 
+   Delay     3151             47.775 ps              1.00       1.0001
+   Rate         0                  0 fs/s            0.00       0.0000
+Combined        0                                    0.00       0.0000
+----------------------------------------------------------------------- 
+ Used quality_code_limit:                                  5            
+ Number of potentially recoverable observations:        3224            
+ Number of potentially good observations with QC 5-9:   3224           
+ Number of used observations:                           3151  ( 97.74%) 
+ Number of suppressed observations:                       73  (  2.26%) 
+----------------------------------------------------------------------- 
+
+
+
+ Baseline Statistics
+      Baseline        # W.Obs   W.RMS Del   N.R.D.   N.R.D. W.RMS Rate   N.R.R.  D.RW   R.RW 
+                    used/recov     ps     standard ( 15ps+i)  fs/s                ps    fs/s  
+
+ HART15M -KATH12M    95/  101    75.8       0.92      1.64  1339.6        0.00   66.3   30.0
+ HART15M -MATERA    283/  289    48.8       0.94      1.50  1107.8        0.00   41.0   30.0
+ HART15M -SEJONG     75/   75    80.3       0.95      1.62  1544.0        0.00   68.7   30.0
+ HART15M -WETTZ13N  270/  276    43.9       0.93      1.65  1220.7        0.00   40.5   30.0
+ HART15M -YARRA12M  230/  232    71.0       0.93      2.97  1320.7        0.00   72.7   30.0
+ KATH12M -KOKEE     114/  120    86.7       0.95      1.80   607.1        0.00   76.5   30.0
+ KATH12M -MATERA     25/   26   108.2       0.95      1.58   805.0        0.00   91.1   30.0
+ KATH12M -SEJONG    101/  109    98.1       0.96      1.09   874.4        0.00   50.5   30.0
+ KATH12M -WETTZ13N   31/   31    89.5       0.93      1.48  1651.7        0.00   79.5   30.0
+ KATH12M -YARRA12M  286/  300    78.8       0.94      1.60   670.6        0.00   68.7   30.0
+ KOKEE   -MATERA    100/  101    36.8       0.91      1.14   396.6        0.00   28.8   30.0
+ KOKEE   -SEJONG    227/  229    37.6       0.91      1.06   526.4        0.00   25.3   30.0
+ KOKEE   -WETTZ13N  145/  146    47.9       0.93      1.60   481.6        0.00   43.4   30.0
+ KOKEE   -YARRA12M  106/  110    48.3       0.90      1.71   734.1        0.00   48.5   30.0
+ MATERA  -WETTZ13N  446/  451    30.8       0.95      1.14   444.2        0.00   23.0   30.0
+ MATERA  -YARRA12M  109/  109    70.8       0.95      1.70  1457.8        0.00   62.0   30.0
+ SEJONG  -MATERA    114/  120    71.6       0.97      1.00   584.7        0.00   24.5   30.0
+ SEJONG  -WETTZ13N  134/  138    52.1       0.95      0.97   374.0        0.00   18.9   30.0
+ SEJONG  -YARRA12M  167/  168    64.1       0.94      1.05   690.0        0.00   34.1   30.0
+ WETTZ13N-YARRA12M   93/   93    55.5       0.93      1.74  2530.1        0.00   49.1 2587.1
+
+
+ Source Statistics 
+     Source           # W.Obs   W.RMS Del   N.R.D.   N.R.D. W.RMS Rate   N.R.R. 
+                                   ps     standard  ( 15ps)   fs/s  
+ 
+     1504+377 A      11/   11    37.3        0.75     0.88   305.0        0.00
+     1519-273 B       6/    8    69.1        1.14     1.30   763.9        0.00
+     CTA26    C      52/   54    44.1        0.89     1.55   521.0        0.00
+     1546+027 D      88/   91    57.7        1.04     1.51   554.3        0.00
+     1657-261 E       9/    9    62.0        1.30     1.86   888.2        0.00
+     1801+010 F       5/    5    34.5        0.93     1.06  1031.8        0.00
+     1657-562 G      22/   23    76.4        1.01     2.50   842.8        0.00
+     1732+389 H      21/   22    50.6        1.12     1.67   881.9        0.00
+     1448+762 I      26/   26    39.3        0.85     1.08   118.4        0.00
+     1213-172 J      34/   35    46.7        1.02     1.99   515.8        0.00
+     1243-072 K      30/   30    44.0        0.96     1.35   377.6        0.00
+     1424-418 L      59/   61    59.4        0.96     2.79   606.4        0.00
+     1255-316 M      26/   28    48.0        1.01     1.73   642.4        0.00
+     1324+224 N      20/   20    36.2        0.81     1.00   319.3        0.00
+     1424+240 O      21/   21    32.0        0.63     0.77   166.7        0.00
+     1334-127 P      99/  100    40.7        0.89     1.98   752.2        0.00
+     1351-018 Q      10/   10    37.8        0.85     0.95   133.0        0.00
+     1846+322 R      13/   13    55.8        0.94     1.11   971.5        0.00
+     2255-282 S      44/   44    41.2        0.84     1.70   556.4        0.00
+     2318+049 T      53/   57    73.3        1.15     1.65  1227.9        0.00
+     1849+670 U      71/   71    26.8        0.69     0.99   193.0        0.00
+     2319+317 V       7/    7    57.7        0.87     1.01   448.1        0.00
+     2319+444 W       0/    0     0.0        0.00     0.00     0.0        0.00
+     3C446    X     151/  151    58.4        0.98     1.41   833.8        0.00
+     2355-106 Y     158/  162    59.0        0.93     1.59   992.8        0.00
+     3C274    Z      43/   43    40.3        0.96     1.44  1906.5        0.00
+     2215+150 A      37/   38    62.4        0.99     1.26  3441.8        0.00
+     2214+350 B       1/    1     3.0        0.05     0.05   143.4        0.00
+     2000+472 C      58/   61    46.5        1.04     1.46   407.5        0.00
+     1921-293 D       3/    3    36.3        0.74     1.71  1454.3        0.00
+     1954-388 E      18/   19    36.8        0.58     1.24   896.0        0.00
+     2008-159 F      49/   51    51.5        0.94     1.50   997.8        0.00
+     2013+163 G       7/    7    60.2        0.81     0.88    76.5        0.00
+     2126-158 H      11/   12    41.9        0.90     2.17  2161.5        0.00
+     2052-474 I      10/   10   119.8        1.20     1.59  1161.7        0.00
+     2059+034 J      10/   10    46.5        1.07     1.52  2819.3        0.00
+     1156+295 K     115/  117    39.3        0.79     1.04   610.4        0.00
+     0237-027 L       9/    9    49.0        0.89     1.16   379.0        0.00
+     0308-611 M      35/   36    95.8        1.16     1.92   636.9        0.00
+     1145-071 N      25/   25    55.3        1.13     1.96   581.4        0.00
+     0309+411 O       8/    8    64.3        1.17     1.70   507.0        0.00
+     0322+222 P      11/   11    44.0        1.01     1.40   180.6        0.00
+     0530-727 Q      16/   17    74.7        0.96     2.78   272.9        0.00
+     0402-362 R      17/   17    40.1        0.59     1.22   980.3        0.00
+     0446+112 S      13/   13    51.2        1.10     1.43   436.3        0.00
+     0229+131 T      17/   17    46.6        1.08     1.26   296.9        0.00
+     0133+476 U     103/  106    47.5        1.06     1.51   523.5        0.00
+     0027+056 V       8/   10    39.5        0.67     0.75    58.1        0.00
+     0016+731 W      90/   91    40.2        0.98     1.22   141.7        0.00
+     0017+200 X     158/  160    60.4        0.97     1.43   660.1        0.00
+     0048-097 Y       5/    5    70.6        1.25     1.54    69.2        0.00
+     0059+581 Z     171/  177    41.1        0.99     1.44   332.7        0.00
+     0131-522 A      34/   34    85.1        1.07     1.85   812.0        0.00
+     0104-408 B      61/   62    58.9        0.80     1.42   554.3        0.00
+     0119+115 C      22/   22    32.4        0.85     1.08   719.5        0.00
+     0537-286 D      40/   40    49.0        0.90     1.36   897.7        0.00
+     0942+358 E       0/    0     0.0        0.00     0.00     0.0        0.00
+     0955+476 F     147/  150    46.0        0.95     1.41  1132.9        0.00
+     0613+570 G      26/   27    45.7        1.03     1.29   425.0        0.00
+     1040+244 H      16/   18    37.5        0.82     1.11  1016.0        0.00
+     1053+704 I      18/   18    36.0        0.84     1.14   191.8        0.00
+     1124-186 J      61/   65    57.1        0.95     1.97  1524.4        0.00
+     1057-797 K      66/   69    74.6        0.95     2.60   511.1        0.00
+     1104-445 L      14/   15    75.5        0.87     1.39   244.5        0.00
+     0925-203 M       1/    1    40.1        0.90     0.98   762.1        0.00
+     0827+243 N      48/   50    45.2        0.97     1.64   729.0        0.00
+     0718+793 O       7/    7    29.7        0.63     0.71    83.1        0.00
+     0632-235 P      25/   26    44.3        0.90     1.59   513.4        0.00
+     0641+392 Q       1/    1   136.8        1.86     2.17    72.8        0.00
+     0727-115 R     181/  183    40.4        0.78     1.69   748.8        0.00
+     0736+017 S      54/   55    40.5        0.78     1.72  1111.2        0.00
+     0823+033 T      88/   88    38.2        0.81     1.50  1329.8        0.00
+     0800+618 U       5/    5    25.2        0.50     0.53   200.2        0.00
+     0814+425 V     152/  155    50.8        0.96     1.50  1275.6        0.00
+
+
+ Station Statistics 
+     Station          # W.Obs   W.RMS Del   N.R.D.   N.R.D. W.RMS Rate   N.R.R. 
+                                   ps     standard  ( 15ps)   fs/s   
+ 
+     HART15M        953/  973    53.6        0.94     2.01  1275.1        0.00
+     KATH12M        652/  687    83.3        0.94     1.57   874.5        0.00
+     KOKEE          692/  706    44.3        0.92     1.44   551.8        0.00
+     MATERA        1077/ 1096    39.1        0.95     1.31   796.6        0.00
+     SEJONG         818/  839    53.4        0.94     1.10   742.9        0.00
+     WETTZ13N      1119/ 1135    38.3        0.94     1.39   776.1        0.00
+     YARRA12M       991/ 1012    66.0        0.94     1.97  1020.5        0.00
+
+
+                       *** Flyby Status ***
+
+                    directory: /500/oper/solve_save_files
+
+Station   Source    Nutation  Nutation  Earth     Earth     Station   Pressure  EOP Intp. EOP Intp. High Freq Axis      
+Positions Positions Model     Time      Rotation  Rotation  Velocity  Loading   Smoothing Smoothing EOP       Offset    
+                              Series    Series    Interpol. Model               CALC      Mod File  Model     Mod File  
+--------- --------- --------- --------- --------- --------- --------- --------- --------- --------- --------- ---------
+glo.sit   18Oct04.s NONE      NONE      NONE      NONE      glo.vel   NONE      NO_ZONAL  N/A       NONE      glo.axis  
+
+Site Plate Map: /500/oper/solve_save_files/sitpl.dat           
+
+ Parameter adjustments for run 19024-2053 User=DG
+ Reference epoch for polynomial models: 19/01/08 00:00
+                                        Parameter               Adjustment              a-sigma              m-sigma
+      KOKEE    CLCK 19/01/07 19:46 Reference
+Station positions are for epoch: 2019.01.08-04:12:22
+    1. HART15M  7378 AFRC  X Comp       5085490808.31 mm         16.330 mm              8.040 mm              8.040 mm
+    2. HART15M  7378 AFRC  Y Comp       2668161583.51 mm        -21.854 mm              4.291 mm              4.291 mm
+    3. HART15M  7378 AFRC  Z Comp      -2768692526.42 mm         -5.730 mm              5.077 mm              5.077 mm
+       HART15M  7378       U Comp                6.38 mm          6.377 mm              8.978 mm              8.978 mm
+       HART15M  7378       E Comp              -26.94 mm        -26.939 mm              3.682 mm              3.682 mm
+       HART15M  7378       N Comp               -3.27 mm         -3.274 mm              3.830 mm              3.831 mm
+    4. HART15M  CL 0 19/01/07 17:04                            2904.057 ns              0.035 ns              0.035 ns        
+    5. HART15M  CL 1 19/01/07 17:04                              46.195 D-14            0.073 D-14            0.073 D-14      
+   31. HART15M  AT 0 19/01/07 17:00                            1167.091 ps              9.175 ps              9.175 ps
+       HART15M  Atm  2019.01.08-04:52:50.799  Avg:   575.226 ps   Rms:      43.146 ps   Tot_Rms:      43.148 ps
+   57. HART15M  NG 19/01/07 17:00                                 0.296 mm              0.276 mm              0.276 mm        
+   58. HART15M  EG 19/01/07 17:00                                 0.228 mm              0.194 mm              0.194 mm        
+   59. HART15M  NG 19/01/08 16:58                                -0.717 mm              0.280 mm              0.281 mm        
+   60. HART15M  EG 19/01/08 16:58                                -0.491 mm              0.227 mm              0.228 mm        
+
+Station positions are for epoch: 2019.01.08-05:39:35
+   61. KATH12M  7375 AUST  X Comp      -4147354847.29 mm         35.939 mm              9.093 mm              9.093 mm
+   62. KATH12M  7375 AUST  Y Comp       4581542295.86 mm        -21.416 mm              7.872 mm              7.873 mm
+   63. KATH12M  7375 AUST  Z Comp      -1573302868.23 mm          5.190 mm              5.320 mm              5.320 mm
+       KATH12M  7375       U Comp              -40.03 mm        -40.032 mm             10.540 mm             10.540 mm
+       KATH12M  7375       E Comp              -12.27 mm        -12.271 mm              5.959 mm              5.960 mm
+       KATH12M  7375       N Comp               -4.90 mm         -4.902 mm              5.134 mm              5.134 mm
+   64. KATH12M  CL 0 19/01/07 17:00                           -5616.803 ns              0.046 ns              0.046 ns        
+   65. KATH12M  CL 1 19/01/07 17:00                             -62.956 D-14            0.065 D-14            0.065 D-14      
+   91. KATH12M  AT 0 19/01/07 17:00                            2054.322 ps             10.827 ps             10.827 ps
+       KATH12M  Atm  2019.01.08-06:23:41.093  Avg:  1010.248 ps   Rms:      58.144 ps   Tot_Rms:      58.146 ps
+  117. KATH12M  NG 19/01/07 17:00                                 0.819 mm              0.409 mm              0.409 mm        
+  118. KATH12M  EG 19/01/07 17:00                                 1.506 mm              0.475 mm              0.475 mm        
+  119. KATH12M  NG 19/01/08 16:58                                -2.401 mm              0.339 mm              0.339 mm        
+  120. KATH12M  EG 19/01/08 16:58                                -0.030 mm              0.235 mm              0.235 mm        
+
+  121. KOKEE    AT 0 19/01/07 17:00                             518.854 ps              8.947 ps              8.947 ps
+       KOKEE    Atm  2019.01.08-04:49:55.287  Avg:   263.976 ps   Rms:      21.358 ps   Tot_Rms:      21.359 ps
+  147. KOKEE    NG 19/01/07 17:00                                -0.162 mm              0.161 mm              0.161 mm        
+  148. KOKEE    EG 19/01/07 17:00                                 0.154 mm              0.215 mm              0.215 mm        
+  149. KOKEE    NG 19/01/08 16:58                                 0.102 mm              0.154 mm              0.154 mm        
+  150. KOKEE    EG 19/01/08 16:58                                -0.588 mm              0.208 mm              0.208 mm        
+
+Station positions are for epoch: 2019.01.08-04:18:53
+  151. MATERA   7243 EURA  X Comp       4641938353.84 mm          0.703 mm              7.176 mm              7.176 mm
+  152. MATERA   7243 EURA  Y Comp       1393003400.78 mm        -28.077 mm              3.425 mm              3.426 mm
+  153. MATERA   7243 EURA  Z Comp       4133325863.83 mm         -0.946 mm              5.329 mm              5.330 mm
+       MATERA   7243       U Comp               -6.23 mm         -6.228 mm              6.350 mm              6.350 mm
+       MATERA   7243       E Comp              -27.09 mm        -27.095 mm              3.020 mm              3.020 mm
+       MATERA   7243       N Comp                4.10 mm          4.101 mm              6.495 mm              6.496 mm
+  154. MATERA   CL 0 19/01/07 17:00                          -10560.277 ns              0.031 ns              0.031 ns        
+  155. MATERA   CL 1 19/01/07 17:00                               2.928 D-14            0.070 D-14            0.070 D-14      
+  181. MATERA   AT 0 19/01/07 17:00                             265.183 ps              8.439 ps              8.439 ps
+       MATERA   Atm  2019.01.08-04:50:03.991  Avg:   142.320 ps   Rms:      43.570 ps   Tot_Rms:      43.572 ps
+  207. MATERA   NG 19/01/07 17:00                                -0.153 mm              0.156 mm              0.156 mm        
+  208. MATERA   EG 19/01/07 17:00                                -0.790 mm              0.142 mm              0.142 mm        
+  209. MATERA   NG 19/01/08 16:58                                 0.049 mm              0.148 mm              0.148 mm        
+  210. MATERA   EG 19/01/08 16:58                                -0.216 mm              0.166 mm              0.166 mm        
+
+Station positions are for epoch: 2019.01.08-05:59:16
+  211. SEJONG   7368 EURA  X Comp      -3110080153.86 mm         29.246 mm              6.710 mm              6.710 mm
+  212. SEJONG   7368 EURA  Y Comp       4082066569.34 mm        -28.025 mm              4.276 mm              4.276 mm
+  213. SEJONG   7368 EURA  Z Comp       3775076749.73 mm         -8.662 mm              4.581 mm              4.581 mm
+       SEJONG   7368       U Comp              -37.31 mm        -37.313 mm              7.056 mm              7.057 mm
+       SEJONG   7368       E Comp               -6.28 mm         -6.280 mm              5.463 mm              5.463 mm
+       SEJONG   7368       N Comp               16.85 mm         16.854 mm              2.158 mm              2.158 mm
+  214. SEJONG   CL 0 19/01/07 17:00                          -39036.401 ns              0.034 ns              0.034 ns        
+  215. SEJONG   CL 1 19/01/07 17:00                               3.508 D-14            0.055 D-14            0.055 D-14      
+  241. SEJONG   AT 0 19/01/07 17:00                             288.314 ps              8.648 ps              8.648 ps
+       SEJONG   Atm  2019.01.08-06:22:29.362  Avg:   139.705 ps   Rms:      19.498 ps   Tot_Rms:      19.499 ps
+  267. SEJONG   NG 19/01/07 17:00                                -0.351 mm              0.170 mm              0.170 mm        
+  268. SEJONG   EG 19/01/07 17:00                                 0.019 mm              0.149 mm              0.149 mm        
+  269. SEJONG   NG 19/01/08 16:58                                -1.123 mm              0.164 mm              0.164 mm        
+  270. SEJONG   EG 19/01/08 16:58                                -0.318 mm              0.109 mm              0.109 mm        
+
+Station positions are for epoch: 2019.01.08-04:03:13
+  271. WETTZ13N 7387 EURA  X Comp       4075627562.89 mm          0.202 mm              6.922 mm              6.922 mm
+  272. WETTZ13N 7387 EURA  Y Comp        931774332.46 mm        -29.867 mm              3.240 mm              3.240 mm
+  273. WETTZ13N 7387 EURA  Z Comp       4801552425.36 mm         -4.330 mm              5.283 mm              5.283 mm
+       WETTZ13N 7387       U Comp               -7.50 mm         -7.500 mm              5.706 mm              5.706 mm
+       WETTZ13N 7387       E Comp              -29.16 mm        -29.160 mm              2.909 mm              2.909 mm
+       WETTZ13N 7387       N Comp                2.05 mm          2.054 mm              6.730 mm              6.731 mm
+  274. WETTZ13N CL 0 19/01/07 17:00                           -8481.117 ns              0.031 ns              0.031 ns        
+  275. WETTZ13N CL 1 19/01/07 17:00                              22.565 D-14            0.071 D-14            0.071 D-14      
+  301. WETTZ13N AT 0 19/01/07 17:00                             373.644 ps              8.299 ps              8.299 ps
+       WETTZ13N Atm  2019.01.08-05:51:45.152  Avg:   200.260 ps   Rms:      37.252 ps   Tot_Rms:      37.254 ps
+  327. WETTZ13N NG 19/01/07 17:00                                -0.056 mm              0.112 mm              0.112 mm        
+  328. WETTZ13N EG 19/01/07 17:00                                -0.271 mm              0.135 mm              0.135 mm        
+  329. WETTZ13N NG 19/01/08 16:58                                -0.622 mm              0.103 mm              0.103 mm        
+  330. WETTZ13N EG 19/01/08 16:58                                -0.196 mm              0.120 mm              0.120 mm        
+
+Station positions are for epoch: 2019.01.08-04:52:43
+  331. YARRA12M 7376 AUST  X Comp      -2388896421.52 mm         11.902 mm              6.926 mm              6.926 mm
+  332. YARRA12M 7376 AUST  Y Comp       5043350059.85 mm         11.163 mm              5.987 mm              5.987 mm
+  333. YARRA12M 7376 AUST  Z Comp      -3078590554.80 mm         -7.776 mm              5.292 mm              5.293 mm
+       YARRA12M 7376       U Comp                8.14 mm          8.141 mm              7.117 mm              7.118 mm
+       YARRA12M 7376       E Comp              -15.54 mm        -15.535 mm              6.240 mm              6.240 mm
+       YARRA12M 7376       N Comp               -4.37 mm         -4.374 mm              4.714 mm              4.714 mm
+  334. YARRA12M CL 0 19/01/07 17:00                           -2441.194 ns              0.049 ns              0.049 ns        
+  335. YARRA12M CL 1 19/01/07 17:00                              58.968 D-14            0.297 D-14            0.297 D-14      
+  361. YARRA12M BR 0 19/01/08 00:38                               0.597 ns              0.043 ns              0.043 ns        
+  362. YARRA12M BR 1 19/01/08 00:38                              -1.400 D-14            0.376 D-14            0.376 D-14      
+  363. YARRA12M BR 0 19/01/08 11:36                              -1.045 ns              0.198 ns              0.198 ns        
+  364. YARRA12M BR 1 19/01/08 11:36                               1.122 D-14            0.446 D-14            0.446 D-14      
+  365. YARRA12M AT 0 19/01/07 17:00                            1088.104 ps              6.371 ps              6.371 ps
+       YARRA12M Atm  2019.01.08-04:47:32.307  Avg:   521.673 ps   Rms:      67.924 ps   Tot_Rms:      67.927 ps
+  391. YARRA12M NG 19/01/07 17:00                                 1.771 mm              0.220 mm              0.220 mm        
+  392. YARRA12M EG 19/01/07 17:00                                -0.566 mm              0.238 mm              0.238 mm        
+  393. YARRA12M NG 19/01/08 16:58                                -0.954 mm              0.118 mm              0.118 mm        
+  394. YARRA12M EG 19/01/08 16:58                                 0.446 mm              0.202 mm              0.202 mm        
+
+  395.A 0017+200 RT. ASC.          00 19 37.85448683     -0.0941      m-asec     0.0911      m-asec     0.0911      m-asec
+                  CORRECTION            -0.0000063
+                SCALED SIGMA             0.0000061
+
+  396.A 0017+200 DEC.              20 21 45.64453261          -0.0774 m-asec          0.0872 m-asec          0.0872 m-asec
+                  CORRECTION            -0.0000774
+                SCALED SIGMA             0.0000872
+
+        0017+200 CORRELATION     0.0682  Reference date: 2000.01.01-12:00:00
+  397.D 0048-097 RT. ASC.          00 50 41.31784101      6.8018      m-asec     3.8861      m-asec     3.8863      m-asec
+                  CORRECTION             0.0004535
+                SCALED SIGMA             0.0002591
+
+  398.D 0048-097 DEC.             -09 29 05.20922380           1.0450 m-asec          0.7714 m-asec          0.7715 m-asec
+                  CORRECTION             0.0010450
+                SCALED SIGMA             0.0007715
+
+        0048-097 CORRELATION     0.9347  Reference date: 2000.01.01-12:00:00
+  399.F 0104-408 RT. ASC.          01 06 45.10794298     -0.3829      m-asec     0.2055      m-asec     0.2055      m-asec
+                  CORRECTION            -0.0000255
+                SCALED SIGMA             0.0000137
+
+  400.F 0104-408 DEC.             -40 34 19.96001302           0.2161 m-asec          0.2240 m-asec          0.2240 m-asec
+                  CORRECTION             0.0002161
+                SCALED SIGMA             0.0002240
+
+        0104-408 CORRELATION    -0.4884  Reference date: 2000.01.01-12:00:00
+  401.H 0131-522 RT. ASC.          01 33 05.76249463     -0.9216      m-asec     0.3574      m-asec     0.3574      m-asec
+                  CORRECTION            -0.0000614
+                SCALED SIGMA             0.0000238
+
+  402.H 0131-522 DEC.             -52 00 03.94571413           0.0068 m-asec          0.2510 m-asec          0.2510 m-asec
+                  CORRECTION             0.0000068
+                SCALED SIGMA             0.0002510
+
+        0131-522 CORRELATION    -0.3923  Reference date: 2000.01.01-12:00:00
+  403.L 0308-611 RT. ASC.          03 09 56.09910897     -0.6751      m-asec     0.4391      m-asec     0.4391      m-asec
+                  CORRECTION            -0.0000450
+                SCALED SIGMA             0.0000293
+
+  404.L 0308-611 DEC.             -60 58 39.05650211          -0.3519 m-asec          0.2632 m-asec          0.2632 m-asec
+                  CORRECTION            -0.0003519
+                SCALED SIGMA             0.0002632
+
+        0308-611 CORRELATION    -0.1080  Reference date: 2000.01.01-12:00:00
+  405.R 0530-727 RT. ASC.          05 29 30.04209127     -1.2590      m-asec     0.9126      m-asec     0.9127      m-asec
+                  CORRECTION            -0.0000839
+                SCALED SIGMA             0.0000608
+
+  406.R 0530-727 DEC.             -72 45 28.50825880          -0.7588 m-asec          0.2531 m-asec          0.2531 m-asec
+                  CORRECTION            -0.0007588
+                SCALED SIGMA             0.0002531
+
+        0530-727 CORRELATION    -0.0972  Reference date: 2000.01.01-12:00:00
+  407.A 0814+425 RT. ASC.          08 18 15.99961663      0.1790      m-asec     0.1065      m-asec     0.1065      m-asec
+                  CORRECTION             0.0000119
+                SCALED SIGMA             0.0000071
+
+  408.A 0814+425 DEC.              42 22 45.41487618          -0.0378 m-asec          0.0801 m-asec          0.0801 m-asec
+                  CORRECTION            -0.0000378
+                SCALED SIGMA             0.0000801
+
+        0814+425 CORRELATION     0.1480  Reference date: 2000.01.01-12:00:00
+  409.I 1057-797 RT. ASC.          10 58 43.30984572      0.7608      m-asec     0.8748      m-asec     0.8748      m-asec
+                  CORRECTION             0.0000507
+                SCALED SIGMA             0.0000583
+
+  410.I 1057-797 DEC.             -80 03 54.16015290          -0.3429 m-asec          0.1603 m-asec          0.1603 m-asec
+                  CORRECTION            -0.0003429
+                SCALED SIGMA             0.0001603
+
+        1057-797 CORRELATION    -0.1835  Reference date: 2000.01.01-12:00:00
+  411.J 1104-445 RT. ASC.          11 07 08.69386122     -3.8981      m-asec     2.5231      m-asec     2.5232      m-asec
+                  CORRECTION            -0.0002599
+                SCALED SIGMA             0.0001682
+
+  412.J 1104-445 DEC.             -44 49 07.61775114           0.5489 m-asec          0.8188 m-asec          0.8188 m-asec
+                  CORRECTION             0.0005489
+                SCALED SIGMA             0.0008188
+
+        1104-445 CORRELATION    -0.2628  Reference date: 2000.01.01-12:00:00
+  413.V 1424-418 RT. ASC.          14 27 56.29758172      0.2455      m-asec     0.2048      m-asec     0.2048      m-asec
+                  CORRECTION             0.0000164
+                SCALED SIGMA             0.0000137
+
+  414.V 1424-418 DEC.             -42 06 19.43763760          -0.0385 m-asec          0.2177 m-asec          0.2177 m-asec
+                  CORRECTION            -0.0000385
+                SCALED SIGMA             0.0002177
+
+        1424-418 CORRELATION    -0.4260  Reference date: 2000.01.01-12:00:00
+  415.Z 1546+027 RT. ASC.          15 49 29.43684731      0.0645      m-asec     0.1062      m-asec     0.1062      m-asec
+                  CORRECTION             0.0000043
+                SCALED SIGMA             0.0000071
+
+  416.Z 1546+027 DEC.              02 37 01.16359861           0.1789 m-asec          0.0955 m-asec          0.0955 m-asec
+                  CORRECTION             0.0001789
+                SCALED SIGMA             0.0000955
+
+        1546+027 CORRELATION     0.0761  Reference date: 2000.01.01-12:00:00
+  417.B 1657-562 RT. ASC.          17 01 44.85819766      1.2572      m-asec     0.3961      m-asec     0.3961      m-asec
+                  CORRECTION             0.0000838
+                SCALED SIGMA             0.0000264
+
+  418.B 1657-562 DEC.             -56 21 55.90288807          -0.9349 m-asec          0.2988 m-asec          0.2988 m-asec
+                  CORRECTION            -0.0009349
+                SCALED SIGMA             0.0002988
+
+        1657-562 CORRELATION    -0.0917  Reference date: 2000.01.01-12:00:00
+  419.C 1732+389 RT. ASC.          17 34 20.57848901     -0.7141      m-asec     0.4282      m-asec     0.4283      m-asec
+                  CORRECTION            -0.0000476
+                SCALED SIGMA             0.0000286
+
+  420.C 1732+389 DEC.              38 57 51.44293652          -0.1381 m-asec          0.2077 m-asec          0.2077 m-asec
+                  CORRECTION            -0.0001381
+                SCALED SIGMA             0.0002077
+
+        1732+389 CORRELATION     0.4956  Reference date: 2000.01.01-12:00:00
+  421.G 1921-293 RT. ASC.          19 24 51.05566970     -4.2816      m-asec     2.0827      m-asec     2.0828      m-asec
+                  CORRECTION            -0.0002854
+                SCALED SIGMA             0.0001389
+
+  422.G 1921-293 DEC.             -29 14 30.13310215         -12.0497 m-asec          5.0021 m-asec          5.0024 m-asec
+                  CORRECTION            -0.0120497
+                SCALED SIGMA             0.0050024
+
+        1921-293 CORRELATION     0.9831  Reference date: 2000.01.01-12:00:00
+  423.I 2000+472 RT. ASC.          20 02 10.41828280      0.4068      m-asec     0.1558      m-asec     0.1558      m-asec
+                  CORRECTION             0.0000271
+                SCALED SIGMA             0.0000104
+
+  424.I 2000+472 DEC.              47 25 28.77330416          -0.4181 m-asec          0.1422 m-asec          0.1422 m-asec
+                  CORRECTION            -0.0004181
+                SCALED SIGMA             0.0001422
+
+        2000+472 CORRELATION     0.5046  Reference date: 2000.01.01-12:00:00
+  425.J 2008-159 RT. ASC.          20 11 15.71092880     -0.0565      m-asec     0.1362      m-asec     0.1362      m-asec
+                  CORRECTION            -0.0000038
+                SCALED SIGMA             0.0000091
+
+  426.J 2008-159 DEC.             -15 46 40.25384085          -0.1757 m-asec          0.1314 m-asec          0.1314 m-asec
+                  CORRECTION            -0.0001757
+                SCALED SIGMA             0.0001314
+
+        2008-159 CORRELATION     0.1581  Reference date: 2000.01.01-12:00:00
+  427.K 2013+163 RT. ASC.          20 16 13.86046399      6.5008      m-asec     3.2107      m-asec     3.2109      m-asec
+                  CORRECTION             0.0004334
+                SCALED SIGMA             0.0002141
+
+  428.K 2013+163 DEC.              16 32 34.11321627           0.1763 m-asec          0.4556 m-asec          0.4556 m-asec
+                  CORRECTION             0.0001763
+                SCALED SIGMA             0.0004556
+
+        2013+163 CORRELATION     0.7781  Reference date: 2000.01.01-12:00:00
+  429.L 2052-474 RT. ASC.          20 56 16.35936814     -6.7590      m-asec     3.4844      m-asec     3.4846      m-asec
+                  CORRECTION            -0.0004506
+                SCALED SIGMA             0.0002323
+
+  430.L 2052-474 DEC.             -47 14 47.61350445          14.1417 m-asec          8.0867 m-asec          8.0871 m-asec
+                  CORRECTION             0.0141417
+                SCALED SIGMA             0.0080871
+
+        2052-474 CORRELATION    -0.7622  Reference date: 2000.01.01-12:00:00
+  431.P 2215+150 RT. ASC.          22 18 10.91387050     -0.4770      m-asec     0.2433      m-asec     0.2433      m-asec
+                  CORRECTION            -0.0000318
+                SCALED SIGMA             0.0000162
+
+  432.P 2215+150 DEC.              15 20 35.71711666          -0.3233 m-asec          0.1376 m-asec          0.1376 m-asec
+                  CORRECTION            -0.0003233
+                SCALED SIGMA             0.0001376
+
+        2215+150 CORRELATION     0.3354  Reference date: 2000.01.01-12:00:00
+  433.S 2318+049 RT. ASC.          23 20 44.85656927     -0.4295      m-asec     0.1539      m-asec     0.1539      m-asec
+                  CORRECTION            -0.0000286
+                SCALED SIGMA             0.0000103
+
+  434.S 2318+049 DEC.              05 13 49.95287384           0.3171 m-asec          0.1273 m-asec          0.1274 m-asec
+                  CORRECTION             0.0003171
+                SCALED SIGMA             0.0001274
+
+        2318+049 CORRELATION     0.2217  Reference date: 2000.01.01-12:00:00
+  435.T 2319+317 RT. ASC.          23 21 54.95593950     -0.7201      m-asec     0.4278      m-asec     0.4278      m-asec
+                  CORRECTION            -0.0000480
+                SCALED SIGMA             0.0000285
+
+  436.T 2319+317 DEC.              32 04 07.62191466          -0.5953 m-asec          0.4194 m-asec          0.4194 m-asec
+                  CORRECTION            -0.0005953
+                SCALED SIGMA             0.0004194
+
+        2319+317 CORRELATION    -0.3477  Reference date: 2000.01.01-12:00:00
+  437.V 2355-106 RT. ASC.          23 58 10.88238882     -0.2818      m-asec     0.0887      m-asec     0.0887      m-asec
+                  CORRECTION            -0.0000188
+                SCALED SIGMA             0.0000059
+
+  438.V 2355-106 DEC.             -10 20 08.61158529          -0.2642 m-asec          0.0838 m-asec          0.0838 m-asec
+                  CORRECTION            -0.0002642
+                SCALED SIGMA             0.0000838
+
+        2355-106 CORRELATION     0.0609  Reference date: 2000.01.01-12:00:00
+ Atmosphere Constraint Statistics
+  1. HART15M  Input  40.00 ps/h RMS  45.01 ps/h NRMS  1.13 share 0.12 count  25
+  2. KATH12M  Input  40.00 ps/h RMS  50.43 ps/h NRMS  1.26 share 0.29 count  25
+  3. KOKEE    Input  40.00 ps/h RMS  23.06 ps/h NRMS  0.58 share 0.16 count  25
+  4. MATERA   Input  40.00 ps/h RMS  20.82 ps/h NRMS  0.52 share 0.09 count  25
+  5. SEJONG   Input  40.00 ps/h RMS  18.69 ps/h NRMS  0.47 share 0.14 count  25
+  6. WETTZ13N Input  40.00 ps/h RMS  36.28 ps/h NRMS  0.91 share 0.08 count  25
+  7. YARRA12M Input  40.00 ps/h RMS  41.36 ps/h NRMS  1.03 share 0.10 count  25
+     Overall                    RMS  35.68 ps/h NRMS  0.89 share 0.14 count 175
+
+ Clock Constraint Statistics
+  1. HART15M  Input   2.00 D-14 RMS   1.90 D-14 NRMS  0.95 share 0.27 count  25
+  2. KATH12M  Input   2.00 D-14 RMS   2.54 D-14 NRMS  1.27 share 0.44 count  25
+  3. MATERA   Input   2.00 D-14 RMS   1.49 D-14 NRMS  0.74 share 0.25 count  25
+  4. SEJONG   Input   2.00 D-14 RMS   1.38 D-14 NRMS  0.69 share 0.28 count  25
+  5. WETTZ13N Input   2.00 D-14 RMS   1.58 D-14 NRMS  0.79 share 0.25 count  25
+  6. YARRA12M Input   2.00 D-14 RMS   2.13 D-14 NRMS  1.07 share 0.35 count  25
+     Overall                    RMS   1.88 D-14 NRMS  0.94 share 0.31 count 150
+
+  439. UT1-TAI   1,  19/01/08 04:44       -0.3475  ms/d     -16.59 micros/d        9.37 micros/d        9.37 micros/d
+ EOP without included hi-freq variations  (a-sigmas)  
+                      XWOB          YWOB          UT1-TAI          XSIG         YSIG         USIG
+                       mas           mas            ms           microasec    microasec    microsec
+19/01/08 04:44        0.0000         0.0000         0.0000          0.00         0.00         0.00
+
+ EOP epoch (TT)   MJD: 58491.198272        NUT epoch (TT)   MJD: 58491.198272
+  440. Nutation offset in longitude (Psi)                0.762 mas       72.9 microasec       72.9 microasec       
+       Nutation offset around X-axis       (dX)          0.303 mas       29.0 microasec       29.0 microasec       
+       Nutation offset wrt IAU 1980 model (Psi)       -106.879 mas       72.9 microasec       72.9 microasec       
+  441. Nutation offset in obliquity (Eps)               -0.036 mas       34.9 microasec       34.9 microasec       
+       Nutation offset around Y-axis       (dY)         -0.036 mas       34.9 microasec       34.9 microasec       
+       Nutation offset wrt IAU 1980 model (Eps)         -7.423 mas       34.9 microasec       34.9 microasec       
+
+  442. HART15M -MATERA   Clock offset                           -14.457 ps              6.468 ps              6.468 ps
+  443. KATH12M -MATERA   Clock offset                            27.392 ps             25.317 ps             25.318 ps
+  444. KATH12M -SEJONG   Clock offset                            42.137 ps             13.151 ps             13.152 ps
+  445. KATH12M -WETTZ13N Clock offset                            63.625 ps             21.131 ps             21.132 ps
+  446. KATH12M -YARRA12M Clock offset                           -12.374 ps              9.026 ps              9.026 ps
+  447. MATERA  -WETTZ13N Clock offset                            16.855 ps              5.468 ps              5.468 ps
+  448. SEJONG  -WETTZ13N Clock offset                            19.820 ps              7.161 ps              7.161 ps
+  449. SEJONG  -YARRA12M Clock offset                           -14.802 ps              7.716 ps              7.716 ps
+  450. WETTZ13N-YARRA12M Clock offset                           -10.849 ps              8.845 ps              8.846 ps
+ 
+ General constraints usage information:                                                                                 
+ 
+ 1) CLO_RATE "Clock rate between segments     " sigma  2.000E+00 10^-14 sec/sec
+ 2) ATM_RATE "Atmosphere rate between segments" sigma  4.000E+01 psec/hr
+ 
+ Corrected Reduced Chi-Square   1.0001
+
+1     Baseline information for run 19024-2053
+      Monument to monument values at epoch 2019Jan08
+      Baseline vector components: Length, Vertical and Transverse components
+                                                Vector mag c-sigma        Length c-sigma Horizontal c-sigma Vertical c-sigma
+                                                      (mm)   (mm)           (mm)   (mm)      (mm)   (mm)       (mm)   (mm)
+ HART15M  7378       to KATH12M  7375        9504494783.26   8.82  9504494783.26   9.07    -13.62   3.90       3.04   8.71  2019/01/08 04:59:48
+ HART15M  7378       to KOKEE    7298       12723079266.87   9.05 12723079266.87   9.03    -15.40   3.83     -21.87   3.55  2019/01/08 04:59:48
+ HART15M  7378       to MATERA   7243        7032824825.79  10.30  7032824825.79   4.08      1.26   1.98      16.06   7.06  2019/01/08 04:59:48
+ HART15M  7378       to SEJONG   7368       10582411211.26   8.75 10582411211.26   7.36     -6.82   3.55       2.70   5.51  2019/01/08 04:59:48
+ HART15M  7378       to WETTZ13N 7387        7832207421.29   9.73  7832207421.29   4.21     -0.74   1.97      17.28   6.67  2019/01/08 04:59:48
+ HART15M  7378       to YARRA12M 7376        7848822940.24   7.39  7848822940.24   6.32    -16.34   2.95     -25.35   7.56  2019/01/08 04:59:48
+ KATH12M  7375       to KOKEE    7298        7853588831.36   7.51  7853588831.36   7.72      1.37   3.82     -39.63   9.94  2019/01/08 04:59:48
+ KATH12M  7375       to MATERA   7243       10953723875.77  10.34 10953723875.77  10.10     18.04   3.94      11.23   6.50  2019/01/08 04:59:48
+ KATH12M  7375       to SEJONG   7368        5470884693.47   6.91  5470884693.47   5.90      8.17   3.47       3.42  10.66  2019/01/08 04:59:48
+ KATH12M  7375       to WETTZ13N 7387       11026197255.60   9.71 11026197255.60  10.05     20.95   3.90      11.76   6.24  2019/01/08 04:59:48
+ KATH12M  7375       to YARRA12M 7376        2360367231.04   5.48  2360367231.04   3.58      1.08   3.04     -42.37  10.52  2019/01/08 04:59:48
+ KOKEE    7298       to MATERA   7243       10894147576.87  10.43 10894147576.87   7.24     26.77   3.11      -1.77   5.44  2019/01/08 04:59:48
+ KOKEE    7298       to SEJONG   7368        6745801091.03   6.29  6745801091.03   4.19     17.51   2.05      33.61   7.91  2019/01/08 04:59:48
+ KOKEE    7298       to WETTZ13N 7387       10357523479.05   9.73 10357523479.05   6.81     28.67   3.05      -0.27   5.54  2019/01/08 04:59:48
+ KOKEE    7298       to YARRA12M 7376        9498214355.06   6.48  9498214355.06   6.95      1.65   3.43       6.54   7.19  2019/01/08 04:59:48
+ MATERA   7243       to SEJONG   7368        8212989351.99   9.98  8212989351.99   5.42     12.82   2.66       1.74   6.33  2019/01/08 04:59:48
+ MATERA   7243       to WETTZ13N 7387         989932776.99   6.25   989932776.99   1.14     -2.05   1.16       3.06   3.91  2019/01/08 04:59:48
+ MATERA   7243       to YARRA12M 7376       10713048436.33   9.27 10713048436.33   7.71      7.87   3.04     -39.21   5.16  2019/01/08 04:59:48
+ SEJONG   7368       to WETTZ13N 7387        7912799054.75   9.30  7912799054.75   5.22     15.39   2.60       0.03   6.17  2019/01/08 04:59:48
+ SEJONG   7368       to YARRA12M 7376        6958227320.70   5.76  6958227320.70   5.20      5.00   2.53     -42.48   8.04  2019/01/08 04:59:48
+ WETTZ13N 7387       to YARRA12M 7376       10990531319.96   8.60 10990531319.96   7.66      9.92   3.01     -40.18   4.83  2019/01/08 04:59:48
+--
+Note: a posteriori baseline vectors are expressed in a baseline-centric reference frames. The first basis vector of the
+frame, l, is in direction of a priori baseline, (r_2 - r_1). Direction of the second vector, h, is defined by a cross
+product of a priori baseline vector and a priori geocentric vector of the 2nd station. The last basis vector, v, is
+perpendicular to the vectors l and h and is radially inward at the center of the baseline. For the short baselines, the
+vectors l and h are close to the horizontal plane and v is almost vertical (with opposite sign). In the table above the
+columns are:
+ * Vector mag:  length of the a posteriori baseline;
+ * Length:      l-component of the baseline;
+ * Horizontal:  h-component of the baseline;
+ * Vertical:    v-component of the baseline;
+ * c-sigma:     calculated (using standard deviations of adjusted station coordinates of baselines) standard deviations
+                of the corresponding values.
+

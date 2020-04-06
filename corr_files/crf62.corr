@@ -1,0 +1,165 @@
+TIMETAG 2011/08/04 18:28:53 
+MK3DB_VERSION    1
+Dbedit: crf62, CRF  | geo_export
+VLBI experiment CRF62 ( CRF )
+Created by dbedit Ver. 2010.06.18  revision 6.20
+        run by vlbi ( vlbi@joplin.usno.navy.mil )
+            at USN -- USNO Earth Orientation department
+               on joplin.usno.navy.mil at 2011.08.04-14:28:53 local time
+Dbedit control file history entry: crf62, CRF  | geo_export
+Directory /data/export/data/CRF62/7857
+$1>
++HEADER
+CORREL   WACO
+DATABASE 11MAY18XE
+SESSNAME CRF62
+EXPNO    7857
+OBSTIME  2011/05/18 2011/05/19
+UTSTART  1800
+DURATION 24
+DOY      138/139
+CORRTIME 2011/05/30 2011/08/04
+CORRPASS 1
+EXPORT   Done
+
++SUMMARY
+
+Qcode   % of Total   % of Correlated
+          scans          scans
+
+ 5-9       24%           25%
+  0        72%           75%
+ B-H        0%            0%
+Removed     4%
+
++CORRELATOR_NOTES
+
++STATION_NOTES
+
+DSS13    (13/D):   No fringes found in either S or X-band.
+
+HOBART12 (Hb/H):   Manual phasecal applied at HOBART12
+
+KOKEE    (Kk/K):   Manual phasecal applied at KOKEE
+
++DROP_CHANNELS
+
++MANUAL PCAL Hb Kk
+
++CHANNELS
+XR1U = band|polarization|channel#|sideband
+
+ XR1U/L  BBC01  8210.99
+ XR2U    BBC02  8220.99
+ XR3U    BBC03  8250.99
+ XR4U    BBC04  8310.99
+ XR5U    BBC05  8420.99
+ XR6U    BBC06  8500.99
+ XR7U    BBC07  8550.99
+ XR8U/L  BBC08  8570.99
+ SR1U    BBC09  2217.99
+ SR2U    BBC10  2222.99
+ SR3U    BBC11  2237.99
+ SR4U    BBC12  2267.99
+ SR5U    BBC13  2292.99
+ SR6U    BBC14  2302.99
+
++CLOCKS
+Clocks: WACO
+
+Station          fmout-gps      Used      rate
+                  [usec]       [usec]   [sec/sec]
+  13                -            -          -
+  Hb              18.97        21.36       0.5e-12
+  Kk               4.87         5.87       0.0
+
+Date: 2011/05/18
+
++QCODES
+
+Qcodes   0  1  2  3  4  5  6  7  8   9  A  B  C  D  E  F  G  H  N  - Tot
+------------------------------------------------------------------------
+  DH:X 128  0  0  0  0  0  0  0  0   0  0  0  0  0  0  0  0  0  0  0 128
+  DH:S 128  0  0  0  0  0  0  0  0   0  0  0  0  0  0  0  0  0  0  0 128
+  DK:X 121  0  0  0  0  0  0  0  0   0  0  0  0  0  0  0  0  0  0  7 128
+  DK:S 121  0  0  0  0  0  0  0  0   0  0  0  0  0  0  0  0  0  0  7 128
+  HK:X  34  0  0  0  0  0  1  3 12  71  0  0  0  0  0  0  0  0  0  7 128
+  HK:S  21  0  0  0  0  0  2  1 11  83  0  0  0  0  0  0  3  0  0  7 128
+------------------------------------------------------------------------
+Totals 553  0  0  0  0  0  3  4 23 154  0  0  0  0  0  0  3  0  0 28 768
+
+Legend:
+QC = 0   Fringes not detected.
+   = 1-9 Fringes detected, no error condition. Higher #, better quality.
+   = B   Interpolation error in fourfit.
+   = D   No data in one or more frequency channels.
+   = E   Maximum fringe amplitude at edge of SBD, MBD, or rate window.
+   = F   "Fork" problem in processing.
+   = G   Fringe amp in a channel is <.5 times mean amp (only if SNR>20).
+   = H   Low Phase-cal amplitude in one or more channels.
+   = N   No valid correlator data.
+ Tot     Total number of scans in schedule.
+ Minus   Scans in original schedule file for which correlation was not
+         attempted, usually because of known station problems.
+
++SNR_RATIOS
+
+ MEAN RATIOS = Observed SNR / Predicted SNR  for exp no. 7857
+
+ ...by baseline, over all sources:
+
+ bl     X     n       S     n
+
+ DH    0.00    0     0.00    0
+ DK    0.00    0     0.00    0
+ HK    4.13   76     2.51  100
+
++FOURFIT_CONTROL_FILE
+
+*
+*
+* 4fit control file for CRF62
+*
+  max_parity 0.02
+  sb_win -64.0  64.0 mb_win -2.0 2.0 dr_win -3.0e-5 3.0e-5
+  start -5   stop -1
+*
+  if f_group X
+    pc_freqs ghijklmn  0010  0010  0010  0010  0010  0010  0010  0010
+*
+  if f_group S
+    dr_win -3.0e-5 3.0e-5
+    pc_freqs abcdef  0010  0010  0010  0010  0010  0010
+*
+    if station K
+      lsb_offset 280.
+*
+**
+  if station H and f_group X
+    pc_phases ghijklmn -53  -92  -55  6  -50  13  -139  -51
+    pc_mode manual
+*
+  if station H and f_group S
+    pc_phases abcdef     103   92   88   122   45   123
+    pc_mode manual
+*
+  if station K and f_group X
+    pc_phases ghijklmn  -149  -142  -97  -83  -116  -113  158  -113
+    pc_mode manual
+*
+  if station K and f_group S
+    pc_phases abcdef   82  55  101  47  131  47
+    pc_mode manual
+*
+*
+*
+
+Kerry and Dave
+
++END
+$1<
+Sorted by time and subsorted by baseline.   -vlbi-
+All  baselines used.
+All  sources used.
+Output time window:  earliest latest
+

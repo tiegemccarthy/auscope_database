@@ -1,0 +1,255 @@
+TIMETAG 2016/09/20 02:43:21 
+MK3DB_VERSION    1
+Dbedit: CRDS84  -SH-
+VLBI experiment CRDS84 ( tbd )
+Created by dbedit Ver. 2013.10.18  revision 6.22
+        run by oper ( oper@nas8 )
+            at SHA -- SHANGHAI VLBI CORRELATOR
+               on nas8 at 2016.09.20-10:43:21 local time
+Dbedit control file history entry: CRDS84  -SH-
+Directory /Center/geo/crds84/1684/
+$1>
++HEADER
+CORREL   SHAO
+DATABASE 16JUL20XN
+SESSNAME CRDS84
+OBSTIME  2016/07/20 2016/07/21
+UTSTART  18:00
+DURATION 24
+DOY      202-203
+CORRTIME 2016/09/18 2016/09/19
+CORRPASS 1
+EXPORT   DONE
+
++SUMMARY
+ Qcode      % of Total   % of Correlated
+                scans          scans
+
+  5-9            52%            83%
+   0             10%            17%
+ 4-1,A-H,N        1%             1%
+ Removed         37%             -
+
++CORRELATOR_NOTES
+
++STATION_NOTES
+ HOBART26 (Ho/H): RFI at SR5U,SR6U caused G codes, removed from
+                  fringe fitting.
+                  Relative low amplitude at XR5U,XR6U,XR7U,
+                  XR8U/L caused G codes, using weak_channel=0.3
+                  to avoid.
+                  Noisy PCAL signal in X band, manual PCAL.
+
+ HARTRAO  (Hh/L): Fine.
+
+ KATH12M  (Ke/e): Fine.
+
+ WARK12M  (Ww/W): Record some scans but where having elevation motor
+                  issues during the session, data was not sent to
+                  the correlator.
+
+ YARRA12M (Yg/g): Fine.
+
++DROP_CHANNELS
+ Ho/H: SR5U, SR6U
+
++MANUAL PCAL Ho
+
++CHANNELS
+ Channels: XR1U = band|polarization|channel#|sideband
+
+XR1U/L  BBC01 8212.99
+XR2U    BBC02 8252.99
+XR3U    BBC03 8352.99
+XR4U    BBC04 8512.99
+XR5U    BBC05 8732.99
+XR6U    BBC06 8852.99
+XR7U    BBC07 8912.99
+XR8U/L  BBC08 8932.99
+SR1U    BBC09 2225.99
+SR2U    BBC10 2245.99
+SR3U    BBC11 2265.99
+SR4U    BBC12 2295.99
+SR5U    BBC13 2345.99
+SR6U    BBC14 2365.99
+
++CLOCKS
+
+Clocks: SHAO
+
+ Station     fmout-gps      Used      rate     Comments
+              [usec]       [usec]   [sec/sec]
+  Hh            2.81         3.20    0.070E-12
+  Ho            9.27         7.37    0.315E-12
+  Ke            1.95         1.67    0.082E-12
+  Yg            9.67         9.67   -0.313E-12
+
+Date:    2016/07/20
+
++QCODES
+
+Qcod  0 1 2 3 4 5 6  7   8    9 A B C D E F G H    N -  Tot
+---------------------------------------------------------------
+LH:X 18 0 0 0 0 0 1 21  71   51 0 0 0 0 0 0 0 0    0 0  162
+LH:S 18 0 0 0 0 0 0  1   9  134 0 0 0 0 0 0 0 0    0 0  162
+Le:X 22 0 0 0 0 0 0  1  18   89 0 0 0 0 0 0 0 0    2 0  132
+Le:S 42 0 0 0 0 0 0  1   3   84 0 0 0 0 0 0 0 0    2 0  132
+LW:X  0 0 0 0 0 0 0  0   0    0 0 0 0 0 0 0 0 0  131 0  131
+LW:S  0 0 0 0 0 0 0  0   0    0 0 0 0 0 0 0 0 0  131 0  131
+Lg:X 17 0 0 0 0 1 1  2  34  104 0 0 0 0 0 0 0 0    0 0  159
+Lg:S 36 0 0 0 0 0 0  0   3  120 0 0 0 0 0 0 0 0    0 0  159
+He:X 21 0 0 0 1 0 1 13  49   45 0 0 0 0 0 0 0 0    2 0  132
+He:S 22 0 0 0 0 0 0  1   6  101 0 0 0 0 0 0 0 0    2 0  132
+HW:X  0 0 0 0 0 0 0  0   0    0 0 0 0 0 0 0 0 0  131 0  131
+HW:S  0 0 0 0 0 0 0  0   0    0 0 0 0 0 0 0 0 0  131 0  131
+Hg:X 25 0 0 0 2 0 3 20  54   55 0 0 0 0 0 0 0 0    0 0  159
+Hg:S 23 0 0 0 0 0 0  0   6  130 0 0 0 0 0 0 0 0    0 0  159
+eW:X  0 0 0 0 0 0 0  0   0    0 0 0 0 0 0 0 0 0  117 0  117
+eW:S  0 0 0 0 0 0 0  0   0    0 0 0 0 0 0 0 0 0  117 0  117
+eg:X 16 0 0 0 0 1 1  4  14   94 0 0 0 0 0 0 0 0    2 0  132
+eg:S 30 0 0 0 0 0 0  0   0  100 0 0 0 0 0 0 0 0    2 0  132
+Wg:X  0 0 0 0 0 0 0  0   0    0 0 0 0 0 0 0 0 0  128 0  128
+Wg:S  0 0 0 0 0 0 0  0   0    0 0 0 0 0 0 0 0 0  128 0  128
+---------------------------------------------------------------
+Tot 290 0 0 0 3 2 7 64 267 1107 0 0 0 0 0 0 0 0 1026 0 2766
+
+ Legend:
+ QC = 0   Fringes not detected.
+    = 1-9 Fringes detected, no error condition. Higher #, better quality.
+    = B   Interpolation error in fourfit.
+    = D   No data in one or more frequency channels.
+    = E   Maximum fringe amplitude at edge of SBD, MBD, or rate window.
+    = F   Fork problem in processing.
+    = G   Fringe amp in a channel is <.5 times mean amp (only if SNR>20).
+    = H   Low Phase-cal amplitude in one or more channels.
+    = N   No valid correlator data.
+  Tot     Total number of scans in schedule.
+  Minus   Scans in original schedule file for which correlation was not
+          attempted, usually because of known station problems.
+
++SNR_RATIOS
+
+MEAN RATIOS = Observed SNR / Predicted SNR  for exp no. 1684
+
+ ...by baseline, over all sources:
+
+ bl     X     n       S     n
+
+ LH    0.91  144     0.58  144
+ Le    1.37  108     0.96   88
+ Lg    1.49  140     1.04  123
+ He    1.32  109     0.98  108
+ Hg    1.45  134     0.99  136
+ eg    2.21  111     1.43  100
+
++FOURFIT_CONTROL_FILE
+
+    max_parity  0.01
+    pc_mode multitone
+    pc_period 5
+*
+start -2
+* stop -30
+
+      sb_win -2.0 2.0 mb_win -2.0 2.0 dr_win -30.0e-5 30.0e-5
+*
+*    ...offset between VLBA-VLBA and MK4-VLBA ...
+*Ke/e
+    if station e
+      lsb_offset  -120.
+*Ho/H
+    if station H
+      lsb_offset  -40.
+*Hh/L
+    if station L
+      lsb_offset  -120.
+*Yg/g
+    if station g
+      lsb_offset -120.
+
+  if f_group X
+    ref_freq 8212.99
+*    pc_freqs ghijklmn 3010 3010 3010 3010 3010 3010 3010 3010
+     pc_tonemask ghijklmn 133 133 133 133 133 133 133 133
+
+  if f_group S
+    ref_freq 2225.99
+*    pc_freqs abcdef 3010 3010 3010 3010 3010 3010
+     pc_tonemask abcdef 17 17 17 17 17 17
+
+  if station H and f_group S
+    freqs a b c d
+
+  if baseline H? or baseline LH
+    weak_channel 0.3
+
+*ref Hh
+ if station H and f_group S
+  pc_mode manual
+  pc_phases abcd 14.0 -155.2 -100.5 -107.5
+ if station H and f_group X
+  pc_mode manual
+  pc_phases ghijklmn 44.8 -261.9 -243.4  -4 -153.4 -238 -232  -46
+
+ if station e and f_group S
+  pc_phases abcdef -0.6   -0.3    0.9   -0.4    3.7   -2.2
+ if station e and f_group X
+  pc_phases ghijklmn 8.8  -3.8  -8  -8  -8.4   7.7   6   0
+
+ if station g and f_group S
+  pc_phases abcdef -0.7   -9.1   -2.5   19.5   -4.3   -4.1
+ if station g and f_group X
+  pc_phases ghijklmn 4.2    7.9   -7.6   -9.8   -9    1  5  4
+
+Regards,
+ Jiang
+
++END
+$1<
+Sorted by time and subsorted by baseline.   -SH-
+All  baselines used.
+All  sources used.
+Output time window:  earliest latest
+TIMETAG 2016/09/20 12:59:17 
+MK3DB_VERSION    2
+CALC11.01 Ver. 2014.05.16  Tue Sep 20 08:59:16 2016nuit.usno.
+Calc 11 at USNO  -CD-
+TIMETAG 2016/10/12 15:04:58 
+MK3DB_VERSION    3
+Dbcal: crds84 -AF-
+ DBCAL: Version 2013.10.18        OCT 12,2016 15:04:58
+TIMETAG 2016/10/12 15:06:32 
+MK3DB_VERSION    4
+SgLib-0.2.10 (Cmok): data have been read from Mk3 database
+TIMETAG 2016/10/12 15:11:25 
+MK3DB_VERSION    4
+Analyzed by Alan L. Fey (hereafter AF) at U.S. Naval Observatory. Contact info: <afey@usno.navy.mil>
+IVS-CRDS84: USNO analysis (AF)
+G-Gxs solution,   60/  60 clocks/atms,    5/75.0019 constraints.
+Solve fit is 29.27 psec.
+The following flyby options were used in the solution:
+Station positions flyby file: usn2015b.sit
+Station velocities flyby file: usn2015b.vel
+Source flyby file: usn2015b.src
+Station axis offset flyby file: NONE
+EOP high frequency variations flyby file: NONE
+Station mean gradients flyby file: NONE
+Nutation series flyby file :  NONE
+Nutation offset flyby file :  NONE
+Earth rotation flyby file  :  NONE
+Tectonic plate motion file :  NONE
+Group delay ambiguities were resolved (well, at least, tried to resolve)
+Group delay outliers were processed and editing info has been updated.
+Troposphere and cable cal status for standard solution have been stored.
+Observation dependent contribution status has been stored.
+Reweighting updated for:
+HA-HO HA-KA HA-YA HO-KA HO-YA KA-YA
+Solution data configuration: group delays with ionosphere corrections
+Clock and atmosphere constraint information saved.
+Batchmode clock parameterization saved.
+Batchmode atmosphere parameterization saved.
+Ionosphere corrections were evaluated for group delays.
+Barometer calibration and barometer height offset not available.
+Elevation cutoff data stored in database.
+Eccentricity data store in data base header.
+

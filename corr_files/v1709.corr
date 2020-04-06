@@ -1,0 +1,155 @@
+TIMETAG 2018/01/10 20:01:56 
+MK3DB_VERSION    1
+Dbedit: V1709  -DG-
+VLBI experiment V1709 ( CONTV17 Day 9 )
+Created by dbedit Ver. 2015.06.23  revision 6.23
+        run by David Gordon ( dgg@bootes.gsfc.nasa.gov )
+            at GSF -- NASA Goddard Space Flight Center
+               on bootes at 2018.01.10-15:01:56 local time
+Dbedit control file history entry: V1709  -DG-
+Directory /500/RDV_files/V1709/1234
+$1>
+
+V1709/$17DEC06XA
+00:00 UTC, DOY 340
+
+Correlated at the VLBA. Fourfit fringed at GSFC using multitone Pcals.
+SC-VLBA did not participate due to hurricanes Irma and Maria.
+Channel S3 deleted at BR, KP, NL, and OV due to RFI.
+Manual phase cals used at Medicina.
+Refringed ~520 S-band observations with narrow MBD windows, mostly for
+   sub-ambiguities at BR, KP, NL, and OV.
+Refringed 19 X-band observations with narrow MBD windows.
+
+***************************************************************************
+
+VERY LONG BASELINE ARRAY OBSERVING LOG
+--------------------------------------
+Project:        V1709
+Observer:       Gordon, D.
+Project type:   GEO
+Obs filename:   v1709crd.*
+Date/Day:       2017DEC06/340
+Ants Scheduled: SC HN NL FD LA PT KP OV BR MK
+
+=UT-Time===Comment========================================== =MF#===%AD==AMD
+           Operator is Betty Ragan.
+           Vclock, gps delta, UT1-UTC all check OK.
+     0000  Begin.
+0000-2355 *SC is out due to hurricane damage.                 WEA   100 1435
+0016-0018 *MK autostowed. Power glitch.                       COM   100    2
+0141-0148 *HN observing stopped on the VME, apparently        HUERR 100    7
+           due to accidentally having removed the .crd file
+           for this observation instead of V1708. Rebooted the
+           VME to get it going again.
+0150-0154 *PT, NL observing also stopped, and the VMEs        HUERR 200    8
+           had to be rebooted.
+0156-0158 *KP observing stopped, VME rebooted.                HUERR 100    2
+0224-0403 *PT,MK removed for daily USNO observation.          SCH   200  198
+0349-0357 *OV observing stopped. Rebooted VME.                HUERR 100    8
+     0640  New operator is Alan Kerr
+     0702 %FD precipitation
+     1058 %MK windy
+     1440  New operator is Jim Ogle.
+     1444 %FD reports overcast skies, light rain.
+     1449  BR reports overcast skies.
+     1527  PT reports clear skies.
+     1528  KP reports broken low clouds.
+1530-1533 *MK wind stows.                                     WEA   100    3
+1538-1947 *PT tech on antenna to work on a 13cm cryo problem. CRYO  100  249
+1736-1737 *MK wind stow.                                      WEA   100    1
+1831-1838 *MK wind stows.                                     WEA   100    7
+1941-1959 *KP Mark5C unit crashed when site tech put a fresh  TAPE  100   18
+           disk pack in bank A.
+1947-2355 *PT 13cm warm, cooling.                             CRYO   50  124
+     1953 %MK reports clear skies, strong wind gusts.
+     2237  New operator is Betty Ragan.
+2326-2327 *MK wind stow.                                      WEA   100    1
+     2355  End.
+
+Downtime Summary:
+	Total downtime : 2063 min
+	Percentage downtime of observing: 14.4%
+	Average downtime per hour : 8.6 min
+
+    Total scheduled observing time (# Antennas): 14350 min (10)
+
+Notes:
+    * = Entries where data was affected.
+    % = Entries where data may have been affected.
+    & = Entries where the site tech was called out.
+  WEA = Weather entries.
+  MF# = Maintenance form or major downtime category associated with a
+        problem.
+  %AD = The percentage of an antenna affected by a problem.
+  AMD = Total antenna-minutes downtime for a problem.
+ Tsys = System Temperature (TP/SP x Tcal/2)
+  ACU = Antenna Control Unit
+  FRM = Focus/Rotation Mount
+  RFI = Radio Frequency Interference
+  VME = Site control computer
+   CB = Circuit Breaker
+ vclock = Program that compares site clock time to a standard.
+
+$1<
+Sorted by time and subsorted by baseline.   -DG-
+All  baselines used.
+All  sources used.
+Output time window:  earliest latest
+TIMETAG 2018/01/10 20:13:07 
+MK3DB_VERSION    2
+CALC11.02 Ver. 2016.12.29  Wed Jan 10 15:13:06 2018    bootes
+Calc 11 at GSFC  -DG-
+TIMETAG 2018/01/10 20:31:41 
+MK3DB_VERSION    3
+Dbcal: V1709  -DG-
+ DBCAL: Version 2017-MAR-15       JAN 10,2018 20:31:41
+TIMETAG 2018/01/12 21:35:51 
+MK3DB_VERSION    4
+SgLib-0.5.2 (Patawomeck): data have been read from Mk3 database
+TIMETAG 2018/01/12 22:14:30 
+MK3DB_VERSION    4
+Analyzed by David Gordon (hereafter DG) at Goddard Space Flight Center. Contact info: <David.Gordon-1@nasa.gov>
+DG> V1709: GSFC Analysis  -DG-
+DG> SESHAN25 did not observe.
+DG> Small clock break at YARRA12M.
+DG> NuSolve fit of 17.4 psec.
+CONTV1709: GSFC analysis (DG)
+G-Gxs solution,   60/  60 clocks/atms,    2/  40 constraints, 23.8833-hr gradients.
+Solve fit is 17.39 psec.
+TIMETAG 2018/01/12 22:14:31 
+MK3DB_VERSION    4
+Detected 1 clock break
+A clock break marker has been set for YARRA12M at 06 Dec, 2017; 12:48:00.0000
+The following flyby options were used in the solution:
+Station positions flyby file: glo.sit
+Station velocities flyby file: glo.vel
+Source flyby file: 17Sep14.src
+Station axis offset flyby file: glo.axis
+EOP high frequency variations flyby file: NONE
+Station mean gradients flyby file: NONE
+Nutation series flyby file :  NONE
+Nutation offset flyby file :  NONE
+Earth rotation flyby file  :  NONE
+Tectonic plate motion file :  NONE
+Group delay ambiguities were resolved (well, at least, tried to resolve)
+Group delay outliers were processed and editing info has been updated.
+Troposphere and cable cal status for standard solution have been stored.
+Observation dependent contribution status has been stored.
+Reweighting updated for:
+BR-FD BR-HN BR-KP BR-LA BR-ME BR-MK BR-NL BR-OV BR-PI BR-WE
+BR-YA FD-HN FD-KP FD-LA FD-ME FD-MK FD-NL FD-OV FD-PI FD-WE
+FD-YA HN-KP HN-LA HN-ME HN-MK HN-NL HN-OV HN-PI HN-WE KP-LA
+KP-ME KP-MK KP-NL KP-OV KP-PI KP-WE KP-YA LA-ME LA-MK LA-NL
+LA-OV LA-PI LA-WE LA-YA ME-MK ME-NL ME-OV ME-PI ME-WE ME-YA
+MK-NL MK-OV MK-PI MK-WE MK-YA NL-OV NL-PI NL-WE NL-YA OV-PI
+OV-WE OV-YA PI-WE PI-YA WE-YA
+Solution data configuration: group delays with ionosphere corrections
+Clock and atmosphere constraint information saved.
+Batchmode clock parameterization saved.
+Batchmode atmosphere parameterization saved.
+Ionosphere corrections were evaluated for group delays.
+Barometer calibration and barometer height offset not available.
+Elevation cutoff data stored in database.
+Eccentricity data store in data base header.
+

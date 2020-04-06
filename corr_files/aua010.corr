@@ -1,0 +1,260 @@
+TIMETAG 2016/06/01 10:24:22 
+MK3DB_VERSION    1
+Dbedit: AUA010 -AU-
+VLBI experiment AUG010 ( aug010/2016 )
+Created by dbedit Ver. 2013.10.18  revision 6.22
+        run by Observer ( observer@ops7 )
+            at HOB -- University of Tasmania
+               on ops7 at 2016.06.01-20:24:22 local time
+Dbedit control file history entry: AUA010 -AU-
+Directory /mnt/magilla/AUSTRAL/aua010/1610/
+$1>
++HEADER
+CORREL   SHAO
+DATABASE 16APR12XA
+SESSNAME AUA010
+UTSTART  1730
+DURATION 24
+DOY      103-104
+CORRTIME 2016/05/30 2016/05/31
+CORRPASS 1
+EXPORT   DONE
+
++SUMMARY
+ Qcode      % of Total   % of Correlated
+                scans          scans
+
+  5-9            95%             -
+   0              2%             -
+ 4-1,A-H,N        2%             -
+ Removed          -              -
+
++CORRELATOR_NOTES
+
++STATION_NOTES
+
+ HOBART12 (Hb/L): Channel SR6U dropped to avoid excessive losses due to
+  G-codes.
+
+ HOBART26 (Ho/H): Channels SR5U and SR6U drooped from S-band due to strong
+  RFI. Channels XR1U/L and XR8U/L dropped to due track misconfiguration in
+  the mark4 rack. No data before 1915 due to other observing commitments.
+
+ KATH12M  (Ke/i): Small clock breaks noted at 2205, 0145, 0202.
+
+ WARK12M  (Ww/W): Manual phasecal.
+
+ YARRA12M (Yg/e): Ok.
+
++DROP_CHANNELS
+ Hb SR6U
+ Ho
+ Ke
+ Ww
+ Yg
+
++MANUAL PCAL Ww Ho
+
++CHANNELS
+ Channels: XR1U = band|polarization|channel#|sideband
+
+XR1U/L  BBC01 8212.99
+XR2U    BBC02 8252.99
+XR3U    BBC03 8352.99
+XR4U    BBC04 8512.99
+XR5U    BBC05 8732.99
+XR6U    BBC06 8852.99
+XR7U    BBC07 8912.99
+XR8U/L  BBC08 8932.99
+SR1U    BBC09 2225.99
+SR2U    BBC10 2245.99
+SR3U    BBC11 2265.99
+SR4U    BBC12 2295.99
+SR5U    BBC13 2345.99
+SR6U    BBC14 2365.99
+
++CLOCKS
+
+Clocks: Curtin
+
+ Station      Offset     rate      Epoch
+              [usec]     [sec/sec] [MJD]
+
++QCODES
+
+Qcod  0 1 2 3 4  5  6  7    8    9 A B C D E F  G H   N -   Tot
+-------------------------------------------------------------------
+LH:X  0 0 0 0 1  2  7  8  191    3 0 0 0 0 0 0  3 0  16 0   231
+LH:S  0 0 0 2 3 40 32 30   11   35 0 0 0 0 0 0 62 0  16 0   231
+Li:X 12 0 0 0 1  1  0  4   16  728 0 0 0 0 0 0  0 0   5 0   767
+Li:S 37 0 0 0 0  2  0  2  224  493 0 0 0 0 0 0  4 0   5 0   767
+Le:X  9 0 0 0 0  0  0  1    8  731 0 0 0 0 0 0  0 0   2 0   751
+Le:S 23 0 0 0 0  0  0  6  196  517 0 0 0 0 0 0  7 0   2 0   751
+LW:X  5 0 0 0 0  0  0  2    8  720 0 0 0 0 0 0  0 0   1 0   736
+LW:S 22 0 0 0 0  0  0  0  120  593 0 0 0 0 0 0  0 0   1 0   736
+Hi:X  6 0 0 0 0  0  0 12  148   47 0 0 0 0 0 0  0 0  17 0   230
+Hi:S  3 0 0 0 0  0  1  4    8  197 0 0 0 0 0 0  0 0  17 0   230
+He:X  3 0 0 0 0  0  1  7  155   39 0 0 0 0 0 0  0 0  16 0   221
+He:S  0 0 0 0 0  0  0  1   17  187 0 0 0 0 0 0  0 0  16 0   221
+HW:X  2 0 0 0 0  0  0  3  169   33 0 0 0 0 0 0  0 0  14 0   221
+HW:S  2 0 0 0 0  0  0  0   18  187 0 0 0 0 0 0  0 0  14 0   221
+ie:X  5 0 0 0 1  2  1  3   19  713 0 0 0 0 0 0  0 0   5 0   749
+ie:S 13 0 0 1 2  0  0  2   37  689 0 0 0 0 0 0  0 0   5 0   749
+iW:X 14 0 0 0 0  0  0  4   18  689 0 0 0 0 0 0  0 0   7 0   732
+iW:S 51 0 0 0 0  0  0  0    2  672 0 0 0 0 0 0  0 0   7 0   732
+eW:X  5 0 0 0 0  0  0  3    3  702 0 0 0 0 0 0  0 0   1 0   714
+eW:S 54 0 0 0 0  0  0  0    3  656 0 0 0 0 0 0  0 0   1 0   714
+-------------------------------------------------------------------
+Tot 266 0 0 3 8 47 42 92 1371 8631 0 0 0 0 0 0 76 0 168 0 10704
+
+ Legend:
+ QC = 0   Fringes not detected.
+    = 1-9 Fringes detected, no error condition. Higher #, better quality.
+    = B   Interpolation error in fourfit.
+    = D   No data in one or more frequency channels.
+    = E   Maximum fringe amplitude at edge of SBD, MBD, or rate window.
+    = F   Fork problem in processing.
+    = G   Fringe amp in a channel is <.5 times mean amp (only if SNR>20).
+    = H   Low Phase-cal amplitude in one or more channels.
+    = N   No valid correlator data.
+  Tot     Total number of scans in schedule.
+  Minus   Scans in original schedule file for which correlation was not
+          attempted, usually because of known station problems.
+
++SNR_RATIOS
+
+MEAN RATIOS = Observed SNR / Predicted SNR  for exp no. 1610
+
+ ...by baseline, over all sources:
+
+ bl     X     n       S     n
+
+ LH    1.16  215     3.04  202
+ Li    1.16  612     1.15  613
+ LW    1.26  603     0.90  607
+ Le    1.35  608     1.04  616
+ Hi    0.88  152     0.84  154
+ HW    0.90  150     0.86  154
+ He    0.95  149     0.86  152
+ iW    1.17  585     0.90  582
+ ie    1.31  609     0.91  614
+ We    1.26  582     0.81  570
+
++FOURFIT_CONTROL_FILE
+
+* control file for exp. AUST
+
+*    max_parity  0.01
+*    pc_mode normal
+*
+start -2
+* stop -30
+
+   sb_win -256.0 256.0 mb_win -2.0 2.0 dr_win -300.e-4 300.e-4
+*      sb_win -2.0 2.0 mb_win -2.0 2.0 dr_win -30.0e-5 30.0e-5
+*
+*    ...offset between VLBA-VLBA and MK4-VLBA ...
+
+weak_channel 0.3
+
+if station L and f_group S
+   freqs a b c d e
+
+  if f_group X
+    ref_freq 8212.99
+    freqs g h i j k l m n
+    pc_freqs ghijklmn 9010 9010 9010 9010 9010 9010 9010 9010
+
+  if f_group S
+    ref_freq 2225.99
+    freqs a b c d e f
+    pc_freqs abcdef 3010 3010 3010 3010 3010 3010
+
+  if station W and f_group S
+    pc_mode manual
+    pc_phases abcdef -56.6  -61.8  -85.7 -106.5 -351.9 -236.5
+
+  if station W and f_group X
+    pc_mode manual
+ pc_phases ghijklmn 124.5 -144.9 -49.7 -317.1 -21.9 -84.7 -306.3 -68.3
+
+  if station H and f_group S
+    pc_mode manual
+    freqs a b c d
+    pc_phases abcd -5.2 -292.7  -57.8  -84.2
+
+  if station H and f_group X
+    pc_mode manual
+    freqs h i j k l m
+ pc_phases hijklm 200.3  284.1  217.8    6.4   69.9   32.0
+
+* ref Yg/e --> just for book keeping
+
+   if station L and f_group S
+   pc_phases abcdef -3.0 9.6 -0.2 -10.9 2.0 10.3
+   if station L and f_group X
+   pc_phases ghijklmn 3.4 -9.1 0.3 -1.9 10.6 -0.9 -0.4 -2.6
+
+   if station i and f_group S
+   pc_phases abcdef -0.5 9.8 1.2 -18.2 5.6  5.3
+   if station i and f_group X
+   pc_phases ghijklmn 3.6 -11.1 -0.1 2.6 6.6 4.1 -0.8 -3.8
+
+Regards,
+ Jamie
+
++END
+$1<
+Sorted by time and subsorted by baseline.   -AU-
+All  baselines used.
+All  sources used.
+Output time window:  earliest latest
+TIMETAG 2016/06/01 16:24:40 
+MK3DB_VERSION    2
+CALC11.02 Ver. 2015.09.09  Wed Jun  1 12:24:39 2016    bootes
+Calc 11 at GSFC  -DG-
+TIMETAG 2016/06/01 16:47:57 
+MK3DB_VERSION    3
+Dbcal: AUA010  -DG-
+ DBCAL: Version 2015-NOV-19       JUN 01,2016 16:47:57
+TIMETAG 2016/06/01 17:26:12 
+MK3DB_VERSION    4
+SgLib-0.2.10 (Cmok): data have been read from Mk3 database
+TIMETAG 2016/06/01 17:44:53 
+MK3DB_VERSION    4
+Analyzed by David Gordon (hereafter DG) at Goddard Space Flight Center. Contact info: <David.Gordon-1@nasa.gov>
+DG> AUA010: GSFC Analysis  -DG-
+DG> Two clock breaks at KATH12M.
+DG> NuSolve fit of 38.0 psec.
+AUS-AST010: GSFC analysis (DG)
+G-Gxs solution,   60/  60 clocks/atms,    2/  40 constraints,   24-hr gradients.
+Solve fit is 38.04 psec.
+Detected 2 clock breaks
+A clock break marker has been set for KATH12M  at 12 Apr, 2016; 22:06:00.0000
+A clock break marker has been set for KATH12M  at 13 Apr, 2016; 01:39:00.0000
+The following flyby options were used in the solution:
+Station positions flyby file: glo.sit
+Station velocities flyby file: glo.vel
+Source flyby file: 15dec17.src
+Station axis offset flyby file: glo.axis
+EOP high frequency variations flyby file: NONE
+Station mean gradients flyby file: NONE
+Nutation series flyby file :  NONE
+Nutation offset flyby file :  NONE
+Earth rotation flyby file  :  NONE
+Tectonic plate motion file :  NONE
+Group delay ambiguities were resolved (well, at least, tried to resolve)
+Group delay outliers were processed and editing info has been updated.
+Troposphere and cable cal status for standard solution have been stored.
+Observation dependent contribution status has been stored.
+Reweighting updated for:
+HO-HO HO-KA HO-WA HO-YA HO-KA HO-WA HO-YA KA-WA KA-YA WA-YA
+Solution data configuration: group delays with ionosphere corrections
+Clock and atmosphere constraint information saved.
+Batchmode clock parameterization saved.
+Batchmode atmosphere parameterization saved.
+Ionosphere corrections were evaluated for group delays.
+Barometer calibration and barometer height offset not available.
+Elevation cutoff data stored in database.
+Eccentricity data store in data base header.
+

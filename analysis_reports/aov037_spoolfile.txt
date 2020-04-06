@@ -1,0 +1,696 @@
+1Run 19261-1519
+ Analysis center: GSFC -- NASA Goddard Space Flight Center
+ Analyst:         David Gordon ( David.Gordon-1@nasa.gov )
+ Machine:         gs690-gs61a-gsvgsfc-ivscc-server1.gsfc.nasa.gov  x86_64  Linux 3.10.0-957.12.2.el7.x86_64
+ Executables:     /space/nusolve/bin
+ Solve initials:  DG
+ Spool format:    SgLib-0.6.4 (Tir-na Nog'th)
+ Local time:      2019.09.18-11:27:02
+ Correlator type: MK4     
+ Mark-3 db_name:
+
+ Data base $19SEP03XA Ver  3
+
+ Matrix Condition Number =   4.987020882512856E+10
+
+ Listing_Options:  CRES_EMULATION NO  BASELINES NO  MINIMUM NO
+ Listing_Options:  MAPPED_EOP_OUTPUT NO  SEG_OUTPUT NO  APRIORI_ZENDEL NO
+ Listing_Options:  NRD_TABLE YES  CHI_TABLE NO  SRC_STAT PRE2004  SEG_STYLE PRE2005
+ SgLib release  :  2019 Aug 29
+
+  Flyby Station Cals:    DB Station Cals:              | DB Non-station Cals: | Atmosphere Partial:
+ --------------------------------------------------------------------------------------------------
+    BADARY  :NMFDRFLY             GION                 | WobXCont             | NMFWTFLY              
+    MATERA  :NMFDRFLY             GION                 | WobYCont             |                       
+    MEDICINA:NMFDRFLY             GION                 | EarthTid             |                       
+    NOTO    :NMFDRFLY             GION                 | Ocean                |                       
+    NYALES20:NMFDRFLY    cable    GION                 | UT1Ortho             |                       
+    ONSALA60:NMFDRFLY    cable    GION                 | XpYpOrth             |                       
+    SVETLOE :NMFDRFLY             GION                 | XpYpLib              |                       
+    WETTZELL:NMFDRFLY    cable    GION                 | UT1Libra             |                       
+    YEBES40M:NMFDRFLY    cable    GION                 | OPTLCont             |                       
+    ZELENCHK:NMFDRFLY             GION                 |                      |                       
+ --------------------------------------------------------------------------------------------------
+ CALC Version:  11.02  SgLib-0.6.4 (Tir-na Nog'th)
+
+           19SEP03SA  3  NOT IN SOLUTION
+
+  Met Statistics:
+                    Temperature      Pressure        Humidity
+   Station         average   rms   average   rms   average   rms
+   BADARY    MET     16.2     4.0   914.9     0.9    75.0    19.4
+   MATERA    MET     19.1     2.4   959.7     0.3     0.0     0.0
+   MEDICINA  MET     22.0     3.6  1017.0     1.8    56.4    17.6
+   NOTO      MET   -999.0     0.0  -999.0     0.0-99900.0     0.0
+   NYALES20  MET      2.2     0.9   990.7     1.6    79.7     7.1
+   ONSALA60  MET     15.6     1.2  1010.6     2.5    75.8     9.8
+   SVETLOE   MET     13.5     1.7  1007.1     0.5    82.6     9.7
+   WETTZELL  MET     17.5     4.9   949.7     2.7    48.4    14.1
+   YEBES40M  MET     23.9     5.1   915.6     1.0    32.5    20.4
+   ZELENCHK  MET     16.2     4.3   886.7     0.6    48.7    13.0
+
+ Run 19261-1519        16091 Observation Pairs Available 
+ Session started on:    2458730.229282   2019.09.03 17:30:10.000  UTC
+ Actual duration:       86319.000  sec           00 23:58:39.000  sec
+ Solution type: Group delay X/S combination    
+
+ Data Type     Number of   Weighted RMS    Normalized RMS   Chi Square
+             Observations    Residual         Residual      (precis)
+                 Used
+ 
+   Delay    14796             32.691 ps              1.00       1.0000
+   Rate         0                  0 fs/s            0.00       0.0000
+Combined        0                                    0.00       0.0000
+----------------------------------------------------------------------- 
+ Used quality_code_limit:                                  5            
+ Number of potentially recoverable observations:       15382            
+ Number of potentially good observations with QC 5-9:  15382           
+ Number of used observations:                          14796  ( 96.19%) 
+ Number of suppressed observations:                      586  (  3.81%) 
+----------------------------------------------------------------------- 
+
+
+
+ Baseline Statistics
+      Baseline        # W.Obs   W.RMS Del   N.R.D.   N.R.D. W.RMS Rate   N.R.R.  D.RW   R.RW 
+                    used/recov     ps     standard ( 15ps+i)  fs/s                ps    fs/s  
+
+ BADARY  -MATERA    289/  322    49.0       0.99      2.06   541.6        0.00   45.5  537.7
+ BADARY  -MEDICINA  422/  423    31.9       0.98      1.81   207.8        0.00   31.1    0.0
+ BADARY  -NOTO      277/  280    63.7       0.98      2.48  1106.0        0.00   59.4 1071.2
+ BADARY  -NYALES20  452/  454    32.6       0.98      1.75   322.8        0.00   31.3  321.6
+ BADARY  -ONSALA60  205/  205    37.4       0.98      1.75   674.1        0.00   34.7    0.0
+ BADARY  -SVETLOE   324/  324    40.9       0.98      2.35   331.0        0.00   40.7  332.3
+ BADARY  -WETTZELL  415/  417    31.8       0.98      1.78   242.5        0.00   30.8  243.3
+ BADARY  -YEBES40M  418/  423    38.1       0.98      2.07   445.1        0.00   37.3  449.9
+ BADARY  -ZELENCHK  416/  421    44.2       0.98      2.65   228.9        0.00   44.3  231.5
+ MATERA  -MEDICINA  333/  375    29.8       0.98      1.59   398.1        0.00   28.2  405.3
+ MATERA  -NOTO      174/  201    67.4       0.99      2.43   504.7        0.00   61.9  480.3
+ MATERA  -NYALES20  328/  367    42.0       0.99      1.74   463.2        0.00   37.5  463.9
+ MATERA  -ONSALA60  172/  187    33.2       0.98      1.24   831.0        0.00   25.1  831.4
+ MATERA  -SVETLOE   262/  315    36.7       0.98      1.72   546.5        0.00   33.8  544.8
+ MATERA  -WETTZELL  324/  368    28.0       0.98      1.44   496.9        0.00   25.7  501.8
+ MATERA  -YEBES40M  313/  383    34.1       0.98      1.72   439.7        0.00   32.0  446.9
+ MATERA  -ZELENCHK  285/  331    51.3       0.99      2.57   473.6        0.00   49.7  472.6
+ MEDICINA-NOTO      313/  317    55.8       0.98      2.65   750.1        0.00   53.9  721.7
+ MEDICINA-NYALES20  471/  471    27.0       0.98      1.50   355.9        0.00   25.7  357.0
+ MEDICINA-ONSALA60  221/  221    22.5       0.97      1.21   265.3        0.00   20.4  265.0
+ MEDICINA-SVETLOE   313/  314    26.1       0.98      1.57   294.4        0.00   25.6  295.8
+ MEDICINA-WETTZELL  461/  461    21.4       0.98      1.30   234.9        0.00   20.9  237.3
+ MEDICINA-YEBES40M  482/  486    25.4       0.98      1.54   378.5        0.00   25.0    0.0
+ MEDICINA-ZELENCHK  318/  444    32.6       0.98      1.97   127.5        0.00   32.6    0.0
+ NOTO    -NYALES20  282/  282    62.1       0.99      2.41   717.3        0.00   58.0  696.0
+ NOTO    -ONSALA60  127/  127    53.2       0.98      1.85  1105.1        0.00   46.7 1055.4
+ NOTO    -SVETLOE   187/  189    61.5       0.98      2.11  2482.9        0.00   57.3 2404.4
+ NOTO    -WETTZELL  302/  302    55.0       0.98      2.54  3884.2        0.00   52.8 3820.9
+ NOTO    -YEBES40M  311/  313    60.6       0.98      2.84  3821.6        0.00   59.0 3768.4
+ NOTO    -ZELENCHK  290/  297    68.9       0.99      3.06  4271.7        0.00   67.3 4225.1
+ NYALES20-ONSALA60  280/  280    29.1       0.97      1.36   468.9        0.00   25.9  472.5
+ NYALES20-SVETLOE   338/  338    32.8       0.98      1.88   260.2        0.00   32.1  258.5
+ NYALES20-WETTZELL  526/  530    27.4       0.98      1.56   212.4        0.00   26.7  215.5
+ NYALES20-YEBES40M  523/  528    32.8       0.98      1.85   337.3        0.00   32.1    0.0
+ NYALES20-ZELENCHK  434/  438    36.7       0.98      2.03   239.3        0.00   35.8  237.9
+ ONSALA60-SVETLOE   158/  158    32.6       0.98      1.77   496.8        0.00   31.5  497.8
+ ONSALA60-WETTZELL  274/  275    23.6       0.97      1.27   465.5        0.00   21.7  468.5
+ ONSALA60-YEBES40M  263/  267    28.1       0.98      1.50   278.0        0.00   26.5    0.0
+ ONSALA60-ZELENCHK  201/  201    34.5       0.98      1.87   486.1        0.00   33.1    0.0
+ SVETLOE -WETTZELL  299/  302    25.3       0.98      1.53   186.5        0.00   24.9  186.6
+ SVETLOE -YEBES40M  315/  317    34.0       0.99      1.98   385.9        0.00   33.7  391.0
+ SVETLOE -ZELENCHK  322/  327    40.1       0.98      2.48   382.9        0.00   40.2  384.9
+ WETTZELL-YEBES40M  523/  537    24.0       0.98      1.48   278.5        0.00   23.9    0.0
+ WETTZELL-ZELENCHK  417/  422    35.7       0.98      2.13   233.8        0.00   35.4  236.0
+ YEBES40M-ZELENCHK  436/  442    38.2       0.98      2.27   336.3        0.00   38.1    0.0
+
+
+ Source Statistics 
+     Source           # W.Obs   W.RMS Del   N.R.D.   N.R.D. W.RMS Rate   N.R.R. 
+                                   ps     standard  ( 15ps)   fs/s  
+ 
+     1726+455 A     278/  290    35.4        1.05     1.88   293.7        0.00
+     OJ287    B     316/  325    34.8        1.13     2.49   318.3        0.00
+     1749+096 C     192/  193    33.8        1.08     2.91   414.6        0.00
+     1803+784 D     645/  653    27.9        0.87     1.87   113.2        0.00
+     1806+456 E      62/   62    37.4        1.11     2.15   121.1        0.00
+     1751+288 F     213/  223    28.1        0.84     2.00   243.8        0.00
+     1639+230 G      89/   95    42.0        1.22     2.71   200.4        0.00
+     1300+580 H     456/  475    33.9        0.94     1.70   139.7        0.00
+     1351-018 I      51/   58    34.7        1.04     2.25   378.2        0.00
+     1606+106 J     113/  114    39.1        1.12     2.79   361.0        0.00
+     1417+385 K     136/  142    28.2        0.83     1.90   192.1        0.00
+     1502+036 L      36/   36    40.5        1.18     2.41  1547.7        0.00
+     1546+027 M      87/   89    30.5        1.03     1.87   210.9        0.00
+     1418+546 N     416/  433    40.6        1.15     1.91   285.7        0.00
+     1849+670 O     264/  283    33.2        0.96     2.10   153.7        0.00
+     3C274    P     180/  191    30.6        0.91     1.79   363.1        0.00
+     3C371    Q     411/  425    28.7        0.88     1.80   115.5        0.00
+     1908-201 R      59/   66    50.7        1.47     3.80   194.9        0.00
+     3C418    S     555/  576    38.3        1.22     2.49   393.5        0.00
+     NRAO150  T      25/   25    24.1        0.89     1.56   308.8        0.00
+     NRAO512  U     267/  278    33.2        0.98     1.93   170.9        0.00
+     CTA26    V     112/  115    32.8        0.93     1.57   305.5        0.00
+     2318+049 W     243/  253    32.3        0.94     1.66   149.5        0.00
+     1929+226 X      37/   37    29.8        0.83     1.65    63.6        0.00
+     2000+472 Y     115/  118    38.7        1.15     2.48   133.1        0.00
+     2309+454 Z     217/  221    34.3        0.98     1.86    91.8        0.00
+     2113+293 A     234/  239    29.1        0.85     1.77   216.9        0.00
+     2229+695 B     667/  694    32.2        0.94     1.86   114.1        0.00
+     2255-282 C      39/   43    43.9        1.40     2.41   248.5        0.00
+     2144+092 D     255/  275    30.0        0.87     1.61   423.1        0.00
+     1156+295 E     155/  155    35.7        1.01     1.73   478.0        0.00
+     0446+112 F     129/  138    37.5        1.07     1.94   119.9        0.00
+     1144+402 G      94/   94    33.4        1.03     2.27   356.0        0.00
+     0458-020 H     160/  171    35.3        1.09     2.11   253.8        0.00
+     0552+398 I     323/  337    26.4        0.87     1.77   189.1        0.00
+     0613+570 J     230/  248    39.9        1.20     2.37   159.0        0.00
+     0529+483 K     219/  230    31.7        0.94     2.01    78.9        0.00
+     0229+131 L     320/  327    36.5        1.13     2.04   200.5        0.00
+     0016+731 M     536/  548    26.7        0.81     1.89   100.5        0.00
+     0017+200 N     296/  304    27.8        0.83     1.56   260.9        0.00
+     0202+319 O     359/  370    23.2        0.72     1.37   717.2        0.00
+     0059+581 P     690/  733    35.2        1.09     2.33   143.3        0.00
+     0119+115 Q     107/  113    41.3        1.24     2.01  1944.4        0.00
+     0133+476 R     292/  294    30.1        0.94     1.83   346.4        0.00
+     0119+041 S     113/  121    27.4        0.83     1.51   496.5        0.00
+     0642+449 T     193/  200    36.0        1.15     2.17    96.0        0.00
+     0834-201 U      37/   38    68.8        2.12     4.63   264.1        0.00
+     0955+476 V     354/  359    26.4        0.81     1.75   577.1        0.00
+     0646-306 W      21/   27    70.3        2.00     3.35   876.8        0.00
+     1030+415 X     185/  195    28.8        0.92     1.74   599.7        0.00
+     1053+815 Y     849/  882    32.9        0.90     1.55   147.5        0.00
+     1128+385 Z     150/  159    30.6        0.97     1.80   180.4        0.00
+     1040+244 A     217/  236    27.0        0.79     1.51   331.6        0.00
+     0814+425 B     247/  258    32.0        0.99     1.97   218.2        0.00
+     0656+082 C     155/  157    34.3        0.93     1.55   337.4        0.00
+     0716+714 D     795/  826    31.0        0.92     1.96   134.1        0.00
+     0805+410 E     101/  104    26.4        0.79     1.60   110.6        0.00
+     0718+793 F     120/  120    30.5        0.90     1.62    79.0        0.00
+     0748+126 G     183/  199    32.5        1.01     2.00   293.1        0.00
+     0800+618 H     273/  279    32.1        0.89     1.41   111.4        0.00
+     0738+491 I     123/  133    30.3        0.89     1.75   110.2        0.00
+
+
+ Station Statistics 
+     Station          # W.Obs   W.RMS Del   N.R.D.   N.R.D. W.RMS Rate   N.R.R. 
+                                   ps     standard  ( 15ps)   fs/s   
+ 
+     BADARY        3218/ 3269    37.6        0.98     2.09   245.5        0.00
+     MATERA        2480/ 2849    36.6        0.98     1.86   483.7        0.00
+     MEDICINA      3334/ 3512    27.3        0.98     1.71   321.3        0.00
+     NOTO          2263/ 2308    60.4        0.98     2.57  1015.8        0.00
+     NYALES20      3634/ 3688    32.3        0.98     1.79   337.2        0.00
+     ONSALA60      1901/ 1921    29.1        0.98     1.52   426.1        0.00
+     SVETLOE       2518/ 2584    33.1        0.98     1.97   311.2        0.00
+     WETTZELL      3541/ 3614    27.1        0.98     1.69   278.5        0.00
+     YEBES40M      3584/ 3696    31.2        0.98     1.93   319.7        0.00
+     ZELENCHK      3119/ 3323    39.5        0.98     2.36   271.9        0.00
+
+
+                       *** Flyby Status ***
+
+                    directory: /500/oper/solve_save_files
+
+Station   Source    Nutation  Nutation  Earth     Earth     Station   Pressure  EOP Intp. EOP Intp. High Freq Axis      
+Positions Positions Model     Time      Rotation  Rotation  Velocity  Loading   Smoothing Smoothing EOP       Offset    
+                              Series    Series    Interpol. Model               CALC      Mod File  Model     Mod File  
+--------- --------- --------- --------- --------- --------- --------- --------- --------- --------- --------- ---------
+glo.sit   glo.src   NONE      NONE      NONE      NONE      glo.vel   NONE      NO_ZONAL  N/A       NONE      glo.axis  
+
+Site Plate Map: /500/oper/solve_save_files/sitpl.dat           
+
+ Parameter adjustments for run 19261-1519 User=DG
+ Reference epoch for polynomial models: 19/09/04 00:00
+                                        Parameter               Adjustment              a-sigma              m-sigma
+      WETTZELL CLCK 19/09/03 17:30 Reference
+Station positions are for epoch: 2019.09.04-05:05:08
+    1. BADARY   7382 EURA  X Comp       -838201271.58 mm        -10.561 mm              1.284 mm              1.284 mm
+    2. BADARY   7382 EURA  Y Comp       3865751550.13 mm         -9.572 mm              2.305 mm              2.305 mm
+    3. BADARY   7382 EURA  Z Comp       4987670859.18 mm        -12.504 mm              3.764 mm              3.764 mm
+       BADARY   7382       U Comp              -14.23 mm        -14.226 mm              4.191 mm              4.191 mm
+       BADARY   7382       E Comp               12.35 mm         12.350 mm              1.445 mm              1.445 mm
+       BADARY   7382       N Comp               -2.15 mm         -2.147 mm              1.218 mm              1.218 mm
+    4. BADARY   CL 0 19/09/03 17:30                          216140.538 ns              0.026 ns              0.026 ns        
+    5. BADARY   CL 1 19/09/03 17:30                               2.736 D-14            0.058 D-14            0.058 D-14      
+   31. BADARY   AT 0 19/09/03 17:30                             902.558 ps              9.712 ps              9.712 ps
+       BADARY   Atm  2019.09.04-04:39:11.291  Avg:   450.529 ps   Rms:      30.309 ps   Tot_Rms:      30.310 ps
+   57. BADARY   NG 19/09/03 17:30                                 0.005 mm              0.288 mm              0.288 mm        
+   58. BADARY   EG 19/09/03 17:30                                -0.191 mm              0.280 mm              0.280 mm        
+   59. BADARY   NG 19/09/04 17:28                                -0.785 mm              0.296 mm              0.296 mm        
+   60. BADARY   EG 19/09/04 17:28                                -0.675 mm              0.335 mm              0.335 mm        
+
+Station positions are for epoch: 2019.09.04-02:28:24
+   61. MATERA   7243 EURA  X Comp       4641938349.73 mm          5.955 mm              2.026 mm              2.026 mm
+   62. MATERA   7243 EURA  Y Comp       1393003450.75 mm          4.964 mm              0.972 mm              0.972 mm
+   63. MATERA   7243 EURA  Z Comp       4133325875.44 mm         -3.091 mm              2.444 mm              2.444 mm
+       MATERA   7243       U Comp                3.40 mm          3.396 mm              3.119 mm              3.119 mm
+       MATERA   7243       E Comp                3.04 mm          3.043 mm              0.755 mm              0.755 mm
+       MATERA   7243       N Comp               -6.99 mm         -6.990 mm              0.851 mm              0.851 mm
+   64. MATERA   CL 0 19/09/03 17:30                           -5943.714 ns              0.046 ns              0.046 ns        
+   65. MATERA   CL 1 19/09/03 17:30                             -22.731 D-14            0.339 D-14            0.339 D-14      
+   91. MATERA   BR 0 19/09/03 22:48                              -0.445 ns              0.023 ns              0.023 ns        
+   92. MATERA   BR 1 19/09/03 22:48                              -1.131 D-14            0.412 D-14            0.412 D-14      
+   93. MATERA   AT 0 19/09/03 17:30                            1377.953 ps              9.516 ps              9.516 ps
+       MATERA   Atm  2019.09.04-02:33:25.387  Avg:   689.964 ps   Rms:      40.958 ps   Tot_Rms:      40.958 ps
+  119. MATERA   NG 19/09/03 17:30                                -0.073 mm              0.153 mm              0.153 mm        
+  120. MATERA   EG 19/09/03 17:30                                -0.087 mm              0.145 mm              0.145 mm        
+  121. MATERA   NG 19/09/04 17:28                                 0.544 mm              0.217 mm              0.217 mm        
+  122. MATERA   EG 19/09/04 17:28                                -0.615 mm              0.169 mm              0.169 mm        
+
+Station positions are for epoch: 2019.09.04-05:08:47
+  123. MEDICINA 7230 EURA  X Comp       4461369559.19 mm         -7.418 mm              1.367 mm              1.367 mm
+  124. MEDICINA 7230 EURA  Y Comp        919597242.00 mm         -2.663 mm              0.690 mm              0.690 mm
+  125. MEDICINA 7230 EURA  Z Comp       4449559456.41 mm        -11.101 mm              1.752 mm              1.752 mm
+       MEDICINA 7230       U Comp              -13.35 mm        -13.347 mm              2.179 mm              2.179 mm
+       MEDICINA 7230       E Comp               -1.11 mm         -1.111 mm              0.579 mm              0.579 mm
+       MEDICINA 7230       N Comp               -2.44 mm         -2.444 mm              0.574 mm              0.574 mm
+  126. MEDICINA CL 0 19/09/03 17:30                           -8146.945 ns              0.020 ns              0.020 ns        
+  127. MEDICINA CL 1 19/09/03 17:30                              -1.647 D-14            0.040 D-14            0.040 D-14      
+  153. MEDICINA AT 0 19/09/03 17:30                             781.576 ps              7.769 ps              7.769 ps
+       MEDICINA Atm  2019.09.04-04:57:48.304  Avg:   418.442 ps   Rms:      48.063 ps   Tot_Rms:      48.064 ps
+  179. MEDICINA NG 19/09/03 17:30                                 1.023 mm              0.114 mm              0.114 mm        
+  180. MEDICINA EG 19/09/03 17:30                                -1.218 mm              0.113 mm              0.113 mm        
+  181. MEDICINA NG 19/09/04 17:28                                -0.340 mm              0.099 mm              0.099 mm        
+  182. MEDICINA EG 19/09/04 17:28                                -1.450 mm              0.124 mm              0.124 mm        
+
+Station positions are for epoch: 2019.09.04-06:46:39
+  183. NOTO     7547 EURA  X Comp       4934562698.17 mm        -17.409 mm              4.169 mm              4.169 mm
+  184. NOTO     7547 EURA  Y Comp       1321201660.77 mm          4.343 mm              2.005 mm              2.005 mm
+  185. NOTO     7547 EURA  Z Comp       3806484823.76 mm        -20.886 mm              4.636 mm              4.636 mm
+       NOTO     7547       U Comp              -25.09 mm        -25.087 mm              6.193 mm              6.193 mm
+       NOTO     7547       E Comp                8.70 mm          8.697 mm              1.411 mm              1.411 mm
+       NOTO     7547       N Comp               -7.29 mm         -7.290 mm              1.596 mm              1.596 mm
+  186. NOTO     CL 0 19/09/03 17:32                          -58598.818 ns              0.032 ns              0.032 ns        
+  187. NOTO     CL 1 19/09/03 17:32                              10.045 D-14            0.099 D-14            0.099 D-14      
+  213. NOTO     BR 0 19/09/04 09:00                             509.395 ns              0.089 ns              0.089 ns        
+  214. NOTO     BR 1 19/09/04 09:00                              -0.238 D-14            0.258 D-14            0.258 D-14      
+  215. NOTO     AT 0 19/09/03 17:30                            1688.852 ps             10.459 ps             10.459 ps
+       NOTO     Atm  2019.09.04-05:43:02.278  Avg:   832.753 ps   Rms:      40.910 ps   Tot_Rms:      40.910 ps
+  241. NOTO     NG 19/09/03 17:30                                -1.056 mm              0.339 mm              0.339 mm        
+  242. NOTO     EG 19/09/03 17:30                                 2.758 mm              0.401 mm              0.401 mm        
+  243. NOTO     NG 19/09/04 17:28                                 0.948 mm              0.233 mm              0.233 mm        
+  244. NOTO     EG 19/09/04 17:28                                 1.491 mm              0.269 mm              0.269 mm        
+
+Station positions are for epoch: 2019.09.04-05:19:54
+  245. NYALES20 7331 EURA  X Comp       1202462416.42 mm         -2.041 mm              1.169 mm              1.169 mm
+  246. NYALES20 7331 EURA  Y Comp        252734556.30 mm         -7.253 mm              0.777 mm              0.777 mm
+  247. NYALES20 7331 EURA  Z Comp       6237766290.49 mm          8.219 mm              2.456 mm              2.456 mm
+       NYALES20 7331       U Comp                7.40 mm          7.396 mm              2.597 mm              2.597 mm
+       NYALES20 7331       E Comp               -6.68 mm         -6.679 mm              0.702 mm              0.702 mm
+       NYALES20 7331       N Comp                5.00 mm          5.003 mm              0.876 mm              0.876 mm
+  248. NYALES20 CL 0 19/09/03 17:30                         -168759.419 ns              0.021 ns              0.021 ns        
+  249. NYALES20 CL 1 19/09/03 17:30                              76.807 D-14            0.049 D-14            0.049 D-14      
+  275. NYALES20 AT 0 19/09/03 17:30                             422.801 ps              5.792 ps              5.792 ps
+       NYALES20 Atm  2019.09.04-04:55:24.020  Avg:   245.210 ps   Rms:      51.623 ps   Tot_Rms:      51.624 ps
+  301. NYALES20 NG 19/09/03 17:30                                 0.319 mm              0.168 mm              0.168 mm        
+  302. NYALES20 EG 19/09/03 17:30                                -0.230 mm              0.108 mm              0.108 mm        
+  303. NYALES20 NG 19/09/04 17:28                                -1.212 mm              0.199 mm              0.199 mm        
+  304. NYALES20 EG 19/09/04 17:28                                -0.134 mm              0.144 mm              0.144 mm        
+
+Station positions are for epoch: 2019.09.04-05:14:01
+  305. ONSALA60 7213 EURA  X Comp       3370605694.63 mm         -5.101 mm              1.616 mm              1.616 mm
+  306. ONSALA60 7213 EURA  Y Comp        711917808.67 mm         -4.169 mm              0.882 mm              0.882 mm
+  307. ONSALA60 7213 EURA  Z Comp       5349830979.88 mm         -3.394 mm              2.689 mm              2.689 mm
+       ONSALA60 7213       U Comp               -6.01 mm         -6.013 mm              3.082 mm              3.082 mm
+       ONSALA60 7213       E Comp               -3.02 mm         -3.025 mm              0.760 mm              0.760 mm
+       ONSALA60 7213       N Comp                3.10 mm          3.102 mm              0.740 mm              0.740 mm
+  308. ONSALA60 CL 0 19/09/03 17:30                          -29406.450 ns              0.022 ns              0.022 ns        
+  309. ONSALA60 CL 1 19/09/03 17:30                             -36.608 D-14            0.041 D-14            0.041 D-14      
+  335. ONSALA60 AT 0 19/09/03 17:30                             971.948 ps              7.866 ps              7.866 ps
+       ONSALA60 Atm  2019.09.04-04:33:58.353  Avg:   461.916 ps   Rms:     156.762 ps   Tot_Rms:     156.763 ps
+  361. ONSALA60 NG 19/09/03 17:30                                -0.641 mm              0.122 mm              0.122 mm        
+  362. ONSALA60 EG 19/09/03 17:30                                -0.777 mm              0.188 mm              0.188 mm        
+  363. ONSALA60 NG 19/09/04 17:28                                 0.521 mm              0.236 mm              0.236 mm        
+  364. ONSALA60 EG 19/09/04 17:28                                 0.127 mm              0.156 mm              0.156 mm        
+
+Station positions are for epoch: 2019.09.04-01:56:08
+  365. SVETLOE  7380 EURA  X Comp       2730173536.62 mm          0.408 mm              1.597 mm              1.597 mm
+  366. SVETLOE  7380 EURA  Y Comp       1562442881.10 mm          3.644 mm              1.217 mm              1.217 mm
+  367. SVETLOE  7380 EURA  Z Comp       5529969205.91 mm          7.529 mm              3.352 mm              3.352 mm
+       SVETLOE  7380       U Comp                7.62 mm          7.619 mm              3.731 mm              3.731 mm
+       SVETLOE  7380       E Comp                2.96 mm          2.960 mm              0.825 mm              0.825 mm
+       SVETLOE  7380       N Comp                1.82 mm          1.820 mm              0.817 mm              0.817 mm
+  368. SVETLOE  CL 0 19/09/03 17:30                          215437.968 ns              0.024 ns              0.024 ns        
+  369. SVETLOE  CL 1 19/09/03 17:30                               0.375 D-14            0.094 D-14            0.094 D-14      
+  395. SVETLOE  AT 0 19/09/03 17:30                             848.132 ps             10.555 ps             10.555 ps
+       SVETLOE  Atm  2019.09.04-01:32:43.403  Avg:   399.546 ps   Rms:      61.172 ps   Tot_Rms:      61.172 ps
+  421. SVETLOE  NG 19/09/03 17:30                                -0.556 mm              0.258 mm              0.258 mm        
+  422. SVETLOE  EG 19/09/03 17:30                                 2.893 mm              0.280 mm              0.280 mm        
+  423. SVETLOE  NG 19/09/04 17:28                                -0.236 mm              0.491 mm              0.491 mm        
+  424. SVETLOE  EG 19/09/04 17:28                                -1.287 mm              0.502 mm              0.502 mm        
+
+  425. WETTZELL AT 0 19/09/03 17:30                             567.621 ps              6.874 ps              6.874 ps
+       WETTZELL Atm  2019.09.04-05:36:59.518  Avg:   291.901 ps   Rms:      19.086 ps   Tot_Rms:      19.087 ps
+  451. WETTZELL NG 19/09/03 17:30                                 0.029 mm              0.090 mm              0.090 mm        
+  452. WETTZELL EG 19/09/03 17:30                                -0.236 mm              0.103 mm              0.103 mm        
+  453. WETTZELL NG 19/09/04 17:28                                -0.243 mm              0.108 mm              0.108 mm        
+  454. WETTZELL EG 19/09/04 17:28                                -0.147 mm              0.114 mm              0.114 mm        
+
+Station positions are for epoch: 2019.09.04-05:14:54
+  455. YEBES40M 7386 EURA  X Comp       4848761740.92 mm        -12.986 mm              1.459 mm              1.459 mm
+  456. YEBES40M 7386 EURA  Y Comp       -261484061.61 mm         -0.108 mm              0.619 mm              0.619 mm
+  457. YEBES40M 7386 EURA  Z Comp       4123085115.42 mm        -17.581 mm              1.790 mm              1.790 mm
+       YEBES40M 7386       U Comp              -21.28 mm        -21.276 mm              2.188 mm              2.188 mm
+       YEBES40M 7386       E Comp               -0.81 mm         -0.807 mm              0.644 mm              0.644 mm
+       YEBES40M 7386       N Comp               -4.94 mm         -4.942 mm              0.715 mm              0.715 mm
+  458. YEBES40M CL 0 19/09/03 17:30                           -7482.831 ns              0.020 ns              0.020 ns        
+  459. YEBES40M CL 1 19/09/03 17:30                              -5.854 D-14            0.040 D-14            0.040 D-14      
+  485. YEBES40M AT 0 19/09/03 17:30                             572.074 ps              7.851 ps              7.851 ps
+       YEBES40M Atm  2019.09.04-05:00:58.522  Avg:   294.678 ps   Rms:      57.153 ps   Tot_Rms:      57.154 ps
+  511. YEBES40M NG 19/09/03 17:30                                -1.013 mm              0.076 mm              0.076 mm        
+  512. YEBES40M EG 19/09/03 17:30                                -0.399 mm              0.053 mm              0.053 mm        
+  513. YEBES40M NG 19/09/04 17:28                                -0.093 mm              0.080 mm              0.080 mm        
+  514. YEBES40M EG 19/09/04 17:28                                -0.118 mm              0.059 mm              0.059 mm        
+
+Station positions are for epoch: 2019.09.04-04:46:59
+  515. ZELENCHK 7381 EURA  X Comp       3451207383.86 mm         -2.755 mm              2.150 mm              2.150 mm
+  516. ZELENCHK 7381 EURA  Y Comp       3060375508.20 mm         -7.768 mm              1.820 mm              1.820 mm
+  517. ZELENCHK 7381 EURA  Z Comp       4391915106.10 mm         -8.963 mm              3.120 mm              3.120 mm
+       ZELENCHK 7381       U Comp              -11.41 mm        -11.411 mm              3.989 mm              3.989 mm
+       ZELENCHK 7381       E Comp               -3.98 mm         -3.984 mm              0.965 mm              0.965 mm
+       ZELENCHK 7381       N Comp               -1.48 mm         -1.478 mm              0.907 mm              0.907 mm
+  518. ZELENCHK CL 0 19/09/03 17:30                          215719.612 ns              0.025 ns              0.025 ns        
+  519. ZELENCHK CL 1 19/09/03 17:30                               1.220 D-14            0.044 D-14            0.044 D-14      
+  545. ZELENCHK AT 0 19/09/03 17:30                             490.218 ps              8.748 ps              8.748 ps
+       ZELENCHK Atm  2019.09.04-04:37:01.651  Avg:   242.151 ps   Rms:      27.442 ps   Tot_Rms:      27.442 ps
+  571. ZELENCHK NG 19/09/03 17:30                                 0.116 mm              0.318 mm              0.318 mm        
+  572. ZELENCHK EG 19/09/03 17:30                                -0.304 mm              0.338 mm              0.338 mm        
+  573. ZELENCHK NG 19/09/04 17:28                                 0.188 mm              0.349 mm              0.349 mm        
+  574. ZELENCHK EG 19/09/04 17:28                                -0.399 mm              0.327 mm              0.327 mm        
+
+  575.D 0119+115 RT. ASC.          01 21 41.59504938      0.0987      m-asec     0.1291      m-asec     0.1291      m-asec
+                  CORRECTION             0.0000066
+                SCALED SIGMA             0.0000086
+
+  576.D 0119+115 DEC.              11 49 50.41284249          -0.4075 m-asec          0.2015 m-asec          0.2015 m-asec
+                  CORRECTION            -0.0004075
+                SCALED SIGMA             0.0002015
+
+        0119+115 CORRELATION     0.0781  Reference date: 2000.01.01-12:00:00
+  577.H 0229+131 RT. ASC.          02 31 45.89410416      0.6970      m-asec     0.0635      m-asec     0.0635      m-asec
+                  CORRECTION             0.0000465
+                SCALED SIGMA             0.0000042
+
+  578.H 0229+131 DEC.              13 22 54.71652895           0.2490 m-asec          0.1068 m-asec          0.1068 m-asec
+                  CORRECTION             0.0002490
+                SCALED SIGMA             0.0001068
+
+        0229+131 CORRELATION    -0.2554  Reference date: 2000.01.01-12:00:00
+  579.I CTA26    RT. ASC.          03 39 30.93777631     -0.1663      m-asec     0.1227      m-asec     0.1227      m-asec
+                  CORRECTION            -0.0000111
+                SCALED SIGMA             0.0000082
+
+  580.I CTA26    DEC.             -01 46 35.80458021          -0.3802 m-asec          0.3234 m-asec          0.3234 m-asec
+                  CORRECTION            -0.0003802
+                SCALED SIGMA             0.0003234
+
+        CTA26    CORRELATION    -0.4205  Reference date: 2000.01.01-12:00:00
+  581.J NRAO150  RT. ASC.          03 59 29.74741803      2.1724      m-asec     0.8753      m-asec     0.8753      m-asec
+                  CORRECTION             0.0001448
+                SCALED SIGMA             0.0000584
+
+  582.J NRAO150  DEC.              50 57 50.16329266           1.3627 m-asec          0.4511 m-asec          0.4511 m-asec
+                  CORRECTION             0.0013627
+                SCALED SIGMA             0.0004511
+
+        NRAO150  CORRELATION    -0.3026  Reference date: 2000.01.01-12:00:00
+  583.K 0446+112 RT. ASC.          04 49 07.67111157      0.1360      m-asec     0.0940      m-asec     0.0940      m-asec
+                  CORRECTION             0.0000091
+                SCALED SIGMA             0.0000063
+
+  584.K 0446+112 DEC.              11 21 28.59613306          -0.2169 m-asec          0.1891 m-asec          0.1891 m-asec
+                  CORRECTION            -0.0002169
+                SCALED SIGMA             0.0001891
+
+        0446+112 CORRELATION    -0.3718  Reference date: 2000.01.01-12:00:00
+  585.O 0613+570 RT. ASC.          06 17 16.92258205      0.2350      m-asec     0.1441      m-asec     0.1441      m-asec
+                  CORRECTION             0.0000157
+                SCALED SIGMA             0.0000096
+
+  586.O 0613+570 DEC.              57 01 16.42337956           0.1708 m-asec          0.0754 m-asec          0.0754 m-asec
+                  CORRECTION             0.0001708
+                SCALED SIGMA             0.0000754
+
+        0613+570 CORRELATION     0.0312  Reference date: 2000.01.01-12:00:00
+  587.P 0642+449 RT. ASC.          06 46 32.02597549     -0.3002      m-asec     0.1019      m-asec     0.1019      m-asec
+                  CORRECTION            -0.0000200
+                SCALED SIGMA             0.0000068
+
+  588.P 0642+449 DEC.              44 51 16.59013100           0.0110 m-asec          0.0887 m-asec          0.0887 m-asec
+                  CORRECTION             0.0000110
+                SCALED SIGMA             0.0000887
+
+        0642+449 CORRELATION    -0.1599  Reference date: 2000.01.01-12:00:00
+  589.Q 0646-306 RT. ASC.          06 48 14.09656017      1.3967      m-asec     0.5511      m-asec     0.5511      m-asec
+                  CORRECTION             0.0000931
+                SCALED SIGMA             0.0000367
+
+  590.Q 0646-306 DEC.             -30 44 19.66464723          -4.8665 m-asec          2.3772 m-asec          2.3772 m-asec
+                  CORRECTION            -0.0048665
+                SCALED SIGMA             0.0023772
+
+        0646-306 CORRELATION    -0.4084  Reference date: 2000.01.01-12:00:00
+  591.R 0656+082 RT. ASC.          06 59 17.99603907      0.1150      m-asec     0.0926      m-asec     0.0926      m-asec
+                  CORRECTION             0.0000077
+                SCALED SIGMA             0.0000062
+
+  592.R 0656+082 DEC.              08 13 30.95376384           0.2838 m-asec          0.2086 m-asec          0.2086 m-asec
+                  CORRECTION             0.0002838
+                SCALED SIGMA             0.0002086
+
+        0656+082 CORRELATION    -0.4507  Reference date: 2000.01.01-12:00:00
+  593.U 0738+491 RT. ASC.          07 42 02.74896597      0.2248      m-asec     0.1417      m-asec     0.1417      m-asec
+                  CORRECTION             0.0000150
+                SCALED SIGMA             0.0000094
+
+  594.U 0738+491 DEC.              49 00 15.60887849          -0.0526 m-asec          0.1028 m-asec          0.1028 m-asec
+                  CORRECTION            -0.0000526
+                SCALED SIGMA             0.0001028
+
+        0738+491 CORRELATION    -0.2667  Reference date: 2000.01.01-12:00:00
+  595.V 0748+126 RT. ASC.          07 50 52.04573778     -0.0131      m-asec     0.0788      m-asec     0.0788      m-asec
+                  CORRECTION            -0.0000009
+                SCALED SIGMA             0.0000053
+
+  596.V 0748+126 DEC.              12 31 04.82841010           0.2022 m-asec          0.1329 m-asec          0.1329 m-asec
+                  CORRECTION             0.0002022
+                SCALED SIGMA             0.0001329
+
+        0748+126 CORRELATION    -0.2917  Reference date: 2000.01.01-12:00:00
+  597.Z 0834-201 RT. ASC.          08 36 39.21514916     -1.5433      m-asec     0.3494      m-asec     0.3494      m-asec
+                  CORRECTION            -0.0001029
+                SCALED SIGMA             0.0000233
+
+  598.Z 0834-201 DEC.             -20 16 59.49422982          10.0475 m-asec          1.1245 m-asec          1.1245 m-asec
+                  CORRECTION             0.0100475
+                SCALED SIGMA             0.0011245
+
+        0834-201 CORRELATION    -0.3126  Reference date: 2000.01.01-12:00:00
+  599.K 1351-018 RT. ASC.          13 54 06.89529626     -0.4642      m-asec     0.1731      m-asec     0.1731      m-asec
+                  CORRECTION            -0.0000309
+                SCALED SIGMA             0.0000115
+
+  600.K 1351-018 DEC.             -02 06 03.18732190           3.1743 m-asec          0.5711 m-asec          0.5711 m-asec
+                  CORRECTION             0.0031743
+                SCALED SIGMA             0.0005711
+
+        1351-018 CORRELATION    -0.3863  Reference date: 2000.01.01-12:00:00
+  601.L 1418+546 RT. ASC.          14 19 46.59740607     -0.0558      m-asec     0.1059      m-asec     0.1059      m-asec
+                  CORRECTION            -0.0000037
+                SCALED SIGMA             0.0000071
+
+  602.L 1418+546 DEC.              54 23 14.78691549          -0.1808 m-asec          0.0663 m-asec          0.0663 m-asec
+                  CORRECTION            -0.0001808
+                SCALED SIGMA             0.0000663
+
+        1418+546 CORRELATION     0.1397  Reference date: 2000.01.01-12:00:00
+  603.N 1502+036 RT. ASC.          15 05 06.47718770      0.3989      m-asec     0.1471      m-asec     0.1471      m-asec
+                  CORRECTION             0.0000266
+                SCALED SIGMA             0.0000098
+
+  604.N 1502+036 DEC.              03 26 30.81310264           0.5226 m-asec          0.4118 m-asec          0.4118 m-asec
+                  CORRECTION             0.0005226
+                SCALED SIGMA             0.0004118
+
+        1502+036 CORRELATION    -0.4297  Reference date: 2000.01.01-12:00:00
+  605.P 1606+106 RT. ASC.          16 08 46.20320029      0.1994      m-asec     0.1086      m-asec     0.1086      m-asec
+                  CORRECTION             0.0000133
+                SCALED SIGMA             0.0000072
+
+  606.P 1606+106 DEC.              10 29 07.77594334           0.2009 m-asec          0.1815 m-asec          0.1815 m-asec
+                  CORRECTION             0.0002009
+                SCALED SIGMA             0.0001815
+
+        1606+106 CORRELATION    -0.2741  Reference date: 2000.01.01-12:00:00
+  607.U 1751+288 RT. ASC.          17 53 42.47365178      0.1433      m-asec     0.0707      m-asec     0.0707      m-asec
+                  CORRECTION             0.0000096
+                SCALED SIGMA             0.0000047
+
+  608.U 1751+288 DEC.              28 48 04.93886056          -0.0182 m-asec          0.0948 m-asec          0.0948 m-asec
+                  CORRECTION            -0.0000182
+                SCALED SIGMA             0.0000948
+
+        1751+288 CORRELATION    -0.1952  Reference date: 2000.01.01-12:00:00
+  609.Z 1908-201 RT. ASC.          19 11 09.65289832      0.0806      m-asec     0.2648      m-asec     0.2648      m-asec
+                  CORRECTION             0.0000054
+                SCALED SIGMA             0.0000177
+
+  610.Z 1908-201 DEC.             -20 06 55.10934241          -0.2760 m-asec          1.1578 m-asec          1.1578 m-asec
+                  CORRECTION            -0.0002760
+                SCALED SIGMA             0.0011578
+
+        1908-201 CORRELATION    -0.5336  Reference date: 2000.01.01-12:00:00
+  611.B 2000+472 RT. ASC.          20 02 10.41828181      0.5530      m-asec     0.1380      m-asec     0.1380      m-asec
+                  CORRECTION             0.0000369
+                SCALED SIGMA             0.0000092
+
+  612.B 2000+472 DEC.              47 25 28.77379261           0.0455 m-asec          0.0996 m-asec          0.0996 m-asec
+                  CORRECTION             0.0000455
+                SCALED SIGMA             0.0000996
+
+        2000+472 CORRELATION    -0.0521  Reference date: 2000.01.01-12:00:00
+  613.G 2255-282 RT. ASC.          22 58 05.96291196      0.5140      m-asec     0.4236      m-asec     0.4236      m-asec
+                  CORRECTION             0.0000343
+                SCALED SIGMA             0.0000282
+
+  614.G 2255-282 DEC.             -27 58 21.25289204           3.8580 m-asec          1.5558 m-asec          1.5558 m-asec
+                  CORRECTION             0.0038580
+                SCALED SIGMA             0.0015558
+
+        2255-282 CORRELATION    -0.2817  Reference date: 2000.01.01-12:00:00
+  615.I 2318+049 RT. ASC.          23 20 44.85660514      0.2021      m-asec     0.0755      m-asec     0.0755      m-asec
+                  CORRECTION             0.0000135
+                SCALED SIGMA             0.0000050
+
+  616.I 2318+049 DEC.              05 13 49.95183851          -0.7631 m-asec          0.1757 m-asec          0.1757 m-asec
+                  CORRECTION            -0.0007631
+                SCALED SIGMA             0.0001757
+
+        2318+049 CORRELATION    -0.3970  Reference date: 2000.01.01-12:00:00
+ Atmosphere Constraint Statistics
+  1. BADARY   Input  40.00 ps/h RMS  57.82 ps/h NRMS  1.45 share 0.07 count  25
+  2. MATERA   Input  40.00 ps/h RMS  25.15 ps/h NRMS  0.63 share 0.27 count  25
+  3. MEDICINA Input  40.00 ps/h RMS  28.68 ps/h NRMS  0.72 share 0.05 count  25
+  4. NOTO     Input  40.00 ps/h RMS  61.28 ps/h NRMS  1.53 share 0.16 count  25
+  5. NYALES20 Input  40.00 ps/h RMS  15.78 ps/h NRMS  0.39 share 0.03 count  25
+  6. ONSALA60 Input  40.00 ps/h RMS  39.60 ps/h NRMS  0.99 share 0.07 count  25
+  7. SVETLOE  Input  40.00 ps/h RMS  42.56 ps/h NRMS  1.06 share 0.36 count  25
+  8. WETTZELL Input  40.00 ps/h RMS  18.81 ps/h NRMS  0.47 share 0.04 count  25
+  9. YEBES40M Input  40.00 ps/h RMS  28.79 ps/h NRMS  0.72 share 0.04 count  25
+ 10. ZELENCHK Input  40.00 ps/h RMS  25.16 ps/h NRMS  0.63 share 0.08 count  25
+     Overall                    RMS  37.41 ps/h NRMS  0.94 share 0.12 count 250
+
+ Clock Constraint Statistics
+  1. BADARY   Input   2.00 D-14 RMS   2.49 D-14 NRMS  1.24 share 0.12 count  25
+  2. MATERA   Input   2.00 D-14 RMS   1.38 D-14 NRMS  0.69 share 0.37 count  25
+  3. MEDICINA Input   2.00 D-14 RMS   1.31 D-14 NRMS  0.65 share 0.07 count  25
+  4. NOTO     Input   2.00 D-14 RMS   2.49 D-14 NRMS  1.24 share 0.25 count  25
+  5. NYALES20 Input   2.00 D-14 RMS   1.83 D-14 NRMS  0.92 share 0.09 count  25
+  6. ONSALA60 Input   2.00 D-14 RMS   1.04 D-14 NRMS  0.52 share 0.09 count  25
+  7. SVETLOE  Input   2.00 D-14 RMS   1.34 D-14 NRMS  0.67 share 0.39 count  25
+  8. YEBES40M Input   2.00 D-14 RMS   1.48 D-14 NRMS  0.74 share 0.07 count  25
+  9. ZELENCHK Input   2.00 D-14 RMS   1.76 D-14 NRMS  0.88 share 0.10 count  25
+     Overall                    RMS   1.75 D-14 NRMS  0.87 share 0.17 count 225
+
+  617. UT1-TAI   1,  19/09/04 04:48       -0.3018  ms/d      28.36 micros/d        5.66 micros/d        5.66 micros/d
+ EOP without included hi-freq variations  (a-sigmas)  
+                      XWOB          YWOB          UT1-TAI          XSIG         YSIG         USIG
+                       mas           mas            ms           microasec    microasec    microsec
+19/09/04 04:48        0.0000         0.0000         0.0000          0.00         0.00         0.00
+
+ EOP epoch (TT)   MJD: 58730.201328        NUT epoch (TT)   MJD: 58730.201328
+  618. Nutation offset in longitude (Psi)               -0.683 mas       88.2 microasec       88.2 microasec       
+       Nutation offset around X-axis       (dX)         -0.272 mas       35.1 microasec       35.1 microasec       
+       Nutation offset wrt IAU 1980 model (Psi)       -117.924 mas       88.2 microasec       88.2 microasec       
+  619. Nutation offset in obliquity (Eps)               -0.109 mas       43.0 microasec       43.0 microasec       
+       Nutation offset around Y-axis       (dY)         -0.109 mas       43.0 microasec       43.0 microasec       
+       Nutation offset wrt IAU 1980 model (Eps)        -10.668 mas       43.0 microasec       43.0 microasec       
+
+  620. BADARY  -MATERA   Clock offset                             5.620 ps              3.264 ps              3.264 ps
+  621. BADARY  -MEDICINA Clock offset                             5.095 ps              2.001 ps              2.001 ps
+  622. BADARY  -NOTO     Clock offset                             5.030 ps              4.440 ps              4.440 ps
+  623. BADARY  -ONSALA60 Clock offset                             5.021 ps              2.933 ps              2.933 ps
+  624. MATERA  -NOTO     Clock offset                           -49.371 ps              5.729 ps              5.729 ps
+  625. MATERA  -NYALES20 Clock offset                           -43.413 ps              2.715 ps              2.715 ps
+  626. MATERA  -SVETLOE  Clock offset                            -5.487 ps              2.733 ps              2.733 ps
+  627. MATERA  -YEBES40M Clock offset                           -16.679 ps              2.399 ps              2.399 ps
+  628. MEDICINA-NYALES20 Clock offset                           -48.109 ps              1.686 ps              1.686 ps
+  629. MEDICINA-SVETLOE  Clock offset                           -11.369 ps              1.973 ps              1.974 ps
+  630. MEDICINA-YEBES40M Clock offset                           -25.271 ps              1.605 ps              1.605 ps
+  631. MEDICINA-ZELENCHK Clock offset                            23.869 ps              2.332 ps              2.332 ps
+  632. NOTO    -NYALES20 Clock offset                           -15.756 ps              4.283 ps              4.283 ps
+  633. NOTO    -SVETLOE  Clock offset                           -21.542 ps              5.174 ps              5.174 ps
+  634. NOTO    -YEBES40M Clock offset                           -17.176 ps              4.045 ps              4.045 ps
+  635. NYALES20-ZELENCHK Clock offset                            12.801 ps              2.240 ps              2.240 ps
+  636. SVETLOE -ZELENCHK Clock offset                             9.171 ps              2.726 ps              2.726 ps
+  637. YEBES40M-ZELENCHK Clock offset                            15.950 ps              2.296 ps              2.296 ps
+ 
+ General constraints usage information:                                                                                 
+ 
+ 1) CLO_RATE "Clock rate between segments     " sigma  2.000E+00 10^-14 sec/sec
+ 2) ATM_RATE "Atmosphere rate between segments" sigma  4.000E+01 psec/hr
+ 
+ Corrected Reduced Chi-Square   1.0000
+
+1     Baseline information for run 19261-1519
+      Monument to monument values at epoch 2019Sep04
+      Baseline vector components: Length, Vertical and Transverse components
+                                                Vector mag c-sigma        Length c-sigma Horizontal c-sigma Vertical c-sigma
+                                                      (mm)   (mm)           (mm)   (mm)      (mm)   (mm)       (mm)   (mm)
+ BADARY   7382       to MATERA   7243        6072587486.67   7.69  6072587486.67   1.93    -10.48   1.02     -20.10   4.87  2019/09/04 05:29:29
+ BADARY   7382       to MEDICINA 7230        6087268687.97   6.72  6087268687.97   1.63     -5.70   0.88      -5.16   4.37  2019/09/04 05:29:29
+ BADARY   7382       to NOTO     7547        6418312740.92  11.62  6418312740.92   2.93    -14.17   1.42       2.68   6.96  2019/09/04 05:29:29
+ BADARY   7382       to NYALES20 7331        4333698036.62   6.62  4333698036.62   1.25     -4.63   1.02     -20.52   4.56  2019/09/04 05:29:29
+ BADARY   7382       to ONSALA60 7213        5271800764.51   7.35  5271800764.51   1.64     -2.77   1.02     -11.46   4.87  2019/09/04 05:29:29
+ BADARY   7382       to SVETLOE  7380        4281660553.27   7.93  4281660553.27   1.51     -5.95   1.02     -25.30   5.28  2019/09/04 05:29:29
+ BADARY   7382       to WETTZELL 7224        5726072754.39   6.44  5726072754.39   1.48     -5.32   0.84     -17.81   4.27  2019/09/04 05:29:29
+ BADARY   7382       to YEBES40M 7386        7079769107.02   6.69  7079769107.02   1.91     -8.37   0.93       2.06   4.29  2019/09/04 05:29:29
+ BADARY   7382       to ZELENCHK 7381        4404836217.12   8.61  4404836217.12   1.76      0.20   1.12      -5.53   5.36  2019/09/04 05:29:29
+ MATERA   7243       to MEDICINA 7230         597262257.59   5.19   597262257.59   0.68     -0.11   0.89      16.34   3.22  2019/09/04 05:29:29
+ MATERA   7243       to NOTO     7547         444532990.25  10.79   444532990.25   1.69     -5.37   1.34      28.80   6.59  2019/09/04 05:29:29
+ MATERA   7243       to NYALES20 7331        4190331407.89   5.66  4190331407.89   1.08     -8.98   0.91      -4.25   3.62  2019/09/04 05:29:29
+ MATERA   7243       to ONSALA60 7213        1886809222.18   6.23  1886809222.18   1.04     -4.22   0.97       8.75   3.96  2019/09/04 05:29:29
+ MATERA   7243       to SVETLOE  7380        2373640034.58   7.05  2373640034.58   1.36     -3.28   0.91      -4.66   4.44  2019/09/04 05:29:29
+ MATERA   7243       to WETTZELL 7224         990053279.91   5.03   990053279.91   0.70     -0.95   0.81       2.80   3.14  2019/09/04 05:29:29
+ MATERA   7243       to YEBES40M 7386        1667396088.79   5.34  1667396088.79   0.88      1.74   0.89      24.16   3.34  2019/09/04 05:29:29
+ MATERA   7243       to ZELENCHK 7381        2065148469.53   7.70  2065148469.53   1.28     -6.14   1.05      14.10   4.59  2019/09/04 05:29:29
+ MEDICINA 7230       to NOTO     7547         893724140.39  10.24   893724140.39   1.21     -7.98   1.59      12.53   6.24  2019/09/04 05:29:29
+ MEDICINA 7230       to NYALES20 7331        3776620882.24   4.28  3776620882.24   0.83     -5.60   0.76     -19.07   2.82  2019/09/04 05:29:29
+ MEDICINA 7230       to ONSALA60 7213        1429470311.42   5.07  1429470311.42   0.89     -1.99   0.80      -7.22   3.27  2019/09/04 05:29:29
+ MEDICINA 7230       to SVETLOE  7380        2139526912.93   6.02  2139526912.93   1.23      0.78   0.76     -20.56   3.82  2019/09/04 05:29:29
+ MEDICINA 7230       to WETTZELL 7224         522461051.69   3.49   522461051.69   0.57      0.67   0.55     -13.44   2.19  2019/09/04 05:29:29
+ MEDICINA 7230       to YEBES40M 7386        1285150280.52   3.87  1285150280.52   0.75     -2.09   0.57       8.34   2.46  2019/09/04 05:29:29
+ MEDICINA 7230       to ZELENCHK 7381        2367843338.70   6.85  2367843338.70   1.09      0.04   0.91      -2.84   4.05  2019/09/04 05:29:29
+ NOTO     7547       to NYALES20 7331        4580537527.07  10.44  4580537527.07   1.84    -14.92   1.51     -31.04   6.36  2019/09/04 05:29:29
+ NOTO     7547       to ONSALA60 7213        2280154748.91  10.83  2280154748.91   1.45    -10.69   1.56     -19.58   6.69  2019/09/04 05:29:29
+ NOTO     7547       to SVETLOE  7380        2808545409.56  11.27  2808545409.56   1.79     -8.75   1.38     -32.21   6.96  2019/09/04 05:29:29
+ NOTO     7547       to WETTZELL 7224        1371100920.16  10.21  1371100920.16   1.23     -7.81   1.48     -25.83   6.26  2019/09/04 05:29:29
+ NOTO     7547       to YEBES40M 7386        1616320402.88  10.32  1616320402.88   1.51     -1.12   1.73      -5.13   6.23  2019/09/04 05:29:29
+ NOTO     7547       to ZELENCHK 7381        2359618035.95  11.66  2359618035.95   1.76     -9.71   1.48     -13.37   7.03  2019/09/04 05:29:29
+ NYALES20 7331       to ONSALA60 7213        2387493172.75   5.15  2387493172.75   0.88     -3.65   0.86      11.66   3.47  2019/09/04 05:29:29
+ NYALES20 7331       to SVETLOE  7380        2133123033.43   6.03  2133123033.43   0.93     -6.87   0.90      -1.68   3.99  2019/09/04 05:29:29
+ NYALES20 7331       to WETTZELL 7224        3283002144.99   3.89  3283002144.99   0.72     -6.56   0.70       5.82   2.65  2019/09/04 05:29:29
+ NYALES20 7331       to YEBES40M 7386        4246386231.03   4.29  4246386231.03   0.94     -7.50   0.78      27.81   2.88  2019/09/04 05:29:29
+ NYALES20 7331       to ZELENCHK 7381        4043126047.79   7.08  4043126047.79   1.24      1.79   1.02      15.57   4.29  2019/09/04 05:29:29
+ ONSALA60 7213       to SVETLOE  7380        1079812959.89   6.74  1079812959.89   1.09      2.86   0.96     -13.43   4.40  2019/09/04 05:29:29
+ ONSALA60 7213       to WETTZELL 7224         919660983.44   4.69   919660983.44   0.80     -2.78   0.76      -6.23   3.07  2019/09/04 05:29:29
+ ONSALA60 7213       to YEBES40M 7386        2153453485.50   5.03  2153453485.50   1.05     -5.64   0.78      15.73   3.27  2019/09/04 05:29:29
+ ONSALA60 7213       to ZELENCHK 7381        2537588031.98   7.65  2537588031.98   1.17      5.56   1.09       4.15   4.67  2019/09/04 05:29:29
+ SVETLOE  7380       to WETTZELL 7224        1654774852.30   5.73  1654774852.30   1.12      0.62   0.73       7.12   3.67  2019/09/04 05:29:29
+ SVETLOE  7380       to YEBES40M 7386        3129608332.67   6.04  3129608332.67   1.44     -2.29   0.80      28.27   3.81  2019/09/04 05:29:29
+ SVETLOE  7380       to ZELENCHK 7381        2014661038.07   8.19  2014661038.07   1.16      7.74   1.13      18.77   5.03  2019/09/04 05:29:29
+ WETTZELL 7224       to YEBES40M 7386        1575458187.39   3.42  1575458187.39   0.69     -3.14   0.50      21.59   2.23  2019/09/04 05:29:29
+ WETTZELL 7224       to ZELENCHK 7381        2255828947.22   6.71  2255828947.22   1.00      3.07   0.92      10.70   3.98  2019/09/04 05:29:29
+ YEBES40M 7386       to ZELENCHK 7381        3613886930.49   7.01  3613886930.49   1.36     -2.22   0.95     -11.20   4.12  2019/09/04 05:29:29
+--
+Note: a posteriori baseline vectors are expressed in a baseline-centric reference frames. The first basis vector of the
+frame, l, is in direction of a priori baseline, (r_2 - r_1). Direction of the second vector, h, is defined by a cross
+product of a priori baseline vector and a priori geocentric vector of the 2nd station. The last basis vector, v, is
+perpendicular to the vectors l and h and is radially inward at the center of the baseline. For the short baselines, the
+vectors l and h are close to the horizontal plane and v is almost vertical (with opposite sign). In the table above the
+columns are:
+ * Vector mag:  length of the a posteriori baseline;
+ * Length:      l-component of the baseline;
+ * Horizontal:  h-component of the baseline;
+ * Vertical:    v-component of the baseline;
+ * c-sigma:     calculated (using standard deviations of adjusted station coordinates of baselines) standard deviations
+                of the corresponding values.
+

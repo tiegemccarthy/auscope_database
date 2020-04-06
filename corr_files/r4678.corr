@@ -1,0 +1,394 @@
+TIMETAG 2015/04/08 15:47:22 
+MK3DB_VERSION    1
+Dbedit: R4  -DH-
+VLBI experiment R4678 ( NEOSA )
+Created by dbedit Ver. 2010.06.18  revision 6.20
+        run by vlbi ( vlbi@ )
+            at USN -- USNO Earth Orientation department
+               on NewJoplin.usno.navy.mil at 2015.04.08-11:47:22 local time
+Dbedit control file history entry: R4  -DH-
+Directory /data2/export/data/4678
+$1>
++HEADER
+CORREL   WACO
+DATABASE 15MAR12XE
+SESSNAME R4678
+OBSTIME  2015/03/12 2015/03/13
+UTSTART  1830
+DURATION 24
+DOY      071/072
+CORRTIME 2015/04/03 2015/04/08
+CORRPASS 1
+EXPORT   Done.
+
++SUMMARY
+
+Qcode   % of Total   % of Correlated
+          scans          scans
+
+ 5-9       89%           94%
+  0         3%            3%
+ B-H        2%            2%
+Removed     6%
+
+Qcodes 7-9 Correlated 93%
+Qcode N Not Correlated  1%
+
++CORRELATOR_NOTES
+
+Problems reading Yg diskpack resulted in scans after 1621a
+not being correlated.
+
++STATION_NOTES
+
+FORTLEZA (Ft/F): Low fringe amplitudes in channel SR4U, leading to
+                 'G' codes.
+
+                 Channel SR4U removed from fringe fitting.
+
+HOBART12 (Hb/H): Low fringe amplitudes in channels SR5U and SR6U,
+                 leading to 'G' codes.
+
+                 Channels SR5U and SR6U removed from fringe fitting.
+
+HART15M  (Ht/J): Low pcal amplitudes leading to 'H' codes.
+
+                 Manual phasecal applied at HART15M.
+
+KATH12M  (Ke/A): Ok.
+
+KOKEE    (Kk/K): Manual phasecal applied at KOKEE.
+
+                 Station reported power supply problems between
+                 072-1700 and 072-1824.  No data was able to be
+                 correlated during this period.
+
+MATERA   (Ma/I): Low fringe amplitudes in channels SR1U, SR5U, and
+                 SR6U, leading to 'G' codes throughout.
+
+                 Channels SR5U and SR6U removed from fringe fitting.
+
+                 Some 'G' codes remain due to channel SR1U, however,
+                 it was left in fringe fitting to improve closure.
+
+WARK12M  (Ww/W): Low pcal amplitudes throughout, leading to 'H'
+                 codes.
+
+                 Manual phasecal applied at WARK12M.
+
+                 Scans after 072-1705 not available at time of
+                 correlation.
+
+WETTZELL (Wz/V): Low fringe amplitudes in channel XR7U, leading to
+                 'G' codes.
+
+                 Channel XR7U removed from fringe fitting.
+
+YARRA12M (Yg/Y): Low fringe amplitudes in channels XR5U, XR6U, XR7U,
+                 and XR8U/L, leading to 'G' codes.
+
+                 Channels XR5U, XR6U, XR7U and XR8U/L removed from
+                 fringe fitting.
+
+                 Scans after 072-1621a not available due to disk
+                 problems.
+
++DROP_CHANNELS
+
+Ft SR4U
+Hb      SR5U SR6U
+Ma      SR5U SR6U
+Yg                XR5U XR6U XR7U XR8U/L
+
++MANUAL PCAL Kk, Ww, Ht
+
++CHANNELS
+XR1U = band|polarization|channel#|sideband
+
+ XR1U/L  BBC01  8212.99
+ XR2U    BBC02  8252.99
+ XR3U    BBC03  8352.99
+ XR4U    BBC04  8512.99
+ XR5U    BBC05  8732.99
+ XR6U    BBC06  8852.99
+ XR7U    BBC07  8912.99
+ XR8U/L  BBC08  8932.99
+ SR1U    BBC09  2225.99
+ SR2U    BBC10  2245.99
+ SR3U    BBC11  2265.99
+ SR4U    BBC12  2295.99
+ SR5U    BBC13  2345.99
+ SR6U    BBC14  2365.99
+
++CLOCKS
+
+Clocks: WACO
+
+Station          fmout-gps      Used      rate
+                  [usec]       [usec]   [sec/sec]
+ Ft                 0.61        0.75     0.000e+00
+ Hb                11.36       13.98     0.000e+00
+ Ht                 2.06        4.62     3.787e-13
+ Ke                 9.36       11.28     2.805e-13
+ Kk                 6.22        7.07     0.000e+00
+ Ma           -999996.28        4.25     1.262e-12
+ Ww                  -         -9.47    -8.333e-13
+ Wz               -30.73      -30.48     0.000e+00
+ Yg                11.30       13.47     0.000e+00
+
+Date: 2015/03/12
+
++QCODES
+
+Qcodes   0  1  2  3  4  5  6   7    8    9  A  B  C  D  E  F  G  H  N   -  Tot
+------------------------------------------------------------------------------
+  FI:X   5  0  0  0  0  0  1   3   14   66  0  0  0  0  0  0  3  0  0  10  102
+  FI:S   8  0  0  0  0  0  1  10   23   46  0  0  0  0  0  0  0  4  0  10  102
+  FJ:X  13  0  0  0  0  1  0   5   17   87  0  0  0  0  0  0  0  0  5  15  143
+  FJ:S  11  0  0  0  0  0  0   0    8  101  0  0  0  0  0  0  0  3  5  15  143
+  FH:X   2  0  0  0  0  0  2   1    0    6  0  0  0  0  0  0  0  0  0   0   11
+  FH:S   0  0  0  0  0  0  0   0    1    9  0  0  0  0  0  0  0  1  0   0   11
+  FA:X   0  0  0  0  0  0  0   0    0    2  0  0  0  0  0  0  0  0  0   0    2
+  FA:S   0  0  0  0  0  0  0   0    0    2  0  0  0  0  0  0  0  0  0   0    2
+  FW:X   1  0  0  0  0  0  0   1    2    6  0  0  0  0  0  0  0  0  0   2   12
+  FW:S   1  0  0  0  0  0  0   0    1    7  0  0  0  0  0  0  0  1  0   2   12
+  FY:X   2  0  0  0  0  0  0   0    0    6  0  0  0  0  0  0  0  0  0   4   12
+  FY:S   1  0  0  0  0  0  0   0    0    7  0  0  0  0  0  0  0  0  0   4   12
+  FK:X  13  0  0  0  0  1  1   2    1   33  0  0  0  0  0  0  0  1  1   8   61
+  FK:S   3  0  0  0  0  0  0   2    3   43  0  0  0  0  0  0  0  1  1   8   61
+  FV:X   1  0  0  0  0  0  0   2   24   72  0  0  0  0  0  0  1  0  2   4  106
+  FV:S   0  0  0  0  0  0  0   1   15   81  0  0  0  0  0  0  1  2  2   4  106
+  IJ:X   3  0  0  0  0  0  0   1    7  151  0  0  0  0  0  0  0  0  0   0  162
+  IJ:S   9  0  0  0  0  1 10  33   39   29  0  0  0  0  0  0 34  7  0   0  162
+  IH:X   0  0  0  0  1  0  0   2    4   20  0  0  0  0  0  0  0  0  0   0   27
+  IH:S   7  0  0  0  0  0  0   0    7   12  0  0  0  0  0  0  1  0  0   0   27
+  IA:X   0  0  0  0  0  0  0   1   11   45  0  0  0  0  0  0  0  0  0   0   57
+  IA:S   6  0  0  0  0  0  0   6   14   29  0  0  0  0  0  0  2  0  0   0   57
+  IW:X   0  0  0  0  0  1  0   0    0    1  0  0  0  0  0  0  0  0  0   0    2
+  IW:S   0  0  0  0  0  0  0   1    0    1  0  0  0  0  0  0  0  0  0   0    2
+  IY:X   1  0  0  0  0  0  0   0    3   49  0  0  0  0  0  0  0  0  0   4   57
+  IY:S   8  0  0  0  0  0  0   7   12   22  0  0  0  0  0  0  3  1  0   4   57
+  IK:X   4  0  0  0  0  1  0   2   16   56  0  0  0  0  0  0  0  0  1  11   91
+  IK:S   1  0  0  0  0  0  0   8   38   27  0  0  0  0  0  0  3  2  1  11   91
+  IV:X   0  0  0  0  0  0  1   1   23  279  0  0  0  0  0  0  0  0  2   0  306
+  IV:S   2  0  0  0  0  0  9  75  122   59  0  0  0  0  0  0 33  4  2   0  306
+  JH:X   3  0  0  0  0  0  0   7   37   29  0  0  0  0  0  0  0  0  0   0   76
+  JH:S   1  0  0  0  0  0  0   0    0   75  0  0  0  0  0  0  0  0  0   0   76
+  JA:X   3  0  0  0  0  0  2   7   41   29  0  0  0  0  0  0  0  0  1   0   83
+  JA:S   2  0  0  0  0  0  0   1    8   71  0  0  0  0  0  0  0  0  1   0   83
+  JW:X   1  0  0  0  0  0  0   0   17   29  0  0  0  0  0  0  0  0  0   3   50
+  JW:S   2  0  0  0  0  0  0   1    5   39  0  0  0  0  0  0  0  0  0   3   50
+  JY:X   5  0  0  0  0  0  0   0    4   81  0  0  0  0  0  0  0  0  0  11  101
+  JY:S   5  0  0  0  0  0  0   0    7   78  0  0  0  0  0  0  0  0  0  11  101
+  JV:X   6  0  0  0  0  0  0   1   20  138  0  0  0  0  0  0  0  0  1   0  166
+  JV:S   8  0  0  0  0  0  0   1   48  105  0  0  0  0  0  0  3  0  1   0  166
+  HA:X   0  0  0  0  0  0  0  13   63   93  0  0  0  0  0  0  0  1  1   0  171
+  HA:S   1  0  0  0  0  0  0   0    1  168  0  0  0  0  0  0  0  0  1   0  171
+  HW:X   0  0  0  0  0  0  5  23  125   18  0  0  0  0  0  0  0  1  2  12  186
+  HW:S   0  0  0  0  0  0  0   0    0  172  0  0  0  0  0  0  0  0  2  12  186
+  HY:X   3  0  0  0  0  0  0   1   15  145  0  0  0  0  1  0  0  1  1  17  184
+  HY:S   1  0  0  0  0  0  0   0    6  159  0  0  0  0  0  0  0  0  1  17  184
+  HK:X   4  0  0  0  0  1  2  10   38   29  0  0  0  0  0  0  0  1  0   8   93
+  HK:S   1  0  0  0  0  0  0   0    2   82  0  0  0  0  0  0  0  0  0   8   93
+  HV:X   0  0  0  0  0  0  0   3   11   13  0  0  0  0  0  0  0  0  0   0   27
+  HV:S   7  0  0  0  0  0  0   0    0   20  0  0  0  0  0  0  0  0  0   0   27
+  AW:X   0  0  0  0  0  2  2   9   73   38  0  0  0  0  0  0  0  0  1   8  133
+  AW:S   0  0  0  0  0  0  0   0    8  116  0  0  0  0  0  0  0  0  1   8  133
+  AY:X   1  0  0  0  0  0  0   1   15  160  0  0  0  0  0  0  0  0  1  18  196
+  AY:S   2  0  0  0  0  0  0   0   20  155  0  0  0  0  0  0  0  0  1  18  196
+  AK:X   2  0  0  0  0  2  2  10   31   39  0  0  0  0  0  0  0  0  0  10   96
+  AK:S   0  0  0  0  0  0  0   2   16   67  0  0  0  0  0  0  1  0  0  10   96
+  AV:X   0  0  0  0  0  0  0   3   16   36  0  1  0  0  0  0  0  0  0   0   56
+  AV:S   6  0  0  0  0  0  0   0    7   43  0  0  0  0  0  0  0  0  0   0   56
+  WY:X   1  0  0  0  0  0  0   1   12  102  0  0  0  0  0  0  0  0  1  11  128
+  WY:S   1  0  0  0  0  0  0   1    7  107  0  0  0  0  0  0  0  0  1  11  128
+  WK:X   0  0  0  0  0  0  2  10   17   73  0  0  0  0  0  0  0  0  0   6  108
+  WK:S   1  0  0  0  0  0  2   1   17   81  0  0  0  0  0  0  0  0  0   6  108
+  WV:X   0  0  0  0  0  0  0   0    1    5  0  0  0  0  0  0  0  0  0   0    6
+  WV:S   1  0  0  0  0  0  0   0    1    4  0  0  0  0  0  0  0  0  0   0    6
+  YK:X   3  0  0  0  0  2  0   1    2   51  0  0  0  0  0  0  0  0  0   8   67
+  YK:S   0  0  0  0  0  0  1   5   19   34  0  0  0  0  0  0  0  0  0   8   67
+  YV:X   0  0  0  0  0  0  0   0    3   44  0  1  0  0  0  0  0  0  0   4   52
+  YV:S   9  0  0  0  0  0  0   0    3   36  0  0  0  0  0  0  0  0  0   4   52
+  KV:X   1  0  0  0  0  0  1   4   25   85  0  1  0  0  0  0  0  0  1  11  129
+  KV:S   1  0  0  0  0  0  0   2   30   81  0  0  0  0  0  0  3  0  1  11  129
+------------------------------------------------------------------------------
+Totals 184  0  0  0  1 12 44 282 1176 4284  0  3  0  0  1  0 88 31 42 370 6518
+
+QC = 0   Fringes not detected.
+   = 1-9 Fringes detected, no error condition. Higher #, better quality.
+   = B   Interpolation error in fourfit.
+   = D   No data in one or more frequency channels.
+   = E   Maximum fringe amplitude at edge of SBD, MBD, or rate window.
+   = F   "Fork" problem in processing.
+   = G   Fringe amp in a channel is <.5 times mean amp (only if SNR>20).
+   = H   Low Phase-cal amplitude in one or more channels.
+   = N   No valid correlator data.
+ Tot     Total number of scans in schedule.
+ Minus   Scans in original schedule file for which correlation was not
+         attempted, usually because of known station problems.
+
++SNR_RATIOS
+
+ MEAN RATIOS = Observed SNR / Predicted SNR  for exp no. 4678
+
+ ...by baseline, over all sources:
+
+ bl     X     n       S     n
+
+ FJ    0.49  105     0.88  111
+ FA    0.51    2     0.66    2
+ FK    0.68   39     1.14   49
+ FI    0.60   87     0.81   80
+ FW    0.80    9     1.18    9
+ FV    0.67   99     1.02   99
+ FY    0.83    6     0.86    7
+ FH    0.66    9     0.72   10
+ JA    1.15   78     0.98   79
+ JK    0.00    0     0.00    0
+ JI    0.82  159     0.84  152
+ JW    1.62   46     1.40   45
+ JV    0.95  158     0.96  155
+ JY    0.76   84     1.03   84
+ HJ    1.07   73     0.94   74
+ AK    1.01   84     1.08   86
+ AI    1.00   57     0.89   51
+ AW    1.35  124     1.29  124
+ AV    1.05   55     0.88   49
+ AY    0.86  176     0.94  175
+ HA    0.97  170     0.87  169
+ KI    0.80   72     1.18   78
+ KW    1.30  102     1.60  101
+ KV    0.90  115     1.10  116
+ KY    0.98   56     1.36   59
+ HK    1.00   81     1.18   84
+ IW    0.49    2     1.31    2
+ IV    1.22  304     1.09  302
+ IY    0.95   52     0.89   44
+ HI    1.02   27     0.97   20
+ WV    0.65    6     1.23    5
+ WY    1.14  115     1.42  114
+ HW    1.33  172     1.39  172
+ VY    1.02   47     1.04   39
+ HV    0.76   27     0.96   20
+ HY    0.83  161     0.90  164
+
++FOURFIT_CONTROL_FILE
+
+*
+* 4fit control file for R4678
+*
+  sb_win -0.20 0.20 mb_win -1.0 1.0 dr_win -1.5e-5 1.5e-5
+*
+  if f_group X
+    ref_freq 8212.99
+    pc_mode normal
+    pc_freqs ghijklmn  5010  5010  5010  5010  5010  5010  5010  5010
+**
+  if f_group S
+    dr_win -3.0e-5 3.0e-5
+    ref_freq 2245.99
+    pc_mode normal
+    pc_freqs abcdef  3010  3010  3010  3010  3010  3010
+*
+  if station K
+  lsb_offset 260.0
+
+  if station A
+  lsb_offset  -120.0
+
+  if station J
+  lsb_offset -80.0
+
+  if station Y
+  lsb_offset -100.0
+
+  if station W
+  lsb_offset 260.0
+
+  if station K and f_group S
+  pc_phases abcdef  -116 145 139 -138 136 -162
+  pc_mode manual
+*
+  if station K and f_group X
+  pc_phases ghijklmn   -106 -65 -135 -172 -123 -26 -131 -114
+  pc_mode manual
+
+  if station V and f_group X
+  freqs g h i j k l  n
+
+  if station W and f_group S
+  pc_phases abcdef  58 29 0 -22 -7 100
+  pc_mode manual
+*
+  if station W and f_group X
+  pc_phases ghijklmn   6 30 19 -62 -36 100 9 -3
+  pc_mode manual
+
+  if station J and f_group S
+  pc_phases abcdef  24 11 -14 -11 8 42
+  pc_mode manual
+*
+  if station J and f_group X
+  pc_phases ghijklmn   58 -176 108 156 48 91 109 98
+  pc_mode manual
+
+  if station Y and f_group X
+  freqs g h i j
+
+  if station I and f_group S
+  freqs a b c d
+
+  if station H and f_group S
+  freqs a b c d
+
+  if station F and f_group S
+  freqs a b c   e f
+
+* Daniel
+
++END
+$1<
+Sorted by time and subsorted by baseline.   -DH-
+All  baselines used.
+All  sources used.
+Output time window:  earliest latest
+TIMETAG 2015/04/08 17:23:53 
+MK3DB_VERSION    2
+CALC11.01 Ver. 2014.05.16  Wed Apr  8 13:23:53 2015nuit.usno.
+Calc 11 at USNO  -CD-
+TIMETAG 2015/04/08 17:27:17 
+MK3DB_VERSION    3
+Dbcal: r4678 WXCB added by dbcal -CD-
+ DBCAL: Version 2013.10.18        APR 08,2015 17:27:17
+TIMETAG 2015/04/08 20:12:43 
+MK3DB_VERSION    4
+r4678 USNO SOLVE solution -CD-
+Delay and Rates 60/60 clocks/atm
+fit 42 ps
+The following flyby options were used in the solution:
+Station flyby file:  glo.sit
+Source flyby file :  glo.src
+Nutation series flyby file :  NONE
+Nutation offset flyby file :  NONE
+Earth rotation flyby file  :  last_usno_
+Tectonic plate motion file :  glo.vel
+Group delay ambiguities and editing updated.
+Troposphere and cable cal status for standard solution stored.
+Observation dependent contribution status stored.
+Reweighting updated for:
+FO-HA FO-HO FO-KA FO-KO FO-MA FO-WA FO-WE FO-YA HO-HA HA-KA
+HA-KO HA-MA HA-WA HA-WE HA-YA HO-KA HO-KO HO-MA HO-WA HO-WE
+HO-YA KA-KO KA-MA KA-WA KA-WE KA-YA KO-MA KO-WA KO-WE KO-YA
+MA-WA MA-WE MA-YA WA-WE WA-YA WE-YA
+Baseline-dependent clock used. List of names stored.
+Solution data configuration: GROUP DELAY & RATE
+Clock and atmosphere constraint information saved.
+Batchmode clock parameterization saved.
+Batchmode atmosphere parameterization saved.
+Ionosphere calibrated with IONO IONO  Ve
+Group Ion cal for $15MAR12XE V. 3 based on $15MAR12SE V. 3.
+Barometer calibration and barometer height offset not available.
+Eccentricity data store in data base header.
+Elevation cutoff data stored in database.
+

@@ -1,0 +1,312 @@
+TIMETAG 2013/08/20 17:48:26 
+MK3DB_VERSION    1
+Dbedit: RD1303  -DG-
+VLBI experiment RD1303 ( R&D-03/2013 )
+Created by dbedit Ver. 2011.11.15  revision 6.21
+        run by David Gordon ( dgg@bootes.gsfc.nasa.gov )
+            at GSF -- NASA Goddard Space Flight Center
+               on bootes at 2013.08.20-13:48:26 local time
+Dbedit control file history entry: RD1303  -DG-
+Directory /500/RD_fringe_files/rd1303/2013_05_14_rd1303/3433
+$1>
+
++HEADER
+CORREL   HAYS
+DATABASE 13MAY14XA
+SESSNAME RD1303
+EXPNO    3433
+OBSTIME  2013/05/14 2013/05/15
+UTSTART  1730
+DURATION 24
+DOY      134-135
+CORRTIME 2013/06/07 2013/07/01
+CORRPASS 1
+EXPORT   DONE
+
++SUMMARY
+ Qcode    % of Total   % of Correlated
+             scans          scans
+
+ 5-9        92 %            92 %
+  0          8 %             8 %
+ 4-1,A-H,N   0 %             0 %
+ Removed     0 %
+
++CORRELATOR_NOTES
+
+All observations of the seven category-4 GAIA sources were non-detections
+due to source position epoch errors in the schedule file.
+
++STATION_NOTES
+
+HARTRAO (Hh/J):  Weak fringes in SR1U caused one G code.
+                 Transferred via e-VLBI.
+
+HOBART26 (Ho/H): Fringed with manual phases due to absence of phase cal.
+                 Weak fringes in SR4U caused two G codes.
+                 Mark5A recording transferred via e-VLBI.
+
+KOKEE (Kk/K):    Fringed with manual phases.
+
+NYALES20 (Ny/N): Phase cal phase unstable during a few scans, with channel-
+                   dependent level of instability at X-band.  Instability
+                   originates in RF phase cal signal, not LOs.
+                 Transferred via e-VLBI.
+
+ONSALA60 (On/S): Weak fringes in SR4U caused three G codes.
+                 Mark 5A recording transferred via e-VLBI.
+
+TIGOCONC (Tc/O): OK.
+
+WETTZELL (Wz/V): Weak fringes in SR4U caused three G codes.
+                 Mark 5A recording transferred via e-VLBI.
+
+Except as noted for individual stations, all stations recorded on Mark 5B.
+
++DROP_CHANNELS
+   Hh
+   Ho
+   Kk
+   Ny
+   On
+   Tc
+   Wz
+
++MANUAL PCAL Ho Kk
+
++CHANNELS
+ Channels: XR1U = band|polarization|channel#|sideband
+
+ XR1U/L  BBC01  8212.99
+ XR2U    BBC02  8252.99
+ XR3U    BBC03  8352.99
+ XR4U    BBC04  8512.99
+ XR5U    BBC05  8732.99
+ XR6U    BBC06  8852.99
+ XR7U    BBC07  8912.99
+ XR8U/L  BBC08  8932.99
+ SR1U    BBC09  2225.99
+ SR2U    BBC10  2245.99
+ SR3U    BBC11  2265.99
+ SR4U    BBC12  2295.99
+ SR5U    BBC13  2345.99
+ SR6U    BBC14  2365.99
+
++CLOCKS
+
+Clocks: Haystack
+Station          fmout-gps      Used        rate       Comments
+                   [usec]      [usec]    [sec/sec]
+
+    Hh             16.30       16.814     0.830e-12
+    Ho              4.48        4.756     0.130e-12
+    Kk              6.60        7.567    -0.130e-12
+    Ny             17.27       17.458     1.030e-12
+    On             83.77       83.819     0.480e-12
+    Tc              0.72        0.976    -0.170e-12
+    Wz            -27.15      -26.900    -0.040e-12
+Date: 2013/05/14
+
++QCODES
+
+Qcodes   0 1 2 3 4 5  6  7   8    9 A B C D E F G H N -  Tot
+------------------------------------------------------------
+JH:X     0 0 0 0 0 2  1  4  11   59 0 0 0 0 0 0 0 0 0 0   77
+JH:S     0 0 0 0 0 0  1  0  11   65 0 0 0 0 0 0 0 0 0 0   77
+JN:X     7 0 0 0 0 0  0  1   3   42 0 0 0 0 0 0 0 0 0 0   53
+JN:S     7 0 0 0 0 0  0  1   2   43 0 0 0 0 0 0 0 0 0 0   53
+JS:X     3 0 0 0 0 0  1  0   6   85 0 0 0 0 0 0 0 0 0 0   95
+JS:S     0 0 0 0 0 0  0  0   0   93 0 0 0 0 0 0 2 0 0 0   95
+JV:X     3 0 0 0 0 0  0  3   6   91 0 0 0 0 0 0 0 0 0 0  103
+JV:S     3 0 0 0 0 0  0  1   3   94 0 0 0 0 0 0 2 0 0 0  103
+JK:X     0 0 0 0 0 0  0  0   0    0 0 0 0 0 0 0 0 0 0 0    0
+JK:S     0 0 0 0 0 0  0  0   0    0 0 0 0 0 0 0 0 0 0 0    0
+JO:X     9 0 0 0 0 0  0  0  13  109 0 0 0 0 0 0 0 0 0 0  131
+JO:S     4 0 0 0 0 0  0  0   1  126 0 0 0 0 0 0 0 0 0 0  131
+HN:X     6 0 0 0 0 0  0  1   4    7 0 0 0 0 0 0 0 0 0 0   18
+HN:S     7 0 0 0 0 0  0  0   0   11 0 0 0 0 0 0 0 0 0 0   18
+HS:X     0 0 0 0 0 0  0  0   0   10 0 0 0 0 0 0 0 0 0 0   10
+HS:S     1 0 0 0 0 0  0  0   0    9 0 0 0 0 0 0 0 0 0 0   10
+HV:X     3 0 0 0 0 0  0  1   2   13 0 0 0 0 0 0 0 0 0 0   19
+HV:S     6 0 0 0 0 0  0  0   0   13 0 0 0 0 0 0 0 0 0 0   19
+HK:X     9 0 0 0 0 0  1  1  15   58 0 0 0 0 0 0 0 0 0 0   84
+HK:S     9 0 0 0 0 0  0  0  11   63 0 0 0 0 0 0 1 0 0 0   84
+HO:X     6 0 0 0 0 0  0  0   7   99 0 0 0 0 0 0 0 0 0 0  112
+HO:S     3 0 0 0 0 0  0  0   1  107 0 0 0 0 0 0 1 0 0 0  112
+NS:X     3 0 0 0 0 0  1  2   6  139 0 0 0 0 0 0 0 0 0 0  151
+NS:S     4 0 0 0 0 0  0  1   2  144 0 0 0 0 0 0 0 0 0 0  151
+NV:X    58 0 0 0 0 0  1  3  11  127 0 0 0 0 0 0 0 0 0 0  200
+NV:S    58 0 0 0 0 0  0  2  13  127 0 0 0 0 0 0 0 0 0 0  200
+NK:X     5 0 0 0 0 1  2  1  11   77 0 0 0 0 0 0 0 0 0 0   97
+NK:S     8 0 0 0 0 0  1  2  12   74 0 0 0 0 0 0 0 0 0 0   97
+NO:X     0 0 0 0 0 0  0  0   0   15 0 0 0 0 0 0 0 0 0 0   15
+NO:S     0 0 0 0 0 0  0  0   0   15 0 0 0 0 0 0 0 0 0 0   15
+SV:X     4 0 0 0 0 1  0  2  20  157 0 0 0 0 0 0 0 0 0 0  184
+SV:S     4 0 0 0 0 0  1  0   5  172 0 0 0 0 0 0 2 0 0 0  184
+SK:X     2 0 0 0 0 1  0  2  10   46 0 0 0 0 0 0 0 0 0 0   61
+SK:S     2 0 0 0 0 0  0  0   6   53 0 0 0 0 0 0 0 0 0 0   61
+SO:X     0 0 0 0 0 1  0  4   7   23 0 0 0 0 0 0 0 0 0 0   35
+SO:S     0 0 0 0 0 0  0  0   0   34 0 0 0 0 0 0 1 0 0 0   35
+VK:X     2 0 0 0 0 1  0  1   8   45 0 0 0 0 0 0 0 0 0 0   57
+VK:S     2 0 0 0 0 0  0  0   9   46 0 0 0 0 0 0 0 0 0 0   57
+VO:X     3 0 0 0 0 0  0  0   3   40 0 0 0 0 0 0 0 0 0 0   46
+VO:S     0 0 0 0 0 0  0  0   0   46 0 0 0 0 0 0 0 0 0 0   46
+KO:X     1 0 0 0 0 0  0  0   1   42 0 0 0 0 0 0 0 0 0 0   44
+KO:S     0 0 0 0 0 0  0  0   2   42 0 0 0 0 0 0 0 0 0 0   44
+------------------------------------------------------------
+Totals 242 0 0 0 0 7 10 33 222 2661 0 0 0 0 0 0 9 0 0 0 3184
+
+Legend:
+ QC = 0    Fringes not detected.
+    = 1-9  Fringes detected, no error condition. Higher number = better quality.
+    = B    Interpolation error in fourfit.
+    = D    No data in one or more frequency channels.
+    = E    Maximum fringe amplitude at edge of SBD, MBD, or rate window.
+    = F    "Fork" problem in processing.
+    = G    Fringe amp in a channel is <.5 times mean amp (only if SNR>20).
+    = H    Low phase-cal amplitude in one or more channels.
+    = N    No valid correlator data.
+ Tot       Total number of scans in schedule.
+ Minus     Scans in original schedule file for which correlation was not
+           attempted, usually because of known station problems.
+
++SNR_RATIOS
+
+ MEAN RATIOS = Observed SNR / Predicted SNR  for exp no. 3433
+
+ ...by baseline, over all sources:
+
+ bl     X     n       S     n
+
+ JH    1.77   77     1.42   77
+ JK    0.00    0     0.00    0
+ JN    1.54   46     1.12   46
+ JS    2.04   92     1.42   95
+ JO    1.61  122     1.36  127
+ JV    1.94  100     1.50  100
+ HK    1.91   75     2.14   74
+ HN    1.07   12     1.15   11
+ HS    1.26   10     1.38    9
+ HO    1.40  106     1.43  108
+ HV    1.18   16     1.38   12
+ KN    1.40   92     1.08   89
+ KS    1.61   59     1.43   59
+ KO    2.04   43     2.16   44
+ KV    1.71   55     1.51   55
+ NS    1.55  148     1.15  147
+ NO    1.44   15     1.09   15
+ NV    1.58  142     1.20  142
+ SO    1.87   35     1.45   35
+ SV    2.19  180     1.79  178
+ OV    2.19   43     1.42   46
+
++FOURFIT_CONTROL_FILE
+
+* Fourfit control file for R&D1303  <134-135>
+*
+max_parity 0.01
+dr_win -50.e-6 50.e-6  mb_win -1. 1.  sb_win -0.5 0.5
+pc_mode normal
+use_samples true
+start -3
+*
+if station K or station O
+  lsb_offset 280.
+*
+if station J and f_group S
+  pc_freqs abcdef  3010 3010 3010 3010 3010 3010
+if station J and f_group X
+  pc_freqs ghijklmn 5010 5010 5010 5010 5010 5010 5010 5010
+*
+if station H and f_group S
+  pc_freqs abcdef  3010 3010 3010 3010 3010 3010
+if station H and f_group X
+  pc_freqs ghijklmn 5010 5010 5010 5010 5010 5010 5010 5010
+*
+if station K and f_group S
+  pc_freqs abcdef  3010 3010 3010 3010 3010 3010
+if station K and f_group X
+  pc_freqs ghijklmn 5010 5010 5010 5010 5010 5010 5010 5010
+*
+if station N and f_group S
+  pc_freqs abcdef  3010 3010 3010 3010 3010 3010
+if station N and f_group X
+  pc_freqs ghijklmn 5010 5010 5010 5010 5010 5010 5010 5010
+*
+if station S and f_group S
+  pc_freqs abcdef  3010 3010 3010 3010 3010 3010
+if station S and f_group X
+  pc_freqs ghijklmn 5010 5010 5010 5010 5010 5010 5010 5010
+*
+if station O and f_group S
+  pc_freqs abcdef  3010 3010 3010 3010 3010 3010
+if station O and f_group X
+  pc_freqs ghijklmn 5010 5010 5010 5010 5010 5010 5010 5010
+*
+if station V and f_group S
+  pc_freqs abcdef  3010 3010 3010 3010 3010 3010
+if station V and f_group X
+  pc_freqs ghijklmn 5010 5010 5010 5010 5010 5010 5010 5010
+*
+* Set proper X band reference freq., just in case
+if f_group X
+  ref_freq 8212.99
+*
+* Set proper S band reference freq., just in case
+if f_group S
+  ref_freq 2225.99
+*
+* Manual Phases for Kokee
+*
+if station K and f_group X
+   pc_mode manual
+   pc_phases ghijklmn -178.1 -130.9 -99.1 -165.2 -135.3 -129.7 -177.1 -152.2
+if station K and f_group S
+  pc_mode manual
+  pc_phases abcdef -179.5 166.9 169.3 -124.1 140.3 -166.6
+*
+* Manual Phases for Hobart (no phase cal)
+*
+if station H and f_group X
+   pc_mode manual
+   pc_phases ghijklmn  7.7 -27.8 -22.5 -66.3 -22.0 0.5 172.7 0.0
+if station H and f_group S
+  pc_mode manual
+  pc_phases abcdef 21.4 -18.5 82.9 44.8 2.2 32.6
+*
+* Additive phases with Wettzell as reference
+*
+if station J and f_group X
+  pc_phases ghijklmn -0.3  -7.9  1.0   4.5  12.5  -1.2   3.8  -8.6
+if station J and f_group S
+  pc_phases abcdef 0.3   1.4   2.2   2.3   0.1  -3.2
+*
+if station N and f_group X
+  pc_phases ghijklmn -1.0  -1.1   1.9  -0.2   4.6   0.8  -0.4  -2.4
+if station N and f_group S
+  pc_phases abcdef -2.7  -0.5   2.3   2.2  -1.3  -1.0
+*
+if station S and f_group X
+  pc_phases ghijklmn -0.6  -1.0  -3.9   4.3  11.1  -3.3   1.3  -3.7
+if station S and f_group S
+  pc_phases abcdef 6.3  -6.2   1.3  -5.5   2.6   0.4
+*
+if station O and f_group X
+  pc_phases ghijklmn -12.9  -17.2 -9.4 -6.6   5.8  2.0   3.5   -7.2
+if station O and f_group S
+  pc_phases abcdef -4.7  -4.2   2.5   9.1  -1.0  -4.8
+*
+* MBD windows
+*
+if baseline HO and f_group S
+  mb_win -.050  .020
+*
+Mike/Brian
++END
+
+$1<
+Sorted by time and subsorted by baseline.   -DG-
+All  baselines used.
+All  sources used.
+Output time window:  earliest latest
+

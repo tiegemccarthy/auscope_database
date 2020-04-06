@@ -1,0 +1,128 @@
+       IVS Analysis Report for AUG001 ($15JAN09XA) 
+       This report is the official IVS analysis report that corresponds to 
+       the database maintained by the IVS Data Centers for this session.  
+   (Analyzed by David Gordon, NASA Goddard Space Flight Center.
+    Spoolfile source: interactive solve/nuSolve analysis.) 
+
+Problems: Sinusoidal cycling pattern seen in the HB-YG and KE-YG nuSolve
+          delay residuals; period ~60-90 minutes, amplitude ~300 psec.
+          Not obvious on the HT-YG baseline though, but that may be because
+          it is noisier and has less than half as many points.
+          Yarragadee break at 03:27:48 (-3.4 nsec). 
+
+Parameterization comments: None. 
+
+Other comments: None. 
+
+-----------------------------------------
+
+Session Statistics 
+
+  Observations:     1989 scheduled 
+                    1932 correlated (in database)
+                    1530 recoverable (usable)
+                    1508 used
+  Session fit:        63.667 ps
+
+-----------------------------------------
+
+Station Performance 
+
+                           Number of Observations
+
+                    Scheduled   Recoverable*        Used   % of scheduled
+                                                              obs used
+
+  HART15M                 411           354          349        84.9%
+  HOBART12               1172           864          856        73.0%
+  KATH12M                1170           894          874        74.7%
+  YARRA12M               1225           948          937        76.5%
+  ---------------   ---------   -----------    ---------       ------
+  Station Total**        1989          1530         1508        75.8%
+
+  * Recoverable: can be included in the solution. 
+  ** Total includes distinct observations only.
+
+  MISSED:    Station was scheduled, but it did not observe.
+  NOT CORR:  Station was scheduled but not correlated.
+  NOT USED:  Usable data was generated for this station,
+             but the analyst rejected it all.
+
+-----------------------------------------
+
+Source Performance 
+
+                    Number of Observations
+
+                Scheduled  Correlated*    Used      % of scheduled
+                                                       obs used
+
+  0727-115             86          82       82           95.3%
+  0521-365            107         105      102           95.3%
+  0834-201             86          85       59           68.6%
+  1424-418            112         112      109           97.3%
+  1334-127             87          86       84           96.6%
+  0426-380             93          89       89           95.7%
+  1308+326             11          11       11          100.0%
+  1510-089             87          87       87          100.0%
+  1144-379             42          42       41           97.6%
+  0607-157             54          50       50           92.6%
+  0332-403             28          26       26           92.9%
+  0454-234             36          32       31           86.1%
+  1741-038             77          72       71           92.2%
+  1749+096             38          38       38          100.0%
+  0537-441             37          32       32           86.5%
+  1611+343             23          23       23          100.0%
+  1908-201            400         400       31            7.8%
+  0748+126             16          16       16          100.0%
+  4C39.25              20          20       20          100.0%
+  1921-293             41          40       35           85.4%
+  0637-752             77          71       65           84.4%
+  1633+38              24          24       24          100.0%
+  1958-179             45          45       45          100.0%
+  2145+067             34          34       31           91.2%
+  2255-282             35          34       34           97.1%
+  3C446                34          34       32           94.1%
+  0106+013             32          30       30           93.8%
+  2201+315              6           6        6          100.0%
+  CTA26                28          26       26           92.9%
+  0420-014             75          71       71           94.7%
+  0234+285             25          21       21           84.0%
+  2136+141              6           6        6          100.0%
+  0528+134             13          13       13          100.0%
+  VR422201              6           6        6          100.0%
+  0119+115             14          12       10           71.4%
+  0552+398             18          16       16           88.9%
+  OJ287                36          35       35           97.2%
+  ------------  ---------  ----------   ------          ------
+  Source Total       1989        1932     1508           75.8%
+
+ * Correlated: included in database 
+
+-----------------------------------------
+
+Baseline Performance 
+
+                                 Number of Observations
+
+                         Scheduled   Recoverable*         Used   % of scheduled
+                                                                    obs used
+
+  HART15M-HOBART12             113            99            98        86.7%
+  HART15M-KATH12M              108            95            92        85.2%
+  HART15M-YARRA12M             190           160           159        83.7%
+  HOBART12-KATH12M             543           388           381        70.2%
+  HOBART12-YARRA12M            516           377           377        73.1%
+  KATH12M-YARRA12M             519           411           401        77.3%
+  -----------------      ---------   -----------    ----------       ------
+  Baseline Total              1989          1530          1508        75.8%
+
+  * Recoverable: can be included in the solution. 
+
+  MISSED:     Baseline was scheduled, but at least one of the sites
+              did not observe.
+  NOT CORR:   Baseline was scheduled but not correlated.
+  NO DATA:    The baseline's stations were both correlated,
+              but they did not observe together.
+  DESELECTED: Usable data was generated for the baseline,
+              but the analyst rejected it.

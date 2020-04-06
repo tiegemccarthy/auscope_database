@@ -1,0 +1,169 @@
+TIMETAG 2015/03/28 22:45:04 
+MK3DB_VERSION    1
+Dbedit: AUG005 -AU-
+VLBI experiment AUG005 ( AUG005/2014 )
+Created by dbedit Ver. 2013.10.18  revision 6.22
+        run by Observer ( observer@ops7 )
+            at HOB -- University of Tasmania
+               on ops7 at 2015.03.29-09:45:04 local time
+Dbedit control file history entry: AUG005 -AU-
+Directory /mnt/magilla/AUSTRAL/aug005/1319/
+$1>
++HEADER
+CORREL   CRTN
+DATABASE 15JAN25XA
+SESSNAME AUG005
+UTSTART  0000
+DURATION 24
+DOY      025
+CORRTIME 2015/03/27 2015/03/28
+CORRPASS 1
+EXPORT   DONE
+
++SUMMARY
+ Qcode      % of Total   % of Correlated
+                scans          scans
+
+  5-9            70%             -
+   0             29%             -
+ 4-1,A-H,N        1%             -
+ Removed          -              -
+
++CORRELATOR_NOTES
+
++STATION_NOTES
+
+ HART15M  (Ht/g): Ok.
+
+ HOBART12 (Hb/L): Ok.
+
+ KATH12M  (Ke/i): Many outliers.
+
+ YARRA12M (Yg/e): No useful data recorded at S-band due to DBBC error.
+
++DROP_CHANNELS
+ Ht
+ Hb
+ Ke
+ Yg
+
++MANUAL PCAL
+
++CHANNELS
+ Channels: XR1U = band|polarization|channel#|sideband
+
+XR1U/L  BBC01 8212.99
+XR2U    BBC02 8252.99
+XR3U    BBC03 8352.99
+XR4U    BBC04 8512.99
+XR5U    BBC05 8732.99
+XR6U    BBC06 8852.99
+XR7U    BBC07 8912.99
+XR8U/L  BBC08 8932.99
+SR1U    BBC09 2225.99
+SR2U    BBC10 2245.99
+SR3U    BBC11 2265.99
+SR4U    BBC12 2295.99
+SR5U    BBC13 2345.99
+SR6U    BBC14 2365.99
+
++CLOCKS
+
+Clocks: Curtin
+
+ Station      Offset     rate      Epoch
+              [usec]     [sec/sec] [MJD]
+  HB          -12.69         0.00   56990.0000000
+  HT           -1.96         0.00   57047.0000000
+  KE           -9.96        -0.00   57039.0000000
+  YG          -11.72         0.00   57046.0000000
+
++QCODES
+
+Qcod   0 1 2 3 4  5  6   7   8    9 A B C D E F  G H N -  Tot
+-----------------------------------------------------------------
+gL:X  40 0 0 0 0  0  0   0   2  499 0 0 0 0 0 0  0 0 0 0  541
+gL:S  44 0 0 0 0  0  0   4  79  408 0 0 0 0 0 0  6 0 0 0  541
+gi:X  48 0 0 0 0  0 12  11  29  419 0 0 0 0 0 0  0 0 0 0  519
+gi:S  43 0 0 0 0  1  0   2  18  455 0 0 0 0 0 0  0 0 0 0  519
+ge:X  28 0 0 0 0  0  2   8  92  448 0 0 0 0 0 0  6 0 0 0  584
+ge:S 583 0 0 0 0  0  0   0   0    1 0 0 0 0 0 0  0 0 0 0  584
+Li:X   5 0 0 0 0  0 27  16  61  582 0 0 0 0 0 0  0 0 0 0  691
+Li:S   7 0 0 0 0  1  0  12  89  577 0 0 0 0 0 0  5 0 0 0  691
+Le:X   3 0 0 0 1  0  2   9 134  515 0 0 0 0 0 0 10 0 0 0  674
+Le:S 670 0 0 0 2  0  0   1   0    1 0 0 0 0 0 0  0 0 0 0  674
+ie:X   0 0 0 0 1 15 22  37 124  492 0 0 0 0 0 0 14 0 0 0  705
+ie:S 703 0 0 0 0  0  0   1   1    0 0 0 0 0 0 0  0 0 0 0  705
+-----------------------------------------------------------------
+Tot 2174 0 0 0 4 17 65 101 629 4397 0 0 0 0 0 0 41 0 0 0 7428
+
+ Legend:
+ QC = 0   Fringes not detected.
+    = 1-9 Fringes detected, no error condition. Higher #, better quality.
+    = B   Interpolation error in fourfit.
+    = D   No data in one or more frequency channels.
+    = E   Maximum fringe amplitude at edge of SBD, MBD, or rate window.
+    = F   Fork problem in processing.
+    = G   Fringe amp in a channel is <.5 times mean amp (only if SNR>20).
+    = H   Low Phase-cal amplitude in one or more channels.
+    = N   No valid correlator data.
+  Tot     Total number of scans in schedule.
+  Minus   Scans in original schedule file for which correlation was not
+          attempted, usually because of known station problems.
+
++SNR_RATIOS
+
++FOURFIT_CONTROL_FILE
+
+* control file for exp. AUST
+
+*    max_parity  0.01
+*    pc_mode normal
+*
+start -2
+* stop -30
+
+   sb_win -256.0 256.0 mb_win -2.0 2.0 dr_win -300.e-4 300.e-4
+*      sb_win -2.0 2.0 mb_win -2.0 2.0 dr_win -30.0e-5 30.0e-5
+*
+*    ...offset between VLBA-VLBA and MK4-VLBA ...
+
+weak_channel 0.3
+
+  if f_group X
+    ref_freq 8212.99
+    freqs g h i j k l m n
+    pc_freqs ghijklmn 9010 9010 9010 9010 9010 9010 9010 9010
+
+  if f_group S
+    ref_freq 2225.99
+    freqs a b c d e f
+    pc_freqs abcdef 3010 3010 3010 3010 3010 3010
+
+* ref Hb/L --> just for book keeping
+
+   if station g and f_group S
+   pc_phases abcdef -7.9    2.7    4.0    6.0   -3.2   -4.9
+   if station g and f_group X
+   pc_phases ghijklmn  -7.1   -0.2    0.7   23.2    0.0    5.3  -11.7   -1.9
+
+   if station i and f_group S
+   pc_phases abcdef  -2.6    0.7    3.1    1.4   -0.6   -2.9
+   if station i and f_group X
+   pc_phases ghijklmn -2.4    2.0    2.6    4.7   -7.3    0.9   -4.8    3.3
+
+   if station e and f_group S
+   pc_phases abcdef 0 0 0 0 0 0
+   if station e and f_group X
+   pc_phases ghijklmn -5.1   11.7    0.8    1.6  -16.1   -1.5   -6.0    7.6
+
+Regards,
+ Jamie
+
++END
+$1<
+Sorted by time and subsorted by baseline.   -AU-
+All  baselines used.
+All  sources used.
+Output time window:  earliest latest
+

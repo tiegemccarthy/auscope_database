@@ -1,0 +1,187 @@
+       IVS Analysis Report for R1823 ($18JAN02XA) 
+       This report is the official IVS analysis report that corresponds to 
+       the database maintained by the IVS Data Centers for this session.  
+   (Analyzed by David Gordon, Goddard Space Flight Center.
+    Spoolfile source: interactive solve/nuSolve analysis.) 
+
+Problems: KOKEE's clock was very unstable, with at least 5 breaks. Three
+          of these are used, at 20:56, 23:11, and 08:18. Two other breaks,
+          at ~17:38 and ~22:07, result in intervals too short for the 
+          Solve global solution, so many points had to be deselected.
+          YARRA12M has two small clock breaks, at ~00:53 and ~12:23.
+          HART15M's clock is noisy. The clock constraint was raised to
+          10.E-14.  
+
+Parameterization comments: None. 
+
+Other comments: None. 
+
+-----------------------------------------
+
+Session Statistics 
+
+  Observations:     3652 scheduled 
+                    3357 correlated (in database)
+                    3109 recoverable (usable)
+                    2989 used
+  Session fit:        37.426 ps
+
+-----------------------------------------
+
+Station Performance 
+
+                           Number of Observations
+
+                    Scheduled   Recoverable*        Used   % of scheduled
+                                                              obs used
+
+  FORTLEZA                552           456          442        80.1%
+  HART15M                 916           746          738        80.6%
+  ISHIOKA                 739           683          660        89.3%
+  KATH12M                1004           909          865        86.2%
+  KOKEE                   836           730          659        78.8%
+  NYALES20               1145           843          817        71.4%
+  WETTZ13N               1256          1076         1047        83.4%
+  YARRA12M                856           775          750        87.6%
+  ---------------   ---------   -----------    ---------       ------
+  Station Total**        3652          3109         2989        81.8%
+
+  * Recoverable: can be included in the solution. 
+  ** Total includes distinct observations only.
+
+  MISSED:    Station was scheduled, but it did not observe.
+  NOT CORR:  Station was scheduled but not correlated.
+  NOT USED:  Usable data was generated for this station,
+             but the analyst rejected it all.
+
+-----------------------------------------
+
+Source Performance 
+
+                    Number of Observations
+
+                Scheduled  Correlated*    Used      % of scheduled
+                                                       obs used
+
+  0444+634             20          16       12           60.0%
+  0202+149             43          34       14           32.6%
+  0010+405             27          23       20           74.1%
+  1308+326             14          10        9           64.3%
+  1325-558             19          19        1            5.3%
+  0438-436              2           2        2          100.0%
+  0422+004              3           3        3          100.0%
+  1954+513             30          29       25           83.3%
+  2351-154              3           3        3          100.0%
+  0048-097              3           2        1           33.3%
+  0059+581            275         251      234           85.1%
+  0119+041              5           5        4           80.0%
+  0454-234            149         143      139           93.3%
+  0552+398            238         217      202           84.9%
+  0718+793             12          12       12          100.0%
+  0727-115            183         181      180           98.4%
+  1034-293             21          21       17           81.0%
+  1057-797             38          38       37           97.4%
+  1104-445             25          25       24           96.0%
+  3C274                25          21       18           72.0%
+  1255-316             22          21       19           86.4%
+  NRAO512              50          45       44           88.0%
+  1741-038            165         162      156           94.5%
+  1749+096            223         198      179           80.3%
+  3C371               125         113       91           72.8%
+  1954-388              5           5        5          100.0%
+  2052-474             26          26       25           96.2%
+  3C446               167         162      132           79.0%
+  2255-282             29          29       28           96.6%
+  0237-027              2           2        2          100.0%
+  0332+078              1           1        1          100.0%
+  0657+172              7           7        5           71.4%
+  1149-084            113         113      102           90.3%
+  1354-152              1           1        0            0.0%
+  1639-062             27          27       23           85.2%
+  2229+695             17          17       14           82.4%
+  0019+058             13          13       13          100.0%
+  0134+311              4           3        3           75.0%
+  0307+380             14          14       14          100.0%
+  0738+491             46          44       43           93.5%
+  1053+704             16          14       12           75.0%
+  1144+402            239         208      195           81.6%
+  1327+504              4           3        3           75.0%
+  1546+027            179         175      164           91.6%
+  1617+229              8           7        6           75.0%
+  1929+226             15          14       12           80.0%
+  2141+175              2           1        1           50.0%
+  2307+106              3           3        2           66.7%
+  2319+317             27          27        1            3.7%
+  1759-396             30          30       29           96.7%
+  1920-211              8           8        2           25.0%
+  0308-611             11          11       10           90.9%
+  0347-211              5           4        4           80.0%
+  0627-199              4           4        3           75.0%
+  1243-160             10          10       10          100.0%
+  1657-261             38          38       15           39.5%
+  1806+456            103          99       90           87.4%
+  0017+200            320         260      235           73.4%
+  0131-522             27          27       25           92.6%
+  NRAO150               1           1        1          100.0%
+  0736+017             95          95       91           95.8%
+  0827+243             35          31       30           85.7%
+  0834-201             34          34        9           26.5%
+  1123+264             62          48       48           77.4%
+  1413+135              5           5        5          100.0%
+  1504+377             10           8        6           60.0%
+  1751+288            166         131      122           73.5%
+  2126-158              3           3        2           66.7%
+  ------------  ---------  ----------   ------          ------
+  Source Total       3652        3357     2989           81.8%
+
+ * Correlated: included in database 
+
+-----------------------------------------
+
+Baseline Performance 
+
+                                 Number of Observations
+
+                         Scheduled   Recoverable*         Used   % of scheduled
+                                                                    obs used
+
+  FORTLEZA-HART15M             191           148           147        77.0%
+  FORTLEZA-ISHIOKA               1             1    DESELECTED         0.0%
+  FORTLEZA-KATH12M               0      NOT CORR      NOT CORR         0.0%
+  FORTLEZA-KOKEE                60            46            40        66.7%
+  FORTLEZA-NYALES20            112            97            94        83.9%
+  FORTLEZA-WETTZ13N            179           158           156        87.2%
+  FORTLEZA-YARRA12M              9             6             5        55.6%
+  HART15M-ISHIOKA               44            35            35        79.5%
+  HART15M-KATH12M              105            82            79        75.2%
+  HART15M-KOKEE                  0      NOT CORR      NOT CORR         0.0%
+  HART15M-NYALES20             173           132           132        76.3%
+  HART15M-WETTZ13N             276           246           244        88.4%
+  HART15M-YARRA12M             127           103           101        79.5%
+  ISHIOKA-KATH12M              205           203           196        95.6%
+  ISHIOKA-KOKEE                149           146           134        89.9%
+  ISHIOKA-NYALES20              97            65            65        67.0%
+  ISHIOKA-WETTZ13N              83            79            79        95.2%
+  ISHIOKA-YARRA12M             160           154           151        94.4%
+  KATH12M-KOKEE                171           160           143        83.6%
+  KATH12M-NYALES20             105            63            59        56.2%
+  KATH12M-WETTZ13N             105            92            86        81.9%
+  KATH12M-YARRA12M             313           309           302        96.5%
+  KOKEE-NYALES20               207           151           136        65.7%
+  KOKEE-WETTZ13N               146           127           115        78.8%
+  KOKEE-YARRA12M               103           100            91        88.3%
+  NYALES20-WETTZ13N            387           303           299        77.3%
+  NYALES20-YARRA12M             64            32            32        50.0%
+  WETTZ13N-YARRA12M             80            71            68        85.0%
+  -----------------      ---------   -----------    ----------       ------
+  Baseline Total              3652          3109          2989        81.8%
+
+  * Recoverable: can be included in the solution. 
+
+  MISSED:     Baseline was scheduled, but at least one of the sites
+              did not observe.
+  NOT CORR:   Baseline was scheduled but not correlated.
+  NO DATA:    The baseline's stations were both correlated,
+              but they did not observe together.
+  DESELECTED: Usable data was generated for the baseline,
+              but the analyst rejected it.

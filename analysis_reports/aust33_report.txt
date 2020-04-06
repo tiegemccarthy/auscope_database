@@ -1,0 +1,107 @@
+       Analysis Report for AUST33 ($14JUL16XA) 
+   (Analyzed by David Gordon, GSFC Analysis Center.
+    Spoolfile source: interactive solve/nuSolve analysis.) 
+
+Problems: Warkworth: no valid data, mark5 error.
+          Katherine: clock breaks at ~12:35 (-1 second) and
+          ~19:48 (+1 second).
+
+Parameterization comments: RA/Dec adjusted for 0758-737 and 2354-117. 
+
+Other comments: None. 
+
+-----------------------------------------
+
+Session Statistics 
+
+  Observations:      996 scheduled 
+                     522 correlated (in database)
+                     454 recoverable (usable)
+                     427 used
+  Session fit:        42.658 ps
+
+-----------------------------------------
+
+Station Performance 
+
+                           Number of Observations
+
+                    Scheduled   Recoverable*        Used   % of scheduled
+                                                              obs used
+
+  HOBART12                526           293          276        52.5%
+  KATH12M                 482           294          280        58.1%
+  WARK12M                 456      NOT CORR     NOT CORR         0.0%
+  YARRA12M                528           321          298        56.4%
+  ---------------   ---------   -----------    ---------       ------
+  Station Total**         996           454          427        42.9%
+
+  * Recoverable: can be included in the solution. 
+  ** Total includes distinct observations only.
+
+  MISSED:    Station was scheduled, but it did not observe.
+  NOT CORR:  Station was scheduled but not correlated.
+  NOT USED:  Usable data was generated for this station,
+             but the analyst rejected it all.
+
+-----------------------------------------
+
+Source Performance 
+
+                    Number of Observations
+
+                Scheduled  Correlated*    Used      % of scheduled
+                                                       obs used
+
+  0700-197             67          37       35           52.2%
+  1213-172             30          16       14           46.7%
+  1622-253             60          28       26           43.3%
+  1842-289             53          28       24           45.3%
+  0230-790             60          32       31           51.7%
+  0826-373             50          29       27           54.0%
+  1531-352             34          17       14           41.2%
+  1933-400             60          29       25           41.7%
+  0758-737             59          26       15           25.4%
+  0302-623             43          43       38           88.4%
+  0516-621             59          28       25           42.4%
+  1030-590             44          22        0            0.0%
+  2030-689             54          24       23           42.6%
+  2142-758             81          42       36           44.4%
+  2355-534             40          16       16           40.0%
+  1336-237             32          18       17           53.1%
+  1707-376             30          16        0            0.0%
+  0743-673             45          22       20           44.4%
+  2354-117             48          23       18           37.5%
+  0122-003             47          26       23           48.9%
+  ------------  ---------  ----------   ------          ------
+  Source Total        996         522      427           42.9%
+
+ * Correlated: included in database 
+
+-----------------------------------------
+
+Baseline Performance 
+
+                                 Number of Observations
+
+                         Scheduled   Recoverable*         Used   % of scheduled
+                                                                    obs used
+
+  HOBART12-KATH12M             160           133           129        80.6%
+  HOBART12-WARK12M             178      NOT CORR      NOT CORR         0.0%
+  HOBART12-YARRA12M            188           160           147        78.2%
+  KATH12M-WARK12M              130      NOT CORR      NOT CORR         0.0%
+  KATH12M-YARRA12M             192           161           151        78.6%
+  WARK12M-YARRA12M             148      NOT CORR      NOT CORR         0.0%
+  -----------------      ---------   -----------    ----------       ------
+  Baseline Total               996           454           427        42.9%
+
+  * Recoverable: can be included in the solution. 
+
+  MISSED:     Baseline was scheduled, but at least one of the sites
+              did not observe.
+  NOT CORR:   Baseline was scheduled but not correlated.
+  NO DATA:    The baseline's stations were both correlated,
+              but they did not observe together.
+  DESELECTED: Usable data was generated for the baseline,
+              but the analyst rejected it.

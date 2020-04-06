@@ -1,0 +1,250 @@
+       IVS Analysis Report for R4809 ($17SEP14XE) 
+       This report is the official IVS analysis report that corresponds to 
+       the database maintained by the IVS Data Centers for this session.  
+   (Analyzed by Christopher Dieck, US Naval Observatory.
+    Spoolfile source: interactive nuSolve analysis.) 
+
+Problems: Correlator reports that there were "no fmout-gps values" in the log file from KATH12M. Humidity data at YARRA12M is still moving quickly between 0 and 100%, so all humidity data was set at 50%.
+
+Parameterization comments: None.
+
+Other comments: This is an updated report. Due to dropped channels, the S-band ambiguity spacings are 25ns on MEDICINA:YEBES40M, 8.3ns on MEDICINA:ZELENCHK, and 50ns on all other baselines of FORTLEZA, YEBES40M, and ZELENCHK.
+
+-----------------------------------------
+
+Session Statistics 
+
+  Observations:     6954 scheduled 
+                    6799 correlated (in database)
+                    6618 recoverable (usable)
+                    6414 used
+  Session fit:        33.639 ps
+
+-----------------------------------------
+
+Station Performance 
+
+                           Number of Observations
+
+                    Scheduled   Recoverable*        Used   % of scheduled
+                                                              obs used
+
+  BADARY                 1428          1384         1352        94.7%
+  FORTLEZA                598           546          536        89.6%
+  HART15M                 944           862          845        89.5%
+  ISHIOKA                1248          1197         1168        93.6%
+  KATH12M                 759           724          694        91.4%
+  KOKEE                   903           858          824        91.3%
+  MEDICINA               1447          1352         1297        89.6%
+  NYALES20               1403          1367         1334        95.1%
+  WETTZELL               1504          1456         1405        93.4%
+  YARRA12M                778           728          711        91.4%
+  YEBES40M               1404          1353         1294        92.2%
+  ZELENCHK               1492          1409         1368        91.7%
+  ---------------   ---------   -----------    ---------       ------
+  Station Total**        6954          6618         6414        92.2%
+
+  * Recoverable: can be included in the solution. 
+  ** Total includes distinct observations only.
+
+  MISSED:    Station was scheduled, but it did not observe.
+  NOT CORR:  Station was scheduled but not correlated.
+  NOT USED:  Usable data was generated for this station,
+             but the analyst rejected it all.
+
+-----------------------------------------
+
+Source Performance 
+
+                    Number of Observations
+
+                Scheduled  Correlated*    Used      % of scheduled
+                                                       obs used
+
+  1555-140              2           2        0            0.0%
+  0335-122              6           6        3           50.0%
+  1338+381              1           1        1          100.0%
+  NGC2484               3           3        3          100.0%
+  2128+048             70          70       20           28.6%
+  1004-217              2           2        2          100.0%
+  1448+762            105          92       92           87.6%
+  1717+178             87          86       77           88.5%
+  0048-097             10           9        9           90.0%
+  0104-408             33          33       31           93.9%
+  0119+115             38          38       37           97.4%
+  0133+476            311         311      304           97.7%
+  0229+131             41          41       39           95.1%
+  0454-234             78          78       76           97.4%
+  0458-020            214         204      197           92.1%
+  0454+844             41          41       40           97.6%
+  0537-441             35          35       29           82.9%
+  0552+398            217         213      212           97.7%
+  0602+673            140         133      127           90.7%
+  0749+540            112         112      107           95.5%
+  0823+033             35          35       34           97.1%
+  OJ287               176         170      165           93.8%
+  0955+476            188         182      176           93.6%
+  1057-797             30          29       27           90.0%
+  1124-186            109         103       98           89.9%
+  1144-379             69          69       65           94.2%
+  1300+580            213         207      196           92.0%
+  1424-418             34          34       33           97.1%
+  1741-038            171         165      163           95.3%
+  1921-293             25          25       25          100.0%
+  1923+210             15          14       11           73.3%
+  2052-474             26          25       23           88.5%
+  2113+293             79          79       76           96.2%
+  2255-282             52          52       44           84.6%
+  2318+049            255         247      243           95.3%
+  0237-027              2           2        2          100.0%
+  0332+078              1           1        1          100.0%
+  0346-279              2           2        2          100.0%
+  0515+208              2           2        1           50.0%
+  0648-165             38          36       33           86.8%
+  0657+172            107         107      106           99.1%
+  1244-255             10          10        7           70.0%
+  1324+224             36          36       36          100.0%
+  1636+473             52          52       50           96.2%
+  1639-062            107         103       96           89.7%
+  2000+472            188         187      167           88.8%
+  2215+150            187         184      175           93.6%
+  2229+695            210         203      187           89.0%
+  2355-106             71          65       65           91.5%
+  0019+058            125         125      123           98.4%
+  0307+380             53          53       46           86.8%
+  0442+389              2           2        2          100.0%
+  0748+126            182         176      172           94.5%
+  0943+105              2           2        2          100.0%
+  0958+346             26          26       25           96.2%
+  1040+244            103         103      100           97.1%
+  1053+704            178         177      174           97.8%
+  1100+122              1           1        1          100.0%
+  1133-032             11          11       10           90.9%
+  1144+402            217         212      204           94.0%
+  1616+063             52          52       48           92.3%
+  1617+229             72          66       59           81.9%
+  1758+388             39          39       39          100.0%
+  2214+350             73          68       68           93.2%
+  2309+454            111         111      109           98.2%
+  2319+317             49          49       49          100.0%
+  0115-214              8           8        6           75.0%
+  0322+222             24          24       24          100.0%
+  0646-306             25          22       18           72.0%
+  0920-397              3           3        2           66.7%
+  1406-267             12          12        7           58.3%
+  1759-396             18          18       17           94.4%
+  2208-137             17          17       13           76.5%
+  0308-611             11          11       10           90.9%
+  0332-403             28          28       23           82.1%
+  0506-612             15          15       10           66.7%
+  1502+036             48          48       48          100.0%
+  1519-294              3           3        1           33.3%
+  1657-261             73          73       41           56.2%
+  2013+163             35          35       28           80.0%
+  0008-264              6           6        6          100.0%
+  0017+200            170         170      164           96.5%
+  0131-522             29          29       25           86.2%
+  0202+319            192         178      177           92.2%
+  NRAO150              28          27       25           89.3%
+  0834-201             35          30       10           28.6%
+  1219+044             38          38       36           94.7%
+  1243-072            113         112      104           92.0%
+  1406-076             14          14       14          100.0%
+  1413+135              4           4        3           75.0%
+  1504+377            107         107      103           96.3%
+  1514+197             72          69       69           95.8%
+  1758-651             14          13       12           85.7%
+  1849+670            417         413      412           98.8%
+  1936-155             63          63       62           98.4%
+  ------------  ---------  ----------   ------          ------
+  Source Total       6954        6799     6414           92.2%
+
+ * Correlated: included in database 
+
+-----------------------------------------
+
+Baseline Performance 
+
+                                 Number of Observations
+
+                         Scheduled   Recoverable*         Used   % of scheduled
+                                                                    obs used
+
+  BADARY-FORTLEZA               32            31            31        96.9%
+  BADARY-HART15M                81            75            73        90.1%
+  BADARY-ISHIOKA               209           204           201        96.2%
+  BADARY-KATH12M                71            71            68        95.8%
+  BADARY-KOKEE                 111           108           107        96.4%
+  BADARY-MEDICINA              144           134           128        88.9%
+  BADARY-NYALES20              198           196           193        97.5%
+  BADARY-WETTZELL              160           158           156        97.5%
+  BADARY-YARRA12M               65            62            62        95.4%
+  BADARY-YEBES40M              138           135           128        92.8%
+  BADARY-ZELENCHK              219           210           205        93.6%
+  FORTLEZA-HART15M             142           130           129        90.8%
+  FORTLEZA-ISHIOKA               7             6             6        85.7%
+  FORTLEZA-KATH12M               1             1    DESELECTED         0.0%
+  FORTLEZA-KOKEE                35            30            29        82.9%
+  FORTLEZA-MEDICINA             76            67            66        86.8%
+  FORTLEZA-NYALES20             53            52            52        98.1%
+  FORTLEZA-WETTZELL             75            69            68        90.7%
+  FORTLEZA-YARRA12M              4             3    DESELECTED         0.0%
+  FORTLEZA-YEBES40M            102            93            92        90.2%
+  FORTLEZA-ZELENCHK             71            64            63        88.7%
+  HART15M-ISHIOKA               41            36            36        87.8%
+  HART15M-KATH12M               75            66            66        88.0%
+  HART15M-KOKEE                  0      NOT CORR      NOT CORR         0.0%
+  HART15M-MEDICINA             103            95            92        89.3%
+  HART15M-NYALES20              64            62            61        95.3%
+  HART15M-WETTZELL             105           100            98        93.3%
+  HART15M-YARRA12M             102            91            91        89.2%
+  HART15M-YEBES40M             111           103            98        88.3%
+  HART15M-ZELENCHK             120           104           101        84.2%
+  ISHIOKA-KATH12M              124           121           118        95.2%
+  ISHIOKA-KOKEE                204           194           188        92.2%
+  ISHIOKA-MEDICINA              97            92            88        90.7%
+  ISHIOKA-NYALES20             159           154           148        93.1%
+  ISHIOKA-WETTZELL             104           100           100        96.2%
+  ISHIOKA-YARRA12M             103            98            97        94.2%
+  ISHIOKA-YEBES40M              84            84            83        98.8%
+  ISHIOKA-ZELENCHK             116           108           103        88.8%
+  KATH12M-KOKEE                110           102            96        87.3%
+  KATH12M-MEDICINA              20            19            19        95.0%
+  KATH12M-NYALES20              34            30            30        88.2%
+  KATH12M-WETTZELL              22            20            20        90.9%
+  KATH12M-YARRA12M             244           238           227        93.0%
+  KATH12M-YEBES40M              15            14            12        80.0%
+  KATH12M-ZELENCHK              43            42            38        88.4%
+  KOKEE-MEDICINA                51            45            43        84.3%
+  KOKEE-NYALES20               125           123           119        95.2%
+  KOKEE-WETTZELL                72            70            66        91.7%
+  KOKEE-YARRA12M                74            69            69        93.2%
+  KOKEE-YEBES40M                62            60            53        85.5%
+  KOKEE-ZELENCHK                59            57            54        91.5%
+  MEDICINA-NYALES20            187           181           175        93.6%
+  MEDICINA-WETTZELL            268           251           233        86.9%
+  MEDICINA-YARRA12M             33            29            29        87.9%
+  MEDICINA-YEBES40M            255           240           229        89.8%
+  MEDICINA-ZELENCHK            213           199           195        91.5%
+  NYALES20-WETTZELL            201           199           195        97.0%
+  NYALES20-YARRA12M             33            27            27        81.8%
+  NYALES20-YEBES40M            171           171           167        97.7%
+  NYALES20-ZELENCHK            178           172           167        93.8%
+  WETTZELL-YARRA12M             38            37            36        94.7%
+  WETTZELL-YEBES40M            240           240           225        93.8%
+  WETTZELL-ZELENCHK            219           212           208        95.0%
+  YARRA12M-YEBES40M             27            23            23        85.2%
+  YARRA12M-ZELENCHK             55            51            50        90.9%
+  YEBES40M-ZELENCHK            199           190           184        92.5%
+  -----------------      ---------   -----------    ----------       ------
+  Baseline Total              6954          6618          6414        92.2%
+
+  * Recoverable: can be included in the solution. 
+
+  MISSED:     Baseline was scheduled, but at least one of the sites
+              did not observe.
+  NOT CORR:   Baseline was scheduled but not correlated.
+  NO DATA:    The baseline's stations were both correlated,
+              but they did not observe together.
+  DESELECTED: Usable data was generated for the baseline,
+              but the analyst rejected it.

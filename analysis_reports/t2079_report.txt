@@ -1,0 +1,360 @@
+       Analysis Report for T2079 ($11NOV15XH) 
+   (Analyzed by David Gordon, GSFC Analysis Center.
+    Spoolfile source: interactive solve analysis.) 
+
+Problems: CRIMEA was deselected; it has too many subambiguities.
+          METSAHOV has an ~14 gap in the middle.
+          NYALES20 has an ~2 hr gap.
+          TSUKUB32 missed the first ~8hrs.
+          
+
+Parameterization comments: Did not use gradients - too unconstrained. 
+
+Other comments: CHICHI10 and WARK12M did not observe. 
+
+-----------------------------------------
+
+Session Statistics 
+
+  Observations:     11340 scheduled 
+                    7940 correlated (in database)
+                    6474 recoverable (usable)
+                    6145 used
+  Session fit:        41.013 ps
+
+-----------------------------------------
+
+Station Performance 
+
+                           Number of Observations
+
+                    Scheduled   Recoverable*        Used   % of scheduled
+                                                              obs used
+
+  AIRA                   1177           820          788        66.9%
+  CHICHI10               1161        MISSED       MISSED         0.0%
+  CRIMEA                 1071             0     NOT USED         0.0%
+  HARTRAO                 590           433          420        71.2%
+  HOBART12               1030           710          674        65.4%
+  HOBART26               1274           931          876        68.8%
+  KASHIM34               1972          1433         1366        69.3%
+  KATH12M                1256           880          850        67.7%
+  KOKEE                  1078           805          775        71.9%
+  METSAHOV                743           229          224        30.1%
+  NYALES20               1206           812          794        65.8%
+  PARKES                  890           653          621        69.8%
+  TSUKUB32               2006          1050         1009        50.3%
+  URUMQI                 1482          1040          995        67.1%
+  VERAISGK               1062           711          613        57.7%
+  VERAMZSW                955           663          632        66.2%
+  WARK12M                 709        MISSED       MISSED         0.0%
+  WETTZELL               1110           789          768        69.2%
+  YARRA12M                929           315          235        25.3%
+  YEBES40M                979           674          650        66.4%
+  ---------------   ---------   -----------    ---------       ------
+  Station Total**       11340          6474         6145        54.2%
+
+  * Recoverable: can be included in the solution. 
+  ** Total includes distinct observations only.
+
+  MISSED:    Station was scheduled, but it did not observe.
+  NOT CORR:  Station was scheduled but not correlated.
+  NOT USED:  Usable data was generated for this station,
+             but the analyst rejected it all.
+
+-----------------------------------------
+
+Source Performance 
+
+                    Number of Observations
+
+                Scheduled  Correlated*    Used      % of scheduled
+                                                       obs used
+
+  0003-066              4           4        4          100.0%
+  0014+813             37          25       20           54.1%
+  0059+581             97          86       53           54.6%
+  0104-408              9           6        4           44.4%
+  0106+013            744         500      461           62.0%
+  0111+021              1           1        1          100.0%
+  0119+115             71          58       40           56.3%
+  0119+041              7           2        2           28.6%
+  0133+476              5           5        5          100.0%
+  0201+113              3           3        3          100.0%
+  0229+131            139          93       88           63.3%
+  0235+164              3           3        3          100.0%
+  3C84                 21          14       13           61.9%
+  CTA26                79          64       63           79.7%
+  NRAO150              29          17        9           31.0%
+  0405-385             10           7        4           40.0%
+  0454-234             20          20       16           80.0%
+  0454+844              1           1        0            0.0%
+  0528+134              8           7        3           37.5%
+  0537-441            528         326      272           51.5%
+  0552+398            511         335      261           51.1%
+  0607-157            725         449      371           51.2%
+  0642+449            350         231      154           44.0%
+  0727-115            691         420      355           51.4%
+  0808+019             10           3        3           30.0%
+  0823+033              3           3        3          100.0%
+  OJ287               952         550      410           43.1%
+  4C39.25             661         439      315           47.7%
+  0955+476              4           2        2           50.0%
+  1034-293             16          10       10           62.5%
+  1044+719             83          63       45           54.2%
+  1124-186             44          21       18           40.9%
+  1128+385              7           2        2           28.6%
+  1144-379              8           4        3           37.5%
+  1156+295            561         424      321           57.2%
+  3C274                 4           0        0            0.0%
+  1255-316              2           1        1           50.0%
+  1308+326             13           9        8           61.5%
+  OQ208                22          22        9           40.9%
+  1424-418             34          20       17           50.0%
+  1451-375             12           9        7           58.3%
+  1611+343            456         364      234           51.3%
+  1622-253             92          64       45           48.9%
+  3C345                35          15       10           28.6%
+  1726+455             35          35       26           74.3%
+  1739+522            127         112       82           64.6%
+  1741-038            582         392      340           58.4%
+  1749+096            877         632      493           56.2%
+  1803+784            671         585      386           57.5%
+  3C371               123          98       69           56.1%
+  1908-201              3           1        1           33.3%
+  1920-211              1           0        0            0.0%
+  1921-293            144         102       78           54.2%
+  1923+210             21          18        7           33.3%
+  1954-388             35          23       14           40.0%
+  1958-179              2           2        2          100.0%
+  2052-474             43          17       10           23.3%
+  2113+293              1           0        0            0.0%
+  2121+053             46          34       30           65.2%
+  2128-123             19           9        8           42.1%
+  2134+00              56          24       23           41.1%
+  2136+141            199         185      135           67.8%
+  2145+067            402         313      270           67.2%
+  2201+315             13           9        7           53.8%
+  2209+236             10           0        0            0.0%
+  3C446               681         559      434           63.7%
+  2234+282              3           0        0            0.0%
+  2243-123             29          23       14           48.3%
+  3C454.3              77          42       30           39.0%
+  2255-282             25          20       15           60.0%
+  2318+049              3           3        3          100.0%
+  ------------  ---------  ----------   ------          ------
+  Source Total      11340        7940     6145           54.2%
+
+ * Correlated: included in database 
+
+-----------------------------------------
+
+Baseline Performance 
+
+                                 Number of Observations
+
+                         Scheduled   Recoverable*         Used   % of scheduled
+                                                                    obs used
+
+  AIRA-CHICHI10                123        MISSED        MISSED         0.0%
+  AIRA-CRIMEA                   31             0    DESELECTED         0.0%
+  AIRA-HARTRAO                  23            21            21        91.3%
+  AIRA-HOBART12                 61            52            51        83.6%
+  AIRA-HOBART26                 66            58            58        87.9%
+  AIRA-KASHIM34                127           120           119        93.7%
+  AIRA-KATH12M                  85            75            75        88.2%
+  AIRA-KOKEE                    54            52            51        94.4%
+  AIRA-METSAHOV                 22             8             8        36.4%
+  AIRA-NYALES20                 42            40            37        88.1%
+  AIRA-PARKES                   46            43            42        91.3%
+  AIRA-TSUKUB32                131            84            83        63.4%
+  AIRA-URUMQI                   61            56            53        86.9%
+  AIRA-VERAISGK                 87            75            63        72.4%
+  AIRA-VERAMZSW                 78            70            68        87.2%
+  AIRA-WARK12M                  35        MISSED        MISSED         0.0%
+  AIRA-WETTZELL                 28            26            25        89.3%
+  AIRA-YARRA12M                 56            21            15        26.8%
+  AIRA-YEBES40M                 21            19            19        90.5%
+  CHICHI10-CRIMEA               31        MISSED        MISSED         0.0%
+  CHICHI10-HARTRAO              20        MISSED        MISSED         0.0%
+  CHICHI10-HOBART12             61        MISSED        MISSED         0.0%
+  CHICHI10-HOBART26             66        MISSED        MISSED         0.0%
+  CHICHI10-KASHIM34            125        MISSED        MISSED         0.0%
+  CHICHI10-KATH12M              85        MISSED        MISSED         0.0%
+  CHICHI10-KOKEE                56        MISSED        MISSED         0.0%
+  CHICHI10-METSAHOV             18        MISSED        MISSED         0.0%
+  CHICHI10-NYALES20             40        MISSED        MISSED         0.0%
+  CHICHI10-PARKES               46        MISSED        MISSED         0.0%
+  CHICHI10-TSUKUB32            132        MISSED        MISSED         0.0%
+  CHICHI10-URUMQI               60        MISSED        MISSED         0.0%
+  CHICHI10-VERAISGK             82        MISSED        MISSED         0.0%
+  CHICHI10-VERAMZSW             77        MISSED        MISSED         0.0%
+  CHICHI10-WARK12M              36        MISSED        MISSED         0.0%
+  CHICHI10-WETTZELL             26        MISSED        MISSED         0.0%
+  CHICHI10-YARRA12M             56        MISSED        MISSED         0.0%
+  CHICHI10-YEBES40M             21        MISSED        MISSED         0.0%
+  CRIMEA-HARTRAO                55             0    DESELECTED         0.0%
+  CRIMEA-HOBART12               17             0    DESELECTED         0.0%
+  CRIMEA-HOBART26               20             0    DESELECTED         0.0%
+  CRIMEA-KASHIM34               96             0    DESELECTED         0.0%
+  CRIMEA-KATH12M                31             0    DESELECTED         0.0%
+  CRIMEA-KOKEE                  32             0    DESELECTED         0.0%
+  CRIMEA-METSAHOV               80             0    DESELECTED         0.0%
+  CRIMEA-NYALES20              116             0    DESELECTED         0.0%
+  CRIMEA-PARKES                  5             0    DESELECTED         0.0%
+  CRIMEA-TSUKUB32               95             0    DESELECTED         0.0%
+  CRIMEA-URUMQI                123             0    DESELECTED         0.0%
+  CRIMEA-VERAISGK               34             0    DESELECTED         0.0%
+  CRIMEA-VERAMZSW               22             0    DESELECTED         0.0%
+  CRIMEA-WARK12M                 5        MISSED        MISSED         0.0%
+  CRIMEA-WETTZELL              132             0    DESELECTED         0.0%
+  CRIMEA-YARRA12M               25             0    DESELECTED         0.0%
+  CRIMEA-YEBES40M              121             0    DESELECTED         0.0%
+  HARTRAO-HOBART12              23            23            23       100.0%
+  HARTRAO-HOBART26              24            24            23        95.8%
+  HARTRAO-KASHIM34              34            32            30        88.2%
+  HARTRAO-KATH12M               30            28            28        93.3%
+  HARTRAO-KOKEE                  0       NO DATA       NO DATA         0.0%
+  HARTRAO-METSAHOV              41            18            17        41.5%
+  HARTRAO-NYALES20              36            31            31        86.1%
+  HARTRAO-PARKES                 9             8             7        77.8%
+  HARTRAO-TSUKUB32              37            25            25        67.6%
+  HARTRAO-URUMQI                59            56            53        89.8%
+  HARTRAO-VERAISGK              26            25            25        96.2%
+  HARTRAO-VERAMZSW              18            17            17        94.4%
+  HARTRAO-WARK12M                8        MISSED        MISSED         0.0%
+  HARTRAO-WETTZELL              58            56            56        96.6%
+  HARTRAO-YARRA12M              28            11            10        35.7%
+  HARTRAO-YEBES40M              61            58            54        88.5%
+  HOBART12-HOBART26            127           109            96        75.6%
+  HOBART12-KASHIM34             79            72            69        87.3%
+  HOBART12-KATH12M              92            80            78        84.8%
+  HOBART12-KOKEE                65            60            58        89.2%
+  HOBART12-METSAHOV              9             0    DESELECTED         0.0%
+  HOBART12-NYALES20             19            16            15        78.9%
+  HOBART12-PARKES               73            66            65        89.0%
+  HOBART12-TSUKUB32             83            54            54        65.1%
+  HOBART12-URUMQI               44            39            37        84.1%
+  HOBART12-VERAISGK             61            51            46        75.4%
+  HOBART12-VERAMZSW             52            47            47        90.4%
+  HOBART12-WARK12M              78        MISSED        MISSED         0.0%
+  HOBART12-WETTZELL             12            11            11        91.7%
+  HOBART12-YARRA12M             69            30            24        34.8%
+  HOBART12-YEBES40M              5             0    DESELECTED         0.0%
+  HOBART26-KASHIM34            108           103           100        92.6%
+  HOBART26-KATH12M             123           111           105        85.4%
+  HOBART26-KOKEE                90            87            84        93.3%
+  HOBART26-METSAHOV             13             6             6        46.2%
+  HOBART26-NYALES20             24            20            18        75.0%
+  HOBART26-PARKES              135           127           122        90.4%
+  HOBART26-TSUKUB32            110            76            75        68.2%
+  HOBART26-URUMQI               55            51            50        90.9%
+  HOBART26-VERAISGK             61            54            47        77.0%
+  HOBART26-VERAMZSW             56            54            52        92.9%
+  HOBART26-WARK12M              95        MISSED        MISSED         0.0%
+  HOBART26-WETTZELL             14            14            14       100.0%
+  HOBART26-YARRA12M             84            37            26        31.0%
+  HOBART26-YEBES40M              3             0    DESELECTED         0.0%
+  KASHIM34-KATH12M             102            94            93        91.2%
+  KASHIM34-KOKEE               118           114           112        94.9%
+  KASHIM34-METSAHOV             61            27            27        44.3%
+  KASHIM34-NYALES20            115           104           103        89.6%
+  KASHIM34-PARKES               77            73            69        89.6%
+  KASHIM34-TSUKUB32            301           194           183        60.8%
+  KASHIM34-URUMQI              136           126           123        90.4%
+  KASHIM34-VERAISGK             96            85            70        72.9%
+  KASHIM34-VERAMZSW             99            93            89        89.9%
+  KASHIM34-WARK12M              50        MISSED        MISSED         0.0%
+  KASHIM34-WETTZELL             97            93            88        90.7%
+  KASHIM34-YARRA12M             70            28            21        30.0%
+  KASHIM34-YEBES40M             81            75            70        86.4%
+  KATH12M-KOKEE                 63            58            57        90.5%
+  KATH12M-METSAHOV              15             6             6        40.0%
+  KATH12M-NYALES20              36            29            29        80.6%
+  KATH12M-PARKES                84            77            75        89.3%
+  KATH12M-TSUKUB32             101            66            65        64.4%
+  KATH12M-URUMQI                71            61            59        83.1%
+  KATH12M-VERAISGK              84            73            65        77.4%
+  KATH12M-VERAMZSW              63            51            51        81.0%
+  KATH12M-WARK12M               57        MISSED        MISSED         0.0%
+  KATH12M-WETTZELL              25            22            22        88.0%
+  KATH12M-YARRA12M              89            32            25        28.1%
+  KATH12M-YEBES40M              20            17            17        85.0%
+  KOKEE-METSAHOV                24             9             9        37.5%
+  KOKEE-NYALES20                58            50            49        84.5%
+  KOKEE-PARKES                  64            61            61        95.3%
+  KOKEE-TSUKUB32               119            85            81        68.1%
+  KOKEE-URUMQI                  58            51            50        86.2%
+  KOKEE-VERAISGK                47            41            35        74.5%
+  KOKEE-VERAMZSW                54            50            50        92.6%
+  KOKEE-WARK12M                 68        MISSED        MISSED         0.0%
+  KOKEE-WETTZELL                39            37            36        92.3%
+  KOKEE-YARRA12M                37            20            13        35.1%
+  KOKEE-YEBES40M                32            30            29        90.6%
+  METSAHOV-NYALES20             87            29            29        33.3%
+  METSAHOV-PARKES                3             0    DESELECTED         0.0%
+  METSAHOV-TSUKUB32             63            18            18        28.6%
+  METSAHOV-URUMQI               78            37            34        43.6%
+  METSAHOV-VERAISGK             18             0    DESELECTED         0.0%
+  METSAHOV-VERAMZSW             21             7             7        33.3%
+  METSAHOV-WARK12M               3        MISSED        MISSED         0.0%
+  METSAHOV-WETTZELL             94            33            32        34.0%
+  METSAHOV-YARRA12M             10             0    DESELECTED         0.0%
+  METSAHOV-YEBES40M             83            31            31        37.3%
+  NYALES20-PARKES                8             5             5        62.5%
+  NYALES20-TSUKUB32            115            64            62        53.9%
+  NYALES20-URUMQI              136           120           117        86.0%
+  NYALES20-VERAISGK             43            34            31        72.1%
+  NYALES20-VERAMZSW             28            23            23        82.1%
+  NYALES20-WARK12M               8        MISSED        MISSED         0.0%
+  NYALES20-WETTZELL            147           129           128        87.1%
+  NYALES20-YARRA12M             21             8             8        38.1%
+  NYALES20-YEBES40M            127           110           109        85.8%
+  PARKES-TSUKUB32               76            55            54        71.1%
+  PARKES-URUMQI                 34            28            27        79.4%
+  PARKES-VERAISGK               42            36            30        71.4%
+  PARKES-VERAMZSW               45            43            42        93.3%
+  PARKES-WARK12M                75        MISSED        MISSED         0.0%
+  PARKES-WETTZELL                0       NO DATA       NO DATA         0.0%
+  PARKES-YARRA12M               68            31            22        32.4%
+  PARKES-YEBES40M                0       NO DATA       NO DATA         0.0%
+  TSUKUB32-URUMQI              139            79            77        55.4%
+  TSUKUB32-VERAISGK             98            54            47        48.0%
+  TSUKUB32-VERAMZSW            106            61            58        54.7%
+  TSUKUB32-WARK12M              52        MISSED        MISSED         0.0%
+  TSUKUB32-WETTZELL             96            62            61        63.5%
+  TSUKUB32-YARRA12M             70            21            15        21.4%
+  TSUKUB32-YEBES40M             82            52            51        62.2%
+  URUMQI-VERAISGK               63            57            49        77.8%
+  URUMQI-VERAMZSW               49            43            39        79.6%
+  URUMQI-WARK12M                23        MISSED        MISSED         0.0%
+  URUMQI-WETTZELL              124           113           112        90.3%
+  URUMQI-YARRA12M               53            21            16        30.2%
+  URUMQI-YEBES40M              116           102            99        85.3%
+  VERAISGK-VERAMZSW             69            59            49        71.0%
+  VERAISGK-WARK12M              39        MISSED        MISSED         0.0%
+  VERAISGK-WETTZELL             29            26            24        82.8%
+  VERAISGK-YARRA12M             61            21            13        21.3%
+  VERAISGK-YEBES40M             22            20            19        86.4%
+  VERAMZSW-WARK12M              35        MISSED        MISSED         0.0%
+  VERAMZSW-WETTZELL             18            16            16        88.9%
+  VERAMZSW-YARRA12M             49            16            11        22.4%
+  VERAMZSW-YEBES40M             16            13            13        81.2%
+  WARK12M-WETTZELL               0        MISSED        MISSED         0.0%
+  WARK12M-YARRA12M              42        MISSED        MISSED         0.0%
+  WARK12M-YEBES40M               0        MISSED        MISSED         0.0%
+  WETTZELL-YARRA12M             22            11            10        45.5%
+  WETTZELL-YEBES40M            149           140           133        89.3%
+  YARRA12M-YEBES40M             19             7             6        31.6%
+  -----------------      ---------   -----------    ----------       ------
+  Baseline Total             11340          6474          6145        54.2%
+
+  * Recoverable: can be included in the solution. 
+
+  MISSED:     Baseline was scheduled, but at least one of the sites
+              did not observe.
+  NOT CORR:   Baseline was scheduled but not correlated.
+  NO DATA:    The baseline's stations were both correlated,
+              but they did not observe together.
+  DESELECTED: Usable data was generated for the baseline,
+              but the analyst rejected it.

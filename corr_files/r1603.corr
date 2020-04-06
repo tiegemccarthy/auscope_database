@@ -1,0 +1,278 @@
+TIMETAG 2013/10/02 22:24:06 
+MK3DB_VERSION    1
+Dbedit: r1603, IVS-R1  | geo_export
+VLBI experiment R1603 ( IVS-R1 )
+Created by dbedit Ver. 2013.09.20  revision 6.22
+        run by Geodaesie Gruppe ( geodesy@geosrv.mpifr-bonn.mpg.de )
+            at GSF -- Geodetic VLBI at Bonn Correlator
+               on geosrv at 2013.10.03-00:24:06 local time
+Dbedit control file history entry: r1603, IVS-R1  | geo_export
+Directory /data/r1603/3005
+$1>
++HEADER
+CORREL   BONN
+DATABASE 13SEP17XA
+SESSNAME R1603
+OBSTIME  2013/09/17 2013/09/18
+UTSTART  1700
+DURATION 24
+DOY      260-261
+CORRTIME 2013/09/27 2013/10/01
+CORRPASS 1
+EXPORT   DONE
+
++SUMMARY
+ Qcode      % of Total   % of Correlated
+                scans          scans
+
+  5-9            94%             -
+   0              4%             -
+ 4-1,A-H,N        2%             -
+ Removed          -              -
+
++CORRELATOR_NOTES
+
++STATION_NOTES
+
+ FORTLEZA (Ft/b): Broad band RFI in S-band, particularly strong in
+                  channel SR4U. Channel removed from fringe fitting.
+
+ HOBART12 (Hb/d): A few ( < 10% ) non-detections.
+
+ KATH12M  (Ke/a): A few ( < 10% ) non-detections.
+
+ KOKEE    (Kk/K): Applied manual pcal.
+
+ NYALES20 (Ny/N): Found occasionally pcal phase jump in channel XR7U,
+                  thus leading to a few G-codes.
+
+ WESTFORD (Wf/E): Ok.
+
+ YARRA12M (Yg/i): Ok.
+
++DROP_CHANNELS
+ Ft SR4U
+ Hb
+ Ke
+ Kk
+ Ny
+ Wf
+ Yg
+
++MANUAL PCAL Kk
+
++CHANNELS
+ Channels: XR1U = band|polarization|channel#|sideband
+
+XR1U/L  BBC01 8212.99
+XR2U    BBC02 8252.99
+XR3U    BBC03 8352.99
+XR4U    BBC04 8512.99
+XR5U    BBC05 8732.99
+XR6U    BBC06 8852.99
+XR7U    BBC07 8912.99
+XR8U/L  BBC08 8932.99
+SR1U    BBC09 2225.99
+SR2U    BBC10 2245.99
+SR3U    BBC11 2265.99
+SR4U    BBC12 2295.99
+SR5U    BBC13 2345.99
+SR6U    BBC14 2365.99
+
++CLOCKS
+
+Clocks: Bonn
+
+ Station     fmout-gps      Used      rate     Comments
+              [usec]       [usec]   [sec/sec]
+  Ft            0.00         0.15            0
+  Hb           10.27        12.59    0.093E-12
+  Ke            9.61        11.23    0.086E-12
+  Kk            5.30         5.97   -0.321E-12
+  Ny           30.17        30.06    1.381E-12
+  Wf           20.35        20.49   -0.746E-12
+  Yg            7.79         9.65    0.002E-12
+
+Date:    2013/09/17
+
++QCODES
+
+Qcod  0 1 2 3 4  5  6   7   8    9 A B C D E F  G  H  N -  Tot
+------------------------------------------------------------------
+da:X 19 0 0 0 0  0  1  11  31  238 0 0 0 0 0 0  0  1  0 0  301
+da:S 25 0 0 0 0  0  0   0 105  166 0 0 0 0 0 0  5  0  0 0  301
+dK:X  5 0 0 0 0  0  3   4  31   43 0 0 0 0 0 0  0  0  0 0   86
+dK:S  1 0 0 0 0  0  0   7  22   56 0 0 0 0 0 0  0  0  0 0   86
+di:X 11 0 0 0 0  0  0   1  17  231 0 0 0 0 0 0  0  1  0 0  261
+di:S 17 0 0 0 0  0  0   2 140   98 0 0 0 0 0 0  4  0  0 0  261
+db:X  8 0 0 0 0  0  0   0   2    2 0 1 0 0 0 0  0  0  0 0   13
+db:S  9 0 0 0 0  0  0   0   2    2 0 0 0 0 0 0  0  0  0 0   13
+dN:X  0 0 0 0 0  0  0   0   1   18 0 0 0 0 0 0  0  0  0 0   19
+dN:S  0 0 0 0 0  0  0   0   2   17 0 0 0 0 0 0  0  0  0 0   19
+dE:X  0 0 0 0 0  0  0   0   1    8 0 0 0 0 0 0  0  0  0 0    9
+dE:S  1 0 0 0 0  0  0   0   0    8 0 0 0 0 0 0  0  0  0 0    9
+aK:X  4 0 0 0 0  1  4   4  34   38 0 0 0 0 0 0  0  0  0 0   85
+aK:S  2 0 0 0 0  0  0   2  16   65 0 0 0 0 0 0  0  0  0 0   85
+ai:X  7 0 0 0 0  0  7   5  35  206 0 0 0 0 0 0  0  2  0 0  262
+ai:S  7 0 0 0 0  0  0   0   2  253 0 0 0 0 0 0  0  0  0 0  262
+ab:X  1 0 0 0 0  0  0   0   0    0 0 0 0 0 0 0  0  0  0 0    1
+ab:S  1 0 0 0 0  0  0   0   0    0 0 0 0 0 0 0  0  0  0 0    1
+aN:X  0 0 0 0 0  0  0   1   6   25 0 0 0 0 0 0  1  1  0 0   34
+aN:S  1 0 0 0 0  0  0   0   7   26 0 0 0 0 0 0  0  0  0 0   34
+aE:X  2 0 0 0 0  0  0   0   0    8 0 0 0 0 0 0  0  2  0 0   12
+aE:S  2 0 0 0 0  0  0   0   0   10 0 0 0 0 0 0  0  0  0 0   12
+Ki:X  6 0 0 0 0  2  4   3  21   24 0 0 0 0 0 0  0  0  0 0   60
+Ki:S  1 0 0 0 0  0  0   4  12   43 0 0 0 0 0 0  0  0  0 0   60
+Kb:X  2 0 0 0 0  2  3   9  12   17 0 0 0 0 0 0  0  0  0 0   45
+Kb:S  8 0 0 0 0  0  0   5   4   26 0 0 0 0 0 0  1  1  0 0   45
+KN:X  0 0 0 0 0  7  9  17  54   61 0 0 0 0 0 0  4  0  1 0  153
+KN:S  0 0 0 0 0  3  6   9  33  101 0 0 0 0 0 0  0  0  1 0  153
+KE:X  1 0 0 0 0  0  8  17  48   85 0 0 0 0 0 0  0  0  1 0  160
+KE:S  2 0 0 0 0  0  0   0  18  134 0 0 0 0 0 0  5  0  1 0  160
+ib:X  0 0 0 0 0  1  0   0   0    0 0 0 0 0 0 0  0  0  0 0    1
+ib:S  0 0 0 0 0  0  0   0   1    0 0 0 0 0 0 0  0  0  0 0    1
+iN:X  0 0 0 0 0  0  0   0   1   20 0 0 0 0 0 0  1  0  0 0   22
+iN:S  0 0 0 0 0  0  0   0   0   22 0 0 0 0 0 0  0  0  0 0   22
+iE:X  0 0 0 0 0  0  0   0   0    0 0 0 0 0 0 0  0  0  0 0    0
+iE:S  0 0 0 0 0  0  0   0   0    0 0 0 0 0 0 0  0  0  0 0    0
+bN:X  0 0 0 0 1  2  5  15  14   14 0 0 0 0 0 0  1  1  0 0   53
+bN:S  0 0 0 0 0  0  0   2   7   35 0 0 0 0 0 0  5  4  0 0   53
+bE:X  1 0 0 0 0  1  4  22  46   91 0 0 0 0 0 0  0  3  6 0  174
+bE:S 12 0 0 0 0  0  0   0  25  115 0 0 0 0 0 0  4 12  6 0  174
+NE:X  0 0 0 0 0  0  0   6  33  164 0 0 0 0 0 0  3  0  1 0  207
+NE:S  1 0 0 0 0  0  2   3  10  187 0 0 0 0 0 0  3  0  1 0  207
+------------------------------------------------------------------
+Tot 157 0 0 0 1 19 56 149 793 2657 0 1 0 0 0 0 37 28 18 0 3916
+
+ Legend:
+ QC = 0   Fringes not detected.
+    = 1-9 Fringes detected, no error condition. Higher #, better quality.
+    = B   Interpolation error in fourfit.
+    = D   No data in one or more frequency channels.
+    = E   Maximum fringe amplitude at edge of SBD, MBD, or rate window.
+    = F   Fork problem in processing.
+    = G   Fringe amp in a channel is <.5 times mean amp (only if SNR>20).
+    = H   Low Phase-cal amplitude in one or more channels.
+    = N   No valid correlator data.
+  Tot     Total number of scans in schedule.
+  Minus   Scans in original schedule file for which correlation was not
+          attempted, usually because of known station problems.
+
++SNR_RATIOS
+
+MEAN RATIOS = Observed SNR / Predicted SNR  for exp no. 3005
+
+ ...by baseline, over all sources:
+
+ bl     X     n       S     n
+
+ bd    1.54    4     1.36    4
+ ba    0.00    0     0.00    0
+ bK    1.99   43     1.78   37
+ bN    2.21   53     1.95   53
+ bE    1.61  167     1.35  156
+ bi    5.05    1     5.13    1
+ da    1.37  281     1.35  274
+ dK    2.39   81     1.55   85
+ dN    0.88   19     1.15   19
+ dE    1.13    9     1.03    8
+ di    1.78  250     1.44  242
+ aK    1.94   81     1.88   83
+ aN    1.27   34     1.96   33
+ aE    0.84   10     1.63   10
+ ai    1.88  255     1.71  253
+ KN    1.80  152     2.03  152
+ KE    1.80  158     1.48  157
+ Ki    3.40   54     2.22   59
+ NE    1.50  206     1.77  205
+ Ni    1.24   22     1.88   22
+ Ei    0.00    0     0.00    0
+
++FOURFIT_CONTROL_FILE
+
+* control file for exp. R1
+
+    max_parity  0.01
+    pc_mode normal
+*
+start -2
+* stop -30
+
+   sb_win -256.0 256.0 mb_win -2.0 2.0 dr_win -300.e-4 300.e-4
+*      sb_win -2.0 2.0 mb_win -2.0 2.0 dr_win -30.0e-5 30.0e-5
+*
+*    ...offset between VLBA-VLBA and MK4-VLBA ...
+
+*Hb/d
+    if station d
+      lsb_offset -120.
+
+*Ke/a
+    if station a
+      lsb_offset -120.
+
+*Kk/K
+    if station K
+      lsb_offset 260.
+
+*Yg/i
+    if station i
+      lsb_offset -100.
+
+  if f_group X
+    ref_freq 8212.99
+    pc_freqs ghijklmn 5010 5010 5010 5010 5010 5010 5010 5010
+
+  if f_group S
+    ref_freq 2225.99
+    pc_freqs abcdef 3010 3010 3010 3010 3010 3010
+
+  if station b and f_group S
+  freqs a b c e f
+
+  if station K and f_group S
+  pc_mode manual
+  pc_phases abcdef -27   -3 -309  -9 -165  -69
+  if station K and f_group X
+  pc_mode manual
+  pc_phases ghijklmn 38.9 -180 -308  -85  -26 -211 -352  -72
+
+*Ref Wf/E
+
+   if station b and f_group S
+   pc_phases abcef -5.0   3.2   4.0   -3.7   1.4
+   if station b and f_group X
+   pc_phases ghijklmn -3.3  14.6  -3.9  -9.5  0.8  9.2  7.6  -5.8
+
+   if station d and f_group S
+   pc_phases abcdef -0.8   4.0  -2.8  -1.7  -0.8   1.8
+   if station d and f_group X
+   pc_phases ghijklmn 8.2  -4.9 -12.0  -9.2   4.8   7.6  12.2  -6.9
+
+   if station a and f_group S
+   pc_phases abcdef -2.1   2.5  -3.0  -0.2  -1.4   1.5
+   if station a and f_group X
+   pc_phases ghijklmn 7.4  -4.7  -9.9  -8.9   2.2   9.1   7.3  -6.9
+
+   if station N and f_group S
+   pc_phases abcdef -12.8   1.1  13.0   6.9  -11.1   2.3
+   if station N and f_group X
+   pc_phases ghijklmn -2.7  1.1  6.0  -0.9   -0.6   3.4  -3.9  -0.1
+
+* ref Ke/a
+
+   if station i and f_group S
+   pc_phases abcdef -1.4   -6.9   -1.0   20.0   -7.3   -3.3
+   if station i and f_group X
+   pc_phases ghijklmn 3.4  4.6  -8.1  -9.1  -1.3  7.6  10.2  -5.1
+
+Regards,
+ Laura
+
++END
+$1<
+Sorted by time and subsorted by baseline.   -geodesy-
+All  baselines used.
+All  sources used.
+Output time window:  earliest latest
+

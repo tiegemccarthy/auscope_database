@@ -1,0 +1,277 @@
+       Analysis Report for RD1104 ($11JUN21XA) 
+   (Analyzed by David Gordon, GSFC Analysis Center.
+    Spoolfile source: interactive solve analysis.) 
+
+Problems: Hobart12 missed first ~2 hrs. 
+          Yarragadee missed the first ~8.5 hrs, plus had  2 large 
+          gaps of ~1-2 hrs each.
+          Large baseline clock offsets on some Yarragadee baselines. 
+          Katherine missed the first ~2 hrs. They started with a
+          -1 second clock offset, then reset the clock 3 hrs
+          later, then had a small clock break (~5 nsec) 6 hrs
+          later. Used an apriori clock offset and 2 clock breaks.
+
+Parameterization comments: None. 
+
+Other comments: Test of CONT11 mode, 512 Mbps, 2-bit sampling.
+
+-----------------------------------------
+
+Session Statistics 
+
+  Observations:     8905 scheduled 
+                    5805 correlated (in database)
+                    5716 recoverable (usable)
+                    5551 used
+  Session fit:        37.046 ps
+
+-----------------------------------------
+
+Station Performance 
+
+                           Number of Observations
+
+                    Scheduled   Recoverable*        Used   % of scheduled
+                                                              obs used
+
+  BADARY                 1854        MISSED       MISSED         0.0%
+  HARTRAO                 759           560          544        71.7%
+  HOBART12               1248           808          780        62.5%
+  KATH12M                1329           883          861        64.8%
+  KOKEE                  1513          1214         1170        77.3%
+  NYALES20               1888          1549         1510        80.0%
+  ONSALA60               1684          1400         1374        81.6%
+  TIGOCONC                217           194          193        88.9%
+  TSUKUB32               2100          1550         1473        70.1%
+  WARK12M                 805        MISSED       MISSED         0.0%
+  WESTFORD               1628          1398         1368        84.0%
+  WETTZELL               1752          1429         1387        79.2%
+  YARRA12M               1033           447          442        42.8%
+  ---------------   ---------   -----------    ---------       ------
+  Station Total**        8905          5716         5551        62.3%
+
+  * Recoverable: can be included in the solution. 
+  ** Total includes distinct observations only.
+
+  MISSED:    Station was scheduled, but it did not observe.
+  NOT CORR:  Station was scheduled but not correlated.
+  NOT USED:  Usable data was generated for this station,
+             but the analyst rejected it all.
+
+-----------------------------------------
+
+Source Performance 
+
+                    Number of Observations
+
+                Scheduled  Correlated*    Used      % of scheduled
+                                                       obs used
+
+  0003-066             48          21       20           41.7%
+  0059+581            210         146      141           67.1%
+  0104-408              9           7        7           77.8%
+  0133+476            232         170      168           72.4%
+  0201+113             57          41       40           70.2%
+  CTA26                76          44       42           55.3%
+  0454-234             27          22       20           74.1%
+  0458-020             13           9        6           46.2%
+  0454+844             21           9        9           42.9%
+  0537-441            240         128      124           51.7%
+  0552+398            163         122      117           71.8%
+  0656+082             42          33       31           73.8%
+  0727-115            277         166      162           58.5%
+  0804+499             27          15       14           51.9%
+  0805+410             42          24       19           45.2%
+  0823+033             12           6        6           50.0%
+  OJ287               319         198      192           60.2%
+  0955+476            164         116      112           68.3%
+  1034-293             60          58       53           88.3%
+  1053+815            156          98       96           61.5%
+  1057-797            293         157      157           53.6%
+  1101+384             12           7        7           58.3%
+  1124-186            113         102       98           86.7%
+  1144-379            227         131      118           52.0%
+  1156+295            176         132      125           71.0%
+  3C274                92          67       64           69.6%
+  1300+580            109          70       68           62.4%
+  1351-018             42          28       28           66.7%
+  1357+769            127          85       78           61.4%
+  1418+546             39          18       16           41.0%
+  1417+385             37          26       25           67.6%
+  1424-418            143          77       73           51.0%
+  NRAO512             179         134      126           70.4%
+  1726+455            205         139      132           64.4%
+  1741-038            105          58       56           53.3%
+  1749+096            272         125      123           45.2%
+  1803+784            277         205      202           72.9%
+  1921-293            120          35       31           25.8%
+  1923+210             36          30       28           77.8%
+  1954-388            141          69       67           47.5%
+  3C418               210         153      143           68.1%
+  2052-474            101          37       37           36.6%
+  2113+293             86          66       62           72.1%
+  2149+056             18          15       14           77.8%
+  3C446               323         140      129           39.9%
+  2255-282             63          28       26           41.3%
+  2318+049             41          30       30           73.2%
+  2356+385             46          36       35           76.1%
+  0237-027              9           4        4           44.4%
+  0345+460             41          29       28           68.3%
+  0648-165             84          63       56           66.7%
+  0800+618            154          96       96           62.3%
+  0912+029             65          49       48           73.8%
+  0920+390              6           2        2           33.3%
+  1111+149              6           2        2           33.3%
+  1226+373             37          29       25           67.6%
+  1324+224            137          94       93           67.9%
+  1354-152              6           4        4           66.7%
+  1639-062             39          21       21           53.8%
+  1823+689             12           4        4           33.3%
+  1846+322             19          13       12           63.2%
+  2127-096              3           1        1           33.3%
+  2215+150            127         105      103           81.1%
+  2229+695            211         143      140           66.4%
+  0019+058              3           1        0            0.0%
+  0054+161              6           4        4           66.7%
+  0134+311              9           3        2           22.2%
+  0307+380             97          67       66           68.0%
+  0420+022             41          33       28           68.3%
+  0446+112             93          70       67           72.0%
+  0529+483            128          95       94           73.4%
+  0641+392             28          19       18           64.3%
+  0716+714            248         174      170           68.5%
+  0748+126            198         158      149           75.3%
+  1040+244             78          64       58           74.4%
+  1053+704             68          43       41           60.3%
+  1133-032              3           1        1           33.3%
+  1342+662            125          78       75           60.0%
+  1520+319             27          21       21           77.8%
+  1520+437             21          12        9           42.9%
+  1617+229             60          53       47           78.3%
+  1705+018             18          16       16           88.9%
+  1758+388             52          38       36           69.2%
+  2059+034             52          41       39           75.0%
+  2214+350             49          33       33           67.3%
+  2319+317             42          34       30           71.4%
+  0035-252              6           4        3           50.0%
+  0322+222            118          87       83           70.3%
+  0414-189              3           0        0            0.0%
+  0537-286              6           6        4           66.7%
+  0606-223              6           6        6          100.0%
+  1015+057              6           2        2           33.3%
+  1602-115              6           2        2           33.3%
+  1759-396             15          15       13           86.7%
+  2008-159             45          29       27           60.0%
+  0016+731            208         145      142           68.3%
+  0332-403             52          29       29           55.8%
+  0743+277              6           2        2           33.3%
+  0847-120             12           8        7           58.3%
+  0925-203             30          19       18           60.0%
+  1015+359             66          42       35           53.0%
+  1308+328             53          33       33           62.3%
+  1502+036             34          23       22           64.7%
+  1657-261              3           3        3          100.0%
+  ------------  ---------  ----------   ------          ------
+  Source Total       8905        5805     5551           62.3%
+
+ * Correlated: included in database 
+
+-----------------------------------------
+
+Baseline Performance 
+
+                                 Number of Observations
+
+                         Scheduled   Recoverable*         Used   % of scheduled
+                                                                    obs used
+
+  BADARY-HARTRAO                76        MISSED        MISSED         0.0%
+  BADARY-HOBART12               51        MISSED        MISSED         0.0%
+  BADARY-KATH12M                63        MISSED        MISSED         0.0%
+  BADARY-KOKEE                 160        MISSED        MISSED         0.0%
+  BADARY-NYALES20              299        MISSED        MISSED         0.0%
+  BADARY-ONSALA60              255        MISSED        MISSED         0.0%
+  BADARY-TIGOCONC                0        MISSED        MISSED         0.0%
+  BADARY-TSUKUB32              365        MISSED        MISSED         0.0%
+  BADARY-WARK12M                46        MISSED        MISSED         0.0%
+  BADARY-WESTFORD              205        MISSED        MISSED         0.0%
+  BADARY-WETTZELL              288        MISSED        MISSED         0.0%
+  BADARY-YARRA12M               46        MISSED        MISSED         0.0%
+  HARTRAO-HOBART12              83            73            68        81.9%
+  HARTRAO-KATH12M               93            86            84        90.3%
+  HARTRAO-KOKEE                  0       NO DATA       NO DATA         0.0%
+  HARTRAO-NYALES20              54            50            49        90.7%
+  HARTRAO-ONSALA60              94            89            88        93.6%
+  HARTRAO-TIGOCONC              22            21            21        95.5%
+  HARTRAO-TSUKUB32              43            42            40        93.0%
+  HARTRAO-WARK12M               31        MISSED        MISSED         0.0%
+  HARTRAO-WESTFORD              53            48            48        90.6%
+  HARTRAO-WETTZELL              94            90            85        90.4%
+  HARTRAO-YARRA12M             116            61            61        52.6%
+  HOBART12-KATH12M             330           304           290        87.9%
+  HOBART12-KOKEE               130           128           124        95.4%
+  HOBART12-NYALES20             14            13            13        92.9%
+  HOBART12-ONSALA60              7             6             6        85.7%
+  HOBART12-TIGOCONC             28            23            23        82.1%
+  HOBART12-TSUKUB32            131           117           112        85.5%
+  HOBART12-WARK12M             201        MISSED        MISSED         0.0%
+  HOBART12-WESTFORD              8             7             7        87.5%
+  HOBART12-WETTZELL              6             5             5        83.3%
+  HOBART12-YARRA12M            259           132           132        51.0%
+  KATH12M-KOKEE                133           132           130        97.7%
+  KATH12M-NYALES20              21            18            18        85.7%
+  KATH12M-ONSALA60              14            12            12        85.7%
+  KATH12M-TIGOCONC              14            13            13        92.9%
+  KATH12M-TSUKUB32             167           153           149        89.2%
+  KATH12M-WARK12M              192        MISSED        MISSED         0.0%
+  KATH12M-WESTFORD               4             4             4       100.0%
+  KATH12M-WETTZELL              11             9             9        81.8%
+  KATH12M-YARRA12M             287           152           152        53.0%
+  KOKEE-NYALES20               173           172           170        98.3%
+  KOKEE-ONSALA60               117           115           114        97.4%
+  KOKEE-TIGOCONC                33            31            31        93.9%
+  KOKEE-TSUKUB32               275           272           255        92.7%
+  KOKEE-WARK12M                 96        MISSED        MISSED         0.0%
+  KOKEE-WESTFORD               197           192           183        92.9%
+  KOKEE-WETTZELL               136           136           129        94.9%
+  KOKEE-YARRA12M                63            36            34        54.0%
+  NYALES20-ONSALA60            332           330           325        97.9%
+  NYALES20-TIGOCONC             15            14            14        93.3%
+  NYALES20-TSUKUB32            278           274           257        92.4%
+  NYALES20-WARK12M               8        MISSED        MISSED         0.0%
+  NYALES20-WESTFORD            341           335           327        95.9%
+  NYALES20-WETTZELL            343           343           337        98.3%
+  NYALES20-YARRA12M             10             0    DESELECTED         0.0%
+  ONSALA60-TIGOCONC             11            10            10        90.9%
+  ONSALA60-TSUKUB32            202           200           191        94.6%
+  ONSALA60-WARK12M               2        MISSED        MISSED         0.0%
+  ONSALA60-WESTFORD            291           289           286        98.3%
+  ONSALA60-WETTZELL            343           341           334        97.4%
+  ONSALA60-YARRA12M             16             8             8        50.0%
+  TIGOCONC-TSUKUB32              7             7             7       100.0%
+  TIGOCONC-WARK12M               4        MISSED        MISSED         0.0%
+  TIGOCONC-WESTFORD             52            52            52       100.0%
+  TIGOCONC-WETTZELL             15            15            14        93.3%
+  TIGOCONC-YARRA12M             16             8             8        50.0%
+  TSUKUB32-WARK12M             104        MISSED        MISSED         0.0%
+  TSUKUB32-WESTFORD            208           208           201        96.6%
+  TSUKUB32-WETTZELL            233           227           214        91.8%
+  TSUKUB32-YARRA12M             87            50            47        54.0%
+  WARK12M-WESTFORD               2        MISSED        MISSED         0.0%
+  WARK12M-WETTZELL               1        MISSED        MISSED         0.0%
+  WARK12M-YARRA12M             118        MISSED        MISSED         0.0%
+  WESTFORD-WETTZELL            267           263           260        97.4%
+  WESTFORD-YARRA12M              0       NO DATA       NO DATA         0.0%
+  WETTZELL-YARRA12M             15             0    DESELECTED         0.0%
+  -----------------      ---------   -----------    ----------       ------
+  Baseline Total              8905          5716          5551        62.3%
+
+  * Recoverable: can be included in the solution. 
+
+  MISSED:     Baseline was scheduled, but at least one of the sites
+              did not observe.
+  NOT CORR:   Baseline was scheduled but not correlated.
+  NO DATA:    The baseline's stations were both correlated,
+              but they did not observe together.
+  DESELECTED: Usable data was generated for the baseline,
+              but the analyst rejected it.

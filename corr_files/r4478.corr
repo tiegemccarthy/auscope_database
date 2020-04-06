@@ -1,0 +1,261 @@
+TIMETAG 2011/04/27 15:34:24 
+MK3DB_VERSION    1
+Dbedit: r4478, IVSR4  | geo_export
+VLBI experiment R4478 ( IVSR4 )
+Created by dbedit Ver. 2007.10.27  revision 6.17
+        run by vlbi ( vlbi@joplin.usno.navy.mil )
+            at USN -- USNO Earth Orientation department
+               on joplin.usno.navy.mil at 2011.04.27-11:34:24 local time
+Dbedit control file history entry: r4478, IVSR4  | geo_export
+Directory /data/export/data/r4478/4478
+$1>
++HEADER
+CORREL   WACO
+DATABASE 11APR14XE
+SESSNAME R4478
+EXPNO    4478
+OBSTIME  2011/04/14 2011/04/15
+UTSTART  1830
+DURATION 24
+DOY      104/105
+CORRTIME 2011/04/25 2011/04/27
+CORRPASS 1
+EXPORT   Done
+
++SUMMARY
+
+Qcode   % of Total   % of Correlated
+          scans          scans
+
+ 5-9       81%           96%
+  0         1%            1%
+ B-H        2%            2%
+Removed    16% (Ft,Tc)
+
++CORRELATOR_NOTES
+
++STATION_NOTES
+
+FORTLEZA (Ft/F):   Station did not participate.
+
+HOBART12 (Hb/H):   Manual phasecal applied at HOBART12
+
+HOBART26 (Ho/A):   Spurious signals at HOBART26:
+                   SR2U (2248.00) -22dBc
+
+KOKEE    (Kk/K):   Station reports gusty winds causing numerous AZ
+                   oscillations.
+
+                   Manual phasecal applied at KOKEE
+
+MATERA   (Ma/I):   Low fringe and pcal amplitude in channels SR1U and SR6U
+                   leading to G-codes.  Channels SR1U and SR6U removed from
+                   fringe fitting. Some additional low pcal/fringe
+                   amplitude in channel SR2U leading to a few G-codes.
+                   Spurious signals at MATERA:
+                   SR2U (2248.00) - 4dBc
+
+NYALES20 (Ny/N):   Spurious signals at NYALES20:
+                   XR2U (8258.00) -17dBc
+                   XR3U (8358.00) -12dBc
+                   SR4U (2298.00) -10dBc
+
+TIGOCONC (Tc/O):   Station did not participate.
+
+WETTZELL (Wz/V):   -
+
+YEBES40M (Ys-Y):   Low fringe and pcal amplitude in channel SR2U leading to
+                   G-codes.  Channel SR2U removed from fringe fitting.
+                   Spurious signals at YEBES40:
+                   XR5U (8738.00) -17dBc Image
+                   XR6U (8858.00) -22dBc Image
+
+ZELENCHK (Zc/Z):   Low fringe amplitude in channel XR2U.  Channel XR2U was
+                   removed from fringe fitting. Spurious signals at ZELENCHK:
+                   XR4U (8518.00) - 5dBc
+                   XR7U (8918.00) -22dBc
+
++DROP_CHANNELS
+  Hb
+  Kk
+  Ma SR1U        SR6U
+  Ny
+  Tc
+  Wz
+  Ys       SR2U
+  Zc                   XR2U
+
++MANUAL PCAL Hb Kk
+
++CHANNELS
+XR1U = band|polarization|channel#|sideband
+
+ XR1U/L  BBC01  8212.99
+ XR2U    BBC02  8252.99
+ XR3U    BBC03  8352.99
+ XR4U    BBC04  8512.99
+ XR5U    BBC05  8732.99
+ XR6U    BBC06  8852.99
+ XR7U    BBC07  8912.99
+ XR8U/L  BBC08  8932.99
+ SR1U    BBC09  2225.99
+ SR2U    BBC10  2245.99
+ SR3U    BBC11  2265.99
+ SR4U    BBC12  2295.99
+ SR5U    BBC13  2345.99
+ SR6U    BBC14  2365.99
+
++CLOCKS
+Clocks: WACO
+
+Station          fmout-gps      Used      rate
+                  [usec]       [usec]   [sec/sec]
+  Hb              17.70        20.29       0.5e-12
+  Ho              16.54        16.81       0.5e-12
+  Kk               5.03         6.02       0.0
+  Ma             -15.08       -14.50      -0.6e-12
+  Ny             -15.71       -15.65       0.3e-12
+  Wz             -22.15       -21.90       0.0
+  Ys               1.10         1.13       0.2e-12
+  Zc              -1.63        -1.30       0.3e-12
+
+Date: 2011/04/14
+
++QCODES
+
+Qcodes  0  1  2  3  4  5  6   7    8    9  A  B  C  D  E  F   G  H  N    -  Tot
+-------------------------------------------------------------------------------
+  IO:X  0  0  0  0  0  0  0   0    0    0  0  0  0  0  0  0   0  0  0    9    9
+  IO:S  0  0  0  0  0  0  0   0    0    0  0  0  0  0  0  0   0  0  0    9    9
+  IY:X  5  0  0  0  0  0  1   2   12  216  0  0  0  0  0  0   0  0  0    0  236
+  IY:S  6  0  0  0  0  0  0   4   33  188  0  0  0  0  0  0   1  4  0    0  236
+  IZ:X  5  0  0  0  0  0  0   3   89  103  0  0  0  0  0  0   0  0  1   15  216
+  IZ:S  5  0  0  0  0  0  0  13   52  118  0  0  0  0  0  0  10  2  1   15  216
+  IH:X  1  0  0  0  0  0  0   3    2    0  0  0  0  0  0  0   0  0  1    0    7
+  IH:S  1  0  0  0  0  0  0   1    2    0  0  0  0  0  0  0   2  0  1    0    7
+  IA:X  0  0  0  0  0  0  0   0    2    7  0  0  0  0  0  0   0  0  0    0    9
+  IA:S  0  0  0  0  0  0  0   1    2    5  0  0  0  0  0  0   1  0  0    0    9
+  IN:X  1  0  0  0  0  0  0   1   12  137  0  0  0  0  0  0   0  0  0    0  151
+  IN:S  1  0  0  0  0  0  0   6   43   98  0  0  0  0  0  0   2  1  0    0  151
+  IF:X  0  0  0  0  0  0  0   0    0    0  0  0  0  0  0  0   0  0  0   18   18
+  IF:S  0  0  0  0  0  0  0   0    0    0  0  0  0  0  0  0   0  0  0   18   18
+  IV:X  5  0  0  0  0  0  1   0    2  244  0  0  0  0  0  0   0  0  0    0  252
+  IV:S  5  0  0  0  0  0  2  22   75  130  0  0  0  0  0  0   9  9  0    0  252
+  IK:X  0  0  0  0  0  1  0   2    8   13  0  0  0  0  0  0   0  0  0    0   24
+  IK:S  4  0  0  0  0  0  0   1    2   17  0  0  0  0  0  0   0  0  0    0   24
+  OY:X  0  0  0  0  0  0  0   0    0    0  0  0  0  0  0  0   0  0  0   19   19
+  OY:S  0  0  0  0  0  0  0   0    0    0  0  0  0  0  0  0   0  0  0   19   19
+  OZ:X  0  0  0  0  0  0  0   0    0    0  0  0  0  0  0  0   0  0  0    4    4
+  OZ:S  0  0  0  0  0  0  0   0    0    0  0  0  0  0  0  0   0  0  0    4    4
+  OH:X  0  0  0  0  0  0  0   0    0    0  0  0  0  0  0  0   0  0  0  103  103
+  OH:S  0  0  0  0  0  0  0   0    0    0  0  0  0  0  0  0   0  0  0  103  103
+  OA:X  0  0  0  0  0  0  0   0    0    0  0  0  0  0  0  0   0  0  0   83   83
+  OA:S  0  0  0  0  0  0  0   0    0    0  0  0  0  0  0  0   0  0  0   83   83
+  ON:X  0  0  0  0  0  0  0   0    0    0  0  0  0  0  0  0   0  0  0    4    4
+  ON:S  0  0  0  0  0  0  0   0    0    0  0  0  0  0  0  0   0  0  0    4    4
+  OF:X  0  0  0  0  0  0  0   0    0    0  0  0  0  0  0  0   0  0  0   37   37
+  OF:S  0  0  0  0  0  0  0   0    0    0  0  0  0  0  0  0   0  0  0   37   37
+  OV:X  0  0  0  0  0  0  0   0    0    0  0  0  0  0  0  0   0  0  0    7    7
+  OV:S  0  0  0  0  0  0  0   0    0    0  0  0  0  0  0  0   0  0  0    7    7
+  OK:X  0  0  0  0  0  0  0   0    0    0  0  0  0  0  0  0   0  0  0   71   71
+  OK:S  0  0  0  0  0  0  0   0    0    0  0  0  0  0  0  0   0  0  0   71   71
+  YZ:X  0  0  0  0  1  0  0   2  162   38  0  0  0  0  0  0   0  0  0   12  215
+  YZ:S  0  0  0  0  0  1  0   0   21  178  0  0  0  0  0  0   3  0  0   12  215
+  YH:X  0  0  0  0  0  0  0   0    1    2  0  0  0  0  0  0   0  0  0    0    3
+  YH:S  1  0  0  0  0  0  0   0    0    1  0  0  0  0  0  0   1  0  0    0    3
+  YA:X  0  0  0  0  0  0  0   0    0    2  0  0  0  0  0  0   0  0  0    0    2
+  YA:S  0  0  0  0  0  0  0   0    0    2  0  0  0  0  0  0   0  0  0    0    2
+  YN:X  0  0  0  0  0  1  0   3   19  137  0  0  0  0  0  0   0  0  0    0  160
+  YN:S  0  0  0  0  0  1  0   1   10  148  0  0  0  0  0  0   0  0  0    0  160
+  YF:X  0  0  0  0  0  0  0   0    0    0  0  0  0  0  0  0   0  0  0   16   16
+  YF:S  0  0  0  0  0  0  0   0    0    0  0  0  0  0  0  0   0  0  0   16   16
+  YV:X  1  0  0  0  0  1  0   1   13  254  0  0  0  0  0  0   0  0  0    0  270
+  YV:S  1  0  0  0  0  0  0   0    6  263  0  0  0  0  0  0   0  0  0    0  270
+  YK:X  0  0  0  0  0  1  2   5   15   20  0  0  0  0  0  0   0  0  0    0   43
+  YK:S  3  0  0  0  0  0  0   0    0   40  0  0  0  0  0  0   0  0  0    0   43
+  ZH:X  0  0  0  0  0  0  0   4    5    7  0  0  0  0  0  0   0  0  0    0   16
+  ZH:S  1  0  0  0  0  0  0   0    1    6  0  0  0  0  0  0   8  0  0    0   16
+  ZA:X  0  0  0  0  0  0  0   2    6    6  0  0  0  0  0  0   1  1  0    0   16
+  ZA:S  0  0  0  0  0  0  1   0    1   14  0  0  0  0  0  0   0  0  0    0   16
+  ZN:X  0  0  0  0  0  0  0   6   77   82  0  0  0  0  0  0   0  0  0   10  175
+  ZN:S  0  0  0  0  0  0  1   3   31  128  0  0  0  0  0  0   2  0  0   10  175
+  ZF:X  0  0  0  0  0  0  0   0    0    0  0  0  0  0  0  0   0  0  0    7    7
+  ZF:S  0  0  0  0  0  0  0   0    0    0  0  0  0  0  0  0   0  0  0    7    7
+  ZV:X  1  0  0  0  0  0  0   3  123   99  0  0  0  0  0  0   1  0  0   15  242
+  ZV:S  1  0  0  0  0  0  0   2   13  204  0  0  0  0  0  0   7  0  0   15  242
+  ZK:X  0  0  0  0  0  0  1   3   29    5  0  0  0  0  0  0   0  0  0    2   40
+  ZK:S  0  0  0  0  0  0  0   1    4   32  0  0  0  0  0  0   1  0  0    2   40
+  HA:X  1  0  0  0  1  0  0  79   26    3  0  0  0  0  0  0   3  1  0    0  114
+  HA:S  1  0  0  0  3  0  0   2   67    3  0  0  0  0  1  0  37  0  0    0  114
+  HN:X  0  0  0  0  0  0  0   0    1    3  0  0  0  0  0  0   0  0  0    0    4
+  HN:S  2  0  0  0  0  0  0   0    0    2  0  0  0  0  0  0   0  0  0    0    4
+  HF:X  0  0  0  0  0  0  0   0    0    0  0  0  0  0  0  0   0  0  0   26   26
+  HF:S  0  0  0  0  0  0  0   0    0    0  0  0  0  0  0  0   0  0  0   26   26
+  HV:X  0  0  0  0  0  0  0   1    0    3  0  0  0  0  0  0   0  0  0    0    4
+  HV:S  0  0  0  0  0  0  0   0    2    1  0  0  0  0  0  0   1  0  0    0    4
+  HK:X  0  0  0  0  0  0  1   7   13   51  0  0  0  0  0  0   0  0  0    0   72
+  HK:S  0  0  0  0  0  0  1   9   46    5  0  0  0  0  0  0  11  0  0    0   72
+  AN:X  1  0  0  0  0  0  0   0    1   11  0  0  0  0  0  0   0  0  0    0   13
+  AN:S  2  0  0  0  0  0  0   0    1   10  0  0  0  0  0  0   0  0  0    0   13
+  AF:X  0  0  0  0  0  0  0   0    0    0  0  0  0  0  0  0   0  0  0   20   20
+  AF:S  0  0  0  0  0  0  0   0    0    0  0  0  0  0  0  0   0  0  0   20   20
+  AV:X  0  0  0  0  0  0  0   0    0    7  0  0  0  0  0  0   0  0  0    0    7
+  AV:S  0  0  0  0  0  0  0   0    0    7  0  0  0  0  0  0   0  0  0    0    7
+  AK:X  1  0  0  0  0  0  0   1   14   52  0  0  0  0  0  0   0  1  0    0   69
+  AK:S  0  0  0  0  1  0  1   0    0   67  0  0  0  0  0  0   0  0  0    0   69
+  NF:X  0  0  0  0  0  0  0   0    0    0  0  0  0  0  0  0   0  0  0    2    2
+  NF:S  0  0  0  0  0  0  0   0    0    0  0  0  0  0  0  0   0  0  0    2    2
+  NV:X  1  0  0  0  0  0  0   0    5  171  0  0  0  0  0  0   0  0  0    0  177
+  NV:S  1  0  0  0  0  0  0   1    9  165  0  1  0  0  0  0   0  0  0    0  177
+  NK:X  2  0  0  0  0  1  0   3   18   54  0  0  0  0  0  0   1  0  0    0   79
+  NK:S  1  0  0  0  0  2  0   3    5   68  0  0  0  0  0  0   0  0  0    0   79
+  FV:X  0  0  0  0  0  0  0   0    0    0  0  0  0  0  0  0   0  0  0   14   14
+  FV:S  0  0  0  0  0  0  0   0    0    0  0  0  0  0  0  0   0  0  0   14   14
+  FK:X  0  0  0  0  0  0  0   0    0    0  0  0  0  0  0  0   0  0  0    9    9
+  FK:S  0  0  0  0  0  0  0   0    0    0  0  0  0  0  0  0   0  0  0    9    9
+  VK:X  1  0  0  0  0  0  0   1    9   34  0  0  0  0  0  0   0  0  0    0   45
+  VK:S  2  0  0  0  0  0  0   0    0   43  0  0  0  0  0  0   0  0  0    0   45
+-------------------------------------------------------------------------------
+Totals 64  0  0  0  6  9 12 202 1090 3704  0  1  0  0  1  0 102 19  4 1006 6220
+
+Legend:
+QC = 0   Fringes not detected.
+   = 1-9 Fringes detected, no error condition. Higher #, better quality.
+   = B   Interpolation error in fourfit.
+   = D   No data in one or more frequency channels.
+   = E   Maximum fringe amplitude at edge of SBD, MBD, or rate window.
+   = F   "Fork" problem in processing.
+   = G   Fringe amp in a channel is <.5 times mean amp (only if SNR>20).
+   = H   Low Phase-cal amplitude in one or more channels.
+   = N   No valid correlator data.
+ Tot     Total number of scans in schedule.
+ Minus   Scans in original schedule file for which correlation was not
+         attempted, usually because of known station problems.
+
++SNR_RATIOS
+
+ MEAN RATIOS = Observed SNR / Predicted SNR  for exp no. 4478
+
+ ...by baseline, over all sources:
+
+ bl     X     n       S     n
+
+ HA    1.82  113     1.31  111
+ HK    1.95   72     1.12   72
+ HI    3.65    5     1.14    5
+ HN    0.79    4     0.68    2
+ HV    1.55    4     1.13    4
+ HY    0.98    3     1.01    2
+ HZ    1.04   16     1.04   15
+ AK    1.59   68     1.30   69
+ AI    1.95    9     1.07    9
+ AN    0.73   12     1.01   11
+ AV    1.01    7     1.20    7
+ AY    0.67    2     0.71    2
+ AZ    0.67   16     1.12   16
+ KI    1.85   24     1.77   20
+ KN    1.29   77     1.07   78
+ KV    1.53   44     1.21   42
+ KY    1.37   43     1.13   39
+
+

@@ -1,0 +1,327 @@
+TIMETAG 2018/05/25 01:33:13 
+MK3DB_VERSION    1
+Dbedit: RD1801 -AU-
+VLBI experiment RD1801 ( R&D-01/2018 )
+Created by dbedit Ver. 2018.03.07  revision 6.24
+        run by Observer ( observer@ops7 )
+            at HOB -- University of Tasmania
+               on ops7 at 2018.05.25-11:33:13 local time
+Dbedit control file history entry: RD1801 -AU-
+Directory /mnt/oaf/AUSTRAL/rd1801/1801/
+$1>
++HEADER
+CORREL   SHAO
+DATABASE 18JAN10XA
+SESSNAME RD1801
+OBSTIME  2018/01/10 2018/01/11
+UTSTART  1800
+DURATION 24
+DOY      10
+CORRTIME 2018/05/23 2018/05/24
+CORRPASS 1
+EXPORT   DONE
+
++SUMMARY
+  Qcode      % of Total   % of Correlated
+                scans          scans
+
+  5-9            67%            67%
+   0             20%            20%
+ 4-1,A-H,N       11%            11%
+ Removed         0%
+
++CORRELATOR NOTES
+
++STATION NOTES
+
+ MEDICINA (Mc/M): Manual phase cal applied, SR6U dropped due to low
+  sensitivity.
+
+ HARTRAO  (Hh/L): Ok.
+
+ NYALES20 (Ny/N): Ok.
+
+ HOBART26 (Ho/H): Manual phase cal applied, upper S-band channels dropped
+  due to strong in-band RFI.
+
+ KUNMING  (Km/g): Manual pcal applied. SR1U and SR5U dropped due to low
+  sensitivity causing excessive G-codes.
+
+ KOKEE    (Kk/K): Ok.
+
+ WETTZELL (Wz/V): Ok.
+
++DROP_CHANNELS
+
+ Mc SR6U
+ Ho SR4U SR5U SR6U
+ Km SR1U SR5U
+
++MANUAL PCAL Mc Ho Km
+
++CHANNELS
+  Channels: X1RU = band|polarization|BBC#|sideband
+
+XR1U/L  BBC01 8212.99
+XR2U    BBC02 8212.99
+XR3U    BBC03 8252.99
+XR4U    BBC04 8352.99
+XR5U    BBC05 8512.99
+XR6U    BBC06 8732.99
+XR7U    BBC07 8852.99
+XR8U/L  BBC08 8912.99
+SR1U    BBC09 2225.99
+SR2U    BBC10 2245.99
+SR3U    BBC11 2265.99
+SR4U    BBC12 2295.99
+SR5U    BBC13 2345.99
+SR6U    BBC13 2365.99
+
++CLOCKS
+
+ Clocks: SHAO
+
+  Station    fmout-gps     Used        rate          Comments
+             [usec]        [usec]      [sec/sec]
+   Mc        -5.949        -5.949      -0.056E-12
+   Hh         5.940         5.940       0.164E-12
+   Ny      -112.4937     -112.4937      3.558E-12
+   Ho        20.815        20.815      -0.760E-12
+   Km        48.754        48.754      -1.142E-12
+   Kk         3.513         3.513      -0.224E-12
+   Wz        -0.484        -0.484      -0.068E-12
+   Date:     2018/01/10       18:00:00
+
++QCODES
+
+Qcod  0 1 2 3 4  5  6  7   8    9 A B C D E F G  H   N -  Tot
+-----------------------------------------------------------------
+LH:X  3 0 0 0 0  0  0  0   4   15 0 0 0 0 0 0 0  0  26 0   48
+LH:S  5 0 0 0 0  0  0  0   0   17 0 0 0 0 0 0 0  0  26 0   48
+LK:X  0 0 0 0 0  0  0  0   0    0 0 0 0 0 0 0 0  0   0 0    0
+LK:S  0 0 0 0 0  0  0  0   0    0 0 0 0 0 0 0 0  0   0 0    0
+Lg:X  9 0 0 0 0  1  1  7   3   39 0 0 0 0 0 0 0  1   0 0   61
+Lg:S 53 0 0 0 0  0  0  2   0    6 0 0 0 0 0 0 0  0   0 0   61
+LM:X  0 0 0 0 0  0  1  0   4   64 0 0 0 0 0 0 1  1   0 0   71
+LM:S  6 0 0 0 0  0  0  0  10   53 0 0 0 0 0 0 0  2   0 0   71
+LN:X  5 0 0 0 0  0  0  0   2   27 0 0 0 0 0 0 0  2   1 0   37
+LN:S  5 0 0 0 0  0  0  0   2   27 0 0 0 0 0 0 0  2   1 0   37
+LV:X  1 0 0 0 0  0  1  1  10   56 0 0 0 0 0 0 0  2   0 0   71
+LV:S  6 0 0 0 0  0  0  0   0   63 0 0 0 0 0 0 0  2   0 0   71
+HK:X  4 0 0 0 0  0  0  0   7   37 0 0 0 0 0 0 0  0  37 0   85
+HK:S  7 0 0 0 0  0  0  0   0   41 0 0 0 0 0 0 0  0  37 0   85
+Hg:X 23 0 0 0 0  0  2  1   2   23 0 0 0 0 0 0 0  0  31 0   82
+Hg:S 48 0 0 0 0  0  0  0   0    3 0 0 0 0 0 0 0  0  31 0   82
+HM:X  0 0 0 0 0  0  0  1   2    3 0 0 0 0 0 0 0  0   9 0   15
+HM:S  1 0 0 0 0  0  0  0   1    4 0 0 0 0 0 0 0  0   9 0   15
+HN:X  0 0 0 0 0  0  0  1   2    4 0 0 0 0 0 0 0  0   9 0   16
+HN:S  2 0 0 0 0  0  0  0   0    5 0 0 0 0 0 0 0  0   9 0   16
+HV:X  0 0 0 0 0  0  0  1   1    2 0 0 0 0 0 0 0  0   7 0   11
+HV:S  2 0 0 0 0  0  0  0   0    2 0 0 0 0 0 0 0  0   7 0   11
+Kg:X 21 0 0 0 0  1  0  1   3   49 0 0 0 0 0 0 0  0   0 0   75
+Kg:S 49 0 0 0 0  0  0  3   3   20 0 0 0 0 0 0 0  0   0 0   75
+KM:X  9 0 0 0 0  0  0  1   3   13 0 0 0 0 0 0 0  0   0 0   26
+KM:S  8 0 0 0 0  0  0  0   4   14 0 0 0 0 0 0 0  0   0 0   26
+KN:X  9 0 0 0 0  0  0  0   2   23 0 0 0 0 0 0 0  0   4 0   38
+KN:S  9 0 0 0 0  0  1  0   1   23 0 0 0 0 0 0 0  0   4 0   38
+KV:X  7 0 0 0 0  0  0  0   5    7 0 0 0 0 0 0 1  0   0 0   20
+KV:S  6 0 0 0 0  0  0  0   0   14 0 0 0 0 0 0 0  0   0 0   20
+gM:X 10 0 0 0 0  3  0  4   3   32 0 0 0 0 0 0 1  0   0 0   53
+gM:S 30 0 0 0 0  0  0  4   6   13 0 0 0 0 0 0 0  0   0 0   53
+gN:X 18 0 0 0 0  3  1  2   2   33 0 0 0 0 0 0 0  0   4 0   63
+gN:S 45 0 0 0 0  0  0  0   0   14 0 0 0 0 0 0 0  0   4 0   63
+gV:X 14 0 0 0 0  8  2 12   1   31 0 0 0 0 0 0 1  0   0 0   69
+gV:S 47 0 0 0 0  0  0  1   2   19 0 0 0 0 0 0 0  0   0 0   69
+MN:X  7 0 0 0 0  0  1  3  15   93 0 0 0 0 0 0 0  0   4 0  123
+MN:S 16 0 0 0 0  0  1  2  18   82 0 0 0 0 0 0 0  0   4 0  123
+MV:X  0 0 0 0 0  0  0  2   7  131 0 0 0 0 0 0 0  0   0 0  140
+MV:S  0 0 0 0 1  0  1  1   9  128 0 0 0 0 0 0 0  0   0 0  140
+NV:X  1 0 0 0 0  1  0  0   8  104 0 0 0 0 0 0 0  0   1 0  115
+NV:S 13 0 0 0 0  1  0  2   6   92 0 0 0 0 0 0 0  0   1 0  115
+-----------------------------------------------------------------
+Tot 499 0 0 0 1 18 12 52 148 1426 0 0 0 0 0 0 4 12 266 0 2438
+ Legend:
+ QC = 0   Fringes not detected.
+    = 1-9 Fringes detected, no error condition. Higher #, better quality.
+    = B   Interpolation error in fourfit.
+    = D   No data in one or more frequency channels.
+    = E   Maximum fringe amplitude at edge of SBD, MBD, or rate window.
+    = F   Fork problem in processing.
+    = G   Fringe amp in a channel is <.5 times mean amp (only if SNR>20).
+    = H   Low Phase-cal amplitude in one or more channels.
+    = N   No valid correlator data.
+  Tot     Total number of scans in schedule.
+  Minus   Scans in original schedule file for which correlation was not
+          attempted, usually because of known station problems.
+
++SNR _RATIOS
+
+MEAN RATIOS = Observed SNR / Predicted SNR  for exp no. 1801
+
+ ...by baseline, over all sources:
+
+ bl     X     n       S     n
+
+ LH    1.04   19     0.69   17
+ LK    0.00    0     0.00    0
+ Lg    0.57   52     0.20    8
+ LM    1.62   71     1.17   65
+ LN    0.90   31     0.67   31
+ LV    1.38   70     0.93   65
+ HK    0.88   44     0.74   41
+ Hg    0.54   28     0.17    2
+ HM    1.28    6     0.68    5
+ HN    1.31    7     0.50    4
+ HV    1.14    4     0.69    2
+ Kg    0.48   54     0.24   26
+ KM    1.49   17     1.40   18
+ KN    1.02   25     0.98   25
+ KV    1.28   13     1.20   14
+ gM    0.78   43     0.36   23
+ gN    0.60   41     0.26   14
+ gV    0.67   55     0.30   22
+ MN    1.63  112     1.42  103
+ MV    3.23  140     2.70  140
+ NV    1.34  113     1.32  101
+
++FOURFIT_CONTROL FILE
+* control file for exp. AUST
+
+    max_parity  0.01
+    pc_mode multitone
+    pc_period 5
+*
+start -2
+* stop -30
+
+   sb_win -256.0 256.0 mb_win -2.0 2.0 dr_win -300.e-4 300.e-4
+*      sb_win -2.0 2.0 mb_win -2.0 2.0 dr_win -30.0e-5 30.0e-5
+*
+*    ...offset between VLBA-VLBA and MK4-VLBA ...
+
+weak_channel 0.3
+
+  if f_group X
+    ref_freq 8212.99
+    freqs g h i j k l m n
+    pc_tonemask ghijklmn 57351 57351 57351 57351 57351 57351 57351 57351
+    * Excludes three highest and lowest tones
+*    pc_freqs ghijklmn 9010 9010 9010 9010 9010 9010 9010 9010
+
+  if f_group S
+    ref_freq 2225.99
+    freqs a b c d e f
+    pc_tonemask abcdef 57351 57351 57351 57351 57351 57351
+    * Excludes three highest and lowest	 tones
+*    pc_freqs abcdef 3010 3010 3010 3010 3010 3010
+
+* Kunming (Km)
+  if station g and f_group S
+    pc_mode manual
+    freqs b c d f
+    pc_phases bcdf  -7.5 -212.4  -46.1 -121.1
+
+  if station g and f_group X
+    pc_mode manual
+ pc_phases ghijklmn -132.6  -35.0   32.0   22.7   98.2  127.7  132.1  135.0
+
+* Hobart 26 (Ho)
+* reference is Hh
+  if station H and f_group S
+    pc_mode manual
+    freqs a b c
+    pc_phases abc  -39.7 28.3 88.7
+
+  if station H and f_group X
+    pc_mode manual
+ pc_phases ghijklmn 62.1 66.5 86.8 114.1 107.7 94.5 50.8 140.8
+
+* Medicina (Mc)
+  if station M and f_group S
+    pc_mode manual
+    freqs a b c d e
+    pc_phases abcdef -19.1  179.6   26.9  347.9  129.6   32.4
+
+  if station M and f_group X
+    pc_mode manual
+ pc_phases ghijklmn -86.4  129.7  236.5  283.5  207.5  120.1  237.1  277.2
+
+* ref Wz/V --> just for book keeping
+
+* NYALES20 (Ny)
+   if station N and f_group S
+   pc_phases abcdef -10.9 2.8 9.9 2.9 -5.9 0.9
+   if station N and f_group X
+   pc_phases ghijklmn 0.4 -1.9 -0.3 -0.4 5.4 1.9 -1.7 -2.1
+
+* Wettzell (Wz)
+   if station V and f_group S
+   pc_phases abcdef 0 0 0 0 0 0
+   if station V and f_group X
+   pc_phases ghijklmn 0 0 0 0 0 0 0 0
+
+*Kokee (Kk)
+   if station K and f_group S
+   pc_phases abcdef 3.0 -1.0 -0.6 -2.4 -3.9 4.8
+   if station K and f_group X
+   pc_phases ghijklmn 3.3 6.3 -4.0 -12.9 -6.4 -1.5 4.4 5.1
+
+*HARTRAO (Hh)
+   if station L and f_group S
+   pc_phases abcdef 3.3 2.3 -0.6 -10.7 4.1 1.8
+   if station L and f_group X
+   pc_phases ghijklmn 0.1 -5.8 -0.0 1.6 13.1 0.5 1.2 -6.8
++END
+$1<
+Sorted by time and subsorted by baseline.   -AU-
+All  baselines used.
+All  sources used.
+Output time window:  earliest latest
+TIMETAG 2018/05/25 12:40:11 
+MK3DB_VERSION    2
+CALC11.02 Ver. 2016.12.29  Fri May 25 08:40:10 2018    bootes
+Calc 11 at GSFC  -DG-
+TIMETAG 2018/05/25 13:44:57 
+MK3DB_VERSION    3
+Dbcal: RD1801 -DG-
+ DBCAL: Version 2017-MAR-15       MAY 25,2018 13:44:57
+TIMETAG 2018/05/25 14:28:19 
+MK3DB_VERSION    4
+SgLib-0.6.1 (The Pattern): data have been read from Mk3 database
+TIMETAG 2018/05/25 15:23:35 
+MK3DB_VERSION    4
+Analyzed by David Gordon (hereafter DG) at Goddard Space Flight Center. Contact info: <David.Gordon-1@nasa.gov>
+DG> RD1801: GSFC Analysis  -DG-
+DG> No met data for Kunming.
+DG> Poor S-band results for HOBART26 and KUNMING.
+DG> NuSolve fit of 18.2 psec.
+IVS-R&D-1: GSFC analysis (DG)
+G-Gxs solution,   60/  60 clocks/atms,    2/  40 constraints, 23.9833-hr gradients.
+Solve fit is 18.21 psec.
+The following flyby options were used in the solution:
+Station positions flyby file: glo.sit
+Station velocities flyby file: glo.vel
+Source flyby file: 17Dec05.src
+Station axis offset flyby file: glo.axis
+EOP high frequency variations flyby file: NONE
+Station mean gradients flyby file: NONE
+Nutation series flyby file :  NONE
+Nutation offset flyby file :  NONE
+Earth rotation flyby file  :  NONE
+Tectonic plate motion file :  NONE
+Group delay ambiguities were resolved (well, at least, tried to resolve)
+Group delay outliers were processed and editing info has been updated.
+Troposphere and cable cal status for standard solution have been stored.
+Observation dependent contribution status has been stored.
+Reweighting updated for:
+HA-HO HA-KU HA-ME HA-NY HA-WE HO-KO KO-KU KO-ME KO-NY KO-WE
+KU-ME KU-NY KU-WE ME-NY ME-WE NY-WE
+Solution data configuration: group delays with ionosphere corrections
+Clock and atmosphere constraint information saved.
+Batchmode clock parameterization saved.
+Batchmode atmosphere parameterization saved.
+Ionosphere corrections were evaluated for group delays.
+Barometer calibration and barometer height offset not available.
+Elevation cutoff data stored in database.
+Eccentricity data store in data base header.
+

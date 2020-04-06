@@ -1,0 +1,205 @@
+       IVS Analysis Report for R1863 ($18OCT08XA) 
+       This report is the official IVS analysis report that corresponds to 
+       the database maintained by the IVS Data Centers for this session.  
+   (Analyzed by David Gordon, Goddard Space Flight Center.
+    Spoolfile source: interactive solve/nuSolve analysis.) 
+
+Problems: There are two large clock breaks at WETTZELL, at ~01:40 
+          (-.3737764 seconds) and at ~11:59 (+.3737764 seconds). A
+          nuSolve solution with clock breaks at those times aborts
+          in the Solve solutions for baseline weights and EOP's. 
+          Therefore, the clock breaks are not used and the ~10
+          hours of data in between were deselected. WETTZ13N was
+          used as the clock reference instead of WETTZELL.
+          Two clock breaks are used at YARRA12M, at 12:04 and 13:58.
+          The breaks look like maser cycle slips. 
+
+Parameterization comments: None. 
+
+Other comments: None. 
+
+-----------------------------------------
+
+Session Statistics 
+
+  Observations:     8994 scheduled 
+                    8704 correlated (in database)
+                    8132 recoverable (usable)
+                    7221 used
+  Session fit:        26.810 ps
+
+-----------------------------------------
+
+Station Performance 
+
+                           Number of Observations
+
+                    Scheduled   Recoverable*        Used   % of scheduled
+                                                              obs used
+
+  FORTLEZA                850           783          701        82.5%
+  HART15M                1313          1211         1124        85.6%
+  ISHIOKA                1727          1612         1533        88.8%
+  KATH12M                1079           988          928        86.0%
+  MATERA                 2117          1581         1485        70.1%
+  MEDICINA               2176          2044         1917        88.1%
+  NYALES20               1962          1790         1695        86.4%
+  ONSALA60               2091          1961         1840        88.0%
+  WETTZ13N               2072          1941         1714        82.7%
+  WETTZELL               1558          1452          664        42.6%
+  YARRA12M               1043           901          841        80.6%
+  ---------------   ---------   -----------    ---------       ------
+  Station Total**        8994          8132         7221        80.3%
+
+  * Recoverable: can be included in the solution. 
+  ** Total includes distinct observations only.
+
+  MISSED:    Station was scheduled, but it did not observe.
+  NOT CORR:  Station was scheduled but not correlated.
+  NOT USED:  Usable data was generated for this station,
+             but the analyst rejected it all.
+
+-----------------------------------------
+
+Source Performance 
+
+                    Number of Observations
+
+                Scheduled  Correlated*    Used      % of scheduled
+                                                       obs used
+
+  1600+43A            137         137        0            0.0%
+  1550-269              4           4        2           50.0%
+  0440+345              5           5        2           40.0%
+  2245-328             15          14       12           80.0%
+  1252+119             52          52       38           73.1%
+  0954+658             83          82       67           80.7%
+  0013-005             17          17        5           29.4%
+  0632-235             33          32       29           87.9%
+  2201+315            137         130      110           80.3%
+  0059+581            625         604      482           77.1%
+  0119+115            217         211      172           79.3%
+  0229+131            198         197      156           78.8%
+  0458-020            407         393      330           81.1%
+  0530-727             13          13       13          100.0%
+  0537-441              9           9        8           88.9%
+  0727-115            378         358      266           70.4%
+  OJ287               613         604      486           79.3%
+  1034-293             32          30       28           87.5%
+  1057-797             71          71       66           93.0%
+  1144-379             75          74       69           92.0%
+  1334-127            166         163      125           75.3%
+  1424-418             47          44       42           89.4%
+  1606+106            106         104       94           88.7%
+  1741-038            272         245      211           77.6%
+  1749+096            222         217      197           88.7%
+  1954-388             17          17       14           82.4%
+  3C418               930         855      663           71.3%
+  2052-474             22          22       21           95.5%
+  3C446               184         170      156           84.8%
+  0613+570            267         258      238           89.1%
+  1149-084            162         162      134           82.7%
+  1639+230             20          20       15           75.0%
+  1639-062             38          36       26           68.4%
+  1846+322            154         141      120           77.9%
+  2229+695             84          83       81           96.4%
+  0446+112             61          61       58           95.1%
+  0716+714            527         520      496           94.1%
+  1144+402            399         397      341           85.5%
+  2141+175             74          71       68           91.9%
+  0322+222             51          51       47           92.2%
+  0414-189             10          10        9           90.0%
+  0537-286              9           9        5           55.6%
+  1759-396             18          17       15           83.3%
+  1920-211             42          38       30           71.4%
+  2008-159             25          25       24           96.0%
+  0308-611             39          38       37           94.9%
+  1657-261             10          10        0            0.0%
+  0017+200            259         253      250           96.5%
+  0131-522             32          31       26           81.2%
+  0202+319            266         265      259           97.4%
+  NRAO150             197         185      120           60.9%
+  1030+415            650         647      487           74.9%
+  1123+264            103          99       85           82.5%
+  1849+670            410         403      386           94.1%
+  ------------  ---------  ----------   ------          ------
+  Source Total       8994        8704     7221           80.3%
+
+ * Correlated: included in database 
+
+-----------------------------------------
+
+Baseline Performance 
+
+                                 Number of Observations
+
+                         Scheduled   Recoverable*         Used   % of scheduled
+                                                                    obs used
+
+  FORTLEZA-HART15M             181           170           169        93.4%
+  FORTLEZA-ISHIOKA              18            13            13        72.2%
+  FORTLEZA-KATH12M               1             1    DESELECTED         0.0%
+  FORTLEZA-MATERA              102            82            80        78.4%
+  FORTLEZA-MEDICINA            103            98            96        93.2%
+  FORTLEZA-NYALES20             90            79            78        86.7%
+  FORTLEZA-ONSALA60             99            95            91        91.9%
+  FORTLEZA-WETTZ13N            107           101           100        93.5%
+  FORTLEZA-WETTZELL            144           140            74        51.4%
+  FORTLEZA-YARRA12M              5             4    DESELECTED         0.0%
+  HART15M-ISHIOKA               84            76            76        90.5%
+  HART15M-KATH12M              107           104           104        97.2%
+  HART15M-MATERA               153           109           106        69.3%
+  HART15M-MEDICINA             141           140           136        96.5%
+  HART15M-NYALES20              94            87            86        91.5%
+  HART15M-ONSALA60             129           126           124        96.1%
+  HART15M-WETTZ13N             128           125           123        96.1%
+  HART15M-WETTZELL             156           149            79        50.6%
+  HART15M-YARRA12M             140           125           121        86.4%
+  ISHIOKA-KATH12M              222           211           203        91.4%
+  ISHIOKA-MATERA               208           159           156        75.0%
+  ISHIOKA-MEDICINA             209           207           206        98.6%
+  ISHIOKA-NYALES20             280           271           268        95.7%
+  ISHIOKA-ONSALA60             206           201           200        97.1%
+  ISHIOKA-WETTZ13N             203           196           194        95.6%
+  ISHIOKA-WETTZELL             112           108            56        50.0%
+  ISHIOKA-YARRA12M             185           170           161        87.0%
+  KATH12M-MATERA                57            35            35        61.4%
+  KATH12M-MEDICINA              56            53            52        92.9%
+  KATH12M-NYALES20              63            46            45        71.4%
+  KATH12M-ONSALA60              61            53            53        86.9%
+  KATH12M-WETTZ13N              61            58            57        93.4%
+  KATH12M-WETTZELL              68            64            32        47.1%
+  KATH12M-YARRA12M             383           363           347        90.6%
+  MATERA-MEDICINA              379           285           284        74.9%
+  MATERA-NYALES20              292           219           216        74.0%
+  MATERA-ONSALA60              340           268           262        77.1%
+  MATERA-WETTZ13N              330           250           247        74.8%
+  MATERA-WETTZELL              203           149            74        36.5%
+  MATERA-YARRA12M               53            25            25        47.2%
+  MEDICINA-NYALES20            310           303           294        94.8%
+  MEDICINA-ONSALA60            347           344           339        97.7%
+  MEDICINA-WETTZ13N            350           344           340        97.1%
+  MEDICINA-WETTZELL            230           227           127        55.2%
+  MEDICINA-YARRA12M             51            43            43        84.3%
+  NYALES20-ONSALA60            317           310           307        96.8%
+  NYALES20-WETTZ13N            293           286           286        97.6%
+  NYALES20-WETTZELL            170           158            86        50.6%
+  NYALES20-YARRA12M             53            31            29        54.7%
+  ONSALA60-WETTZ13N            333           326           320        96.1%
+  ONSALA60-WETTZELL            205           199           106        51.7%
+  ONSALA60-YARRA12M             54            39            38        70.4%
+  WETTZ13N-WETTZELL            209           206    DESELECTED         0.0%
+  WETTZ13N-YARRA12M             58            49            47        81.0%
+  WETTZELL-YARRA12M             61            52            30        49.2%
+  -----------------      ---------   -----------    ----------       ------
+  Baseline Total              8994          8132          7221        80.3%
+
+  * Recoverable: can be included in the solution. 
+
+  MISSED:     Baseline was scheduled, but at least one of the sites
+              did not observe.
+  NOT CORR:   Baseline was scheduled but not correlated.
+  NO DATA:    The baseline's stations were both correlated,
+              but they did not observe together.
+  DESELECTED: Usable data was generated for the baseline,
+              but the analyst rejected it.

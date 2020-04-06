@@ -1,0 +1,310 @@
+       Analysis Report for C1411 ($14MAY16XA) 
+   (Analyzed by David Gordon, GSFC Analysis Center.
+    Spoolfile source: interactive solve/nuSolve analysis.) 
+
+This is the reprocessed version with ZELENCHK correlated with the correct
+clock offsets.
+
+Problems: ZELENCHK started with a +1 second clock error. The clock was 
+          reset later. An priori clock model is used and a clock break is 
+          set at 19:30 UTC.
+          Hobart26 was wind-stowed the last 6 hrs.
+          Matera has S-band subambiguities.
+
+Parameterization comments: None. 
+
+Other comments: HART15M reported a clock jump of ~30 nsec at ~07:18.
+          There is a jump of ~50 nsec in the S-band single band delays, 
+          but not in the X-band SBD's. It does not affect the group 
+          delay solution.
+
+-----------------------------------------
+
+Session Statistics 
+
+  Observations:     19884 scheduled 
+                    18796 correlated (in database)
+                    17559 recoverable (usable)
+                    16883 used
+  Session fit:        29.521 ps
+
+-----------------------------------------
+
+Station Performance 
+
+                           Number of Observations
+
+                    Scheduled   Recoverable*        Used   % of scheduled
+                                                              obs used
+
+  BADARY                 2770          2516         2449        88.4%
+  FORTLEZA               1507          1384         1316        87.3%
+  HART15M                1616          1471         1437        88.9%
+  HOBART12               1716          1398         1267        73.8%
+  HOBART26               1733          1175         1066        61.5%
+  KATH12M                1813          1619         1565        86.3%
+  KOKEE                  2349          2031         1974        84.0%
+  MATERA                 2931          2658         2530        86.3%
+  NYALES20               2999          2774         2693        89.8%
+  ONSALA60               2962          2750         2676        90.3%
+  TSUKUB32               2931          2616         2468        84.2%
+  WARK12M                1317          1181         1137        86.3%
+  WESTFORD               2647          2430         2351        88.8%
+  WETTZELL               3146          2861         2780        88.4%
+  YARRA12M               1594          1417         1380        86.6%
+  YEBES40M               2985          2692         2602        87.2%
+  ZELENCHK               2752          2145         2075        75.4%
+  ---------------   ---------   -----------    ---------       ------
+  Station Total**       19884         17559        16883        84.9%
+
+  * Recoverable: can be included in the solution. 
+  ** Total includes distinct observations only.
+
+  MISSED:    Station was scheduled, but it did not observe.
+  NOT CORR:  Station was scheduled but not correlated.
+  NOT USED:  Usable data was generated for this station,
+             but the analyst rejected it all.
+
+-----------------------------------------
+
+Source Performance 
+
+                    Number of Observations
+
+                Scheduled  Correlated*    Used      % of scheduled
+                                                       obs used
+
+  0059+581           1256        1199     1087           86.5%
+  0119+115            131         111      100           76.3%
+  0229+131            154         140      120           77.9%
+  0454-234            313         280      244           78.0%
+  0537-441            312         292      269           86.2%
+  0727-115            590         571      529           89.7%
+  0749+540            244         229      214           87.7%
+  0955+476            272         263      253           93.0%
+  1053+815             77          71       66           85.7%
+  1057-797             10          10        5           50.0%
+  1104-445            104         100       81           77.9%
+  1124-186            295         288      243           82.4%
+  1156+295             78          78       75           96.2%
+  1417+385            122         122      118           96.7%
+  1424-418            414         391      356           86.0%
+  1519-273            289         263      234           81.0%
+  1741-038            312         278      258           82.7%
+  3C371               927         884      787           84.9%
+  1921-293            119         102       88           73.9%
+  1954-388            139         122       95           68.3%
+  2052-474             65          61       56           86.2%
+  2113+293             15          15       12           80.0%
+  2209+236            135         132      126           93.3%
+  2255-282            103          84       69           67.0%
+  0420-014            462         440      399           86.4%
+  0657+172            432         420      399           92.4%
+  1639-062            325         310      278           85.5%
+  1846+322            708         638      560           79.1%
+  2000+472            475         466      433           91.2%
+  2227-088            119         114      104           87.4%
+  2355-106             73          73       61           83.6%
+  0529+483            655         610      582           88.9%
+  0716+714           1046         972      884           84.5%
+  0748+126            622         614      584           93.9%
+  2059+034             38          38       34           89.5%
+  2214+350            238         231      223           93.7%
+  2309+454             61          61       57           93.4%
+  0016+731           1019         994      919           90.2%
+  0308-611             12          11        8           66.7%
+  0332-403            192         180      148           77.1%
+  0506-612              3           2        2           66.7%
+  1806+456            150         150      138           92.0%
+  0017+200            224         221      207           92.4%
+  NRAO150               4           4        4          100.0%
+  0642+449            514         506      456           88.7%
+  0814+425            201         196      180           89.6%
+  0827+243            147         147      142           96.6%
+  1406-076             27          27       24           88.9%
+  1751+288            482         395      363           75.3%
+  0014+813            376         375      294           78.2%
+  0106+013            221         193      168           76.0%
+  0212+735            684         609      529           77.3%
+  0528+134             63          59       56           88.9%
+  0607-157            359         353      297           82.7%
+  0637-752            100          99       84           84.0%
+  0738+313            435         423      322           74.0%
+  0919-260            111         111       61           55.0%
+  4C39.25             367         351      327           89.1%
+  1044+719            138         114      100           72.5%
+  1308+326             30          30       24           80.0%
+  1448+762            120         120      102           85.0%
+  3C309.1              88          84       55           62.5%
+  1611+343            800         783      701           87.6%
+  3C345                 2           2        2          100.0%
+  1739+522            853         818      752           88.2%
+  2121+053             14          11        9           64.3%
+  2128-123              8           7        5           62.5%
+  2134+00               9           9        7           77.8%
+  2145+067            350         294      276           78.9%
+  2201+315             18          14       10           55.6%
+  2234+282             31          31       28           90.3%
+  3C454.3               2           0        0            0.0%
+  ------------  ---------  ----------   ------          ------
+  Source Total      19884       18796    16883           84.9%
+
+ * Correlated: included in database 
+
+-----------------------------------------
+
+Baseline Performance 
+
+                                 Number of Observations
+
+                         Scheduled   Recoverable*         Used   % of scheduled
+                                                                    obs used
+
+  BADARY-FORTLEZA               76            69            65        85.5%
+  BADARY-HART15M                96            88            87        90.6%
+  BADARY-HOBART12               44            40            38        86.4%
+  BADARY-HOBART26               50            41            40        80.0%
+  BADARY-KATH12M                77            73            67        87.0%
+  BADARY-KOKEE                 196           185           185        94.4%
+  BADARY-MATERA                237           216           210        88.6%
+  BADARY-NYALES20              294           280           273        92.9%
+  BADARY-ONSALA60              250           239           234        93.6%
+  BADARY-TSUKUB32              324           300           286        88.3%
+  BADARY-WARK12M                32            30            30        93.8%
+  BADARY-WESTFORD              218           195           188        86.2%
+  BADARY-WETTZELL              276           267           259        93.8%
+  BADARY-YARRA12M               54            50            50        92.6%
+  BADARY-YEBES40M              239           218           215        90.0%
+  BADARY-ZELENCHK              307           225           222        72.3%
+  FORTLEZA-HART15M             189           173           170        89.9%
+  FORTLEZA-HOBART12              1             0    DESELECTED         0.0%
+  FORTLEZA-HOBART26              3             0    DESELECTED         0.0%
+  FORTLEZA-KATH12M               0       NO DATA       NO DATA         0.0%
+  FORTLEZA-KOKEE                59            52            48        81.4%
+  FORTLEZA-MATERA              164           151           137        83.5%
+  FORTLEZA-NYALES20            127           116           111        87.4%
+  FORTLEZA-ONSALA60            148           145           141        95.3%
+  FORTLEZA-TSUKUB32             43            39            35        81.4%
+  FORTLEZA-WARK12M               3             0    DESELECTED         0.0%
+  FORTLEZA-WESTFORD            207           197           187        90.3%
+  FORTLEZA-WETTZELL            162           152           145        89.5%
+  FORTLEZA-YARRA12M              3             0    DESELECTED         0.0%
+  FORTLEZA-YEBES40M            192           178           170        88.5%
+  FORTLEZA-ZELENCHK            130           112           107        82.3%
+  HART15M-HOBART12              71            62            61        85.9%
+  HART15M-HOBART26              78            55            55        70.5%
+  HART15M-KATH12M               87            84            81        93.1%
+  HART15M-KOKEE                  0       NO DATA       NO DATA         0.0%
+  HART15M-MATERA               144           134           125        86.8%
+  HART15M-NYALES20              91            80            80        87.9%
+  HART15M-ONSALA60             118           112           111        94.1%
+  HART15M-TSUKUB32              67            65            62        92.5%
+  HART15M-WARK12M               31            30            30        96.8%
+  HART15M-WESTFORD              96            80            78        81.2%
+  HART15M-WETTZELL             139           132           132        95.0%
+  HART15M-YARRA12M             119           113           113        95.0%
+  HART15M-YEBES40M             152           140           133        87.5%
+  HART15M-ZELENCHK             138           123           119        86.2%
+  HOBART12-HOBART26            398           248           156        39.2%
+  HOBART12-KATH12M             280           252           248        88.6%
+  HOBART12-KOKEE               119           101            97        81.5%
+  HOBART12-MATERA               18            14            13        72.2%
+  HOBART12-NYALES20             20            13            11        55.0%
+  HOBART12-ONSALA60             18            14            13        72.2%
+  HOBART12-TSUKUB32            127           108           103        81.1%
+  HOBART12-WARK12M             291           268           257        88.3%
+  HOBART12-WESTFORD             13            11            10        76.9%
+  HOBART12-WETTZELL             17            11            11        64.7%
+  HOBART12-YARRA12M            265           239           233        87.9%
+  HOBART12-YEBES40M              7             0    DESELECTED         0.0%
+  HOBART12-ZELENCHK             27            17            16        59.3%
+  HOBART26-KATH12M             285           212           210        73.7%
+  HOBART26-KOKEE               116            84            82        70.7%
+  HOBART26-MATERA               17             8             8        47.1%
+  HOBART26-NYALES20             17            10             9        52.9%
+  HOBART26-ONSALA60             13             6             6        46.2%
+  HOBART26-TSUKUB32            142            95            90        63.4%
+  HOBART26-WARK12M             285           206           202        70.9%
+  HOBART26-WESTFORD             11             7             7        63.6%
+  HOBART26-WETTZELL             15             8             8        53.3%
+  HOBART26-YARRA12M            268           195           193        72.0%
+  HOBART26-YEBES40M              5             0    DESELECTED         0.0%
+  HOBART26-ZELENCHK             30             0    DESELECTED         0.0%
+  KATH12M-KOKEE                122           113           111        91.0%
+  KATH12M-MATERA                42            37            36        85.7%
+  KATH12M-NYALES20              49            43            42        85.7%
+  KATH12M-ONSALA60              45            41            39        86.7%
+  KATH12M-TSUKUB32             160           153           147        91.9%
+  KATH12M-WARK12M              199           190           182        91.5%
+  KATH12M-WESTFORD              20            19            19        95.0%
+  KATH12M-WETTZELL              41            34            33        80.5%
+  KATH12M-YARRA12M             323           312           296        91.6%
+  KATH12M-YEBES40M              30            21            20        66.7%
+  KATH12M-ZELENCHK              53            35            34        64.2%
+  KOKEE-MATERA                 141           117           113        80.1%
+  KOKEE-NYALES20               217           194           187        86.2%
+  KOKEE-ONSALA60               173           144           139        80.3%
+  KOKEE-TSUKUB32               300           267           255        85.0%
+  KOKEE-WARK12M                146           140           137        93.8%
+  KOKEE-WESTFORD               224           205           201        89.7%
+  KOKEE-WETTZELL               171           149           143        83.6%
+  KOKEE-YARRA12M                77            67            66        85.7%
+  KOKEE-YEBES40M               151           125           123        81.5%
+  KOKEE-ZELENCHK               137            88            87        63.5%
+  MATERA-NYALES20              303           287           276        91.1%
+  MATERA-ONSALA60              347           327           316        91.1%
+  MATERA-TSUKUB32              194           176           167        86.1%
+  MATERA-WARK12M                 0       NO DATA       NO DATA         0.0%
+  MATERA-WESTFORD              248           224           214        86.3%
+  MATERA-WETTZELL              373           345           333        89.3%
+  MATERA-YARRA12M               33            30            29        87.9%
+  MATERA-YEBES40M              362           332           317        87.6%
+  MATERA-ZELENCHK              308           260           236        76.6%
+  NYALES20-ONSALA60            336           329           327        97.3%
+  NYALES20-TSUKUB32            264           248           231        87.5%
+  NYALES20-WARK12M              13            12            10        76.9%
+  NYALES20-WESTFORD            312           301           292        93.6%
+  NYALES20-WETTZELL            340           322           316        92.9%
+  NYALES20-YARRA12M             33            28            28        84.8%
+  NYALES20-YEBES40M            317           296           290        91.5%
+  NYALES20-ZELENCHK            266           215           210        78.9%
+  ONSALA60-TSUKUB32            213           196           180        84.5%
+  ONSALA60-WARK12M               1             0    DESELECTED         0.0%
+  ONSALA60-WESTFORD            276           262           258        93.5%
+  ONSALA60-WETTZELL            371           352           347        93.5%
+  ONSALA60-YARRA12M             30            29            29        96.7%
+  ONSALA60-YEBES40M            348           329           316        90.8%
+  ONSALA60-ZELENCHK            275           225           220        80.0%
+  TSUKUB32-WARK12M             117           112           104        88.9%
+  TSUKUB32-WESTFORD            216           201           190        88.0%
+  TSUKUB32-WETTZELL            220           197           184        83.6%
+  TSUKUB32-YARRA12M            129           123           118        91.5%
+  TSUKUB32-YEBES40M            191           173           162        84.8%
+  TSUKUB32-ZELENCHK            224           163           154        68.8%
+  WARK12M-WESTFORD              26            25            23        88.5%
+  WARK12M-WETTZELL               1             0    DESELECTED         0.0%
+  WARK12M-YARRA12M             165           162           157        95.2%
+  WARK12M-YEBES40M               0       NO DATA       NO DATA         0.0%
+  WARK12M-ZELENCHK               7             6             5        71.4%
+  WESTFORD-WETTZELL            284           262           255        89.8%
+  WESTFORD-YARRA12M              0       NO DATA       NO DATA         0.0%
+  WESTFORD-YEBES40M            303           282           274        90.4%
+  WESTFORD-ZELENCHK            193           159           155        80.3%
+  WETTZELL-YARRA12M             29            24            24        82.8%
+  WETTZELL-YEBES40M            381           351           338        88.7%
+  WETTZELL-ZELENCHK            326           255           252        77.3%
+  YARRA12M-YEBES40M             21            15            15        71.4%
+  YARRA12M-ZELENCHK             45            30            29        64.4%
+  YEBES40M-ZELENCHK            286           232           229        80.1%
+  -----------------      ---------   -----------    ----------       ------
+  Baseline Total             19884         17559         16883        84.9%
+
+  * Recoverable: can be included in the solution. 
+
+  MISSED:     Baseline was scheduled, but at least one of the sites
+              did not observe.
+  NOT CORR:   Baseline was scheduled but not correlated.
+  NO DATA:    The baseline's stations were both correlated,
+              but they did not observe together.
+  DESELECTED: Usable data was generated for the baseline,
+              but the analyst rejected it.

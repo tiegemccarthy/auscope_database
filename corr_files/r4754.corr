@@ -1,0 +1,395 @@
+TIMETAG 2016/09/28 20:43:36 
+MK3DB_VERSION    1
+Dbedit: r4754, NEOSA  | geo_export
+VLBI experiment R4754 ( NEOSA )
+Created by dbedit Ver. 2013.10.18  revision 6.22
+        run by vlbi ( vlbi@ )
+            at USN -- USNO Earth Orientation department
+               on NewJoplin.usno.navy.mil at 2016.09.28-16:43:36 local time
+Dbedit control file history entry: r4754, NEOSA  | geo_export
+Directory /data2/export/data/R4/4754
+$1>
++HEADER
+CORRE    WACO
+DATABASE 16AUG25XE
+SESSNAME R4754
+OBSTIME  2016/08/25 2016/08/26
+UTSTART  1830
+DURATION 24
+DOY      238/239
+CORRTIME 2016/09/21 2016/09/27
+CORRPASS 1
+EXPORT   Done.
+
++SUMMARY
+Qcode   % of Total   % of Correlated
+          scans          scans
+
+ 5-9       76%           95%
+  0         1%            2%
+ B-H        1%            2%
+Removed    20% (Ht did not observe.)
+
+Qcodes 7-9 Correlated 92%
+Qcode N Not Correlated  0%
+
++CORRELATOR_NOTES
+
++STATION_NOTES
+
+FORTLEZA (Ft/F):  Low fringe amplitudes in channel SR4U leading to 'G'
+                  codes.
+
+                  Channel SR4U removed from fringe fitting.
+
+HOBART12 (Hb/H):  Low fringe amplitudes in channel SR6U leading to 'G'
+                  codes.
+
+                  Channel SR6U removed from fringe fitting.
+
+HART15M  (Ht/J):  Did not participate.
+
+KATH12M  (Ke/A):  Ok.
+
+KOKEE    (Kk/K):  Ok.
+
+NYALES20 (Ny/N):  Low fringe amplitudes in channels XR5U, XR6U, XR7U,
+                  and XR8U/L leading to 'G' codes.
+
+                  Channels XR5U, XR6U, XR7U, and XR8U/L removed from
+                  fringe fitting.
+
+URUMQI   (Ur/U):  Low pcal amplitudes leading to 'H' codes.
+                  Manual pcal applied.
+
+WETTZELL (Wz/V):  Ok.
+
+YARRA12M (Yg/Y):  Ok.
+
+YEBES40M (Ys/C):  Low fringe amplitudes in channel SR4U leading to 'G'
+                  codes.
+
+                  Channel SR4U removed from fringe fitting.
+
++DROP_CHANNELS
+
+Ft SR4U
+Hb       SR6U
+Ny            XR5U XR6U XR7U XR8U/L
+Ys SR4U
+
++MANUAL_PCAL Ur
+
++CHANNELS
+XR1U = band|polarization|channel#|sideband
+
+ XR1U/L  BBC01  8212.99
+ XR2U    BBC02  8252.99
+ XR3U    BBC03  8352.99
+ XR4U    BBC04  8512.99
+ XR5U    BBC05  8732.99
+ XR6U    BBC06  8852.99
+ XR7U    BBC07  8912.99
+ XR8U/L  BBC08  8932.99
+ SR1U    BBC09  2225.99
+ SR2U    BBC10  2245.99
+ SR3U    BBC11  2265.99
+ SR4U    BBC12  2295.99
+ SR5U    BBC13  2345.99
+ SR6U    BBC14  2365.99
+
++CLOCKS
+
+Clocks: WACO
+
+Station          fmout-gps      Used      rate
+                  [usec]       [usec]   [sec/sec]
+ Ft                 0.51        0.68     2.525e-13
+ Hb                10.14       12.78     1.462e-13
+ Ke                 1.94        3.91     0.000e+00
+ Kk                 7.20        8.04    -2.129e-13
+ Ny                  -        103.66    -2.525e-13
+ Ur                 5.42        5.61    -9.544e-13
+ Wz               -35.14      34.89     0.000e+00
+ Yg                 8.78       11.00    -2.496e-13
+ Ys               -28.29       27.88    -2.148e-12
+
+Date: 2016/08/25
+
++QCODES
+
+Qcodes   0  1  2  3  4   5   6   7    8    9  A  B  C  D  E  F  G  H  N    -   T
+--------------------------------------------------------------------------------
+  HA:X   1  0  0  0  0   0   0   4   12  172  0  0  0  0  0  0  0  3  1   82   2
+  HA:S   2  0  0  0  0   0   0   0   34  144  0  0  0  0  0  0  7  5  1   82   2
+  HN:X   1  0  0  0  0   0   0   0    2   16  0  0  0  0  0  0  0  0  0    8
+  HN:S   2  0  0  0  0   0   0   0    1   15  0  0  0  0  0  0  0  1  0    8
+  HU:X   0  0  0  0  0   1   2   5   11   27  0  0  0  0  0  0  0  1  0   22
+  HU:S   0  0  0  0  0   0   0   1    9   29  0  0  0  0  0  0  7  1  0   22
+  HY:X   1  0  0  0  0   0   0   7   20  167  0  0  0  0  0  0  0  3  1   81   2
+  HY:S   2  0  0  0  0   0   0   8   27  144  0  0  0  0  0  0 11  6  1   81   2
+  HF:X   2  0  0  0  0   0   0   0    0    4  0  0  0  0  0  0  0  0  0    2
+  HF:S   3  0  0  0  0   0   0   0    0    3  0  0  0  0  0  0  0  0  0    2
+  HJ:X   0  0  0  0  0   0   0   0    0    0  0  0  0  0  0  0  0  0  0   84
+  HJ:S   0  0  0  0  0   0   0   0    0    0  0  0  0  0  0  0  0  0  0   84
+  HC:X   0  0  0  0  0   0   0   0    3    4  0  0  0  0  0  0  0  0  0    3
+  HC:S   1  0  0  0  0   0   0   1    0    5  0  0  0  0  0  0  0  0  0    3
+  HV:X   0  0  0  0  0   0   0   0    1    5  0  0  0  0  0  0  0  0  0    6
+  HV:S   1  0  0  0  0   0   0   0    0    4  0  0  0  0  0  0  0  1  0    6
+  HK:X   3  0  0  0  0   0   0   1    1   58  0  0  0  0  0  0  0  2  0   36   1
+  HK:S   1  0  0  0  0   0   0   0   15   37  0  0  0  0  0  0 11  1  0   36   1
+  AN:X   2  0  0  0  0   0   0   0    0   75  0  0  0  0  0  0  0  0  0    0
+  AN:S   6  0  0  0  0   0   1   0    1   69  0  0  0  0  0  0  0  0  0    0
+  AU:X   1  0  0  0  1   5  18  23   45   36  0  0  0  0  0  0  0  0  0    0   1
+  AU:S   2  0  0  0  0   0   0   1   18  107  0  0  0  0  0  0  1  0  0    0   1
+  AY:X   0  0  0  0  0   0   0   7   20  260  0  0  0  0  0  0  0  0  0    0   2
+  AY:S   0  0  0  0  0   0   1   1   21  264  0  0  0  0  0  0  0  0  0    0   2
+  AF:X   0  0  0  0  0   0   0   0    0    3  0  0  0  0  0  0  0  0  0    0
+  AF:S   0  0  0  0  0   0   0   0    0    3  0  0  0  0  0  0  0  0  0    0
+  AJ:X   0  0  0  0  0   0   0   0    0    0  0  0  0  0  0  0  0  0  0   90
+  AJ:S   0  0  0  0  0   0   0   0    0    0  0  0  0  0  0  0  0  0  0   90
+  AC:X   0  0  0  0  0   0   0   1   13   30  0  0  0  0  0  0  0  0  0    0
+  AC:S   4  0  0  0  0   0   0   0    6   33  0  0  0  0  0  0  1  0  0    0
+  AV:X   0  0  0  0  0   0   0   0    4   52  0  0  0  0  0  0  0  0  0    0
+  AV:S   6  0  0  0  0   0   0   0    2   48  0  0  0  0  0  0  0  0  0    0
+  AK:X   2  0  0  0  0   0   0   0    8  107  0  0  0  0  0  0  0  0  0    0   1
+  AK:S   0  0  0  0  0   0   0   0    2  113  0  0  0  0  0  0  2  0  0    0   1
+  NU:X   6  0  0  0 23  19  30  39   75   51  0  0  0  0  0  0  0  0  0    0   2
+  NU:S   4  0  0  0  0   3   6  16   61  152  0  0  0  0  0  0  1  0  0    0   2
+  NY:X   1  0  0  0  0   0   0   0    2   52  0  0  0  0  0  0  0  0  0    0
+  NY:S   2  0  0  0  0   0   0   3    5   45  0  0  0  0  0  0  0  0  0    0
+  NF:X   4  0  0  0  0   0   0   0    3   78  0  0  0  0  0  0  0  0  0    0
+  NF:S   2  0  0  0  0   0   0   0    7   70  0  0  0  0  0  0  2  4  0    0
+  NJ:X   0  0  0  0  0   0   0   0    0    0  0  0  0  0  0  0  0  0  0   87
+  NJ:S   0  0  0  0  0   0   0   0    0    0  0  0  0  0  0  0  0  0  0   87
+  NC:X   0  0  0  0  0   0   2   8   17  219  0  0  0  0  0  0  0  0  0    0   2
+  NC:S   0  0  0  0  1   1   1  16   68  149  0  0  0  0  0  0 10  0  0    0   2
+  NV:X   1  0  0  0  0   0   2   3   10  253  0  0  0  0  0  0  0  0  0    0   2
+  NV:S   2  0  0  0  0   1   0   7   12  246  0  1  0  0  0  0  0  0  0    0   2
+  NK:X  10  0  0  0  0   0   0   2   12  171  0  0  0  0  0  0  0  0  0    0   1
+  NK:S   0  0  0  0  0   0   1   6   10  176  0  0  0  0  1  0  1  0  0    0   1
+  UY:X   1  0  0  0  2   3   6  29   30   37  0  0  0  0  0  0  0  0  0    0   1
+  UY:S   1  0  0  0  0   1   0  12   41   53  0  0  0  0  0  0  0  0  0    0   1
+  UF:X  10  0  0  0  0   2   2   6   10   27  0  0  0  0  0  0  1  0  0    0
+  UF:S   7  0  0  0  0   0   0   0    4   44  0  0  0  0  0  0  1  2  0    0
+  UJ:X   0  0  0  0  0   0   0   0    0    0  0  0  0  0  0  0  0  0  0  102   1
+  UJ:S   0  0  0  0  0   0   0   0    0    0  0  0  0  0  0  0  0  0  0  102   1
+  UC:X   8  0  0  0 37  31  26  35   34   16  0  0  0  0  0  0  4  0  0    0   1
+  UC:S   3  0  0  0  0   1   7  24   72   83  0  0  0  0  0  0  1  0  0    0   1
+  UV:X   4  0  0  0 20  47  20  42   45   39  0  0  0  0  0  0  1  0  0    0   2
+  UV:S   3  0  0  0  0   5   5  17   37  150  0  1  0  0  0  0  0  0  0    0   2
+  UK:X   3  0  0  0  9   8  15  16   38   76  0  0  0  0  0  0  0  0  0    0   1
+  UK:S   1  0  0  0  0   1   2  13   24  122  0  0  0  0  0  0  2  0  0    0   1
+  YF:X   2  0  0  0  0   0   0   0    1    4  0  0  0  0  0  0  0  0  0    0
+  YF:S   0  0  0  0  0   0   0   0    0    6  0  0  0  0  0  0  1  0  0    0
+  YJ:X   0  0  0  0  0   0   0   0    0    0  0  0  0  0  0  0  0  0  0  118   1
+  YJ:S   0  0  0  0  0   0   0   0    0    0  0  0  0  0  0  0  0  0  0  118   1
+  YC:X   1  0  0  0  0   0   1   2   10   25  0  0  0  0  0  0  0  0  0    0
+  YC:S   4  0  0  0  0   0   0   0    5   30  0  0  0  0  0  0  0  0  0    0
+  YV:X   1  0  0  0  0   0   0   1    8   34  0  0  0  0  0  0  0  0  0    0
+  YV:S   1  0  0  0  0   0   0   0    4   39  0  0  0  0  0  0  0  0  0    0
+  YK:X   1  0  0  0  0   0   1   0    4   64  0  0  0  0  0  0  0  0  0    0
+  YK:S   1  0  0  0  0   0   0   1    3   63  0  0  0  0  0  0  2  0  0    0
+  FJ:X   0  0  0  0  0   0   0   0    0    0  0  0  0  0  0  0  0  0  0   77
+  FJ:S   0  0  0  0  0   0   0   0    0    0  0  0  0  0  0  0  0  0  0   77
+  FC:X   5  0  0  0  0   1   3   2   28  111  0  0  0  0  0  0  1  0  0    0   1
+  FC:S   2  0  0  0  0   0   0   0   34  109  0  0  0  0  0  0  1  5  0    0   1
+  FV:X   0  0  0  0  0   0   0   0   13   95  0  0  0  0  0  0  1  0  0    0   1
+  FV:S   0  0  0  0  0   0   1   0    9   92  0  0  0  0  0  0  3  4  0    0   1
+  FK:X   9  0  0  0  0   0   0   3    2   63  0  0  0  0  0  0  1  0  0    0
+  FK:S   3  0  0  0  0   0   1   2    3   67  0  0  0  0  0  0  1  1  0    0
+  JC:X   0  0  0  0  0   0   0   0    0    0  0  0  0  0  0  0  0  0  0  142   1
+  JC:S   0  0  0  0  0   0   0   0    0    0  0  0  0  0  0  0  0  0  0  142   1
+  JV:X   0  0  0  0  0   0   0   0    0    0  0  0  0  0  0  0  0  0  0  122   1
+  JV:S   0  0  0  0  0   0   0   0    0    0  0  0  0  0  0  0  0  0  0  122   1
+  JK:X   0  0  0  0  0   0   0   0    0    0  0  0  0  0  0  0  0  0  0    0
+  JK:S   0  0  0  0  0   0   0   0    0    0  0  0  0  0  0  0  0  0  0    0
+  CV:X   2  0  0  0  0   1   1   2   28  293  0  0  0  0  0  0  0  0  0    0   3
+  CV:S   2  0  0  0  1   0   0   1   51  264  0  0  0  0  0  0  8  0  0    0   3
+  CK:X   1  0  0  0  0   1   5  16   51   52  0  0  0  0  0  0  0  0  0    0   1
+  CK:S   0  0  0  0  0   0   0   0   10  114  0  0  0  0  0  0  2  0  0    0   1
+  VK:X   4  0  0  0  0   0   3   9   44   81  0  0  0  0  0  0  0  0  0    0   1
+  VK:S   0  0  0  0  0   0   1   0    5  135  0  0  0  0  0  0  0  0  0    0   1
+--------------------------------------------------------------------------------
+Totals 155  0  0  0 94 132 164 393 1206 6084  0  2  0  0  1  0 85 40  4 2124 104
+
+QC = 0   Fringes not detected.
+   = 1-9 Fringes detected, no error condition. Higher #, better quality.
+   = B   Interpolation error in fourfit.
+   = D   No data in one or more frequency channels.
+   = E   Maximum fringe amplitude at edge of SBD, MBD, or rate window.
+   = F   "Fork" problem in processing.
+   = G   Fringe amp in a channel is <.5 times mean amp (only if SNR>20).
+   = H   Low Phase-cal amplitude in one or more channels.
+   = N   No valid correlator data.
+ Tot     Total number of scans in schedule.
+ Minus   Scans in original schedule file for which correlation was not
+         attempted, usually because of known station problems.
+
++SNR_RATIOS
+
+ MEAN RATIOS = Observed SNR / Predicted SNR  for exp no. 4754
+
+ ...by baseline, over all sources:
+
+ bl     X     n       S     n
+
+ FJ    0.00    0     0.00    0
+ FH    0.51    4     0.99    3
+ FA    0.64    3     0.88    3
+ FK    0.79   69     1.25   75
+ FN    0.72   81     1.06   82
+ FU    0.98   48     1.41   49
+ FV    1.18  109     1.31  109
+ FY    0.74    5     1.08    7
+ FC    0.76  146     1.43  149
+ JH    0.00    0     0.00    0
+ JA    0.00    0     0.00    0
+ JK    0.00    0     0.00    0
+ JN    0.00    0     0.00    0
+ JU    0.00    0     0.00    0
+ JV    0.00    0     0.00    0
+ JY    0.00    0     0.00    0
+ JC    0.00    0     0.00    0
+ HA    1.18  191     1.04  190
+ HK    1.18   62     1.33   64
+ HN    1.35   18     0.90   17
+ HU    2.03   47     1.51   47
+ HV    1.69    6     0.98    5
+ HY    1.33  197     1.08  196
+ HC    0.94    7     0.88    6
+ AK    1.07  115     1.11  117
+ AN    0.89   75     0.88   70
+ AU    1.57  128     1.41  127
+ AV    1.49   56     1.03   50
+ AY    1.52  287     1.07  287
+ AC    1.08   44     1.11   40
+ KN    0.65  185     1.16  194
+ KU    1.26  162     1.63  164
+ KV    1.11  136     1.21  141
+ KY    1.36   69     1.36   69
+ KC    0.74  124     1.18  126
+ NU    1.04  237     1.55  239
+ NV    0.99  268     1.19  266
+ NY    1.18   53     0.99   53
+ NC    0.66  246     1.19  245
+ UV    1.87  214     1.78  214
+ UY    2.04  107     1.61  106
+ UC    1.16  183     1.64  188
+ VY    1.95   43     1.14   42
+ VC    1.32  325     1.38  325
+ YC    1.30   38     1.33   35
+
++FOURFIT_CONTROL_FILE
+*
+* 4fit control file for R4754
+*
+   sb_win -20.0 20.0 mb_win -20.0 20.0 dr_win -300.e-4 300.e-4
+*
+if f_group X
+    ref_freq 8212.99
+    pc_mode normal
+    pc_freqs ghijklmn  5010  5010  5010  5010  5010  5010  5010  5010
+**
+if f_group S
+    dr_win -3.0e-5 3.0e-5
+    ref_freq 2245.99
+    pc_mode normal
+    pc_freqs abcdef  3010  3010  3010  3010  3010  3010
+*
+
+if station H
+    lsb_offset -120.
+
+if station A
+    lsb_offset -120.0
+
+if station K
+    lsb_offset  260.0
+
+if station Y
+    lsb_offset  -120.0
+
+if station C
+    lsb_offset -100.0
+
+if station F and f_group S
+    freqs a b c   e f
+
+if station H and f_group S
+    freqs a b c d e
+
+if station N and f_group X
+    freqs g h i j
+
+if station C and f_group S
+    freqs a b c   e f
+
+if station U and f_group X
+    pc_phases ghijklmn -69 -144 -114 -146 -113 -160 -124 -57
+    pc_mode manual
+
+if station U and f_group S
+    pc_phases abcdef 175 83 151 -175 119 159
+    pc_mode manual
+
+if baseline NU and f_group X
+    mb_win 0 .02
+
+*Phillip
+
++END
+$1<
+Sorted by time and subsorted by baseline.   -vlbi-
+All  baselines used.
+All  sources used.
+Output time window:  earliest latest
+TIMETAG 2016/09/29 14:00:24 
+MK3DB_VERSION    2
+CALC11.01 Ver. 2014.05.16  Thu Sep 29 10:00:24 2016nuit.usno.
+Calc 11 at USNO  -CD-
+TIMETAG 2016/09/29 18:32:24 
+MK3DB_VERSION    3
+Dbcal: r4754 WXCB added by dbcal -CD-
+ DBCAL: Version 2013.10.18        SEP 29,2016 18:32:24
+TIMETAG 2016/09/29 18:34:06 
+MK3DB_VERSION    4
+SgLib-0.2.10 (Cmok): data have been read from Mk3 database
+TIMETAG 2016/09/29 19:37:15 
+MK3DB_VERSION    4
+Analyzed by Christopher Dieck (hereafter CD) at US Naval Observatory. Contact info: <cdieck@usno.navy.mil>
+CD> r4754 USNO nuSolve solution -CD-
+CD> Delay and Rates 60/60 clocks/atm
+CD> fit 46 ps
+IVS-R4754: USNO analysis (CD)
+G-Gxs solution,   60/  60 clocks/atms,    5/75.0019 constraints.
+Solve fit is 45.62 psec.
+The following flyby options were used in the solution:
+Station positions flyby file: usno_2015bb_for_int.sit
+Station velocities flyby file: usno_2015bb_for_int.vel
+Source flyby file: usno_2015b_for_int.src
+Station axis offset flyby file: glo.axis
+EOP high frequency variations flyby file: NONE
+Station mean gradients flyby file: NONE
+Nutation series flyby file :  NONE
+Nutation offset flyby file :  NONE
+Earth rotation flyby file  :  NONE
+Tectonic plate motion file :  NONE
+Group delay ambiguities were resolved (well, at least, tried to resolve)
+Group delay outliers were processed and editing info has been updated.
+Troposphere and cable cal status for standard solution have been stored.
+Observation dependent contribution status has been stored.
+Reweighting updated for:
+FO-KO FO-NY FO-UR FO-WE FO-YE HO-KA HO-KO HO-NY HO-UR HO-WE
+HO-YA HO-YE KA-KO KA-NY KA-UR KA-WE KA-YA KA-YE KO-NY KO-UR
+KO-WE KO-YA KO-YE NY-UR NY-WE NY-YA NY-YE UR-WE UR-YA UR-YE
+WE-YA WE-YE YA-YE
+Solution data configuration: group delays with ionosphere corrections
+Clock and atmosphere constraint information saved.
+Batchmode clock parameterization saved.
+Batchmode atmosphere parameterization saved.
+Ionosphere corrections were evaluated for group delays.
+Barometer calibration and barometer height offset not available.
+Elevation cutoff data stored in database.
+Eccentricity data store in data base header.
+

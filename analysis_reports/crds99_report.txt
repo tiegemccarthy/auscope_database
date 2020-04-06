@@ -1,0 +1,144 @@
+       IVS Analysis Report for CRDS99 ($19JAN15XN) 
+       This report is the official IVS analysis report that corresponds to 
+       the database maintained by the IVS Data Centers for this session.  
+   (Analyzed by David Gordon, Goddard Space Flight Center.
+    Spoolfile source: interactive solve/nuSolve analysis.) 
+
+Problems: YARRA12M clock breaks at ~01:45 and ~11:55 UTC.
+          WARK12M has no met data; and no data last 3.5 hours,
+          reason unknown.
+          KATH12M did not participate due to bad power supply in
+          10 MHz distributer.
+
+Parameterization comments: None. 
+
+Other comments: This session was scheduled with SCHED. Using a .skd
+          file made from the .vex file by Andy Sargent at USNO. 
+
+-----------------------------------------
+
+Session Statistics 
+
+  Observations:     1386 scheduled 
+                     620 correlated (in database)
+                     365 recoverable (usable)
+                     361 used
+  Session fit:        44.158 ps
+
+-----------------------------------------
+
+Station Performance 
+
+                           Number of Observations
+
+                    Scheduled   Recoverable*        Used   % of scheduled
+                                                              obs used
+
+  HARTRAO                 693           244          242        34.9%
+  KATH12M                 693        MISSED       MISSED         0.0%
+  WARK12M                 693           216          213        30.7%
+  YARRA12M                693           270          267        38.5%
+  ---------------   ---------   -----------    ---------       ------
+  Station Total**        1386           365          361        26.0%
+
+  * Recoverable: can be included in the solution. 
+  ** Total includes distinct observations only.
+
+  MISSED:    Station was scheduled, but it did not observe.
+  NOT CORR:  Station was scheduled but not correlated.
+  NOT USED:  Usable data was generated for this station,
+             but the analyst rejected it all.
+
+-----------------------------------------
+
+Source Performance 
+
+                    Number of Observations
+
+                Scheduled  Correlated*    Used      % of scheduled
+                                                       obs used
+
+  0002-478             24          12       12           50.0%
+  0104-408             12           6        6           50.0%
+  0308-611             36           8        8           22.2%
+  0312-770             36          10       10           27.8%
+  0332-403             36           8        8           22.2%
+  0402-362             30           7        5           16.7%
+  0407-658             30           7        0            0.0%
+  0454-810             30          11       11           36.7%
+  0524-485             30           7        7           23.3%
+  0646-306             24           8        8           33.3%
+  0700-465             30          11        0            0.0%
+  0742-562             30          15        1            3.3%
+  0804-267             18           9        0            0.0%
+  0809-493             30          15        0            0.0%
+  0903-573             36          18       18           50.0%
+  0918-534             36          18        4           11.1%
+  1004-500             30          15       14           46.7%
+  1034-374             30          15       15           50.0%
+  1036-529             24          12        7           29.2%
+  1039-474             30          14       14           46.7%
+  1045-620             30          15        8           26.7%
+  1109-567             24          12        0            0.0%
+  1144-379             18           9        9           50.0%
+  1215-457             18           9        0            0.0%
+  1244-255              6           3        3           50.0%
+  1312-533             24          12        8           33.3%
+  1313-333             18           9        9           50.0%
+  1334-649             24          12        0            0.0%
+  1343-601             24          12        0            0.0%
+  1352-632             30          15        0            0.0%
+  1420-679             24          12        5           20.8%
+  1424-418             18           9        9           50.0%
+  1505-496             24          11        9           37.5%
+  1511-558             30          14        0            0.0%
+  1519-273             12           6        6           50.0%
+  1600-445             18           7        2           11.1%
+  1646-506             24          12        0            0.0%
+  1740-517             30          15        0            0.0%
+  1815-553             30          15        5           16.7%
+  1831-711             30          15       13           43.3%
+  1929-457             24          12        4           16.7%
+  1928-698             30          15       12           40.0%
+  1936-623             30          15       13           43.3%
+  1950-613             30          15        6           20.0%
+  1954-388             30          15       10           33.3%
+  2052-474             24          12       12           50.0%
+  2102-659             30          15        1            3.3%
+  2142-758             36          18       18           50.0%
+  2232-488             24          12       12           50.0%
+  2236-572             36          18       18           50.0%
+  2333-528             18           9        9           50.0%
+  2353-686             36          14       12           33.3%
+  ------------  ---------  ----------   ------          ------
+  Source Total       1386         620      361           26.0%
+
+ * Correlated: included in database 
+
+-----------------------------------------
+
+Baseline Performance 
+
+                                 Number of Observations
+
+                         Scheduled   Recoverable*         Used   % of scheduled
+                                                                    obs used
+
+  HARTRAO-KATH12M              231        MISSED        MISSED         0.0%
+  HARTRAO-WARK12M              231            95            94        40.7%
+  HARTRAO-YARRA12M             231           149           148        64.1%
+  KATH12M-WARK12M              231        MISSED        MISSED         0.0%
+  KATH12M-YARRA12M             231        MISSED        MISSED         0.0%
+  WARK12M-YARRA12M             231           121           119        51.5%
+  -----------------      ---------   -----------    ----------       ------
+  Baseline Total              1386           365           361        26.0%
+
+  * Recoverable: can be included in the solution. 
+
+  MISSED:     Baseline was scheduled, but at least one of the sites
+              did not observe.
+  NOT CORR:   Baseline was scheduled but not correlated.
+  NO DATA:    The baseline's stations were both correlated,
+              but they did not observe together.
+  DESELECTED: Usable data was generated for the baseline,
+              but the analyst rejected it.

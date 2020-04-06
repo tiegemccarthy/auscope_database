@@ -1,0 +1,122 @@
+       IVS Analysis Report for AUA005 ($15MAY10XA) 
+       This report is the official IVS analysis report that corresponds to 
+       the database maintained by the IVS Data Centers for this session.  
+   (Analyzed by David Gordon, Goddard Space Flight Center.
+    Spoolfile source: interactive solve/nuSolve analysis.) 
+
+Problems: Katherine: 4 breaks, only 3 used: ~04:00 (+12.5 nsec),
+          ~05:12 (-5.7 nsec) and ~20:48 (-1.6 nsec).
+          Hobart12: break at ~11:50 (-.6 nsec).
+
+Parameterization comments: RA/Dec on for ~half the sources. 
+
+Other comments: None. 
+
+-----------------------------------------
+
+Session Statistics 
+
+  Observations:      852 scheduled 
+                     843 correlated (in database)
+                     624 recoverable (usable)
+                     605 used
+  Session fit:        22.631 ps
+
+-----------------------------------------
+
+Station Performance 
+
+                           Number of Observations
+
+                    Scheduled   Recoverable*        Used   % of scheduled
+                                                              obs used
+
+  HART15M                 364           245          242        66.5%
+  HOBART12                201           152          148        73.6%
+  KATH12M                 264           234          218        82.6%
+  PARKES                  349           237          233        66.8%
+  YARRA12M                526           380          369        70.2%
+  ---------------   ---------   -----------    ---------       ------
+  Station Total**         852           624          605        71.0%
+
+  * Recoverable: can be included in the solution. 
+  ** Total includes distinct observations only.
+
+  MISSED:    Station was scheduled, but it did not observe.
+  NOT CORR:  Station was scheduled but not correlated.
+  NOT USED:  Usable data was generated for this station,
+             but the analyst rejected it all.
+
+-----------------------------------------
+
+Source Performance 
+
+                    Number of Observations
+
+                Scheduled  Correlated*    Used      % of scheduled
+                                                       obs used
+
+  0244-470             69          67       53           76.8%
+  1629-458             23          22        0            0.0%
+  1954-388             80          79       71           88.8%
+  2149-306             37          37       28           75.7%
+  0159-668             22          22       16           72.7%
+  0427-502             25          25       23           92.0%
+  1334-649             22          21        0            0.0%
+  1852-534             18          18        3           16.7%
+  2312-505             63          63       44           69.8%
+  0044-846             19          19       16           84.2%
+  1424-834             22          22        9           40.9%
+  2220-318              8           8        6           75.0%
+  0308-611             77          75       61           79.2%
+  0522-611             18          18       15           83.3%
+  1145-676             38          38       33           86.8%
+  1528-684             24          23       12           50.0%
+  1941-554             19          19        0            0.0%
+  0437-719             16          16       16          100.0%
+  1610-771             46          45       39           84.8%
+  0644-671             16          16       15           93.8%
+  0841-607             15          15       15          100.0%
+  0637-752             45          45       41           91.1%
+  0758-737              5           5        4           80.0%
+  1725-795             22          22       15           68.2%
+  0918-534             44          44       18           40.9%
+  1104-445             39          39       38           97.4%
+  1136-466             11          11        6           54.5%
+  1040-414              9           9        8           88.9%
+  ------------  ---------  ----------   ------          ------
+  Source Total        852         843      605           71.0%
+
+ * Correlated: included in database 
+
+-----------------------------------------
+
+Baseline Performance 
+
+                                 Number of Observations
+
+                         Scheduled   Recoverable*         Used   % of scheduled
+                                                                    obs used
+
+  HART15M-HOBART12              73            44            44        60.3%
+  HART15M-KATH12M               39            35            32        82.1%
+  HART15M-PARKES                77            55            55        71.4%
+  HART15M-YARRA12M             175           111           111        63.4%
+  HOBART12-KATH12M              44            41            40        90.9%
+  HOBART12-PARKES               21            15            15        71.4%
+  HOBART12-YARRA12M             63            52            49        77.8%
+  KATH12M-PARKES                72            54            50        69.4%
+  KATH12M-YARRA12M             109           104            96        88.1%
+  PARKES-YARRA12M              179           113           113        63.1%
+  -----------------      ---------   -----------    ----------       ------
+  Baseline Total               852           624           605        71.0%
+
+  * Recoverable: can be included in the solution. 
+
+  MISSED:     Baseline was scheduled, but at least one of the sites
+              did not observe.
+  NOT CORR:   Baseline was scheduled but not correlated.
+  NO DATA:    The baseline's stations were both correlated,
+              but they did not observe together.
+  DESELECTED: Usable data was generated for the baseline,
+              but the analyst rejected it.

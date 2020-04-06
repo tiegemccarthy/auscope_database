@@ -1,0 +1,394 @@
+       NASA Analysis Report for T2130 ($19JAN29XH) 
+       This report is a contributed analysis report that does not correspond to 
+       the database maintained by the IVS Data Centers for this session.  
+   (Analyzed by David Gordon, NASA Goddard Space Flight Center.
+    Spoolfile source: interactive solve/nuSolve analysis.) 
+
+Problems: No correlator report in the vgosDB database.
+          No met data for DSS36 or HOBART26. 
+          DSS36 observed only the last ~10 hrs.
+          No X-band fringes at HOBART26, some receiver problems.
+          CRIMEA and NOTO did not observe. NOTO receiver down.
+          OHIGGINS had a +2 second clock offset.
+          YARRA12M small clock breaks at ~01:40 and ~11:45 UTC.
+          HART15M has avery large clock rate; the maser was offset 4.5 Hz.
+          SYOWA and VERAMZSW were very noisy. Only 2 S-band channels at SY.
+          KASHIM11 and ONSALA60 had S-band subambiguities.
+           
+Parameterization comments: None. 
+
+Other comments: None. 
+
+-----------------------------------------
+
+Session Statistics 
+
+  Observations:     18584 scheduled 
+                    13982 correlated (in database)
+                    11238 recoverable (usable)
+                    10167 used
+  Session fit:        43.430 ps
+
+-----------------------------------------
+
+Station Performance 
+
+                           Number of Observations
+
+                    Scheduled   Recoverable*        Used   % of scheduled
+                                                              obs used
+
+  CRIMEA                 1685        MISSED       MISSED         0.0%
+  DSS36                   723           579          505        69.8%
+  FORTLEZA                820           577          549        67.0%
+  HART15M                1950          1463         1399        71.7%
+  HARTRAO                1460          1096         1050        71.9%
+  HOBART26               1138             7     NOT USED         0.0%
+  ISHIOKA                2143          1684         1564        73.0%
+  KASHIM11               1837          1389          966        52.6%
+  KATH12M                1559          1132         1059        67.9%
+  KOGANEI                1978           662          596        30.1%
+  METSAHOV               1651          1188         1119        67.8%
+  NOTO                   2096        MISSED       MISSED         0.0%
+  NYALES20               1755          1352         1284        73.2%
+  OHIGGINS                635           389          370        58.3%
+  ONSALA60               1988          1475         1253        63.0%
+  SEJONG                 1723          1317         1211        70.3%
+  SVETLOE                2271          1594         1496        65.9%
+  SYOWA                  1285           763          655        51.0%
+  VERAMZSW               1706          1116          844        49.5%
+  WETTZ13N               2664          1841         1727        64.8%
+  WETTZELL               2475          1644         1553        62.7%
+  YARRA12M               1626          1208         1134        69.7%
+  ---------------   ---------   -----------    ---------       ------
+  Station Total**       18584         11238        10167        54.7%
+
+  * Recoverable: can be included in the solution. 
+  ** Total includes distinct observations only.
+
+  MISSED:    Station was scheduled, but it did not observe.
+  NOT CORR:  Station was scheduled but not correlated.
+  NOT USED:  Usable data was generated for this station,
+             but the analyst rejected it all.
+
+-----------------------------------------
+
+Source Performance 
+
+                    Number of Observations
+
+                Scheduled  Correlated*    Used      % of scheduled
+                                                       obs used
+
+  0003-066            201         151       98           48.8%
+  0059+581            266         183      122           45.9%
+  0106+013            298         220      145           48.7%
+  0119+115             28          25       21           75.0%
+  0208-512             27          19       17           63.0%
+  0212+735            235         174      154           65.5%
+  0234+285            422         301      226           53.6%
+  0300+470            172         133       96           55.8%
+  0302-623              6           3        3           50.0%
+  3C84                200         191      114           57.0%
+  CTA26                16          12        8           50.0%
+  NRAO150             313         258      123           39.3%
+  0454-234            460         321      235           51.1%
+  0454-463             58          47       31           53.4%
+  0458-020            411         273      205           49.9%
+  0552+398            495         399      334           67.5%
+  0605-085            121          81       57           47.1%
+  0642+449            136         133      128           94.1%
+  0723-008           1071         758      408           38.1%
+  0727-115            475         341      313           65.9%
+  0743-006            189         127       67           35.4%
+  0823+033             25          25       19           76.0%
+  OJ287              1074         820      706           65.7%
+  4C39.25             421         321      273           64.8%
+  1030+415             81          69       43           53.1%
+  1044+719              6           6        4           66.7%
+  1055+018           1410        1038      871           61.8%
+  1057-797             80          68       51           63.8%
+  1144-379             16          13        7           43.8%
+  1156+295            854         652      543           63.6%
+  3C273B              172         130      106           61.6%
+  3C279              1089         814      627           57.6%
+  1334-127             40          26       19           47.5%
+  1424-418            225         200      132           58.7%
+  1502+106            800         605      456           57.0%
+  1600+43A            338         251        0            0.0%
+  1611+343            804         661      551           68.5%
+  3C345               164         121      105           64.0%
+  NRAO530             811         621      426           52.5%
+  1741-038            154         128       85           55.2%
+  1749+096            372         282      187           50.3%
+  1908-201             67          65       39           58.2%
+  1921-293             66          63       31           47.0%
+  3C418               344         221      167           48.5%
+  2121+053             94          61       44           46.8%
+  2134+00             920         697      454           49.3%
+  2145+067             38          30       25           65.8%
+  2149-306             93          67       35           37.6%
+  2201+315             57          48       33           57.9%
+  2227-088            373         269      221           59.2%
+  CTA102              979         679      452           46.2%
+  2234+282            247         161      134           54.3%
+  3C454.3             407         329      253           62.2%
+  2255-282            126         126       55           43.7%
+  2355-106            237         165      108           45.6%
+  ------------  ---------  ----------   ------          ------
+  Source Total      18584       13982    10167           54.7%
+
+ * Correlated: included in database 
+
+-----------------------------------------
+
+Baseline Performance 
+
+                                 Number of Observations
+
+                         Scheduled   Recoverable*         Used   % of scheduled
+                                                                    obs used
+
+  CRIMEA-DSS36                  24        MISSED        MISSED         0.0%
+  CRIMEA-FORTLEZA               46        MISSED        MISSED         0.0%
+  CRIMEA-HART15M               106        MISSED        MISSED         0.0%
+  CRIMEA-HARTRAO                82        MISSED        MISSED         0.0%
+  CRIMEA-HOBART26               41        MISSED        MISSED         0.0%
+  CRIMEA-ISHIOKA                80        MISSED        MISSED         0.0%
+  CRIMEA-KASHIM11               65        MISSED        MISSED         0.0%
+  CRIMEA-KATH12M                64        MISSED        MISSED         0.0%
+  CRIMEA-KOGANEI                71        MISSED        MISSED         0.0%
+  CRIMEA-METSAHOV               99        MISSED        MISSED         0.0%
+  CRIMEA-NOTO                  118        MISSED        MISSED         0.0%
+  CRIMEA-NYALES20               91        MISSED        MISSED         0.0%
+  CRIMEA-OHIGGINS               41        MISSED        MISSED         0.0%
+  CRIMEA-ONSALA60              110        MISSED        MISSED         0.0%
+  CRIMEA-SEJONG                 63        MISSED        MISSED         0.0%
+  CRIMEA-SVETLOE               126        MISSED        MISSED         0.0%
+  CRIMEA-SYOWA                  66        MISSED        MISSED         0.0%
+  CRIMEA-VERAMZSW               69        MISSED        MISSED         0.0%
+  CRIMEA-WETTZ13N              133        MISSED        MISSED         0.0%
+  CRIMEA-WETTZELL              122        MISSED        MISSED         0.0%
+  CRIMEA-YARRA12M               68        MISSED        MISSED         0.0%
+  DSS36-FORTLEZA                 4             4    DESELECTED         0.0%
+  DSS36-HART15M                 31            29            28        90.3%
+  DSS36-HARTRAO                 19            18            18        94.7%
+  DSS36-HOBART26                58      NOT CORR      NOT CORR         0.0%
+  DSS36-ISHIOKA                 57            57            51        89.5%
+  DSS36-KASHIM11                50            42    DESELECTED         0.0%
+  DSS36-KATH12M                 53            50            47        88.7%
+  DSS36-KOGANEI                 54            49            49        90.7%
+  DSS36-METSAHOV                23            23            21        91.3%
+  DSS36-NOTO                    18        MISSED        MISSED         0.0%
+  DSS36-NYALES20                23            23            23       100.0%
+  DSS36-OHIGGINS                15            15            14        93.3%
+  DSS36-ONSALA60                18            18            15        83.3%
+  DSS36-SEJONG                  50            50            47        94.0%
+  DSS36-SVETLOE                 25            23            23        92.0%
+  DSS36-SYOWA                   41            37            37        90.2%
+  DSS36-VERAMZSW                46            38            32        69.6%
+  DSS36-WETTZ13N                27            25            23        85.2%
+  DSS36-WETTZELL                26            18            18        69.2%
+  DSS36-YARRA12M                61            60            59        96.7%
+  FORTLEZA-HART15M              81            76            75        92.6%
+  FORTLEZA-HARTRAO              55            53            53        96.4%
+  FORTLEZA-HOBART26              6             0    DESELECTED         0.0%
+  FORTLEZA-ISHIOKA              11             8             8        72.7%
+  FORTLEZA-KASHIM11              9             6             6        66.7%
+  FORTLEZA-KATH12M               0      NOT CORR      NOT CORR         0.0%
+  FORTLEZA-KOGANEI              10             1    DESELECTED         0.0%
+  FORTLEZA-METSAHOV             41            37            37        90.2%
+  FORTLEZA-NOTO                 72        MISSED        MISSED         0.0%
+  FORTLEZA-NYALES20             52            44            42        80.8%
+  FORTLEZA-OHIGGINS             56            52            52        92.9%
+  FORTLEZA-ONSALA60             70            62            53        75.7%
+  FORTLEZA-SEJONG               13             9             9        69.2%
+  FORTLEZA-SVETLOE              66            49            48        72.7%
+  FORTLEZA-SYOWA                47            38            35        74.5%
+  FORTLEZA-VERAMZSW             12             7    DESELECTED         0.0%
+  FORTLEZA-WETTZ13N             83            66            66        79.5%
+  FORTLEZA-WETTZELL             75            56            56        74.7%
+  FORTLEZA-YARRA12M             11             9             9        81.8%
+  HART15M-HARTRAO              141           126           126        89.4%
+  HART15M-HOBART26              47             0    DESELECTED         0.0%
+  HART15M-ISHIOKA               81            78            76        93.8%
+  HART15M-KASHIM11              64            58            43        67.2%
+  HART15M-KATH12M               64            64            63        98.4%
+  HART15M-KOGANEI               71            19            19        26.8%
+  HART15M-METSAHOV              98            93            91        92.9%
+  HART15M-NOTO                 149        MISSED        MISSED         0.0%
+  HART15M-NYALES20              82            76            73        89.0%
+  HART15M-OHIGGINS              62            61            61        98.4%
+  HART15M-ONSALA60             118           113            99        83.9%
+  HART15M-SEJONG                66            64            63        95.5%
+  HART15M-SVETLOE              129           119           117        90.7%
+  HART15M-SYOWA                107           100            95        88.8%
+  HART15M-VERAMZSW              61            50            38        62.3%
+  HART15M-WETTZ13N             164           139           137        83.5%
+  HART15M-WETTZELL             150           121           119        79.3%
+  HART15M-YARRA12M              78            77            76        97.4%
+  HARTRAO-HOBART26              31             1    DESELECTED         0.0%
+  HARTRAO-ISHIOKA               60            58            57        95.0%
+  HARTRAO-KASHIM11              47            43            30        63.8%
+  HARTRAO-KATH12M               46            46            45        97.8%
+  HARTRAO-KOGANEI               53            14            14        26.4%
+  HARTRAO-METSAHOV              78            76            73        93.6%
+  HARTRAO-NOTO                 110        MISSED        MISSED         0.0%
+  HARTRAO-NYALES20              63            59            58        92.1%
+  HARTRAO-OHIGGINS              46            45            44        95.7%
+  HARTRAO-ONSALA60              86            81            72        83.7%
+  HARTRAO-SEJONG                50            48            48        96.0%
+  HARTRAO-SVETLOE               97            89            84        86.6%
+  HARTRAO-SYOWA                 75            71            68        90.7%
+  HARTRAO-VERAMZSW              45            33            27        60.0%
+  HARTRAO-WETTZ13N             119           100            99        83.2%
+  HARTRAO-WETTZELL             107            86            86        80.4%
+  HARTRAO-YARRA12M              50            49            48        96.0%
+  HOBART26-ISHIOKA             108             1    DESELECTED         0.0%
+  HOBART26-KASHIM11             87             0    DESELECTED         0.0%
+  HOBART26-KATH12M             103             0    DESELECTED         0.0%
+  HOBART26-KOGANEI             105             0    DESELECTED         0.0%
+  HOBART26-METSAHOV             26             0    DESELECTED         0.0%
+  HOBART26-NOTO                 30        MISSED        MISSED         0.0%
+  HOBART26-NYALES20             24             0    DESELECTED         0.0%
+  HOBART26-OHIGGINS             18             0    DESELECTED         0.0%
+  HOBART26-ONSALA60             26             0    DESELECTED         0.0%
+  HOBART26-SEJONG               92             0    DESELECTED         0.0%
+  HOBART26-SVETLOE              31             0    DESELECTED         0.0%
+  HOBART26-SYOWA                58             0    DESELECTED         0.0%
+  HOBART26-VERAMZSW             75             0    DESELECTED         0.0%
+  HOBART26-WETTZ13N             34             0    DESELECTED         0.0%
+  HOBART26-WETTZELL             32             1    DESELECTED         0.0%
+  HOBART26-YARRA12M            106             4    DESELECTED         0.0%
+  ISHIOKA-KASHIM11             204           201           148        72.5%
+  ISHIOKA-KATH12M              125           121           119        95.2%
+  ISHIOKA-KOGANEI              218           153           151        69.3%
+  ISHIOKA-METSAHOV              83            79            78        94.0%
+  ISHIOKA-NOTO                  85        MISSED        MISSED         0.0%
+  ISHIOKA-NYALES20              92            89            89        96.7%
+  ISHIOKA-OHIGGINS               3             2    DESELECTED         0.0%
+  ISHIOKA-ONSALA60              86            82            73        84.9%
+  ISHIOKA-SEJONG               169           168           166        98.2%
+  ISHIOKA-SVETLOE              104           101            97        93.3%
+  ISHIOKA-SYOWA                 58            45            38        65.5%
+  ISHIOKA-VERAMZSW             167           146           124        74.3%
+  ISHIOKA-WETTZ13N             123           100            95        77.2%
+  ISHIOKA-WETTZELL             110            77            77        70.0%
+  ISHIOKA-YARRA12M             119           118           117        98.3%
+  KASHIM11-KATH12M             111           106            84        75.7%
+  KASHIM11-KOGANEI             198           125            87        43.9%
+  KASHIM11-METSAHOV             67            60            42        62.7%
+  KASHIM11-NOTO                 70        MISSED        MISSED         0.0%
+  KASHIM11-NYALES20             76            72            54        71.1%
+  KASHIM11-OHIGGINS              1             1    DESELECTED         0.0%
+  KASHIM11-ONSALA60             68            61            39        57.4%
+  KASHIM11-SEJONG              146           144           111        76.0%
+  KASHIM11-SVETLOE              87            78            54        62.1%
+  KASHIM11-SYOWA                44            29             9        20.5%
+  KASHIM11-VERAMZSW            149           124            79        53.0%
+  KASHIM11-WETTZ13N             98            74            50        51.0%
+  KASHIM11-WETTZELL             89            60            44        49.4%
+  KASHIM11-YARRA12M            107           105            86        80.4%
+  KATH12M-KOGANEI              118            24            24        20.3%
+  KATH12M-METSAHOV              58            47            46        79.3%
+  KATH12M-NOTO                  59        MISSED        MISSED         0.0%
+  KATH12M-NYALES20              61            59            59        96.7%
+  KATH12M-OHIGGINS              10            10             9        90.0%
+  KATH12M-ONSALA60              61            54            46        75.4%
+  KATH12M-SEJONG               111           109           108        97.3%
+  KATH12M-SVETLOE               75            64            62        82.7%
+  KATH12M-SYOWA                 58            48            39        67.2%
+  KATH12M-VERAMZSW             104            81            63        60.6%
+  KATH12M-WETTZ13N              72            59            58        80.6%
+  KATH12M-WETTZELL              70            56            55        78.6%
+  KATH12M-YARRA12M             136           134           132        97.1%
+  KOGANEI-METSAHOV              73             8             8        11.0%
+  KOGANEI-NOTO                  76        MISSED        MISSED         0.0%
+  KOGANEI-NYALES20              76            35            35        46.1%
+  KOGANEI-OHIGGINS               2             0    DESELECTED         0.0%
+  KOGANEI-ONSALA60              73            15            14        19.2%
+  KOGANEI-SEJONG               169            90            88        52.1%
+  KOGANEI-SVETLOE               92            20            19        20.7%
+  KOGANEI-SYOWA                 50             3    DESELECTED         0.0%
+  KOGANEI-VERAMZSW             153            38            20        13.1%
+  KOGANEI-WETTZ13N             105            19            19        18.1%
+  KOGANEI-WETTZELL              97            33            33        34.0%
+  KOGANEI-YARRA12M             114            16            16        14.0%
+  METSAHOV-NOTO                117        MISSED        MISSED         0.0%
+  METSAHOV-NYALES20             88            85            83        94.3%
+  METSAHOV-OHIGGINS             35            17            17        48.6%
+  METSAHOV-ONSALA60            109           106            94        86.2%
+  METSAHOV-SEJONG               60            57            55        91.7%
+  METSAHOV-SVETLOE             129           123           119        92.2%
+  METSAHOV-SYOWA                61            31            25        41.0%
+  METSAHOV-VERAMZSW             67            53            44        65.7%
+  METSAHOV-WETTZ13N            144           128           126        87.5%
+  METSAHOV-WETTZELL            135           110           108        80.0%
+  METSAHOV-YARRA12M             60            55            52        86.7%
+  NOTO-NYALES20                123        MISSED        MISSED         0.0%
+  NOTO-OHIGGINS                 54        MISSED        MISSED         0.0%
+  NOTO-ONSALA60                151        MISSED        MISSED         0.0%
+  NOTO-SEJONG                   72        MISSED        MISSED         0.0%
+  NOTO-SVETLOE                 167        MISSED        MISSED         0.0%
+  NOTO-SYOWA                    80        MISSED        MISSED         0.0%
+  NOTO-VERAMZSW                 71        MISSED        MISSED         0.0%
+  NOTO-WETTZ13N                211        MISSED        MISSED         0.0%
+  NOTO-WETTZELL                196        MISSED        MISSED         0.0%
+  NOTO-YARRA12M                 67        MISSED        MISSED         0.0%
+  NYALES20-OHIGGINS             23            18            18        78.3%
+  NYALES20-ONSALA60            134           128           109        81.3%
+  NYALES20-SEJONG               72            69            68        94.4%
+  NYALES20-SVETLOE             157           144           138        87.9%
+  NYALES20-SYOWA                33            25            24        72.7%
+  NYALES20-VERAMZSW             81            76            61        75.3%
+  NYALES20-WETTZ13N            182           160           160        87.9%
+  NYALES20-WETTZELL            166           136           136        81.9%
+  NYALES20-YARRA12M             56            54            54        96.4%
+  OHIGGINS-ONSALA60             44            27            24        54.5%
+  OHIGGINS-SEJONG                1             1    DESELECTED         0.0%
+  OHIGGINS-SVETLOE              40             5             5        12.5%
+  OHIGGINS-SYOWA                57            45            37        64.9%
+  OHIGGINS-VERAMZSW              1             0    DESELECTED         0.0%
+  OHIGGINS-WETTZ13N             54            35            35        64.8%
+  OHIGGINS-WETTZELL             52            38            37        71.2%
+  OHIGGINS-YARRA12M             20            17            17        85.0%
+  ONSALA60-SEJONG               64            61            51        79.7%
+  ONSALA60-SVETLOE             173           158           137        79.2%
+  ONSALA60-SYOWA                58            43            38        65.5%
+  ONSALA60-VERAMZSW             77            64            45        58.4%
+  ONSALA60-WETTZ13N            207           184           157        75.8%
+  ONSALA60-WETTZELL            190           155           133        70.0%
+  ONSALA60-YARRA12M             65            63            54        83.1%
+  SEJONG-SVETLOE                86            78            76        88.4%
+  SEJONG-SYOWA                  51            30            22        43.1%
+  SEJONG-VERAMZSW              129           114            75        58.1%
+  SEJONG-WETTZ13N               83            67            67        80.7%
+  SEJONG-WETTZELL               77            60            60        77.9%
+  SEJONG-YARRA12M               99            98            97        98.0%
+  SVETLOE-SYOWA                 69            30            26        37.7%
+  SVETLOE-VERAMZSW              89            73            57        64.0%
+  SVETLOE-WETTZ13N             236           202           201        85.2%
+  SVETLOE-WETTZELL             216           176           172        79.6%
+  SVETLOE-YARRA12M              77            62            61        79.2%
+  SYOWA-VERAMZSW                36             8    DESELECTED         0.0%
+  SYOWA-WETTZ13N                81            55            50        61.7%
+  SYOWA-WETTZELL                73            53            51        69.9%
+  SYOWA-YARRA12M                82            72            61        74.4%
+  VERAMZSW-WETTZ13N             95            72            63        66.3%
+  VERAMZSW-WETTZELL             84            58            51        60.7%
+  VERAMZSW-YARRA12M             95            81            65        68.4%
+  WETTZ13N-WETTZELL            333           286           254        76.3%
+  WETTZ13N-YARRA12M             80            70            67        83.8%
+  WETTZELL-YARRA12M             75            64            63        84.0%
+  -----------------      ---------   -----------    ----------       ------
+  Baseline Total             18584         11238         10167        54.7%
+
+  * Recoverable: can be included in the solution. 
+
+  MISSED:     Baseline was scheduled, but at least one of the sites
+              did not observe.
+  NOT CORR:   Baseline was scheduled but not correlated.
+  NO DATA:    The baseline's stations were both correlated,
+              but they did not observe together.
+  DESELECTED: Usable data was generated for the baseline,
+              but the analyst rejected it.

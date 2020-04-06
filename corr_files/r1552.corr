@@ -1,0 +1,478 @@
+TIMETAG 2012/10/10 09:36:25 
+MK3DB_VERSION    1
+Dbedit: r1552, IVS-R1  | geo_export
+VLBI experiment R1552 ( IVS-R1 )
+Created by dbedit Ver. 2011.11.16  revision 6.21
+        run by Geodaesie Gruppe ( geodesy@geosrv.mpifr-bonn.mpg.de )
+            at GSF -- Geodetic VLBI at Bonn Correlator
+               on geosrv at 2012.10.10-11:36:25 local time
+Dbedit control file history entry: r1552, IVS-R1  | geo_export
+Directory /data/r1552/2837
+$1>
+CORREL   BONN
+DATABASE 12SEP24XA
+SESSNAME R1552
+OBSTIME  2012/09/24 2012/09/25
+UTSTART  1700
+DURATION 24
+DOY      268-269
+CORRTIME 2012/10/05 2012/10/07
+CORRPASS 1
+EXPORT   DONE
+
++SUMMARY
+ Qcode      % of Total   % of Correlated
+              scans        scans
+
+  5-9           81%         98%
+   0            <1%          1%
+ 4-1,A-H,N      <1%          1%
+ Removed        18%          -
+
++CORRELATOR_NOTES
+
+Used version DiFX-2.1 for correlation and DiFX-trunk for difx2mark4
+(revision 4789).
+
++STATION_NOTES
+
+FORTLEZA (Ft/b): Very low/no signal in S-band channel SR4U, thus
+                 leading to G-codes. Channel removed from fringe
+                 fitting.
+
+KATH12M  (Ke/a): Applied manual pcal.
+
+KOKEE    (Kk/K): Applied manual pcal.
+
+NYALES20 (Ny/N): Ok.
+
+TIGOCONC (Tc/Q): Ok.
+
+TSUKUB32 (Ts/T): Broad band RFI, particularly strong in S-band
+                 channel SR6U, thus causing some G-codes.
+
+WESTFORD (Wf/E): Lost scans between UT 269-0034 to UT 269-0046,
+                 the antenna was off source due to az drive shutting
+                 off while site was unattended.
+
+WETTZELL (Wz/V): Ok.
+
+YARRA12M (Yg/i): Applied manual pcal.
+                 Low amplitide in XR1U/L causing some G-codes.
+
+YEBES40M (Ys/Y): No data up to UT 269-1038, due to pointing error.
+                 Found occasionally lower signal amplitude in channel
+                 SR4U, thus leading to some (~10 % ) G-codes.
+
++DROP_CHANNELS
+Ft SR4U
+Ke
+Kk
+Ny
+Tc
+Ts
+Wf
+Wz
+Yg
+Ys
+
++MANUAL PCAL Ke, Kk, Yg
+
++CHANNELS
+ Channels: XR1U = band|polarization|channel#|sideband
+
+ XR1U/L  BBC01  8212.99
+ XR2U    BBC02  8252.99
+ XR3U    BBC03  8352.99
+ XR4U    BBC04  8512.99
+ XR5U    BBC05  8732.99
+ XR6U    BBC06  8852.99
+ XR7U    BBC07  8912.99
+ XR8U/L  BBC08  8932.99
+ SR1U    BBC09  2225.99
+ SR2U    BBC10  2245.99
+ SR3U    BBC11  2265.99
+ SR4U    BBC12  2295.99
+ SR5U    BBC13  2345.99
+ SR6U    BBC14  2365.99
+
++CLOCKS
+
+Clocks: Bonn
+
+ Station     fmout-gps      Used      rate     Comments
+              [usec]       [usec]   [sec/sec]
+
+Ft 	       0.00 	    2.48       0
+Ke 	      12.59 	   14.54     0.330E-12
+Kk 	       8.93 	    9.92     0.014E-12
+Ny 	      10.96 	   11.15     0.917E-12
+On 	      74.38 	   74.43     0.541E-12
+Tc 	       0.70 	    0.93    -0.189E-12
+Ts 	       0.38 	    1.69    -0.069E-12
+Wf 	      12.17 	   12.62     0.656E-12
+Wz 	     -26.75 	  -26.52    -0.004E-12
+Yg 	       6.95 	    9.20     1.541E-12
+Ys 	      -0.44 	   -0.44    -0.481E-12
+
+2012/09/24
+
++QCODES
+
+Qcod 0 1 2 3 4 5  6  7   8    9 A B C D E F  G H N    -  Tot
+----------------------------------------------------------------
+ai:X 0 0 0 0 0 0  1  4  28  159 0 0 0 0 1 0 10 0 0    0  203
+ai:S 0 0 0 0 1 0  0  0   3  198 0 0 0 0 1 0  0 0 0    0  203
+aK:X 0 0 0 0 0 0  0  0  13   38 0 0 0 0 0 0  0 0 0    0   51
+aK:S 0 0 0 0 0 0  0  0   1   50 0 0 0 0 0 0  0 0 0    0   51
+aN:X 2 0 0 0 0 0  0  2   3    8 0 0 0 0 0 0  0 0 0    0   15
+aN:S 0 0 0 0 0 0  0  0   0   15 0 0 0 0 0 0  0 0 0    0   15
+aX:X 1 0 0 0 0 0  0  1   0    5 0 0 0 0 0 0  0 0 0    0    7
+aX:S 0 0 0 0 0 0  0  0   0    7 0 0 0 0 0 0  0 0 0    0    7
+aT:X 0 0 0 0 0 0  0  0   6  147 0 0 0 0 0 0  1 0 1    0  155
+aT:S 2 0 0 0 0 0  0  2   9  141 0 0 0 0 0 0  0 0 1    0  155
+aE:X 1 0 0 0 0 0  0  0   0    3 0 0 0 0 0 0  0 0 0    0    4
+aE:S 1 0 0 0 0 0  0  0   0    3 0 0 0 0 0 0  0 0 0    0    4
+aV:X 0 0 0 0 0 0  0  1   0   10 0 0 0 0 0 0  0 0 0    0   11
+aV:S 0 0 0 0 0 0  0  0   0   11 0 0 0 0 0 0  0 0 0    0   11
+aY:X 0 0 0 0 0 0  0  0   0    1 0 0 0 0 0 0  0 0 0    5    6
+aY:S 0 0 0 0 0 0  0  0   0    1 0 0 0 0 0 0  0 0 0    5    6
+ab:X 0 0 0 0 0 0  0  0   0    1 0 0 0 0 0 0  0 0 0    0    1
+ab:S 0 0 0 0 0 0  0  0   0    1 0 0 0 0 0 0  0 0 0    0    1
+aQ:X 1 0 0 0 0 0  0  0   3   14 0 0 0 0 0 0  0 0 0    0   18
+aQ:S 1 0 0 0 0 0  0  0   0   17 0 0 0 0 0 0  0 0 0    0   18
+iK:X 0 0 0 0 0 0  0  0   6   13 0 0 0 0 0 0  1 0 0    0   20
+iK:S 0 0 0 0 0 0  0  0   2   18 0 0 0 0 0 0  0 0 0    0   20
+iN:X 0 0 0 0 0 0  0  0   0    3 0 0 0 0 0 0  0 0 0    0    3
+iN:S 0 0 0 0 0 0  0  0   0    3 0 0 0 0 0 0  0 0 0    0    3
+iX:X 0 0 0 0 0 0  0  0   0    2 0 0 0 0 0 0  0 0 0    0    2
+iX:S 0 0 0 0 0 0  0  0   0    2 0 0 0 0 0 0  0 0 0    0    2
+iT:X 0 0 0 0 0 0  0  1  11   71 0 0 0 0 0 0  0 0 0    0   83
+iT:S 1 0 0 0 0 0  0  0   7   74 0 0 0 0 0 0  1 0 0    0   83
+iE:X 0 0 0 0 0 0  0  0   0    0 0 0 0 0 0 0  0 0 0    0    0
+iE:S 0 0 0 0 0 0  0  0   0    0 0 0 0 0 0 0  0 0 0    0    0
+iV:X 0 0 0 0 0 0  1  1   2    3 0 0 0 0 0 0  0 0 0    0    7
+iV:S 0 0 0 0 0 0  0  0   1    6 0 0 0 0 0 0  0 0 0    0    7
+iY:X 0 0 0 0 0 0  0  0   0    0 0 0 0 0 0 0  0 0 0    3    3
+iY:S 0 0 0 0 0 0  0  0   0    0 0 0 0 0 0 0  0 0 0    3    3
+ib:X 0 0 0 0 0 0  0  1   1    6 0 0 0 0 0 0  0 0 0    0    8
+ib:S 0 0 0 0 0 0  0  0   3    5 0 0 0 0 0 0  0 0 0    0    8
+iQ:X 0 0 0 0 0 0  0  0   4   20 0 0 0 0 0 0  0 0 0    0   24
+iQ:S 0 0 0 0 0 0  0  0   2   22 0 0 0 0 0 0  0 0 0    0   24
+KN:X 0 0 0 0 0 1  5  4  17   66 0 0 0 0 0 0  1 0 0    0   94
+KN:S 0 0 0 1 0 0  0  1   2   90 0 0 0 0 0 0  0 0 0    0   94
+KX:X 7 0 0 0 0 0  1  0   9   42 0 0 0 0 0 0  0 0 0    0   59
+KX:S 0 0 0 0 0 0  0  0   1   58 0 0 0 0 0 0  0 0 0    0   59
+KT:X 0 0 0 0 0 0  1  4  14  182 0 0 0 0 1 0  0 0 0    0  202
+KT:S 0 0 0 0 0 0  1  0   3  194 0 0 0 0 0 0  4 0 0    0  202
+KE:X 1 0 0 0 0 0  3  6  25   89 0 0 0 0 0 0  0 0 0    0  124
+KE:S 0 0 1 0 0 0  0  0  14  104 0 0 0 0 0 0  5 0 0    0  124
+KV:X 9 0 0 0 0 0  3  4  17   33 0 0 0 0 0 0  0 0 0    0   66
+KV:S 0 0 0 0 0 0  0  0   2   64 0 0 0 0 0 0  0 0 0    0   66
+KY:X 3 0 0 0 0 0  1  2   7    6 0 0 0 0 0 0  0 0 0   35   54
+KY:S 0 0 0 0 0 0  0  0   0   19 0 0 0 0 0 0  0 0 0   35   54
+Kb:X 0 0 0 0 0 0  3  8   7    6 0 0 0 0 0 0  0 0 0    0   24
+Kb:S 0 0 0 0 0 0  0  0   3   19 0 0 0 0 0 0  0 2 0    0   24
+KQ:X 0 0 0 0 0 0  0  0   3   48 0 0 0 0 0 0  0 0 0    0   51
+KQ:S 0 0 0 0 0 0  0  0  12   39 0 0 0 0 0 0  0 0 0    0   51
+NX:X 1 0 0 0 0 0  0  3  18  205 0 0 0 0 0 0  0 0 0    0  227
+NX:S 2 0 0 0 0 0  0  1   2  222 0 0 0 0 0 0  0 0 0    0  227
+NT:X 3 0 0 0 0 0  0  0   3  167 0 0 0 0 0 0  0 0 0    0  173
+NT:S 0 0 0 0 0 0  0  0   3  170 0 0 0 0 0 0  0 0 0    0  173
+NE:X 2 0 0 0 0 0  0  3  17  131 0 0 0 0 0 0  1 0 0    0  154
+NE:S 1 0 0 0 0 0  0  0   2  148 0 1 0 0 0 0  1 1 0    0  154
+NV:X 0 0 0 0 0 0  1  3  26  204 0 0 0 0 0 0  0 0 0    0  234
+NV:S 0 0 0 0 0 0  0  0   5  229 0 0 0 0 0 0  0 0 0    0  234
+NY:X 0 0 0 0 0 0  0  2  12   53 0 0 0 0 0 0  0 0 0  145  212
+NY:S 0 0 0 0 0 0  0  0   2   65 0 0 0 0 0 0  0 0 0  145  212
+Nb:X 0 0 0 0 0 0  0  4   3    8 0 0 0 0 0 0  0 0 0    0   15
+Nb:S 0 0 0 0 0 0  0  0   0   15 0 0 0 0 0 0  0 0 0    0   15
+NQ:X 0 0 0 0 0 0  0  0   0    0 0 0 0 0 0 0  0 0 0    0    0
+NQ:S 0 0 0 0 0 0  0  0   0    0 0 0 0 0 0 0  0 0 0    0    0
+XT:X 5 0 0 0 0 0  0  0   0  112 0 0 0 0 0 0  0 0 0    0  117
+XT:S 0 0 0 0 0 0  0  0   0  117 0 0 0 0 0 0  0 0 0    0  117
+XE:X 1 0 0 0 0 0  0  0   4  123 0 0 0 0 0 0  0 0 0    0  128
+XE:S 2 0 0 0 0 0  0  0   1  124 0 0 0 0 0 0  0 1 0    0  128
+XV:X 0 0 0 0 0 0  0  2  10  229 0 0 0 0 0 0  0 0 0    0  241
+XV:S 0 0 0 0 0 0  0  0   1  240 0 0 0 0 0 0  0 0 0    0  241
+XY:X 0 0 0 0 0 0  0  0   5   74 0 0 0 0 0 0  0 0 0  155  234
+XY:S 0 0 0 0 0 0  0  0   4   75 0 0 0 0 0 0  0 0 0  155  234
+Xb:X 0 0 0 0 0 0  0  2   0   21 0 0 0 0 0 0  0 0 0    0   23
+Xb:S 0 0 0 0 0 0  0  0   0   23 0 0 0 0 0 0  0 0 0    0   23
+XQ:X 0 0 0 0 0 0  0  0   0    0 0 0 0 0 0 0  0 0 0    0    0
+XQ:S 0 0 0 0 0 0  0  0   0    0 0 0 0 0 0 0  0 0 0    0    0
+TE:X 7 0 0 0 0 0  0  0   6   74 0 0 0 0 0 0  0 0 0    0   87
+TE:S 0 0 0 0 0 0  0  0   1   86 0 0 0 0 0 0  0 0 0    0   87
+TV:X 0 0 0 0 0 0  0  1   4  143 0 0 0 0 0 0  0 0 0    0  148
+TV:S 0 0 0 0 0 0  0  0   2  146 0 0 0 0 0 0  0 0 0    0  148
+TY:X 1 0 0 0 0 0  1  0   3   26 0 0 0 0 0 0  1 0 0   72  104
+TY:S 0 0 0 0 0 0  0  0   0   32 0 0 0 0 0 0  0 0 0   72  104
+Tb:X 0 0 0 0 0 0  0  0   0    1 0 0 0 0 0 0  0 0 0    0    1
+Tb:S 0 0 0 0 0 0  0  0   0    1 0 0 0 0 0 0  0 0 0    0    1
+TQ:X 0 0 0 0 0 0  0  0   1    8 0 0 0 0 0 0  0 0 0    0    9
+TQ:S 0 0 0 0 0 0  0  0   0    9 0 0 0 0 0 0  0 0 0    0    9
+EV:X 2 0 0 0 0 0  1  1  10  103 0 0 0 0 0 0  1 0 0    0  118
+EV:S 2 0 0 0 0 0  0  0   0  116 0 0 0 0 0 0  0 0 0    0  118
+EY:X 0 0 0 0 0 0  0  0   4   19 0 0 0 0 0 0  0 0 0  113  136
+EY:S 0 0 0 0 1 0  0  0   3   18 0 0 0 0 0 0  1 0 0  113  136
+Eb:X 1 0 0 0 0 1  1  6  22   50 0 0 0 0 0 0  0 0 0    0   81
+Eb:S 2 0 0 0 0 0  0  0  10   67 0 0 0 0 0 0  2 0 0    0   81
+EQ:X12 0 0 0 0 0  0  0   1   42 0 0 0 0 0 0  0 0 0    0   55
+EQ:S 3 0 0 0 0 0  0  0   0   52 0 0 0 0 0 0  0 0 0    0   55
+VY:X 0 0 0 0 0 0  0  0  10   83 0 0 0 0 0 0  0 0 0  189  282
+VY:S 0 0 0 0 0 0  0  0   7   73 0 0 0 0 0 0 13 0 0  189  282
+Vb:X 0 0 0 0 0 0  0  2   4   23 0 0 0 0 0 0  0 0 0    0   29
+Vb:S 0 0 0 0 0 0  0  0   1   28 0 0 0 0 0 0  0 0 0    0   29
+VQ:X 0 0 0 0 0 0  0  1   0    0 0 0 0 0 0 0  0 0 0    0    1
+VQ:S 0 0 0 0 0 0  0  0   0    1 0 0 0 0 0 0  0 0 0    0    1
+Yb:X 0 0 0 0 0 0  0  0   2   13 0 0 0 0 0 0  0 0 0   31   46
+Yb:S 0 0 0 0 0 0  0  0   0   15 0 0 0 0 0 0  0 0 0   31   46
+YQ:X 0 0 0 0 0 0  0  0   0    0 0 0 0 0 0 0  0 0 0   11   11
+YQ:S 0 0 0 0 0 0  0  0   0    0 0 0 0 0 0 0  0 0 0   11   11
+bQ:X 3 0 0 0 0 0  2  1   5  119 0 0 0 0 0 0  0 0 1    0  131
+bQ:S12 0 0 0 0 0  0  0   2  115 0 0 0 0 0 0  0 1 1    0  131
+----------------------------------------------------------------
+Tot 92 0 1 1 2 2 26 74 457 6355 0 1 0 0 3 0 43 5 4 1518 8584
+
+Legend:
+QC = 0   Fringes not detected.
+   = 1-9 Fringes detected, no error condition. Higher #, better quality.
+   = B   Interpolation error in fourfit.
+   = D   No data in one or more frequency channels.
+   = E   Maximum fringe amplitude at edge of SBD, MBD, or rate window.
+   = F   "Fork" problem in processing.
+   = G   Fringe amp in a channel is <.5 times mean amp (only if SNR>20).
+   = H   Low Phase-cal amplitude in one or more channels.
+   = N   No valid correlator data.
+ Tot     Total number of scans in schedule.
+ Minus   Scans in original schedule file for which correlation was not
+         attempted, usually because of known station problems.
+
++SNR_RATIOS
+
+MEAN RATIOS = Observed SNR / Predicted SNR  for exp no. 2837
+
+ ...by baseline, over all sources:
+
+ bl     X     n       S     n
+
+ ba    0.41    1     1.73    1
+ bK    1.72   24     2.05   24
+ bN    1.14   15     0.92   15
+ bX    1.25   23     1.22   23
+ bQ    0.98  127     1.06  118
+ bT    0.40    1     0.58    1
+ bE    1.07   80     0.94   79
+ bV    1.72   29     1.42   29
+ bi    1.01    8     1.62    8
+ bY    1.34   15     1.50   15
+ aK    1.06   51     1.74   51
+ aN    0.76   13     0.79   15
+ aX    1.38    6     0.93    7
+ aQ    1.01   17     1.16   17
+ aT    0.75  154     0.96  152
+ aE    1.24    3     0.80    3
+ aV    1.22   11     1.08   11
+ ai    0.95  202     1.21  202
+ aY    2.12    1     1.53    1
+ KN    1.33   94     0.94   94
+ KX    1.51   52     0.99   59
+ KQ    1.46   51     1.04   51
+ KT    1.16  201     1.21  202
+ KE    1.38  123     1.21  124
+ KV    1.93   57     1.13   66
+ Ki    1.53   20     3.45   20
+ KY    1.53   16     0.94   19
+ NX    1.11  226     0.82  225
+ NQ    0.00    0     0.00    0
+ NT    0.98  170     0.86  173
+ NE    1.17  152     0.74  152
+ NV    1.47  234     0.99  234
+ Ni    1.23    3     1.06    3
+ NY    1.03   67     0.94   67
+ XQ    0.00    0     0.00    0
+ XT    1.01  111     0.96  117
+ XE    1.16  127     0.89  126
+ XV    1.40  241     1.11  241
+ Xi    1.15    2     0.86    2
+ XY    0.89   79     1.05   79
+ QT    1.70    9     0.80    9
+ QE    1.52   43     0.96   52
+ QV    1.77    1     2.08    1
+ Qi    1.00   24     1.31   24
+ QY    0.00    0     0.00    0
+ TE    1.15   80     0.87   87
+ TV    1.23  148     1.14  148
+ Ti    0.98   83     1.33   82
+ TY    0.86   31     1.04   32
+ EV    1.49  116     0.99  116
+ Ei    0.00    0     0.00    0
+ EY    1.20   23     1.08   23
+ Vi    1.78    7     1.39    7
+ VY    1.48   93     1.21   93
+ iY    0.00    0     0.00    0
+
+CONTROL_FILE
+
+* control file for exp. R1552
+
+    max_parity  0.01
+    pc_mode normal
+*
+ start -4
+
+   sb_win -256.0 256.0 mb_win -2.0 2.0 dr_win -300.e-4 300.e-4
+*
+*    ...offset between VLBA-VLBA and MK4-VLBA ...
+
+* Kk/K
+if station K
+ lsb_offset 260.
+
+* Ke/a
+if station a
+ lsb_offset -180.
+
+* Ts/T
+if station T
+ lsb_offset -80.0
+
+* Tc/Q
+if station Q
+ lsb_offset -100.0
+
+*Yg/i
+if station i
+ lsb_offset 240.
+
+*Ys/Y
+if station Y
+ lsb_offset -100.
+
+if f_group X
+ ref_freq 8212.99
+ pc_freqs ghijklmn 5010 5010 5010 5010 5010 5010 5010 5010
+
+if f_group S
+ ref_freq 2225.99
+ pc_freqs abcdef 3010 3010 3010 3010 3010 3010
+
+ if station b and f_group S
+ freqs a b c e f
+
+*ref Wz/V - scan 268-1700b
+
+if station K and f_group S
+ pc_mode manual
+ pc_phases abcdef 130 108 104 -175 78 139
+if station K and f_group X
+ pc_mode manual
+ pc_phases ghijklmn -154 92 134 90 153 -192 139 166
+
+* ref Wz/V - scan
+
+if station a and f_group S
+ pc_mode manual
+ pc_phases abcdef 82 89 80 98 -12 111
+if station a and f_group X
+ pc_mode manual
+ pc_phases ghijklmn 172 120 119 125 109 111 91 -164
+
+* ref Wz/V - scan 268-2018b
+
+if station i and f_group S
+ pc_mode manual
+ pc_phases abcdef 99 39 6 5 43 84
+if station i and f_group X
+ pc_mode manual
+ pc_phases ghijklmn -94 -1 -119 -19 -41 -122 -8 -87
+
+*ref Wz/V
+
+if station b and f_group S
+ pc_phases abcef 1.5   2.0  -6.0  -1.2   1.3
+if station b and f_group X
+ pc_phases ghijklmn  7.4  -9.3  -5.9  -5.2   4.0   7.3   8.4  -7.1
+
+if station Q and f_group S
+ pc_phases abcdef -15.1   1.2   4.8  13.4   6.1  -12.5
+if station Q and f_group X
+ pc_phases ghijklmn 1.7  -10.3   3.9   2.2   3.7   2.2   0.1   -4.2
+
+if station X and f_group S
+ pc_phases abcdef  7.4  -6.2   1.3  -7.2   4.3  -0.2
+if station X and f_group X
+ pc_phases ghijklmn 2.2  -2.7  -6.1  2.1  8.6  -3.6   1.8  -2.2
+
+if station Y and f_group S
+ pc_phases abcdef 0.7   -1.5   -2.8    2.4    0.9   -1.3
+if station Y and f_group X
+ pc_phases ghijklmn -1.6   -2.0    0.6    5.5    4.9   -2.8   -3.1    0.0
+
+if station T and f_group S
+ pc_phases abcdef 2.5  -0.3  -2.4  0.7  -1.7   2.6
+if station T and f_group X
+ pc_phases ghijklmn  7.1  -8.3  -6.7  -1.3   1.0   0.6   5.6  -1.8
+
+if station N and f_group S
+ pc_phases abcdef -7.5  0.9  6.2  5.1  -6.0   1.1
+if station N and f_group X
+ pc_phases ghijklmn 2.9  -5.2  -2.0  -0.9   4.9   1.9  2.1  -2.9
+
+if station E and f_group S
+ pc_phases abcdef 2.6   -1.4  -3.8   2.1   1.4   -2.3
+if station E and f_group X
+ pc_phases ghijklmn  3.4  -2.1  -5.9   -0.4   2.9   -3.0   4.3   -1.1
+
+Regards,
+Laura
+
++END
+
+$1<
+Sorted by time and subsorted by baseline.   -geodesy-
+All  baselines used.
+All  sources used.
+Output time window:  earliest latest
+TIMETAG 2012/10/10 15:40:55 
+MK3DB_VERSION    2
+CALC10.02 Ver. 2010.03.08  Wed Oct 10 11:40:54 2012    bootes
+Calc 10.00 with External Inputs  -DG-
+TIMETAG 2012/10/10 16:12:49 
+MK3DB_VERSION    3
+Dbcal: R1552  -DG-
+ DBCAL: Version 2012.08.10        OCT 10,2012 16:12:49
+TIMETAG 2012/10/10 19:55:53 
+MK3DB_VERSION    4
+R1552: GSFC Analysis  -DG-
+Yebes had a pointing problem; data last ~6 hrs only.
+G-Gxs solution, 60/60 clocks/atms, 2/40 constraints,
+24-hr gradients. Solve fit of 30.0 psec.
+The following flyby options were used in the solution:
+Station flyby file:  gsf2012a.s
+Source flyby file :  gsf2012a.s
+Nutation series flyby file :  NONE
+Nutation offset flyby file :  NONE
+Earth rotation flyby file  :  NONE
+Tectonic plate motion file :  gsf2012a.v
+Group delay ambiguities and editing updated.
+Troposphere and cable cal status for standard solution stored.
+Observation dependent contribution status stored.
+Reweighting updated for:
+FO-KA FO-KO FO-NY FO-ON FO-TI FO-TS FO-WE FO-WE FO-YA FO-YE
+KA-KO KA-NY KA-ON KA-TI KA-TS KA-WE KA-WE KA-YA KA-YE KO-NY
+KO-ON KO-TI KO-TS KO-WE KO-WE KO-YA KO-YE NY-ON NY-TI NY-TS
+NY-WE NY-WE NY-YA NY-YE ON-TI ON-TS ON-WE ON-WE ON-YA ON-YE
+TI-TS TI-WE TI-WE TI-YA TI-YE TS-WE TS-WE TS-YA TS-YE WE-WE
+WE-YA WE-YE WE-YA WE-YE YA-YE
+Baseline-dependent clock used. List of names stored.
+Solution data configuration: G-Gxs combination
+Clock and atmosphere constraint information saved.
+Batchmode clock parameterization saved.
+Batchmode atmosphere parameterization saved.
+Ionosphere calibrated with IONO IONO  Ve
+Group Ion cal for $12SEP24XA V. 3 based on $12SEP24SA V. 3.
+Barometer calibration and barometer height offset not available.
+Eccentricity data store in data base header.
+Elevation cutoff data stored in database.
+

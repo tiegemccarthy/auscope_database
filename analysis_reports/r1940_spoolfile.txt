@@ -1,0 +1,838 @@
+1Run 20100-1621
+ Analysis center: GSFC -- NASA Goddard Space Flight Center
+ Analyst:         David Gordon ( David.Gordon-1@nasa.gov )
+ Machine:         gs690-gs61a-gsvgsfc-ivscc-server1.gsfc.nasa.gov  x86_64  Linux 3.10.0-1062.9.1.el7.x86_64
+ Executables:     /space/nusolve/bin
+ Solve initials:  DG
+ Spool format:    SgLib-0.7.0 (Oakdale)
+ Local time:      2020.04.09-12:21:03
+ Correlator type: MK4     
+ Mark-3 db_name:
+
+ Data base $20MAR30XA Ver  3
+
+ Matrix Condition Number =   7.578570508201524E+10
+
+ Listing_Options:  CRES_EMULATION NO  BASELINES NO  MINIMUM NO
+ Listing_Options:  MAPPED_EOP_OUTPUT NO  SEG_OUTPUT NO  APRIORI_ZENDEL NO
+ Listing_Options:  NRD_TABLE YES  CHI_TABLE NO  SRC_STAT PRE2004  SEG_STYLE PRE2005
+ SgLib release  :  2020 Mar 04
+
+  Flyby Station Cals:    DB Station Cals:              | DB Non-station Cals: | Atmosphere Partial:
+ --------------------------------------------------------------------------------------------------
+    FORTLEZA:NMFDRFLY    cable    GION                 | Pol Tide             | NMFWTFLY              
+    HART15M :NMFDRFLY             GION                 | WobXCont             |                       
+    HOBART26:NMFDRFLY             GION                 | WobYCont             |                       
+    ISHIOKA :NMFDRFLY             GION                 | EarthTid             |                       
+    KOKEE   :NMFDRFLY    cable    GION                 | Ocean                |                       
+    MATERA  :NMFDRFLY    cable    GION                 | UT1Ortho             |                       
+    NYALE13S:NMFDRFLY             GION                 | XpYpOrth             |                       
+    NYALES20:NMFDRFLY    cable    GION                 | XpYpLib              |                       
+    ONSALA60:NMFDRFLY    cable    GION                 | UT1Libra             |                       
+    SVETLOE :NMFDRFLY             GION                 | OPTLCont             |                       
+    WETTZELL:NMFDRFLY    cable    GION                 |                      |                       
+    YEBES40M:NMFDRFLY    cable    GION                 |                      |                       
+ --------------------------------------------------------------------------------------------------
+ CALC Version:  11.02  SgLib-0.7.0 (Oakdale)
+
+           20MAR30SA  3  NOT IN SOLUTION
+
+  Met Statistics:
+                    Temperature      Pressure        Humidity
+   Station         average   rms   average   rms   average   rms
+   FORTLEZA  MET     25.3     1.1  1005.8     0.9    99.7     1.9
+   HART15M   MET     17.8     1.9   864.7     0.6    82.3     5.2
+   HOBART26  MET     15.4     3.5  1005.8     1.5    50.8     5.5
+   ISHIOKA   MET      9.0     2.0  1008.6     1.5    93.2     7.4
+   KOKEE     MET     15.0     1.8   888.5     0.9    95.2     5.0
+   MATERA    MET      9.3     1.9   956.8     1.0    79.7     8.8
+   NYALE13S  MET    -19.3     1.9  1010.6     0.9    64.1     5.0
+   NYALES20  MET    -17.9     2.1  1005.2     0.8    65.6     4.7
+   ONSALA60  MET      2.1     3.8  1027.0     3.3    64.5    12.8
+   SVETLOE   MET     -3.8     4.5  1011.9     4.6    54.1    17.2
+   WETTZELL  MET      0.3     1.9   952.0     0.7    44.2     8.9
+   YEBES40M  MET      8.4     0.8   902.2     0.3    93.8     4.5
+
+ Run 20100-1621         9871 Observation Pairs Available 
+ Session started on:    2458939.208449   2020.03.30 17:00:10.000  UTC
+ Actual duration:       86364.000  sec           00 23:59:24.000  sec
+ Solution type: Group delay X/S combination    
+
+ Data Type     Number of   Weighted RMS    Normalized RMS   Chi Square
+             Observations    Residual         Residual      (precis)
+                 Used
+ 
+   Delay     9242             29.232 ps              1.00       0.9999
+   Rate         0                  0 fs/s            0.00       0.0000
+Combined        0                                    0.00       0.0000
+----------------------------------------------------------------------- 
+ Used quality_code_limit:                                  5            
+ Number of potentially recoverable observations:        9290            
+ Number of potentially good observations with QC 5-9:   9297           
+ Number of used observations:                           9242  ( 99.48%) 
+ Number of suppressed observations:                       48  (  0.52%) 
+----------------------------------------------------------------------- 
+
+
+
+ Baseline Statistics
+      Baseline        # W.Obs   W.RMS Del   N.R.D.   N.R.D. W.RMS Rate   N.R.R.  D.RW   R.RW 
+                    used/recov     ps     standard ( 15ps+i)  fs/s                ps    fs/s  
+
+ FORTLEZA-HART15M   168/  170    64.8       0.93      2.12   625.9        0.00   64.6    0.0
+ FORTLEZA-HOBART26   30/   30    83.8       0.87      1.92   930.4        0.00   84.5    0.0
+ FORTLEZA-ISHIOKA    31/   31    85.1       0.97      2.28  2592.8        0.00   80.1    0.0
+ FORTLEZA-KOKEE      55/   55    91.0       0.95      2.91  2101.2        0.00   89.8    0.0
+ FORTLEZA-MATERA    111/  113    64.9       0.96      2.01  1519.4        0.00   61.6 1577.4
+ FORTLEZA-NYALES20   92/   93    73.1       0.97      2.57  2243.5        0.00   70.8    0.0
+ FORTLEZA-ONSALA60  101/  104    57.6       0.95      2.16  1783.6        0.00   55.0    0.0
+ FORTLEZA-SVETLOE    78/   81    70.1       0.96      3.00  1505.0        0.00   69.7 1580.8
+ FORTLEZA-WETTZELL  113/  117    55.1       0.95      2.66   707.0        0.00   56.0    0.0
+ FORTLEZA-YEBES40M   45/   47   104.8       0.97      4.54  1952.3        0.00  105.6 2022.7
+ HART15M -ISHIOKA    81/   82    35.2       0.91      1.25  1269.9        0.00   28.6    0.0
+ HART15M -MATERA    166/  166    31.3       0.95      1.19   666.8        0.00   24.8    0.0
+ HART15M -NYALE13S    4/    4    26.7       0.71      0.68   173.5        0.00    0.0  189.9
+ HART15M -NYALES20  128/  129    29.7       0.94      1.23   618.3        0.00   25.4    0.0
+ HART15M -ONSALA60  151/  153    28.2       0.94      1.15   880.1        0.00   23.4  936.4
+ HART15M -SVETLOE   119/  119    34.9       0.94      1.65   878.0        0.00   33.4    0.0
+ HART15M -WETTZELL  169/  170    23.9       0.92      1.21   817.1        0.00   22.5  924.7
+ HART15M -YEBES40M   48/   48    22.7       0.94      1.22   354.5        0.00   21.4    0.0
+ HOBART26-HART15M   156/  156    81.2       0.90      1.95  1213.5        0.00   80.7    0.0
+ HOBART26-ISHIOKA   124/  124    56.8       0.91      1.54   531.6        0.00   50.1    0.0
+ HOBART26-KOKEE     161/  161    70.7       0.93      1.75   688.7        0.00   64.9    0.0
+ HOBART26-MATERA      8/    8    80.4       0.95      1.76   809.5        0.00   71.7    0.0
+ HOBART26-NYALES20   34/   34    65.1       0.93      1.48   576.0        0.00   57.7    0.0
+ HOBART26-ONSALA60   10/   10    77.7       0.91      1.78  1308.5        0.00   74.3    0.0
+ HOBART26-SVETLOE    22/   22    66.6       0.92      1.62   395.0        0.00   63.0    0.0
+ HOBART26-WETTZELL   18/   18    62.6       0.90      1.66  1142.2        0.00   58.8    0.0
+ ISHIOKA -KOKEE     284/  285    37.7       0.95      1.58   828.7        0.00   33.9    0.0
+ ISHIOKA -MATERA    274/  274    30.5       0.97      1.05   711.6        0.00   19.4    0.0
+ ISHIOKA -NYALE13S   19/   19    76.5       0.96      1.14   561.9        0.00   46.0  587.4
+ ISHIOKA -NYALES20  333/  333    27.6       0.96      1.27   503.9        0.00   24.1    0.0
+ ISHIOKA -ONSALA60  303/  303    31.4       0.97      1.24   401.3        0.00   25.3    0.0
+ ISHIOKA -SVETLOE   217/  220    35.5       0.97      1.75   335.4        0.00   33.8    0.0
+ ISHIOKA -WETTZELL  298/  298    22.9       0.95      1.15   545.2        0.00   20.4    0.0
+ ISHIOKA -YEBES40M   68/   68    24.7       0.94      1.08   671.6        0.00   19.9    0.0
+ KOKEE   -MATERA    173/  173    45.5       0.97      1.49  1294.2        0.00   38.4    0.0
+ KOKEE   -NYALE13S    4/    4    43.3       0.78      0.76  1976.2        0.00    0.0    0.0
+ KOKEE   -NYALES20  241/  241    39.4       0.96      1.56  1110.7        0.00   35.6    0.0
+ KOKEE   -ONSALA60  194/  194    41.0       0.97      1.45  1230.9        0.00   34.9    0.0
+ KOKEE   -SVETLOE   156/  157    45.1       0.97      2.12  1252.1        0.00   42.7    0.0
+ KOKEE   -WETTZELL  200/  202    34.0       0.96      1.53  1128.9        0.00   31.7    0.0
+ KOKEE   -YEBES40M   43/   43    41.9       0.96      1.75   752.7        0.00   39.0    0.0
+ MATERA  -NYALE13S   29/   29    64.8       0.93      1.01   359.2        0.00   30.3  322.2
+ MATERA  -NYALES20  361/  362    26.4       0.96      1.18   689.4        0.00   21.8  704.1
+ MATERA  -ONSALA60  394/  394    26.0       0.96      1.10   570.7        0.00   19.5    0.0
+ MATERA  -SVETLOE   272/  276    35.5       0.97      1.83   728.6        0.00   34.1    0.0
+ MATERA  -WETTZELL  379/  381    17.9       0.95      0.96   505.6        0.00   15.1    0.0
+ MATERA  -YEBES40M  105/  105    22.8       0.96      1.05   591.2        0.00   17.8    0.0
+ NYALE13S-NYALES20   58/   60    61.9       0.92      1.25   254.4        0.00   47.9  176.4
+ NYALE13S-ONSALA60   49/   49    92.4       0.97      1.49   236.3        0.00   74.5  149.2
+ NYALE13S-SVETLOE    42/   42    77.9       0.95      2.00   276.2        0.00   73.5  216.0
+ NYALE13S-WETTZELL   60/   60    47.2       0.89      1.14   214.3        0.00   37.9  175.0
+ NYALE13S-YEBES40M   15/   15    34.6       0.87      0.89  3135.9        0.00   17.5 3143.4
+ NYALES20-ONSALA60  378/  378    25.8       0.97      1.35   159.0        0.00   23.8    0.0
+ NYALES20-SVETLOE   291/  294    36.2       0.97      2.13   240.6        0.00   36.4  247.6
+ NYALES20-WETTZELL  391/  391    19.7       0.95      1.16   131.2        0.00   19.2    0.0
+ NYALES20-YEBES40M  101/  101    21.4       0.96      1.15   284.3        0.00   19.4    0.0
+ ONSALA60-SVETLOE   278/  281    39.4       0.97      2.20   287.3        0.00   39.1    0.0
+ ONSALA60-WETTZELL  387/  387    20.8       0.96      1.20   333.6        0.00   20.0    0.0
+ ONSALA60-YEBES40M  103/  103    25.2       0.96      1.34   602.1        0.00   23.8    0.0
+ SVETLOE -WETTZELL  316/  319    37.6       0.97      2.24   237.0        0.00   37.9    0.0
+ SVETLOE -YEBES40M   83/   84    43.6       0.97      2.58   316.4        0.00   44.0  334.7
+ WETTZELL-YEBES40M  120/  120    17.0       0.94      1.01   284.5        0.00   16.4    0.0
+
+
+ Not included:                                                                          
+
+ FORTLEZA-NYALE13S    0/    0    deselected
+ HOBART26-NYALE13S    0/    0    deselected
+ HOBART26-YEBES40M    0/    0    deselected
+
+
+ Source Statistics 
+     Source           # W.Obs   W.RMS Del   N.R.D.   N.R.D. W.RMS Rate   N.R.R. 
+                                   ps     standard  ( 15ps)   fs/s  
+ 
+     1737-081 A      36/   36    39.0        0.87     1.32   705.3        0.00
+     1745+624 B     173/  173    38.1        1.13     1.45    76.2        0.00
+     OJ287    C     198/  200    23.7        0.82     1.63   561.6        0.00
+     1758-651 D       7/    7    92.4        0.93     1.52   276.0        0.00
+     1806+456 E     454/  454    33.6        1.04     1.57   400.2        0.00
+     1846+322 F      40/   40    20.9        0.73     1.10    99.6        0.00
+     1759-396 G      13/   13    74.1        1.16     2.26   342.2        0.00
+     1705+018 H     183/  183    28.0        0.88     1.34   184.1        0.00
+     1243-072 I      24/   24    60.3        0.95     1.61   343.6        0.00
+     1244-255 J      44/   44    41.8        1.05     1.84   437.2        0.00
+     1639+230 K      38/   38    34.3        0.95     1.40   327.3        0.00
+     1300+580 L     204/  204    34.3        1.00     1.34   170.5        0.00
+     1324+224 M     286/  287    28.3        0.83     1.30   374.4        0.00
+     1424-418 N      20/   20    69.5        0.99     1.78  1265.1        0.00
+     1330+022 O      55/   55    40.9        0.83     1.29   664.9        0.00
+     1354-152 P      10/   10    48.4        0.72     1.01   491.2        0.00
+     1908-201 Q      10/   10    78.4        2.35     4.63  1219.3        0.00
+     2319+317 R     132/  132    29.3        0.95     1.63   888.9        0.00
+     2335-027 S      34/   35    24.3        0.81     1.02   239.0        0.00
+     1929+226 T     141/  142    33.7        0.97     1.46   363.6        0.00
+     3C274    U     130/  130    27.6        0.90     1.32   221.4        0.00
+     3C446    V     136/  136    27.8        0.95     1.69   560.9        0.00
+     NRAO512  W     292/  294    32.0        1.10     1.82   701.6        0.00
+     CTA26    X      85/   85    29.0        1.04     1.56   223.9        0.00
+     NRAO150  Y       8/    8    21.0        0.95     1.60   238.7        0.00
+     2309+454 Z     136/  137    37.7        1.18     1.72   370.9        0.00
+     1954-388 A      16/   16    46.4        0.74     1.74   188.7        0.00
+     2000+472 B     306/  309    27.8        0.95     1.42   221.0        0.00
+     2255-282 C       8/    8    62.1        1.40     3.41   407.4        0.00
+     2008-159 D      34/   34    34.8        0.91     1.72   331.7        0.00
+     2036-034 E       8/    8   101.3        1.66     1.94   596.7        0.00
+     2155+312 F     165/  171    37.8        1.05     1.44   539.8        0.00
+     2052-474 G       4/    4    71.8        1.04     2.31   572.1        0.00
+     2142-758 H      27/   27   117.6        1.26     2.10   384.4        0.00
+     1156+295 I      59/   59    33.4        1.02     1.32  1177.0        0.00
+     0437-454 J      10/   11   109.4        1.37     3.06   267.2        0.00
+     0454-234 K     111/  115    28.4        1.03     2.53   812.2        0.00
+     1144-379 L      20/   21    53.8        0.72     1.47   848.1        0.00
+     0458-020 M     253/  253    22.0        0.79     1.46   467.2        0.00
+     0530-727 N      11/   11    66.2        0.68     1.17   519.2        0.00
+     0534-340 O       3/    3    35.1        0.48     1.08   408.0        0.00
+     0507+179 P     179/  179    24.8        0.84     1.21   890.7        0.00
+     0322+222 Q     264/  269    25.3        0.88     1.59   271.0        0.00
+     0009-148 R      17/   17    55.3        1.02     1.31   129.0        0.00
+     0016+731 S     848/  850    27.8        0.94     1.48   159.2        0.00
+     0308-611 T      32/   32    78.8        0.95     2.02   999.0        0.00
+     0059+581 U     946/  956    27.3        0.95     1.82   577.4        0.00
+     0104-408 V      13/   14    89.5        1.40     2.78  1488.6        0.00
+     0221+067 W     156/  156    27.9        0.90     1.63   405.9        0.00
+     0131-522 X      21/   21   119.6        1.35     2.77   689.6        0.00
+     0202+319 Y     417/  417    29.6        1.02     2.03   798.3        0.00
+     0613+570 Z     604/  604    25.2        0.86     1.44   347.1        0.00
+     0949+354 A      57/   62    42.5        1.34     2.22   483.9        0.00
+     1004-500 B       0/    0     0.0        0.00     0.00     0.0        0.00
+     0641+392 C      45/   45    30.1        0.95     1.24   199.2        0.00
+     1034-374 D       7/    7    82.4        1.17     1.54  2669.9        0.00
+     1039+811 E     294/  294    27.3        0.96     1.59    81.9        0.00
+     1133-032 F      24/   24    34.9        0.90     1.09   664.0        0.00
+     1057-797 G      35/   35    74.8        0.90     2.14   331.6        0.00
+     1124-186 H      16/   16    53.3        0.81     1.48   418.9        0.00
+     0920-397 I       5/    5    56.4        0.62     1.82   654.2        0.00
+     0646-306 J      18/   18    53.1        0.82     1.37  1149.1        0.00
+     0648-165 K      79/   79    23.0        0.74     1.47   331.1        0.00
+     0834-201 L       7/    7    13.2        0.43     0.61   142.4        0.00
+     0656+082 M      24/   25    30.3        1.02     1.59   237.5        0.00
+     0716+714 N     788/  788    24.9        0.87     1.63   237.2        0.00
+     0808+019 O     123/  123    28.4        0.82     1.27  1165.5        0.00
+     0743+277 P     140/  140    37.1        1.14     1.61   549.5        0.00
+     0804+499 Q     159/  160    29.9        0.97     1.47   183.4        0.00
+
+
+ Station Statistics 
+     Station          # W.Obs   W.RMS Del   N.R.D.   N.R.D. W.RMS Rate   N.R.R. 
+                                   ps     standard  ( 15ps)   fs/s   
+ 
+     FORTLEZA       824/  841    66.5        0.95     2.57  1339.1        0.00
+     HART15M       1190/ 1197    32.4        0.93     1.52   703.8        0.00
+     HOBART26       563/  563    68.7        0.91     1.75   709.4        0.00
+     ISHIOKA       2032/ 2037    30.3        0.95     1.36   601.6        0.00
+     KOKEE         1511/ 1515    41.6        0.96     1.70  1112.0        0.00
+     MATERA        2272/ 2281    26.4        0.96     1.29   606.1        0.00
+     NYALE13S       280/  282    59.1        0.92     1.36   628.7        0.00
+     NYALES20      2408/ 2416    27.0        0.96     1.48   410.6        0.00
+     ONSALA60      2348/ 2356    27.8        0.96     1.45   452.0        0.00
+     SVETLOE       1874/ 1895    38.6        0.97     2.11   452.9        0.00
+     WETTZELL      2451/ 2463    22.5        0.95     1.45   387.2        0.00
+     YEBES40M       731/  734    23.9        0.95     1.79   424.4        0.00
+
+
+                       *** Flyby Status ***
+
+                    directory: /500/oper/solve_save_files
+
+Station   Source    Nutation  Nutation  Earth     Earth     Station   Pressure  EOP Intp. EOP Intp. High Freq Axis      
+Positions Positions Model     Time      Rotation  Rotation  Velocity  Loading   Smoothing Smoothing EOP       Offset    
+                              Series    Series    Interpol. Model               CALC      Mod File  Model     Mod File  
+--------- --------- --------- --------- --------- --------- --------- --------- --------- --------- --------- ---------
+glo.sit   glo.src   NONE      NONE      NONE      NONE      glo.vel   NONE      NO_ZONAL  N/A       NONE      glo.axis  
+
+Site Plate Map: /500/oper/solve_save_files/sitpl.dat           
+
+ Parameter adjustments for run 20100-1621 User=DG
+ Reference epoch for polynomial models: 20/03/31 00:00
+                                        Parameter               Adjustment              a-sigma              m-sigma
+      KOKEE    CLCK 20/03/30 17:00 Reference
+Station positions are for epoch: 2020.03.31-05:17:35
+    1. FORTLEZA 7297 SOAM  X Comp       4985370021.10 mm         23.340 mm              7.905 mm              7.905 mm
+    2. FORTLEZA 7297 SOAM  Y Comp      -3955020438.40 mm        -21.292 mm              5.491 mm              5.490 mm
+    3. FORTLEZA 7297 SOAM  Z Comp       -428472012.67 mm        -16.993 mm              3.177 mm              3.177 mm
+       FORTLEZA 7297       U Comp               32.60 mm         32.595 mm              9.015 mm              9.014 mm
+       FORTLEZA 7297       E Comp               -2.17 mm         -2.175 mm              3.153 mm              3.153 mm
+       FORTLEZA 7297       N Comp              -14.82 mm        -14.823 mm              3.394 mm              3.394 mm
+    4. FORTLEZA CL 0 20/03/30 17:00                          -18903.388 ns              0.039 ns              0.039 ns        
+    5. FORTLEZA CL 1 20/03/30 17:00                              44.508 D-14            0.062 D-14            0.062 D-14      
+   31. FORTLEZA AT 0 20/03/30 17:00                            2344.744 ps              5.938 ps              5.938 ps
+       FORTLEZA Atm  2020.03.31-06:18:11.237  Avg:  1161.808 ps   Rms:      32.356 ps   Tot_Rms:      32.354 ps
+   81. FORTLEZA NG 20/03/30 17:00                                -0.255 mm              0.208 mm              0.208 mm        
+   82. FORTLEZA EG 20/03/30 17:00                                -0.933 mm              0.276 mm              0.276 mm        
+   83. FORTLEZA NG 20/03/31 16:59                                -0.531 mm              0.205 mm              0.205 mm        
+   84. FORTLEZA EG 20/03/31 16:59                                 1.841 mm              0.276 mm              0.276 mm        
+
+Station positions are for epoch: 2020.03.31-06:53:07
+   85. HART15M  7378 AFRC  X Comp       5085490796.12 mm        -11.257 mm              3.984 mm              3.984 mm
+   86. HART15M  7378 AFRC  Y Comp       2668161623.84 mm         -9.202 mm              2.314 mm              2.314 mm
+   87. HART15M  7378 AFRC  Z Comp      -2768692504.08 mm         -7.389 mm              2.340 mm              2.340 mm
+       HART15M  7378       U Comp               -9.59 mm         -9.588 mm              4.156 mm              4.155 mm
+       HART15M  7378       E Comp               -2.92 mm         -2.918 mm              1.149 mm              1.149 mm
+       HART15M  7378       N Comp              -12.87 mm        -12.867 mm              2.848 mm              2.848 mm
+   88. HART15M  CL 0 20/03/30 17:00                           -6648.924 ns              0.029 ns              0.029 ns        
+   89. HART15M  CL 1 20/03/30 17:00                              33.292 D-14            0.060 D-14            0.060 D-14      
+  115. HART15M  AT 0 20/03/30 17:00                            1244.902 ps              4.159 ps              4.158 ps
+       HART15M  Atm  2020.03.31-05:34:37.087  Avg:   635.653 ps   Rms:      34.073 ps   Tot_Rms:      34.071 ps
+  165. HART15M  NG 20/03/30 17:00                                 1.000 mm              0.207 mm              0.207 mm        
+  166. HART15M  EG 20/03/30 17:00                                 0.498 mm              0.194 mm              0.194 mm        
+  167. HART15M  NG 20/03/31 16:59                                -2.325 mm              0.217 mm              0.217 mm        
+  168. HART15M  EG 20/03/31 16:59                                -0.599 mm              0.148 mm              0.148 mm        
+
+Station positions are for epoch: 2020.03.31-05:47:15
+  169. HOBART26 7242 AUST  X Comp      -3950237642.06 mm        -13.098 mm              8.069 mm              8.069 mm
+  170. HOBART26 7242 AUST  Y Comp       2522347742.06 mm          5.469 mm              6.498 mm              6.497 mm
+  171. HOBART26 7242 AUST  Z Comp      -4311561617.32 mm        -29.773 mm              8.001 mm              8.000 mm
+       HOBART26 7242       U Comp               30.49 mm         30.490 mm             11.589 mm             11.588 mm
+       HOBART26 7242       E Comp                2.44 mm          2.440 mm              4.027 mm              4.026 mm
+       HOBART26 7242       N Comp              -12.34 mm        -12.343 mm              4.564 mm              4.564 mm
+  172. HOBART26 CL 0 20/03/30 17:00                            1768.159 ns              0.046 ns              0.046 ns        
+  173. HOBART26 CL 1 20/03/30 17:00                              70.728 D-14            0.064 D-14            0.064 D-14      
+  199. HOBART26 AT 0 20/03/30 17:00                             627.852 ps              8.610 ps              8.610 ps
+       HOBART26 Atm  2020.03.31-04:16:24.255  Avg:   302.080 ps   Rms:      19.475 ps   Tot_Rms:      19.474 ps
+  249. HOBART26 NG 20/03/30 17:00                                 0.675 mm              0.400 mm              0.400 mm        
+  250. HOBART26 EG 20/03/30 17:00                                 0.370 mm              0.349 mm              0.349 mm        
+  251. HOBART26 NG 20/03/31 16:59                                 1.421 mm              0.477 mm              0.477 mm        
+  252. HOBART26 EG 20/03/31 16:59                                -1.788 mm              0.455 mm              0.455 mm        
+
+Station positions are for epoch: 2020.03.31-05:23:35
+  253. ISHIOKA  7369 NOAM  X Comp      -3959636185.90 mm          7.377 mm              1.732 mm              1.732 mm
+  254. ISHIOKA  7369 NOAM  Y Comp       3296825451.91 mm         -8.849 mm              1.618 mm              1.618 mm
+  255. ISHIOKA  7369 NOAM  Z Comp       3747042574.85 mm         -7.678 mm              2.797 mm              2.797 mm
+       ISHIOKA  7369       U Comp              -13.68 mm        -13.679 mm              2.785 mm              2.785 mm
+       ISHIOKA  7369       E Comp                2.08 mm          2.080 mm              1.326 mm              1.325 mm
+       ISHIOKA  7369       N Comp                0.50 mm          0.499 mm              1.981 mm              1.981 mm
+  256. ISHIOKA  CL 0 20/03/30 17:00                          -11042.647 ns              0.027 ns              0.027 ns        
+  257. ISHIOKA  CL 1 20/03/30 17:00                              24.427 D-14            0.051 D-14            0.051 D-14      
+  283. ISHIOKA  AT 0 20/03/30 17:00                             765.474 ps              3.375 ps              3.375 ps
+       ISHIOKA  Atm  2020.03.31-05:51:20.930  Avg:   373.661 ps   Rms:      62.524 ps   Tot_Rms:      62.520 ps
+  333. ISHIOKA  NG 20/03/30 17:00                                -0.779 mm              0.120 mm              0.120 mm        
+  334. ISHIOKA  EG 20/03/30 17:00                                 0.149 mm              0.114 mm              0.114 mm        
+  335. ISHIOKA  NG 20/03/31 16:59                                -0.270 mm              0.091 mm              0.091 mm        
+  336. ISHIOKA  EG 20/03/31 16:59                                -0.443 mm              0.072 mm              0.072 mm        
+
+Station positions are for epoch: 2020.03.31-05:02:10
+  337. KOKEE    7298 PCFC  X Comp      -5543837825.95 mm         10.508 mm              4.193 mm              4.193 mm
+  338. KOKEE    7298 PCFC  Y Comp      -2054566410.44 mm         -7.300 mm              1.746 mm              1.746 mm
+  339. KOKEE    7298 PCFC  Z Comp       2387852666.67 mm         -9.072 mm              3.657 mm              3.657 mm
+       KOKEE    7298       U Comp              -10.19 mm        -10.195 mm              4.917 mm              4.917 mm
+       KOKEE    7298       E Comp               10.50 mm         10.497 mm              1.429 mm              1.429 mm
+       KOKEE    7298       N Comp               -5.65 mm         -5.648 mm              2.790 mm              2.790 mm
+  340. KOKEE    AT 0 20/03/30 17:00                             855.689 ps              4.401 ps              4.401 ps
+       KOKEE    Atm  2020.03.31-05:52:00.001  Avg:   450.750 ps   Rms:      20.653 ps   Tot_Rms:      20.652 ps
+  390. KOKEE    NG 20/03/30 17:00                                -1.111 mm              0.191 mm              0.191 mm        
+  391. KOKEE    EG 20/03/30 17:00                                 0.076 mm              0.080 mm              0.080 mm        
+  392. KOKEE    NG 20/03/31 16:59                                -1.209 mm              0.111 mm              0.111 mm        
+  393. KOKEE    EG 20/03/31 16:59                                -0.473 mm              0.084 mm              0.083 mm        
+
+Station positions are for epoch: 2020.03.31-05:56:02
+  394. MATERA   7243 EURA  X Comp       4641938336.91 mm         -3.915 mm              1.543 mm              1.542 mm
+  395. MATERA   7243 EURA  Y Comp       1393003455.41 mm         -0.264 mm              0.806 mm              0.805 mm
+  396. MATERA   7243 EURA  Z Comp       4133325883.54 mm         -3.776 mm              1.879 mm              1.879 mm
+       MATERA   7243       U Comp               -5.36 mm         -5.362 mm              2.385 mm              2.385 mm
+       MATERA   7243       E Comp                0.87 mm          0.873 mm              0.638 mm              0.638 mm
+       MATERA   7243       N Comp               -0.37 mm         -0.373 mm              0.681 mm              0.681 mm
+  397. MATERA   CL 0 20/03/30 17:00                          -24904.764 ns              0.027 ns              0.027 ns        
+  398. MATERA   CL 1 20/03/30 17:00                             -14.180 D-14            0.059 D-14            0.059 D-14      
+  424. MATERA   AT 0 20/03/30 17:00                             531.334 ps              3.517 ps              3.517 ps
+       MATERA   Atm  2020.03.31-05:07:44.916  Avg:   271.608 ps   Rms:      20.904 ps   Tot_Rms:      20.903 ps
+  474. MATERA   NG 20/03/30 17:00                                -0.279 mm              0.102 mm              0.102 mm        
+  475. MATERA   EG 20/03/30 17:00                                -0.011 mm              0.069 mm              0.069 mm        
+  476. MATERA   NG 20/03/31 16:59                                -0.022 mm              0.124 mm              0.124 mm        
+  477. MATERA   EG 20/03/31 16:59                                -0.213 mm              0.089 mm              0.089 mm        
+
+Station positions are for epoch: 2020.03.31-07:41:39
+  478. NYALE13S 0000 EURA  X Comp       1201070585.83 mm       -833.170 mm             10.691 mm             10.690 mm
+  479. NYALE13S 0000 EURA  Y Comp        252129324.10 mm       -212.895 mm              5.969 mm              5.969 mm
+  480. NYALE13S 0000 EURA  Z Comp       6238022481.40 mm        143.399 mm             33.111 mm             33.109 mm
+       NYALE13S 0000       U Comp              -24.04 mm        -24.039 mm             34.344 mm             34.342 mm
+       NYALE13S 0000       E Comp              -37.19 mm        -37.185 mm              5.112 mm              5.112 mm
+       NYALE13S 0000       N Comp              870.69 mm        870.689 mm              6.371 mm              6.371 mm
+  481. NYALE13S CL 0 20/03/30 17:00                           10517.296 ns              0.139 ns              0.139 ns        
+  482. NYALE13S CL 1 20/03/30 17:00                              63.441 D-14            0.066 D-14            0.066 D-14      
+  508. NYALE13S AT 0 20/03/30 17:00                             139.845 ps             39.041 ps             39.039 ps
+       NYALE13S Atm  2020.03.31-05:18:38.275  Avg:    81.095 ps   Rms:       5.188 ps   Tot_Rms:       5.187 ps
+  558. NYALE13S NG 20/03/30 17:00                                 0.922 mm              1.624 mm              1.624 mm        
+  559. NYALE13S EG 20/03/30 17:00                                -0.281 mm              1.153 mm              1.153 mm        
+  560. NYALE13S NG 20/03/31 16:59                                 0.555 mm              0.986 mm              0.986 mm        
+  561. NYALE13S EG 20/03/31 16:59                                -0.128 mm              1.025 mm              1.025 mm        
+
+Station positions are for epoch: 2020.03.31-05:38:34
+  562. NYALES20 7331 EURA  X Comp       1202462422.00 mm          5.436 mm              1.195 mm              1.195 mm
+  563. NYALES20 7331 EURA  Y Comp        252734558.53 mm         -5.688 mm              0.778 mm              0.778 mm
+  564. NYALES20 7331 EURA  Z Comp       6237766291.71 mm          5.260 mm              2.303 mm              2.303 mm
+       NYALES20 7331       U Comp                5.96 mm          5.959 mm              2.445 mm              2.445 mm
+       NYALES20 7331       E Comp               -6.68 mm         -6.685 mm              0.710 mm              0.710 mm
+       NYALES20 7331       N Comp               -3.06 mm         -3.062 mm              0.924 mm              0.924 mm
+  565. NYALES20 CL 0 20/03/30 17:00                         -170577.482 ns              0.027 ns              0.027 ns        
+  566. NYALES20 CL 1 20/03/30 17:00                              14.375 D-14            0.058 D-14            0.058 D-14      
+  592. NYALES20 AT 0 20/03/30 17:00                              79.413 ps              3.428 ps              3.427 ps
+       NYALES20 Atm  2020.03.31-05:59:15.153  Avg:    37.332 ps   Rms:       7.152 ps   Tot_Rms:       7.151 ps
+  642. NYALES20 NG 20/03/30 17:00                                -0.167 mm              0.131 mm              0.131 mm        
+  643. NYALES20 EG 20/03/30 17:00                                -0.223 mm              0.093 mm              0.093 mm        
+  644. NYALES20 NG 20/03/31 16:59                                -0.352 mm              0.091 mm              0.091 mm        
+  645. NYALES20 EG 20/03/31 16:59                                -0.045 mm              0.120 mm              0.120 mm        
+
+Station positions are for epoch: 2020.03.31-05:41:13
+  646. ONSALA60 7213 EURA  X Comp       3370605694.17 mm         -6.141 mm              1.385 mm              1.385 mm
+  647. ONSALA60 7213 EURA  Y Comp        711917817.50 mm         -1.068 mm              0.781 mm              0.781 mm
+  648. ONSALA60 7213 EURA  Z Comp       5349830965.55 mm        -22.531 mm              1.982 mm              1.982 mm
+       ONSALA60 7213       U Comp              -22.34 mm        -22.337 mm              2.378 mm              2.378 mm
+       ONSALA60 7213       E Comp                0.22 mm          0.224 mm              0.677 mm              0.677 mm
+       ONSALA60 7213       N Comp               -6.89 mm         -6.893 mm              0.588 mm              0.588 mm
+  649. ONSALA60 CL 0 20/03/30 17:00                          -50785.858 ns              0.027 ns              0.027 ns        
+  650. ONSALA60 CL 1 20/03/30 17:00                             -22.118 D-14            0.058 D-14            0.058 D-14      
+  676. ONSALA60 AT 0 20/03/30 17:00                             290.125 ps              3.431 ps              3.431 ps
+       ONSALA60 Atm  2020.03.31-06:07:30.664  Avg:   148.512 ps   Rms:      49.236 ps   Tot_Rms:      49.233 ps
+  726. ONSALA60 NG 20/03/30 17:00                                 0.458 mm              0.111 mm              0.111 mm        
+  727. ONSALA60 EG 20/03/30 17:00                                -1.142 mm              0.133 mm              0.133 mm        
+  728. ONSALA60 NG 20/03/31 16:59                                -0.223 mm              0.094 mm              0.094 mm        
+  729. ONSALA60 EG 20/03/31 16:59                                -0.176 mm              0.088 mm              0.088 mm        
+
+Station positions are for epoch: 2020.03.31-05:57:28
+  730. SVETLOE  7380 EURA  X Comp       2730173512.07 mm        -21.511 mm              2.131 mm              2.131 mm
+  731. SVETLOE  7380 EURA  Y Comp       1562442869.53 mm        -13.539 mm              1.618 mm              1.618 mm
+  732. SVETLOE  7380 EURA  Z Comp       5529969148.47 mm        -54.119 mm              3.826 mm              3.825 mm
+       SVETLOE  7380       U Comp              -59.61 mm        -59.610 mm              4.378 mm              4.378 mm
+       SVETLOE  7380       E Comp               -1.07 mm         -1.066 mm              1.235 mm              1.235 mm
+       SVETLOE  7380       N Comp               -4.51 mm         -4.513 mm              1.051 mm              1.051 mm
+  733. SVETLOE  CL 0 20/03/30 17:00                          202958.342 ns              0.031 ns              0.031 ns        
+  734. SVETLOE  CL 1 20/03/30 17:00                               0.562 D-14            0.062 D-14            0.062 D-14      
+  760. SVETLOE  AT 0 20/03/30 17:00                             227.712 ps              5.224 ps              5.223 ps
+       SVETLOE  Atm  2020.03.31-06:17:42.179  Avg:   118.988 ps   Rms:      34.173 ps   Tot_Rms:      34.171 ps
+  810. SVETLOE  NG 20/03/30 17:00                                 1.213 mm              0.411 mm              0.411 mm        
+  811. SVETLOE  EG 20/03/30 17:00                                 0.910 mm              0.355 mm              0.355 mm        
+  812. SVETLOE  NG 20/03/31 16:59                                -1.391 mm              0.286 mm              0.286 mm        
+  813. SVETLOE  EG 20/03/31 16:59                                -2.117 mm              0.344 mm              0.344 mm        
+
+  814. WETTZELL CL 0 20/03/30 17:00                          -14145.655 ns              0.026 ns              0.026 ns        
+  815. WETTZELL CL 1 20/03/30 17:00                              27.355 D-14            0.059 D-14            0.059 D-14      
+  841. WETTZELL AT 0 20/03/30 17:00                             152.934 ps              3.301 ps              3.300 ps
+       WETTZELL Atm  2020.03.31-06:04:07.413  Avg:    74.921 ps   Rms:       9.855 ps   Tot_Rms:       9.854 ps
+  891. WETTZELL NG 20/03/30 17:00                                 0.140 mm              0.076 mm              0.076 mm        
+  892. WETTZELL EG 20/03/30 17:00                                -0.363 mm              0.096 mm              0.096 mm        
+  893. WETTZELL NG 20/03/31 16:59                                 0.690 mm              0.078 mm              0.078 mm        
+  894. WETTZELL EG 20/03/31 16:59                                -0.270 mm              0.076 mm              0.076 mm        
+
+Station positions are for epoch: 2020.03.31-13:50:36
+  895. YEBES40M 7386 EURA  X Comp       4848761742.64 mm        -13.140 mm              2.682 mm              2.682 mm
+  896. YEBES40M 7386 EURA  Y Comp       -261484053.19 mm         -0.756 mm              1.074 mm              1.074 mm
+  897. YEBES40M 7386 EURA  Z Comp       4123085126.57 mm        -11.507 mm              3.172 mm              3.172 mm
+       YEBES40M 7386       U Comp              -17.42 mm        -17.419 mm              3.981 mm              3.981 mm
+       YEBES40M 7386       E Comp               -1.46 mm         -1.463 mm              1.116 mm              1.116 mm
+       YEBES40M 7386       N Comp               -0.25 mm         -0.248 mm              1.146 mm              1.146 mm
+  898. YEBES40M CL 0 20/03/31 10:38                          -22748.610 ns              0.166 ns              0.166 ns        
+  899. YEBES40M CL 1 20/03/31 10:38                              14.956 D-14            0.330 D-14            0.330 D-14      
+  925. YEBES40M AT 0 20/03/30 17:00                             626.399 ps              6.687 ps              6.687 ps
+       YEBES40M Atm  2020.03.31-04:19:01.948  Avg:   308.940 ps   Rms:       3.884 ps   Tot_Rms:       3.884 ps
+  975. YEBES40M NG 20/03/30 17:00                                -3.027 mm              1.133 mm              1.133 mm        
+  976. YEBES40M EG 20/03/30 17:00                                -3.335 mm              0.860 mm              0.860 mm        
+  977. YEBES40M NG 20/03/31 16:59                                 0.839 mm              0.216 mm              0.216 mm        
+  978. YEBES40M EG 20/03/31 16:59                                 0.651 mm              0.147 mm              0.147 mm        
+
+  979.A 0009-148 RT. ASC.          00 11 40.45593183      1.2315      m-asec     1.1030      m-asec     1.1030      m-asec
+                  CORRECTION             0.0000821
+                SCALED SIGMA             0.0000735
+
+  980.A 0009-148 DEC.             -14 34 04.63474501           0.0590 m-asec          0.1709 m-asec          0.1709 m-asec
+                  CORRECTION             0.0000590
+                SCALED SIGMA             0.0001709
+
+        0009-148 CORRELATION     0.0530  Reference date: 2000.01.01-12:00:00
+  981.D 0104-408 RT. ASC.          01 06 45.10792344     -0.6143      m-asec     0.2979      m-asec     0.2978      m-asec
+                  CORRECTION            -0.0000410
+                SCALED SIGMA             0.0000199
+
+  982.D 0104-408 DEC.             -40 34 19.96007414           0.2992 m-asec          0.2840 m-asec          0.2840 m-asec
+                  CORRECTION             0.0002992
+                SCALED SIGMA             0.0002840
+
+        0104-408 CORRELATION    -0.2182  Reference date: 2000.01.01-12:00:00
+  983.E 0131-522 RT. ASC.          01 33 05.76247304     -0.3685      m-asec     0.3200      m-asec     0.3200      m-asec
+                  CORRECTION            -0.0000246
+                SCALED SIGMA             0.0000213
+
+  984.E 0131-522 DEC.             -52 00 03.94596257          -0.5826 m-asec          0.2890 m-asec          0.2890 m-asec
+                  CORRECTION            -0.0005826
+                SCALED SIGMA             0.0002890
+
+        0131-522 CORRELATION     0.0108  Reference date: 2000.01.01-12:00:00
+  985.H 0308-611 RT. ASC.          03 09 56.09918051      0.5364      m-asec     0.3710      m-asec     0.3710      m-asec
+                  CORRECTION             0.0000358
+                SCALED SIGMA             0.0000247
+
+  986.H 0308-611 DEC.             -60 58 39.05648112          -0.0716 m-asec          0.2144 m-asec          0.2144 m-asec
+                  CORRECTION            -0.0000716
+                SCALED SIGMA             0.0002144
+
+        0308-611 CORRELATION     0.0040  Reference date: 2000.01.01-12:00:00
+  987.L 0437-454 RT. ASC.          04 39 00.85475371      1.3504      m-asec     0.4317      m-asec     0.4317      m-asec
+                  CORRECTION             0.0000900
+                SCALED SIGMA             0.0000288
+
+  988.L 0437-454 DEC.             -45 22 22.56373808          -0.5506 m-asec          0.3172 m-asec          0.3172 m-asec
+                  CORRECTION            -0.0005506
+                SCALED SIGMA             0.0003172
+
+        0437-454 CORRELATION     0.0269  Reference date: 2000.01.01-12:00:00
+  989.P 0530-727 RT. ASC.          05 29 30.04223438      0.8797      m-asec     1.0903      m-asec     1.0903      m-asec
+                  CORRECTION             0.0000586
+                SCALED SIGMA             0.0000727
+
+  990.P 0530-727 DEC.             -72 45 28.50684142           0.6590 m-asec          0.3684 m-asec          0.3684 m-asec
+                  CORRECTION             0.0006590
+                SCALED SIGMA             0.0003684
+
+        0530-727 CORRELATION     0.2934  Reference date: 2000.01.01-12:00:00
+  991.T 0646-306 RT. ASC.          06 48 14.09648680      0.2961      m-asec     0.2522      m-asec     0.2522      m-asec
+                  CORRECTION             0.0000197
+                SCALED SIGMA             0.0000168
+
+  992.T 0646-306 DEC.             -30 44 19.65975936           0.0213 m-asec          0.2417 m-asec          0.2417 m-asec
+                  CORRECTION             0.0000213
+                SCALED SIGMA             0.0002417
+
+        0646-306 CORRELATION    -0.4893  Reference date: 2000.01.01-12:00:00
+  993.X 0743+277 RT. ASC.          07 46 40.43232031      0.1195      m-asec     0.0646      m-asec     0.0646      m-asec
+                  CORRECTION             0.0000080
+                SCALED SIGMA             0.0000043
+
+  994.X 0743+277 DEC.              27 34 59.04721003           0.1666 m-asec          0.0553 m-asec          0.0553 m-asec
+                  CORRECTION             0.0001666
+                SCALED SIGMA             0.0000553
+
+        0743+277 CORRELATION    -0.1254  Reference date: 2000.01.01-12:00:00
+  995.C 0920-397 RT. ASC.          09 22 46.41831993      0.7489      m-asec     0.4569      m-asec     0.4569      m-asec
+                  CORRECTION             0.0000499
+                SCALED SIGMA             0.0000305
+
+  996.C 0920-397 DEC.             -39 59 35.07165015          -3.4301 m-asec          2.0169 m-asec          2.0168 m-asec
+                  CORRECTION            -0.0034301
+                SCALED SIGMA             0.0020168
+
+        0920-397 CORRELATION    -0.2647  Reference date: 2000.01.01-12:00:00
+  997.D 0949+354 RT. ASC.          09 52 32.02618359      0.1979      m-asec     0.1139      m-asec     0.1139      m-asec
+                  CORRECTION             0.0000132
+                SCALED SIGMA             0.0000076
+
+  998.D 0949+354 DEC.              35 12 52.40289639          -0.1536 m-asec          0.1229 m-asec          0.1229 m-asec
+                  CORRECTION            -0.0001536
+                SCALED SIGMA             0.0001229
+
+        0949+354 CORRELATION    -0.1522  Reference date: 2000.01.01-12:00:00
+  999.F 1034-374 RT. ASC.          10 36 53.43954307     -0.8704      m-asec     0.5199      m-asec     0.5199      m-asec
+                  CORRECTION            -0.0000580
+                SCALED SIGMA             0.0000347
+
+ 1000.F 1034-374 DEC.             -37 44 15.06596119          -0.1253 m-asec          0.3465 m-asec          0.3465 m-asec
+                  CORRECTION            -0.0001253
+                SCALED SIGMA             0.0003465
+
+        1034-374 CORRELATION    -0.5738  Reference date: 2000.01.01-12:00:00
+ 1001.H 1057-797 RT. ASC.          10 58 43.30957815     -3.2348      m-asec     1.0405      m-asec     1.0404      m-asec
+                  CORRECTION            -0.0002157
+                SCALED SIGMA             0.0000694
+
+ 1002.H 1057-797 DEC.             -80 03 54.15934133           0.4687 m-asec          0.1778 m-asec          0.1778 m-asec
+                  CORRECTION             0.0004687
+                SCALED SIGMA             0.0001778
+
+        1057-797 CORRELATION    -0.0965  Reference date: 2000.01.01-12:00:00
+ 1003.I 1124-186 RT. ASC.          11 27 04.39244327     -0.1591      m-asec     0.2315      m-asec     0.2315      m-asec
+                  CORRECTION            -0.0000106
+                SCALED SIGMA             0.0000154
+
+ 1004.I 1124-186 DEC.             -18 57 17.44161472           0.2298 m-asec          0.2600 m-asec          0.2600 m-asec
+                  CORRECTION             0.0002298
+                SCALED SIGMA             0.0002600
+
+        1124-186 CORRELATION     0.0399  Reference date: 2000.01.01-12:00:00
+ 1005.K 1144-379 RT. ASC.          11 47 01.37069966     -0.1868      m-asec     0.2784      m-asec     0.2783      m-asec
+                  CORRECTION            -0.0000125
+                SCALED SIGMA             0.0000186
+
+ 1006.K 1144-379 DEC.             -38 12 11.02329688           0.2260 m-asec          0.2476 m-asec          0.2476 m-asec
+                  CORRECTION             0.0002260
+                SCALED SIGMA             0.0002476
+
+        1144-379 CORRELATION     0.0229  Reference date: 2000.01.01-12:00:00
+ 1007.N 1243-072 RT. ASC.          12 46 04.23211196     -0.0554      m-asec     0.1711      m-asec     0.1710      m-asec
+                  CORRECTION            -0.0000037
+                SCALED SIGMA             0.0000114
+
+ 1008.N 1243-072 DEC.             -07 30 46.57437234           0.3262 m-asec          0.1622 m-asec          0.1622 m-asec
+                  CORRECTION             0.0003262
+                SCALED SIGMA             0.0001622
+
+        1243-072 CORRELATION    -0.2177  Reference date: 2000.01.01-12:00:00
+ 1009.O 1244-255 RT. ASC.          12 46 46.80202328     -0.2423      m-asec     0.1515      m-asec     0.1515      m-asec
+                  CORRECTION            -0.0000162
+                SCALED SIGMA             0.0000101
+
+ 1010.O 1244-255 DEC.             -25 47 49.28895412           0.0281 m-asec          0.1099 m-asec          0.1099 m-asec
+                  CORRECTION             0.0000281
+                SCALED SIGMA             0.0001099
+
+        1244-255 CORRELATION     0.0190  Reference date: 2000.01.01-12:00:00
+ 1011.R 1330+022 RT. ASC.          13 32 53.27052636     -0.1469      m-asec     0.1322      m-asec     0.1322      m-asec
+                  CORRECTION            -0.0000098
+                SCALED SIGMA             0.0000088
+
+ 1012.R 1330+022 DEC.              02 00 45.69947151           0.3025 m-asec          0.0890 m-asec          0.0890 m-asec
+                  CORRECTION             0.0003025
+                SCALED SIGMA             0.0000890
+
+        1330+022 CORRELATION    -0.1718  Reference date: 2000.01.01-12:00:00
+ 1013.S 1354-152 RT. ASC.          13 57 11.24498557      0.0371      m-asec     0.2737      m-asec     0.2737      m-asec
+                  CORRECTION             0.0000025
+                SCALED SIGMA             0.0000182
+
+ 1014.S 1354-152 DEC.             -15 27 28.78734681          -0.4868 m-asec          0.3105 m-asec          0.3105 m-asec
+                  CORRECTION            -0.0004868
+                SCALED SIGMA             0.0003105
+
+        1354-152 CORRELATION    -0.1936  Reference date: 2000.01.01-12:00:00
+ 1015.T 1424-418 RT. ASC.          14 27 56.29754836     -0.2671      m-asec     0.3171      m-asec     0.3171      m-asec
+                  CORRECTION            -0.0000178
+                SCALED SIGMA             0.0000211
+
+ 1016.T 1424-418 DEC.             -42 06 19.43748204           0.1418 m-asec          0.2765 m-asec          0.2765 m-asec
+                  CORRECTION             0.0001418
+                SCALED SIGMA             0.0002765
+
+        1424-418 CORRELATION     0.3353  Reference date: 2000.01.01-12:00:00
+ 1017.Z 1759-396 RT. ASC.          18 02 42.68006017      0.1076      m-asec     0.4216      m-asec     0.4215      m-asec
+                  CORRECTION             0.0000072
+                SCALED SIGMA             0.0000281
+
+ 1018.Z 1759-396 DEC.             -39 40 07.90798714           0.1775 m-asec          0.2563 m-asec          0.2562 m-asec
+                  CORRECTION             0.0001775
+                SCALED SIGMA             0.0002562
+
+        1759-396 CORRELATION     0.0766  Reference date: 2000.01.01-12:00:00
+ 1019.A 1758-651 RT. ASC.          18 03 23.49651224     -2.0125      m-asec     0.8350      m-asec     0.8349      m-asec
+                  CORRECTION            -0.0001342
+                SCALED SIGMA             0.0000557
+
+ 1020.A 1758-651 DEC.             -65 07 36.76303218          -1.7122 m-asec          0.6687 m-asec          0.6687 m-asec
+                  CORRECTION            -0.0017122
+                SCALED SIGMA             0.0006687
+
+        1758-651 CORRELATION    -0.3197  Reference date: 2000.01.01-12:00:00
+ 1021.F 1954-388 RT. ASC.          19 57 59.81920863     -0.9943      m-asec     0.2874      m-asec     0.2874      m-asec
+                  CORRECTION            -0.0000663
+                SCALED SIGMA             0.0000192
+
+ 1022.F 1954-388 DEC.             -38 45 06.35563218           0.2559 m-asec          0.2537 m-asec          0.2537 m-asec
+                  CORRECTION             0.0002559
+                SCALED SIGMA             0.0002537
+
+        1954-388 CORRELATION     0.1199  Reference date: 2000.01.01-12:00:00
+ 1023.H 2008-159 RT. ASC.          20 11 15.71091208     -0.2020      m-asec     0.1684      m-asec     0.1684      m-asec
+                  CORRECTION            -0.0000135
+                SCALED SIGMA             0.0000112
+
+ 1024.H 2008-159 DEC.             -15 46 40.25402926          -0.2887 m-asec          0.1331 m-asec          0.1330 m-asec
+                  CORRECTION            -0.0002887
+                SCALED SIGMA             0.0001330
+
+        2008-159 CORRELATION    -0.0172  Reference date: 2000.01.01-12:00:00
+ 1025.I 2036-034 RT. ASC.          20 39 09.98512744      3.5707      m-asec     1.5342      m-asec     1.5341      m-asec
+                  CORRECTION             0.0002380
+                SCALED SIGMA             0.0001023
+
+ 1026.I 2036-034 DEC.             -03 17 14.41551834           1.4795 m-asec          1.7712 m-asec          1.7711 m-asec
+                  CORRECTION             0.0014795
+                SCALED SIGMA             0.0017711
+
+        2036-034 CORRELATION    -0.3037  Reference date: 2000.01.01-12:00:00
+ 1027.K 2142-758 RT. ASC.          21 47 12.73061501     -0.3252      m-asec     0.9357      m-asec     0.9357      m-asec
+                  CORRECTION            -0.0000217
+                SCALED SIGMA             0.0000624
+
+ 1028.K 2142-758 DEC.             -75 36 13.22543894          -0.5326 m-asec          0.1972 m-asec          0.1972 m-asec
+                  CORRECTION            -0.0005326
+                SCALED SIGMA             0.0001972
+
+        2142-758 CORRELATION     0.1527  Reference date: 2000.01.01-12:00:00
+ 1029.L 2155+312 RT. ASC.          21 57 28.82389600      0.1400      m-asec     0.0633      m-asec     0.0633      m-asec
+                  CORRECTION             0.0000093
+                SCALED SIGMA             0.0000042
+
+ 1030.L 2155+312 DEC.              31 27 01.35186225           0.1071 m-asec          0.0724 m-asec          0.0723 m-asec
+                  CORRECTION             0.0001071
+                SCALED SIGMA             0.0000723
+
+        2155+312 CORRELATION     0.3525  Reference date: 2000.01.01-12:00:00
+ Atmosphere Constraint Statistics
+  1. FORTLEZA Input  40.00 ps/h RMS  66.84 ps/h NRMS  1.67 share 0.35 count  49
+  2. HART15M  Input  40.00 ps/h RMS  42.72 ps/h NRMS  1.07 share 0.17 count  49
+  3. HOBART26 Input  40.00 ps/h RMS  36.20 ps/h NRMS  0.91 share 0.49 count  49
+  4. ISHIOKA  Input  40.00 ps/h RMS  28.11 ps/h NRMS  0.70 share 0.09 count  49
+  5. KOKEE    Input  40.00 ps/h RMS  44.37 ps/h NRMS  1.11 share 0.12 count  49
+  6. MATERA   Input  40.00 ps/h RMS  31.94 ps/h NRMS  0.80 share 0.07 count  49
+  7. NYALE13S Input  40.00 ps/h RMS  17.87 ps/h NRMS  0.45 share 0.80 count  49
+  8. NYALES20 Input  40.00 ps/h RMS  23.10 ps/h NRMS  0.58 share 0.09 count  49
+  9. ONSALA60 Input  40.00 ps/h RMS  31.36 ps/h NRMS  0.78 share 0.09 count  49
+ 10. SVETLOE  Input  40.00 ps/h RMS  44.68 ps/h NRMS  1.12 share 0.28 count  49
+ 11. WETTZELL Input  40.00 ps/h RMS  24.33 ps/h NRMS  0.61 share 0.09 count  49
+ 12. YEBES40M Input  40.00 ps/h RMS  12.83 ps/h NRMS  0.32 share 0.76 count  49
+     Overall                    RMS  36.48 ps/h NRMS  0.91 share 0.28 count 588
+
+ Clock Constraint Statistics
+  1. FORTLEZA Input   2.00 D-14 RMS   4.27 D-14 NRMS  2.14 share 0.27 count  25
+  2. HART15M  Input   2.00 D-14 RMS   1.81 D-14 NRMS  0.90 share 0.17 count  25
+  3. HOBART26 Input   2.00 D-14 RMS   1.34 D-14 NRMS  0.67 share 0.32 count  25
+  4. ISHIOKA  Input   2.00 D-14 RMS   1.39 D-14 NRMS  0.70 share 0.12 count  25
+  5. MATERA   Input   2.00 D-14 RMS   1.34 D-14 NRMS  0.67 share 0.13 count  25
+  6. NYALE13S Input   2.00 D-14 RMS   1.54 D-14 NRMS  0.77 share 0.31 count  25
+  7. NYALES20 Input   2.00 D-14 RMS   1.35 D-14 NRMS  0.67 share 0.13 count  25
+  8. ONSALA60 Input   2.00 D-14 RMS   1.44 D-14 NRMS  0.72 share 0.13 count  25
+  9. SVETLOE  Input   2.00 D-14 RMS   1.70 D-14 NRMS  0.85 share 0.20 count  25
+ 10. WETTZELL Input   2.00 D-14 RMS   1.41 D-14 NRMS  0.71 share 0.13 count  25
+ 11. YEBES40M Input   2.00 D-14 RMS   0.64 D-14 NRMS  0.32 share 0.78 count  25
+     Overall                    RMS   1.87 D-14 NRMS  0.94 share 0.24 count 275
+
+ 1031. UT1-TAI   1,  20/03/31 06:22       -0.2307  ms/d     -16.55 micros/d        3.58 micros/d        3.58 micros/d
+ EOP without included hi-freq variations  (a-sigmas)  
+                      XWOB          YWOB          UT1-TAI          XSIG         YSIG         USIG
+                       mas           mas            ms           microasec    microasec    microsec
+20/03/31 06:22        0.0000         0.0000         0.0000          0.00         0.00         0.00
+
+ EOP epoch (TT)   MJD: 58939.266554        NUT epoch (TT)   MJD: 58939.266554
+ 1032. Nutation offset in longitude (Psi)                1.148 mas       52.3 microasec       52.3 microasec       
+       Nutation offset around X-axis       (dX)          0.457 mas       20.8 microasec       20.8 microasec       
+       Nutation offset wrt IAU 1980 model (Psi)       -106.543 mas       52.3 microasec       52.3 microasec       
+ 1033. Nutation offset in obliquity (Eps)               -0.152 mas       20.5 microasec       20.5 microasec       
+       Nutation offset around Y-axis       (dY)         -0.152 mas       20.5 microasec       20.5 microasec       
+       Nutation offset wrt IAU 1980 model (Eps)         -9.672 mas       20.5 microasec       20.5 microasec       
+
+ 1034. FORTLEZA-MATERA   Clock offset                            15.642 ps              7.205 ps              7.205 ps
+ 1035. FORTLEZA-YEBES40M Clock offset                           -35.936 ps             16.835 ps             16.834 ps
+ 1036. HART15M -ISHIOKA  Clock offset                            -7.013 ps              5.228 ps              5.228 ps
+ 1037. HART15M -MATERA   Clock offset                           -27.528 ps              3.289 ps              3.288 ps
+ 1038. HART15M -ONSALA60 Clock offset                            -5.788 ps              3.141 ps              3.141 ps
+ 1039. HART15M -SVETLOE  Clock offset                           -12.932 ps              5.413 ps              5.413 ps
+ 1040. HOBART26-HART15M  Clock offset                           158.489 ps             14.856 ps             14.855 ps
+ 1041. HOBART26-ISHIOKA  Clock offset                           136.616 ps              8.446 ps              8.446 ps
+ 1042. HOBART26-ONSALA60 Clock offset                           -88.451 ps             28.739 ps             28.737 ps
+ 1043. HOBART26-WETTZELL Clock offset                            47.663 ps             18.849 ps             18.848 ps
+ 1044. ISHIOKA -MATERA   Clock offset                           -28.389 ps              2.399 ps              2.398 ps
+ 1045. ISHIOKA -ONSALA60 Clock offset                            -6.528 ps              2.287 ps              2.287 ps
+ 1046. ISHIOKA -SVETLOE  Clock offset                            -9.728 ps              4.393 ps              4.393 ps
+ 1047. ISHIOKA -YEBES40M Clock offset                             4.858 ps              3.878 ps              3.877 ps
+ 1048. MATERA  -NYALES20 Clock offset                           -11.681 ps              1.892 ps              1.892 ps
+ 1049. MATERA  -ONSALA60 Clock offset                           -31.942 ps              1.884 ps              1.884 ps
+ 1050. MATERA  -SVETLOE  Clock offset                           -23.396 ps              4.275 ps              4.275 ps
+ 1051. MATERA  -YEBES40M Clock offset                            10.151 ps              2.982 ps              2.982 ps
+ 1052. NYALE13S-NYALES20 Clock offset                           -17.183 ps             10.413 ps             10.413 ps
+ 1053. NYALES20-SVETLOE  Clock offset                            -9.005 ps              4.181 ps              4.180 ps
+ 1054. ONSALA60-SVETLOE  Clock offset                           -11.297 ps              4.341 ps              4.341 ps
+ 1055. ONSALA60-YEBES40M Clock offset                             4.884 ps              3.173 ps              3.173 ps
+ 1056. SVETLOE -WETTZELL Clock offset                            10.074 ps              4.175 ps              4.175 ps
+ 1057. SVETLOE -YEBES40M Clock offset                            11.623 ps              6.385 ps              6.385 ps
+ 
+ General constraints usage information:                                                                                 
+ 
+ 1) CLO_RATE "Clock rate between segments     " sigma  2.000E+00 10^-14 sec/sec
+ 2) ATM_RATE "Atmosphere rate between segments" sigma  4.000E+01 psec/hr
+ 
+ Corrected Reduced Chi-Square   0.9999
+
+1     Baseline information for run 20100-1621
+      Monument to monument values at epoch 2020Mar31
+      Baseline vector components: Length, Vertical and Transverse components
+                                                Vector mag c-sigma        Length c-sigma Horizontal c-sigma Vertical c-sigma
+                                                      (mm)   (mm)           (mm)   (mm)      (mm)   (mm)       (mm)   (mm)
+ FORTLEZA 7297       to HART15M  7378        7025183040.14   7.59  7025183040.14   5.56     -1.15   3.43      37.08   8.57  2020/03/31 04:59:52
+ FORTLEZA 7297       to HOBART26 7242       11699562715.44  12.09 11699562715.44  14.11      0.04   4.86       2.96   6.26  2020/03/31 04:59:52
+ FORTLEZA 7297       to ISHIOKA  7369       12248972484.69   7.08 12248972484.69   8.63     -0.46   3.07      -1.84   4.94  2020/03/31 04:59:52
+ FORTLEZA 7297       to KOKEE    7298       11063798086.46   7.29 11063798086.46   9.20      7.28   3.94       9.67   5.45  2020/03/31 04:59:52
+ FORTLEZA 7297       to MATERA   7243        7037705942.71   7.51  7037705942.71   4.79     -7.72   2.31      25.11   8.73  2020/03/31 04:59:52
+ FORTLEZA 7297       to NYALE13S 0000        8744322739.90  46.63  8744322739.90  23.87   -693.12   6.73     393.72  26.98  2020/03/31 04:59:52
+ FORTLEZA 7297       to NYALES20 7331        8743816394.93   7.10  8743816394.93   5.72     -1.98   2.84       4.14   7.93  2020/03/31 04:59:52
+ FORTLEZA 7297       to ONSALA60 7213        7601089515.58   7.36  7601089515.58   5.02      1.22   2.48      33.14   8.53  2020/03/31 04:59:52
+ FORTLEZA 7297       to SVETLOE  7380        8428008882.26   9.33  8428008882.26   6.13     -0.94   2.59      58.01   8.66  2020/03/31 04:59:52
+ FORTLEZA 7297       to WETTZELL 7224        7215409869.71   7.19  7215409869.71   4.78     -6.33   2.35      19.13   8.62  2020/03/31 04:59:52
+ FORTLEZA 7297       to YEBES40M 7386        5863236754.73   8.81  5863236754.73   4.70     -7.00   2.43      37.52   9.38  2020/03/31 04:59:52
+ HART15M  7378       to HOBART26 7242        9167665744.17  11.72  9167665744.17   9.77      0.80   4.03     -26.28   8.98  2020/03/31 04:59:52
+ HART15M  7378       to ISHIOKA  7369       11165318801.92   6.11 11165318801.92   4.13    -10.07   2.24      -3.70   3.12  2020/03/31 04:59:52
+ HART15M  7378       to KOKEE    7298       12723079231.85   6.42 12723079231.85   6.49     -2.51   2.68       9.53   1.92  2020/03/31 04:59:52
+ HART15M  7378       to MATERA   7243        7032824820.91   6.78  7032824820.91   2.46      5.69   1.20     -10.60   4.58  2020/03/31 04:59:52
+ HART15M  7378       to NYALE13S 0000       10101823957.75  46.52 10101823957.75  25.51    189.12   5.13     674.39  24.30  2020/03/31 04:59:52
+ HART15M  7378       to NYALES20 7331       10100915666.53   6.28 10100915666.53   3.22     -3.63   1.23     -20.53   3.96  2020/03/31 04:59:52
+ HART15M  7378       to ONSALA60 7213        8525147744.74   6.60  8525147744.74   2.73      3.29   1.21      -3.31   4.35  2020/03/31 04:59:52
+ HART15M  7378       to SVETLOE  7380        8697006306.53   8.74  8697006306.53   3.81      1.77   1.58      24.54   5.11  2020/03/31 04:59:52
+ HART15M  7378       to WETTZELL 7224        7832301933.50   6.42  7832301933.50   2.50      5.10   1.18     -15.06   4.37  2020/03/31 04:59:52
+ HART15M  7378       to YEBES40M 7386        7492360332.24   8.27  7492360332.24   3.30      6.50   1.77       0.39   5.10  2020/03/31 04:59:52
+ HOBART26 7242       to ISHIOKA  7369        8095739965.09  10.47  8095739965.09   7.61      0.98   3.94      26.21  10.06  2020/03/31 04:59:52
+ HOBART26 7242       to KOKEE    7298        8268606681.57  10.61  8268606681.57   8.98      0.88   4.21      27.86   9.69  2020/03/31 04:59:52
+ HOBART26 7242       to MATERA   7243       12100290553.28  11.02 12100290553.28  10.89     11.44   4.57       5.22   5.77  2020/03/31 04:59:52
+ HOBART26 7242       to NYALE13S 0000       11957574703.10  47.36 11957574703.10  34.23    719.79   7.35    -454.74  13.70  2020/03/31 04:59:52
+ HOBART26 7242       to NYALES20 7331       11957833469.56  10.83 11957833469.56  10.74      1.79   4.04       3.20   6.37  2020/03/31 04:59:52
+ HOBART26 7242       to ONSALA60 7213       12256219250.07  11.00 12256219250.07  11.01      0.47   4.44       5.11   5.66  2020/03/31 04:59:52
+ HOBART26 7242       to SVETLOE  7380       11933358218.32  12.34 11933358218.32  11.17      1.80   4.49      21.92   6.53  2020/03/31 04:59:52
+ HOBART26 7242       to WETTZELL 7224       12247179267.86  10.85 12247179267.86  10.95      9.92   4.54       0.74   5.55  2020/03/31 04:59:52
+ HOBART26 7242       to YEBES40M 7386       12502614739.74  12.05 12502614739.74  11.79     11.55   4.65       7.20   4.98  2020/03/31 04:59:52
+ ISHIOKA  7369       to KOKEE    7298        5744082773.41   3.69  5744082773.41   2.24      0.17   1.61       3.19   5.34  2020/03/31 04:59:52
+ ISHIOKA  7369       to MATERA   7243        8818210547.52   4.65  8818210547.52   2.07     -2.80   0.96      -6.88   3.18  2020/03/31 04:59:52
+ ISHIOKA  7369       to NYALE13S 0000        6489071566.03  46.28  6489071566.03  18.97    652.99   6.09    -282.16  29.28  2020/03/31 04:59:52
+ ISHIOKA  7369       to NYALES20 7331        6489796301.77   3.93  6489796301.77   1.58      0.28   0.88     -13.32   3.27  2020/03/31 04:59:52
+ ISHIOKA  7369       to ONSALA60 7213        7936190781.73   4.47  7936190781.73   1.90     -6.77   0.92       9.66   3.24  2020/03/31 04:59:52
+ ISHIOKA  7369       to SVETLOE  7380        7137258850.85   7.15  7137258850.85   2.71     -5.24   1.20      39.71   4.53  2020/03/31 04:59:52
+ ISHIOKA  7369       to WETTZELL 7224        8442147361.69   4.10  8442147361.69   1.79     -2.01   0.88     -10.71   3.07  2020/03/31 04:59:52
+ ISHIOKA  7369       to YEBES40M 7386        9507410194.29   6.69  9507410194.29   2.98     -0.93   1.22       2.81   4.14  2020/03/31 04:59:52
+ KOKEE    7298       to MATERA   7243       10894147546.78   5.06 10894147546.78   4.13    -11.63   1.49      -6.47   4.08  2020/03/31 04:59:52
+ KOKEE    7298       to NYALE13S 0000        8101755507.15  46.32  8101755507.15  24.87    -95.09   5.17    -542.48  25.09  2020/03/31 04:59:52
+ KOKEE    7298       to NYALES20 7331        8102964872.04   4.37  8102964872.04   2.99     -3.61   1.39     -14.54   4.85  2020/03/31 04:59:52
+ KOKEE    7298       to ONSALA60 7213        9792550929.16   4.89  9792550929.16   3.72    -10.18   1.48       9.40   4.41  2020/03/31 04:59:52
+ KOKEE    7298       to SVETLOE  7380        9561114774.89   7.44  9561114774.89   4.49     -9.66   1.71      31.41   5.20  2020/03/31 04:59:52
+ KOKEE    7298       to WETTZELL 7224       10357448504.56   4.55 10357448504.56   3.78    -10.96   1.48      -9.75   4.19  2020/03/31 04:59:52
+ KOKEE    7298       to YEBES40M 7386       10687951245.35   6.95 10687951245.35   4.85    -10.32   2.01       2.12   4.52  2020/03/31 04:59:52
+ MATERA   7243       to NYALE13S 0000        4191767220.76  46.29  4191767220.76   9.64     52.18   5.07     302.82  33.62  2020/03/31 04:59:52
+ MATERA   7243       to NYALES20 7331        4190331390.00   4.37  4190331390.00   0.92     -7.83   0.78     -11.60   2.83  2020/03/31 04:59:52
+ MATERA   7243       to ONSALA60 7213        1886809197.89   4.38  1886809197.89   0.68     -2.09   0.75      15.71   2.75  2020/03/31 04:59:52
+ MATERA   7243       to SVETLOE  7380        2373640004.31   7.19  2373640004.31   1.44      0.31   1.17      52.45   4.49  2020/03/31 04:59:52
+ MATERA   7243       to WETTZELL 7224         990053269.32   3.86   990053269.32   0.59     -0.73   0.66      -5.39   2.40  2020/03/31 04:59:52
+ MATERA   7243       to YEBES40M 7386        1667396086.85   6.62  1667396086.85   1.13      0.17   1.09      12.03   4.29  2020/03/31 04:59:52
+ NYALE13S 0000       to NYALES20 7331           1539204.28  46.22     1539204.27   6.83    144.15   5.04     -11.17  34.28  2020/03/31 04:59:52
+ NYALE13S 0000       to ONSALA60 7213        2388968859.96  46.27  2388968859.96   6.34    -35.82   5.12    -163.08  34.38  2020/03/31 04:59:52
+ NYALE13S 0000       to SVETLOE  7380        2134576508.03  46.62  2134576508.03   5.76    369.33   5.24     -96.32  34.68  2020/03/31 04:59:52
+ NYALE13S 0000       to WETTZELL 7224        3284457470.38  46.22  3284457470.38   7.80    -16.73   5.10    -246.98  34.05  2020/03/31 04:59:52
+ NYALE13S 0000       to YEBES40M 7386        4247635753.20  46.50  4247635753.20  10.45   -305.87   5.50    -277.19  33.46  2020/03/31 04:59:52
+ NYALES20 7331       to ONSALA60 7213        2387493174.32   4.16  2387493174.32   0.82     -6.91   0.76      29.66   2.78  2020/03/31 04:59:52
+ NYALES20 7331       to SVETLOE  7380        2133123022.85   6.94  2133123022.85   1.27     -5.45   1.28      65.30   4.46  2020/03/31 04:59:52
+ NYALES20 7331       to WETTZELL 7224        3283002138.87   3.72  3283002138.87   0.74     -6.75   0.71       6.51   2.51  2020/03/31 04:59:52
+ NYALES20 7331       to YEBES40M 7386        4246386222.03   6.40  4246386222.03   1.29     -3.96   1.14      23.82   4.26  2020/03/31 04:59:52
+ ONSALA60 7213       to SVETLOE  7380        1079812950.91   7.06  1079812950.91   1.37     -1.94   1.06      36.74   4.48  2020/03/31 04:59:52
+ ONSALA60 7213       to WETTZELL 7224         919660971.48   3.73   919660971.48   0.58     -0.30   0.68     -21.79   2.38  2020/03/31 04:59:52
+ ONSALA60 7213       to YEBES40M 7386        2153453472.69   6.49  2153453472.69   1.14      5.50   0.96      -3.79   4.28  2020/03/31 04:59:52
+ SVETLOE  7380       to WETTZELL 7224        1654774836.73   6.87  1654774836.73   1.37      2.75   1.06     -58.61   4.34  2020/03/31 04:59:52
+ SVETLOE  7380       to YEBES40M 7386        3129608307.98   8.65  3129608307.98   1.89      4.58   1.26     -39.87   5.53  2020/03/31 04:59:52
+ WETTZELL 7224       to YEBES40M 7386        1575458185.45   6.13  1575458185.45   1.15      0.77   0.83      17.44   4.05  2020/03/31 04:59:52
+--
+Note: a posteriori baseline vectors are expressed in a baseline-centric reference frames. The first basis vector of the
+frame, l, is in direction of a priori baseline, (r_2 - r_1). Direction of the second vector, h, is defined by a cross
+product of a priori baseline vector and a priori geocentric vector of the 2nd station. The last basis vector, v, is
+perpendicular to the vectors l and h and is radially inward at the center of the baseline. For the short baselines, the
+vectors l and h are close to the horizontal plane and v is almost vertical (with opposite sign). In the table above the
+columns are:
+ * Vector mag:  length of the a posteriori baseline;
+ * Length:      l-component of the baseline;
+ * Horizontal:  h-component of the baseline;
+ * Vertical:    v-component of the baseline;
+ * c-sigma:     calculated (using standard deviations of adjusted station coordinates of baselines) standard deviations
+                of the corresponding values.
+

@@ -8,6 +8,9 @@ import SEFD_estimator
 import scipy.optimize
 from astropy.table import vstack
 import sys
+import csv
+
+dirname = os.path.dirname(__file__)
 
 def extractRelevantSections(all_corr_sections):
     relevant_tags = ['STATION', 'DROP', 'MANUAL', 'SNR']
@@ -136,9 +139,9 @@ def basnumArray(snr_data, antennas_corr_reference, SEFD_tags):
     return basnum
 
 def main(exp_id, db_name):
-    if os.path.isfile(os.getcwd()+"/corr_files/"+ exp_id + '.corr'):
+    if os.path.isfile(dirname+"/corr_files/"+ exp_id + '.corr'):
         print("Beginning corr and skd file ingest for experiment " + exp_id + ".")
-        with open(os.getcwd()+'/corr_files/'+ str(exp_id) + '.corr') as file:
+        with open(dirname+'/corr_files/'+ str(exp_id) + '.corr') as file:
             contents = file.read()
             corr_section = contents.split('\n+')
             if len(corr_section) < 3: # another ad-hoc addition for if corr-reports have a space before ever line in them (e.g. aov032)
@@ -147,12 +150,17 @@ def main(exp_id, db_name):
         if len(relevant_section) < 4:
             return print("Incompatible correlator report format.")
         station_id = ["Ke", "Yg", "Hb", "Ho"]
+        # check which stations participated in experiment (needed for cases where we cant calculate SEFD)
+        valid_stations = []
+        for j in range(0, len(station_id)):
+            if station_id[j] + "/" in relevant_section[0]:
+                valid_stations.append(station_id[j])
         # Extract manual pcal and dropped channels for all telescopes first
         dropped_channels = droppedChannels(relevant_section[1])
         manual_pcal = manualPcal(relevant_section[2])
         # Now to extract what we need to calculate the SEFDs
-        if os.path.isfile(os.getcwd()+'/skd_files/' + str(exp_id) + '.skd'):
-            with open(os.getcwd()+'/skd_files/' + str(exp_id) + '.skd') as file:
+        if os.path.isfile(dirname+'/skd_files/' + str(exp_id) + '.skd'):
+            with open(dirname+'/skd_files/' + str(exp_id) + '.skd') as file:
                 skd_contents = file.read()
             antennas_corr_reference = antennaReference_CORR(relevant_section[0])
             if len(antennas_corr_reference) == 0:
@@ -161,67 +169,52 @@ def main(exp_id, db_name):
             snr_data, corrtab_X, corrtab_S = sefdTableExtract(relevant_section[3], antennas_corr_reference, antenna_reference)
             if len(snr_data) == 0: # this is if corr file exists, but no SNR table exists.
                 print("No SNR table exists!")
-                for j in range(0, len(station_id)):
-                    sql_station = """
-                        UPDATE {} 
-                        SET Manual_Pcal=%s, Dropped_Chans=%s 
-                        WHERE ExpID=%s
-                    """.format(station_id[j])
-                    data = [manual_pcal[j], dropped_channels[j], str(exp_id)]
-                    conn = mariadb.connect(user='auscope', passwd='password', db=str(db_name))
-                    cursor = conn.cursor()
-                    cursor.execute(sql_station, data)
-                    conn.commit()
-                    conn.close()
+                SEFD_tags = np.array(valid_stations)
+                X = [None, None, None, None]
+                S = [None, None, None, None]
             else:
                 SEFD_tags, SEFD_X, SEFD_S = predictedSEFDextract(skd_contents, antenna_reference)
                 basnum = basnumArray(snr_data, antennas_corr_reference, SEFD_tags)
                 print("Calculating SEFD values for experiment " + exp_id + ".")
                 X = SEFD_estimator.main(SEFD_X, corrtab_X, basnum)
                 S = SEFD_estimator.main(SEFD_S, corrtab_S, basnum)
-                for i in range(0, len(station_id)):
-                    if len(X) == 1 or len(S) == 1: # For the case where there are less than 3 stations with valid data
-                        print("Less than 3 stations, adding only manual pcal and dropped channel data.")
-                        sql_station = """
-                            UPDATE {} 
-                            SET Manual_Pcal=%s, Dropped_Chans=%s 
-                            WHERE ExpID=%s
-                        """.format(station_id[i])
-                        data = [manual_pcal[i], dropped_channels[i], str(exp_id)]
-                        conn = mariadb.connect(user='auscope', passwd='password', db=str(db_name))
-                        cursor = conn.cursor()
-                        cursor.execute(sql_station, data)
-                        conn.commit()
-                        conn.close()
-                    elif station_id[i] in SEFD_tags:
-                        sql_station = """
-                            UPDATE {}
-                            SET estSEFD_X=%s, estSEFD_S=%s, Manual_Pcal=%s, Dropped_Chans=%s
-                            WHERE ExpID=%s
-                        """.format(station_id[i])
-                        data = [round(X[list(SEFD_tags).index(station_id[i])],2), round(S[list(SEFD_tags).index(station_id[i])],2), manual_pcal[i], dropped_channels[i], str(exp_id)]
-                        conn = mariadb.connect(user='auscope', passwd='password', db=str(db_name))
-                        cursor = conn.cursor()
-                        cursor.execute(sql_station, data)
-                        conn.commit()
-                        conn.close()                    
-        else: ### this sql command is for if no SKD file is present and hence no calculation is possible.
-            print("No SKD file is available!")
-            for j in range(0, len(station_id)):
-                sql_station = """
-                    UPDATE {} 
-                    SET Manual_Pcal=%s, Dropped_Chans=%s 
-                    WHERE ExpID=%s
-                """.format(station_id[j])
-                data = [manual_pcal[j], dropped_channels[j], str(exp_id)]
-                conn = mariadb.connect(user='auscope', passwd='password', db=str(db_name))
-                cursor = conn.cursor()
-                cursor.execute(sql_station, data)
-                conn.commit()
-                conn.close()
+                if len(X) == 1 or len(S) == 1: # for the rare case when less than 3 stations are in the experiment with valid data.
+                    SEFD_tags = np.array(valid_stations)
+                    X = [None, None, None, None]
+                    S = [None, None, None, None]
+                else:
+                    X = [round(num, 1) for num in X]
+                    S = [round(num, 1) for num in S]
+        else:
+            print("No SKD file available")
+            SEFD_tags = np.array(valid_stations)
+            X = [None, None, None, None]
+            S = [None, None, None, None]
         
-
-    
+        # fix for when station is in corr notes, but does not observe. 
+        # Below code creates list of station codes that exist in the valid station.
+        stations_to_add = list(set(SEFD_tags).intersection(valid_stations))
+                
+        # add to database
+        for i in range(0,len(stations_to_add)):
+            sql_station = """
+                UPDATE {}
+                SET estSEFD_X=%s, estSEFD_S=%s, Manual_Pcal=%s, Dropped_Chans=%s
+                WHERE ExpID=%s
+            """.format(stations_to_add[i])
+            data = [X[list(SEFD_tags).index(stations_to_add[i])], S[list(SEFD_tags).index(stations_to_add[i])], manual_pcal[i], dropped_channels[i], str(exp_id)]
+            conn = mariadb.connect(user='auscope', passwd='password', db=str(db_name))
+            cursor = conn.cursor()
+            cursor.execute(sql_station, data)
+            conn.commit()
+            conn.close()
+            with open(dirname + '/' + stations_to_add[i] + '_corr_reports.csv','a') as f:
+                with open(dirname + '/' + stations_to_add[i] + '_corr_reports.csv','r') as f_read:
+                    if str(exp_id) in f_read.read():
+                        break
+                    else:                                   
+                        station_writer = csv.writer(f, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+                        station_writer.writerow(data)            
 
 if __name__ == '__main__':
     # analysis_downloader.py executed as a script

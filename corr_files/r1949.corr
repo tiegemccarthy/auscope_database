@@ -1,0 +1,440 @@
+
+TIMETAG 2020/06/19 08:55:39 UTC
+MK3DB_VERSION 1
++HEADER 
+CORREL   BONN 
+DATABASE 20JUN02XA 
+SESSNAME R1949 
+OBSTIME  2020/06/02 2020/06/03 
+UTSTART  1700 
+DURATION 24 
+DOY      154-155 
+CORRTIME 2020/06/17 
+CORRPASS 1
+EXPORT   DONE 
+ 
++SUMMARY 
+ Qcode      % of Total   % of Correlated 
+                scans          scans     
+ 
+  5-9             6%             - 
+   0              -              - 
+ 1-4,A-H,N       94%             - 
+ Removed          -              - 
+
++CORRELATOR_NOTES
+
+Please download the vgosDB at your earliest convenience:
+ftp://ftp.mpifr-bonn.mpg.de/geoarchive/database/20JUN02XA.tgz.
+
+Correlated using zoomband due to Ns recordings, hence
+10 upper sidebands in X-band instead of 8 upper and 2 lower.
+
+Applied notch filters on baseline Ns-Ny to avoid correlation of
+pcal tones.
+
+Ns recorded each thread into separate file (i.e. one file for S-band
+and one for X-band). Hence, I had to use d2.6.0 to convert data into
+Mark4 format because multi-datastream pcal can only be handled in
+dtrunk and d2.6.0.
+
++STATION_NOTES
+
+ FORTLEZA (Ft/b): Antenna stuck (20:31-20:36).
+                  No/low fringe amplitude in channel SR4U; channel
+                  flagged for fringe fitting.
+                  A few non-detections in both bands.
+
+ HART15M  (Ht/q): Some non-detections in both bands.
+
+ ISHIOKA  (Is/Q): RFI in S-band.
+                  Some non-detections particularly in X-band.
+
+ KOKEE    (Kk/K): Late arrival of data - due to technical problems
+                  the module got stuck in customs.
+                  RFI(?) in S-band.
+                  Some non-detections particularly in X-band.
+
+ NYALES20 (Ny/N): Observed with warm receiver.
+                  A few non-detections in both bands.
+
+ NYALE13S (Ns/L): Tagged along.
+
+ SEJONG   (Kv/j): No signal in channels SR4U, SR5U and SR6U;
+                  channels flagged for fringe fitting.
+                  Applied manual pcal.
+                  Several non-detections in S-band.
+
+ YARRA12M (Yg/i): Numerous non-detections, particularly in S-band.
+
++DROP_CHANNELS
+ Ft SR4U   
+ Ht 
+ Is 
+ Kk 
+ Ny 
+ Ns 
+ Kv SR4U SR5U SR6U   
+ Yg 
+
++MANUAL_PCAL Kv 
+
++CHANNELS
+ Channels: XR1U = band|polarization|channel#|sideband
+
+XR1U/L  BBC01 8212.99 
+XR2U    BBC02 8252.99 
+XR3U    BBC03 8352.99 
+XR4U    BBC04 8512.99 
+XR5U    BBC05 8732.99 
+XR6U    BBC06 8852.99 
+XR7U    BBC07 8892.99 
+XR8U/L  BBC08 8932.99 
+SR1U    BBC09 2225.99 
+SR2U    BBC10 2245.99 
+SR3U    BBC11 2265.99 
+SR4U    BBC12 2295.99 
+SR5U    BBC13 2345.99 
+SR6U    BBC14 2365.99 
+
++CLOCKS
+
+Clocks: Bonn
+
+ Station     fmout-gps      Used      rate     Comments
+              [usec]       [usec]   [sec/sec]
+  Ft            0.29         0.52    0.119E-12 
+  Ht            2.32         5.26    0.037E-12  reference 
+  Is            0.31         0.54   -0.022E-12 
+  Kk            9.64        10.16   -0.242E-12 
+  Ny         -158.36      -156.08    5.324E-13 
+  Kv            0.00       -34.06            0 
+  Yg            7.58         9.83    1.258E-12 
+
+Date:    2020/06/02  17:00:00
+
++QCODES
+
+Qcod  0 1 2 3 4 5  6  7   8    9 A B C D E F  G H  N -  Tot 
+---------------------------------------------------------------
+bq:X 11 0 0 0 0 0  0  1  19  195 0 0 0 0 0 0  2 0  0 0  228 
+bq:S 19 0 0 0 0 0  0  1   3  205 0 0 0 0 0 0  0 0  0 0  228 
+bQ:X  9 0 0 0 0 0  0  0   1   13 0 0 0 0 0 0  0 0  0 0   23 
+bQ:S  0 0 0 0 0 0  0  0   0   23 0 0 0 0 0 0  0 0  0 0   23 
+bK:X 10 0 0 0 0 0  0  0   6   31 0 0 0 0 0 0  0 0  0 0   47 
+bK:S  4 0 0 0 0 0  0  0   1   42 0 0 0 0 0 0  0 0  0 0   47 
+bN:X  9 0 0 0 0 0  0  2  10   69 0 0 0 0 0 0  0 0  0 0   90 
+bN:S  2 0 0 0 0 0  0  0   3   85 0 0 0 0 0 0  0 0  0 0   90 
+bj:X  0 0 0 0 0 0  0  0   1    2 0 0 0 0 0 0  0 0  0 0    3 
+bj:S  1 0 0 0 0 0  0  0   0    2 0 0 0 0 0 0  0 0  0 0    3 
+bi:X  4 0 0 0 0 0  0  0   0    7 0 0 0 0 0 0  1 0  0 0   12 
+bi:S  8 0 0 0 0 0  0  0   0    4 0 0 0 0 0 0  0 0  0 0   12 
+bw:X  2 0 0 0 0 0  1  0   2   27 0 0 0 0 0 0  2 0  0 0   34 
+bw:S  1 0 0 0 0 0  0  0   3   30 0 0 0 0 0 0  0 0  0 0   34 
+qQ:X 16 0 0 0 0 0  0  0   1   90 0 0 0 0 0 0  0 0  0 0  107 
+qQ:S 12 0 0 0 0 0  0  0   0   95 0 0 0 0 0 0  0 0  0 0  107 
+qK:X  0 0 0 0 0 0  0  0   0    0 0 0 0 0 0 0  0 0  0 0    0 
+qK:S  0 0 0 0 0 0  0  0   0    0 0 0 0 0 0 0  0 0  0 0    0 
+qN:X  3 0 0 0 0 0  0  0   0  109 0 0 0 0 0 0  0 0  0 0  112 
+qN:S  7 0 0 0 0 0  0  0   2  103 0 0 0 0 0 0  0 0  0 0  112 
+qj:X  9 0 0 0 0 0  0  1   3   83 0 0 0 0 0 0  0 0  0 0   96 
+qj:S 36 0 0 0 0 0  0  0   2   58 0 0 0 0 0 0  0 0  0 0   96 
+qi:X 14 0 0 0 0 0  0  0   4  206 0 0 0 0 0 0  0 0  0 0  224 
+qi:S 33 0 0 0 0 0  0  0   0  191 0 0 0 0 0 0  0 0  0 0  224 
+qw:X  1 0 0 0 0 0  0  0   0   32 0 0 0 0 0 0  0 0  0 0   33 
+qw:S  2 0 0 0 0 0  0  0   1   30 0 0 0 0 0 0  0 0  0 0   33 
+QK:X  9 0 0 0 0 0  0  1  14  300 0 0 0 0 0 0  0 0  1 0  325 
+QK:S  3 0 0 0 0 0  0  2  23  296 0 0 0 0 0 0  0 0  1 0  325 
+QN:X  8 0 0 0 0 0  0  2   9  297 0 0 0 0 0 0  0 0  1 0  317 
+QN:S  0 0 0 0 0 0  0  0   9  306 0 0 0 0 0 0  1 0  1 0  317 
+Qj:X  2 0 0 0 0 4  6 21  79  289 0 0 0 0 0 0  0 0  1 0  402 
+Qj:S 27 0 0 0 0 0  0  0  19  355 0 0 0 0 0 0  0 0  1 0  402 
+Qi:X  1 0 0 0 0 0  2  4   8  170 0 0 0 0 0 0  0 0  0 0  185 
+Qi:S 23 0 0 0 0 0  0  0   0  162 0 0 0 0 0 0  0 0  0 0  185 
+Qw:X  1 0 0 0 0 0  0  0   5  124 0 0 0 0 0 0  0 0  0 0  130 
+Qw:S  0 0 0 0 0 0  0  0   1  129 0 0 0 0 0 0  0 0  0 0  130 
+KN:X 15 0 0 0 0 0  0  0   4  226 0 0 0 0 0 0  0 0  1 0  246 
+KN:S  0 0 0 0 0 1  0  1  27  216 0 0 0 0 0 0  0 0  1 0  246 
+Kj:X  4 0 0 0 0 1  1 10  38  215 0 0 0 0 0 0  0 0  1 0  270 
+Kj:S 19 0 0 0 0 0  0  1  13  236 0 0 0 0 0 0  0 0  1 0  270 
+Ki:X 19 0 0 0 0 0  0  1   5  113 0 0 0 0 0 0  0 0  0 0  138 
+Ki:S 25 0 0 0 0 0  0  1   1  111 0 0 0 0 0 0  0 0  0 0  138 
+Kw:X  1 0 0 0 0 0  0  0   0  102 0 0 0 0 0 0  0 0  0 0  103 
+Kw:S  0 0 0 0 0 0  0  0  17   86 0 0 0 0 0 0  0 0  0 0  103 
+Nj:X  1 0 0 0 0 0  1  2  17  244 0 0 0 0 0 0  0 0  1 0  266 
+Nj:S  4 0 0 0 0 0  0  0   8  253 0 0 0 0 0 0  0 0  1 0  266 
+Ni:X  1 0 0 0 0 0  0  1   4   71 0 0 0 0 0 0  0 0  0 0   77 
+Ni:S 10 0 0 0 0 0  0  1   0   66 0 0 0 0 0 0  0 0  0 0   77 
+Nw:X  2 0 0 0 0 0  0  0   3  148 0 0 0 0 0 0  0 0  0 0  153 
+Nw:S  0 0 0 0 0 0  0  4  73   69 0 0 0 0 0 0  7 0  0 0  153 
+ji:X  2 0 0 0 0 0  1 12  31  139 0 0 0 0 0 0  0 0  0 0  185 
+ji:S100 0 0 0 0 0  0  0   3   82 0 0 0 0 0 0  0 0  0 0  185 
+jw:X  1 0 0 0 0 0  0  1  12  103 0 0 0 0 0 0  0 0  0 0  117 
+jw:S  0 0 0 0 0 0  0  0   4  113 0 0 0 0 0 0  0 0  0 0  117 
+iw:X  0 0 0 0 0 0  1  0   3   51 0 0 0 0 0 0  0 0  0 0   55 
+iw:S  9 0 0 0 0 0  0  0   0   46 0 0 0 0 0 0  0 0  0 0   55 
+---------------------------------------------------------------
+Tot 500 0 0 0 0 6 13 70 492 6850 0 0 0 0 0 0 13 0 12 0 7956 
+
+ Legend:
+ QC = 0   Fringes not detected.
+    = 1-9 Fringes detected, no error condition. Higher #, better quality.
+    = B   Interpolation error in fourfit.
+    = D   No data in one or more frequency channels.
+    = E   Maximum fringe amplitude at edge of SBD, MBD, or rate window.
+    = F   Fork problem in processing.
+    = G   Fringe amp in a channel is <.5 times mean amp (only if SNR>20).
+    = H   Low Phase-cal amplitude in one or more channels.
+    = N   No valid correlator data.
+  Minus   Scans in original schedule file for which correlation was not
+          attempted, usually because of known station problems.
+  Tot     Total number of scans in schedule.
+
++SNR_RATIOS
+
+MEAN RATIOS = Observed SNR / Predicted SNR  for exp no. 4943
+
+ ...by baseline, over all sources:
+
+ bl     X     n       S     n
+
+ bq    0.78  217     0.87  206
+ bQ    0.42   14     0.82   23
+ bK    0.77   37     1.08   43
+ bN    0.62   81     0.83   88
+ bw    0.73   32     0.91   33
+ bj    0.71    3     0.68    2
+ bi    0.62    8     0.65    4
+ qQ    0.59   91     0.67   95
+ qK    0.00    0     0.00    0
+ qN    0.45  109     0.73  105
+ qw    0.69   32     0.75   31
+ qj    1.03   87     0.54   59
+ qi    0.81  210     0.70  188
+ QK    0.64  315     0.74  321
+ QN    0.43  308     0.77  316
+ Qw    0.74  129     0.94  130
+ Qj    1.49  399     0.61  374
+ Qi    0.80  184     0.57  161
+ KN    0.37  230     0.74  245
+ Kw    0.69  102     0.94  103
+ Kj    1.44  265     0.71  250
+ Ki    0.80  119     0.59  111
+ Nw    0.42  151     0.92  153
+ Nj    0.82  264     0.57  259
+ Ni    0.73   76     0.59   67
+ wj    1.55  116     0.77  117
+ wi    0.90   55     0.70   46
+ ji    1.46  183     0.53   78
+
+
++FOURFIT_CONTROL_FILE
+
+*R1 control file
+
+    pc_mode multitone 
+    pc_period 5
+
+   sb_win -2.0 2.0 mb_win -2.0 2.0 dr_win -30.e-5 30.e-5
+
+  if f_group X
+	ref_freq 8212.99
+
+  if station Q and f_group X
+    ref_freq 8212.99
+    pc_tonemask ghijklmnop 254 251 251 251 251 251 251 251 254 251 
+
+  if station w and f_group X
+    ref_freq 8212.99
+    pc_tonemask ghijklmnop 223 251 251 251 251 251 251 251 223 251 
+*    pc_tonemask ghijklmnop 223 123 123 123 123 123 123 123 223 123 
+
+  if f_group S
+	ref_freq 2225.99
+
+  if station Q and f_group S
+    ref_freq 2225.99
+    pc_tonemask abcdef 239 239 239 239 239 239
+
+  if station w and f_group S
+    ref_freq 2225.99
+    pc_tonemask abcdef 239 239 239 239 239 239 
+
+
+***
+
+if station b and f_group S
+pc_amp_hcode 0.001
+
+if station Q or station i and f_group X
+pc_amp_hcode 0.001
+
+
+if station b and f_group S
+weak_channel 0.1
+
+if station K and f_group S
+weak_channel 0.1
+
+if station Q and f_group X
+weak_channel 0.1
+
+if station j and f_group X
+weak_channel 0.1
+
+if station K and f_group X
+weak_channel 0.1
+
+
+if station b and f_group S
+freqs a b c e f
+
+if station j and f_group S
+freqs a b c
+
+*if station w and f_group X
+*freqs  h i j k l m n p 
+
+*ref Is/Q
+
+if station j and f_group S
+pc_mode manual
+pc_phases abcdef -122.2  19.8 124.7
+if station j and f_group X
+pc_mode manual
+pc_phases ghijklmnop 4.2   -50.6  -172.9   -28.5  -239.7    -9.6  -165.2  -185.3  -347.5  -130.9
+
+if station q and f_group S
+pc_phases abcdef  -8.7    -0.5  11.0   2.2   2.3    -6.6
+if station q and f_group X
+pc_phases ghijklmnop 19.3   0.2   4.1   -19.5    -3.9    -0.8    -0.4    -9.9  16.3   2.5
+
+if station K and f_group S
+pc_phases abcdef -0.8   -4.4    6.6    0.4   -5.9    2.3
+if station K and f_group X
+pc_phases ghijklmnop 27.4    3.7    5.7  -12.2  -19.5   -9.1   -1.7    0.4   20.8    3.0
+
+if station w and f_group S
+pc_phases abcdef -1.1   -2.1    9.2  -12.0   11.4   -5.2
+if station w and f_group X
+pc_phases ghijklmnop -11.2    2.1    2.6   -1.4    2.9   10.2    8.0   -5.6  -16.9    5.3
+
+if station N and f_group S
+pc_phases abcdef 10.5   -0.8   -5.5  -13.2    3.4    5.6
+if station N and f_group X
+pc_phases ghijklmnop 23.8   -0.4   -2.1   -7.3  -13.0   -2.3   -4.8   -5.9   18.0    4.3
+
+if station i and f_group S
+pc_phases abcdef 2.5  -10.8    0.3   14.9   -1.6   -2.8
+if station i and f_group X
+pc_phases ghijklmnop 21.3    0.6    7.6  -13.0  -15.8   -5.2   -7.0   -8.8   20.8   11.5
+
+*ref Ht/q
+
+if station b and f_group S
+pc_phases abcef -1.9    -0.1   2.9   0.8    -1.6 
+if station b and f_group X
+pc_phases ghijklmnop 13.4   0.7    -0.6    -7.9   -11.7   2.0    -5.4    -3.6  12.8   4.9
+
+if station w and f_group X
+ notches
+*g f=8212.99
+ 8204.74 8205.14
+*h f=8212.99
+ 8212.94 8213.14
+*i f=8252.99
+ 8252.94 8253.14
+*j f=8352.99
+ 8352.94 8353.14
+*k f=8512.99
+ 8512.94 8513.14
+*l f=8732.99
+ 8732.94 8733.14
+*m f=8852.99
+ 8852.94 8853.14
+*n f=8892.99
+ 8892.94 8893.14
+*o f=8932.99
+ 8924.94 8925.14
+*p f=8932.99
+ 8932.94 8933.14
+
+if station w and f_group S
+ notches
+* d f=2295.99
+ 2295.94 2296.04
+* f f=2365.99
+ 2365.94 2366.04
+
+
+if baseline wN and f_group X
+ notches
+*g f=8212.99
+ 8204.94 8205.14
+ 8209.74 8210.24
+*h f=8212.99
+ 8212.94 8213.14
+ 8214.74 8215.24
+ 8219.74 8220.24
+*i f=8252.99
+ 8252.94 8253.14
+ 8254.74 8255.24
+ 8259.74 8260.24
+*j f=8352.99
+ 8352.94 8353.14
+ 8354.74 8355.24
+ 8359.74 8360.24
+*k f=8512.99
+ 8512.94 8513.14
+ 8514.74 8515.24
+ 8519.74 8520.24
+*l f=8732.99
+ 8732.94 8733.14
+ 8734.74 8735.24
+ 8739.74 8740.24
+*m f=8852.99
+ 8852.94 8853.14
+ 8854.74 8855.24
+ 8857.84 8858.14
+ 8859.74 8860.24
+*n f=8892.99
+ 8892.94 8893.14
+ 8894.74 8895.24
+ 8899.74 8900.24
+*o f=8932.99
+ 8924.94 8925.14
+ 8929.74 8930.24
+*p f=8932.99
+ 8932.94 8933.14
+ 8934.74 8935.24
+ 8939.74 8940.24
+
+if baseline wN and f_group S
+ notches
+* a f=2225.99
+ 2226.74 2228.24
+ 2228.74 2229.24
+ 2229.74 2230.24
+ 2230.74 2231.24
+ 2231.74 2232.24
+* b f=2245.99
+ 2249.74 2250.24
+* c f=2265.99
+ 2265.74 2266.14
+ 2268.84 2269.14
+ 2269.74 2270.24
+ 2270.84 2271.14
+ 2271.84 2272.14
+* d f=2295.99
+ 2295.94 2296.09
+ 2299.74 2300.24
+* e f=2345.99
+ 2349.74 2350.24
+* f f=2365.99
+ 2365.94 2366.09
+ 2369.74 2370.24
+
+Regards,
+ Simone 
+
++END

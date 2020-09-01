@@ -6,6 +6,9 @@ from astropy.time import Time
 import MySQLdb as mariadb
 import sys
 import os
+import csv
+
+dirname = os.path.dirname(__file__)
 
 # This script can be used standalone to add database entries for a given experiment code. First argument should be the experiment code (in lower case) and second database name.
 # Eventually, this script will be implemented as part of a system that constantly updates an SQL database for new experiments. This section is mostly complete now, though I am sure some bits can be made much cleaner.
@@ -89,8 +92,8 @@ def delayRMS(text_section): # This function pulls the w.rms delay from the spool
 
 def main(exp_code, db_name):
     print("Beginning analysis report and spoolfile ingest for experiment " + exp_code + ".")
-    file_report = 'analysis_reports/' + str(exp_code) + '_report.txt'
-    file_spool = 'analysis_reports/' + str(exp_code) + '_spoolfile.txt'
+    file_report = dirname + '/analysis_reports/' + str(exp_code) + '_report.txt'
+    file_spool = dirname + '/analysis_reports/' + str(exp_code) + '_spoolfile.txt'
     sql_command = []
     station_id = ["Ke", "Yg", "Hb", "Ho"]
     
@@ -100,35 +103,37 @@ def main(exp_code, db_name):
     meta = metaData(sections[0])
     performance = stationPerformance(sections[2])
     problems = problemFinder(sections[0])
-    
-    if os.path.isfile(os.getcwd()+'/' + file_spool): 
+    # check if a spoolfile exists and extract data if so.
+    if os.path.isfile(file_spool): 
         with open(file_spool) as file:
             contents_spool = file.read()
         position = stationPositions(contents_spool)
         delays = delayRMS(contents_spool)
-        for i in range(0, len(performance)):
-            if performance[i] == None:
-                continue
-            else:
-                sql_station = "INSERT IGNORE INTO {} (ExpID, Performance, Date, Date_MJD, Pos_X, Pos_Y, Pos_Z, Pos_U, Pos_E, Pos_N, W_RMS_del, Problem, Problem_String, Analyser, vgosDB_tag) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s);".format(station_id[i])
-                data = [meta[0].lower(), performance[i], meta[2], meta[3], position[i][0], position[i][1], position[i][2], position[i][3], position[i][4], position[i][5], delays[i], problems[0][i], problems[1][i], meta[1], meta[4]]
-                conn = mariadb.connect(user='auscope', passwd='password', db=str(db_name))
-                cursor = conn.cursor()
-                cursor.execute(sql_station, data)
-                conn.commit()
-                conn.close()
-    else:
-        for i in range(0, len(performance)):
-            if performance[i] == None:
-                continue
-            else:
-                sql_station = "INSERT IGNORE INTO {} (ExpID, Performance, Date, Date_MJD, Problem, Problem_String, Analyser, vgosDB_tag) VALUES (%s, %s, %s, %s, %s, %s, %s, %s);".format(station_id[i])
-                data = [meta[0], performance[i], meta[2], meta[3], problems[0][i], problems[1][i], meta[1], meta[3]]
-                conn = mariadb.connect(user='auscope', passwd='password', db=str(db_name))
-                cursor = conn.cursor()
-                cursor.execute(sql_station, data)
-                conn.commit()
-                conn.close()
+    else: # fill with dummy data needed for CSV file
+        position = [['', '', '', '', '', ''],
+                    ['', '', '', '', '', ''],
+                    ['', '', '', '', '', ''],
+                    ['', '', '', '', '', '']]
+        delays = ['', '', '', '']
+    # Now time to push extracted data to database   
+    for i in range(0, len(performance)):
+        if performance[i] == None:
+            continue
+        else:
+            sql_station = "INSERT IGNORE INTO {} (ExpID, Performance, Date, Date_MJD, Pos_X, Pos_Y, Pos_Z, Pos_U, Pos_E, Pos_N, W_RMS_del, Problem, Problem_String, Analyser, vgosDB_tag) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s);".format(station_id[i])
+            data = [meta[0].lower(), performance[i], meta[2], meta[3], position[i][0], position[i][1], position[i][2], position[i][3], position[i][4], position[i][5], delays[i], problems[0][i], problems[1][i], meta[1], meta[4]]
+            conn = mariadb.connect(user='auscope', passwd='password', db=str(db_name))
+            cursor = conn.cursor()
+            cursor.execute(sql_station, data)
+            conn.commit()
+            conn.close()
+            with open(dirname + '/' + station_id[i] + '_analysis_reports.csv','a') as f:
+                with open(dirname + '/' + station_id[i] + '_analysis_reports.csv','r') as f_read:
+                    if meta[0].lower() in f_read.read():
+                        break
+                    else:
+            	        station_writer = csv.writer(f, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+            	        station_writer.writerow(data)                        
 
 if __name__ == '__main__':
     # analysis_downloader.py executed as a script

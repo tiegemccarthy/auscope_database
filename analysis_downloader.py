@@ -35,7 +35,7 @@ def validExpFinder(master_schedule):
     valid_experiment = []
     for line in schedule_contents:
         line = line.split('|')
-        if len(line) > 13:
+        if len(line) > 13 and '1.0' in line[11]:
             regex = '(?<!-)Ke|(?<!-)Yg|(?<!-)Hb|(?<!-)Ho'
             participated = re.findall(regex,line[7],re.MULTILINE)
             if len(participated) > 0:

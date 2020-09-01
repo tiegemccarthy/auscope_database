@@ -1,1 +1,1 @@
-Relevant files to generate the first version of the AuScope datanabase. These files contain significant dark magic in order to get 10 years worth of IVS report files (.corr, .skd, spool and analysis reports) to all play nice. Mind the nightmare spaghetti.
+Relevant files to generate the first version of the AuScope dataabase. These files contain significant dark magic in order to get 10 years worth of IVS report files (.corr, .skd, spool and analysis reports) to all play nice. Mind the nightmare spaghetti.

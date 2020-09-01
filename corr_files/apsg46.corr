@@ -1,0 +1,266 @@
+
+TIMETAG 2020/05/14 02:21:51 UTC
+MK3DB_VERSION 0
++HEADER 
+CORREL    SHAO 
+DATABASE  20APR07XA
+SESSNAME  APSG46
+OBSTIME   2020/04/07 2020/04/08
+UTSTART   17:30
+DURATION  24
+DOY       98-99
+CORRTIME  2020/05/06 2020/05/08 
+CORRPASS  1
+EXPORT    DONE 
+ 
++SUMMARY 
+ Qcode      % of Total   % of Correlated 
+                scans          scans     
+ 
+  5-9            76%             - 
+   0             15%             - 
+ 4-1,A-H,N        9%             - 
+ Removed          -              - 
+
++CORRELATOR_NOTES
+
++STATION_NOTES
+ HOBART26(Ho/H): Manual PCAL applied.
+                 Low fringe amplitudes in SR6U causing many G codes,
+		 removed from fringe fitting.
+		 No data (17:30-22:49) (23:08-01:39) (15:11-15:44).
+ ISHIOKA(Is/j) : OK.
+ KOKEE(Kk/K)   : OK.
+ KUNMING(Km/L) : Manual PCAL applied.
+	         Low fringe amplitudes in SR1U causing some G codes,
+		 removed from fringe fitting.
+		 SR2U SR6U XR2U XR3U XR4U XR6U did not receive signal
+		 because of the lock-lose of BBC.
+ KOGANEI(Kg/P) : Many antenna off-source messages.
+ URUMQI(Ur/U)  : OK.
+ YARRA12M(Yg/i): Mk5 rebooted (17:30-17:59).
+
++DROP_CHANNELS
+ Ho  SR6U
+ Is
+ Kk
+ Km  SR1U SR2U SR6U XR2U XR3U XR4U XR6U
+ Kg
+ Ur
+ Yg
+
++MANUAL PCAL  Ho Km
+
++CHANNELS
+ Channels: XR1U = band|polarization|channel#|sideband
+
+XR1U/L  BBC01 8213.00 
+XR2U    BBC02 8245.00 
+XR3U    BBC03 8261.00 
+XR4U    BBC04 8405.00 
+XR5U    BBC05 8437.00 
+XR6U    BBC06 8469.00 
+XR7U    BBC07 8485.00 
+XR8U/L  BBC08 8565.00 
+SR1U    BBC09 2201.00 
+SR2U    BBC10 2233.00 
+SR3U    BBC11 2249.00 
+SR4U    BBC12 2265.00 
+SR5U    BBC13 2281.00 
+SR6U    BBC14 2297.00 
+
++CLOCKS
+
+Clocks: SHAO
+
+ Station     fmout-gps      Used      rate     Comments
+              [usec]       [usec]   [sec/sec]
+  Ho           11.56        13.67    0.780E-12 
+  Is            0.49         0.80    0.011E-12 
+  Kk           10.89        11.37   -0.239E-12 Reference
+  Km           46.60        52.41   -0.980E-12 
+  Kg             -           0.07    0.055E-12 
+  Ur           87.08        87.87    1.682E-12 
+  Yg           17.07        19.33    1.306E-12 
+
+Date:    2020/04/07  17:30:00
+
++QCODES
+
+Qcod   0 1 2  3  4   5   6   7    8    9 A B C D E F G H    N -   Tot 
+-------------------------------------------------------------------------
+Hj:X   6 0 0  0  0   8   5  10   14  144 0 0 0 0 0 0 0 0   85 0   272 
+Hj:S   9 0 0  0  0   1   7   6   55  109 0 0 0 0 0 0 0 0   85 0   272 
+HP:X  26 0 0  0  0   0   4   4   21  117 0 0 0 0 0 0 1 0   83 0   256 
+HP:S 139 0 0  0  0   0   0   1    0   33 0 0 0 0 0 0 0 0   83 0   256 
+HK:X   6 0 0  0  0   4   1   4   15  103 0 0 0 0 0 0 1 0   56 0   190 
+HK:S  10 0 0  0  0   1   8   5   81   29 0 0 0 0 0 0 0 0   56 0   190 
+HL:X  25 0 1  5  8   7   9  41   42   36 0 0 0 0 0 0 1 0   92 0   267 
+HL:S  28 0 1  2  3   5  22  45   42   27 0 0 0 0 0 0 0 0   92 0   267 
+HU:X   5 0 0  0  0  13   4  12    8   89 0 0 0 0 0 0 0 0   73 0   204 
+HU:S   7 0 0  0  0   1   4  12   65   42 0 0 0 0 0 0 0 0   73 0   204 
+Hi:X   6 0 0  0  0   6   5  10    9  130 0 0 0 0 0 0 0 0   91 0   257 
+Hi:S   6 0 0  0  0   0   4   4   58   94 0 0 0 0 0 0 0 0   91 0   257 
+jP:X  16 0 1  0  0   0   0   2   54  336 0 0 0 0 0 0 0 0    0 0   409 
+jP:S 232 0 0  0  0   0   0   1   19  156 0 0 0 0 0 0 1 0    0 0   409 
+jK:X   0 0 0  0  0   0   2   8   28  260 0 0 0 0 0 0 0 0    9 0   307 
+jK:S   0 0 0  0  0   0   0   0   16  282 0 0 0 0 0 0 0 0    9 0   307 
+jL:X  67 0 0  1  7  21  21  34   85  173 0 0 0 0 0 0 0 0    0 0   409 
+jL:S  67 0 0  0  0  10   9   9   14  299 0 0 0 0 0 0 0 1    0 0   409 
+jU:X   0 0 0  0  0   0   0   0    3  348 0 0 0 0 0 0 0 0    0 0   351 
+jU:S   0 0 0  0  0   0   0   3   75  272 0 0 0 0 0 0 1 0    0 0   351 
+ji:X   0 0 0  0  0   0   0   0    5  270 0 0 0 0 0 0 0 0    5 0   280 
+ji:S   2 0 0  0  0   0   0   0   42  230 0 0 0 0 0 0 0 1    5 0   280 
+PK:X   7 0 0  0  0   0   1   1   24  248 0 0 0 0 0 0 0 0    9 0   290 
+PK:S 138 0 0  0  0   0   0   1   12  129 0 0 0 0 0 0 1 0    9 0   290 
+PL:X  77 0 0  0  0   2   6  47  105  147 0 0 0 0 0 0 0 0    0 0   384 
+PL:S 227 0 0  0  0   0   0   1    9  147 0 0 0 0 0 0 0 0    0 0   384 
+PU:X   3 0 0  0  0   0   0   0   99  225 0 0 0 0 0 0 0 0    0 0   327 
+PU:S 157 0 0  0  0   0   0   0   11  159 0 0 0 0 0 0 0 0    0 0   327 
+Pi:X  37 0 0  0  0   0   0   0   14  224 0 0 0 0 0 0 0 0    5 0   280 
+Pi:S 209 0 0  0  0   0   0   0    0   66 0 0 0 0 0 0 0 0    5 0   280 
+KL:X  47 0 0  0  4   9   8  21   70  135 0 0 0 0 0 0 0 0    9 0   303 
+KL:S  48 0 0  0  0   6   7   7   12  214 0 0 0 0 0 0 0 0    9 0   303 
+KU:X   0 0 0  0  0   0   2   8   18  218 0 0 0 0 0 0 0 0    8 0   254 
+KU:S   1 0 0  0  0   0   0   2   11  232 0 0 0 0 0 0 0 0    8 0   254 
+Ki:X   2 0 0  0  0   0   1   4   53  115 0 0 0 0 0 0 0 0   10 0   185 
+Ki:S   2 0 0  0  0   0   0   1    2  170 0 0 0 0 0 0 0 0   10 0   185 
+LU:X  51 0 0  0  6  20  25  11   66  196 0 0 0 0 0 0 0 0    0 0   375 
+LU:S  51 0 0  0  0  14  10   5   11  284 0 0 0 0 0 0 0 0    0 0   375 
+Li:X  36 0 0  2  5   8  20  48   57   83 0 0 0 0 0 0 0 0    4 0   263 
+Li:S  36 0 0  0  0   5   0   5   11  202 0 0 0 0 0 0 0 0    4 0   263 
+Ui:X   0 0 0  0  0   0   0   0   21  186 0 0 0 0 0 0 0 0    4 0   211 
+Ui:S   0 0 0  0  0   0   0   1    6  200 0 0 0 0 0 0 0 0    4 0   211 
+-------------------------------------------------------------------------
+Tot 1786 0 3 10 33 141 185 374 1363 7159 0 0 0 0 0 0 6 2 1086 0 12148 
+
+ Legend:
+ QC = 0   Fringes not detected.
+    = 1-9 Fringes detected, no error condition. Higher #, better quality.
+    = B   Interpolation error in fourfit.
+    = D   No vlbiin one or more frequency channels.
+    = E   Maximum fringe amplitude at edge of SBD, MBD, or rate window.
+    = F   Fork problem in processing.
+    = G   Fringe amp in a channel is <.5 times mean amp (only if SNR>20).
+    = H   Low Phase-cal amplitude in one or more channels.
+    = N   No valid correlator vlbi.
+  Tot     Total number of scans in schedule.
+  Minus   Scans in original schedule file for which correlation was not
+          attempted, usually because of known station problems.
+
++SNR_RATIOS
+
+MEAN RATIOS = Observed SNR / Predicted SNR  for exp no. 2046
+
+ ...by baseline, over all sources:
+
+ bl     X     n       S     n
+
+ Hj    0.85  181     0.76  178
+ HK    0.87  128     0.81  124
+ HL    0.47  150     0.67  147
+ HP    0.37  147     0.19   33
+ HU    1.25  126     1.13  124
+ Hi    0.98  160     0.79  160
+ jK    0.79  298     0.85  298
+ jL    0.69  342     0.82  342
+ jP    0.45  393     0.24  173
+ jU    1.84  351     1.40  351
+ ji    1.13  275     0.85  273
+ KL    0.61  247     0.80  246
+ PK    0.39  274     0.20  141
+ KU    1.47  246     1.48  245
+ Ki    1.21  173     0.96  173
+ PL    0.29  306     0.16  154
+ LU    1.35  324     1.31  324
+ Li    0.62  223     0.75  223
+ PU    0.73  324     0.28  169
+ Pi    0.46  238     0.25   64
+ Ui    1.81  207     1.38  207
+
+
++FOURFIT_CONTROL_FILE
+
+* +FOURFIT_CONTROL_FILE
+    
+   sb_win -2.0 2.0 mb_win -2.0 2.0 dr_win -30.0e-5 30.0e-5
+   pc_mode multitone
+   pc_period 999
+
+   start -2
+   weak_channel 0.1
+
+  if f_group X
+    ref_freq 8213.00
+  if f_group S
+    ref_freq 2201.00
+
+*setup tonemask
+  if station j and f_group S
+    pc_tonemask abcdef  114687 126975 129023 98303 114687 122879
+  if station j and f_group X
+    pc_tonemask ghijklmn  126975 98303 114687 98303 122879 129023 98303 98303
+  if station P and f_group S
+    pc_tonemask abcdef  130559 131067 131069 131039 131055 131063
+  if station P and f_group X
+    pc_tonemask ghijklmn  126975 98303 114687 98303 122879 129023 98303 98303
+  
+  if station H and f_group S
+    freqs a b c d e
+  if station P and f_group S
+    pc_amp_hcode 0.0001
+  if station L and f_group S
+    freqs c d e
+    delay_offs cde  -131 23 -197 
+  if station L and f_group X
+    freqs g k m n
+    delay_offs gkmn  -72 -141 20 25
+  if station i and f_group X
+    pc_amp_hcode 0.0001
+
+ * Is/j
+  if station j
+     lsb_offset -165.0 
+ * Kk/K
+  if station K
+     lsb_offset  110.0 
+ * Kg/P
+  if station P
+     lsb_offset  110.0 
+
+*ref Ur/U
+  if station H and f_group S
+     pc_mode manual
+     pc_phases abcde  152.9  72.8  43.2  11.0  81.8 
+  if station H and f_group X
+     pc_mode manual
+     pc_phases ghijklmn  -25.1  -13.2  -172.8  -181.9  -101.6  -260.8  -338.2  -128.6
+  if station L and f_group S
+     pc_mode manual
+     pc_phases cde  266.7  316.9  170.5
+  if station L and f_group X
+     pc_mode manual
+     pc_phases gkmn  -58.6  40.7  168.7  288.0
+ 
+* additive phases
+  if station j and f_group S
+     pc_phases abcdef  34.1  -36.1  -71.2  41.9  20.6  -7.2
+  if station j and f_group X
+     pc_phases ghijklmn  -12.5  27.3  4.6  -1.3  -13.9  -46.9  23.9  9.9
+  if station K and f_group S
+     pc_phases abcdef  -3.2  2.6  0.9  -0.4  0.2  -0.7
+  if station K and f_group X
+     pc_phases ghijklmn  4.9  3.1  5.5  -22.6  -8.4  -8.8  -2.2  12.3
+  if station P and f_group S
+     pc_phases abcdef  -4.2  13.9  -15.7  7.2  3.8  -2.9
+  if station P and f_group X
+     pc_phases ghijklmn  23.9  -32.3  -19.2  -46.1  18.9  47.5  -12.9  -2.4
+  if station i and f_group S
+     pc_phases abcdef  3.6  0.9  -8.1  -2.9  5.5  1.0
+  if station i and f_group X
+     pc_phases ghijklmn  8.7  -10.1  -6.6  -11.8  0.2  8.2  13.2  -6.0
+
+Regards,
+ Hexuan 
+
++END

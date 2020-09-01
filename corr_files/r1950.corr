@@ -1,0 +1,562 @@
+
+TIMETAG 2020/06/19 10:05:07 UTC
+MK3DB_VERSION 1
++HEADER 
+CORREL   BONN 
+DATABASE 20JUN08XA 
+SESSNAME R1950 
+OBSTIME  2020/06/08 2020/06/09 
+UTSTART  1700 
+DURATION 24 
+DOY      160-161 
+CORRTIME 2020/06/16 2020/06/17 
+CORRPASS 1
+EXPORT   DONE 
+ 
++SUMMARY 
+ Qcode      % of Total   % of Correlated 
+                scans          scans     
+ 
+  5-9            66%            91% 
+   0              6%             9% 
+ 1-4,A-H,N             0             1 
+ 1-4,A-H,N        0%             1% 
+ Removed         27%             - 
+
++CORRELATOR_NOTES
+
+Correlated using difx version 2.6.1.
+
+Applied notch filters on baseline Wn-Wz.
+
+Please download the vgosDB of R1950:
+ftp://ftp.mpifr-bonn.mpg.de/geoarchive/database/20JUN08XA.tgz
+
++STATION_NOTES
+
+ HART15M  (Ht/q): fmout-gps jumped around at 06:24 UT.
+
+ ISHIOKA  (Is/Q): EL drive trouble (04:09-04:33 UT) (13:00-17:00 UT).
+
+ KOKEE    (Kk/K): Ok.
+
+ MATERA   (Ma/I): No data (17:00-20:15 UT) due to antenna problem.
+
+                  RFI in S-band particularly affecting channel SR6U;
+                  channel removed from fringe fitting.
+
+ NYALES20 (Ny/N): Observed with a warm receiver.
+
+ NYALE13S (Ns/w): Communication issue between antenna control unit and 
+                  subreflector. Started at 14:30 UT and observed only 
+                  2.5 hours. Fringes detected though; not included in 
+                  the database.
+
+ SEJONG   (Kv/j): Data storage error (17:30-00:30 UT).
+
+                  Applied manual pcal.
+
+                  No signal in channels SR4U, SR5U and SR6U;
+                  channels flagged for fringe fitting.
+
+ WETTZ13N (Wn/W): RFI in S-band channel SR1U on baseline Wn-Wz;
+                  channel removed from fringe fitting on this baseline.
+
+ WETTZELL (Wz/V): RFI in S-band channel SR1U on baseline Wn-Wz;
+                  channel removed from fringe fitting on this baseline.
+
+ YARRA12M (Yg/i): Ok.
+
++DROP_CHANNELS
+ Ht 
+ Is 
+ Kk 
+ Ma SR6U   
+ Ny 
+ Ns 
+ Kv SR4U SR5U SR6U   
+ Wn 
+ Wz 
+ Yg 
+
++MANUAL_PCAL Kv 
+
++CHANNELS
+ Channels: XR1U = band|polarization|channel#|sideband
+
+XR1U/L  BBC01 8212.99 
+XR2U    BBC02 8252.99 
+XR3U    BBC03 8352.99 
+XR4U    BBC04 8512.99 
+XR5U    BBC05 8732.99 
+XR6U    BBC06 8852.99 
+XR7U    BBC07 8892.99 
+XR8U/L  BBC08 8932.99 
+SR1U    BBC09 2225.99 
+SR2U    BBC10 2245.99 
+SR3U    BBC11 2265.99 
+SR4U    BBC12 2295.99 
+SR5U    BBC13 2345.99 
+SR6U    BBC14 2365.99 
+
++CLOCKS
+
+Clocks: Bonn
+
+ Station     fmout-gps      Used      rate     Comments
+              [usec]       [usec]   [sec/sec]
+  Ht            2.38         5.32   -1.021E-12 
+  Is            0.29         0.54   -0.042E-12 
+  Kk            9.52        10.07   -0.362E-12 
+  Ma          -16.46       -15.82   -0.487E-12 
+  Ny         -158.15      -155.85    0.429E-12 
+  Kv            0.00       -34.04   -0.034E-12 
+  Wn           -1.19         1.16   -0.026E-12  Reference
+  Wz           -4.84        -2.58   -0.052E-12 
+  Yg            8.23        10.54    1.299E-12 
+
+Date:    2020/06/08  17:00:00
+
++QCODES
+
+Qcod  0 1 2 3 4  5  6   7   8    9 A B C D E F  G  H N    -   Tot 
+---------------------------------------------------------------------
+QK:X 73 0 0 0 0  0  0   4  29  200 0 0 0 0 0 0  0  0 0    0   306 
+QK:S 70 0 0 0 0  0  0   0   8  227 0 0 0 0 0 0  1  0 0    0   306 
+QI:X 29 0 0 0 0  0  0   0  11   90 0 0 0 0 0 0  0  0 0   20   150 
+QI:S 30 0 0 0 0  0  0   0   9   91 0 0 0 0 0 0  0  0 0   20   150 
+Qw:X  0 0 0 0 0  0  0   0   0    0 0 0 0 0 0 0  0  0 0  168   168 
+Qw:S  0 0 0 0 0  0  0   0   0    0 0 0 0 0 0 0  0  0 0  168   168 
+QN:X 50 0 0 0 0  0  0   0   8  189 0 0 0 0 0 0  0  0 0    0   247 
+QN:S 47 0 0 0 0  0  0   1   0  199 0 0 0 0 0 0  0  0 0    0   247 
+Qj:X 57 0 0 0 0  1  4  24 132   11 0 0 0 0 0 0  0  0 1  103   333 
+Qj:S 61 0 0 0 0  0  0   0   6  162 0 0 0 0 0 0  0  0 1  103   333 
+QW:X 30 0 0 0 0  0  0   3  12   96 0 0 0 0 0 0  0  0 0    0   141 
+QW:S 31 0 0 0 0  0  0   0   0  110 0 0 0 0 0 0  0  0 0    0   141 
+QV:X 25 0 0 0 0  0  0   2  10   74 0 0 0 0 0 0  0  0 0    0   111 
+QV:S 23 0 0 0 0  0  0   0   0   88 0 0 0 0 0 0  0  0 0    0   111 
+Qq:X 22 0 0 0 0  0  0   2   4   52 0 0 0 0 0 0  0  0 1    0    81 
+Qq:S 28 0 0 0 0  0  0   0   1   51 0 0 0 0 0 0  0  0 1    0    81 
+Qi:X 22 0 0 0 0  0  1   0  14   72 0 0 0 0 0 0  0  1 1    0   111 
+Qi:S 22 0 0 0 0  0  0   0   1   87 0 0 0 0 0 0  0  0 1    0   111 
+KI:X  1 0 0 0 0  0  0   1   4   83 0 0 0 0 0 0  0  0 0    8    97 
+KI:S  1 0 0 0 0  0  0   0  10   78 0 0 0 0 0 0  0  0 0    8    97 
+Kw:X  0 0 0 0 0  0  0   0   0    0 0 0 0 0 0 0  0  0 0  132   132 
+Kw:S  0 0 0 0 0  0  0   0   0    0 0 0 0 0 0 0  0  0 0  132   132 
+KN:X 18 0 0 0 0  0  0   0  15  188 0 0 0 0 0 0  7  0 0    0   228 
+KN:S  4 0 0 0 0  0  0   2  15  202 0 0 0 0 0 0  5  0 0    0   228 
+Kj:X  3 0 0 0 0  1  4   1  50   93 0 0 0 0 0 0  0  0 1   43   196 
+Kj:S  3 0 0 0 0  0  0   0   4  145 0 0 0 0 0 0  0  0 1   43   196 
+KW:X  1 0 0 0 0  0  0   0  14   87 0 0 0 0 0 0  0  0 0    0   102 
+KW:S  2 0 0 0 0  0  0   0   5   94 0 0 0 0 0 0  1  0 0    0   102 
+KV:X  4 0 0 0 0  0  0   0   9   83 0 0 0 0 0 0  0  0 0    0    96 
+KV:S  0 0 0 0 0  0  0   0   0   96 0 0 0 0 0 0  0  0 0    0    96 
+Kq:X  0 0 0 0 0  0  0   0   0    0 0 0 0 0 0 0  0  0 0    0     0 
+Kq:S  0 0 0 0 0  0  0   0   0    0 0 0 0 0 0 0  0  0 0    0     0 
+Ki:X  7 0 0 0 0  0  0   0   4   83 0 0 0 0 0 0  0  2 0    0    96 
+Ki:S  8 0 0 0 0  0  0   1   4   81 0 0 0 0 0 0  2  0 0    0    96 
+Iw:X  0 0 0 0 0  0  0   0   0    0 0 0 0 0 0 0  0  0 0  194   194 
+Iw:S  0 0 0 0 0  0  0   0   0    0 0 0 0 0 0 0  0  0 0  194   194 
+IN:X  2 0 0 0 0  0  0   0   0  231 0 0 0 0 0 0  0  0 0   33   266 
+IN:S  3 0 0 0 0  0  1   5  12  212 0 0 0 0 0 0  0  0 0   33   266 
+Ij:X  0 0 0 0 0  0  0   7  27   68 0 0 0 0 0 0  0  0 0   43   145 
+Ij:S 12 0 0 0 0  0  0   0   8   82 0 0 0 0 0 0  0  0 0   43   145 
+IW:X  2 0 0 0 0  0  0   0  14  267 0 0 0 0 0 0  0  0 0   43   326 
+IW:S  2 0 0 0 0  0  2  14  71  194 0 0 0 0 0 0  0  0 0   43   326 
+IV:X  3 0 0 0 0  0  0   1  57  127 0 0 0 0 0 0  1  0 0   16   205 
+IV:S  4 0 0 0 0  0  1  13  53  118 0 0 0 0 0 0  0  0 0   16   205 
+Iq:X  7 0 0 0 0  0  0   0   8  157 0 0 0 0 0 0  0  0 0   33   205 
+Iq:S 13 0 0 0 0  0  0   1  30  127 0 0 0 0 0 0  0  1 0   33   205 
+Ii:X  1 0 0 0 0  0  0   1   5   26 0 0 0 0 0 0  0  1 0    9    43 
+Ii:S  3 0 0 0 0  0  0   0   2   29 0 0 0 0 0 0  0  0 0    9    43 
+wN:X  0 0 0 0 0  0  0   0   0    0 0 0 0 0 0 0  0  0 0  232   232 
+wN:S  0 0 0 0 0  0  0   0   0    0 0 0 0 0 0 0  0  0 0  232   232 
+wj:X  0 0 0 0 0  0  0   0   0    0 0 0 0 0 0 0  0  0 0  157   157 
+wj:S  0 0 0 0 0  0  0   0   0    0 0 0 0 0 0 0  0  0 0  157   157 
+wW:X  0 0 0 0 0  0  0   0   0    0 0 0 0 0 0 0  0  0 0  198   198 
+wW:S  0 0 0 0 0  0  0   0   0    0 0 0 0 0 0 0  0  0 0  198   198 
+wV:X  0 0 0 0 0  0  0   0   0    0 0 0 0 0 0 0  0  0 0   95    95 
+wV:S  0 0 0 0 0  0  0   0   0    0 0 0 0 0 0 0  0  0 0   95    95 
+wq:X  0 0 0 0 0  0  0   0   0    0 0 0 0 0 0 0  0  0 0   59    59 
+wq:S  0 0 0 0 0  0  0   0   0    0 0 0 0 0 0 0  0  0 0   59    59 
+wi:X  0 0 0 0 0  0  0   0   0    0 0 0 0 0 0 0  0  0 0   23    23 
+wi:S  0 0 0 0 0  0  0   0   0    0 0 0 0 0 0 0  0  0 0   23    23 
+Nj:X  0 0 0 0 0  0  0   2  23  113 0 0 0 0 0 0  0  0 0   55   193 
+Nj:S  5 0 0 0 0  0  0   0   0  133 0 0 0 0 0 0  0  0 0   55   193 
+NW:X  3 0 0 0 0  0  0   0   4  238 0 0 0 0 0 0  0  0 0    0   245 
+NW:S  3 0 0 0 0  0  1   0   5  235 0 0 0 0 0 0  1  0 0    0   245 
+NV:X  0 0 0 0 0  0  0   0  14  129 0 0 0 0 0 0  0  0 0    0   143 
+NV:S  0 0 0 0 0  0  1   0   2  140 0 0 0 0 0 0  0  0 0    0   143 
+Nq:X  9 0 0 0 0  0  0   1   0   77 0 0 0 0 0 0  0  0 0    0    87 
+Nq:S  4 0 0 0 0  0  0   0   0   83 0 0 0 0 0 0  0  0 0    0    87 
+Ni:X  3 0 0 0 0  0  0   0   1   21 0 0 0 0 0 0  0  0 0    0    25 
+Ni:S  0 0 0 0 0  0  0   0   0   25 0 0 0 0 0 0  0  0 0    0    25 
+jW:X  0 0 0 0 0  0  0   8  84   15 0 0 0 0 0 0  0  0 0   41   148 
+jW:S  0 0 0 0 0  0  0   0   0  107 0 0 0 0 0 0  0  0 0   41   148 
+jV:X  0 0 0 0 0  1  0   6  33   24 0 0 0 0 0 0  0  0 0   23    87 
+jV:S  0 0 0 0 0  0  0   0   2   62 0 0 0 0 0 0  0  0 0   23    87 
+jq:X  1 0 0 0 0  0  0   1   8   36 0 0 0 0 0 0  0  0 0   16    62 
+jq:S 10 0 0 0 0  0  0   0   1   35 0 0 0 0 0 0  0  0 0   16    62 
+ji:X  0 0 0 0 0  4  3  15  36   21 0 0 0 0 0 0  0  2 0   28   109 
+ji:S  3 0 0 0 0  1  0   0   0   77 0 0 0 0 0 0  0  0 0   28   109 
+WV:X  0 0 0 0 0  1 13 110   0    0 0 0 0 0 0 0  0  0 0    0   124 
+WV:S  0 0 0 1 0  1  7 107   1    0 0 0 0 0 0 0  7  0 0    0   124 
+Wq:X  4 0 0 0 0  0  0   0   2  153 0 0 0 0 0 0  0  0 0    0   159 
+Wq:S  7 0 0 0 0  0  0   0   0  151 0 0 0 0 0 0  1  0 0    0   159 
+Wi:X  0 0 0 0 0  0  0   1  12   26 0 0 0 0 0 0  0  0 0    0    39 
+Wi:S  0 0 0 0 0  0  0   1   0   38 0 0 0 0 0 0  0  0 0    0    39 
+Vq:X 13 0 0 0 0  0  0   0  23  108 0 0 0 0 0 0  0  0 0    0   144 
+Vq:S 12 0 0 0 0  0  0   0   2  129 0 0 0 0 0 0  1  0 0    0   144 
+Vi:X 10 0 0 0 0  1  1   3  13   36 0 0 0 0 0 0  0  2 0    0    66 
+Vi:S 10 0 0 0 0  0  0   0   1   54 0 0 0 0 0 0  1  0 0    0    66 
+qi:X 11 0 0 0 0  0  1   3  23  180 0 0 0 0 0 0  0  4 0    0   222 
+qi:S 22 0 0 0 0  0  0   0   1  199 0 0 0 0 0 0  0  0 0    0   222 
+---------------------------------------------------------------------
+Tot 854 0 0 1 0 11 40 341 957 7395 0 0 0 0 0 0 28 13 8 3544 13192 
+
+ Legend:
+ QC = 0   Fringes not detected.
+    = 1-9 Fringes detected, no error condition. Higher #, better quality.
+    = B   Interpolation error in fourfit.
+    = D   No data in one or more frequency channels.
+    = E   Maximum fringe amplitude at edge of SBD, MBD, or rate window.
+    = F   Fork problem in processing.
+    = G   Fringe amp in a channel is <.5 times mean amp (only if SNR>20).
+    = H   Low Phase-cal amplitude in one or more channels.
+    = N   No valid correlator data.
+  Minus   Scans in original schedule file for which correlation was not
+          attempted, usually because of known station problems.
+  Tot     Total number of scans in schedule.
+
++SNR_RATIOS
+
+MEAN RATIOS = Observed SNR / Predicted SNR  for exp no. 4944
+
+ ...by baseline, over all sources:
+
+ bl     X     n       S     n
+
+ qQ    0.79   58     0.91   52
+ qK    0.00    0     0.00    0
+ qI    0.74  165     0.70  159
+ qN    0.49   78     0.80   83
+ qw    0.00    0     0.00    0
+ qj    1.12   45     0.72   36
+ qW    1.30  155     1.08  152
+ qV    1.02  131     1.01  132
+ qi    0.87  211     0.87  200
+ QK    0.73  233     0.81  236
+ QI    0.64  101     0.81  100
+ QN    0.45  197     0.78  200
+ Qw    0.00    0     0.00    0
+ Qj    1.57  172     0.67  168
+ QW    1.16  111     1.14  110
+ QV    0.87   86     0.96   88
+ Qi    1.05   88     0.92   88
+ KI    0.63   88     0.97   88
+ KN    0.39  210     0.75  224
+ Kw    0.00    0     0.00    0
+ Kj    1.58  149     0.77  149
+ KW    0.94  101     1.10  100
+ KV    0.66   92     1.02   96
+ Ki    0.82   89     0.85   88
+ IN    0.43  231     0.71  230
+ Iw    0.00    0     0.00    0
+ Ij    1.40  102     0.68   89
+ IW    1.25  281     0.99  281
+ IV    0.83  186     0.87  185
+ Ii    0.95   33     0.86   30
+ Nw    0.00    0     0.00    0
+ Nj    0.78  138     0.58  133
+ NW    0.76  242     1.04  242
+ NV    0.50  143     0.88  142
+ Ni    0.50   22     0.66   25
+ wj    0.00    0     0.00    0
+ wW    0.00    0     0.00    0
+ wV    0.00    0     0.00    0
+ wi    0.00    0     0.00    0
+ jW    2.10  107     0.76  107
+ jV    1.37   64     0.63   64
+ ji    1.64   81     0.65   78
+ WV    1.51  124     1.39  124
+ Wi    1.81   39     1.08   39
+ Vi    1.23   56     1.07   56
+
+
++FOURFIT_CONTROL_FILE
+
+*R1 control file
+
+    pc_mode multitone 
+    pc_period 5
+
+*sb_win -4096.0 4096.0 mb_win -2.0 2.0 dr_win -300.e-4 300.e-4
+   sb_win -1024.0 1024.0 mb_win -2.0 2.0 dr_win -300.e-4 300.e-4
+
+*Is/Q
+    if station Q
+      lsb_offset 230.
+
+*Kv/j
+    if station j
+      lsb_offset 200.
+
+*Ma/I
+    if station I
+      lsb_offset 90.
+
+*Zc/R
+    if station R
+      lsb_offset 180.
+
+***
+  if f_group X
+	ref_freq 8212.99
+
+  if station Q and f_group X
+    ref_freq 8212.99
+    pc_tonemask ghijklmn 127 127 127 127 127 127 127 127
+
+  if station K and f_group X
+     ref_freq 8212.99
+     pc_tonemask ghijklmn 148 132 132 132 132 132 132 132
+
+  if f_group S
+	ref_freq 2225.99
+
+  if station Q and f_group S
+    ref_freq 2225.99
+    pc_tonemask abcdef 239 239 239 239 239 239
+
+  if station K and f_group S
+     ref_freq 2225.99
+     pc_tonemask abcdef 16 16 16 16 16 16
+
+***
+if station I and f_group S
+weak_channel 0.1
+
+if station j and f_group X
+weak_channel 0.1 
+
+if station I and f_group S
+pc_amp_hcode 0.001
+
+if station j and f_group S
+freqs a b c
+
+if station I and f_group S
+freqs a b c d e 
+
+if baseline WV and f_group S
+freqs b c d e f 
+
+***
+*ref Wn/W 
+
+if station j and f_group S
+pc_mode manual
+pc_phases abc  8.4 -160.0 -349.0
+if station j and f_group X
+pc_mode manual
+pc_phases ghijklmn  -28.1 -139.5  -107.5 -155.5 -224.0 -155.0 -226.0 -204.7 
+
+if station q and f_group S
+pc_phases abcdef  -10.9   0.2   8.2  10.2   1.5    -9.1
+if station q and f_group X
+pc_phases ghijklmn   -7.7   8.7    -3.0  20.6   -13.2   7.5    -8.2   0.8
+
+if station Q and f_group S
+pc_phases abcdef  -1.2    -0.2    -1.7   6.4   1.8    -3.5
+if station Q and f_group X
+pc_phases ghijklmn  -10.6   4.2   7.3  17.8   -17.3   2.4    -0.9   0.2
+
+if station K and f_group S
+pc_phases abcdef    -3.2    -2.9   4.7   6.9    -6.5    -0.6
+if station K and f_group X
+pc_phases ghijklmn  -15.0  21.7  12.4   5.5   -27.1    -4.6    -5.1  15.0
+
+if station I and f_group S
+pc_phases abcde  -8.4   1.8   2.6   7.4    -6.2
+if station I and f_group X
+pc_phases ghijklmn  -11.1   8.2  11.8   9.7   -15.3    -1.3    -6.8   5.9
+
+if station N and f_group S
+pc_phases abcdef  9.5    -1.0    -8.4    -6.0   3.5   3.5
+if station N and f_group X
+pc_phases ghijklmn   -7.7   3.7  10.0   9.4   -13.4   2.4    -1.5   1.9
+
+if station i and f_group S
+pc_phases abcdef  -3.1   -9.9    1.3   22.4   -4.6   -8.2
+if station i and f_group X
+pc_phases ghijklmn  -8.1   13.0    5.5    7.4  -16.9    1.3   -4.7    5.5
+
+* ref Ht/q  prev. corrected w.r.t. Wn/W
+
+if station V and f_group S
+pc_phases abcdef   -4.1   -0.1    3.8    4.1   -0.0   -2.5
+if station V and f_group X
+pc_phases ghijklmn  -4.2    2.2    9.3    5.9  -20.4   -1.2   -1.7    5.5
+
+***
+if baseline WV and f_group X
+* cat /dev/null |\
+* awk -v f=... 'END{for(i=0;i<8;i++) print "",f+ i*1.0 - 0.25,f+i*1.0 + 0.25}'
+*
+ notches
+*g+ f=8212.99
+ 8212.74 8213.24
+ 8213.74 8214.24
+ 8214.74 8215.24
+ 8215.74 8216.24
+ 8216.74 8217.24
+ 8217.74 8218.24
+ 8218.74 8219.24
+ 8219.74 8220.24
+*g- f=8212.99
+ 8212.74 8213.24
+ 8211.74 8212.24
+ 8210.74 8211.24
+ 8209.74 8210.24
+ 8208.74 8209.24
+ 8207.74 8208.24
+ 8206.74 8207.24
+ 8205.74 8206.24
+*h f=8252.99
+ 8252.74 8253.24
+ 8253.74 8254.24
+ 8254.74 8255.24
+ 8255.74 8256.24
+ 8256.74 8257.24
+ 8257.74 8258.24
+ 8258.74 8259.24
+ 8259.74 8260.24
+*i f=8352.99
+ 8352.74 8353.24
+ 8353.74 8354.24
+ 8354.74 8355.24
+ 8355.74 8356.24
+ 8356.74 8357.24
+ 8357.74 8358.24
+ 8358.74 8359.24
+ 8359.74 8360.24
+*j f=8512.99
+ 8512.74 8513.24
+ 8513.74 8514.24
+ 8514.74 8515.24
+ 8515.74 8516.24
+ 8516.74 8517.24
+ 8517.74 8518.24
+ 8518.74 8519.24
+ 8519.74 8520.24
+*k f=8732.99
+ 8732.74 8733.24
+ 8733.74 8734.24
+ 8734.74 8735.24
+ 8735.74 8736.24
+ 8736.74 8737.24
+ 8737.74 8738.24
+ 8738.74 8739.24
+ 8739.74 8740.24
+*l f=8852.99
+ 8852.74 8853.24
+ 8853.74 8854.24
+ 8854.74 8855.24
+ 8855.74 8856.24
+ 8856.74 8857.24
+ 8857.74 8858.24
+ 8858.74 8859.24
+ 8859.74 8860.24
+*m f=8892.99
+ 8892.74 8893.24
+ 8893.74 8894.24
+ 8894.74 8895.24
+ 8895.74 8896.24
+ 8896.74 8897.24
+ 8897.74 8898.24
+ 8898.74 8899.24
+ 8899.74 8900.24
+*n+ f=8932.99
+ 8932.74 8933.24
+ 8933.74 8934.24
+ 8934.74 8935.24
+ 8935.74 8936.24
+ 8936.74 8937.24
+ 8937.74 8938.24
+ 8938.74 8939.24
+ 8939.74 8940.24
+*n- f=8932.99
+ 8932.74 8933.24
+ 8931.74 8932.24
+ 8930.74 8931.24
+ 8929.74 8930.24
+ 8928.74 8929.24
+ 8927.74 8928.24
+ 8926.74 8927.24
+ 8925.74 8926.24
+
+if baseline WV and f_group S
+* cat /dev/null |\
+* awk -v f=... 'END{for(i=0;i<8;i++) print "",f+ i*1.0 - 0.25,f+i*1.0 + 0.25}'
+*
+ notches
+* a f=2225.99
+ 2225.74 2226.24
+ 2226.74 2227.24
+ 2227.74 2228.24
+ 2228.74 2229.24
+ 2229.74 2230.24
+ 2230.74 2231.24
+ 2231.74 2232.24
+ 2232.74 2233.24
+* b f=2245.99
+ 2245.74 2246.24
+ 2246.74 2247.24
+ 2247.74 2248.24
+ 2248.74 2249.24
+ 2249.74 2250.24
+ 2250.74 2251.24
+ 2251.74 2252.24
+ 2252.74 2253.24
+* c f=2265.99
+ 2265.74 2266.24
+ 2266.74 2267.24
+ 2267.74 2268.24
+ 2268.74 2269.24
+ 2269.74 2270.24
+ 2270.74 2271.24
+ 2271.74 2272.24
+ 2272.74 2273.24
+* d f=2295.99
+ 2295.74 2296.24
+ 2296.74 2297.24
+ 2297.74 2298.24
+ 2298.74 2299.24
+ 2299.74 2300.24
+ 2300.74 2301.24
+ 2301.74 2302.24
+ 2302.74 2303.24
+* e f=2345.99
+ 2345.74 2346.24
+ 2346.74 2347.24
+ 2347.74 2348.24
+ 2348.74 2349.24
+ 2349.74 2350.24
+ 2350.74 2351.24
+ 2351.74 2352.24
+ 2352.74 2353.24
+* f f=2365.99
+ 2365.74 2366.24
+ 2366.74 2367.24
+ 2367.74 2368.24
+ 2368.74 2369.24
+ 2369.74 2370.24
+ 2370.74 2371.24
+ 2371.74 2372.24
+ 2372.74 2373.24
+
+
+Regards,
+ Yoon 
+
++END

@@ -1,0 +1,360 @@
+
+TIMETAG 2020/05/26 08:52:30 UTC
+MK3DB_VERSION 0
++HEADER 
+CORREL    SHAO
+DATABASE  20APR28XA
+SESSNAME  AOV046
+OBSTIME   2020/04/28 2020/04/29 
+UTSTART   17:30
+DURATION  24
+DOY       119-120
+CORRTIME  2020/05/20 2020/05/21 
+CORRPASS  1
+EXPORT    DONE 
+ 
++SUMMARY 
+ Qcode      % of Total   % of Correlated 
+                scans          scans     
+ 
+  5-9            44%             - 
+   0             12%             - 
+ 4-1,A-H,N       44%             - 
+ Removed          -              - 
+
++CORRELATOR_NOTES
+
++STATION_NOTES
+ BADARY(Bd/B)  : Power outage (06:08). Ri (17:00-17:30).
+ HOBART26(Ho/H): Manual PCAL applied. 
+                 Wind stow (01:30-03:41). Software crash (14:40-17:30).
+ ISHIOKA(Is/j) : OK.
+ KUNMING(Km/L) : Manual PCAL applied.
+                 CDAS did not work (19:12-19:21). Other commitment (04:05-12:58).
+ SESHAN25(Sh/C): OK.
+ SVETLOE(Sv/s) : Too low amplitude of channel SR1U leads to some G codes,
+                 remove it from fringe fitting.
+ URUMQI(Ur/U)  : Did not observe.
+ WARK12M(Ww/W) : Did not observe.
+ YARRA12M(Yg/i): OK.
+ ZELENCHK(Zc/R): OK.
+
++DROP_CHANNELS
+ Bd
+ Ho
+ Is
+ Km
+ Sh
+ Sv  SR1U
+ Ur
+ Ww
+ Yg
+ Zc
+
++MANUAL PCAL  Ho Km 
+
++CHANNELS
+ Channels: XR1U = band|polarization|channel#|sideband
+
+XR1U/L  BBC01 8213.99 
+XR2U    BBC02 8253.99 
+XR3U    BBC03 8353.99 
+XR4U    BBC04 8513.99 
+XR5U    BBC05 8733.99 
+XR6U    BBC06 8853.99 
+XR7U    BBC07 8873.99 
+XR8U/L  BBC08 8933.99 
+SR1U    BBC09 2200.99 
+SR2U    BBC10 2216.99 
+SR3U    BBC11 2232.99 
+SR4U    BBC12 2256.99 
+SR5U    BBC13 2272.99 
+SR6U    BBC14 2288.99 
+
++CLOCKS
+
+Clocks: SHAO
+
+ Station     fmout-gps      Used      rate     Comments
+              [usec]       [usec]   [sec/sec]
+  Bd           -2.44       215.14   -0.463E-12 
+  Ho           12.36        14.46    0.444E-12 Reference
+  Is            0.44         0.73   -0.468E-12 
+  Km           45.26        50.58   -0.962E-12 
+  Sh           29.07        34.21    0.788E-12 
+  Sv           -2.16       214.71    0.008E-12 
+  Ur             -            -       -        Did not observe
+  Ww             -            -       -        Did not observe
+  Yg           19.52        21.76    1.462E-12 
+  Zc           -3.33       213.63   -0.467E-12 
+
+Date:    2020/04/28 17:30:00 
+
++QCODES
+
+Qcod   0 1 2 3 4  5  6  7   8    9 A B C D E F G H    N -   Tot 
+-------------------------------------------------------------------
+BH:X  41 0 0 0 0  0  0  0   6   64 0 0 0 0 0 0 0 0    4 0   115 
+BH:S  48 0 0 0 0  0  0  4  18   41 0 0 0 0 0 0 0 0    4 0   115 
+Bj:X   6 0 0 0 0  0  0  1   9  148 0 0 0 0 0 0 0 0    3 0   167 
+Bj:S  16 0 0 0 0  0  0  0   1  147 0 0 0 0 0 0 0 0    3 0   167 
+BL:X   4 0 0 0 0  5  4  0   7   89 0 0 0 0 0 0 0 0   69 0   178 
+BL:S   7 0 0 0 0  2  1  2   6   91 0 0 0 0 0 0 0 0   69 0   178 
+BC:X   5 0 0 0 0  0  0  0  21  140 0 0 0 0 0 0 0 0    3 0   169 
+BC:S   8 0 0 0 0  1  0  1  14  142 0 0 0 0 0 0 0 0    3 0   169 
+Bs:X   2 0 0 0 0  0  0  0   6  109 0 0 0 0 0 0 0 0    5 0   122 
+Bs:S   2 0 0 0 0  0  1  2   9  103 0 0 0 0 0 0 0 0    5 0   122 
+BU:X   0 0 0 0 0  0  0  0   0    0 0 0 0 0 0 0 0 0  200 0   200 
+BU:S   0 0 0 0 0  0  0  0   0    0 0 0 0 0 0 0 0 0  200 0   200 
+BW:X   0 0 0 0 0  0  0  0   0    0 0 0 0 0 0 0 0 0   94 0    94 
+BW:S   0 0 0 0 0  0  0  0   0    0 0 0 0 0 0 0 0 0   94 0    94 
+Bi:X  26 0 0 0 0  3  0  2   2  110 0 0 0 0 0 0 0 0    3 0   146 
+Bi:S  44 0 0 1 3  0  0  0   2   93 0 0 0 0 0 0 0 0    3 0   146 
+BR:X   3 0 0 0 0  0  0  2  13  110 0 0 0 0 0 0 0 0    6 0   134 
+BR:S   4 0 0 0 0  1  0  4  14  105 0 0 0 0 0 0 0 0    6 0   134 
+Hj:X  76 0 0 0 0  0  0  0   1   72 0 0 0 0 0 0 0 0    2 0   151 
+Hj:S  96 0 0 0 0  0  0  2  10   41 0 0 0 0 0 0 0 0    2 0   151 
+HL:X  39 0 0 0 0  1  0  0   5   39 0 0 0 0 0 0 0 0   53 0   137 
+HL:S  51 0 0 0 0  0  1  3   4   25 0 0 0 0 0 0 0 0   53 0   137 
+HC:X  46 0 0 0 0  0  0  2   7   86 0 0 0 0 0 0 0 0    3 0   144 
+HC:S  81 0 0 0 0  0  0  2   8   51 0 0 0 0 0 0 0 0    2 0   144 
+Hs:X  16 0 0 0 0  0  0  0   2   16 0 0 0 0 0 0 0 0    2 0    36 
+Hs:S  18 0 0 0 0  0  0  2   6    8 0 0 0 0 0 0 0 0    2 0    36 
+HU:X   0 0 0 0 0  0  0  0   0    0 0 0 0 0 0 0 0 0  117 0   117 
+HU:S   0 0 0 0 0  0  0  0   0    0 0 0 0 0 0 0 0 0  117 0   117 
+HW:X   0 0 0 0 0  0  0  0   0    0 0 0 0 0 0 0 0 0  187 0   187 
+HW:S   0 0 0 0 0  0  0  0   0    0 0 0 0 0 0 0 0 0  187 0   187 
+Hi:X  64 0 0 0 0  0  0  0   2   96 0 0 0 0 0 0 0 0    3 0   165 
+Hi:S 101 0 0 0 0  0  1  2   8   50 0 0 0 0 0 0 0 0    3 0   165 
+HR:X  18 0 0 0 0  0  0  0   2   27 0 0 0 0 0 0 0 0    5 0    52 
+HR:S  23 0 0 0 0  0  1  3   9   11 0 0 0 0 0 0 0 0    5 0    52 
+jL:X  10 0 0 0 0  3  1  1   6   98 0 0 0 0 0 0 0 0   68 0   187 
+jL:S  21 0 0 0 0  1  0  0   1   96 0 0 0 0 0 0 0 0   68 0   187 
+jC:X   6 0 0 0 0  0  0  0  11  177 0 0 0 0 0 0 0 0    0 0   194 
+jC:S  33 0 0 0 0  0  0  1  11  149 0 0 0 0 0 0 0 0    0 0   194 
+js:X   5 0 0 0 0  0  0  0   1   83 0 0 0 0 0 0 0 0    0 0    89 
+js:S   9 0 0 0 0  0  1  0   2   77 0 0 0 0 0 0 0 0    0 0    89 
+jU:X   0 0 0 0 0  0  0  0   0    0 0 0 0 0 0 0 0 0  171 0   171 
+jU:S   0 0 0 0 0  0  0  0   0    0 0 0 0 0 0 0 0 0  171 0   171 
+jW:X   0 0 0 0 0  0  0  0   0    0 0 0 0 0 0 0 0 0  131 0   131 
+jW:S   0 0 0 0 0  0  0  0   0    0 0 0 0 0 0 0 0 0  131 0   131 
+ji:X  59 0 0 0 0  0  0  0   1  109 0 0 0 0 0 0 0 0    0 0   169 
+ji:S 103 0 0 0 0  0  0  0   0   66 0 0 0 0 0 0 0 0    0 0   169 
+jR:X   5 0 0 0 0  0  0  0   8   84 0 0 0 0 0 0 0 0    4 0   101 
+jR:S  13 0 0 0 0  0  0  2   5   77 0 0 0 0 0 0 0 0    4 0   101 
+LC:X   6 0 0 0 0  4  3  2   8  102 0 0 0 0 0 0 0 0   70 0   195 
+LC:S  11 0 0 0 0  1  2  2   9  100 0 0 0 0 0 0 0 0   70 0   195 
+Ls:X   3 0 0 0 0  2  1  2   3   53 0 0 0 0 0 0 0 0   35 0    99 
+Ls:S   4 0 0 0 0  0  0  1   3   56 0 0 0 0 0 0 0 0   35 0    99 
+LU:X   0 0 0 0 0  0  0  0   0    0 0 0 0 0 0 0 0 0  182 0   182 
+LU:S   0 0 0 0 0  0  0  0   0    0 0 0 0 0 0 0 0 0  182 0   182 
+LW:X   0 0 0 0 0  0  0  0   0    0 0 0 0 0 0 0 0 0  118 0   118 
+LW:S   0 0 0 0 0  0  0  0   0    0 0 0 0 0 0 0 0 0  118 0   118 
+Li:X  14 0 0 0 0  1  0  5   1   86 0 0 0 0 0 0 0 0   65 0   172 
+Li:S  48 0 0 0 0  0  0  1   1   57 0 0 0 0 0 0 0 0   65 0   172 
+LR:X   2 0 0 0 0  2  3  2   3   57 0 0 0 0 0 0 0 0   43 0   112 
+LR:S   4 0 0 0 0  0  0  3   6   56 0 0 0 0 0 0 0 0   43 0   112 
+Cs:X   3 0 0 0 0  0  1  0   1   88 0 0 0 0 0 0 0 0    0 0    93 
+Cs:S   5 0 0 0 0  0  1  1   6   80 0 0 0 0 0 0 0 0    0 0    93 
+CU:X   0 0 0 0 0  0  0  0   0    0 0 0 0 0 0 0 0 0  175 0   175 
+CU:S   0 0 0 0 0  0  0  0   0    0 0 0 0 0 0 0 0 0  175 0   175 
+CW:X   0 0 0 0 0  0  0  0   0    0 0 0 0 0 0 0 0 0  123 0   123 
+CW:S   0 0 0 0 0  0  0  0   0    0 0 0 0 0 0 0 0 0  123 0   123 
+Ci:X  36 0 0 0 0  0  0  0   3  138 0 0 0 0 0 0 0 0    0 0   177 
+Ci:S  88 0 0 0 0  0  0  0   2   87 0 0 0 0 0 0 0 0    0 0   177 
+CR:X   3 0 0 0 0  0  1  2   7   89 0 0 0 0 0 0 0 0    4 0   106 
+CR:S  10 0 0 0 0  0  0  3  13   76 0 0 0 0 0 0 0 0    4 0   106 
+sU:X   0 0 0 0 0  0  0  0   0    0 0 0 0 0 0 0 0 0  124 0   124 
+sU:S   0 0 0 0 0  0  0  0   0    0 0 0 0 0 0 0 0 0  124 0   124 
+sW:X   0 0 0 0 0  0  0  0   0    0 0 0 0 0 0 0 0 0   16 0    16 
+sW:S   0 0 0 0 0  0  0  0   0    0 0 0 0 0 0 0 0 0   16 0    16 
+si:X  19 0 0 0 0  0  0  0   1   58 0 0 0 0 0 0 0 0    0 0    78 
+si:S  23 0 0 0 0  0  0  0   1   54 0 0 0 0 0 0 0 0    0 0    78 
+sR:X   4 0 0 0 0  0  0  3  24  169 0 0 0 0 0 0 0 0    5 0   205 
+sR:S   4 0 0 0 0  0  1  7  23  165 0 0 0 0 0 0 0 0    5 0   205 
+UW:X   0 0 0 0 0  0  0  0   0    0 0 0 0 0 0 0 0 0   96 0    96 
+UW:S   0 0 0 0 0  0  0  0   0    0 0 0 0 0 0 0 0 0   96 0    96 
+Ui:X   0 0 0 0 0  0  0  0   0    0 0 0 0 0 0 0 0 0  155 0   155 
+Ui:S   0 0 0 0 0  0  0  0   0    0 0 0 0 0 0 0 0 0  155 0   155 
+UR:X   0 0 0 0 0  0  0  0   0    0 0 0 0 0 0 0 0 0  136 0   136 
+UR:S   0 0 0 0 0  0  0  0   0    0 0 0 0 0 0 0 0 0  136 0   136 
+Wi:X   0 0 0 0 0  0  0  0   0    0 0 0 0 0 0 0 0 0  139 0   139 
+Wi:S   0 0 0 0 0  0  0  0   0    0 0 0 0 0 0 0 0 0  139 0   139 
+WR:X   0 0 0 0 0  0  0  0   0    0 0 0 0 0 0 0 0 0   27 0    27 
+WR:S   0 0 0 0 0  0  0  0   0    0 0 0 0 0 0 0 0 0   27 0    27 
+iR:X   8 0 0 0 0  0  0  0   3   78 0 0 0 0 0 0 0 0    4 0    93 
+iR:S  35 0 0 0 0  0  0  0   2   52 0 0 0 0 0 0 0 0    4 0    93 
+-------------------------------------------------------------------
+Tot 1439 0 0 1 3 27 24 72 358 4731 0 0 0 0 0 0 0 0 5299 0 11954 
+
+ Legend:
+ QC = 0   Fringes not detected.
+    = 1-9 Fringes detected, no error condition. Higher #, better quality.
+    = B   Interpolation error in fourfit.
+    = D   No vlbiin one or more frequency channels.
+    = E   Maximum fringe amplitude at edge of SBD, MBD, or rate window.
+    = F   Fork problem in processing.
+    = G   Fringe amp in a channel is <.5 times mean amp (only if SNR>20).
+    = H   Low Phase-cal amplitude in one or more channels.
+    = N   No valid correlator vlbi.
+  Tot     Total number of scans in schedule.
+  Minus   Scans in original schedule file for which correlation was not
+          attempted, usually because of known station problems.
+
++SNR_RATIOS
+
+MEAN RATIOS = Observed SNR / Predicted SNR  for exp no. 2046
+
+ ...by baseline, over all sources:
+
+ bl     X     n       S     n
+
+ BH    0.77   70     0.84   59
+ Bj    0.92  157     1.23  148
+ BL    1.10  103     1.14  102
+ BC    0.90  159     1.15  158
+ Bs    0.75  115     1.53  115
+ BU    0.00    0     0.00    0
+ BW    0.00    0     0.00    0
+ Bi    1.03  117     1.28   98
+ BR    1.07  125     1.24  124
+ Hj    0.97   73     0.98   53
+ HL    0.90   45     0.59   33
+ HC    0.72   96     1.00   61
+ Hs    0.63   18     1.14   15
+ HU    0.00    0     0.00    0
+ HW    0.00    0     0.00    0
+ Hi    1.22   95     0.95   61
+ HR    0.99   29     0.91   22
+ jL    1.34  107     0.81   98
+ jC    1.04  184     0.97  161
+ js    0.78   84     1.03   79
+ jU    0.00    0     0.00    0
+ jW    0.00    0     0.00    0
+ ji    1.34  110     0.98   66
+ jR    1.02   92     0.86   82
+ LC    1.25  115     0.82  114
+ Ls    1.05   61     0.95   60
+ LU    0.00    0     0.00    0
+ LW    0.00    0     0.00    0
+ Li    1.35   93     0.70   59
+ LR    1.53   67     0.80   65
+ Cs    0.78   90     0.91   87
+ CU    0.00    0     0.00    0
+ CW    0.00    0     0.00    0
+ Ci    1.13  141     0.89   89
+ CR    1.06   99     0.87   91
+ sU    0.00    0     0.00    0
+ sW    0.00    0     0.00    0
+ si    1.08   59     0.96   54
+ sR    1.24  196     1.08  196
+ UW    0.00    0     0.00    0
+ Ui    0.00    0     0.00    0
+ UR    0.00    0     0.00    0
+ Wi    0.00    0     0.00    0
+ WR    0.00    0     0.00    0
+ iR    1.30   81     0.84   52
+
+
++FOURFIT_CONTROL_FILE
+
+* +FOURFIT_CONTROL_FILE
+    
+   sb_win -2.0 2.0 mb_win -2.0 2.0 dr_win -30.0e-5 30.0e-5
+   pc_mode multitone
+   pc_period 999
+
+  if f_group X
+    ref_freq 8213.99
+  if f_group S
+    ref_freq 2200.99
+
+ * Ho/H
+ if station H
+    lsb_offset  170.0
+ * Km/L
+ if station L
+    lsb_offset  170.0
+ * Sh/C
+ if station C
+    lsb_offset  170.0
+ * Yg/i
+ if station i
+    lsb_offset  170.0
+
+ *setup tonemask
+  if station j and f_group S
+     pc_tonemask abcdef  65519 65527 65531 65527 65531 65533
+  if station j and f_group X
+     pc_tonemask ghijklmn  65471 65471 65471 65471 65471 65471 65471 65471
+
+  
+  if station B and f_group S
+    pc_amp_hcode 0.0002
+  if station H and f_group S
+    weak_channel 0.2
+  if station C and f_group S
+    weak_channel 0.1
+  if station C and f_group X
+    pc_amp_hcode 0.0002
+  if station s and f_group S
+    freqs b c d e f
+    weak_channel 0.2
+    pc_amp_hcode 0.0002
+  if station i 
+    weak_channel 0.2
+  if station R and f_group S
+    weak_channel 0.1
+
+*ref Bd/B
+  if station H and f_group S
+     pc_mode manual
+     pc_phases abcdef  44.4  -152.6  -304.2  -180.4  -110.9  -163.2
+  if station H and f_group X
+     pc_mode manual
+     pc_phases ghijklmn  86.9  -238.8  -322.4  -196.9  -314.1  -327.3  -48.1  -281.4
+  if station L and f_group S and scan 119-173000 to 119-192338
+     pc_mode manual
+     pc_phases abcdef  155.1  243.0  320.8  147.9  202.0  259.9
+  if station L and f_group X and scan 119-173000 to 119-192338
+     pc_mode manual
+     pc_phases ghijklmn  -18.3  -338.7  -258.3  -265.6  -302.2  -169.2  -240.2  -342.4
+  if station L and f_group S and scan 119-192338 to 120-125325
+     pc_mode manual
+     pc_phases abcdef  45.8  -281.5  -180.7  -320.5  -218.6  -163.6
+  if station L and f_group X and scan 119-192338 to 120-125325
+     pc_mode manual
+     pc_phases ghijklmn  121.6  -140.7  -266.3  -28.2  -97.7  -148.8  -189.8  -199.9
+  if station L and f_group S and scan 120-125325 to 120-173000
+     pc_mode manual
+     pc_phases abcdef  -168.3  -4.1  -136.6  -80.8  -235.5  -27.4
+  if station L and f_group X and scan 120-125325 to 120-173000
+     pc_mode manual
+     pc_phases ghijklmn  95.5  187.1  223.8  85.2  173.9  111.4  252.5  53.3
+ 
+* additive phases 
+  if station j and f_group S
+     pc_phases abcdef  9.8  -5.7  -25.4  25.2  7.0  -12.9
+  if station j and f_group X
+     pc_phases ghijklmn  6.3  -1.5  -4.2  -8.7  -8.1  11.0  12.0  -5.3
+  if station C and f_group S
+     pc_phases abcdef  5.8  -1.7  -5.8  -4.3  1.8  2.7
+  if station C and f_group X
+     pc_phases ghijklmn  0.6  12.8  -2.8  -23.7  -8.8  17.6  13.8  -5.2
+  if station s and f_group S
+     pc_phases bcdef  -0.6  -4.9  -6.5  2.6  3.6
+  if station s and f_group X
+     pc_phases ghijklmn  0.9  1.3  4.0  -7.9  -10.0  6.1  6.2  -0.4
+  if station i and f_group S
+     pc_phases abcdef  5.7  3.5  -5.7  -14.3  1.3  8.1
+  if station i and f_group X
+     pc_phases ghijklmn  11.0  -0.0  -12.7  -16.6  -10.4  13.9  16.3  -4.6
+  if station R and f_group S
+     pc_phases abcdef  4.7  0.1  -7.6  -2.6  0.9  4.3
+  if station R and f_group X
+     pc_phases ghijklmn  -2.6  2.5  5.1  -5.3  0.4  3.2  6.3  -3.6
+
+Regards,
+ Hexuan 
+
++END

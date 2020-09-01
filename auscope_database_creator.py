@@ -8,7 +8,9 @@ import auscope_file_scraper
 import analysis_downloader
 import corr_skd_ingest
 import sys
+import csv
 
+dirname = os.path.dirname(__file__)
    
 def main(master_schedule, db_name):
     # CREATE DATABASE IF REQUIRED
@@ -28,8 +30,24 @@ def main(master_schedule, db_name):
         cursor.execute(query)
         conn.commit()
     conn.close()
+    # Create CSV files for analysis reports and SEFD
+    for ant in station_id:
+        # analy reports
+        if os.path.isfile(dirname+'/' + ant + '_analysis_reports.csv'):
+            continue
+        else:
+            with open(ant + '_analysis_reports.csv','a') as f:
+                station_writer = csv.writer(f, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+                station_writer.writerow(['ExpID', 'Performance', 'Date', 'Date_MJD', 'Pos_X', 'Pos_Y', 'Pos_Z', 'Pos_U', 'Pos_E', 'Pos_N', 'W_RMS_del', 'Problem', 'Problem_String', 'Analyser', 'vgosDB_tag']) 
+        # corr reports
+        if os.path.isfile(dirname+'/' + ant + '_corr_reports.csv'):
+            continue
+        else:
+            with open(ant + '_corr_reports.csv','a') as f:
+                station_writer = csv.writer(f, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+                station_writer.writerow(['estSEFD_X', 'estSEFD_S', 'Manual_Pcal', 'Dropped_Chans', 'ExpID']) 
     # DOWNLOAD ANY SKD/ANALYSIS/SPOOL FILES THAT ARE IN THE MASTER SCHED, BUT NOT IN DATABASE YET. 
-    #analysis_downloader.main(master_schedule, db_name) # comment this line out for troubleshooting downstream problems, otherwise this tries to redownload all the experiments with no files available.
+    analysis_downloader.main(master_schedule, db_name) # comment this line out for troubleshooting downstream problems, otherwise this tries to redownload all the experiments with no files available.
     # SCRAPE FILES THAT ARENT IN THE DATABASE
     valid_experiments = analysis_downloader.validExpFinder(master_schedule)
     existing_experiments = analysis_downloader.checkExistingData(str(db_name))

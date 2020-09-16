@@ -4,7 +4,7 @@ import os
 import MySQLdb as mariadb
 from astropy.io import ascii
 import numpy as np
-import SEFD_estimator
+import estimateSEFD
 import scipy.optimize
 from astropy.table import vstack
 import sys
@@ -176,8 +176,8 @@ def main(exp_id, db_name):
                 SEFD_tags, SEFD_X, SEFD_S = predictedSEFDextract(skd_contents, antenna_reference)
                 basnum = basnumArray(snr_data, antennas_corr_reference, SEFD_tags)
                 print("Calculating SEFD values for experiment " + exp_id + ".")
-                X = SEFD_estimator.main(SEFD_X, corrtab_X, basnum)
-                S = SEFD_estimator.main(SEFD_S, corrtab_S, basnum)
+                X = estimateSEFD.main(SEFD_X, corrtab_X, basnum)
+                S = estimateSEFD.main(SEFD_S, corrtab_S, basnum)
                 if len(X) == 1 or len(S) == 1: # for the rare case when less than 3 stations are in the experiment with valid data.
                     SEFD_tags = np.array(valid_stations)
                     X = [None, None, None, None]
@@ -208,13 +208,21 @@ def main(exp_id, db_name):
             cursor.execute(sql_station, data)
             conn.commit()
             conn.close()
+            # Add to weekly log for review later.
+            with open(dirname + '/current.log','a') as f:
+                log_writer = csv.writer(f, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+                log_data = data.copy()
+                log_data.append(stations_to_add[i])
+                log_writer.writerows([['estSEFD_X', 'estSEFD_S', 'Manual_Pcal', 'Dropped_Chans', 'Exp_ID', 'Station'], log_data, ''])                
+                #log_writer.writerow('\n')
+            # Also write them to a CSV file that just has all the data - Guifre and Prad requested this - this can be removed if it's no longer useful.
             with open(dirname + '/' + stations_to_add[i] + '_corr_reports.csv','a') as f:
                 with open(dirname + '/' + stations_to_add[i] + '_corr_reports.csv','r') as f_read:
                     if str(exp_id) in f_read.read():
-                        break
+                        continue
                     else:                                   
                         station_writer = csv.writer(f, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-                        station_writer.writerow(data)            
+                        station_writer.writerow(data)               
 
 if __name__ == '__main__':
     # analysis_downloader.py executed as a script

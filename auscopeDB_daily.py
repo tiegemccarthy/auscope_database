@@ -1,11 +1,11 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 import re
 import os
 import MySQLdb as mariadb
-import auscope_file_scraper
-import analysis_downloader_daily
-import corr_skd_ingest
+import ingestAnalysisSpool
+import auscopeReportDownloader
+import ingestCorrSkd
 import sys
 import csv
 
@@ -44,23 +44,28 @@ def main(master_schedule, db_name):
         else:
             with open(ant + '_corr_reports.csv','a') as f:
                 station_writer = csv.writer(f, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-                station_writer.writerow(['estSEFD_X', 'estSEFD_S', 'Manual_Pcal', 'Dropped_Chans', 'ExpID']) 
+                station_writer.writerow(['estSEFD_X', 'estSEFD_S', 'Manual_Pcal', 'Dropped_Chans', 'ExpID'])
+    if not os.path.isfile(dirname+'/current.log'):
+        with open(dirname+'/current.log','a') as f:
+            station_writer = csv.writer(f, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+            station_writer.writerows([['Weekly database log:'], '']) 
     # DOWNLOAD ANY SKD/ANALYSIS/SPOOL FILES THAT ARE IN THE MASTER SCHED, BUT NOT IN DATABASE YET. 
-    analysis_downloader_daily.main(master_schedule, db_name) # comment this line out for troubleshooting downstream problems, otherwise this tries to redownload all the experiments with no files available.
+    auscopeReportDownloader.main(master_schedule, db_name) # comment this line out for troubleshooting downstream problems, otherwise this tries to redownload all the experiments with no files available.
     # SCRAPE FILES THAT ARENT IN THE DATABASE
-    valid_experiments = analysis_downloader_daily.validExpFinder(os.path.join(dirname, master_schedule))
-    existing_experiments = analysis_downloader_daily.checkExistingData(str(db_name))
-    #experiments_to_add = [x for x in valid_experiments if x not in existing_experiments]
-    experiments_to_add = valid_experiments
+    valid_experiments = auscopeReportDownloader.validExpFinder(os.path.join(dirname, master_schedule))
+    existing_experiments = auscopeReportDownloader.checkExistingData(str(db_name))
+    experiments_to_add = [x for x in valid_experiments if x.lower() not in existing_experiments]
+    print(experiments_to_add)
+    #experiments_to_add = valid_experiments
     for exp in experiments_to_add:
         exp = exp.lower()
         if os.path.isfile(dirname+'/analysis_reports/'+ exp +'_report.txt'):
-            auscope_file_scraper.main(exp, db_name)
+            ingestAnalysisSpool.main(exp, db_name)
             with open(dirname + '/analysis_reports/'+ exp +'_report.txt') as file:
-                meta_data = auscope_file_scraper.metaData(file.read())
+                meta_data = ingestAnalysisSpool.metaData(file.read())
             vgosDB = meta_data[4]
-            analysis_downloader_daily.corrReportDL(exp, vgosDB)
-            corr_skd_ingest.main(exp, db_name)
+            auscopeReportDownloader.corrReportDL(exp, vgosDB)
+            ingestCorrSkd.main(exp, db_name)
                 
    
 if __name__ == '__main__':

@@ -127,6 +127,13 @@ def main(exp_code, db_name):
             cursor.execute(sql_station, data)
             conn.commit()
             conn.close()
+            # write every line being added to the database into a weekly log file to be reviewed.
+            with open(dirname + '/current.log','a') as f:
+                log_writer = csv.writer(f, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+                log_data = data.copy()
+                log_data.append(station_id[i])
+                log_writer.writerows([['ExpID', 'Performance', 'Date', 'Date_MJD', 'Pos_X', 'Pos_Y', 'Pos_Z', 'Pos_U', 'Pos_E', 'Pos_N', 'W_RMS_del', 'Problem', 'Problem_String', 'Analyser', 'vgosDB_tag'], log_data])
+            # Also write them to a CSV file that just has all the data - Guifre and Prad requested this - this can be removed if it's no longer useful.
             with open(dirname + '/' + station_id[i] + '_analysis_reports.csv','a') as f:
                 with open(dirname + '/' + station_id[i] + '_analysis_reports.csv','r') as f_read:
                     if meta[0].lower() in f_read.read():

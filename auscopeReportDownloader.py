@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-from ftplib import FTP
+from ftplib import FTP_TLS
 import ftplib
 import re
 import os
@@ -54,14 +54,16 @@ def corrReportDL(exp_id,vgos_tag):
         print("Corr report already exists for experiment " + exp_id + ", skipping re-download.")
         return
     else:
-        ftp = FTP('ivs.bkg.bund.de')
-        ftp.login()
+        ftps = FTP_TLS(host = 'gdc.cddis.eosdis.nasa.gov')
+        ftps.login()
+        ftps.prot_p()
         try:
-            ftp.retrlines("LIST /pub/vlbi/ivsdata/vgosdb/" + year + "/" + tag + ".tgz", vgos_exists.append)
+            ftps.retrlines("LIST /pub/vlbi/ivsdata/vgosdb/" + year + "/" + tag + ".tgz", vgos_exists.append)
             if len(vgos_exists) > 0:
                 local_filename = os.path.join(dirname, tag + ".tgz")
+                ftps.sendcmd('TYPE I')
                 lf = open(local_filename, "wb")
-                ftp.retrbinary("RETR /pub/vlbi/ivsdata/vgosdb/" + year + "/" + tag + ".tgz", lf.write)
+                ftps.retrbinary("RETR /pub/vlbi/ivsdata/vgosdb/" + year + "/" + tag + ".tgz", lf.write)
                 lf.close()
                 tar = tarfile.open(dirname + '/' + tag + ".tgz")
                 if tag +'/History/'+ tag + '_V000_kMk4.hist' in tar.getnames():
@@ -92,11 +94,13 @@ def corrReportDL(exp_id,vgos_tag):
     
 def main(master_schedule, db_name):
     schedule = str(master_schedule)
-    ftp = FTP('ivs.bkg.bund.de')
-    ftp.login()
+    ftps = FTP_TLS(host = 'gdc.cddis.eosdis.nasa.gov')
+    ftps.login()
+    ftps.prot_p()
     master_sched_filename = os.path.join(dirname, schedule)
     mf = open(master_sched_filename, "wb")
-    ftp.retrbinary('RETR /pub/vlbi/ivscontrol/'+ schedule, mf.write)
+    ftps.sendcmd('TYPE I')
+    ftps.retrbinary('RETR /pub/vlbi/ivscontrol/'+ schedule, mf.write)
     mf.close()
 
     valid_experiment = validExpFinder(os.path.join(dirname, schedule))
@@ -114,16 +118,18 @@ def main(master_schedule, db_name):
             #ftp = FTP('cddis.gsfc.nasa.gov')
             exp = exp.lower()
             print('Beginning file downloads for experiment ' + exp + ".")
-            ftp = FTP('ivs.bkg.bund.de')
-            ftp.login()
+            ftps = FTP_TLS(host = 'gdc.cddis.eosdis.nasa.gov')
+            ftps.login()
+            ftps.prot_p()
             # Download SKED file
             try:
                 filename_skd = []
-                ftp.retrlines('LIST /pub/vlbi/ivsdata/aux/'+str(year)+ '/' + exp + '/' + exp + '.skd', filename_skd.append)
+                ftps.retrlines('LIST /pub/vlbi/ivsdata/aux/'+str(year)+ '/' + exp + '/' + exp + '.skd', filename_skd.append)
                 if len(filename_skd) > 0:
                     local_filename_skd = os.path.join(dirname, 'skd_files/' + exp + '.skd')
+                    ftps.sendcmd('TYPE I')
                     lf3 = open(local_filename_skd, "wb")
-                    ftp.retrbinary('RETR /pub/vlbi/ivsdata/aux/'+str(year)+ '/' + exp + '/' + exp + ".skd", lf3.write)
+                    ftps.retrbinary('RETR /pub/vlbi/ivsdata/aux/'+str(year)+ '/' + exp + '/' + exp + ".skd", lf3.write)
                     lf3.close()
             except Exception: 
                 print('No SKED file found for ' + exp)
@@ -134,11 +140,12 @@ def main(master_schedule, db_name):
             for spelling in options:
                 filename_report = []
                 try:
-                    ftp.retrlines('LIST /pub/vlbi/ivsdata/aux/'+str(year)+ '/' + exp + '/' + exp + '-'+spelling+'-analysis-report*', filename_report.append)
+                    ftps.retrlines('LIST /pub/vlbi/ivsdata/aux/'+str(year)+ '/' + exp + '/' + exp + '-'+spelling+'-analysis-report*', filename_report.append)
                     if len(filename_report) > 0:
                         local_filename_report = os.path.join(dirname, 'analysis_reports/' + exp + '_report.txt')
+                        ftps.sendcmd('TYPE I')
                         lf1 = open(local_filename_report, "wb")
-                        ftp.retrbinary('RETR ' + filename_report[len(filename_report)-1].split()[8], lf1.write)
+                        ftps.retrbinary('RETR /pub/vlbi/ivsdata/aux/' +str(year)+ '/' + exp + '/' + filename_report[len(filename_report)-1].split()[8], lf1.write)
                         lf1.close()
                         print('Analysis report downloaded for experiment ' + exp + ".")
                         break
@@ -148,11 +155,12 @@ def main(master_schedule, db_name):
             for spelling in options:
                 filename_spool = []
                 try:
-                    ftp.retrlines('LIST /pub/vlbi/ivsdata/aux/'+str(year)+ '/' + exp + '/' + exp + '-'+spelling+'-analysis-spoolfile*', filename_spool.append)
+                    ftps.retrlines('LIST /pub/vlbi/ivsdata/aux/'+str(year)+ '/' + exp + '/' + exp + '-'+spelling+'-analysis-spoolfile*', filename_spool.append)
                     if len(filename_spool) > 0:
                         local_filename_spool = os.path.join(dirname, 'analysis_reports/' + exp + '_spoolfile.txt')
+                        ftps.sendcmd('TYPE I')
                         lf2 = open(local_filename_spool, "wb")
-                        ftp.retrbinary('RETR ' + filename_spool[len(filename_report)-1].split()[8], lf2.write)
+                        ftps.retrbinary('RETR /pub/vlbi/ivsdata/aux/' +str(year)+ '/' + exp + '/' + filename_spool[len(filename_report)-1].split()[8], lf2.write)
                         lf2.close()
                         print('Spoolfile downloaded for experiment ' + exp + ".")
                         break
@@ -161,11 +169,12 @@ def main(master_schedule, db_name):
             # Download old style analysis report if it exists.
             try:
                 filename_report_old = []
-                ftp.retrlines('LIST /pub/vlbi/ivsdata/aux/'+str(year)+ '/' + exp + '/' + exp + '-analyst.txt', filename_report_old.append)
+                ftps.retrlines('LIST /pub/vlbi/ivsdata/aux/'+str(year)+ '/' + exp + '/' + exp + '-analyst.txt', filename_report_old.append)
                 if len(filename_report_old) > 0:
                     local_filename_report = os.path.join(dirname, 'analysis_reports/' + exp + '_report.txt')
+                    ftps.sendcmd('TYPE I')
                     lf1 = open(local_filename_report, "wb")
-                    ftp.retrbinary('RETR /pub/vlbi/ivsdata/aux/'+str(year)+ '/' + exp + '/' + exp + "-analyst.txt", lf1.write)
+                    ftps.retrbinary('RETR /pub/vlbi/ivsdata/aux/'+str(year)+ '/' + exp + '/' + exp + "-analyst.txt", lf1.write)
                     lf1.close()
             except Exception:
                     pass   

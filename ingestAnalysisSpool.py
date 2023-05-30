@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 import re
 from datetime import datetime
@@ -51,14 +51,16 @@ def stationPerformance(text_section): # Extracts the percentage of useable scans
 def metaData(text_section):
     vgosDBtag = re.findall("(?<=\$).{9}",text_section,re.MULTILINE)
     date = re.findall("(?<=\$).{7}",text_section,re.MULTILINE)
-    date = datetime.strptime(date[0], '%y%b%d').strftime('%Y-%m-%d')
+    if len(vgosDBtag) == 0:
+        vgosDBtag = re.findall("(?<=\().{15}",text_section,re.MULTILINE)
+        date = re.findall("(?<=\().{8}",text_section,re.MULTILINE)
+    date = datetime.strptime(date[0], '%Y%m%d').strftime('%Y-%m-%d')
     date_mjd = Time(date).mjd
     exp_code = re.findall("(?<=Analysis Report for\s)(.*?(?=\s))",text_section,re.MULTILINE)
     analyser = re.findall("\S.*(?=\sAnalysis Report for\s)",text_section,re.MULTILINE)
     if len(analyser) == 0:
         analyser = "-"
     return exp_code[0], analyser[0], date, date_mjd, vgosDBtag[0]
-    # pretty sure this doesn't work post-2099, but like... you shouldn't be using this trash then... right?
     
 def stationPositions(text_section): # extracts station positons from the spoolfile
     stations = ["KATH12M", "YARRA12M", "HOBART12", "HOBART26"]

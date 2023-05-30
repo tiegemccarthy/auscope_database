@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 from ftplib import FTP_TLS
 import ftplib
@@ -37,16 +37,27 @@ def validExpFinder(master_schedule):
     valid_experiment = []
     for line in schedule_contents:
         line = line.split('|')
-        if len(line) > 13 and '1.0' in line[11]:
-            regex = '(?<!-)Ke|(?<!-)Yg|(?<!-)Hb|(?<!-)Ho'
-            participated = re.findall(regex,line[7],re.MULTILINE)
-            if len(participated) > 0:
-                valid_experiment.append(line[2].strip())
+        if ' 2.0 ' in schedule_contents[0]: # master schedule version check
+            if len(line) > 13 and len(line[10].strip()) == 8:
+                regex = '(?<!-)Ke|(?<!-)Yg|(?<!-)Hb|(?<!-)Ho'
+                participated = re.findall(regex,line[7],re.MULTILINE)
+                if len(participated) > 0:
+                    valid_experiment.append(line[3].strip())
+        elif ' 1.0 ' in schedule_contents[0]: # master schedule version check
+            if len(line) > 13 and '1.0' in line[11]:
+                regex = '(?<!-)Ke|(?<!-)Yg|(?<!-)Hb|(?<!-)Ho'
+                participated = re.findall(regex,line[7],re.MULTILINE)
+                if len(participated) > 0:
+                    valid_experiment.append(line[2].strip())
     return valid_experiment
 
-
 def corrReportDL(exp_id,vgos_tag):
-    year = '20' + str(vgos_tag[0:2])
+    exp_id = str(exp_id)
+    vgos_tag = str(vgos_tag)
+    if exp_id in vgos_tag:
+        year = vgos_tag[0:4]
+    else:
+        year = '20' + str(vgos_tag[0:2])
     tag = str(vgos_tag.rstrip())
     exp_id = str(exp_id)
     vgos_exists = []
@@ -55,7 +66,7 @@ def corrReportDL(exp_id,vgos_tag):
         return
     else:
         ftps = FTP_TLS(host = 'gdc.cddis.eosdis.nasa.gov')
-        ftps.login()
+        ftps.login(user='anonymous', passwd='tiegem@utas.edu.au')
         ftps.prot_p()
         try:
             ftps.retrlines("LIST /pub/vlbi/ivsdata/vgosdb/" + year + "/" + tag + ".tgz", vgos_exists.append)
@@ -95,21 +106,24 @@ def corrReportDL(exp_id,vgos_tag):
 def main(master_schedule, db_name):
     schedule = str(master_schedule)
     ftps = FTP_TLS(host = 'gdc.cddis.eosdis.nasa.gov')
-    ftps.login()
+    ftps.login(user='anonymous', passwd='tiegem@utas.edu.au')
     ftps.prot_p()
     master_sched_filename = os.path.join(dirname, schedule)
     mf = open(master_sched_filename, "wb")
     ftps.sendcmd('TYPE I')
     ftps.retrbinary('RETR /pub/vlbi/ivscontrol/'+ schedule, mf.write)
     mf.close()
-
+    # determine year of schedule - different depending on master schedule version...
+    if len(schedule) == 12: # this is for v1
+        year = '20' + schedule[6:8]
+    else: # this is for v2
+        year = schedule[6:10]
     valid_experiment = validExpFinder(os.path.join(dirname, schedule))
     existing_experiments = checkExistingData(str(db_name))
     if existing_experiments == None:
         experiments_to_download = valid_experiment
     else:
         experiments_to_download = [x for x in valid_experiment if x not in existing_experiments]
-    year = '20' + schedule[6:8]
     for exp in experiments_to_download:
         if os.path.isfile(dirname+'/analysis_reports/'+exp.lower()+'_report.txt'):
             print("Analysis report already exists for " + exp.lower() + ", skipping file downloads.")
@@ -119,9 +133,10 @@ def main(master_schedule, db_name):
             exp = exp.lower()
             print('Beginning file downloads for experiment ' + exp + ".")
             ftps = FTP_TLS(host = 'gdc.cddis.eosdis.nasa.gov')
-            ftps.login()
+            ftps.login(user='anonymous', passwd='tiegem@utas.edu.au')
             ftps.prot_p()
             # Download SKED file
+            print(year, exp)
             try:
                 filename_skd = []
                 ftps.retrlines('LIST /pub/vlbi/ivsdata/aux/'+str(year)+ '/' + exp + '/' + exp + '.skd', filename_skd.append)

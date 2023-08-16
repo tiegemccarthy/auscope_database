@@ -12,8 +12,11 @@ import csv
 
 dirname = os.path.dirname(__file__)
 
-def extractRelevantSections(all_corr_sections):
-    relevant_tags = ['STATION', 'DROP', 'MANUAL', 'SNR']
+def extractRelevantSections(all_corr_sections, version):
+    if version == 3:
+        relevant_tags = ['STATION', 'NOTE', 'DROP', 'MANUAL', 'SNR']
+    else:
+        relevant_tags = ['STATION', 'DROP', 'MANUAL', 'SNR']
     relevant_sections = []
     for tag in relevant_tags:
         for section in all_corr_sections:
@@ -84,18 +87,55 @@ def sefdTableExtract(text_section, antennas_corr_reference, antenna_reference):
         # Instead SEFD estimation will be skipped.
     return snr_data, corrtab_X, corrtab_S
 
+def sefdTableExtractV3(text_section, antennas_corr_reference, antenna_reference):
+    if len(text_section) > 20:
+        regex= '^[A-Za-z]{2}\s+[0-9]+\.[0-9]+\s+[0-9]+\s+[0-9]+\.[0-9]+\s+[0-9]+$'
+        snr_data = re.findall(regex,text_section,re.MULTILINE)
+        col_names = ['bl', 'S_snr', 'S_n', 'X_snr', 'X_n']
+        # Make sure antennas being extracted exist in both the corr-file and skd-file
+        mask = np.isin(np.asarray(antennas_corr_reference)[:,0], np.asarray(antenna_reference)[:,1])
+        # This next loop applies the restriction above, along with removing random symbols (like 1s).
+        bad_bl_mask = []
+        for i in range(0,len(snr_data)):
+            bl = snr_data[i][0:2]
+            if bl[0] not in list(np.asarray(antennas_corr_reference)[mask,1]) or bl[1] not in list(np.asarray(antennas_corr_reference)[mask,1]):
+                bad_bl_mask.append(i)
+        snr_data = ascii.read(snr_data, names=col_names)
+        snr_data = snr_data['bl', 'X_snr', 'X_n', 'S_snr', 'S_n'] # order in the old way
+        snr_data.remove_rows(bad_bl_mask)
+        table_array = np.array([snr_data['X_snr'],snr_data['X_n'],snr_data['S_snr'],snr_data['S_n']])
+        # Need to manipulate the array so it is the same as the table, can probably create the array more elegantly.
+        corrtab = np.fliplr(np.rot90(table_array, k=1, axes=(1,0)))
+        corrtab_split = np.hsplit(corrtab,2)
+        corrtab_X = corrtab_split[0]
+        corrtab_S = corrtab_split[1]
+    else:
+        print("No SNR table available!")
+        snr_data = []
+        corrtab_X = []
+        corrtab_S = []
+        # if snr table isnt included for some reason, this stops the script from crashing.
+        # Instead SEFD estimation will be skipped.
+    return snr_data, corrtab_X, corrtab_S
     
-def antennaReference_CORR(text_section):
-    regex = '\(.{4}\)'
-    antennas_corr_report = re.findall(regex,text_section,re.MULTILINE)
+def antennaReference_CORR(text_section, version):
     antennas_corr_reference = []
-    for line in antennas_corr_report:
-        if '/' in line:
-            ref = [line[1:3],line[4]]
+    if version == 3:
+        regex = "^([A-Za-z]{2})\s+([A-Za-z0-9]+)\s+([A-Za-z])$"
+        antennas_corr_report = re.findall(regex,text_section,re.MULTILINE)
+        for line in antennas_corr_report:
+            ref = [line[0],line[2]]
             antennas_corr_reference.append(ref)
-        elif '-' in line: # this is to handle some funky corr report styles.
-            ref = [line[3:5], line[1]]
-            antennas_corr_reference.append(ref)
+    else:
+        regex = '\(.{4}\)'
+        antennas_corr_report = re.findall(regex,text_section,re.MULTILINE)
+        for line in antennas_corr_report:
+            if '/' in line:
+                ref = [line[1:3],line[4]]
+                antennas_corr_reference.append(ref)
+            elif '-' in line: # this is to handle some funky corr report styles.
+                ref = [line[3:5], line[1]]
+                antennas_corr_reference.append(ref)
     return antennas_corr_reference
     # This function takes the section[4] of the corr report and gives the 2 character
     # station code plus the single character corr code.
@@ -121,10 +161,11 @@ def predictedSEFDextract(text_section, antenna_reference):
                 SEFD_X_S = [antenna_reference[i][1], line[6], line[8]]
                 stations_SEFD.append(SEFD_X_S)
     SEFD_tags = np.asarray(stations_SEFD)[:,0]
-    SEFD_X = np.asarray(stations_SEFD)[:,1].astype(np.float)
-    SEFD_S = np.asarray(stations_SEFD)[:,2].astype(np.float)
+    SEFD_X = np.asarray(stations_SEFD)[:,1].astype(float)
+    SEFD_S = np.asarray(stations_SEFD)[:,2].astype(float)
     return SEFD_tags, SEFD_X, SEFD_S
     # This block of code grabs all the SEFD setting lines and pulls the X and S SEFD for each station.
+
     
 def basnumArray(snr_data, antennas_corr_reference, SEFD_tags):
     basnum = []
@@ -139,34 +180,50 @@ def basnumArray(snr_data, antennas_corr_reference, SEFD_tags):
     return basnum
 
 def main(exp_id, db_name):
-    if os.path.isfile(dirname+"/corr_files/"+ exp_id + '.corr'):
+    if os.path.isfile("corr_files/"+ exp_id + '.corr'):
         print("Beginning corr and skd file ingest for experiment " + exp_id + ".")
-        with open(dirname+'/corr_files/'+ str(exp_id) + '.corr') as file:
+        with open('corr_files/'+ str(exp_id) + '.corr') as file:
             contents = file.read()
             corr_section = contents.split('\n+')
             if len(corr_section) < 3: # another ad-hoc addition for if corr-reports have a space before ever line in them (e.g. aov032)
                 corr_section = contents.split('\n +')
-        relevant_section = extractRelevantSections(corr_section)
+        # Check report version
+        if '%CORRELATOR_REPORT_FORMAT 3' in corr_section[0]:
+            report_version = 3
+        else:
+            report_version = 2
+        #
+        relevant_section = extractRelevantSections(corr_section, report_version)
         if len(relevant_section) < 4:
-            return print("Incompatible correlator report format.")
+            print("Incompatible correlator report format.")
         station_id = ["Ke", "Yg", "Hb", "Ho"]
-        # check which stations participated in experiment (needed for cases where we cant calculate SEFD)
         valid_stations = []
         for j in range(0, len(station_id)):
-            if station_id[j] + "/" in relevant_section[0]:
-                valid_stations.append(station_id[j])
+            if report_version == 3:
+                if "\n" + station_id[j] in relevant_section[0]:
+                    valid_stations.append(station_id[j])
+                dropped_channels = droppedChannels(relevant_section[2])
+                manual_pcal = manualPcal(relevant_section[3])
+            else:
+                if station_id[j] + "/" in relevant_section[0]:
+                    valid_stations.append(station_id[j])
+                dropped_channels = droppedChannels(relevant_section[1])
+                manual_pcal = manualPcal(relevant_section[2])
         # Extract manual pcal and dropped channels for all telescopes first
-        dropped_channels = droppedChannels(relevant_section[1])
-        manual_pcal = manualPcal(relevant_section[2])
+        #dropped_channels = droppedChannels(relevant_section[1])
+        #manual_pcal = manualPcal(relevant_section[2])
         # Now to extract what we need to calculate the SEFDs
-        if os.path.isfile(dirname+'/skd_files/' + str(exp_id) + '.skd'):
-            with open(dirname+'/skd_files/' + str(exp_id) + '.skd') as file:
+        if os.path.isfile('skd_files/' + str(exp_id) + '.skd'):
+            with open('skd_files/' + str(exp_id) + '.skd') as file:
                 skd_contents = file.read()
-            antennas_corr_reference = antennaReference_CORR(relevant_section[0])
+            antennas_corr_reference = antennaReference_CORR(relevant_section[0],report_version)
             if len(antennas_corr_reference) == 0:
-                return print("No stations defined in correlator report!")
+                print("No stations defined in correlator report!")
             antenna_reference = antennaReference_SKD(skd_contents)
-            snr_data, corrtab_X, corrtab_S = sefdTableExtract(relevant_section[3], antennas_corr_reference, antenna_reference)
+            if report_version == 3:
+                snr_data, corrtab_X, corrtab_S = sefdTableExtractV3(relevant_section[4], antennas_corr_reference, antenna_reference)
+            else:
+                snr_data, corrtab_X, corrtab_S = sefdTableExtract(relevant_section[3], antennas_corr_reference, antenna_reference)
             if len(snr_data) == 0: # this is if corr file exists, but no SNR table exists.
                 print("No SNR table exists!")
                 SEFD_tags = np.array(valid_stations)
@@ -189,12 +246,11 @@ def main(exp_id, db_name):
             print("No SKD file available")
             SEFD_tags = np.array(valid_stations)
             X = [None, None, None, None]
-            S = [None, None, None, None]
+            S = [None, None, None, None] 
         
         # fix for when station is in corr notes, but does not observe. 
         # Below code creates list of station codes that exist in the valid station.
         stations_to_add = list(set(SEFD_tags).intersection(valid_stations))
-                
         # add to database
         for i in range(0,len(stations_to_add)):
             sql_station = """
@@ -202,6 +258,7 @@ def main(exp_id, db_name):
                 SET estSEFD_X=%s, estSEFD_S=%s, Manual_Pcal=%s, Dropped_Chans=%s
                 WHERE ExpID=%s
             """.format(stations_to_add[i])
+            print('Add to database...')
             data = [X[list(SEFD_tags).index(stations_to_add[i])], S[list(SEFD_tags).index(stations_to_add[i])], manual_pcal[i], dropped_channels[i], str(exp_id)]
             conn = mariadb.connect(user='auscope', passwd='password', db=str(db_name))
             cursor = conn.cursor()

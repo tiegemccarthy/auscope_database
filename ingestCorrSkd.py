@@ -91,7 +91,7 @@ def sefdTableExtractV3(text_section, antennas_corr_reference, antenna_reference)
     if len(text_section) > 20 and 'n_S' in text_section: # hacky solution to exclude VGOS X only tables.
         # old corr files have an extra bit in the SNR table section we want removed
         regex= '^[A-Za-z]{2}\s+[0-9]+\.[0-9]+\s+[0-9]+\s+[0-9]+\.[0-9]+\s+[0-9]+$'
-        snr_data = re.findall(regex,text_section[4],re.MULTILINE)
+        snr_data = re.findall(regex,text_section,re.MULTILINE)
         col_names = ['bl', 'S_snr', 'S_n', 'X_snr', 'X_n']
         # Make sure antennas being extracted exist in both the corr-file and skd-file
         mask = np.isin(np.asarray(antennas_corr_reference)[:,0], np.asarray(antenna_reference)[:,1])

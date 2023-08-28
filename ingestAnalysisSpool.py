@@ -49,8 +49,8 @@ def stationPerformance(text_section): # Extracts the percentage of useable scans
     return station_performance
     
 def metaData(text_section):
-    vgosDBtag = re.findall("(?<=\().{9}",text_section,re.MULTILINE)
-    date = re.findall("(?<=\().{7}",text_section,re.MULTILINE)
+    vgosDBtag = re.findall("(?<=\$).{9}",text_section,re.MULTILINE)
+    date = re.findall("(?<=\$).{7}",text_section,re.MULTILINE)
     print(date)
     date = datetime.strptime(date[0], '%y%b%d').strftime('%Y-%m-%d')
     if len(vgosDBtag) == 0:

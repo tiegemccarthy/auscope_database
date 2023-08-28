@@ -106,6 +106,7 @@ def main(exp_code, db_name):
         sections = contents_report.split('-----------------------------------------')   
     meta = metaData(sections[0])
     performance = stationPerformance(sections[2])
+    print(performance)
     problems = problemFinder(sections[0])
     # check if a spoolfile exists and extract data if so.
     if os.path.isfile(file_spool): 
@@ -126,6 +127,7 @@ def main(exp_code, db_name):
         else:
             sql_station = "INSERT IGNORE INTO {} (ExpID, Performance, Date, Date_MJD, Pos_X, Pos_Y, Pos_Z, Pos_U, Pos_E, Pos_N, W_RMS_del, Problem, Problem_String, Analyser, vgosDB_tag) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s);".format(station_id[i])
             data = [meta[0].lower(), performance[i], meta[2], meta[3], position[i][0], position[i][1], position[i][2], position[i][3], position[i][4], position[i][5], delays[i], problems[0][i], problems[1][i], meta[1], meta[4]]
+            print(data)
             conn = mariadb.connect(user='auscope', passwd='password', db=str(db_name))
             cursor = conn.cursor()
             cursor.execute(sql_station, data)
@@ -141,7 +143,7 @@ def main(exp_code, db_name):
             with open(dirname + '/' + station_id[i] + '_analysis_reports.csv','a') as f:
                 with open(dirname + '/' + station_id[i] + '_analysis_reports.csv','r') as f_read:
                     if meta[0].lower() in f_read.read():
-                        break
+                        continue
                     else:
             	        station_writer = csv.writer(f, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
             	        station_writer.writerow(data)                        

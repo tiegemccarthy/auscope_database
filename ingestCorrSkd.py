@@ -257,11 +257,11 @@ def main(exp_id, db_name):
         for i in range(0,len(stations_to_add)):
             sql_station = """
                 UPDATE {}
-                SET estSEFD_X=%s, estSEFD_S=%s, Manual_Pcal=%s, Dropped_Chans=%s
+                SET estSEFD_X=%s, estSEFD_S=%s, Manual_Pcal=%s
                 WHERE ExpID=%s
             """.format(stations_to_add[i])
             print('Add to database...')
-            data = [X[list(SEFD_tags).index(stations_to_add[i])], S[list(SEFD_tags).index(stations_to_add[i])], manual_pcal[i], dropped_channels[i], str(exp_id)]
+            data = [X[list(SEFD_tags).index(stations_to_add[i])], S[list(SEFD_tags).index(stations_to_add[i])], manual_pcal[i], str(exp_id)]
             conn = mariadb.connect(user='auscope', passwd='password', db=str(db_name))
             cursor = conn.cursor()
             cursor.execute(sql_station, data)
